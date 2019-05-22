@@ -5,7 +5,7 @@ archtype: 관리자
 user-guide-title: Experience Manager Cloud Manager 도움말
 index: n
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
 
 ---
 
@@ -40,7 +40,8 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트 (2019.4.0)](release-notes-current.md)
+   + [현재 릴리스 노트 (2019.5.0)](release-notes-current.md)
+   + [2019.4.0 릴리스 노트](release-notes-2019-4-0.md)
    + [2019.3.0 릴리스 노트](release-notes-2019-3-0.md)
    + [2019.2.0 릴리스 노트](release-notes-2019-2-0.md)
    + [2019.1.0 릴리스 노트](release-notes-2019-1-0.md)
@@ -49,4 +50,5 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    + [2018.7.0 릴리스 노트](release-notes-2018-7-0.md)
    + [2018.6.0 릴리스 노트](release-notes-2018-6-0.md)
    + [2018.5.0 릴리스 노트](release-notes-2018-5-0.md)
++ [추가 리소스](additional-resources.md)
 
