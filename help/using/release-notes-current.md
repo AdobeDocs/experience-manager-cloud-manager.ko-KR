@@ -4,12 +4,12 @@ seo-title: 2019.5.0 용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
+source-git-commit: cab67f6a3358ef2988baaba78e2a41f7edadb323
 
 ---
 
 
-# 2019.4.0 릴리스 노트 {#release-notes-for}
+# 2019.5.0 릴리스 노트 {#release-notes-for}
 
 [!UICONTROL Cloud Manager] 2019.5.0 릴리스에는 중요한 기능 변경 사항이 포함되지 않습니다. 자세한 내용은 아래 섹션을 참조하십시오.
 
