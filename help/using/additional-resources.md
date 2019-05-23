@@ -6,7 +6,7 @@ seo-description: Adobe AEM Cloud Manager에 대한 자세한 내용을 살펴보
 uuid: 9 AA 90 A 99-F 049-422 E -9 E 06-B 00 B 843 ED 98 B
 products: sg_ Experiencemanager/Cloudmanager
 translation-type: tm+mt
-source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
+source-git-commit: 7236e9d3bf5955509068757b34c81f0021db4270
 
 ---
 
@@ -23,9 +23,9 @@ source-git-commit: 8031df1c1ce9d7fee4ef33de289c6952370b7589
 
 ## 웨비나 시리즈 {#webinar-series}
 
-[Adobe 포럼] (https://forums.adobe.com/message/11061595)를 통해 클라우드 관리자를 위한 추가 학습 경로를 웨비나 시리즈로 가져옵니다.
+[Adobe 포럼을 따라](https://forums.adobe.com/message/11061595) 클라우드 관리자를 위한 추가 학습 경로를 웨비나 시리즈로 가져옵니다.
 
 ## 데모 비디오 시리즈 {#demo-videos}
 
-오류 [및 성공 시나리오 모두에서 클라우드 관리자의 CI/CD 파이프라인을 탐색, 설정 및 실행하는 비디오 시리즈가 포함된 AEM] (https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
-에 대해 클라우드 관리자에서 CI/CD 파이프라인을 사용합니다.
+실패 및 [성공 시나리오 모두에서 Cloud Manager의 CI/CD 파이프라인을 탐색, 설정 및 실행하는 비디오 시리즈가 포함된 AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
+용 클라우드 관리자에서 CI/CD 파이프라인을 사용하는 방법에 대해 알아보십시오.
