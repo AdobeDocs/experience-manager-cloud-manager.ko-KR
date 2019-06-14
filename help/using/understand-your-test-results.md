@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: 83299 ED 8-4 B 7 A -4 B 1 C-BD 56-1 BFC 7 E 7318 D 4
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: f8cea9d52ebb01d7f5291d4dfcd82011da8dacc2
 
 ---
 
@@ -54,11 +54,11 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 >자세한 정의는 [지표 정의를](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 참조하십시오.
 
 
-규칙 목록은 여기에서 다운로드할 수 있습니다. [sonarqube-rules.xlsx](assets/sonarqube-rules.xlsx)
+규칙 목록은 여기에서 다운로드할 수 있습니다. [code-quality-rules.xlsx](assets/code-quality-rules.xlsx)
 
 >[!NOTE]
 >
->실행된 사용자 지정 Sonarqube 규칙에 대한 자세한 내용은 [!UICONTROL Cloud Manager][사용자 지정 코드 품질 규칙을 참조하십시오](custom-code-quality-rules.md).
+>에서 실행되는 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 [!UICONTROL Cloud Manager][사용자 지정 코드 품질 규칙을 참조하십시오](custom-code-quality-rules.md).
 
 ### 잘못된 양수 처리 {#dealing-with-false-positives}
 
