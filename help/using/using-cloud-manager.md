@@ -8,35 +8,35 @@ uuid: CEF 44 D 35-75 ED -44 BB -9636-2 DE 2 BCA 5 E 458
 contentOwner: Jsyal
 discoiquuid: C 37566 D 5-0 D 1 B -4 C 44-ABD 7-B 271 EA 443 C 1 A
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 
 ---
 
 
-# 클라우드 관리자 사용{#using-cloud-manager}
+# Using Cloud Manager{#using-cloud-manager}
 
-이 섹션에서는 사용자 인터페이스 (UI) 에 대해 설명하고 [!UICONTROL Cloud Manager] 프로그램 설정에서 코드 배포에 이르는 워크플로우 다음에 품질 검사를 수행하는 방법을 설명합니다.
+This section explains the User Interface (UI) for [!UICONTROL Cloud Manager] and explains the workflow from setting up the program to code deployment followed by quality checks.
 
 ## 전제 조건 {#prerequisites}
 
-를 사용하기 전에 다음 [!UICONTROL Cloud Manager]섹션을 따르는 것이 좋습니다.
+Before you get into the details of using the [!UICONTROL Cloud Manager], it is recommended to go though the following sections:
 
 * [[! Uicontrol Cloud Manager]](understanding-concepts.md)
 * [[! Uicontrol Cloud Manager]](setting-configurations-for-cloud-manager.md)
 
-## 시작하기 [!UICONTROL Cloud Manager]{#getting-started-with-cloud-manager}
+## Getting Started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-일반 구성을 설정했으면 [!UICONTROL Cloud Manager][!UICONTROL Cloud Manager]을 사용할 수 있습니다.
+Once you have setup the general configurations for [!UICONTROL Cloud Manager], you are ready to use the [!UICONTROL Cloud Manager].
 
-1. Adobe [!UICONTROL Experience Cloud] 에 로그인하면 솔루션 목록이 표시됩니다.
+1. Log in to the Adobe [!UICONTROL Experience Cloud] and you will see the list of solutions.
 
    ![](assets/screen_shot_2018-04-22at92951am.png)
 
-1. 프로그램을 선택하고 왼쪽 상단에 있는 아이콘을 [!UICONTROL Cloud Manager]클릭하여 엽니다.
+1. Select the program and click on the top left icon to open [!UICONTROL Cloud Manager].
 
    ![](assets/screen_shot_2018-04-22at93346am.png)
 
-## 프로그램 설정 {#setting-up-program}
+## Setting Up Program {#setting-up-program}
 
 입사 후 비즈니스 소유자가 프로그램의 초기 설정을 수행해야 합니다. 여기에는 프로그램 설명을 설정하고 성능 테스트에 사용될 KPI를 정의하는 작업이 포함됩니다. 선택적으로 썸네일을 업로드할 수 있습니다.
 
@@ -44,26 +44,26 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 >[!NOTE]
 >
->정의된 KPI는 **스테이지** 환경에서 실행된 테스트에 대해 측정됩니다. 일반적으로 이러한 KPI는 스테이지 환경의 기능에 맞게 축소됩니다.
+>The KPIs defined are measured on tests run on the **stage** environment. 일반적으로 이러한 KPI는 스테이지 환경의 기능에 맞게 축소됩니다.
 >
->예를 들어 사용자는 프로덕션 환경에서 분당 평균 1000 페이지 뷰를 기대하고 있으며 프로덕션 시 `dispatcher/publish` 4 개의 서버가 있는 경우 분당 250 개의 페이지 뷰로 크기를 조절해야 합니다 (스테이지 환경이 단일 `dispatcher/publish` 서버 쌍으로 구성되어 있다고 가정할 경우).
+>For example, a user expecting an average of 1000 page views per minute in their production environment and having four `dispatcher/publish` servers in production should scale this to 250 page views per minute (assuming their stage environment consists of only a single `dispatcher/publish` server pair).
 >
->또한 많은 사용자는 프로덕션 환경 앞에서 CDN (Akamai, CloudFront) 를 갖게 됩니다. 스테이지 환경에 대한 [!UICONTROL Cloud Manager] 테스트 이후 KPI는 CDN를 통과하는 트래픽, 즉 캐시 실패를 반영해야 합니다. 일반적으로 이는 총 프로덕션 트래픽 중 비교적 적은 하위 세트가 됩니다.
+>또한 많은 사용자는 프로덕션 환경 앞에서 CDN (Akamai, CloudFront) 를 갖게 됩니다. Since [!UICONTROL Cloud Manager] tests against the stage environment directly, the KPI should reflect only the traffic expected to pass through the CDN, that is, the cache misses. 일반적으로 이는 총 프로덕션 트래픽 중 비교적 적은 하위 세트가 됩니다.
 
-### KPI [!UICONTROL Cloud Manager] 정의 사용 {#using-cloud-manager-to-define-kpis}
+### Using [!UICONTROL Cloud Manager] to define KPIs {#using-cloud-manager-to-define-kpis}
 
 프로그램을 설정하고 KPI를 정의하려면 아래 절차를 따르십시오.
 
 1. **설정 프로그램을** 클릭하여 설정 [!UICONTROL Cloud Manager]프로세스를 시작합니다.
-1. [프로그램 정보 **편집** ] 화면이 표시됩니다.
+1. The **Edit Program Information** screen displays.
 
-   썸네일을 프로그램에 업로드합니다. 프로그램에 관련 설명을 추가하고 **[다음**] 를 클릭할 수도 있습니다.
+   썸네일을 프로그램에 업로드합니다. You can also add a relevant description to your program and click **Next**.
 
-1. 사용자 **구성** 화면이 표시됩니다.
+1. The **Configure Users** screen displays.
 
-   팀 역할 및 사용자를 구성할 수 있습니다. **다음**을 클릭합니다.
+   팀 역할 및 사용자를 구성할 수 있습니다. **다음** 을 클릭합니다.
 
-1. 일반 비즈니스 KPI **구성** 화면이 표시됩니다.
+1. The **Configure General Business KPIs** screen displays.
 
    두 KPI를 정의할 수 있습니다 (각 배포에 대한 기대치).
 
@@ -77,33 +77,33 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 1. **제출을** 클릭하여 설정 마법사를 완료합니다.
 
-   배포 [!UICONTROL Cloud Manager] 변경에 대한 홈 화면이 **표시됩니다**.
+   You will see the home screen for [!UICONTROL Cloud Manager] change to **Deploy**.
 
-## 사용 가능한 환경 {#available-environments}
+## Available Environments {#available-environments}
 
-In the **available environment** in the [!UICONTROL Cloud Manager] lists all managed AEM environment.
+The **Available Environments** in the [!UICONTROL Cloud Manager] lists all the managed AEM environments.
 
 나열된 각 환경에는 이와 연관된 상태가 있습니다.
 
-## 파이프라인 구성 {#configuring-pipeline}
+## Configuring Pipeline {#configuring-pipeline}
 
-### 파이프라인 설정 {#setting-up-pipeline}
+### Setting up Pipeline {#setting-up-pipeline}
 
 >[!CAUTION]
 >
 >Git 리포지토리에 하나 이상의 브랜치가 있어야 파이프라인을 설정할 수 있습니다.
 
-코드를 배포하기 전에에서 파이프라인 설정을 구성해야 [!UICONTROL Cloud Manager]합니다.
+Before you start to deploy your code, you must configure your pipeline settings from the [!UICONTROL Cloud Manager].
 
-파이프라인 구성에 **대한** [자세한 내용은Uicontrol Cloud Manager]](understanding-concepts.md)**.
+To learn more about pipeline configuration, see **Pipeline Overview** section in ** [Understanding Concepts before Using [!UICONTROL Cloud Manager]](understanding-concepts.md)**.
 
 >[!NOTE]
 >
 >초기 설정 후 파이프라인 설정을 변경할 수 있습니다.
 
-### Configuring pipeline settings from the [!UICONTROL Cloud Manager]{#configuring-pipeline-settings-from-the-cloud-manager}
+### Configuring Pipeline Settings from the [!UICONTROL Cloud Manager] {#configuring-pipeline-settings-from-the-cloud-manager}
 
-파이프라인에 대한 Bahavior 및 기본 설정을 구성하려면 아래의 [!UICONTROL Cloud Manager] 절차를 따르십시오.
+Follow the steps below from the [!UICONTROL Cloud Manager] to configure the bahavior and preferences for your pipeline:
 
 1. **분기** 탭에 액세스하여 애플리케이션 분기를 설정합니다.
 
@@ -132,15 +132,15 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
 
    ![](assets/screen_shot_2018-05-06at73750pm.png)
 
-## 코드 배포 {#deploying-code}
+## Deploying Code {#deploying-code}
 
 파이프라인 (저장소, 환경 및 테스트 환경) 를 구성했으면 코드를 배포할 준비가 되었습니다.
 
-### 코드 배포 [!UICONTROL Cloud Manager]{#deploying-code-from-cloud-manager}
+### Deploying Code from [!UICONTROL Cloud Manager] {#deploying-code-from-cloud-manager}
 
 아래 절차에 따라 코드를 프로덕션 환경에 배포합니다.
 
-1. 에서 **배포를** 클릭하여 [!UICONTROL Cloud Manager] 배포 프로세스를 시작합니다.
+1. Click **Deploy** from the [!UICONTROL Cloud Manager] to start the deployment process.
 1. **스테이지 배포** 화면이 표시됩니다.
 
    **빌드를** 클릭하여 프로세스를 시작합니다.
@@ -163,7 +163,7 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
    >
    >또한 위에서 언급한 테스트 기준에 대한 로그를 보거나 결과를 검토할 수도 있습니다.
 
-## 품질 확인 결과 {#results-from-quality-checks}
+## Results from Quality Checks {#results-from-quality-checks}
 
 파이프라인에 세 개의 게이트가 있습니다. 코드 품질, 성능 테스트 및 보안 테스트
 
@@ -173,11 +173,11 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
 * **중요** - 게이트가 일시 중지 상태를 입력하는 원인이 되는 문제입니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 문제를 무시하거나, 파이프라인이 실패하거나, 문제가 있는 경우 파이프라인이 실패하는 문제를 해결할 수 있습니다.
 * **정보** - 이러한 문제는 게이트에 의해 식별된 문제이며, 단지 정보용으로만 제공되지만 파이프라인 실행에 영향을 주지 않습니다.
 
-### 코드 스캔 {#code-scanning}
+### Code Scanning {#code-scanning}
 
 ![](assets/screen_shot_2018-04-22at101443am.png)
 
-### 성능 테스트 {#performance-testing}
+### Performance Testing {#performance-testing}
 
 *성능 테스트는* 30 분 [!UICONTROL Cloud Manager] 동안 테스트를 사용하여 구현됩니다.
 
@@ -185,18 +185,18 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
 
 예를 들어 인기 있는 라이브 페이지와 새 페이지 세트 간에 50%/50% 분할이 있고 (이 예에서는 다른 라이브 페이지가 사용되지 않음) 새 페이지 세트에 3000 페이지가 포함되었다고 가정합니다. 분당 페이지 보기 수 KPI는 200로 설정됩니다. 30 분 테스트 기간 동안:
 
-* 인기 있는 라이브 페이지 세트의 25 페이지 각각이 240 번 히트 처리됩니다. `((200 &#42; 0.5) / 25) &#42; 30 = 120`
-* 새 페이지 세트의 3000 페이지가 각각 히트 수가 됩니다. `((200 &#42; 0.5) / 3000) &#42; 30 = 1`
+* Each of the 25 pages in the Popular Live Pages set will be hit 240 times - `((200 &#42; 0.5) / 25) &#42; 30 = 120`
+* Each of the 3000 pages in the New Pages set will be hit once - `((200 &#42; 0.5) / 3000) &#42; 30 = 1`
 
 ![](assets/image2018-3-14_16-23-56.png)
 
-### 성능 테스트 지표 {#performance-test-metrics}
+### Performance Test Metrics {#performance-test-metrics}
 
 테스트 기간 동안 많은 지표가 캡처되고, 비즈니스 소유자가 정의한 KPI 또는 AMS가 설정한 기준에 비해 많은 지표가 캡처됩니다.
 
 다음과 같이 3 계층 게이팅 시스템을 사용하여 보고됩니다.
 
-### 파이프라인을 실행하는 동안 세 개의 계층 구조 {#three-tier-gates-while-running-a-pipeline}
+### Three-Tier Gates while Running a Pipeline {#three-tier-gates-while-running-a-pipeline}
 
 파이프라인에 코드 품질, 성능 테스트 및 보안 테스트라는 세 개의 게이트가 있습니다.
 
@@ -220,7 +220,7 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
 | 네트워크 대역폭 활용 | 중요 사항 | &gt;= 90% |
 | 분당 요청 수 | 정보 | &lt; 6000 |
 
-### 보안 테스트 {#security-testing}
+### Security Testing {#security-testing}
 
 [!UICONTROL Cloud Manager] 배포 이후 스테이지에서 기존 *AEM 보안 히스 검사를* 실행하고 UI를 통해 상태를 보고합니다. 결과는 환경의 모든 AEM 인스턴스에서 집계됩니다.
 
@@ -251,9 +251,9 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
 | 웹 서버 구성 | 중요 사항 |
 | 복제 및 전송 사용자 | 정보 |
 
-### Sonarqube의 품질 확인 구현 {#quality-check-implementation-by-sonarqube}
+### Quality Check Implementation by SonarQube {#quality-check-implementation-by-sonarqube}
 
-파이프라인의 일부로서, 위에 설명된 대로 코드가 스캔됩니다. 현재 이 구현은 Sonarqube에서 구현합니다. Adobe 에는 일반 Java 규칙과 AEM 관련 규칙의 조합인 93 개의 규칙이 있습니다 (Cognifide의 기존 규칙 세트에서 일부 포함). 이러한 규칙의 목록은 다음과 같습니다. [Sonarqube 규칙](assets/sonarqube-rules.xlsx)
+파이프라인의 일부로서, 위에 설명된 대로 코드가 스캔됩니다. 현재 이 구현은 Sonarqube에서 구현합니다. Adobe 에는 일반 Java 규칙과 AEM 관련 규칙의 조합인 93 개의 규칙이 있습니다 (Cognifide의 기존 규칙 세트에서 일부 포함). A list of these rules can be found here: [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
 
 이러한 규칙에서 다양한 지표가 계산되며, 이 중 일부는 스테이지 환경에 배포하기 전에 품질 게이트로 사용됩니다.
 
@@ -261,17 +261,17 @@ In the **available environment** in the [!UICONTROL Cloud Manager] lists all man
 
 | 이름 | 정의 | 카테고리 | 실패 임계값 |
 |--- |--- |--- |--- |
-| 보안 등급 | a = 0 취약성 <br/>B = 최소 1 개의 사소한 취약점<br/> C = 최소 1 개의 주요 취약점 <br/>D = 최소 1 개의 치명적인 취약점 <br/>E = 최소 1 개의 차단기 취약점 | 중요 사항 | &lt; B |
-| 안정성 등급 | a = 0 버그 <br/>b = 최소 1 개의 사소한 버그 <br/>c = 최소 1 개의 주요 버그 <br/>d = 최소 1 개의 중요한 버그 e = 최소 1 개의 차단기 버그 | 중요 사항 | &lt; C |
-| 유지 관리 용이성 등급 | 코드 스니트에 대한 탁월한 교정 비용은 다음과 같습니다. <br/><ul><li>&lt; = 이미 애플리케이션에 있었던 시간의 5% 입니다. 등급은 </li><li>6 ~ 10%의 등급은 A 입니다. </li><li>11 ~ 20% 등급은 C 입니다. </li><li>21 ~ 50%의 등급은 D 입니다.</li><li>50% 이상이 e</li></ul> | 중요 사항 | &lt; A |
-| 범위 | 이 공식을 사용한 라인 커버리지 및 조건 범위의 혼합: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`<br/>위치: ct = 최소 한 <br/>번 <br/>LC = covered lines = lines_ to_ cover - discovered_ lines <br/><br/> b = total number of executable el = total number <br/>of executable lines (lines_ to_ cover) 에서 적어도 한 번 평가된&#39;true&#39;로 평가된 조건 | 중요 사항 | &lt; 50% |
+| 보안 등급 | A = 0 Vulnerability <br/>B = at least 1 Minor Vulnerability<br/> C = at least 1 Major Vulnerability <br/>D = at least 1 Critical Vulnerability <br/>E = at least 1 Blocker Vulnerability | 중요 사항 | &lt; B |
+| 안정성 등급 | A = 0 Bug <br/>B = at least 1 Minor Bug <br/>C = at least 1 Major Bug <br/>D = at least 1 Critical Bug E = at least 1 Blocker Bug | 중요 사항 | &lt; C |
+| 유지 관리 용이성 등급 | Outstanding remediation cost for code smells is: <br/><ul><li>&lt; = 이미 애플리케이션에 있었던 시간의 5% 입니다. 등급은 </li><li>6 ~ 10%의 등급은 A 입니다. </li><li>11 ~ 20% 등급은 C 입니다. </li><li>21 ~ 50%의 등급은 D 입니다.</li><li>50% 이상이 e</li></ul> | 중요 사항 | &lt; A |
+| 범위 | A mix of line coverage and condition coverage using this formula: <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>where: CT = conditions that have been evaluated to &#39;true&#39; at least once <br/>CF = conditions that have been evaluated to &#39;false&#39; at least once <br/>LC = covered lines = lines_to_cover - uncovered_lines <br/><br/> B = total number of conditions <br/>EL = total number of executable lines (lines_to_cover) | 중요 사항 | &lt; 50% |
 | 건너뛴 유닛 테스트 | 건너뛴 단위 테스트 수입니다. | 정보 | &gt; 1 |
 | 문제 해결 | 전반적인 문제 유형 - 취약점, 버그 및 코드 냄새 | 정보 | &gt; 1 |
 | 중복 라인 | 복제된 블록과 관련된 라인 수입니다. <br/>코드 블록을 복제한 것으로 간주할 수 있습니다. <ul><li> **비 Java 프로젝트:**</li><li>연속된 토큰은 100 개 이상 있어야 합니다.</li><li>이러한 토큰은 적어도 다음에서 확산되어야 합니다. </li><li>Cobol 용 30 줄의 코드 </li><li>ABAP 용 코드 줄 20 개 </li><li>다른 언어용 코드 줄 10 개</li></ul><ul><li>**Java 프로젝트:**</li><li> 토큰 수와 줄 수에 관계없이 연속된 10 개 이상의 중복된 문이 있어야 합니다.</li></ul>중복을 탐지하는 동안에는 들여쓰기 및 문자열 리터럴의 차이점이 무시됩니다. | 정보 | &gt; 1% |
 
-### 거짓 양 {#false-positives}
+### False Positives {#false-positives}
 
-품질 스캔 프로세스는 완벽하지 않으며 간혹 문제가 되지 않는 문제를 잘못 식별하기도 합니다. 이것을 *거짓 긍정 (**false 네거티브가* 더 의미적으로 올바름) 이라고 합니다. 이러한 경우 소스 코드에 규칙 ID를 주석 특성으로 지정하는 표준 Java `@SuppressWarnings` 주석을 사용하여 주석을 달 수 있습니다. 예를 들어, 하드 코딩된 암호를 감지하는 Sonarqube 규칙은 하드 코딩된 암호로 간주되는 내용에 대해 매우 자유롭다는 것입니다.
+품질 스캔 프로세스는 완벽하지 않으며 간혹 문제가 되지 않는 문제를 잘못 식별하기도 합니다. This is called a *false positive* (although *false negative* would probably be more semantically correct). In these cases, the source code can be annotated with the standard Java `@SuppressWarnings` annotation specifying the rule ID as the annotation attribute. 예를 들어, 하드 코딩된 암호를 감지하는 Sonarqube 규칙은 하드 코딩된 암호로 간주되는 내용에 대해 매우 자유롭다는 것입니다.
 
 특정 예제를 살펴보기 위해 이 코드는 일부 외부 서비스에 연결하기 위한 코드가 있는 AEM 프로젝트에서 매우 일반적입니다.
 
@@ -295,7 +295,7 @@ private static final String SERVICE_PASSWORD = "password";
 private static final String SERVICE_PASSWORD = "password";
 ```
 
-고객은 Sonarqube의 경고를 심화하고 하드 코딩된 암호를 제거해야 합니다. 하지만 Sonarqube 규칙이 실제로 약어로 트리거되므로 `@SuppressWarnings` 주석을 추가해야 `password`합니다.
+고객은 Sonarqube의 경고를 심화하고 하드 코딩된 암호를 제거해야 합니다. They will still, however, need to add the `@SuppressWarnings` annotation since the SonarQube rule is actually being triggered by the term `password`.
 
 >[!NOTE]
 >
