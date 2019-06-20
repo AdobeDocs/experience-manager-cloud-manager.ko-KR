@@ -6,26 +6,14 @@ seo-description: Adobe AEM Cloud Manager에 대한 자세한 내용을 살펴보
 uuid: 9 AA 90 A 99-F 049-422 E -9 E 06-B 00 B 843 ED 98 B
 products: sg_ Experiencemanager/Cloudmanager
 translation-type: tm+mt
-source-git-commit: 7236e9d3bf5955509068757b34c81f0021db4270
+source-git-commit: e3e7fbd9c44c69e5bcdd92e4099c764aa6a99fe4
 
 ---
 
 
-# 추가 리소스 [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
+# Additional Resources to [!UICONTROL Cloud Manager]{#additional-resources-to-cloud-manager}
 
-## 소개 {#introduction}
+먼저 Adobe Managed Services 고객 성공 엔지니어 (CSE) 에게 문의하여 클라우드 관리자와 관련된 지원을 받아야 합니다.
+CSE 에서는 문제가 발생할 수 있는지 또는 고객 지원 센터를 사용하여 지원 티켓을 만들어야 할지 여부를 조언합니다.
+[엔터프라이즈 지원에](https://helpx.adobe.com/contact/enterprise-support.ec.html) 액세스하여 지원 티켓을 만들 수 있습니다. 고객 지원에서 지원 티켓을 만드는 방법에 대한 자세한 내용은 AEM 지원 포털 액세스를 참조하십시오.
 
-이 섹션에서는 Adobe Managed Cloud 서비스의 일부인 [!UICONTROL Cloud Manager]추가 유용한 리소스를 집중적으로 다룹니다.
-
-## Experience League {#experience-league-resource}
-
-[Adobe Experience League](https://expleague.azureedge.net/labs/L722/index.html) 를 통해 랩 개요 및 클라우드 관리자를 위한 통합 자습서를 시작합니다.
-
-## 웨비나 시리즈 {#webinar-series}
-
-[Adobe 포럼을 따라](https://forums.adobe.com/message/11061595) 클라우드 관리자를 위한 추가 학습 경로를 웨비나 시리즈로 가져옵니다.
-
-## 데모 비디오 시리즈 {#demo-videos}
-
-실패 및 [성공 시나리오 모두에서 Cloud Manager의 CI/CD 파이프라인을 탐색, 설정 및 실행하는 비디오 시리즈가 포함된 AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cloud-manager-cicd-pipeline-feature-video-use.html)
-용 클라우드 관리자에서 CI/CD 파이프라인을 사용하는 방법에 대해 알아보십시오.
