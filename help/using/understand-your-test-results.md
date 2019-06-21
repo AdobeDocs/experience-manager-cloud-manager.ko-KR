@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: 83299 ED 8-4 B 7 A -4 B 1 C-BD 56-1 BFC 7 E 7318 D 4
 translation-type: tm+mt
-source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
+source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
 
 ---
 
@@ -33,6 +33,10 @@ source-git-commit: 4c1c6786db9b8972f9315bd2f12fc1752881492f
 * **중요** - 게이트가 바로 파이프라인의 실패를 초래하는 문제입니다.
 * **중요** - 게이트가 일시 중지 상태를 입력하는 원인이 되는 문제입니다. 배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자는 문제를 무시하거나, 파이프라인이 실패하거나, 문제가 있는 경우 파이프라인이 실패하는 문제를 해결할 수 있습니다.
 * **정보** - 이러한 문제는 게이트에 의해 식별된 문제이며, 단지 정보용으로만 제공되지만 파이프라인 실행에 영향을 주지 않습니다.
+
+>[!NOTE]
+>
+>코드 품질 전용 파이프라인에서는 코드 품질 테스트 단계가 파이프라인의 마지막 단계가 되므로 코드 품질 테스트 게이트의 중요한 오류를 무시할 수 없습니다.
 
 ## Code Quality Testing {#code-quality-testing}
 
