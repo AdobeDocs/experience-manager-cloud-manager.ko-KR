@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: 83299 ED 8-4 B 7 A -4 B 1 C-BD 56-1 BFC 7 E 7318 D 4
 translation-type: tm+mt
-source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
+source-git-commit: e8db535b09f0b273de2d3908a85176f38d307c80
 
 ---
 
@@ -57,7 +57,7 @@ source-git-commit: ea5bf33dc67c9ce174801f6d905abfc4a21886a2
 >
 >Refer to [Metric Definitions](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) for more detailed definitions.
 
-You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/code-quality-rules.xlsx)
+You can download the list of rules here [code-quality-rules.xlsx](/help/using/assets/CodeQuality-Rules-new.xlsx)
 
 >[!NOTE]
 >
