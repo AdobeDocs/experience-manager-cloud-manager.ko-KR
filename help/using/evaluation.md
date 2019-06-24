@@ -8,7 +8,7 @@ contentOwner: Jsyal
 products: sg_ Experiencemanager/Cloudmanager
 discoiquuid: Ebcc 91 a 5-BE 9 E -4684-8146-D 88 F 4013 D 4 D 1
 translation-type: tm+mt
-source-git-commit: 2fda16bb4826171c993ec07c7ff3e38d1675b9f5
+source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
 
 ---
 
@@ -33,15 +33,22 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 아래 절차에 따라 평가기를 실행합니다.
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector. 패턴 탐지는 모든 환경에서 실행할 수 있습니다. 하지만, 감지 비율을 늘리고 비즈니스 중요한 인스턴스에 대한 느린 속도를 방지하기 위해 클라우드 관리자는 작성자 인스턴스의 스테이징 환경에서 이를 실행합니다.
+1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
-![](assets/Run-Evaluation.png)
+   >[!NOTE]
+   >패턴 탐지는 모든 환경에서 실행할 수 있습니다. 하지만, 감지 비율을 늘리고 비즈니스 중요한 인스턴스에 대한 느린 속도를 방지하기 위해 클라우드 관리자는 작성자 인스턴스의 스테이징 환경에서 이를 실행합니다.
+
+   ![](assets/Run-Evaluation.png)
 
 1. 마법사가 작업 상태를 알려줍니다. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-Once the report is generated, you can select [!UICONTROL Download] to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
 
-![](assets/Evaluation-1.png)
+   ![](assets/Evaluation-1.png)
+
+   추가적으로, 상태 업데이트로 업데이트된 펄스알림을 볼 수 있습니다.
+
+   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
 >The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
