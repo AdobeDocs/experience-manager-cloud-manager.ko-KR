@@ -8,14 +8,15 @@ contentOwner: Jsyal
 products: sg_ Experiencemanager/Cloudmanager
 discoiquuid: Ebcc 91 a 5-BE 9 E -4684-8146-D 88 F 4013 D 4 D 1
 translation-type: tm+mt
-source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
+source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
 ---
 
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. 이 단계에서는 마법사에서 바로 액세스할 수 있는 패턴 감지기를 사용하여 업그레이드 복잡성을 평가할 수 있습니다. 이 단계가 끝나면 평가 보고서에 액세스할 수 있습니다.
+The first phase in the Product Update wizard is **[!UICONTROL Evaluation]** phase.
+마법사에서 바로 패턴 감지기를 이용하여 업그레이드 복잡성을 평가할 수 있습니다. 이 단계가 끝나면 평가 보고서에 액세스할 수 있습니다.
 
 생성된 보고서를 사용하면 다음과 같은 패턴을 감지함으로써 업그레이드 인스턴스의 작성자 인스턴스를 확인할 수 있습니다.
 
@@ -30,9 +31,9 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 ## Running the Evaluator {#running-evaluator}
 
-아래 절차에 따라 평가기를 실행합니다.
+평가 보고서를 생성하려면 아래 단계를 따르십시오.
 
-1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. **[!UICONTROL Run Evaluation]** 을 클릭합니다.
 
    >[!NOTE]
    >패턴 탐지는 모든 환경에서 실행할 수 있습니다. 하지만, 감지 비율을 늘리고 비즈니스 중요한 인스턴스에 대한 느린 속도를 방지하기 위해 클라우드 관리자는 작성자 인스턴스의 스테이징 환경에서 이를 실행합니다.
@@ -41,13 +42,10 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 1. 마법사가 작업 상태를 알려줍니다. You will notice **In progress** or **completed** as applicable when the evaluation report is being generated.
 
-   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy of the evaluation report.
+   Once the report is generated, you can click on **[!UICONTROL Download report]** to save a copy.
 
    ![](assets/Evaluation-1.png)
 
-   추가적으로, 상태 업데이트로 업데이트된 펄스알림을 볼 수 있습니다.
-
-   ![](assets/Evaluation-pulse-notification.png)
 
 >[!NOTE]
->The other four phases succeeding **Evaluation** namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon and are not available in the current release.
+>The current release of Product Update wizard in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
