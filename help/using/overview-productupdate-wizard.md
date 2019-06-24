@@ -8,19 +8,25 @@ contentOwner: Jsyal
 products: sg_ Experiencemanager/Cloudmanager
 discoiquuid: Ebcc 91 a 5-BE 9 E -4684-8146-D 88 F 4013 D 4 D 1
 translation-type: tm+mt
-source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
+source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
 
 ---
 
 
 # 소개 {#introduction}
 
-제품 업데이트 마법사는 최신 Adobe Experience Manager (AEM) 6.5로 업그레이드하는 클라우드 관리자 고객을 위한 단계별 단계별 경험입니다. 엔드 투 엔드 프로세스를 간소화할 수 있으므로 클라우드 관리자의 CI/CD 프레임워크 및 내장된 자동 테스트 기능을 사용할 때 AEM의 모범 사례를 준수할 수 있습니다.
+제품 업데이트 마법사는 최신 Adobe Experience Manager (AEM) 6.5로 업그레이드하는 클라우드 관리자 고객을 위한 단계별 단계별 경험입니다. 엔드 투 엔드 프로세스를 간소화하므로 클라우드 관리자의 CI/CD 프레임워크와 내장된 자동 테스트를 통해 AEM 모범 사례를 준수할 수 있습니다.
 
-이 마법사에는 평가, 수정, 실행, 유효성 검사 및 완성을 포함한 AEM 제품 업데이트 동안 사용자가 안내하는 다섯 단계가 포함되어 있습니다.
+마법사에는 AEM 제품 업데이트 중에 사용자를 안내하는 5 단계가 포함됩니다. 5 단계는 다음과 같습니다.
+
+* 평가
+* 교정
+* 실행
+* 유효성 확인
+* 완료
 
 >[!NOTE]
->The current release of product update feature in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
+>The current release of Product Update feature in Cloud Manager supports the **Evaluation** phase only. The other four phases namely **Remediation**, **Execution**, **Validation**, and **Completion** are coming soon.
 
 
 ## Using Product Update Wizard {#using-product-update-wizard}
@@ -30,8 +36,11 @@ source-git-commit: 47331787d45fe68144cb90c4b907560fe0079b3c
 
 1. 새로운 버전의 AEM 6.5가 사용 가능하다고 알리는 클라우드 관리자를 통해 Pulse Notification를 받게 됩니다.
 
-   ![](assets/screen_shot_2018-06-04at120643pm.png)
+1. An **[!UICONTROL AEM 6.5 Update]** card displays on the overview screen of [!UICONTROL Cloud Manager]. 이 카드는 현재 사용 중인 업데이트 프로세스의 단계를 추적하고 다음 단계를 수행하는 방법을 알려줍니다. Select **[!UICONTROL Start Update]** to start the update wizard.
 
-1. You will see an AEM update card on the overview screen of [!UICONTROL Cloud Manager]. 이 카드는 현재 사용 중인 업데이트 프로세스의 단계를 추적하고 다음 단계를 수행하는 방법을 알려줍니다. Select **Start update** to navigate to the update wizard.
+   ![](assets/Start-Update.png)
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+### 다음 단계 {#next-steps}
+
+Once you click the **[!UICONTROL Start Update]** from the **[!UICONTROL AEM 6.5 Update]** card, the **Evaulation** phase starts.
+Navigate to the [Evaluation Phase](evaluation.md) to learn more.
