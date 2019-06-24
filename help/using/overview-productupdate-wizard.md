@@ -8,7 +8,7 @@ contentOwner: Jsyal
 products: sg_ Experiencemanager/Cloudmanager
 discoiquuid: Ebcc 91 a 5-BE 9 E -4684-8146-D 88 F 4013 D 4 D 1
 translation-type: tm+mt
-source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
+source-git-commit: 7769911253c149f4b1f7d9dec5d94888ccdbcb59
 
 ---
 
@@ -37,4 +37,4 @@ source-git-commit: 9e33b90818c686f0b7aacaf0955c3f2eba05488f
 
    ![](assets/Start-Update.png)
 
-The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process, as seen in the [Evaluation Phase](evaluation.md).
+   The wizard now displays the first phase of **[!UICONTROL AEM 6.5 Update]** process as seen in the [Evaluation Phase](evaluation.md).
