@@ -8,21 +8,20 @@ contentOwner: Jsyal
 products: sg_ Experiencemanager/Cloudmanager
 discoiquuid: Ebcc 91 a 5-BE 9 E -4684-8146-D 88 F 4013 D 4 D 1
 translation-type: tm+mt
-source-git-commit: 2ac4a59f1af46cfb1cae8cda3c24e217620cec70
+source-git-commit: 9a1af88238a232c64d9f0229059c5001f314c736
 
 ---
 
 
 # Evaluation Phase {#evaluation}
 
-Once you click **[!UICONTROL Start Update]**, the first phase in Product Update Wizard is the Evaluation phase. 이 단계에서는 마법사에서 바로 액세스할 수 있는 패턴 감지기를 사용하여 업그레이드 복잡성을 평가할 수 있습니다. 이 단계가 끝나면 평가 보고서에 액세스할 수 있습니다.
+Once you click **[!UICONTROL Start Update]**, the first phase in Product Update wizard is the **[!UICONTROL Evaluation]** phase. 이 단계에서는 마법사에서 바로 액세스할 수 있는 패턴 감지기를 사용하여 업그레이드 복잡성을 평가할 수 있습니다. 이 단계가 끝나면 평가 보고서에 액세스할 수 있습니다.
 
 생성된 보고서를 사용하면 다음과 같은 패턴을 감지함으로써 업그레이드 인스턴스의 작성자 인스턴스를 확인할 수 있습니다.
 
 * 특정 규칙이 위반되며 업그레이드가 영향을 받거나 덮어쓰는 영역에서 수행됩니다.
 
 * AEM 6. x 기능 또는 API가 새로운 AEM에서 역호환되지 않으며 업그레이드 후 잠재적으로 중단할 수 있는 API를 사용합니다.
-
 
 이는 AEM (Adobe Experience Manager) 6.5로 업그레이드하기 위한 개발 노력에 대한 평가 역할을 합니다.
 
@@ -33,7 +32,7 @@ Once you click **[!UICONTROL Start Update]**, the first phase in Product Update 
 
 아래 절차에 따라 평가기를 실행합니다.
 
-1. Select **[!UICONTROL Run Evaluation]** to run the pattern detector.
+1. Click on **[!UICONTROL Run Evaluation]** to run the pattern detector.
 
    >[!NOTE]
    >패턴 탐지는 모든 환경에서 실행할 수 있습니다. 하지만, 감지 비율을 늘리고 비즈니스 중요한 인스턴스에 대한 느린 속도를 방지하기 위해 클라우드 관리자는 작성자 인스턴스의 스테이징 환경에서 이를 실행합니다.
