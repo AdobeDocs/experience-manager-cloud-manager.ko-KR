@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: D 2338 C 74-3278-49 E 6-A 186-6 EF 62362509 F
 translation-type: tm+mt
-source-git-commit: f76b8e6a036ab920f11fb913d3ad29818f1e153f
+source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 ---
 
@@ -617,6 +617,27 @@ AEM 콘텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 **** 이후: 버전 2019.6.0
 
 For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. 이러한 세그먼트가 들어 있는 경로 아래에 다른 유형의 콘텐트를 배치하면 관리 및 비관리 사용자 간에 의도하지 않게 달라지는 애플리케이션 동작이 발생합니다.
+
+A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. 이를 해결하려면 거슬리는 노드의 이름을 규격 이름으로 변경해야 합니다. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+
+#### Non Compliant Code {#non-compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    + config [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
+
+#### Compliant Code {#compliant-code-config-install}
+
+```
++ cq:editConfig [cq:EditConfig]
+  + cq:inplaceEditing [cq:InplaceEditConfig]
+    ./configPath = inplaceEditingConfig (String)
+    + inplaceEditingConfig [nt:unstructured]
+      + rtePlugins [nt:unstructured]
+```
 
 ### Packages Should Not Overlap {#oakpal-no-overlap}
 
