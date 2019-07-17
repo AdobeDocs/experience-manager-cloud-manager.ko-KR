@@ -4,17 +4,17 @@ seo-title: 2019.7.0 용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+source-git-commit: 97a2b172d4513161fa729d9f3693569867c6ed3e
 
 ---
 
 # Release Notes for 2019.7.0 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.7.0 릴리스에는 새로운 코드 품질 규칙 및 새 제품 업데이트 마법사가 추가되었습니다. 자세한 내용은 아래 섹션을 참조하십시오.
+[!UICONTROL Cloud Manager] 2019.7.0 릴리스에서는 Experience Cloud 알림과 개선 사항에 대한 업데이트가 버그 수정으로 추가됩니다. 자세한 내용은 아래 섹션을 참조하십시오.
 
 ## Release Date {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2019.7.0 is July 18, 2019 .
+The Release Date for [!UICONTROL Cloud Manager] Version 2019.7.0 is July 18, 2019.
 
 ## 새로운 기능 {#whats-new}
 
