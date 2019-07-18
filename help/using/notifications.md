@@ -9,14 +9,14 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: 8 EF 574 C 8-47 D 9-404 B -8 E 9 C -9 C 6716 C 1 F 49 A
 translation-type: tm+mt
-source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
+source-git-commit: 1d4bb0b24cdcd6dc0ed9db58f1e14b6714bb96d6
 
 ---
 
 
 # 알림 {#notifications}
 
-[!UICONTROL Cloud Manager] 사용자가 제작 배포 시작 시, 라이브 **승인** 및 **예약된** 단계에 도달할 때 알림을 받을 수 있습니다. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
+[!UICONTROL Cloud Manager] 프로덕션 배포 시작 시, 그리고 실시간 **승인** 및 **예약된** 단계가 도달할 때뿐만 아니라 프로덕션 배포 시작 시 사용자가 알림을 받을 수 있도록 합니다. These notifications are sent through the Adobe [!UICONTROL Experience Cloud] Notification system.
 
 >[!NOTE]
 >
