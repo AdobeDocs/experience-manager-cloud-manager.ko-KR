@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: Getting-Started
 discoiquuid: 76 C 1 A 8 E 4-D 66 F -4 A 3 B -8 C 0 C-B 80 C 9 E 17700 E
 translation-type: tm+mt
-source-git-commit: 81f4e0b3b31a8be1f0620b70442b0268159e4ec0
+source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 ---
 
@@ -270,6 +270,43 @@ Last Modified Date: 2018-10-08T09:20:10.106-0400
 >[!NOTE]
 >
 >이 방법으로 시스템 패키지를 설치해도 Adobe Experience **Manager를 실행하는 데 사용되는 런타임 환경에서는** 이 패키지를 설치하지 않습니다. AEM 환경에 시스템 패키지가 설치되어 있으면 고객 성공 엔지니어 (CSE) 에 문의하십시오.
+
+## 컨텐츠 패키지 건너뛰기 {#skipping-content-packages}
+
+클라우드 관리자에서 빌드하면 컨텐츠 패키지가 수에 관계없이 생성될 수 있습니다.
+다양한 이유로, 컨텐츠 A를 배포하지는 않지만 컨텐츠 A를 배포하는 것이 좋습니다. 이것은 예를 들어 테스트용으로만 사용되는 컨텐츠 패키지를 작성할 때 또는 빌드 프로세스의 다른 단계, 즉 다른 패키지의 하위 패키지로서 패키지화될 때 유용합니다.
+
+이러한 시나리오를 수용하기 위해 클라우드 관리자는 내장된 컨텐츠 패키지의 속성에서 ***Cloudmanagertarget*** 이라는 속성을 찾습니다. 이 속성이 [없음] 로 설정되어 있으면 패키지를 건너뛰고 배포하지 않습니다. 이 속성을 설정하는 메커니즘은 빌드가 컨텐츠 패키지를 생성하는 방식에 따라 달라집니다. 예를 들어 Filevault-maven-plugin를 사용하면 다음과 같이 플러그인을 구성합니다.
+
+```xml
+        <plugin>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>filevault-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
+
+content-package-maven-plugin는 다음과 유사합니다.
+
+```xml
+        <plugin>
+            <groupId>com.day.jcr.vault</groupId>
+            <artifactId>content-package-maven-plugin</artifactId>
+            <extensions>true</extensions>
+            <configuration>
+                <properties>
+                    <cloudManagerTarget>none</cloudManagerTarget>
+                </properties>
+        <!-- other configuration -->
+            </configuration>
+        </plugin>
+```
 
 ## 모범 사례를 기반으로 코드 개발 {#develop-your-code-based-on-best-practices}
 
