@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: Getting-Started
 discoiquuid: 53807 EA 6-9464-429 D -9322-85 C 9 F 405 DFF 6
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 9c0df236c1e800802d62dea09996bb8e1e7033f7
 
 ---
 
@@ -80,5 +80,4 @@ To <url>
 
 >[!NOTE]
 >
->일반적인 Git 명령을 보려면 [Git 요약서를](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)참조하십시오.
-
+>일반적인 Git 명령을 보려면 [Git 요약서를](https://github.github.com/training-kit/downloads/github-git-cheat-sheet)참조하십시오.
