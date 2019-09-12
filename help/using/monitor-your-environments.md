@@ -4,7 +4,7 @@ seo-title: 환경 모니터링
 description: 'null'
 seo-description: 환경 내에서 개별 인스턴스를 관찰하고 각 인스턴스에 대한 다양한 지표를 추적하여 클라우드 관리자에서 시스템 모니터링에 대해 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -61,12 +61,12 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 개별 그래프는 시간 경과에 따른 데이터의 상태와 그래프를 임계값과 함께 보여줍니다. 여러 인스턴스가 표시되는 경우 각 인스턴스의 데이터는 별도의 시리즈에 있게 됩니다.
 
-![](assets/System-Monitoring3.png)
+![](assets/Monitoring_Graphs1.png)
 
 범례에서 시리즈를 클릭하면 개별 시리즈를 그래프에 숨길 수 있습니다.
 예를 들어 경고 임계값 시리즈를 클릭하면 위험 임계값만 표시됩니다.
 
-![](assets/System_Monitoring4.png)
+![](assets/Monitoring_Graphs2.png)
 
 ### 지표 정의 {#metric-definitions}
 
@@ -85,7 +85,7 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
 
 **저장 용량**
 
-* 디스크 공간: 호스트의 각 마운트 포인트에 대한 사용된 디스크 공간 (MB 단위) 입니다. 각 마운트 포인트에 대한 지표가 다릅니다. 최소한, &quot;/&quot; 및 &quot;/mnt&quot; 에 대한 지표가 표시되지만, 특정 인스턴스 구성에 따라 추가 마운트 포인트 지표가 사용할 수 있습니다.
+* 디스크 공간: 호스트의 각 마운트 포인트에 대한 사용된 디스크 공간 (MB 단위) 입니다. 각 마운트 포인트에 대한 지표가 다릅니다. 최소한, "/" 및 "/mnt" 에 대한 지표가 표시되지만, 특정 인스턴스 구성에 따라 추가 마운트 포인트 지표가 사용할 수 있습니다.
 * 폴더 크기: AEM 세그먼트 스토어: AEM 세그먼트 스토어에 대한 디스크 공간 (GB 단위) 입니다.
 
 **애플리케이션**
