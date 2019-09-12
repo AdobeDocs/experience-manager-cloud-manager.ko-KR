@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: 832 A 4647-9 B 83-4 A 9 D-B 373-30 FE 16092 B 15
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
@@ -41,25 +41,27 @@ source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
    >
    >또한 테스트 기준에 대해 로그를 보거나 결과를 검토하여 다양한 배포 프로세스의 단계를 검토할 수 있습니다.
 
-   **스테이지 배포에는 다음**단계가 포함됩니다.
+   **스테이지 배포에는 다음**&#x200B;단계가 포함됩니다.
 
    * 빌드 및 유닛 테스트
    * 코드 스캔
    * 스테이지로 배포
-   ![](assets/Stage_Testing.png)
+   ![](assets/Stage_Deployment1.png)
 
-   **스테이지 테스트에는 다음**단계가 포함됩니다.
+   **스테이지 테스트에는 다음**&#x200B;단계가 포함됩니다.
 
    * 보안 테스트
    * 성능 테스트
-   ![](assets/Stage_Deployment.png)
+   ![](assets/Stage_Testing1.png)
 
-   **프로덕션 배포에는 다음**단계가 포함됩니다.
+   **프로덕션 배포에는 다음**&#x200B;단계가 포함됩니다.
 
    * **승인 신청 (활성화된** 경우)
    * **프로덕션 배포** 예약 (활성화된 경우)
    * **CSE 지원** (활성화된 경우)
    * **프로덕션에 배포**
+   ![](assets/Prod_Deployment1.png)
+
    >[!NOTE]
    >
    >The **schedule production deployment** is enabled while configuring the pipeline.
