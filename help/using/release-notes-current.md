@@ -1,33 +1,41 @@
 ---
-title: 2019.8.0 릴리스 노트
-seo-title: 2019.8.0 용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2019.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-seo-description: AEM Cloud Manager 릴리스 2019.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+title: 2019.9.0 릴리스 노트
+seo-title: 2019.9.0 용 AEM Cloud Manager 릴리스 노트
+description: Cloud Manager 릴리스 2019.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+seo-description: AEM Cloud Manager 릴리스 2019.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
 
 ---
 
-# 2019.8.0 릴리스 노트 {#release-notes-for}
+# 2019.9.0 릴리스 노트 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.8.0 릴리스에서는 선택적 빌드 컨텐츠 패키지에 대한 지원이 추가되고, 빌드 성능이 개선되었으며, 사소한 버그가 수정됩니다.
+[!UICONTROL Cloud Manager] 2019.9.0 릴리스에서는 Sling 레퍼러 필터 상태 확인 및 모니터링 그래프에 업데이트를 추가합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-버전 2019.8.0 릴리스 [!UICONTROL Cloud Manager] 날짜는 2019 년 8 월 19 일입니다.
+버전 2019.9.0 릴리스 [!UICONTROL Cloud Manager] 날짜는 2019 년 9 월 11 일입니다.
 
 ## 새로운 기능 {#whats-new}
 
-* Adobe I/O CLI 기반의 클라우드 관리자 API에 대한 새로운 명령줄 [인터페이스](https://github.com/adobe/aio-cli-plugin-cloudmanager)
-* 빌드에 의해 만들어진 특정 컨텐츠 패키지는 Skippable로 선언될 수 있으며 배포되지 않습니다. 자세한 내용은 ***AEM 애플리케이션*** 프로젝트 [만들기에서 콘텐츠 패키지 건너뛰기 섹션을](create-an-application-project.md) 참조하십시오.
-* 일부 불필요한 네트워크 요청이 발생하지 않도록 빌드 컨테이너의 미리 로드된 종속성 집합이 수정되었습니다.
-* 잘못 구성된 특정 프로그램에 대한 개요 페이지의 메시지가 개선되었습니다.
+* Sling 레퍼러 필터 상태 검사의 분류가 매우 중요한 기능에서 중요한 요소로 변경되었습니다.
+* HTML 라이브러리 관리자 구성 상태 검사의 분류가 매우 중요한 기능에서 중요한 요소로 변경되었습니다.
+* 이제 모니터링 그래프를 다운로드할 수 있습니다. 자세한 내용은 환경 [모니터링을](monitor-your-environments.md) 참조하십시오.
+* 프로그램에 프로덕션 AEM 환경이 없는 경우 랜딩 페이지에서 프로그램 카드를 클릭하면 클라우드 관리자 개요 페이지로 이동하여 오류 대화 상자가 표시되지 않습니다.
+* 개요 페이지의 파이프라인 설정 카드가 **프로덕션 파이프라인 설정으로 중단되었습니다**.
+* 중요한 실패 동작 라디오 단추가 코드 품질만 파이프라인에서 제거되었습니다.
+* 이제 활동 페이지에는 각 실행에 대한 파이프라인의 이름이 표시됩니다.
+* 이제 실행 페이지에 파이프라인의 이름이 표시됩니다.
+* 이제 코드 품질 요약 대화 상자에 각 등급에 대한 설명이 표시됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* SLA 보고서에 액세스할 때 기본 년은 2019 년이 아닌 2018 이었습니다.
-* 긴 환경 이름의 경우 보고서 화면의 환경 선택기에 크기가 제대로 표시되지 않았습니다.
-* sling rewriter 구성 요소가 사용될 때 ***configandinstallshouldonlycontainosginodes*** 코드 품질 규칙이 잘못된 양을 생성했습니다.
-* ***Configandinstallshouldonlycontainosginodes*** 코드 품질 규칙은 특수한 경로 구조에 대한 잘못된 Positives를 만들었습니다.
-* 에셋 전용 고객은 지속적으로 AEM 환경으로 이동할 수 없었습니다.
-* [!UICONTROL Create a Branch and Project] 대화 상자는 서로 다른 브라우저에서 다르게 렌더링됩니다.
+* 일부 사용자는 승인을 기다리는 동안 실행 세부 사항을 볼 수 없었습니다.
+* 개요 페이지에서 오른쪽 여백이 일관되지 않았습니다.
+* 대형 프로젝트에서 빌드 컨테이너의 메모리가 부족할 수 있습니다.
+* 특정 상황에서, Bannedpaths Oakpal 규칙이 /libs 아래에 설치된 컨텐츠를 식별하지 않았습니다.
+* 품질 게이트가 거부되면 대화 상자 제목이 "부분적으로 통과됨" 로 표시되었습니다.
+
+## 알려진 문제 {#known-issues}
+
+Safari 에서는 모니터링 그래프를 다운로드할 수 없습니다.
