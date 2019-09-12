@@ -4,17 +4,17 @@ seo-title: 2019.9.0 용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
 # 2019.9.0 릴리스 노트 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2019.9.0 릴리스에서는 Sling 레퍼러 필터 상태 확인 및 모니터링 그래프에 업데이트를 추가합니다.
+[!UICONTROL Cloud Manager] 2019.9.0 릴리스에서는 보안 테스트 기준을 업데이트하고, 다운로드 가능한 모니터링 그래프를 추가하고, 일부 고객이 보고한 유용성 문제를 수정했습니다.
 
 ## 릴리스 날짜 {#release-date}
 
-버전 2019.9.0 릴리스 [!UICONTROL Cloud Manager] 날짜는 2019 년 9 월 11 일입니다.
+버전 2019.9.0 릴리스 [!UICONTROL Cloud Manager] 날짜는 2019 년 9 월 12 일입니다.
 
 ## 새로운 기능 {#whats-new}
 
@@ -38,4 +38,4 @@ source-git-commit: 862501f28f5104d0829a6d2d2ad5f5ce9f8ba341
 
 ## 알려진 문제 {#known-issues}
 
-Safari 에서는 모니터링 그래프를 다운로드할 수 없습니다.
+* Safari 에서는 모니터링 그래프를 다운로드할 수 없습니다.
