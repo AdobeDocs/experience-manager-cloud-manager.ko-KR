@@ -9,7 +9,7 @@ products: sg_ Experiencemanager/Cloudmanager
 topic-tags: using
 discoiquuid: 83299 ED 8-4 B 7 A -4 B 1 C-BD 56-1 BFC 7 E 7318 D 4
 translation-type: tm+mt
-source-git-commit: 548d18f251cf8c4c827d2208fec04cde235ce731
+source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
 
 ---
 
@@ -114,12 +114,12 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 기본 암호가 변경되었습니다. | 기본 로그인 계정 | 중요 사항 |
 | Sling Default GET Servlet는 DOS 공격으로부터 보호됩니다. | Sling Get Servlet | 중요 사항 |
 | 디스패처가 요청을 올바르게 필터링 중입니다. | CQ Dispatcher 구성 | 중요 사항 |
-| Adobe Granite HTML 라이브러리 관리자가 적절하게 구성됩니다. | CQ HTML 라이브러리 관리자 구성 | 중요 사항 |
 | Sling Java 스크립트 처리기가 적절하게 구성됩니다. | Sling Java Script Handler | 중요 사항 |
 | Sling JSP 스크립트 처리기가 적절하게 구성됩니다. | Sling JSP 스크립트 처리기 | 중요 사항 |
-| Sling 레퍼러 필터는 CSRF 공격을 방지하기 위해 구성됩니다. | Sling Referrer Filter | 중요 사항 |
 | SSL 이 올바르게 구성됨 | SSL 구성 | 중요 사항 |
 | 안전하지 않은 사용자 프로필 정책을 찾을 수 없습니다. | 사용자 프로필 기본 액세스 | 중요 사항 |
+| Sling 레퍼러 필터는 CSRF 공격을 방지하기 위해 구성됩니다. | Sling Referrer Filter | 중요 사항 |
+| Adobe Granite HTML 라이브러리 관리자가 적절하게 구성됩니다. | CQ HTML 라이브러리 관리자 구성 | 중요 사항 |
 | CRXDE 지원 번들이 비활성화됨 | CRXDE 지원 | 중요 사항 |
 | Sling davex 번들 및 서블릿이 비활성화됨 | DavEx 상태 검사 | 중요 사항 |
 | 샘플 컨텐츠가 설치되지 않았습니다. | 컨텐츠 패키지 예 | 중요 사항 |
