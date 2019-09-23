@@ -1,44 +1,44 @@
 ---
 title: 사용자 지정 코드 품질 규칙
 seo-title: 사용자 지정 코드 품질 규칙
-description: 클라우드 관리자에서 실행하는 사용자 지정 코드 품질 규칙에 대해 알려면 이 페이지를 따르십시오.
-seo-description: Adobe Experience Manager Cloud Manager에서 실행하는 사용자 지정 코드 품질 규칙에 대해 알려면 이 페이지를 따르십시오.
-uuid: A 7 Feb 465-1982-46 BE -9 E 57-E 67 B 59849579
-contentOwner: Jsyal
-products: sg_ Experiencemanager/Cloudmanager
+description: Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 알려면 이 페이지를 따르십시오.
+seo-description: Adobe Experience Manager Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 알려면 이 페이지를 따르십시오.
+uuid: a7feb465-1982-46be-9e57-e67b59849579
+contentOwner: jsyal
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
-discoiquuid: D 2338 C 74-3278-49 E 6-A 186-6 EF 62362509 F
+discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
 source-git-commit: 4881ff8be97451aa90c3430259ce13faef182e4f
 
 ---
 
 
-# Custom Code Quality Rules {#custom-code-quality-rules}
+# 사용자 지정 코드 품질 규칙 {#custom-code-quality-rules}
 
-이 페이지에서는 AEM Engineering의 모범 사례를 기반으로 만들어진 클라우드 관리자가 실행하는 사용자 지정 코드 품질 규칙을 설명합니다.
+이 페이지에서는 AEM Engineering의 우수 사례를 기반으로 만들어진 Cloud Manager가 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다.
 
 >[!NOTE]
 >
->여기에 제공된 코드 샘플은 예시용으로만 제공됩니다.
+>여기에 제공된 코드 샘플은 실례만을 위한 것입니다.
 
-## SonarQube Rules {#sonarqube-rules}
+## SonarQube 규칙 {#sonarqube-rules}
 
-다음 섹션에서는 Sonarqube 규칙을 강조 표시합니다.
+다음 섹션에서는 SonarQube 규칙에 대해 설명합니다.
 
-### Do not use potentially dangerous functions {#do-not-use-potentially-dangerous-functions}
+### 위험한 기능 사용 안 함 {#do-not-use-potentially-dangerous-functions}
 
-**** 키: Cqrules: CWE -676
+**키**:CQRules:CWE-676
 
-**** 유형: 취약점
+**유형**:취약점
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-***thread. stop ()*** 및 ***thread. interrupt ()*** 메서드는 어려운 문제 및 경우에 따라 보안 취약점을 생성할 수 있습니다. 또한 사용량을 철저하게 모니터링하고 확인해야 합니다. 일반적으로 메시지 전달은 유사한 목표를 달성하는 더 안전한 방법입니다.
+Thread ***.stop()*** 및 ***Thread.interrupt()*** 메서드는 재현하기 어려운 문제를 만들고 경우에 따라 보안 취약점을 생성할 수 있습니다. 사용량은 엄격하게 모니터링하고 검증되어야 합니다. 일반적으로 메시지 전달은 유사한 목표를 달성하는 보다 안전한 방법입니다.
 
-#### Non-Compliant Code {#non-compliant-code}
+#### 비호환 코드 {#non-compliant-code}
 
 ```java
 public class DontDoThis implements Runnable {
@@ -61,7 +61,7 @@ public class DontDoThis implements Runnable {
 }
 ```
 
-#### Compliant Code {#compliant-code}
+#### 호환 코드 {#compliant-code}
 
 ```java
 public class DoThis implements Runnable {
@@ -85,19 +85,19 @@ public class DoThis implements Runnable {
 }
 ```
 
-### Do not use format strings which may be externally controlled {#do-not-use-format-strings-which-may-be-externally-controlled}
+### 외부에서 제어할 수 있는 형식 문자열을 사용하지 마십시오 {#do-not-use-format-strings-which-may-be-externally-controlled}
 
-**** 키: Cqrules: CWE -134
+**키**:CQRules:CWE-134
 
-**** 유형: 취약점
+**유형**:취약점
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-외부 소스 (예를 들어, 요청 매개 변수 또는 사용자 생성 컨텐츠) 의 형식 문자열을 사용하면 서비스 거부 공격에 애플리케이션을 노출시킬 수 있습니다. 형식 문자열이 외부에서 제어되는 경우가 있지만 신뢰할 수 있는 소스에서만 허용되는 경우도 있습니다.
+외부 소스의 형식 문자열(요청 매개 변수 또는 사용자 생성 컨텐츠)을 사용하면 애플리케이션이 서비스 거부 공격에 노출될 수 있습니다. 형식 문자열이 외부에서 제어될 수 있지만 신뢰할 수 있는 소스에서만 허용되는 경우가 있습니다.
 
-#### Non-Compliant Code {#non-compliant-code-1}
+#### 비호환 코드 {#non-compliant-code-1}
 
 ```java
 protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse response) {
@@ -107,19 +107,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP requests should always have socket and connect timeouts {#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP 요청에는 항상 소켓 및 연결 시간 초과가 있어야 합니다. {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-**** 키: Cqrules: Connectiontimeoutmechanism
+**키**:CQRules:ConnectionTimeoutMechanism
 
-**** 유형: 버그
+**유형**:버그
 
-**심각도**: 중요 사항
+**심각도**:중요
 
-**** 이후: 버전 2018.6.0
+**이후**:버전 2018.6.0
 
-AEM 애플리케이션에서 HTTP 요청을 실행할 때는 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 해야 합니다. Java 기본 HTTP 클라이언트 (java.net.Ht tpurlconnection) 와 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 동작은 시간 초과되지 않으므로 시간 초과를 명시적으로 설정해야 합니다. 또한 가장 좋은 방법은 이러한 시간 초과를 60 초 이하로 설정하는 것입니다.
+AEM 애플리케이션 내에서 HTTP 요청을 실행하는 경우 불필요한 스레드 사용을 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. 안타깝게도 Java의 기본 HTTP 클라이언트(java.net.HttpUrlConnection)와 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 동작은 시간 초과를 방지하므로 시간 초과를 명시적으로 설정해야 합니다. 또한 이러한 시간 제한은 60초를 초과할 수 없습니다.
 
-#### Non-Compliant Code {#non-compliant-code-2}
+#### 비호환 코드 {#non-compliant-code-2}
 
 ```java
 @Reference
@@ -148,7 +148,7 @@ public void dontDoThisEither() {
 }
 ```
 
-#### Compliant Code {#compliant-code-1}
+#### 호환 코드 {#compliant-code-1}
 
 ```java
 @Reference
@@ -185,23 +185,23 @@ public void orDoThis() {
 }
 ```
 
-### Product APIs annotated with @ProviderType should not be implemented or extended by customers {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### @ProviderType으로 주석을 단 제품 API는 고객이 구현하거나 확장할 수 없습니다. {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
-**** 키: cqbp -84, cqbp -84-dependencies
+**키**:CQBP-84, CQBP-84-dependencies
 
-**** 유형: 버그
+**유형**:버그
 
-**심각도**: 중요 사항
+**심각도**:중요
 
-**** 이후: 버전 2018.7.0
+**이후**:버전 2018.7.0
 
-AEM API 에는 사용자 지정 코드별로 구현되지는 않지만, Java 인터페이스 및 클래스가 포함되어 있습니다. For example, the interface *com.day.cq.wcm.api.Page* is designed to be implemented by ***AEM only***.
+AEM API에는 사용자 지정 코드로 사용되어야 하지만 구현되지 않은 Java 인터페이스와 클래스가 포함되어 있습니다. 예를 들어 com.day.cq.wcm.api. *Page* 인터페이스는 AEM에서만 구현되도록 ***디자인되었습니다***.
 
-이러한 인터페이스에 새 메서드가 추가되면 이러한 추가 메서드는 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하면 역으로 호환되는 것으로 간주됩니다. However, if custom code ***implements*** one of these interfaces, that custom code has introduced a backwards-compatibility risk for the customer.
+이러한 인터페이스에 새 메서드가 추가되어도 이러한 추가 메서드는 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으며, 따라서 이러한 인터페이스에 새 메서드를 추가하는 것은 역호환으로 간주됩니다. 그러나 사용자 지정 코드가 이러한 인터페이스 중 하나를 ***구현하는*** 경우 해당 사용자 지정 코드는 고객에게 이전 버전과의 호환성 위험을 야기했습니다.
 
-Interfaces (and classes) which are only intended to be implemented by AEM are annotated with *org.osgi.annotation.versioning.ProviderType* (or, in some cases, a similar legacy annotation *aQute.bnd.annotation.ProviderType*). 이 규칙은 사용자 지정 코드에 의해 이러한 인터페이스가 구현된 (또는 클래스가 확장됨) 사례를 식별합니다.
+AEM에서 구현하기 위한 인터페이스(및 클래스)에 *org.osgi.annotation.versioning.ProviderType* (또는 유사한 기존 주석 *Qute.bnd.annotation.ProviderType*)이 주석을 달 수 있습니다. 이 규칙은 인터페이스가 사용자 지정 코드로 구현되거나 클래스가 확장되는 경우를 식별합니다.
 
-#### Non-Compliant Code {#non-compliant-code-3}
+#### 비호환 코드 {#non-compliant-code-3}
 
 ```java
 import com.day.cq.wcm.api.Page;
@@ -211,21 +211,21 @@ public class DontDoThis implements Page {
 }
 ```
 
-### ResourceResolver objects should always be closed {#resourceresolver-objects-should-always-be-closed}
+### ResourceResolver 개체는 항상 닫아야 합니다. {#resourceresolver-objects-should-always-be-closed}
 
-**** 키: Cqrules: CQBP -72
+**키**:CQRules:CQBP-72
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-Resourceresolverfactory에서 가져온 resourceresolver 개체는 시스템 리소스를 소모합니다. Resourceresolver가 더 이상 사용되지 않을 때 이러한 리소스를 회수할 수 있는 방법이 있지만 close () 메서드를 호출하여 열려 있는 resourceresolver 객체를 명시적으로 닫는 것이 더 효율적입니다.
+ResourceResolverFactory에서 가져온 ResourceResolver 개체는 시스템 리소스를 사용합니다. ResourceResolver를 더 이상 사용하지 않을 때 이러한 리소스를 다시 확보하기 위한 조치가 있지만, close() 메서드를 호출하여 열려 있는 모든 ResourceResolver 개체를 명시적으로 닫는 것이 더 효율적입니다.
 
-상대적으로 일반적인 오해는 기존 JCR 세션을 사용하여 만든 resourceresolver 개체를 명시적으로 닫거나 이렇게 하면 기본 JCR 세션이 닫히는 것입니다. 이것은 사실이 아닙니다. Resourceresolver를 여는 방식에 관계없이 더 이상 사용되지 않을 때 닫아야 합니다. Resourceresolver는 closeable 인터페이스를 구현하므로 close () 를 명시적으로 호출하는 대신 try-with-resources 구문을 사용할 수도 있습니다.
+한 가지 비교적 일반적인 오해는 기존 JCR 세션을 사용하여 만든 ResourceResolver 객체를 명시적으로 닫지 말아야 하거나 닫지 않도록 해야 하는 것입니다. ResourceResolver가 열린 방법과 관계없이 더 이상 사용하지 않을 때 닫아야 합니다. ResourceResolver는 Closeable 인터페이스를 구현하므로 명시적으로 close()를 호출하는 대신 try-with-resources 구문을 사용할 수도 있습니다.
 
-#### Non-Compliant Code {#non-compliant-code-4}
+#### 비호환 코드 {#non-compliant-code-4}
 
 ```java
 public void dontDoThis(Session session) throws Exception {
@@ -234,7 +234,7 @@ public void dontDoThis(Session session) throws Exception {
 }
 ```
 
-#### Compliant Code {#compliant-code-2}
+#### 호환 코드 {#compliant-code-2}
 
 ```java
 public void doThis(Session session) throws Exception {
@@ -256,19 +256,19 @@ public void orDoThis(Session session) throws Exception {
 }
 ```
 
-### Do not use Sling servlet paths to register servlets {#do-not-use-sling-servlet-paths-to-register-servlets}
+### Sling 서블릿 경로를 사용하여 서블릿 등록 안 함 {#do-not-use-sling-servlet-paths-to-register-servlets}
 
-**** 키: Cqrules: CQBP -75
+**키**:CQRules:CQBP-75
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-[Sling 설명서에](http://sling.apache.org/documentation/the-sling-engine/servlets.html)설명된 것처럼 경로별 바인딩은 권장되지 않습니다. 경로 바인딩 서블릿은 표준 JCR 액세스 제어를 사용할 수 없으므로 추가 보안 보안이 필요합니다. 경로 바인딩 서블릿을 사용하는 것이 아니라 저장소에서 노드를 만들고 리소스 유형별로 서블릿을 등록하는 것이 좋습니다.
+Sling 설명서에 [설명된](http://sling.apache.org/documentation/the-sling-engine/servlets.html)대로 경로별 바인딩 서블릿이 비활성화됩니다. 경로 바인딩된 서블릿은 표준 JCR 액세스 컨트롤을 사용할 수 없으므로 추가 보안 권한이 필요합니다. 경로 바인딩된 서블릿을 사용하는 대신 저장소에서 노드를 만들고 리소스 유형별로 서블릿을 등록하는 것이 좋습니다.
 
-#### Non-Compliant Code {#non-compliant-code-5}
+#### 비호환 코드 {#non-compliant-code-5}
 
 ```java
 @Component(property = {
@@ -279,19 +279,19 @@ public class DontDoThis extends SlingAllMethodsServlet {
 }
 ```
 
-### Caught Exceptions should be logged or thrown, but not both {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
+### Catch Exceptions는 기록되거나 throw되어야 하지만 둘 다 기록해서는 안 됩니다. {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-**** 키: Cqrules: cqbp -44—Catchandeitherlogorthrow
+**키**:CQRules:CQBP-44—CatchAndEitorLogOrThrow
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-일반적으로 예외는 한 번만 기록해야 합니다. 예외를 여러 번 기록하면 예외가 발생한 횟수를 명확하지 않으므로 혼란이 발생할 수 있습니다. 이로 이어지는 가장 일반적인 패턴은 catch 한 예외를 기록하고 throw 합니다.
+일반적으로 예외를 정확히 한 번만 기록해야 합니다. 예외를 여러 번 로깅하면 예외가 발생한 횟수가 불분명하므로 혼동을 일으킬 수 있습니다. 이를 유도하는 가장 일반적인 패턴은 벌목과 발견 된 예외를 발생시키는 것입니다.
 
-#### Non-Compliant Code {#non-compliant-code-6}
+#### 비호환 코드 {#non-compliant-code-6}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -304,7 +304,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### Compliant Code {#compliant-code-3}
+#### 호환 코드 {#compliant-code-3}
 
 ```java
 public void doThis() {
@@ -324,19 +324,19 @@ public void orDoThis() throws MyCustomException {
 }
 ```
 
-### Avoid having a log statement immediately followed by a throw statement {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
+### 즉시 throw 문 뒤에 로그 문이 오지 않도록 합니다. {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-**** 키: Cqrules: cqbp -44—Consecutivelylogandthrow
+**키**:CQRules:CQBP-44—ContinuedLogAndThrow
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-또 다른 일반적인 패턴은 메시지를 기록한 다음 예외를 바로 throw 하는 것입니다. 이것은 일반적으로 예외 메시지가 로그 파일에서 중복됨을 나타냅니다.
+메시지를 기록한 다음 즉시 예외를 throw하는 것이 피해야 할 또 다른 일반적인 패턴입니다. 이는 일반적으로 예외 메시지가 로그 파일에서 중복될 것임을 나타냅니다.
 
-#### Non-Compliant Code {#non-compliant-code-7}
+#### 비호환 코드 {#non-compliant-code-7}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -345,7 +345,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### Compliant Code {#compliant-code-4}
+#### 호환 코드 {#compliant-code-4}
 
 ```java
 public void doThis() throws Exception {
@@ -353,21 +353,21 @@ public void doThis() throws Exception {
 }
 ```
 
-### Avoid logging at INFO when handling GET or HEAD requests {#avoid-logging-at-info-when-handling-get-or-head-requests}
+### GET 또는 HEAD 요청을 처리할 때 INFO에서 로깅 방지 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
-**** 키: Cqrules: cqbp -44—Loginfoingetorheadrequests
+**키**:CQRules:CQBP-44—LogInfoInGetOrHeadRequests
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-일반적으로, 중요한 작업을 구분하는 데 정보 로그 수준을 사용해야 하며, 기본적으로 AEM 이 정보 수준 이상으로 기록하도록 구성되어 있습니다. GET 및 HEAD 메서드는 읽기 전용 작업일 뿐이므로 중요한 작업은 구성하지 않습니다. GET 또는 HEAD 요청에 대한 응답으로 정보 수준에서 로깅하면 상당한 로그 노이즈가 생성되므로 로그 파일에서 유용한 정보를 식별하기가 어렵습니다. GET 또는 HEAD 요청을 처리할 때 로깅은 문제가 발생한 경우 경고 또는 오류 수준에서, 더 자세한 문제 해결 정보가 유용한 경우 디버그 또는 추적 수준에서 수행해야 합니다.
+일반적으로 INFO 로그 수준을 사용하여 중요한 작업을 구분해야 하며, 기본적으로 AEM은 INFO 수준 이상으로 로깅하도록 구성되어 있습니다. GET 및 HEAD 메서드는 읽기 전용 작업이어야 하므로 중요한 작업을 구성하지 않습니다. GET 또는 HEAD 요청에 대한 응답으로 INFO 수준에서 로깅하면 상당한 로그 노이즈가 발생하므로 로그 파일에서 유용한 정보를 식별하기가 어렵습니다. GET 또는 HEAD 요청을 처리할 때 로깅은 문제가 발생한 경우 WARN 또는 ERROR 수준에서, 더 자세한 문제 해결 정보가 도움이 될 경우 DEBUG 또는 TRACE 수준에서 이루어져야 합니다.
 
 >[!CAUTION]
 >
->이것은 각 요청에 대한 액세스. log 유형 로깅에는 적용되지 않습니다.
+>각 요청에 대한 access.log-type 로깅에는 적용되지 않습니다.
 
-#### Non-Compliant Code {#non-compliant-code-8}
+#### 비호환 코드 {#non-compliant-code-8}
 
 ```java
 public void doGet() throws Exception {
@@ -375,7 +375,7 @@ public void doGet() throws Exception {
 }
 ```
 
-#### Compliant Code {#compliant-code-5}
+#### 호환 코드 {#compliant-code-5}
 
 ```java
 public void doGet() throws Exception {
@@ -383,19 +383,19 @@ public void doGet() throws Exception {
 }
 ```
 
-### Do not use Exception.getMessage() as the first parameter of a logging statement {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### Exception.getMessage()를 로깅 문의 첫 번째 매개 변수로 사용하지 마십시오. {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
-**** 키: Cqrules: cqbp -44—Exceptiongetmessageisfirstlogparam
+**키**:CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-최상의 방법으로 로그 메시지는 애플리케이션에서 예외가 발생한 위치에 대한 컨텍스트 정보를 제공해야 합니다. 또한 스택 추적을 통해 컨텍스트를 결정할 수는 있지만 일반적으로 로그 메시지는 읽고 이해하기 쉽습니다. 따라서 예외를 기록할 때에는 예외 메시지를 로그 메시지로 사용하는 것은 잘못된 관행입니다. 예외 메시지에는 잘못된 사항이 포함될 예정이지만 예외 메시지가 발생했을 때 응용 프로그램이 수행하는 작업을 기록하려면 로그 메시지를 사용해야 합니다. 예외 메시지는 여전히 기록됩니다. 메시지를 직접 지정하면 로그가 더 쉽게 이해할 수 있습니다.
+로그 메시지는 애플리케이션에서 예외가 발생한 위치에 대한 컨텍스트 정보를 제공하는 것이 좋습니다. 또한 스택 추적을 사용하여 컨텍스트를 결정할 수 있지만 일반적으로 로그 메시지를 읽고 이해하는 것이 더 쉽습니다. 따라서 예외를 기록할 때 예외 메시지를 로그 메시지로 사용하는 것은 좋지 않습니다. 예외 메시지에는 잘못된 사항이 포함되지만 로그 메시지는 예외 발생 시 애플리케이션이 어떤 작업을 수행했는지 로그 리더에게 알리는 데 사용해야 합니다. 예외 메시지는 여전히 기록됩니다.고유한 메시지를 지정하면 로그를 쉽게 이해할 수 있습니다.
 
-#### Non-Compliant Code {#non-compliant-code-9}
+#### 비호환 코드 {#non-compliant-code-9}
 
 ```java
 public void dontDoThis() {
@@ -407,7 +407,7 @@ public void dontDoThis() {
 }
 ```
 
-#### Compliant Code {#compliant-code-6}
+#### 호환 코드 {#compliant-code-6}
 
 ```java
 public void doThis() {
@@ -419,19 +419,19 @@ public void doThis() {
 }
 ```
 
-### Logging in catch blocks should be at the WARN or ERROR level {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
+### catch 블록에 로그인하는 것은 WARN 또는 ERROR 수준이어야 합니다. {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
-**** 키: Cqrules: cqbp -44—Wrongloglevelincatchblock
+**키**:CQRules:CQBP-44—WrongLogLevelInCatchBlock
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-As the name suggests, Java exceptions should always be used in *exceptional* circumstances. 따라서 예외가 발견되면 로그 메시지가 경고 또는 오류 중 적절한 수준에서 기록되도록 해야 합니다. 이렇게 하면 해당 메시지가 로그에서 올바로 표시됩니다.
+이름에서 알 수 있듯이 Java 예외는 항상 *예외적인* 상황에서 사용해야 합니다. 따라서 예외가 발견되면 로그 메시지가 WARN 또는 ERROR와 같은 적절한 수준에서 기록되도록 해야 합니다. 그러면 해당 메시지가 로그에 올바로 표시됩니다.
 
-#### Non-Compliant Code {#non-compliant-code-10}
+#### 비호환 코드 {#non-compliant-code-10}
 
 ```java
 public void dontDoThis() {
@@ -443,7 +443,7 @@ public void dontDoThis() {
 }
 ```
 
-#### Compliant Code {#compliant-code-7}
+#### 호환 코드 {#compliant-code-7}
 
 ```java
 public void doThis() {
@@ -455,19 +455,19 @@ public void doThis() {
 }
 ```
 
-### Do not print stack traces to the console {#do-not-print-stack-traces-to-the-console}
+### 콘솔에 스택 추적을 인쇄하지 않음 {#do-not-print-stack-traces-to-the-console}
 
-**** 키: Cqrules: cqbp -44—Exceptionprintstacktrace
+**키**:CQRules:CQBP-44—ExceptionPrintStackTrace
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-앞에서 언급했듯이, 컨텍스트는 로그 메시지를 이해하는 데 매우 중요합니다. Using Exception.printStackTrace() causes **only** the stack trace to be output to the standard error stream thereby losing all context. 또한 이 메서드를 병렬로 사용하여 여러 예외를 인쇄하는 경우 AEM와 같은 다중 스레드 응용 프로그램에서는 해당 스택 추적이 겹쳐 심각한 혼란을 일으킬 수 있습니다. 예외는 로깅 프레임워크를 통해서만 기록되어야 합니다.
+앞에서 언급했듯이, 로그 메시지를 이해하는 것은 컨텍스트에 중요합니다. Exception.printStackTrace()를 사용하면 **스택 추적만** 표준 오류 스트림으로 출력되므로 모든 컨텍스트가 손실됩니다. 또한 AEM과 같은 다중 스레드 애플리케이션에서 이 방법을 동시에 사용하여 여러 개의 예외가 인쇄되는 경우 스택 추적이 겹칠 수 있으므로 상당한 혼란이 발생할 수 있습니다. 예외 사항은 로깅 프레임워크를 통해서만 기록되어야 합니다.
 
-#### Non-Compliant Code {#non-compliant-code-11}
+#### 비호환 코드 {#non-compliant-code-11}
 
 ```java
 public void dontDoThis() {
@@ -479,7 +479,7 @@ public void dontDoThis() {
 }
 ```
 
-#### Compliant Code {#compliant-code-8}
+#### 호환 코드 {#compliant-code-8}
 
 ```java
 public void doThis() {
@@ -491,19 +491,19 @@ public void doThis() {
 }
 ```
 
-### Do not output to Standard Output or Standard Error {#do-not-output-to-standard-output-or-standard-error}
+### 표준 출력 또는 표준 오류로 출력하지 않음 {#do-not-output-to-standard-output-or-standard-error}
 
-**** 키: Cqrules: cqbp -44—loglevelconsoleprinters
+**키**:CQRules:CQBP-44—LogLevelConsolePrinters
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-AEM에서 로깅은 항상 SLF 4 J (로깅 프레임워크) 를 통해 수행해야 합니다. 표준 출력 또는 표준 오류 스트림으로 직접 출력하는 경우 로깅 프레임워크에서 제공하는 구조적 및 컨텍스트 정보를 잃게 되며 경우에 따라 성능 문제가 발생할 수 있습니다.
+AEM에 로그인하는 작업은 항상 로깅 프레임워크(SLF4J)를 통해 수행해야 합니다. 표준 출력 또는 표준 오류 스트림에 직접 출력하면 로깅 프레임워크에서 제공하는 구조적 및 컨텍스트 정보가 손실되며 경우에 따라 성능 문제가 발생할 수 있습니다.
 
-#### Non-Compliant Code {#non-compliant-code-12}
+#### 비호환 코드 {#non-compliant-code-12}
 
 ```java
 public void dontDoThis() {
@@ -515,7 +515,7 @@ public void dontDoThis() {
 }
 ```
 
-#### Compliant Code {#compliant-code-9}
+#### 호환 코드 {#compliant-code-9}
 
 ```java
 public void doThis() {
@@ -527,19 +527,19 @@ public void doThis() {
 }
 ```
 
-### Avoid Hardcoded /apps and /libs Paths {#avoid-hardcoded-apps-and-libs-paths}
+### 하드 코딩된 /apps 및 /libs 경로 방지 {#avoid-hardcoded-apps-and-libs-paths}
 
-**** 키: Cqrules: cqbp -71
+**키**:CQRules:CQBP-71
 
-**** 유형: 코드 냄새
+**유형**:코드 냄새
 
-**심각도**: minor
+**심각도**:마이너
 
-**** 이후: 버전 2018.4.0
+**이후**:버전 2018.4.0
 
-일반적으로, /libs 및 /apps로 시작하는 경로는 sling 검색 경로 (기본적으로 /libs로 설정된 경로) 와 관련하여 가장 일반적으로 경로 (경로) 로 저장되는 경로로 하드 코딩되지 않습니다. 절대 경로를 사용하면 프로젝트 라이프사이클에서만 표시되는 미세한 결함이 발생할 수 있습니다.
+일반적으로 /libs 및 /apps로 시작하는 경로는 Sling 검색 경로(기본적으로 /libs,/apps로 설정)에 상대적인 경로로 가장 일반적으로 저장되므로 하드코딩하지 않아야 합니다. 절대 경로를 사용하면 프로젝트 라이프사이클에서 나중에 나타날 수 있는 미묘한 결함이 발생할 수 있습니다.
 
-#### Non-Compliant Code {#non-compliant-code-13}
+#### 비호환 코드 {#non-compliant-code-13}
 
 ```java
 public boolean dontDoThis(Resource resource) {
@@ -547,7 +547,7 @@ public boolean dontDoThis(Resource resource) {
 }
 ```
 
-#### Compliant Code {#compliant-code-10}
+#### 호환 코드 {#compliant-code-10}
 
 ```java
 public void doThis(Resource resource) {
@@ -556,38 +556,38 @@ public void doThis(Resource resource) {
 ```
 
 
-## OakPAL Content Rules {#oakpal-rules}
+## OakPAL 컨텐츠 규칙 {#oakpal-rules}
 
-클라우드 관리자가 실행한 Oakpal 확인을 아래에서 찾으십시오.
+Cloud Manager에서 실행한 OakPAL 검사 아래에서 확인하십시오.
 
 >[!NOTE]
->Oakpal는 독립형 Oak 리포지토리를 사용하여 콘텐츠 패키지를 검증하는 AEM 파트너 (2019 AEM Rockstar 북미) 가 개발한 프레임워크입니다.
+>OakPAL은 독립형 Oak 저장소를 사용하여 컨텐츠 패키지를 검증하는 AEM 파트너(및 2019 AEM Rockstar 북미 우승자)가 개발한 프레임워크입니다.
 
-### Customer Packages Should Not Create or Modify Nodes Under /libs {#oakpal-customer-package}
+### 고객 패키지는 /libs 아래에 노드를 만들거나 수정해서는 안 됩니다. {#oakpal-customer-package}
 
-**** 키: Bannedpaths
+**키**:금지된 경로
 
-**** 유형: 버그
+**유형**:버그
 
-**심각도**: 차단기
+**심각도**:차단기
 
-**** 이후: 버전 2019.6.0
+**이후**:버전 2019.6.0
 
-AEM 콘텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으로 간주해야 하는 오랜 우수 사례가 있습니다. */libs* 아래의 노드 및 속성을 수정하면 주요 업데이트 및 사소한 업데이트에 상당한 위험이 발생할 수 있습니다. */libs* 에 대한 수정은 Adobe가 공식 채널을 통해서만 이루어져야 한다.
+AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으로 간주하는 것은 오랫동안 우수 사례였습니다. 노드 및 속성을 */libs* 아래에 수정하면 주요 및 경미한 업데이트에 심각한 위험이 발생합니다. Adobe는 *공식 채널을* 통해서만 수정되어야 합니다.
 
-### Packages Should Not Contain Duplicate OSGi Configurations {#oakpal-package-osgi}
+### 패키지에 중복 OSGi 구성이 들어 있으면 안 됩니다. {#oakpal-package-osgi}
 
-**** 키: Duplicateosgiconfigations
+**키**:DuplicateOsgiConfigurations
 
-**** 유형: 버그
+**유형**:버그
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2019.6.0
+**이후**:버전 2019.6.0
 
-복잡한 프로젝트에서 발생하는 일반적인 문제는 동일한 Osgi 구성 요소가 여러 번 구성되는 경우입니다. 이로 인해 작동 가능한 구성에 대해 명확하지 않습니다. 이 규칙은 동일한 Runmode (또는 runmodes의 조합) 에서 동일한 구성 요소가 여러 번 구성되는 문제를 식별한다는 점에서 &quot;runmode-aware&quot; 입니다.
+복잡한 프로젝트에서 발생하는 일반적인 문제는 동일한 OSGi 구성 요소가 여러 번 구성되는 것입니다. 따라서 작동 가능한 구성이 모호해집니다. 이 규칙은 동일한 런타임 모드(또는 런타임 모드 조합)에서 동일한 구성 요소가 여러 번 구성되는 문제를 식별한다는 점에서 "실행 모드 인식"입니다.
 
-#### Non Compliant Code {#non-compliant-code-osgi}
+#### 비호환 코드 {#non-compliant-code-osgi}
 
 ```+ apps
   + projectA
@@ -598,7 +598,7 @@ AEM 콘텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-#### Compliant Code {#compliant-code-osgi}
+#### 호환 코드 {#compliant-code-osgi}
 
 ```+ apps
   + shared-config
@@ -606,21 +606,21 @@ AEM 콘텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
       + com.day.cq.commons.impl.ExternalizerImpl
 ```
 
-### Config and Install Folders Should Only Contain OSGi Nodes {#oakpal-config-install}
+### 구성 및 설치 폴더에는 OSGi 노드만 포함되어야 합니다. {#oakpal-config-install}
 
-**** 키: Configandinstallshouldonlycontainosginodes
+**키**:ConfigAndInstallShouldOnly 파섹
 
-**** 유형: 버그
+**유형**:버그
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2019.6.0
+**이후**:버전 2019.6.0
 
-For security reasons, paths containing */config/ and /install/* are only readable by administrative users in AEM and should be used only for OSGi configuration and OSGi bundles. 이러한 세그먼트가 들어 있는 경로 아래에 다른 유형의 콘텐트를 배치하면 관리 및 비관리 사용자 간에 의도하지 않게 달라지는 애플리케이션 동작이 발생합니다.
+보안상의 이유로, */config/ 및 /install/* 가 포함된 경로는 AEM의 관리 사용자만 읽을 수 있고 OSGi 구성 및 OSGi 번들에만 사용해야 합니다. 이러한 세그먼트가 들어 있는 경로 아래에 다른 유형의 컨텐츠를 배치하면 관리 사용자와 비관리 사용자 간에 의도치 않게 달라지는 애플리케이션 동작이 발생합니다.
 
-A common problem is use of nodes named `config` within component dialogs or when specifying the rich text editor configuration for inline editing. 이를 해결하려면 거슬리는 노드의 이름을 규격 이름으로 변경해야 합니다. For the rich text editor configuration make use of the `configPath` property on the `cq:inplaceEditing` node to specify the new location.
+일반적인 문제는 구성 요소 대화 상자 `config` 내에서 또는 인라인 편집을 위해 리치 텍스트 편집기 구성을 지정할 때 이름이 지정된 노드를 사용하는 것입니다. 이 문제를 해결하려면 해당 노드의 이름을 호환 이름으로 변경해야 합니다. 리치 텍스트 편집기 구성의 경우 `configPath` `cq:inplaceEditing` 노드의 속성을 사용하여 새 위치를 지정합니다.
 
-#### Non Compliant Code {#non-compliant-code-config-install}
+#### 비호환 코드 {#non-compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -629,7 +629,7 @@ A common problem is use of nodes named `config` within component dialogs or when
       + rtePlugins [nt:unstructured]
 ```
 
-#### Compliant Code {#compliant-code-config-install}
+#### 호환 코드 {#compliant-code-config-install}
 
 ```
 + cq:editConfig [cq:EditConfig]
@@ -639,14 +639,14 @@ A common problem is use of nodes named `config` within component dialogs or when
       + rtePlugins [nt:unstructured]
 ```
 
-### Packages Should Not Overlap {#oakpal-no-overlap}
+### 패키지가 겹치지 않아야 합니다. {#oakpal-no-overlap}
 
-**** 키: Packageoverlaps
+**키**:PackageOverlaps
 
-**** 유형: 버그
+**유형**:버그
 
-**심각도**: major
+**심각도**:주요
 
-**** 이후: 버전 2019.6.0
+**이후**:버전 2019.6.0
 
-Similar to the *Packages Should Not Contain Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to by multiple separate content packages. 컨텐츠 패키지 종속성을 사용하여 일관된 결과를 얻을 수 있지만 겹치지 않도록 하는 것이 좋습니다.
+Similar to *Contains Duplicate OSGi Configurations* this is a common problem on complex projects where the same node path is written to multiple separate content packages. 컨텐츠 패키지 종속성을 사용하여 일관된 결과를 얻을 수 있지만, 완전히 겹치지 않는 것이 좋습니다.
