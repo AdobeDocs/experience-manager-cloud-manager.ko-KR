@@ -3,9 +3,9 @@ title: 개요 색인
 seo-title: 개요 색인
 description: AEM Cloud Manager 도움말 개요
 seo-description: Adobe AEM Cloud Manager 도움말 개요
-uuid: D 4 A 23 A 6 E -347 E -41 C 3-9 E 3 B-B 7 B 7469 C 4754
-contentOwner: Jsyal
-discoiquuid: 5 CA 5 A 413-639 E -43 FB -93 DD -16 CE 8935 A 3 FD
+uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
+contentOwner: jsyal
+discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
 translation-type: tm+mt
 source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
@@ -14,19 +14,19 @@ source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
 # AEM 개요 [!UICONTROL Cloud Manager]{#overview-index}
 
-[!UICONTROL Cloud Manager] 모든 Adobe Managed Services 고객에게 제공되는 툴 및 기술의 프레임워크입니다.
+[!UICONTROL Cloud Manager] 는 모든 Adobe Managed Services 고객이 사용할 수 있는 툴과 기술의 프레임워크입니다.
 
-이 섹션에서는 작업을 시작할 수 있는 리소스 목록에 [!UICONTROL Cloud Manager]대한 높은 수준의 보기를 제공합니다.
+이 섹션에서는 시작할 수 있는 리소스 목록을 자세히 볼 수 [!UICONTROL Cloud Manager]있습니다.
 
-주요 개념 및 종결자를 이해하는 것부터 구성 (사전 요구 사항) 를 설정하는 데 이르기까지 사용할 [!UICONTROL Cloud Manager]수 있는 길을 시작하려면 아래 리소스를 따르십시오 [!UICONTROL Cloud Manager].
+아래 리소스를 참고하여 주요 개념 및 용어 이해에서부터 [!UICONTROL Cloud Manager]구성(사전 요구 사항)을 설정하는 방법 등 사용을 시작할 수 [!UICONTROL Cloud Manager]있습니다.
 
-아래 그림은 귀하의 학습에 대한 로드맵을 보여줍니다 [!UICONTROL Cloud Manager].
+아래 그림은 학습 방법에 대한 로드맵을 [!UICONTROL Cloud Manager]보여줍니다.
 
 ![](assets/screen_shot_2018-05-04at94510pm.png)
 
-개요 섹션의 리소스를 따라 다음을 소개 [!UICONTROL Cloud Manager]:
+개요 섹션의 리소스에 따라 [!UICONTROL Cloud Manager]다음 사항에 대한 개요를 살펴보십시오.
 
-* **[[! Uicontrol Cloud Manager]](introduction-to-cloud-manager.md)**
+* **[[!UICONTROL Cloud Manager] 소개](introduction-to-cloud-manager.md)**
 * **[주요 개념](key-concepts.md)**
-* **[[! Uicontrol 고객 여정](customer-journey.md)**
+* **[[!UICONTROL 고객 여정]](customer-journey.md)**
 
