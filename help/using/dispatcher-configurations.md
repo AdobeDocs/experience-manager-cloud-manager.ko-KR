@@ -1,55 +1,55 @@
 ---
-title: Dispatcher 구성 관리
-seo-title: Dispatcher 구성 관리
+title: 발송자 구성 관리
+seo-title: 발송자 구성 관리
 description: 'null'
-seo-description: Dispatcher 구성에 대해 알려면 이 페이지를 따르십시오.
-uuid: 3 ECD 8 CA 3-5241-4811-87 FD -3284 A 8012 EDA
-contentOwner: Jsyal
-products: sg_ Experiencemanager/Cloudmanager
-topic-tags: Getting-Started
-discoiquuid: 8888 DD 80-D 908-464 E -927 D -779 DB 1 A 832 A 4
+seo-description: 디스패처 구성에 대해 알려면 이 페이지를 따르십시오.
+uuid: 3ecd8ca3-5241-4811-8 파섹
+contentOwner: jsyal
+products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
+topic-tags: 시작하기
+discoiquuid: 888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: 1dfb065c09569f811e5a006d3d74825d3bd7cc8d
+source-git-commit: 66ed6bdc8a98c77464c7324806cb5d2cb81da469
 
 ---
 
 
-# Dispatcher 구성 관리 {#manage-your-dispatcher-configurations}
+# 발송자 구성 관리 {#manage-your-dispatcher-configurations}
 
-## 클라우드 관리자를 사용하여 Dispatcher 구성 파일 배포 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
+## Cloud Manager를 사용하여 발송자 구성 파일 배포 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-클라우드 관리자는 정상적인 AEM 컨텐츠 패키지뿐만 아니라 **Git 리포지토리에**저장된 웹 서버 및 Dispatcher 구성 파일을 배포할 수 있습니다.
+Cloud Manager는 일반 AEM 컨텐츠 패키지와 함께 Git 리포지토리에 저장되어 있다고 가정할 경우 웹 **서버와** Dispatcher 구성 파일을 배포할 수 있습니다.
 
-이 기능을 활용하려면 Maven Build에서 ***conf*** 및 ***conf. d 라는 두 개 이상의 디렉토리가 포함된 zip 파일을 생성해야***합니다. 이 zip 파일은 maven-assembly-plugin를 사용하여 생성할 수 있습니다. 내장된 [마법사를](create-an-application-project.md) 사용하여 클라우드 관리자가 생성한 프로젝트에는 프로젝트 제작의 일부로 생성된 올바른 Maven 프로젝트 구조가 있습니다.
+이 기능을 활용하려면 Maven 빌드에 두 개 이상의 디렉토리( ***conf*** 및 ***conf.d)가 포함된 zip 파일이 생성되어야 합니다***. 이 zip 파일은 maven-assembly-plugin을 사용하여 생성할 수 있습니다. 내장된 [마법사를](create-an-application-project.md) 사용하여 Cloud Manager에서 생성된 프로젝트는 프로젝트 제작의 일부로 생성된 올바른 Maven 프로젝트 구조를 갖습니다.
 
-Dispatcher **인스턴스에**배포하면 이러한 디렉토리의 컨텐츠가 Dispatcher 인스턴스에 있는 해당 디렉토리의 컨텐츠를 덮어씁니다. 웹 서버와 Dispatcher 구성 파일에는 종종 환경별 정보가 필요하므로 이 기능을 올바로 사용하려면 먼저 CSE (Customer Success Engineer) 와 함께 이러한 환경 변수를 /etc/sysconfig/httpd로 ***추출해야***합니다. [](create-an-application-project.md)
+디스패처 인스턴스에 배포하면 **이러한**&#x200B;디렉토리의 내용이 Dispatcher 인스턴스의 이러한 디렉토리 컨텐츠를 덮어씁니다. 웹 서버와 Dispatcher 구성 파일은 환경별 정보를 자주 필요로 하므로 이 기능을 올바르게 사용하려면 먼저 CSE(Customer Success Engineers)와 협력하여 이러한 환경 변수를 /etc/sysconfig/httpd에 추출해야 합니다 ******. [](create-an-application-project.md)
 
-### Dispatcher 구성 단계 {#steps-for-configuring-dispatcher}
+### 발송자 구성 단계 {#steps-for-configuring-dispatcher}
 
-Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 따르십시오.
+Dispatcher 구성의 초기 프로세스를 완료하려면 아래 절차를 따르십시오.
 
 1. CSE에서 현재 프로덕션 구성 파일을 얻습니다.
-1. 하드 코딩된 환경별 데이터 (예: 퍼블리싱 렌더러 IP) 를 제거하고 변수로 바꿉니다.
-1. 각 Target Dispatcher에 대해 키-값 쌍에 필요한 변수를 정의하고 CSE가 각 인스턴스에서 ***/etc/sysconfig/httpd*** 에 추가하도록 요청합니다.
-1. 스테이지 환경에서 업데이트된 구성을 테스트한 다음 CSE를 프로덕션에 배포하도록 요청합니다.
-1. Git 리포지토리에 ****파일 커밋
+1. 하드 코딩된 환경별 데이터(예: 퍼블리싱 렌더러 IP)를 제거하고 변수로 바꿉니다.
+1. 각 대상 디스패처의 키-값 쌍에 필요한 변수를 정의하고 CSE가 각 인스턴스에서 ***/etc/sysconfig/httpd에*** 추가하도록 요청합니다.
+1. 스테이지 환경에서 업데이트된 구성을 테스트한 다음 CSE에서 프로덕션에 배포하도록 요청합니다.
+1. 파일을 Git **리포지토리에 커밋합니다**.
 
-1. Cloud Manager를 통해 배포합니다.
+1. Cloud Manager를 통해 배포
 
 >[!NOTE]
 >
->클라우드 관리자를 위한 마이그레이션 및 웹 서버 **구성은 클라우드 관리자가 온보딩을 진행하는 동안 수행할** 수 있지만 나중에 수행할 수도 있습니다.
+>Dispatcher 및 웹 서버 구성을 Git **보관소로** 마이그레이션하는 작업은 Cloud Manager 온보딩 중에 수행할 수 있지만 나중에 수행할 수도 있습니다.
 
 ### 예 {#example}
 
-특정 파일 및 디렉토리 구조는 프로젝트의 특성에 따라 달라질 수 있지만, 이 예에서는 Apache 및 Dispatcher 구성을 포함하도록 프로젝트를 구성하는 방법에 대한 구체적인 안내서를 제공해야 합니다.
+특정 파일 및 디렉토리 구조는 프로젝트의 특성에 따라 달라질 수 있지만 이 예에서는 Apache 및 Dispatcher 구성을 포함하도록 프로젝트를 구조화하는 방법에 대한 구체적인 안내서를 제공해야 합니다.
 
-1. 이름이 지정된 하위 디렉토리를 만듭니다 `dispatcher`.
+1. 이름이 `dispatcher`있는 하위 디렉토리를 만듭니다.
 
    >[!NOTE]
-   여기에서 아무 이름이나 사용할 수 있지만 이 단계에서 만들어진 디렉토리 이름은 6 단계에서 사용한 이름과 동일해야 합니다.
+   여기에서 이름을 사용할 수 있지만 이 단계에서 만든 디렉토리 이름은 6단계에서 사용한 이름과 같아야 합니다.
 
-1. 이 하위 디렉토리에는 Maven Assembly 플러그인을 사용하여 Dispatcher Zip 파일을 빌드하는 Maven 모듈이 포함됩니다. 이를 시작하려면 `dispatcher` 디렉토리에서 이 컨텐츠로 `pom.xml` 파일을 만들고 부모 참조, Artifactid 및 이름을 필요에 따라 변경합니다.
+1. 이 하위 디렉토리에는 Maven 어셈블리 플러그인을 사용하여 Dispatcher zip 파일을 빌드하는 Maven 모듈이 포함됩니다. 이 작업을 시작하려면 `dispatcher` 디렉토리에서 이 컨텐츠로 `pom.xml` 파일을 만들어 부모 참조, artifactId 및 이름을 필요에 따라 변경합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,9 +90,9 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 
    ```
 
    >[!NOTE]
-   1 단계와 마찬가지로, Artifactid 및 name는 원할 경우 다른 값이 될 수 있습니다. `dispatcher` 간단한 예입니다.
+   1단계에서와 마찬가지로, 원할 경우 여기에서 artifactId와 이름은 다른 값일 수 있습니다.간단한 예를 `dispatcher` 들어보겠습니다.
 
-1. Maven Assembly 플러그인에는 zip 파일의 작성 방법을 정의하는 *설명자가* 필요합니다. 이 설명자를 만들려면 `dispatcher` 이 콘텐츠로 이름이 `assembly.xml`지정된 파일 (하위 디렉토리에 다시 있음) 를 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일에서 26 행에서 참조됩니다.
+1. Maven 어셈블리 플러그인을 사용하려면 zip 파일이 만들어지는 방법을 *설명하는* 설명자가 필요합니다. 이 설명자를 만들려면 이 콘텐트로 이름이 지정된 파일을 다시 `dispatcher` 하위 디렉토리에 `assembly.xml`만듭니다. 이 파일 이름은 위의 `pom.xml` 파일에서 26행에서 참조됩니다.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -115,8 +115,8 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 
    </assembly>
    ```
 
-1. 이제 Dispatcher 하위 디렉토리 내에서 `src` (11 행에서 위의 어셈블리 설명자에 참조된 대로) 명명된 하위 디렉토리를 만들어 실제 Apache 및 Dispatcher 구성을 저장합니다. `src` 이 디렉토리에서 `conf``conf.d``conf.dispatcher.d`, `conf.modules.d`및 라는 디렉토리를 만듭니다.
-1. 이제 구성 파일로 `conf``conf.d`, `conf.dispatcher.d`및 `conf.modules.d` 디렉토리를 채울 수 있습니다. 예를 들어 기본 구성은 이러한 파일 및 심볼릭 링크로 구성됩니다.
+1. 이제 dispatcher 하위 디렉토리에 `src` (위 11행에서 어셈블리 설명자에서 참조)라는 하위 디렉토리를 만들어 실제 Apache 및 Dispatcher 구성을 저장합니다. 이 `src` 디렉토리 내에 `conf`, `conf.d`및 `conf.dispatcher.d`라는 디렉토리를 만듭니다 `conf.modules.d`.
+1. 이제 구성 파일로 `conf`, `conf.d``conf.dispatcher.d`및 `conf.modules.d` 디렉토리를 채울 수 있습니다. 예를 들어 기본 구성은 이러한 파일과 심볼릭 링크로 구성됩니다.
 
    ```
    dispatcher
@@ -191,7 +191,7 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 
            └── 02-dispatcher.conf
    ```
 
-1. 마지막으로, 프로젝트의 루트에 있는 pom.xml 파일에서 Dispatcher 모듈을 포함할 `<module>` 요소를 추가합니다.
+1. 마지막으로 프로젝트의 루트에 있는 pom.xml 파일에서 디스패처 모듈을 포함할 `<module>` 요소를 추가합니다.
 
    예를 들어 기존 모듈 목록이
 
@@ -203,7 +203,7 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 
        </modules>
    ```
 
-   You should change it to
+   다음으로 변경하십시오.
 
    ```xml
        <modules>
@@ -215,9 +215,9 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 
    ```
 
    >[!NOTE]
-   1 단계에서 설명한 것처럼 `<module>` 요소의 **값은 만들어진** 디렉토리 이름과 일치해야 합니다.
+   1단계에서 설명한 바와 같이, `<module>` 요소의 값은 생성된 디렉토리 이름과 **일치해야 합니다** .
 
-1. 마지막으로, 테스트하려면 프로젝트 루트 디렉토리에서 MVN clean 패키지를 실행합니다. 출력에서 이와 비슷한 줄이 표시됩니다.
+1. 마지막으로 테스트하려면 프로젝트 루트 디렉토리에서 mvn 클린 패키지를 실행합니다. 출력에서 다음과 같은 선이 표시됩니다.
 
    ```
    [INFO] --- maven-assembly-plugin:3.1.0:single (default) @ dispatcher ---
@@ -225,7 +225,7 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 단계를 
    [INFO] Building zip: /Users/me/mycompany/dispatcher/target/dispatcher-1.0-SNAPSHOT.zip
    ```
 
-   이 파일의 압축을 풀면 해당 파일의 압축을 해제할 수도 있습니다.
+   이 파일의 압축을 해제하여 내용을 볼 수도 있습니다.
 
    ```shell
    $ unzip -l dispatcher/target/dispatcher-1.0-SNAPSHOT.zip
