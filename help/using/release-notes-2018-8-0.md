@@ -1,6 +1,6 @@
 ---
 title: 2018.8.0용 릴리스 노트
-seo-title: 2018.8.0용 AEM Cloud Manager 릴리스 노트
+seo-title: 2018.9.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2018.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2018.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
