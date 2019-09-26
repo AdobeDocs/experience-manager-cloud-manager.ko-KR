@@ -6,7 +6,7 @@ seo-description: 이 페이지에서 Adobe AEM Cloud Manager를 시작하기 위
 uuid: d4468eb6-5bde-48dd-b96e-0cc61e046f96
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: introduction
+topic-tags: 소개
 discoiquuid: bc9a0d63-ae6b-4fe9-81e5-bf9844f04e54
 translation-type: tm+mt
 source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
@@ -38,23 +38,23 @@ source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
 
    AEM 6.4로 업그레이드하여 얻을 수 있는 이점에 대한 자세한 내용은 AEM [6.4로 업그레이드를 참조하십시오](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/upgrade.html).
 
-## Accessing  [!UICONTROL Cloud Manager]{#accessing-cloud-manager}
+## 액세스 [!UICONTROL Cloud Manager] 중 {#accessing-cloud-manager}
 
-You will get acces to  and your AEM environments by simply logging in to the  landing page, using your Adobe Identity Management credentials, and selecting AEM from the solution switcher interface.[!UICONTROL Cloud Manager][!UICONTROL Experience Cloud]
+랜딩 페이지에 로그인하고 Adobe ID [!UICONTROL Cloud Manager] [!UICONTROL Experience Cloud] 관리 자격 증명을 사용하여 AEM 환경을 액세스하고, 솔루션 전환기 인터페이스에서 AEM을 선택하면 AEM 환경에 액세스할 수 있습니다.
 
-처음 로그인한 [!UICONTROL Cloud Manager] 후 UI에서 직접 AEM 환경에 액세스할 수 [!UICONTROL Cloud Manager] 있습니다. At this point, you are ready to explore all the possibilities of , once you have your first code branch ready to be deployed to your stage and production environments.[!UICONTROL Cloud Manager]
+처음 로그인한 [!UICONTROL Cloud Manager] 후 UI에서 직접 AEM 환경에 액세스할 수 [!UICONTROL Cloud Manager] 있습니다. 이제 스테이지와 프로덕션 환경에 배포할 첫 번째 코드 분기를 준비하면 모든 가능성을 [!UICONTROL Cloud Manager]살펴볼 수 있습니다.
 
-To explore and get started with , see First Time Login. [!UICONTROL Cloud Manager][](first-time-login.md) For additional information about AEM, see Getting Started with AEM 6.4. [](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html) Additionally, refer to AEM Resources for further information.[](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other)
+처음 로그인을 [!UICONTROL Cloud Manager]참조하십시오 [](first-time-login.md). AEM에 대한 자세한 내용은 AEM [6.4 시작을 참조하십시오](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html). 또한 자세한 내용은 AEM [리소스를](https://www.adobe.com/marketing-cloud/experience-manager/resources.html?promoid=759X6WV8&mv=other) 참조하십시오.
 
 ## Getting Started with [!UICONTROL Cloud Manager] {#getting-started-with-cloud-manager}
 
-Once you are logged in to , the first thing to do will be to to set up your code repository environment, then your team and roles. [!UICONTROL Cloud Manager] Specificically, the role memberships are assigned by adding the user to a  profile using the Admin Console UI.[!UICONTROL Cloud Manager]
+로그인하면 [!UICONTROL Cloud Manager]먼저 코드 저장소 환경을 설정한 다음 팀과 역할을 설정해야 합니다. 특히, 역할 멤버십은 관리 콘솔 UI를 사용하여 사용자를 [!UICONTROL Cloud Manager] 프로필에 추가하여 할당됩니다.
 
-Next, you have to set up your source code branches in the Git Repository, define your goals in terms of load and performance KPIs, and test scenarios to successfully deploy your code to your stage and production environments once all the quality checks have passed successfully.****
+그런 다음 Git 리포지토리에 소스 코드 분기를 설정하고, 로드 **및 성능** KPI에 대한 목표를 정의하고, 모든 품질 검사가 성공적으로 수행되면 코드를 스테이지와 프로덕션 환경에 성공적으로 배포하기 위한 테스트 시나리오를 설정해야 합니다.
 
-## End to End journey {#end-to-end-journey}
+## 고객 여정 {#end-to-end-journey}
 
-The following diagram illustrates the customer journey at a high level, when using  CI/CD pipeline for deploying your code changes to your stage and production environments.[!UICONTROL Cloud Manager]
+다음 다이어그램은 CI/CD [!UICONTROL Cloud Manager] 파이프라인을 사용하여 스테이지와 프로덕션 환경에 코드 변경 사항을 배포할 때 고객 경로를 한 차원 높은 수준으로 보여줍니다.
 
 ![](assets/screen_shot_2018-05-15at124004pm.png)
 
