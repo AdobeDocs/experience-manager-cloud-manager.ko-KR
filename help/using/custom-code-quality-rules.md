@@ -95,7 +95,7 @@ public class DoThis implements Runnable {
 
 **이후**:버전 2018.4.0
 
-외부 소스의 형식 문자열(요청 매개 변수 또는 사용자 생성 컨텐츠)을 사용하면 애플리케이션이 서비스 거부 공격에 노출될 수 있습니다. 형식 문자열이 외부에서 제어될 수 있지만 신뢰할 수 있는 소스에서만 허용되는 경우가 있습니다.
+외부 소스의 형식 문자열(요청 매개 변수 또는 사용자 생성 컨텐츠)을 사용하면 애플리케이션이 서비스 거부 공격에 노출될 수 있습니다. There are circumstances where a format string may be externally controlled, but is only allowed from trusted sources.
 
 #### 비호환 코드 {#non-compliant-code-1}
 
@@ -107,19 +107,19 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP 요청에는 항상 소켓 및 연결 시간 초과가 있어야 합니다. {#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP requests should always have socket and connect timeouts {#http-requests-should-always-have-socket-and-connect-timeouts}
 
-**키**:CQRules:ConnectionTimeoutMechanism
+**Key**: CQRules:ConnectionTimeoutMechanism
 
-**유형**:버그
+**Type**: Bug
 
-**심각도**:중요
+**Severity**: Critical
 
-**이후**:버전 2018.6.0
+**Since**: Version 2018.6.0
 
-AEM 애플리케이션 내에서 HTTP 요청을 실행하는 경우 불필요한 스레드 사용을 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. 안타깝게도 Java의 기본 HTTP 클라이언트(java.net.HttpUrlConnection)와 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 동작은 시간 초과를 방지하므로 시간 초과를 명시적으로 설정해야 합니다. 또한 이러한 시간 제한은 60초를 초과할 수 없습니다.
+When executing HTTP requests from inside an AEM application, it is critical to ensure that proper timeouts are configured in order to avoid unnecessary thread consumption. Unfortunately, the default behavior of both Java's default HTTP Client (java.net.HttpUrlConnection) and the commonly used Apache HTTP Components client is to never timeout, so timeouts must be explicitly set. Further, as a best practice, these timeouts should be no more than 60 seconds.
 
-#### 비호환 코드 {#non-compliant-code-2}
+#### Non-Compliant Code {#non-compliant-code-2}
 
 ```java
 @Reference
@@ -148,7 +148,7 @@ public void dontDoThisEither() {
 }
 ```
 
-#### 호환 코드 {#compliant-code-1}
+#### Compliant Code {#compliant-code-1}
 
 ```java
 @Reference
@@ -185,13 +185,13 @@ public void orDoThis() {
 }
 ```
 
-### @ProviderType으로 주석을 단 제품 API는 고객이 구현하거나 확장할 수 없습니다. {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+### Product APIs annotated with @ProviderType should not be implemented or extended by customers {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
 
-**키**:CQBP-84, CQBP-84-dependencies
+**Key: CQBP-84, CQBP-84-dependencies**
 
-**유형**:버그
+**Type: Bug**
 
-**심각도**:중요
+**Severity: Critical**
 
 **이후**:버전 2018.7.0
 
@@ -281,17 +281,17 @@ public class DontDoThis extends SlingAllMethodsServlet {
 
 ### Catch Exceptions는 기록되거나 throw되어야 하지만 둘 다 기록해서는 안 됩니다. {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
-**키**:CQRules:CQBP-44—CatchAndEitorLogOrThrow
+**Key: CQRules:CQBP-44---CatchAndEitherLogOrThrow**
 
-**유형**:코드 냄새
+**Type: Code Smell**
 
-**심각도**:마이너
+**Severity: Minor**
 
-**이후**:버전 2018.4.0
+**Since: Version 2018.4.0**
 
-일반적으로 예외를 정확히 한 번만 기록해야 합니다. 예외를 여러 번 로깅하면 예외가 발생한 횟수가 불분명하므로 혼동을 일으킬 수 있습니다. 이를 유도하는 가장 일반적인 패턴은 벌목과 발견 된 예외를 발생시키는 것입니다.
+In general, an exception should be logged exactly one time. Logging exceptions multiple times can cause confusion as it is unclear how many times an exception occurred. The most common pattern which leads to this is logging and throwing a caught exception.
 
-#### 비호환 코드 {#non-compliant-code-6}
+#### Non-Compliant Code {#non-compliant-code-6}
 
 ```java
 public void dontDoThis() throws Exception {
@@ -304,7 +304,7 @@ public void dontDoThis() throws Exception {
 }
 ```
 
-#### 호환 코드 {#compliant-code-3}
+#### Compliant Code {#compliant-code-3}
 
 ```java
 public void doThis() {
@@ -326,15 +326,15 @@ public void orDoThis() throws MyCustomException {
 
 ### 즉시 throw 문 뒤에 로그 문이 오지 않도록 합니다. {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
-**키**:CQRules:CQBP-44—ContinuedLogAndThrow
+**Key: CQRules:CQBP-44---ConsecutivelyLogAndThrow**
 
-**유형**:코드 냄새
+**Type: Code Smell**
 
-**심각도**:마이너
+**Severity: Minor**
 
-**이후**:버전 2018.4.0
+**Since: Version 2018.4.0**
 
-메시지를 기록한 다음 즉시 예외를 throw하는 것이 피해야 할 또 다른 일반적인 패턴입니다. 이는 일반적으로 예외 메시지가 로그 파일에서 중복될 것임을 나타냅니다.
+Another common pattern to avoid is to log a message and then immediately throw an exception. This generally indicates that the exception message will end up duplicated in log files.
 
 #### 비호환 코드 {#non-compliant-code-7}
 
@@ -383,7 +383,7 @@ public void doGet() throws Exception {
 }
 ```
 
-### Exception.getMessage()를 로깅 문의 첫 번째 매개 변수로 사용하지 마십시오. {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
+### Exception.getMessage()를 로깅 문의 첫 번째 매개 변수로 사용하지 마십시오 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 **키**:CQRules:CQBP-44—ExceptionGetMessageIsFirstLogParam
 
