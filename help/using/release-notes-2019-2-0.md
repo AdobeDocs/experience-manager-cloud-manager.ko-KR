@@ -21,23 +21,23 @@ source-git-commit: 98395c4413b1b6bfbb3a565388ffa32dc3880dff
 ## 새로운 기능 {#whats-new}
 
 * 새로운 시스템 모니터링 기능. 자세한 [내용은 환경](monitor-your-environments.md) 모니터링을 참조하십시오.
-* The dispatcher module in wizard-generated projects now contains a README file.
+* 이제 마법사가 생성한 프로젝트의 디스패처 모듈에 README 파일이 포함되어 있습니다.
 * 코드 스캔 문제의 정렬 순서가 문제 우선순위와 일치하도록 개선되었습니다.
-* Stage instances are now always restored to the load balancer even in the case of a deployment failure.
-* A new API Developer role is available in the Admin Console which allows specific users to be granted the permission to create integrations in the Adobe I/O console. Refer to [Manage Developers](https://www.adobe.com/go/aac_api_prod_learn) to learn more.
-* The version of the Maven Archetype was updated to version 16.
-* The version of Maven was updated to version 3.6.0.
+* 이제 배포 오류가 발생하는 경우에도 스테이지 인스턴스가 로드 밸런서에 항상 복원됩니다.
+* Adobe I/O 콘솔에서 통합을 만들 수 있는 권한을 특정 사용자에게 부여하는 새 API 개발자 역할을 관리 콘솔에서 사용할 수 있습니다. 자세한 내용은 [개발자](https://www.adobe.com/go/aac_api_prod_learn) 관리를 참조하십시오.
+* Maven Tranype 버전이 버전 16으로 업데이트되었습니다.
+* Maven 버전이 3.6.0 버전으로 업데이트되었습니다.
 
-## Bug Fixes {#bug-fixes}
+## 버그 수정 {#bug-fixes}
 
-* In some circumstances, pipelines would not execute when the target environment was hosted in Azure.
-* Ordering of environments was inconsistent.
-* Performance testing could fail when discovered page paths contained a comma character.
-* When a pipeline execution was started from the web UI, the browser back button did not function correctly.
-* The Learn More links on the Overview page didn't open a new tab.
-* When uploading a program thumbnail, it may not have been immediately visible.
-* In some cases, Code Scanning failed because of project-specific configuration.
-* The Learn More link on the Non-Production Pipelines card went to the wrong location.
+* 경우에 따라 대상 환경이 Azure에서 호스팅되면 파이프라인이 실행되지 않습니다.
+* 환경 순서가 일관되지 않았습니다.
+* 검색된 페이지 경로에 쉼표 문자가 포함된 경우 성능 테스트가 실패할 수 있습니다.
+* 웹 UI에서 파이프라인 실행을 시작할 때 브라우저 뒤로 버튼이 제대로 작동하지 않았습니다.
+* 개요 페이지의 추가 정보 링크가 새 탭을 열지 못했습니다.
+* 프로그램 축소판을 업로드할 때 즉시 표시되지 않았을 수 있습니다.
+* 프로젝트별 구성으로 인해 코드 검사가 실패하는 경우가 있습니다.
+* 비프로덕션 파이프라인 카드의 자세한 내용 링크가 잘못된 위치로 이동되었습니다.
 * 품질 게이트가 무시되면 상태가 일관되게 표시되지 않았습니다.
 * 콜드 대기 토폴로지를 사용하는 고객이 보안 테스트에 대해 잘못된 결과를 받았습니다.
 * 마법사를 사용하여 새 프로젝트를 만들 때 대시 문자가 포함된 분기를 만들 수 없었습니다.
