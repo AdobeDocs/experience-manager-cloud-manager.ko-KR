@@ -6,10 +6,10 @@ seo-description: 일반 구성을 설정하고 Adobe AEM Cloud Manager를 처음
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 시작하기
+topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
+source-git-commit: ec35af20dceeb50610bc365c8e00d5ee0374ea34
 
 ---
 
@@ -21,6 +21,14 @@ source-git-commit: fea7cbe19989272100d76092198afcfac17c1c3a
 >[!NOTE]
 >
 >에 할당된 역할 [!UICONTROL Cloud Manager] 및 애플리케이션 상태에 따라 UI를 사용하는 동안 화면이 다르게 [!UICONTROL Cloud Manager] 표시됩니다.
+
+## 프로그램 개요 {#programs-video}
+
+다음 비디오에서는 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 일련의 비즈니스 이니셔티브를 지원하는 AEM 환경을 나타내는 Cloud Manager 프로그램에 대한 개요를 제공합니다.
+
+
+[!VIDEO](https://video.tv.adobe.com/v/26313/?quality=12&captions=kor)
+
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
