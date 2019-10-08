@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 2b71bb61e00d462a43519ec0a2dcfe9231fe53ff
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -21,6 +21,13 @@ Cloud **Manager의** 개요 페이지에는 **관리되는 모든 AEM** 환경�
 나열된 각 환경에는 연결된 상태가 표시됩니다.
 
 ![](assets/Manage_Environments1.png)
+
+## 개요 비디오 - 환경 {#environments-video}
+
+다음 비디오에서는 AEM 작성자, AEM 게시 및 발송자 인스턴스로 구성된 클라우드 관리자 환경에 대한 개요를 제공합니다.
+자세한 내용은 아래 비디오를 참조하십시오.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=kor)
 
 ## Cloud Manager에서 환경 액세스 {#accessing-environments-in-cloud-manager}
 
