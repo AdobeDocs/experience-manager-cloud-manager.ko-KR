@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 시작하기
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -186,9 +186,11 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 이름이 
         </profile>
 ```
 
-## 사용자 지정 환경 변수
+## 환경 변수 {#environment-variables}
 
-경우에 따라 고객의 빌드 프로세스는 git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 CSE(Customer Success Engineer)가 고객별로 이러한 변수를 구성할 수 있습니다. 이러한 변수는 보안 저장소 위치에 저장되며 특정 고객의 빌드 컨테이너에서만 볼 수 있습니다. 이 기능을 사용하려는 고객은 CSE에 문의하여 변수를 구성해야 합니다.
+### 표준 환경 변수 {#standard-environ-variables}
+
+경우에 따라 고객의 빌드 프로세스는 git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 고객 성공 엔지니어(CSE)가 고객별로 이러한 변수를 구성할 수 있습니다. 이러한 변수는 보안 저장소 위치에 저장되며 특정 고객의 빌드 컨테이너에서만 볼 수 있습니다. 이 기능을 사용하려는 고객은 CSE에 문의하여 변수를 구성해야 합니다.
 
 구성되면 이러한 변수를 환경 변수로 사용할 수 있습니다. 이러한 속성을 Maven 속성으로 사용하려면 위에서 설명한 프로필 내에서 pom.xml 파일에서 참조할 수 있습니다.
 
@@ -265,7 +267,7 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 이름이 
         </profile>
 ```
 
-이 동일한 기술을 사용하여 RubyGems용 또는 Python Packages용 `gem` 등 언어별 패키지를 설치할 `pip` 수 있습니다.
+이와 동일한 기술을 사용하여 RubyGems용 또는 Python Packages용 `gem` 등 언어별 패키지를 설치할 `pip` 수 있습니다.
 
 >[!NOTE]
 >
