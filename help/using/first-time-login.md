@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 시작하기
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
+source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 
 ---
 
@@ -22,7 +22,7 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 >
 >에 할당된 역할 [!UICONTROL Cloud Manager] 및 애플리케이션 상태에 따라 UI를 사용하는 동안 화면이 다르게 [!UICONTROL Cloud Manager] 표시됩니다.
 
-## 프로그램 개요 {#programs-video}
+## 개요 비디오 - 프로그램 {#programs-video}
 
 다음 비디오에서는 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 일련의 비즈니스 이니셔티브를 지원하는 AEM 환경을 나타내는 Cloud Manager 프로그램에 대한 개요를 제공합니다.
 
@@ -47,3 +47,9 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
    >[!NOTE]
    >
    >다음 [단계를 완료하려면 프로그램](https://helpx.adobe.com/experience-manager/cloud-manager/using/setting-up-program.html) 설정을 참조하십시오.
+
+## 활동 탭 {#activity-video}
+
+Cloud Manager는 모든 CI/CD 파이프라인 실행, 프로덕션 및 비프로덕션 모두 나열하는 프로그램 활동에 대한 통합 뷰를 제공하므로 과거 및 현재 활동을 볼 수 있으며 모든 활동의 세부 사항을 검토할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=kor)
