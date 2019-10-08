@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 시작하기
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
+source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 ---
 
@@ -26,6 +26,7 @@ source-git-commit: eea425b9bfa178720cbea0653cf8c8f17702281b
 
 다음 비디오에서는 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 일련의 비즈니스 이니셔티브를 지원하는 AEM 환경을 나타내는 Cloud Manager 프로그램에 대한 개요를 제공합니다.
 
+>[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=kor)
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
