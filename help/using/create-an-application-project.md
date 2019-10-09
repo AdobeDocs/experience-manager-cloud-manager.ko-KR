@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 시작하기
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 
 ---
 
@@ -108,11 +108,56 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 빌드하고 테
 * Maven은 항상 명령을 사용하여 실행됩니다. *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:pree-agent package*
 * Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven](https://repo.adobe.com/) Repository를 참조하십시오.)
 
+
+## 환경 변수 {#environment-variables}
+
+### 표준 환경 변수 {#standard-environ-variables}
+
+경우에 따라 고객은 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 합니다.
+
+예를 들어, gulp와 같은 도구를 통해 빌드 시간 JavaScript 축소가 수행되는 경우, 준비 및 제작을 위해 만드는 것이 아니라 개발 환경을 만들 때 다른 축소 수준을 사용하려고 할 수 있습니다.
+
+이를 지원하기 위해 Cloud Manager는 모든 실행을 위해 이러한 표준 환경 변수를 빌드 컨테이너에 추가합니다.
+
+| **변수 이름** | **정의** |
+|---|---|
+| CM_BUILD | 항상 "true"로 설정 |
+| 분기 | 실행을 위해 구성된 분기 |
+| CM_PIPELINE_ID | 숫자 파이프라인 식별자 |
+| CM_PIPELINE_NAME | 파이프라인 이름 |
+| CM_PROGRAM_ID | 숫자 프로그램 식별자 |
+| CM_PROGRAM_NAME | 프로그램 이름 |
+| ARTIFACTS_VERSION | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 합성 버전 |
+
+### 사용자 지정 환경 변수 {#custom-environ-variables}
+
+경우에 따라 고객의 빌드 프로세스는 git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 고객 성공 엔지니어(CSE)가 고객별로 이러한 변수를 구성할 수 있습니다. 이러한 변수는 보안 저장소 위치에 저장되며 특정 고객의 빌드 컨테이너에서만 볼 수 있습니다. 이 기능을 사용하려는 고객은 CSE에 문의하여 변수를 구성해야 합니다.
+
+구성되면 이러한 변수를 환경 변수로 사용할 수 있습니다. 이러한 속성을 Maven 속성으로 사용하려면 위에서 설명한 프로필 내에서 pom.xml 파일에서 참조할 수 있습니다.
+
+```xml
+        <profile>
+            <id>cmBuild</id>
+            <activation>
+                  <property>
+                        <name>env.CM_BUILD</name>
+                  </property>
+            </activation>
+            <properties>
+                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
+            </properties>
+        </profile>
+```
+
+>[!NOTE]
+>
+>환경 변수 이름에는 영숫자와 밑줄(_) 문자만 사용할 수 있습니다. 관례에 따라, 이름은 모두 대문자여야 합니다.
+
 ## Cloud Manager에서 Maven 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
 
 일부 제한된 경우, 개발자 워크스테이션에서 실행되는 경우와 달리 Cloud Manager 내에서 실행할 때 빌드 프로세스를 약간 변경해야 할 수 있습니다. 이러한 경우 Maven [프로필을](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) 사용하여 Cloud Manager를 비롯한 다양한 환경에서 빌드가 어떻게 달라야 하는지 정의할 수 있습니다.
 
-Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 이름이 지정된 환경 변수가 있는지 확인하여 수행해야 `CM_BUILD`합니다. 이 변수는 항상 Cloud Manager 빌드 환경 내에서 설정됩니다. Conversly, Cloud Manager 빌드 환경 외에서만 사용되는 프로필은 이 변수의 유용성을 찾아 수행해야 합니다.
+Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 위에 설명된 CM_BUILD 환경 변수를 검색하여 수행해야 합니다. Conversly, Cloud Manager 빌드 환경 외에서만 사용되는 프로필은 이 변수의 유용성을 찾아 수행해야 합니다.
 
 예를 들어 빌드가 Cloud Manager 내에서 실행될 때만 간단한 메시지를 출력하려는 경우 다음을 수행합니다.
 
@@ -186,31 +231,6 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 이름이 
         </profile>
 ```
 
-## 환경 변수 {#environment-variables}
-
-### 표준 환경 변수 {#standard-environ-variables}
-
-경우에 따라 고객의 빌드 프로세스는 git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 고객 성공 엔지니어(CSE)가 고객별로 이러한 변수를 구성할 수 있습니다. 이러한 변수는 보안 저장소 위치에 저장되며 특정 고객의 빌드 컨테이너에서만 볼 수 있습니다. 이 기능을 사용하려는 고객은 CSE에 문의하여 변수를 구성해야 합니다.
-
-구성되면 이러한 변수를 환경 변수로 사용할 수 있습니다. 이러한 속성을 Maven 속성으로 사용하려면 위에서 설명한 프로필 내에서 pom.xml 파일에서 참조할 수 있습니다.
-
-```xml
-        <profile>
-            <id>cmBuild</id>
-            <activation>
-                  <property>
-                        <name>env.CM_BUILD</name>
-                  </property>
-            </activation>
-            <properties>
-                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
-            </properties>
-        </profile>
-```
-
->[!NOTE]
->
->환경 변수 이름에는 영숫자와 밑줄(_) 문자만 사용할 수 있습니다. 관례에 따라, 이름은 모두 대문자여야 합니다.
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
