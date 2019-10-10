@@ -10,7 +10,7 @@ topic-tags: using
 content-type: 참조
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f5ff89820eb843b35b617d300dbbc07f19ca2c17
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -129,9 +129,17 @@ Dispatcher Invalidate를 구성하려면 아래 절차를 따르십시오.
    ![](assets/image2018-8-7_15-4-30.png)
 
    **단계 배포 후 승인**&#x200B;프로덕션 파이프라인에서 **구성할 수 있는 단계 배포 후** 승인(선택 사항)이 있습니다.
+이 옵션은 파이프라인 편집(Pipeline Edit) **화면의 새 옵션에서 사용할 수** 있습니다.
+
+   ![](assets/post_deployment1.png)
+
+   그러면 파이프라인 실행 중에 별도의 단계로 표시됩니다.
+   ![](assets/post_deployment2.png)
+
    >[!NOTE]
    >
    >**단계 배포 후** 승인하면 제작 배포 전 승인과 유사하게 작동하지만, 단계 배포 단계 바로 직후에 모든 테스트가 완료되고 나면 수행되는 프로덕션 배포 전 승인과 비교하여 테스트가 완료되기 바로 그 결과가 발생합니다.
+
 
 1. 테스트 **탭에** 액세스하여 프로그램의 테스트 기준을 정의합니다.
 
