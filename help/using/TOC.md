@@ -4,7 +4,7 @@ sub-product: 경험 관리자 클라우드 관리자
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 도움말
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
 + 코드 관리 {#managing-code}
-   + [Maven 프로필 활성화](activating-maven-project.md)
+   + [Maven 프로젝트 버전 처리](activating-maven-project.md)
    + [Git과 통합](setup-cloud-manager-git-integration.md)
 + 제품 업데이트 마법사 {#product-update-wizard}
    + [개요](overview-productupdate-wizard.md)
