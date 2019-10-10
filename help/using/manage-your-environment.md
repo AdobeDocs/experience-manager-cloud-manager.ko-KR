@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -22,10 +22,11 @@ Cloud **Manager의** 개요 페이지에는 **관리되는 모든 AEM** 환경�
 
 ![](assets/Manage_Environments1.png)
 
-## 개요 비디오 - 환경 {#environments-video}
+## 비디오 자습서 {#video-tutorial}
+
+### Cloud Manager 환경 개요 {#environ-video}
 
 다음 비디오에서는 AEM 작성자, AEM 게시 및 발송자 인스턴스로 구성된 클라우드 관리자 환경에 대한 개요를 제공합니다.
-자세한 내용은 아래 비디오를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/?captions=kor)
 
