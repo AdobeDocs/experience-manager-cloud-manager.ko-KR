@@ -10,7 +10,7 @@ topic-tags: using
 content-type: 참조
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
 
 ---
 
@@ -193,8 +193,6 @@ Dispatcher Invalidate를 구성하려면 아래 절차를 따르십시오.
 ## 비프로덕션 및 코드 품질 전용 파이프라인
 
 스테이지와 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 비프로덕션 파이프라인이라고 하는 추가 파이프라인을 설정할 **수 있습니다**. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. 선택적으로 Adobe Managed Services 환경에 배포할 수도 있습니다.
-
-## 비프로덕션 및 코드 품질 전용 파이프라인에 대한 비디오
 
 ## 비디오 자습서 {#video-tutorial-two}
 
