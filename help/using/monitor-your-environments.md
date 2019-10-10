@@ -4,7 +4,7 @@ seo-title: 환경 모니터링
 description: 'null'
 seo-description: 이 페이지에서 환경 내의 개별 인스턴스를 관찰하고 각 인스턴스에 대한 다양한 지표를 추적하여 수행되는 Cloud Manager의 시스템 모니터링에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 ---
 
@@ -49,7 +49,9 @@ source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
 >
 >기본적으로 이 페이지로 이동하면 프로덕션 환경 인스턴스가 표시되지만 다른 환경도 열 수 있습니다.
 
-## 보고서에 대한 개요 비디오 {#video-reports}
+## 비디오 자습서 {#video-tutorial}
+
+### 클라우드 관리자 보고서 개요 {#reports-video}
 
 클라우드 관리자 보고서는 각 AEM 인스턴스에 대한 다양한 지표를 보고하고 추적하는 차트 세트를 통해 프로그램의 환경 및 AEM 인스턴스에 대한 보기를 제공합니다.
 자세한 내용은 아래 비디오를 참조하십시오.
