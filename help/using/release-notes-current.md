@@ -4,7 +4,7 @@ seo-title: 2019.10.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.10.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.10.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 
 ## 릴리스 날짜 {#release-date}
 
-버전 2019.10.0 [!UICONTROL Cloud Manager] 의 릴리스 날짜는 2019년 10월 12일입니다.
+버전 2019.10.0 [!UICONTROL Cloud Manager] 의 릴리스 날짜는 2019년 10월 10일입니다.
 
 ## 새로운 기능 {#whats-new}
 
@@ -33,4 +33,4 @@ source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
 ## 버그 수정 {#bug-fixes}
 
 * 개요 페이지의 카드 중 **일부가** 세로로 정렬되지 않았습니다.
-* 특정 실패 조건으로 인해 파이프라인 실행이 제대로 표시되지 않고 하위 시퀀스 실행을 방지했습니다.
+* 특정 실패 조건으로 인해 파이프라인 실행이 제대로 표시되지 않고 후속 실행을 방지했습니다.
