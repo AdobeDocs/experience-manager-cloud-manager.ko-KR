@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 5a9d5fc71968741948c519681bcc25bb40d4da45
 
 ---
 
@@ -125,7 +125,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우 가능한 �
 
    >[!NOTE]
    >
-   >개발 및 스테이지 배포에서 로드 밸런서 변경 사항을 건너뛸 수 있습니다. 즉, 비프로덕션 파이프라인, 개발자 환경, 프로덕션 파이프라인의 경우 스테이지용 단계를 분리하고 연결할 수 있습니다. 이 기능은 1-1-1 고객이 주로 사용할 것으로 예상됩니다.
+   >개발 및 스테이지 배포에서 로드 밸런서 변경 사항을 건너뛸 수 있습니다. 즉, 비프로덕션 파이프라인, 개발자 환경, 프로덕션 파이프라인의 경우 스테이지용 단계를 분리하고 연결할 수 있습니다.
 
 ### 제작 단계로의 배포 {#deployment-production-phase}
 
