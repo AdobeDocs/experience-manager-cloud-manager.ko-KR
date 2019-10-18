@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: 시작하기
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 2028569406bcaacb27c42879a79832dec7ec91f4
+source-git-commit: 8daee34e6cfaddb31fc447f64de9ce5ca7ed54ba
 
 ---
 
@@ -76,7 +76,7 @@ Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 
 
 * 배포 가능한 Dispatcher 객체는 *conf* 및 *conf*. *d라는 이름의 디렉토리가 있는 zip* 파일을 스캔하여 *검색합니다(다시 target*&#x200B;디렉토리에 포함).
 
-* 두 개 이상의 컨텐츠 패키지가 있는 경우 패키지 배포 순서가 보장되지 않습니다. 특정 주문이 필요한 경우 컨텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
+* 두 개 이상의 컨텐츠 패키지가 있는 경우 패키지 배포 순서가 보장되지 않습니다. 특정 주문이 필요한 경우 컨텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다. 배포에서 패키지를 [건너뛸](#skipping-content-packages) 수 있습니다.
 
 <!-- 
 
