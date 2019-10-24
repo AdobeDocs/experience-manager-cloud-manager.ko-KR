@@ -10,7 +10,7 @@ topic-tags: using
 content-type: 참조
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 581e78ef4163e8e9b2b26613512b82223c214071
+source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
 
 ---
 
@@ -204,7 +204,7 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
 
 홈 화면에서 이러한 파이프라인은 새로운 카드에 나열됩니다.
 
-1. Cloud **Manager** 홈 화면에서 비프로덕션 파이프라인 타일에 액세스합니다.
+1. Cloud **Manager 홈 화면에서 비프로덕션 파이프라인** 타일에 액세스합니다.
 
    ![](assets/Configuring_Pipeline_Add-Production.png)
 
