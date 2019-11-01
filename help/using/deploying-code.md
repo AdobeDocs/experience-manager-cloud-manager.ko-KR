@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: f9df9c05fb708aed3f9ea91780f7a92c24e04673
+source-git-commit: bc9454120c92181503efbf8270ce621af26801d9
 
 ---
 
@@ -51,8 +51,8 @@ Pipeline(저장소, **환경** 및 테스트 환경)을 구성했으면 코드�
 
    스테이지 **테스트에는**&#x200B;다음 단계가 포함됩니다.
 
-   * 보안 테스트 — 이 단계에서는 애플리케이션 코드가 AEM 환경에 미치는 보안 영향을 평가합니다. 테스트 [프로세스에 대한](understand-your-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
-   * 성능 테스트 — 이 단계에서는 애플리케이션 코드의 성능을 평가합니다. 테스트 [프로세스에 대한](understand-your-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
+   * 보안 테스트:이 단계에서는 애플리케이션 코드가 AEM 환경에 미치는 보안 영향을 평가합니다. 테스트 [프로세스에 대한](understand-your-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
+   * 성능 테스트:이 단계에서는 애플리케이션 코드의 성능을 평가합니다. 테스트 [프로세스에 대한](understand-your-test-results.md) 자세한 내용은 테스트 결과 이해를 참조하십시오.
    ![](assets/Stage_Testing1.png)
 
    프로덕션 **배포에는**&#x200B;다음 단계가 포함됩니다.
