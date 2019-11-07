@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: 72daabd54cd6216743dfbf4d843f685b3b12b3aa
+source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 ---
 
@@ -20,7 +20,7 @@ Cloud **Manager의** 개요 페이지에는 **관리되는 모든 AEM** 환경�
 
 나열된 각 환경에는 연결된 상태가 표시됩니다.
 
-![](assets/Manage-Environments1.png)
+![](assets/Manage-Environ-Overview.png)
 
 ## 비디오 자습서 {#video-tutorial}
 
