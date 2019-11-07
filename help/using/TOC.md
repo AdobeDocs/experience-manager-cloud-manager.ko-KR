@@ -1,10 +1,10 @@
 ---
 product: adobe experience manager
-sub-product: 경험 관리자 클라우드 관리자
+sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 도움말
 translation-type: tm+mt
-source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
+source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
    + [보안 및 개인 정보](security-and-privacy.md)
    + [도움말 리소스](help-resources.md)
 + 필수 사항 {#requirements}
-   + [액세스 권한 부여됨](access-rights-granted.md)
+   + [부여된 액세스 권한](access-rights-granted.md)
    + [소스 코드 저장소](source-code-repository.md)
    + [사용자 및 역할 추가](setting-up-users-and-roles.md)
    + [제공된 환경](environments-provisioned.md)
@@ -28,7 +28,7 @@ source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
    + [프로그램 설정](setting-up-program.md)
    + [AEM 애플리케이션 프로젝트 만들기](create-an-application-project.md)
    + [릴리스 분기 구성](configure-your-release-branches.md)
-   + [발송자 구성 관리](dispatcher-configurations.md)
+   + [디스패처 구성 관리](dispatcher-configurations.md)
 + 사용 방법 {#how-to-use}
    + [CI/CD 파이프라인 구성](configuring-pipeline.md)
    + [코드 배포](deploying-code.md)
@@ -46,18 +46,19 @@ source-git-commit: d458e0735b558940a3da3a7f3129dbec49cc1688
    + [개요](overview-productupdate-wizard.md)
    + [평가](evaluation.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트(2019.10.0)](release-notes-current.md)
-   + [2019.9.0용 릴리스 노트](release-notes-2019-9-0.md)
-   + [2019.8.0용 릴리스 노트](release-notes-2019-8-0.md)
-   + [2019.7.0용 릴리스 노트](release-notes-2019-7-0.md)
-   + [2019.6.0용 릴리스 노트](release-notes-2019-6-0.md)
-   + [2019.5.0용 릴리스 노트](release-notes-2019-5-0.md)
-   + [2019.4.0용 릴리스 노트](release-notes-2019-4-0.md)
-   + [2019.3.0용 릴리스 노트](release-notes-2019-3-0.md)
-   + [2019.2.0용 릴리스 노트](release-notes-2019-2-0.md)
-   + [2019.1.0용 릴리스 노트](release-notes-2019-1-0.md)
-   + [2018.9.0용 릴리스 노트](release-notes-2018-9-0.md)
-   + [2018.8.0용 릴리스 노트](release-notes-2018-8-0.md)
+   + [현재 릴리스 노트(2019.11.0)](release-notes-current.md)
+   + [2019.10.0 릴리스 노트](release-notes-2019-10-0.md)
+   + [2019.9.0 릴리스 노트](release-notes-2019-9-0.md)
+   + [2019.8.0 릴리스 노트](release-notes-2019-8-0.md)
+   + [2019.7.0 릴리스 노트](release-notes-2019-7-0.md)
+   + [2019.6.0 릴리스 노트](release-notes-2019-6-0.md)
+   + [2019.5.0 릴리스 노트](release-notes-2019-5-0.md)
+   + [2019.4.0 릴리스 노트](release-notes-2019-4-0.md)
+   + [2019.3.0 릴리스 노트](release-notes-2019-3-0.md)
+   + [2019.2.0 릴리스 노트](release-notes-2019-2-0.md)
+   + [2019.1.0 릴리스 노트](release-notes-2019-1-0.md)
+   + [2018.9.0 릴리스 노트](release-notes-2018-9-0.md)
+   + [2018.8.0 릴리스 노트](release-notes-2018-8-0.md)
    + [2018.7.0 릴리스 노트](release-notes-2018-7-0.md)
-   + [2018.6.0용 릴리스 노트](release-notes-2018-6-0.md)
-   + [2018.5.0용 릴리스 노트](release-notes-2018-5-0.md)
+   + [2018.6.0 릴리스 노트](release-notes-2018-6-0.md)
+   + [2018.5.0 릴리스 노트](release-notes-2018-5-0.md)
