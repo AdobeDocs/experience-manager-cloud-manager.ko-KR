@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 72daabd54cd6216743dfbf4d843f685b3b12b3aa
 
 ---
 
@@ -20,7 +20,7 @@ Cloud **Manager의** 개요 페이지에는 **관리되는 모든 AEM** 환경�
 
 나열된 각 환경에는 연결된 상태가 표시됩니다.
 
-![](assets/Manage_Environments1.png)
+![](assets/Manage-Environments1.png)
 
 ## 비디오 자습서 {#video-tutorial}
 
@@ -36,7 +36,7 @@ Cloud **Manager의** 개요 페이지에는 **관리되는 모든 AEM** 환경�
 
 상태는 환경의 노드에 걸쳐 롤업된 전원 상태입니다. 모든 노드가 실행 중이면 녹색이고, 한 노드가 중지되더라도 빨간색은 빨간색이고, 한 노드라도 작동 중이면 파란색입니다. 이 우선 순위에 따라 한 노드가 사용 불가능한 전원 상태를 가지는 경우 노랑이 표시됩니다.
 
-![](assets/manage_environments-screen2.png)
+![](assets/Environments-card-new.png)
 
 ### 환경 {#environments}
 
@@ -48,4 +48,4 @@ Cloud **Manager의** 개요 페이지에는 **관리되는 모든 AEM** 환경�
 >
 >노드의 **STATUS는** VM의 전원 상태를 나타내며 서버의 AEM 상태를 반영하지 않습니다. 상태는 **실행(녹색 원), 중지됨** ( **빨간색 원** ), **위로** 올라오는 **파란색 원** (파란색 원) 또는사용할 수 없음(노란색 원)이 될 수 있습니다.
 
-![](assets/Manage_Environments2.png)
+![](assets/Environments-tab.png)
