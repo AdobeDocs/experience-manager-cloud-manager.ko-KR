@@ -10,7 +10,7 @@ topic-tags: using
 content-type: 참조
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: bc419b96554a40b84878140f8f532c9f4e10c9f3
+source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
 
 ---
 
@@ -58,7 +58,7 @@ UI를 사용하여 프로그램을 설정하면 [!UICONTROL Cloud Manager] 파�
 
 1. 파이프라인 **설정** (Setup Pipeline)을 클릭하여 파이프라인을 설정하고 구성합니다.
 
-   ![](assets/Configure_ci-cd-1.png)
+   ![](assets/Setup-Pipeline.png)
 
 1. 파이프라인 **설정** 화면이 표시됩니다.
 
@@ -188,7 +188,7 @@ Dispatcher Invalidate를 구성하려면 아래 절차를 따르십시오.
    >
    >또한 파이프라인을 설정했으면 UI의 프로덕션 파이프라인 설정 **타일을 사용하여 동일한** 설정을 편집할 수 [!UICONTROL Cloud Manager] 있습니다.
 
-   ![](assets/Prod-Pipeline-Settings-Dialog.png)
+   ![](assets/Production-Pipeline.png)
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인
 
@@ -206,7 +206,7 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
 
 1. Cloud **Manager 홈 화면에서 비프로덕션 파이프라인** 타일에 액세스합니다.
 
-   ![](assets/Configuring_Pipeline_Add-Production.png)
+   ![](assets/Non-Production-Pipeline.png)
 
 1. 추가 버튼을 클릭하여 파이프라인 이름, 파이프라인 유형 및 Git 분기를 지정합니다.
 
