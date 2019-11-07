@@ -4,7 +4,7 @@ seo-title: 환경 모니터링
 description: 'null'
 seo-description: 이 페이지에서 환경 내의 개별 인스턴스를 관찰하고 각 인스턴스에 대한 다양한 지표를 추적하여 수행되는 Cloud Manager의 시스템 모니터링에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
+source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ---
 
@@ -43,7 +43,7 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 
 각 카테고리의 상태는 개별 지표의 요약입니다. 한 카테고리의 지표가 위험 상태에 있는 경우 전체 카테고리는 개요 페이지의 목적에 있어 위험 상태에 있습니다. 동일한 요약은 환경 수준 및 인스턴스 수준에서 볼 수 있습니다.
 
-![](assets/Reports.png)
+![](assets/System-Monitoring-Reports.png)
 
 >[!NOTE]
 >
@@ -107,11 +107,11 @@ source-git-commit: dd23fc2277c2e2c51e3ab9b071d6336d2e0d6488
 고객은 계약한 SLA(서비스 수준 계약)와 관련하여 AEM 환경의 성능을 확인할 수 있습니다. 보고서 화면의 하위 메뉴를 통해 사용할 수 있습니다.
 예를 들어 아래 그래프는 2018년 월별 SLA 달성 내역을 보여줍니다.
 
-![](assets/sla-reporting1.png)
+![](assets/SLA-Reports-one.png)
 
 시스템 모니터링 그래프와 마찬가지로, 데이터 포인트를 롤오버하면 해당 월의 특정 값이 표시됩니다.
 
-![](assets/sla-reporting2.png)
+![](assets/SLA-Reports-two.png)
 
 이 그래프 아래의 이벤트 분석 섹션은 현재 선택한 연도 동안 프로그램에 대해 발생한 장애 세트를 보여줍니다. 각 인시던트는 시간 범위, 원인 및 주석 세트를 가집니다.
 
