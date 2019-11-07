@@ -10,7 +10,7 @@ topic-tags: using
 content-type: 참조
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 06154ad565168d25e18de49c10e5944f39a293c2
+source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 ---
 
@@ -219,7 +219,7 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
    * **편집** - 파이프라인 설정을 편집할 수 있습니다.
    * **세부 사항** - 마지막 파이프라인 실행을 표시합니다(있을 경우).
    * **빌드** - 파이프라인을 실행할 수 있는 실행 페이지로 이동합니다.
-   ![](assets/Configuring_Pipeline_Add-Production3.png)
+   ![](assets/Non-prod-2.png)
 
    >[!NOTE]
    >
