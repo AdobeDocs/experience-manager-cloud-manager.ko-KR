@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 8ef574c8-47d9-404b-8e9c-9c6716c1f49a
 translation-type: tm+mt
-source-git-commit: 1d4bb0b24cdcd6dc0ed9db58f1e14b6714bb96d6
+source-git-commit: be0350b98c19b3b84519947c04a7e362b46bba21
 
 ---
 
 
 # 알림 {#notifications}
 
-[!UICONTROL Cloud Manager] 사용자는 프로덕션 배포 시작 시(성공 또는 실패) 파이프라인이 시작되고 완료될 때, 그리고 Go-Live 승인 및 **예약** 단계에 도달할 때 알림을 받을 **수** 있습니다. 이러한 알림은 Adobe 알림 시스템을 통해 [!UICONTROL Experience Cloud] 전송됩니다.
+[!UICONTROL Cloud Manager] 사용자는 프로덕션 배포가 시작될 때(성공 또는 실패), 그리고 Go-Live 승인 및 **예약 단계에 도달할 때** 알림을 받을 **수** 있습니다. 이러한 알림은 Adobe 알림 시스템을 통해 [!UICONTROL Experience Cloud] 전송됩니다.
 
 >[!NOTE]
 >
