@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 26014cfabfee6226033ba2fc1167d8f5509e17c6
+source-git-commit: 1f31e654272afa60cac3376ce4dc3bc76f0d9dda
 
 ---
 
@@ -113,7 +113,6 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | AuthorizableNodeName 구현은 노드 이름/경로에 승인 가능한 ID를 표시하지 않습니다. | 승인 가능한 노드 이름 생성 | 중요 |
 | 기본 암호가 변경되었습니다. | 기본 로그인 계정 | 중요 |
 | Sling default GET servlet은 DOS 공격으로부터 보호됩니다. | Sling Get Servlet | 중요 |
-| Dispatcher가 요청을 제대로 필터링합니다. | CQ Dispatcher 구성 | 중요 |
 | Sling Java 스크립트 핸들러는 적절하게 구성됩니다. | Sling Java Script Handler | 중요 |
 | Sling JSP 스크립트 핸들러는 적절하게 구성됩니다. | Sling JSP Script Handler | 중요 |
 | SSL이 올바르게 구성됨 | SSL 구성 | 중요 |
