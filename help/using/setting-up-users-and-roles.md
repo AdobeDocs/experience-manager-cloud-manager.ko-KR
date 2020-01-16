@@ -6,15 +6,15 @@ seo-description: 관리 콘솔에서 Cloud Manager 제품 프로필에 사용자
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 요구 사항
+topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
-source-git-commit: 73203dca7b20570103af429cf933610941b787be
+source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 
 ---
 
 
-# 사용자 및 역할 추가{#add-users-and-roles}
+# 사용자 및 역할 추가 {#add-users-and-roles}
 
 의 많은 기능을 사용하려면 특정 권한이 [!UICONTROL Cloud Manager] 필요합니다. 예를 들어 특정 사용자만 프로그램에 대한 주요 성과 지표(KPI)를 설정할 수 있습니다. 이러한 권한은 논리적으로 역할로 그룹화됩니다.
 
@@ -41,16 +41,10 @@ source-git-commit: 73203dca7b20570103af429cf933610941b787be
 |--- |--- |
 | 비즈니스 소유자 | KPI 정의, 프로덕션 배포 승인, 중요한 3단계 장애 무시 등의 책임입니다. |
 | 프로그램 관리자 | 팀 설정을 [!UICONTROL Cloud Manager] 수행하고 상태를 검토하고 KPI를 보는 데 사용합니다. 중요한 3단계 오류를 승인할 수 있습니다. |
-| 배포 관리자 | 배포 작업을 관리합니다. 스테이지/프로덕션 배포를 실행하는 [!UICONTROL Cloud Manager] 데 사용됩니다. CI/CD 파이프라인을 편집할 수 있습니다. 중요한 3단계 오류를 승인할 수 있습니다. Git 리포지토리에 액세스할 수 있습니다. CSE/AMS 담당자에게 문의하여 요청하십시오. |
-| 개발자 | 사용자 정의 애플리케이션 코드를 개발하고 테스트합니다. 주로 상태를 보는 [!UICONTROL Cloud Manager] 데 사용됩니다. 코드 커밋을 위해 Git 리포지토리에 액세스해야 합니다. Git 리포지토리에 대한 액세스 권한을 부여하려면 이 역할의 사용자를 추가할 때 CSE/AMS 담당자에게 문의하십시오. |
+| 배포 관리자 | 배포 작업을 관리합니다. 스테이지/프로덕션 배포를 실행하는 [!UICONTROL Cloud Manager] 데 사용됩니다. CI/CD 파이프라인을 편집할 수 있습니다. 중요한 3단계 오류를 승인할 수 있습니다. Git 리포지토리에 액세스할 수 있습니다. |
+| 개발자 | 사용자 정의 애플리케이션 코드를 개발하고 테스트합니다. 주로 상태를 보는 [!UICONTROL Cloud Manager] 데 사용됩니다. 코드 커밋을 위해 Git 리포지토리에 액세스할 수 있습니다. |
 | 고객 성공 엔지니어 | 일반적으로 AMS 고객의 성공을 지원합니다. CSE 감독이 필요한 배포 실행을 [!UICONTROL Cloud Manager] 위해 상호 작용합니다. |
 | 컨텐츠 작성자 | 일반적으로 상호 작용하지 않습니다 [!UICONTROL Cloud Manager]. 프로그램 [!UICONTROL Cloud Manager] 전환기(이동 중)를 사용하여 AEM에 액세스할 [!UICONTROL Experience Cloud]수 있습니다. |
-
->[!NOTE]
->
->CSE에서 Git [!UICONTROL Cloud Manager] 리포지토리에 대한 액세스를 관리합니다. 사용자를 추가 및 제거하려면 해당 담당자에게 문의하십시오.
->
->새로 추가된 사용자가 Git 리포지토리에 액세스해야 하는 경우 액세스 권한을 부여받으려면 CSE/AMS 담당자에게 문의해야 합니다. 이러한 역할은 Git 리포지토리에 대한 자동 액세스를 제공하지 않습니다. Git 리포지토리 액세스 권한이 있는 최대 3명의 사용자만 가질 수 있습니다.
 
 ## 관리 콘솔을 사용하여 프로필 만들기 {#using-admin-console-to-create-a-profile}
 
