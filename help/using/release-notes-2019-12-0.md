@@ -4,9 +4,10 @@ seo-title: 2019.12.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.12.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.12.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
+source-git-commit: 0fa1fedccb013e82c8df5838a612ce26a1efb7e8
 
 ---
+
 
 # 2019.12.0 릴리스 노트 {#release-notes-for}
 
@@ -22,7 +23,6 @@ source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
 * 이제 파이프라인 실행의 단계에 각 단계에 대한 완료 타임스탬프가 표시됩니다.
 * 이제 Java 코드가 포함되지 않은 프로젝트의 코드 품질 검사를 통해 코드 검사 비율이 100%로 보고됩니다.
 * CQ 디스패처 구성 상태 검사가 제거되었습니다.
-
 
 ## 버그 수정 {#bug-fixes}
 
