@@ -4,14 +4,14 @@ seo-title: CI/CD 파이프라인
 description: 'null'
 seo-description: Cloud Manager의 스테이지 및 프로덕션에 대한 배포를 처리하는 CI/CD 파이프라인에 대해 알아보려면 이 섹션을 따르십시오.
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
-topic-tags: 소개
+topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
+source-git-commit: 2d7b18ea55e2bd5879cf8bd896cafed4d46c0011
 
 ---
 
-
+SHANKARI_TEST_CHANGE
 # CI/CD 파이프라인 {#ci-cd-pipeline}
 
 ## 파이프라인 개요 {#pipeline-overview}
@@ -65,4 +65,4 @@ CI/CD 파이프라인은 품질 게이트 또는 승인 기준을 제공하므�
 
 ### 게이트를 설정하는 방법 {#how-to-setup-gates}
 
-코드 **[, 품질](configuring-pipeline.md)** 및 성능 게이트의 설정에 대한 자세한 내용은 게이트 구성을 참조하십시오.
+코드 **[, 품질](configuring-pipeline.md)**및 성능 게이트의 설정에 대한 자세한 내용은 게이트 구성을 참조하십시오.
