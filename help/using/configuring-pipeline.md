@@ -7,10 +7,10 @@ uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
-content-type: 참조
+content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
 
 CI/CD 프로덕션 파이프라인 구성은 프로덕션 배포 및 성능 테스트 매개 변수를 제어하는 매개 변수, 파이프라인을 시작하는 트리거를 정의합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 
 ## 흐름 이해 {#understanding-the-flow}
@@ -78,7 +78,6 @@ Git 분기를 선택하고 [다음]을 **클릭합니다**.
 
    * **Git 변경** 시 - 구성된 git 분기에 커밋이 추가될 때마다 CI/CD 파이프라인을 시작합니다. 이 옵션을 선택하더라도 항상 수동으로 파이프라인을 시작할 수 있습니다.
    * **수동** - UI를 사용하여 파이프라인을 수동으로 시작합니다.
-   * **예약됨** - 이 옵션은 향후 릴리스에서 곧 제공될 예정입니다.
    파이프라인 설정 또는 편집 중에 배포 관리자는 코드 품질, 보안 테스트 및 성능 테스트와 같은 품질 게이트에서 중요한 오류가 발생하는 경우 파이프라인의 동작을 정의할 수 있습니다.
 
    이 기능은 보다 자동화된 프로세스를 원하는 고객에게 유용합니다. 사용 가능한 옵션은 다음과 같습니다.
@@ -101,7 +100,7 @@ Git 분기를 선택하고 [다음]을 **클릭합니다**.
 >
 >예약 **옵션을** 선택한 경우 단계 배포 **후** 파이프라인으로 프로덕션 배포를 예약하고, 일정이 설정된 경우 **GoLive 승인**&#x200B;사용을 선택하여일정을 설정할 때까지 기다릴 수 있습니다. 사용자는 프로덕션 배포를 즉시 실행하도록 선택할 수도 있습니다.
 >
->배포 일정을 [**설정하거나 즉시**](deploying-code.md)프로덕션을 실행하려면 코드 배포를 참조하십시오.
+>배포 일정을 [**설정하거나 즉시&#x200B;**](deploying-code.md)프로덕션을 실행하려면 코드 배포를 참조하십시오.
 
 ![](assets/Configure_ci-cd-3.png)
 
@@ -200,7 +199,7 @@ Dispatcher Invalidate를 구성하려면 아래 절차를 따르십시오.
 
 CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배포 파이프라인의 두 가지 카테고리로 분류됩니다. 코드 품질은 Git 분기의 모든 코드를 분석하여 Cloud Manager의 코드 품질 스캔을 기반으로 구축 및 평가됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26316/?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
 홈 화면에서 이러한 파이프라인은 새로운 카드에 나열됩니다.
 
