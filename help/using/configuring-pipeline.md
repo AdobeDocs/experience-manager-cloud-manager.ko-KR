@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
 
 ---
 
@@ -102,7 +102,7 @@ Git 분기를 선택하고 [다음]을 **클릭합니다**.
 >
 >배포 일정을 [**설정하거나 즉시&#x200B;**](deploying-code.md)프로덕션을 실행하려면 코드 배포를 참조하십시오.
 
-![](assets/Configure_ci-cd-3.png)
+![](assets/configure-pipeline3.png)
 
 >[!NOTE]
 >
