@@ -4,13 +4,13 @@ seo-title: 2020.2.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
 
 ---
 
 # 2020.1.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 릴리스 2020.2.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명하고 Git 자격 증명 및 로그인 경험에 대한 업데이트를 추가합니다.
+다음 섹션에서는 릴리스 2020.2.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
 ## Release Date {#release-date}
 
