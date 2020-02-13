@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: f9c8c1d7b63749e6994481324392aee7330046fb
+source-git-commit: fb84c2d41c76c64fc0be1e9f86356ee0cb5bcf9c
 
 ---
 
@@ -211,7 +211,7 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
 
    또한 파이프라인 옵션에서 배포 트리거 및 중요 실패 동작을 설정할 수도 있습니다.
 
-   ![](assets/Configuring_Pipeline_Add-Production2.png)
+   ![](assets/non-prod-pipe.png)
 
 1. 저장을 **클릭하면** 파이프라인이 홈 화면의 카드에 다음과 같은 세 가지 작업이 표시됩니다.
 
