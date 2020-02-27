@@ -4,7 +4,7 @@ sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager Cloud Manager Help
 translation-type: tm+mt
-source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
+source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 
 ---
 
@@ -22,6 +22,7 @@ source-git-commit: 854c09878a633bd46e4d7e9d604a8335c225a1c4
    + [부여된 액세스 권한](access-rights-granted.md)
    + [소스 코드 저장소](source-code-repository.md)
    + [사용자 및 역할 추가](setting-up-users-and-roles.md)
+   + [역할 기반 권한](role-based-permissions.md)
    + [제공된 환경](environments-provisioned.md)
 + 시작하기 {#getting-started}
    + [처음 로그인](first-time-login.md)
