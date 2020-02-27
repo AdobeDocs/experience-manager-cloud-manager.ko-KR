@@ -35,4 +35,4 @@ IMS [!UICONTROL Cloud Manager] 조직에 연결된 모든 권한이 구성되고
 
 [!UICONTROL Cloud Manager] adobe에서 정의한 개인정보 보호 원칙을 준수합니다. 개발자는 HTTPS를 통해 코드를 **Git** 리포지토리로 안전하게 푸시합니다.
 
-[!DNL UI(사용자 인터페이스)( [!UICONTROL Cloud Manager]UI) for]은(는) Adobe에서 정의하는 일반적인 제어 프레임워크를 준수하는 서비스 위에 구축됩니다. [!DNL UI(사용자 인터페이스) for [!UICONTROL Cloud Manager]] 에서는 여러 클라우드 공급자의 보안 서비스를 사용합니다.
+UI(사용자 인터페이스) [!UICONTROL Cloud Manager] 는 Adobe에서 정의한 공통 제어 프레임워크를 준수하는 서비스를 기반으로 구축됩니다. 여러 클라우드 제공업체의 보안 서비스를 [!UICONTROL Cloud Manager] 사용하는 사용자 인터페이스.
