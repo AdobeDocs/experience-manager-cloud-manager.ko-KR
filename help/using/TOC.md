@@ -21,8 +21,8 @@ source-git-commit: 6b6fa995e156fe928c88f55e89a9202c22ec18bc
 + 필수 사항 {#requirements}
    + [부여된 액세스 권한](access-rights-granted.md)
    + [소스 코드 저장소](source-code-repository.md)
-   + [사용자 및 역할 추가](setting-up-users-and-roles.md)
    + [역할 기반 권한](role-based-permissions.md)
+   + [사용자 및 역할 추가](setting-up-users-and-roles.md)
    + [제공된 환경](environments-provisioned.md)
 + 시작하기 {#getting-started}
    + [처음 로그인](first-time-login.md)
