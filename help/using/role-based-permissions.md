@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: a038a3d6e35ff28190441e9d11d9c539641a85af
+source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
 
 ---
 
@@ -42,6 +42,7 @@ source-git-commit: a038a3d6e35ff28190441e9d11d9c539641a85af
 |--- |--- |--- |--- |--- |--- |--- |
 | 애플리케이션 읽기 | 프로그램 KPI 읽기 | x | x | x | x | x |
 | 애플리케이션 쓰기 | 프로그램 설정 또는 편집 | x |  |  |  |  |
+| 프로그램 추가 | 새 프로그램 추가를 참조하십시오. | x |  |  |  |  |
 | 읽기 환경 | 환경 세부 사항을 참조하십시오. | x | x | x | x | x |
 | 실행 만들기 | 파이프라인 시작을 참조하십시오. | x | x | x |  |  |
 | 읽기 실행 | 실행 상태를 참조하십시오. | x | x | x | x | x |
