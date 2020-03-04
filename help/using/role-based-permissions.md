@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
 translation-type: tm+mt
-source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
+source-git-commit: 157370b193c104915be063d1a4375f81839b88a2
 
 ---
 
@@ -58,3 +58,5 @@ source-git-commit: 45548c965b57d53ce931a3c740b0b72ff0496815
 | 파이프라인 수정 승인 | 비즈니스 소유자 옵션을 편집할 수 있습니다. |  | x |  |  |  |
 | 파이프라인 수정 관리 배포 | CSE 감독 옵션을 편집할 수 있습니다. |  | x |  |  |  |
 | 단계 읽기 | 단계 품질 지표 결과를 참조하십시오. | x | x | x | x | x |
+| 개인 액세스 토큰 생성 | Git 액세스. |  | x |  | x |  |
+
