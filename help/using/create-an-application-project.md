@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
+source-git-commit: 25edab26146d7d98ef5a38a45b4fe67b0d5e564e
 
 ---
 
@@ -28,10 +28,6 @@ Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 �
 1. Cloud Manager에 로그인하고 기본 프로그램 설정이 완료되면 저장소가 비어 있는 경우 **개요** 화면에 특별 작업 카드가 표시됩니다.
 
    ![](assets/image2018-10-3_14-29-44.png)
-
-1. 만들기를 **클릭하여** 파이프라인 설정 **화면으로 이동합니다** .
-
-   ![](assets/image2018-10-3_14-30-22.png)
 
 1. 만들기를 **클릭하여** AEM 프로젝트 원형에서 필요한 매개 변수를 제공할 수 있는 대화 상자를 엽니다. 이 대화 상자의 기본 양식에서 다음 두 값을 묻습니다.
 
@@ -278,7 +274,7 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 위에 설
         </profile>
 ```
 
-이 동일한 기술을 사용하여 RubyGems용 또는 Python Packages용 `gem` 등 언어별 패키지를 설치할 `pip` 수 있습니다.
+이와 동일한 기술을 사용하여 RubyGems용 또는 Python Packages용 `gem` 등 언어별 패키지를 설치할 `pip` 수 있습니다.
 
 >[!NOTE]
 >
