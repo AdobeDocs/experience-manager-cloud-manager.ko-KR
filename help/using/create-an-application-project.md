@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
+source-git-commit: b093f1712d9ca9e91b87e925a43e2992a4f11cc0
 
 ---
 
@@ -22,15 +22,6 @@ source-git-commit: dd892ddb2ac2d003229f5a9e2c8e0013b0f11e1b
 
 Cloud Manager를 사용하면 신규 고객을 유치하기 위해 최소한의 AEM 프로젝트를 시작점으로 만들 수 있습니다. 이 프로세스는 AEM 프로젝트 [**원형형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-<!-- 
-
-Comment Type: annotation
-Last Modified By: jsyal
-Last Modified Date: 2018-10-08T12:52:50.071-0400
-
-2018.8.0: Added this new section
-
- -->
 
 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
 
@@ -38,7 +29,6 @@ Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 �
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-[아래에 설명된 두 번째] 단계는 잘못되었습니다. 삭제해 주십시오.
 1. 만들기를 **클릭하여** 파이프라인 설정 **화면으로 이동합니다** .
 
    ![](assets/image2018-10-3_14-30-22.png)
@@ -288,7 +278,7 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필의 활성화는 위에 설
         </profile>
 ```
 
-이와 동일한 기술을 사용하여 RubyGems용 또는 Python Packages용 `gem` 등 언어별 패키지를 설치할 `pip` 수 있습니다.
+이 동일한 기술을 사용하여 RubyGems용 또는 Python Packages용 `gem` 등 언어별 패키지를 설치할 `pip` 수 있습니다.
 
 >[!NOTE]
 >
