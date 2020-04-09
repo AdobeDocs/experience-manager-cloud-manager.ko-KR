@@ -6,10 +6,10 @@ seo-description: 일반 구성을 설정하고 Adobe AEM Cloud Manager를 처음
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 시작하기
+topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 translation-type: tm+mt
-source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -28,17 +28,17 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 다음 비디오에서는 일반적으로 구매한 SLA(서비스 수준 계약)에 해당하는 일련의 비즈니스 이니셔티브를 지원하는 AEM 환경을 나타내는 Cloud Manager 프로그램에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
-1. Adobe에 **로그인하면[!UICONTROL Experience Cloud]** 프로그램 목록이 **표시됩니다**.
+1. Adobe에 **로그인하면[!UICONTROL Experience Cloud]**프로그램 목록이**&#x200B;표시됩니다&#x200B;**.
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
 1. 프로그램(예: We. **Retail Global**)을 선택하고 왼쪽 상단 아이콘을 클릭하여 엽니다 [!UICONTROL Cloud Manager].
 
-   ![](assets/screen_shot_2018-06-04at12611pm.png)
+   ![](assets/first-timea1.png)
 
 1. 표시할 대시보드입니다. [!UICONTROL Cloud Manager]
 
@@ -56,4 +56,4 @@ source-git-commit: 316ec3ec088271a6524d4c8fd4c84fd36e2ac4db
 
 Cloud Manager는 모든 CI/CD 파이프라인 실행, 프로덕션 및 비프로덕션 모두 나열하는 프로그램 활동에 대한 통합 뷰를 제공하므로 과거 및 현재 활동을 볼 수 있으며 모든 활동의 세부 사항을 검토할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
