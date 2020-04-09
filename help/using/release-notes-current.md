@@ -4,7 +4,7 @@ seo-title: 2020.4.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.4.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.4.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
+source-git-commit: ee7fc8a23dd0719eda84638c810842c2dc1772bb
 
 ---
 
@@ -18,9 +18,9 @@ source-git-commit: e7da473a22bec1d3d9b3d39bf654af0c596fe86d
 
 ## 새로운 기능 {#whats-new}
 
-* 사용자가 CM 개요 페이지에서 프로그램을 편집하거나 전환할 수 있도록 내비게이션 CM 개요 페이지를 변경했습니다.
-* 사용자가 CM 랜딩 페이지의 프로그램 카드에서 프로그램을 편집할 수 있도록 하는 변경 사항입니다.
-* 새 파이프라인 상태 &quot;파이프라인 실행 중&quot;이 연결된 환경에 대해 표시됩니다.
+* 사용자가 프로그램을 편집하거나 전환할 수 있도록 해주는 Navigation Cloud Manager 개요 페이지를 변경합니다.
+* 사용자가 Cloud Manager 랜딩 페이지의 프로그램 카드에서 프로그램을 편집할 수 있도록 하는 변경 사항입니다.
+* 새 파이프라인 상태 **파이프라인** 실행 중 연결된 환경에 대해 표시됩니다.
 * 파이프라인 실행 페이지 이해 기능이 개선되었습니다. 여기에는 파이프라인 이름(비프로덕션 파이프라인 전용) 및 유형(Type)의 표시와 파이프라인 상태가 진행 중/취소됨/실패인지 여부를 나타내는 배지가 포함됩니다.
 * Git 암호를 생성하는 데 사용되는 프로세스는 기본 서비스 레이어의 문제에 보다 탄력적으로 적용됩니다.
 
