@@ -4,7 +4,7 @@ seo-title: 환경 모니터링
 description: 'null'
 seo-description: 이 페이지에서 환경 내의 개별 인스턴스를 관찰하고 각 인스턴스에 대한 다양한 지표를 추적하여 수행되는 Cloud Manager의 시스템 모니터링에 대해 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -23,9 +23,9 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
    ![](assets/ProgramLanding.png)
 
-1. 프로그램 카드의 세 번째 아이콘을 클릭합니다.
+1. 프로그램 카드의 네 번째 아이콘을 클릭합니다.
 
-   ![](assets/program-card.png)
+   ![](assets/first-timea1.png)
 
    *또는*,
 
@@ -56,7 +56,7 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 클라우드 관리자 보고서는 각 AEM 인스턴스에 대한 다양한 지표를 보고하고 추적하는 차트 세트를 통해 프로그램의 환경 및 AEM 인스턴스에 대한 보기를 제공합니다.
 자세한 내용은 아래 비디오를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)
 
 ## 시스템 모니터링 세부 사항 {#system-monitoring-detail}
 
@@ -68,7 +68,7 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 ![](assets/System_Monitoring2.png)
 
-개별 그래프는 임계값과 함께 시간 경과에 따른 데이터의 상태 및 그래프를 표시합니다. 여러 인스턴스가 표시되면 각 인스턴스의 데이터는 별도의 시리즈에 있게 됩니다.
+개별 그래프는 임계값과 함께 시간의 경과에 따른 데이터의 상태 및 그래프를 표시합니다. 여러 인스턴스가 표시되면 각 인스턴스의 데이터는 별도의 시리즈에 있게 됩니다.
 
 ![](assets/Monitoring_Graphs1.png)
 
@@ -94,7 +94,7 @@ source-git-commit: 1edfbc0adb04026cd29ba93b4ba155d3b61439dc
 
 **저장 용량**
 
-* 디스크 공간:호스트의 각 마운트 지점에 사용된 디스크 공간(MB)입니다. 각 마운트 지점에 대해 다른 지표가 있습니다. 최소한 "/" 및 "/mnt"에 대한 지표가 표시되지만, 특정 인스턴스 구성에 따라 추가 마운트 지점 지표를 사용할 수 있습니다.
+* 디스크 공간:호스트의 각 마운트 지점에 사용된 디스크 공간(MB)입니다. 각 마운트 지점에 대해 다른 지표가 있습니다. 최소한 &quot;/&quot; 및 &quot;/mnt&quot;에 대한 지표가 표시되지만, 특정 인스턴스 구성에 따라 추가 마운트 지점 지표를 사용할 수 있습니다.
 * 폴더 크기:AEM 세그먼트 스토어:AEM 세그먼트 저장소에 사용된 디스크 공간(GB)입니다.
 
 **애플리케이션**
