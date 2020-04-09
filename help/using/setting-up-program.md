@@ -6,10 +6,10 @@ seo-description: '온보딩 후 비즈니스 소유자는 Adobe AEM Cloud Manage
 uuid: 9ecf8743-1f5a-4744-86af-e2256567642f
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: 시작하기
+topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
 translation-type: tm+mt
-source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
+source-git-commit: 16893b8bcd2b2d681a14bb6be3786e358e1952fb
 
 ---
 
@@ -34,7 +34,13 @@ source-git-commit: 2c05eb4610e35d5126c6c67e44f4b71f3026c887
 
 1. 설정 **프로그램을** 클릭하여 에서 설정 프로세스를 시작합니다 [!UICONTROL Cloud Manager].
 
-   ![](assets/SetUpProgram1.png)
+   ![image1](assets/set-up-program/setup1.png)
+
+   >[!NOTE]
+   > 아래 그림과 같이 작업 표시줄에서 언제든지 프로그램을 전환, 편집 또는 추가할 수 있습니다.
+
+   ![image1](assets/set-up-program/setup2.png)
+
 
 1. 설정 **프로그램** 화면에 프로그램 정보 편집 화면이 표시됩니다.
 
