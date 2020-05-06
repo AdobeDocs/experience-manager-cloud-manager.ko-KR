@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 278858465592482449080fedc3c0165805db223d
+source-git-commit: cd6272bfd1ffdbf1802c30217e0c615392076109
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -558,6 +558,35 @@ public void doThis(Resource resource) {
 }
 ```
 
+### Sling 스케줄러는 사용할 수 없습니다. {#sonarqube-sling-scheduler}
+
+**키**: CQRules:AMSCORE-554
+
+**유형**: 코드 냄새
+
+**심각도**: 마이너
+
+**이후**: 버전 2020.5.0
+
+Sling 스케줄러는 보장된 실행을 필요로 하는 작업에 사용해서는 안 됩니다. Sling Scheduled Jobs는 실행이 보장되며 클러스터된 환경과 비클러스터형 환경 모두에 더 적합합니다.
+
+클러스터 환경에서 Sling [Jobs가 처리되는 방법에 대한 자세한 내용은 Apache Sling Eventing 및](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) Job Handling을 참조하십시오.
+
+### AEM 가치 하락 API는 사용할 수 없습니다. {#sonarqube-aem-deprecated}
+
+**키**: AMSCORE-553
+
+**유형**: 코드 냄새
+
+**심각도**: 마이너
+
+**이후**: 버전 2020.5.0
+
+AEM API 표면은 사용이 중단되어 더 이상 사용되지 않는 API를 식별하기 위해 지속적인 개정 하에 있습니다.
+
+대부분의 경우, 이러한 API는 표준 Java *@Deprecated* 주석을 사용하고, 예를 들어, 에 의해 식별된 주석을 사용합니다 `squid:CallToDeprecatedMethod`.
+
+그러나 API는 AEM의 컨텍스트에서 더 이상 사용되지 않지만 다른 컨텍스트에서 더 이상 사용되지 않는 경우가 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
 
 ## OakPAL 컨텐츠 규칙 {#oakpal-rules}
 
@@ -642,7 +671,7 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
       + rtePlugins [nt:unstructured]
 ```
 
-#### 패키지가 겹치지 않아야 합니다. {#oakpal-no-overlap}
+### 패키지가 겹치지 않아야 합니다. {#oakpal-no-overlap}
 
 **키**: PackageOverlays
 
@@ -654,7 +683,7 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 
 Similar to *Contains Duplicate OSGi Configurations* . Similar this is a common problem on complex projects where the same node path is written to multiple separate content packages. 컨텐츠 패키지 종속성을 사용하여 일관된 결과를 얻을 수 있지만, 완전히 겹치지 않는 것이 좋습니다.
 
-#### OakPAL - 기본 작성 모드는 클래식 UI가 되어서는 안 됩니다. {#oakpal-default-authoring}
+### 기본 작성 모드는 클래식 UI가 아니어야 합니다. {#oakpal-default-authoring}
 
 **키**: ClassicUIAuthauthoringMode
 
@@ -666,7 +695,7 @@ Similar to *Contains Duplicate OSGi Configurations* . Similar this is a common p
 
 OSGi 구성은 AEM 내의 기본 작성 모드를 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` 정의합니다. 클래식 UI는 AEM 6.4 이후 더 이상 사용되지 않으므로 이제 기본 작성 모드가 클래식 UI로 구성되면 문제가 발생합니다.
 
-#### OakPal - 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 합니다. {#oakpal-components-dialogs}
+### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 합니다. {#oakpal-components-dialogs}
 
 **키**: ComponentWithOnlyClassicUIDialog
 
@@ -684,7 +713,7 @@ OSGi 구성은 AEM 내의 기본 작성 모드를 `com.day.cq.wcm.core.impl.Auth
 
 AEM 현대화 도구 설명서는 클래식 UI에서 터치 UI로 구성 요소를 변환하는 방법에 대한 설명서 및 도구를 제공합니다. 자세한 내용 [은 AEM 현대화 도구를](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 참조하십시오.
 
-#### OakPal - 패키지는 변경 가능한 컨텐츠와 변경 불가능한 컨텐츠를 혼합하지 않아야 합니다. {#oakpal-packages-immutable}
+### 패키지는 변경 가능한 컨텐츠와 불변경 컨텐츠를 혼합하지 않아야 합니다. {#oakpal-packages-immutable}
 
 **키**: MutableMutableMixedPackage
 
@@ -698,7 +727,7 @@ Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저
 
 자세한 내용은 [AEM 프로젝트 구조를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 참조하십시오.
 
-### OakPal - 역방향 복제 에이전트를 사용할 수 없습니다. {#oakpal-reverse-replication}
+### 역방향 복제 에이전트를 사용할 수 없습니다. {#oakpal-reverse-replication}
 
 **키**: ReverseReplication
 
@@ -712,35 +741,7 @@ Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저
 
 역방향 복제를 사용하는 고객은 Adobe에 대체 솔루션을 문의해야 합니다.
 
-### SonarQube - Sling 스케줄러는 사용할 수 없습니다. {#sonarqube-sling-scheduler}
 
-**키**: CQRules:AMSCORE-554
-
-**유형**: 코드 냄새
-
-**심각도**: 마이너
-
-**이후**: 버전 2020.5.0
-
-Sling 스케줄러는 보장된 실행을 필요로 하는 작업에 사용해서는 안 됩니다. Sling Scheduled Jobs는 실행이 보장되며 클러스터된 환경과 비클러스터형 환경 모두에 더 적합합니다.
-
-클러스터 환경에서 Sling [Jobs가 처리되는 방법에 대한 자세한 내용은 Apache Sling Eventing 및](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) Job Handling을 참조하십시오.
-
-### SonarQube - SonarQube - AEM 더 이상 사용되지 않아야 함 {#sonarqube-aem-deprecated}
-
-**키**: AMSCORE-553
-
-**유형**: 코드 냄새
-
-**심각도**: 마이너
-
-**이후**: 버전 2020.5.0
-
-AEM API 표면은 사용이 중단되어 더 이상 사용되지 않는 API를 식별하기 위해 지속적인 개정 하에 있습니다.
-
-대부분의 경우, 이러한 API는 표준 Java *@Deprecated* 주석을 사용하고, 예를 들어, 에 의해 식별된 주석을 사용합니다 `squid:CallToDeprecatedMethod`.
-
-그러나 API는 AEM의 컨텍스트에서 더 이상 사용되지 않지만 다른 컨텍스트에서 더 이상 사용되지 않는 경우가 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
 
 
 
