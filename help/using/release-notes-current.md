@@ -4,7 +4,7 @@ seo-title: 2020.6.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.6.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.6.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
+source-git-commit: fddfc8cef28bc07fb32d7f8ca6a815e888beefef
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 6%
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # 2020.6.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 릴리스 2020.5.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 릴리스 2020.6.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
@@ -33,9 +33,6 @@ ht-degree: 6%
 
 ## 버그 수정 {#bug-fixes}
 
-
 * 프로덕션 파이프라인을 구성할 때 일부 고객에게는 예약된 배포 옵션이 표시되지 않았습니다.
 
 * 특정 배포 메시지가 잘렸습니다.
-
-
