@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 3663bd773c0043282359d690621de5023fa2974c
+source-git-commit: 8c651bcb187d911448475f6031c93bf956277e9f
 workflow-type: tm+mt
 source-wordcount: '2282'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -621,7 +621,8 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 
 #### 비호환 코드 {#non-compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + projectA
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -632,7 +633,8 @@ AEM 컨텐츠 저장소의 /libs 컨텐츠 트리를 고객이 읽기 전용으�
 
 #### 호환 코드 {#compliant-code-osgi}
 
-```+ apps
+```
++ apps
   + shared-config
     + config
       + com.day.cq.commons.impl.ExternalizerImpl
@@ -705,7 +707,7 @@ OSGi 구성은 AEM 내의 기본 작성 모드를 `com.day.cq.wcm.core.impl.Auth
 
 **이후**: 버전 2020.5.0
 
-클래식 UI 대화 상자가 있는 AEM 구성 요소에는 최적의 작성 환경을 제공하고 클래식 UI가 지원되지 않는 클라우드 서비스 배포 모델과 호환되도록 항상 해당 터치 UI 대화 상자가 있어야 합니다. 이 규칙은 다음 시나리오를 확인합니다.
+클래식 UI 대화 상자가 있는 AEM 구성 요소에는 최적의 작성 환경을 제공하고 클래식 UI가 지원되지 않는 Cloud Service 배포 모델과 호환되도록 항상 해당 터치 UI 대화 상자가 있어야 합니다. 이 규칙은 다음 시나리오를 확인합니다.
 
 * 클래식 UI 대화 상자가 있는 구성 요소(즉, 대화 상자 하위 노드)에는 해당 터치 UI 대화 상자(즉, `cq:dialog` 하위 노드)가 있어야 합니다.
 * 클래식 UI 디자인 대화 상자(즉, design_dialog 노드)가 있는 구성 요소에는 해당 터치 UI 디자인 대화 상자(즉, 하위 노드)가 있어야 `cq:design_dialog` 합니다.
@@ -723,9 +725,9 @@ AEM 현대화 도구 설명서는 클래식 UI에서 터치 UI로 구성 요소�
 
 **이후**: 버전 2020.5.0
 
-Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저장소의 불변경 영역(즉, 고객 코드로 수정해서는 안 `/apps and /libs, although /libs` 되며 별도의 위반이 발생함) 또는 변경 영역(즉, 다른 모든 것)의 컨텐츠가 포함되어야 하지만 둘 다 포함되어서는 안됩니다. 예를 들어 두 패키지 모두 `/apps/myco/components/text and /etc/clientlibs/myco` 가 클라우드 서비스와 호환되지 않으므로 문제가 보고됩니다.
+Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저장소의 불변경 영역에 대한 컨텐츠(즉, 고객 코드로 수정해서는 안 `/apps and /libs, although /libs` 되며 별도의 위반이 발생함) 또는 변경 영역(즉, 다른 모든 것)은 포함하되 둘 다 포함해서는 안 됩니다. 예를 들어, 두 패키지 모두 `/apps/myco/components/text and /etc/clientlibs/myco` 가 Cloud Service과 호환되지 않고 문제가 보고됩니다.
 
-자세한 내용은 [AEM 프로젝트 구조를](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) 참조하십시오.
+Refer to [AEM Project Structure](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) for more details.
 
 ### 역방향 복제 에이전트를 사용할 수 없습니다. {#oakpal-reverse-replication}
 
@@ -737,7 +739,7 @@ Cloud Service 배포 모델과 호환하려면 개별 컨텐츠 패키지에 저
 
 **이후**: 버전 2020.5.0
 
-릴리스 노트에 설명된 대로, 역방향 복제에 대한 지원은 클라우드 서비스 배포에서는 사용할 수 [없습니다. 복제 에이전트 제거](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
+릴리스 노트에 설명된 대로 Cloud Service 배포에서는 역 복제 지원을 사용할 [수 없습니다. 복제 에이전트 제거](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/aem-cloud-changes.html#replication-agents).
 
 역방향 복제를 사용하는 고객은 Adobe에 대체 솔루션을 문의해야 합니다.
 
