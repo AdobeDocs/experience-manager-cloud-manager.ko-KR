@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: dd223d678450565c1c9e8f35503eda7e5444c674
+source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 ```
 
 >[!NOTE]
->지원되는 값 `vendor` 은 `oracle` 및 `sun` 이며, 지원되는 `version` 값은 `1.8`, `1.11`및 `11`입니다.
+>지원되는 `vendor` 값 `oracle` 과 `sun` 지원되는 `version` 값은 `1.8`, `1.11`및 `11`입니다.
 
 ## 환경 변수 {#environment-variables}
 
