@@ -4,7 +4,7 @@ seo-title: 2020.7.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
+source-git-commit: a0917f5cecbe552807d9147cd20316e02c2dd1a0
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 8%
@@ -24,7 +24,6 @@ ht-degree: 8%
 * 프로덕션 배포 시 로드 밸런서에서 디스패처 인스턴스를 분리 및 첨부하면 보다 일관된 방식으로 작동합니다.
 
 * 이제 클라우드 관리자 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
-
 
 ## 버그 수정 {#bug-fixes}
 
