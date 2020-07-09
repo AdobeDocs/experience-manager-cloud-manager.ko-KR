@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 02515ac6e3ac54909e23a276a78f571ea5c249c4
+source-git-commit: 33aeba59c149e5ba3300b9d798356ec5e9bcd4b8
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1479'
 ht-degree: 1%
 
 ---
@@ -137,7 +137,7 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 
 경우에 따라 고객은 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 합니다.
 
-예를 들어, gulp와 같은 도구를 통해 빌드 타임 JavaScript 미니폴리션을 수행하는 경우, 준비 및 제작을 위해 만드는 것이 아니라 개발 환경을 위해 빌드할 때 다른 미니어션 수준을 사용하려고 할 수 있습니다.
+예를 들어, gulp와 같은 도구를 통해 빌드 타임 JavaScript Minification을 수행하는 경우 준비 및 제작을 위해 만드는 것이 아니라 개발 환경을 위해 빌드할 때 다른 축소 수준을 사용하고자 할 수 있습니다.
 
 이를 지원하기 위해 Cloud Manager는 모든 실행을 위해 이러한 표준 환경 변수를 빌드 컨테이너에 추가합니다.
 
@@ -151,37 +151,30 @@ Cloud Manager는 이제 Java 8과 Java 11을 모두 사용하여 고객 프로�
 | CM_PROGRAM_NAME | 프로그램 이름 |
 | ARTIFACTS_VERSION | 스테이지 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 합성 버전 |
 
-### 파이프라인 변수 {#pipeline-variables}
+### 사용자 지정 환경 변수 {#custom-variables}
 
-경우에 따라 고객의 빌드 프로세스는 Git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 이러한 변수를 Cloud Manager API 또는 Cloud Manager CLI를 통해 파이프라인별로 구성할 수 있습니다.
+경우에 따라 고객의 빌드 프로세스는 git 리포지토리에 배치하기에 부적절한 특정 구성 변수에 따라 달라질 수 있습니다. Cloud Manager를 사용하면 고객별로 CSE(Customer Success Engineer)가 이러한 변수를 구성할 수 있습니다.
 
-변수는 일반 텍스트로 저장하거나 안전하게 암호화할 수 있습니다. 두 경우 모두 빌드 환경 내에서 변수를 환경 변수로 사용할 수 있으며 이 변수는 pom.xml 파일 또는 기타 빌드 스크립트 내에서 참조할 수 있습니다.
+이러한 변수는 보안 저장소 위치에 저장되며 특정 고객의 빌드 컨테이너에서만 볼 수 있습니다. 이 기능을 사용하려면 CSE에 연락하여 변수를 구성해야 합니다.
+구성되면 이러한 변수를 환경 변수로 사용할 수 있습니다. 이들을 Maven 속성으로 사용하려면 위에서 설명한 프로필 내에서 pom.xml 파일에서 참조할 수 있습니다.
 
-아래 명령을 사용하여 CLI를 사용하여 변수를 설정합니다.
-
-`$ aio cloudmanager:set-pipeline-variables PIPELINEID --variable MY_CUSTOM_VARIABLE test`
-
-아래와 같이 현재 변수를 나열할 수 있습니다.
-
-`$ aio cloudmanager:list-pipeline-variables PIPELINEID`
-
-변수 이름에는 영숫자와 밑줄 문자만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다. 파이프라인당 변수 수는 200자로 제한됩니다. 각 이름은 100자 미만이어야 하며, 각 값은 2048자 미만이어야 합니다.
-
-Maven pom.xml 파일에서 사용하는 경우 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 데 유용합니다.
 
 ```xml
         <profile>
             <id>cmBuild</id>
             <activation>
-            <property>
-                <name>env.CM_BUILD</name>
-            </property>
+                  <property>
+                        <name>env.CM_BUILD</name>
+                  </property>
             </activation>
-                <properties>
-                <my.custom.property>${env.MY_CUSTOM_VARIABLE}</my.custom.property> 
-                </properties>
+            <properties>
+                  <my.custom.property>${env.MY_CUSTOM_PROPERTY}</my.custom.property>  
+            </properties>
         </profile>
 ```
+
+>[!NOTE]
+>환경 변수 이름에는 영숫자 및 밑줄(_)만 사용할 수 있습니다. 관례상, 이름은 모두 대문자여야 합니다.
 
 ## Cloud Manager에서 마스터 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
 
