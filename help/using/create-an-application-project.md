@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ae22e0641111096c19d5413f3e78f339010bf512
+source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
@@ -98,6 +98,9 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
 * 모든 빌드는 본래 환경에서 수행됩니다. 빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
 * Maven은 항상 명령을 사용하여 실행됩니다. *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:pref-agent package*
 * Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/) 를 참조하십시오.)
+
+>[!NOTE]
+>Cloud Manager가 특정 버전의 버전을 정의하지는 않지만, 사용된 버전 `jacoco-maven-plugin`은 적어도 같아야 합니다 `0.7.5.201505241946`.
 
 ### Java 11 사용 {#using-java-11}
 
