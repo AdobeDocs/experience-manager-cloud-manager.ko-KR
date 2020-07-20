@@ -4,10 +4,10 @@ seo-title: 2020.7.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: a4ea83c0b64515915871956c1cd3e53606f1c26b
+source-git-commit: 0d46abc386460ccbaf7ba10b93286bc8e4af2395
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 7%
+source-wordcount: '210'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +24,9 @@ ht-degree: 7%
 * 프로덕션 배포 시 로드 밸런서에서 디스패처 인스턴스를 분리 및 첨부하면 보다 일관된 방식으로 작동합니다.
 
 * 이제 클라우드 관리자 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
+
+* 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 기밀을 지원합니다.
+자세한 내용은 [파이프라인 변수를](/help/using/create-an-application-project.md#pipeline-variables) 참조하십시오.
 
 ## 버그 수정 {#bug-fixes}
 
