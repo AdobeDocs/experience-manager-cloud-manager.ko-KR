@@ -4,9 +4,9 @@ seo-title: 2020.8.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '253'
 ht-degree: 20%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 20%
 
 * 사이트 성능 테스트는 이제 선택적 인증 사용을 지원합니다.
 
-   자세한 내용은 을 참조하십시오.
+   AEM Sites 성능 테스트 [를 인증하는](configuring-pipeline.md#authenticated-sites-performance) 방법을 알려면 인증된 사이트 성능 테스트를 참조하십시오.
 
 * 이제 인증 바인딩된 개인 마웬 리포지토리가 지원됩니다.
 
