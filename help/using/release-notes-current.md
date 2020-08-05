@@ -4,10 +4,10 @@ seo-title: 2020.8.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: c0881ccf602a14b00b7cc68c3d1fc60e7b6954ed
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 20%
+source-wordcount: '191'
+ht-degree: 6%
 
 ---
 
@@ -43,8 +43,3 @@ ht-degree: 20%
 
 * 개요 페이지에 색상 불일치가 있습니다.
 
-## 알려진 문제 {#known-issues}
-
-* AMS 환경에 대기 인스턴스가 포함되어 있으면, 기록된 메시지는 대기 모드에 비해 인스턴스가 다운되었음을 나타냅니다.
-
-* 코드 검사 계산 방식의 변경으로 인해 Jacoco 플러그인의 _최소_ 버전은 이제 0.7.5.201505241946(2015년 5월 릴리스)입니다. 이전 버전을 명시적으로 참조하는 고객은 코드 품질 프로세스에서 오류 메시지를 받게 됩니다.
