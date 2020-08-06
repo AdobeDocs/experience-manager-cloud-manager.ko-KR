@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 68330a3a6d9e1f95782418dbd72cbc0e6ee7362c
+source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1636'
 ht-degree: 1%
 
 ---
@@ -178,9 +178,6 @@ Dispatcher Invalidate를 구성하려면 아래 단계를 따르십시오.
 
    ![](assets/Configuring_Pipeline_AEM-Sites.png)
 
-
-   AEM Sites 성능 테스트 [를 인증하는](configuring-pipeline.md#authenticated-sites-performance) 방법을 알려면 인증된 사이트 성능 테스트를 참조하십시오.
-
    **AEM Assets:**
 
    Cloud Manager는 30분 테스트 기간 동안 자산을 반복적으로 업로드하고 각 자산에 대한 처리 시간과 다양한 시스템 수준 지표를 측정하여 AEM Assets 프로그램에 대한 성능 테스트를 실행합니다. 이 기능은 이미지와 PDF 문서를 모두 업로드할 수 있습니다. 각 유형의 업로드된 에셋 수에 대한 분배는 파이프라인 설정 또는 편집 화면에서 설정됩니다.
@@ -201,18 +198,6 @@ Dispatcher Invalidate를 구성하려면 아래 단계를 따르십시오.
 
    ![](assets/Production-Pipeline.png)
 
-### 인증된 사이트 성능 테스트 {#authenticated-sites-performance}
-
-인증된 사이트를 보유한 Adobe Managed Services(AMS) 고객은 Cloud Manager가 사이트 성능 테스트 동안 웹 사이트에 액세스하는 데 사용할 사용자 이름과 암호를 지정할 수 있습니다.
-
-사용자 이름 및 암호는 이름과 [를](create-an-application-project.md#pipeline-variables) 가진 파이프라인 `CM_PERF_TEST_BASIC_USERNAME` 변수로 `CM_PERF_TEST_BASIC_PASSWORD` 지정됩니다.
-
->[!NOTE]
-> 엄격하게 필수는 아니지만 사용자 이름에 대한 문자열 변수 유형과 암호에 대한 secretString 변수 유형을 사용하는 것이 좋습니다. 이 두 가지가 모두 지정되면 성능 테스트 크롤러 및 테스트 가상 사용자의 모든 요청에 이러한 자격 증명이 HTTP Basic 인증으로 포함됩니다.
-
-Cloud [Manager CLI를 사용하여 이러한 변수를 설정하려면 다음을](https://github.com/adobe/aio-cli-plugin-cloudmanager)실행하십시오.
-
-`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인
 
