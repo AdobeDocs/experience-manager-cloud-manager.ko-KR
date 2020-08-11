@@ -2,16 +2,16 @@
 title: AEM 애플리케이션 프로젝트 만들기
 seo-title: AEM 애플리케이션 프로젝트 만들기
 description: 'null'
-seo-description: 클라우드 관리자를 시작할 때 AEM 프로젝트 설정에 대한 자세한 내용을 살펴보려면 이 페이지를 따르십시오.
+seo-description: Cloud Manager를 시작할 때 AEM 프로젝트 설정에 대한 자세한 내용을 살펴보려면 이 페이지를 따르십시오.
 uuid: 7b976ebf-5358-49d8-a58d-0bae026303fa
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: 0fda91c2fe319fb58b3a6dd09f75eac7a60d9038
+source-git-commit: 200057885f068ff8df889601a401e06d89981209
 workflow-type: tm+mt
-source-wordcount: '1705'
+source-wordcount: '1721'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # AEM 애플리케이션 프로젝트 만들기 {#create-an-aem-application-project}
 
-## 마법사를 사용하여 AEM 애플리케이션 프로젝트 만들기 {#using-wizard-to-create-an-aem-application-project}
+## 마법사를 사용하여 AEM 응용 프로그램 프로젝트 만들기 {#using-wizard-to-create-an-aem-application-project}
 
-고객이 Cloud Manager에 온보드 방식을 사용하는 경우 빈 git 저장소가 제공됩니다. 현재 Adobe Managed Services(AMS) 고객(또는 AMS로 마이그레이션하는 온-프레미스 AEM 고객)은 일반적으로 프로젝트 코드가 git(또는 다른 버전 제어 시스템)에 이미 있으며 프로젝트를 Cloud Manager git 리포지토리로 가져옵니다. 그러나 새 고객은 기존 프로젝트를 가지고 있지 않습니다.
+고객이 Cloud Manager에 온보드 방식을 사용하는 경우 빈 git 저장소가 제공됩니다. 현재 AMS(Adobe Managed Services) 고객(또는 AMS로 마이그레이션하는 온프레미스 AEM 고객)은 일반적으로 프로젝트 코드를 git(또는 다른 버전 제어 시스템)에 이미 가지고 있으며 프로젝트를 Cloud Manager git 리포지토리로 가져옵니다. 그러나 새 고객은 기존 프로젝트를 가지고 있지 않습니다.
 
-신규 고객 확보를 지원하기 위해 Cloud Manager는 이제 최소한의 AEM 프로젝트를 시작점으로 만들 수 있습니다. 이 프로세스는 AEM 프로젝트 [**원형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
@@ -32,7 +32,7 @@ Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 �
 
    ![](assets/image2018-10-3_14-29-44.png)
 
-1. 만들기를 **클릭하여** AEM 프로젝트 원형에서 필요한 매개 변수를 제공할 수 있는 대화 상자를 엽니다. 기본 양식에서는 대화 상자에 두 개의 값이 표시됩니다.
+1. 만들기 **를** 클릭하여 AEM 프로젝트 원형에서 필요한 매개 변수를 제공할 수 있는 대화 상자를 엽니다. 기본 양식에서는 대화 상자에 두 개의 값이 표시됩니다.
 
    * **제목** - 기본적으로 *프로그램 이름으로 설정됩니다.*
 
@@ -57,7 +57,7 @@ Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 �
 
 ### 프로젝트 설정 세부 사항 수정 {#modifying-project-setup-details}
 
-Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 AEM 프로젝트에 몇 가지 기본 규칙을 준수해야 합니다.
+Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 AEM 프로젝트는 몇 가지 기본 규칙을 준수해야 합니다.
 
 * 프로젝트는 Apache Maven을 사용하여 빌드해야 합니다.
 * Git 저장소의 루트에 *pom.xml* 파일이 있어야 합니다. 이 *pom.xml* 파일은 하위 모듈을 여러 개 참조할 수 있으며, 이 경우 다른 하위 모듈 등이 있을 수 있습니다. 필요한 경우.
@@ -65,7 +65,7 @@ Cloud Manager를 사용하여 성공적으로 구축 및 배포하려면 기존 
 * pom.xml ** 파일에서 추가 Maven 객체 저장소에 대한 참조를 추가할 수 있습니다. 암호로 [보호된 객체 리포지토리에](#password-protected-maven-repositories) 대한 액세스는 구성 시 지원됩니다. 그러나 네트워크 보호 객체 저장소에 대한 액세스는 지원되지 않습니다.
 * 배포 가능한 컨텐츠 패키지는 *target* 이라는 디렉토리에 포함되어 있는 컨텐츠 패키지 *zip*&#x200B;파일을 검색하여 찾을 수 있습니다. 모든 수의 하위 모듈에서는 콘텐츠 패키지를 생성할 수 있습니다.
 
-* 배포 가능한 Dispatcher 가공물은 *conf* 및 conf.d라는 이름의 디렉토리가 있는 zip *파일(* target *디렉토리에 포함됨)을 검색하여* **&#x200B;검색됩니다.
+* 배포 가능한 Dispatcher 가공물은 *conf**및 conf.d라는 이름의 디렉토리가 있는 zip*&#x200B;파일( *target* 디렉토리에 포함됨)을 검색하여 **&#x200B;검색합니다.
 
 * 둘 이상의 컨텐츠 패키지가 있는 경우 패키지 배포 순서가 보장되지 않습니다. 특정 주문이 필요한 경우 컨텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다. 배포에서 패키지를 [건너뛸](#skipping-content-packages) 수 있습니다.
 
@@ -95,7 +95,7 @@ Cloud Manager는 전문적인 빌드 환경을 사용하여 코드를 작성하�
    * graphicsmagick
 
 * 다른 패키지는 [아래](#installing-additional-system-packages)설명에 따라 빌드 시간에 설치할 수 있습니다.
-* 모든 빌드는 본래 환경에서 수행됩니다. 빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
+* 모든 빌드는 본래 환경에서 수행됩니다.빌드 컨테이너는 실행 사이에 상태를 유지하지 않습니다.
 * Maven은 항상 명령을 사용하여 실행됩니다. *mvn —batch-mode clean org.jacoco:jacoco-maven-plugin:pref-agent package*
 * Maven은 공개 Adobe Artifact 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 **구성됩니다** . (자세한 내용은 [Adobe Public Maven Repository](https://repo.adobe.com/) 를 참조하십시오.)
 
@@ -266,7 +266,7 @@ Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에
 
 ## 암호로 보호된 Maven 리포지토리 지원 {#password-protected-maven-repositories}
 
-Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필]{#activating-maven-profiles-in-cloud-manager}내에 포함되지만 반드시 필요한 것은 아닙니다.
+Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 서버 ID는 다음으로 시작하며 `adobe` `cloud-manager` 는 예약으로 간주되며 사용자 지정 서버에서 사용해서는 안 됩니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필]{#activating-maven-profiles-in-cloud-manager}내에 포함되지만 반드시 필요한 것은 아닙니다.
 
 예를 들어 저장소가 https://repository.myco.com/maven2에 있고 Cloud Manager가 사용해야 하는 사용자 이름 `cloudmanager` 은 is이고 암호는 is `secretword`라고 가정해 봅시다.
 
@@ -433,4 +433,4 @@ content-package-maven-plugin은 다음과 유사합니다.
 
 ## 모범 사례를 기반으로 코드 개발 {#develop-your-code-based-on-best-practices}
 
-Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 [포괄적인 우수 사례 세트를 개발했습니다](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
+Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 [포괄적인 모범 사례를 개발했습니다](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).
