@@ -10,7 +10,7 @@ source-git-commit: 7cfa0cf66efd5891263bfcc83a5149daec5c8b67
 
 # 2019.6.0용 릴리스 노트 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 6.0 릴리스에는 새로운 코드 품질 규칙과 새로운 제품 업데이트 마법사가 추가되었습니다. 자세한 내용은 아래 섹션을 참조하십시오.
+&#x200B;2019. [!UICONTROL Cloud Manager] 6.0 릴리스에는 새로운 코드 품질 규칙과 새로운 제품 업데이트 마법사가 추가되었습니다. 자세한 내용은 아래 섹션을 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 

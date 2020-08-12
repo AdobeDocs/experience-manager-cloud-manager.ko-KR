@@ -11,7 +11,7 @@ source-git-commit: 28780dc73a6787b7f3e715965e580534344f3602
 
 # 2019.3.0용 릴리스 노트 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 3.0 릴리스는 마지막 릴리스에서 제공되는 시스템 모니터링 기능에 SLA 보고를 추가합니다.
+&#x200B;2019. [!UICONTROL Cloud Manager] 3.0 릴리스는 마지막 릴리스에서 제공되는 시스템 모니터링 기능에 SLA 보고를 추가합니다.
 
 ## 릴리스 날짜 {#release-date}
 

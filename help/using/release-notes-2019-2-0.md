@@ -11,7 +11,7 @@ source-git-commit: 98395c4413b1b6bfbb3a565388ffa32dc3880dff
 
 # 2019.2.0용 릴리스 노트 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 2.0 릴리스에는 새로운 시스템 모니터링 기능이 추가되었습니다. 따라서 고객은 Adobe Managed Services 환경의 상태를 시스템 수준에서 볼 수 있습니다.
+&#x200B;2019. [!UICONTROL Cloud Manager] 2.0 릴리스에는 새로운 시스템 모니터링 기능이 추가되었습니다. 따라서 고객은 Adobe Managed Services 환경의 상태를 시스템 수준에서 볼 수 있습니다.
 
 
 ## 릴리스 날짜 {#release-date}

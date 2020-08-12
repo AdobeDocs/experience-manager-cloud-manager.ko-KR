@@ -10,7 +10,7 @@ source-git-commit: de9d2834ffa6c235e580227bd020fb8a0b94d22c
 
 # 2019.9.0용 릴리스 노트 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 9.0 릴리스는 보안 테스트 기준을 업데이트하고 다운로드 가능한 모니터링 그래프를 추가하고 고객이 보고한 일부 사용성 문제를 수정합니다.
+&#x200B;2019. [!UICONTROL Cloud Manager] 9.0 릴리스는 보안 테스트 기준을 업데이트하고 다운로드 가능한 모니터링 그래프를 추가하고 고객이 보고한 일부 사용성 문제를 수정합니다.
 
 ## 릴리스 날짜 {#release-date}
 

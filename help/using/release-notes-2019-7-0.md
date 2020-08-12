@@ -10,7 +10,7 @@ source-git-commit: 365cd6dfe65059c0c529f774bbcda946d47b0db5
 
 # 2019.7.0용 릴리스 노트 {#release-notes-for}
 
-2019. [!UICONTROL Cloud Manager] 7.0 릴리스에서는 Experience Cloud 알림에 업데이트와 버그 수정으로 향상된 기능이 추가되었습니다. 자세한 내용은 아래 섹션을 참조하십시오.
+&#x200B;2019. [!UICONTROL Cloud Manager] 7.0 릴리스에서는 Experience Cloud 알림에 업데이트와 버그 수정으로 향상된 기능이 추가되었습니다. 자세한 내용은 아래 섹션을 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 

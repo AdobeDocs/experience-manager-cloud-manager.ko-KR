@@ -16,7 +16,7 @@ source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 # 2018.9.0용 릴리스 노트 {#release-notes-for}
 
-2018. [!UICONTROL Cloud Manager] 9.0 릴리스에서는 Events를 비롯한 Adobe I/O 기반 API에 대한 지원이 추가되어 [!UICONTROL Cloud Manager]의 CI/CD 파이프라인을 다른 시스템과 통합할 수 있습니다. 또한 [반응]에서 UI 레이어의 다시 쓰기를 시작합니다.
+&#x200B;2018. [!UICONTROL Cloud Manager] 9.0 릴리스에서는 Events를 비롯한 Adobe I/O 기반 API에 대한 지원이 추가되어 [!UICONTROL Cloud Manager]의 CI/CD 파이프라인을 다른 시스템과 통합할 수 있습니다. 또한 [반응]에서 UI 레이어의 다시 쓰기를 시작합니다.
 
 ## 릴리스 날짜 {#release-date}
 
@@ -30,7 +30,7 @@ source-git-commit: 949d3cf0239a02875ba4ad1888e081f104dec2e2
 
 ## 버그 수정 {#bug-fixes}
 
-* 2018. [!UICONTROL Cloud Manager] 8.0에서는 활동 페이지 기간이 분 및 시간 단위로 표시되었지만 해당 정보가 테이블 머리글에 반영되지 않았습니다.
+* &#x200B;2018. [!UICONTROL Cloud Manager] 8.0에서는 활동 페이지 기간이 분 및 시간 단위로 표시되었지만 해당 정보가 테이블 머리글에 반영되지 않았습니다.
 * 드문 경우이지만 고객이 새 응용 프로그램 프로젝트 마법사를 시작할 수 없었습니다.
 * 새 응용 프로그램 프로젝트 마법사 대화 상자의 단추 레이블이 잘못 지정되었습니다.
 * 경우에 따라 활동 페이지에서 세부 사항 단추를 클릭하면 개요 페이지로 리디렉션됩니다.
