@@ -4,10 +4,10 @@ seo-title: 2020.8.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: cff6f23a674fda2f57ea481d89644de9be3f5722
+source-git-commit: c2f5caf50f2e20c07807369aee7914c17fded4de
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 7%
+source-wordcount: '192'
+ht-degree: 6%
 
 ---
 
@@ -37,5 +37,9 @@ ht-degree: 7%
 
 * 프로그램 카드에 대한 도구 설명이 일관되게 올바르지 않습니다.
 
-* 개요 페이지에 색상 불일치가 있습니다.
+* [ **개요** ] 페이지에 색상 불일치가 있습니다.
+
+* 사이트 성능 테스트는 이제 선택적 인증 사용을 지원합니다.
+
+* 작성자 인스턴스의 Dispatcher 캐시는 Cloud Manager를 통해 발송자 구성이 배포되면 자동으로 플러시됩니다.
 
