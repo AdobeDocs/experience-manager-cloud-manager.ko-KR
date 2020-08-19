@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Cloud Manager를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
 
-프로덕션 **파이프라인** (저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
+프로덕션 파이프라인(저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
 
 1. 클라우드 **관리자에서 배포를** 클릭하여 배포 프로세스를 시작합니다.
 
