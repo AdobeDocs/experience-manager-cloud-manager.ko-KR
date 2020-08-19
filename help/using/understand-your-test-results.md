@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
+source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # 테스트 결과 이해 {#understand-your-test-results}
 
-파이프라인 **** 프로세스 동안 많은 지표가 캡처되어 비즈니스 소유자가 정의한 주요 성과 지표(KPI) 또는 Adobe Managed Services가 설정한 표준과 비교됩니다.
+파이프라인 실행 중에 많은 지표가 캡처되어 비즈니스 소유자가 정의한 주요 성과 지표(KPI) 또는 Adobe Managed Services가 설정한 표준과 비교됩니다.
 
 이 항목은 이 섹션에 정의된 대로 3층 게이팅 시스템을 사용하여 보고됩니다.
 
@@ -47,9 +47,10 @@ ht-degree: 7%
 
 ### 코드 품질 테스트 이해 {#understanding-code-quality-testing}
 
-코드 품질 테스트에서는 소스 코드가 배포가 특정 품질 기준을 충족하는지 확인하기 위해 스캔됩니다. 현재 이 기능은 SonarQube와 OakPAL을 사용한 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM별 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM별 규칙 중 일부는 AEM Engineering의 모범 사례를 기반으로 생성되며 [사용자 지정 코드 품질 규칙이라고 합니다](/help/using/custom-code-quality-rules.md).
+코드 품질 테스트에서 소스 코드가 특정 품질 기준을 충족하는지 확인하기 위해 스캔됩니다. 현재 이 기능은 SonarQube와 OakPAL을 사용한 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM별 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM별 규칙 중 일부는 AEM Engineering의 모범 사례를 기반으로 생성되며 [사용자 지정 코드 품질 규칙이라고 합니다](/help/using/custom-code-quality-rules.md).
 
-규칙 목록은 [여기에서 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>[!NOTE]
+>전체 규칙 목록을 [여기에서 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-latest.xlsx).
 
 이 단계의 결과는 *평등으로 전달됩니다*. 아래 표에는 다양한 테스트 기준에 대한 등급이 요약되어 있습니다.
 
