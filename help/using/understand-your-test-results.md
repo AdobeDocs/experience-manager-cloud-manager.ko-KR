@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: f062ee126ad12d164c36b2e1535ee709f43b6900
+source-git-commit: 1143e58d4c3a02d85676f94fc1a30cc1c2856222
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1544'
 ht-degree: 7%
 
 ---
@@ -43,25 +43,31 @@ ht-degree: 7%
 
 ## 코드 품질 테스트 {#code-quality-testing}
 
-파이프라인의 일부로서 소스 코드가 스캔되어 배포가 특정 품질 기준을 충족하는지 확인합니다. 현재 이 기능은 SonarQube와 OakPAL을 사용한 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM 특정 규칙을 결합하는 규칙이 100개 이상 있습니다. 다음 표에 테스트 기준에 대한 등급이 요약되어 있습니다.
+이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 코드 품질만 파이프라인의 핵심 목표이며 비프로덕션 및 프로덕션 파이프라인에서 빌드 단계 바로 다음에 실행됩니다. 다양한 유형의 파이프라인에 [대한 자세한 내용은 CI-CD 파이프라인](/help/using/configuring-pipeline.md) 구성을 참조하십시오.
+
+### 코드 품질 테스트 이해 {#understanding-code-quality-testing}
+
+코드 품질 테스트에서는 소스 코드가 배포가 특정 품질 기준을 충족하는지 확인하기 위해 스캔됩니다. 현재 이 기능은 SonarQube와 OakPAL을 사용한 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM별 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM별 규칙 중 일부는 AEM Engineering의 모범 사례를 기반으로 생성되며 [사용자 지정 코드 품질 규칙이라고 합니다](/help/using/custom-code-quality-rules.md).
+
+규칙 목록은 [여기에서 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-latest.xlsx).
+
+이 단계의 결과는 *평등으로 전달됩니다*. 아래 표에는 다양한 테스트 기준에 대한 등급이 요약되어 있습니다.
 
 | 이름 | 정의 | 카테고리 | 실패 임계값 |
 |--- |--- |--- |--- |
 | 보안 등급 | A = 0 취약점 <br/>B = 최소 1개의 작은 취약점<br/> C = 최소 1개의 주요 취약점 <br/>D = 최소 1개의 치명적인 취약점 <br/>E = 최소 1개의 차단기 취약점 | 중요 | &lt; B |
 | 신뢰성 등급 | A = 0 버그 <br/>B = 최소 1개의 보조 버그 <br/>C = 최소 1개의 주요 버그 <br/>D = 최소 1개의 중요<br/>버그 E = 최소 1개의 차단기 버그 | 중요 사항 | &lt; C |
 | 유지 관리 등급 | 코드 냄새에 대한 뛰어난 수정 비용은 다음과 같습니다. <br/><ul><li>애플리케이션 사용 시간의 &lt;=5%, 평점은 A </li><li>평점 6~10% 사이의 B </li><li>평점은 11~20% </li><li>평점은 21~50%</li><li>50% 이상이 E입니다.</li></ul> | 중요 사항 | &lt; A |
-| 범위 | 이 공식을 사용하여 단위 테스트 라인 적용 범위와 조건 적용 범위를 혼합합니다. <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>where: CT = 장치 테스트를 실행하는 동안 최소 한 번 &#39;true&#39;로 평가된 조건 <br/>CF = 장치 테스트를 실행하는 동안 최소 한 번 &#39;false&#39;로 평가된 조건 <br/>LC = 적용 라인 = lines = lines_to_cover - inded_lines <br/><br/> B = 총 조건 수 <br/>EL = 실행 라인의 총 수(lines_to_cover) | 중요 사항 | &lt; 50% |
+| 범위 | 이 공식을 사용하여 단위 테스트 라인 적용 범위와 조건 적용 범위를 혼합합니다. <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <br/>where:CT = 장치 테스트를 실행하는 동안 최소 한 번 &#39;true&#39;로 평가된 조건 <br/>CF = 장치 테스트를 실행하는 동안 최소 한 번 &#39;false&#39;로 평가된 조건 <br/>LC = 적용 라인 = lines = lines_to_cover - inded_lines <br/><br/> B = 총 조건 수 <br/>EL = 실행 라인의 총 수(lines_to_cover) | 중요 사항 | &lt; 50% |
 | 건너뛴 단위 테스트 | 건너뛴 단위 테스트 수입니다. | 정보 | > 1 |
 | 미해결 문제 | 전체 문제 유형 - 취약점, 버그 및 코드 냄새 | 정보 | > 0 |
 | 중복된 라인 | 중복된 블록에 포함된 라인 수입니다. <br/>코드 블록을 중복으로 간주하는 경우: <br/><ul><li>**Java가 아닌 프로젝트:**</li><li>연속된 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 다음과 같은 경우에 배포해야 합니다. </li><li>COBOL을 위한 30줄의 코드 </li><li>ABAP용 20줄의 코드 </li><li>다른 언어용 코드 10줄</li><li>**Java 프로젝트:**</li><li> 토큰과 줄 수에 관계없이 10개 이상의 연속문과 중복 문이 있어야 합니다.</li></ul> <br/>중복 여부를 검색하는 동안 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
-| 클라우드 서비스 호환성 | 식별된 클라우드 서비스 호환성 문제 수입니다. | 정보 | > 0 |
+| Cloud Service 호환성 | 식별된 Cloud Service 호환성 문제 수입니다. | 정보 | > 0 |
 
 
 >[!NOTE]
 >
 >자세한 [정의는 지표 정의를](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 참조하십시오.
-
-여기에서 규칙 목록을 다운로드할 수 [있습니다. code-quality-rules.xlsx](/help/using/assets/CodeQuality-rules-latest.xlsx)
 
 >[!NOTE]
 >
@@ -73,7 +79,7 @@ ht-degree: 7%
 
 이러한 경우, 소스 코드에 주석 달기 시 규칙 ID를 주석 속성으로 지정하는 표준 Java `@SuppressWarnings` 주석으로 주석을 달 수 있습니다. 예를 들어, 한 가지 일반적인 문제는 하드코딩된 암호를 검색하는 SonarQube 규칙이 하드 코딩된 암호를 식별하는 방법에 대해 공격적일 수 있다는 것입니다.
 
-특정 예제를 보려면, 이 코드는 일부 외부 서비스에 연결할 코드가 있는 AEM 프로젝트에서 매우 일반적입니다.
+특정 예를 살펴보려면, 일부 외부 서비스에 연결할 코드가 있는 AEM 프로젝트에서 이 코드가 매우 일반적입니다.
 
 ```java
 @Property(label = "Service Password")
@@ -103,7 +109,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 ## 보안 테스트 {#security-testing}
 
-[!UICONTROL Cloud Manager] 배포 후 스테이지에서 기존 ***AEM 보안*** 상태 확인을 실행하고 UI를 통해 상태를 보고합니다. 결과는 환경의 모든 AEM 인스턴스에서 집계됩니다.
+[!UICONTROL Cloud Manager] 배포 후 스테이지에서 기존 ***AEM 보안 상태*** 검사를 실행하고 UI를 통해 상태를 보고합니다. 결과는 환경의 모든 AEM 인스턴스에서 집계됩니다.
 
 인스턴스 중 **특정 상태** 확인 실패를 보고하는 경우 전체 **환경** 에서 해당 상태 확인에 실패합니다. 코드 품질 및 성능 테스트와 마찬가지로 이러한 상태 검사는 카테고리로 분류되어 3계층 게이팅 시스템을 사용하여 보고됩니다. 유일한 차이는 보안 테스트의 경우 임계값이 없다는 것입니다. 모든 건강검진은 그냥 통과되거나 실패한다.
 
@@ -122,7 +128,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | SSL이 올바르게 구성됨 | SSL 구성 | 중요 |
 | 보안되지 않은 사용자 프로필 정책을 찾을 수 없음 | 사용자 프로필 기본 액세스 | 중요 |
 | CSRF 공격을 방지하기 위해 Sling Referrer Filter가 구성됩니다 | Sling Referrer Filter | 중요 사항 |
-| Adobe Granite HTML Library Manager가 적절하게 구성되어 있습니다. | CQ HTML 라이브러리 관리자 구성 | 중요 사항 |
+| Adobe [HTML 라이브러리 관리자]가 적절하게 구성되어 있습니다. | CQ HTML 라이브러리 관리자 구성 | 중요 사항 |
 | CRXDE 지원 번들을 사용할 수 없음 | CRXDE 지원 | 중요 사항 |
 | Sling DavEx 번들 및 서블릿이 비활성화됨 | DavEx 상태 검사 | 중요 사항 |
 | 샘플 콘텐츠가 설치되지 않았습니다. | 컨텐츠 패키지 예 | 중요 사항 |
