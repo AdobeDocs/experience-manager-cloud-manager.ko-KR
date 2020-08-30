@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '597'
 ht-degree: 2%
 
 ---
@@ -19,21 +19,21 @@ ht-degree: 2%
 
 # 디스패처 구성 관리 {#manage-your-dispatcher-configurations}
 
-## 클라우드 관리자를 사용하여 Dispatcher 구성 파일 배포 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
+## 클라우드 관리자를 사용하여 발송자 구성 파일 배포 {#using-cloud-manager-to-deploy-dispatcher-configuration-files}
 
-일반 AEM 컨텐츠 패키지뿐만 아니라 웹 서버와 Dispatcher 구성 파일을 **Git 리포지토리에**&#x200B;저장한다고 가정할 때 Cloud Manager는 배포할 수 있습니다.
+Cloud Manager는 일반 AEM 컨텐츠 패키지뿐만 아니라 웹 서버와 Dispatcher 구성 파일을 **Git 리포지토리에**&#x200B;저장한다고 가정할 때 배포할 수 있습니다.
 
-이 기능을 활용하려면 Maven 빌드가 두 개 이상의 디렉토리(conf ***및*** conf.d)를 포함하는 zip 파일을 만들어야 합니다 ******. 이 zip 파일은 maven-assembly-plugin을 사용하여 만들 수 있습니다. 내장된 [마법사를](/help/using/create-an-application-project.md) 사용하여 Cloud Manager에서 생성한 프로젝트에는 프로젝트 생성의 일부로 생성된 올바른 Maven 프로젝트 구조가 있습니다. 새 Managed Services 고객을 위한 권장 방법입니다.
+이 기능을 활용하려면 Maven 빌드가 두 개 이상의 디렉토리(conf ***및*** conf.d)를 포함하는 zip 파일을 만들어야 합니다 ******. 이 zip 파일은 maven-assembly-plugin을 사용하여 만들 수 있습니다. 내장된 [마법사를](/help/using/create-an-application-project.md) 사용하여 Cloud Manager에서 생성한 프로젝트에는 프로젝트 생성의 일부로 생성된 올바른 Maven 프로젝트 구조가 있습니다. 신규 Managed Services 고객을 위한 권장 방법입니다.
 
-디스패처 **인스턴스에**&#x200B;배포하면 이러한 디렉토리의 내용이 Dispatcher 인스턴스의 이러한 디렉토리 내용을 덮어씁니다. 웹 서버 및 Dispatcher 구성 파일은 환경별 정보가 자주 필요하므로 이 기능을 올바르게 사용하려면 먼저 CSE(Customer Success Engineers)와 협력하여 이러한 환경 변수를 /etc/sysconfig/httpd에서 설정해야 ***합니다***.
+발송자 인스턴스에 배포하면 **이러한 디렉토리**&#x200B;내용이 Dispatcher 인스턴스의 이러한 디렉토리 내용을 덮어씁니다. 웹 서버와 디스패처 구성 파일은 환경별 정보를 자주 필요로 하므로 이 기능을 올바르게 사용하려면 먼저 CSE(Customer Success Engineers)와 협력하여 이러한 환경 변수를 설정해야 합니다 `/etc/sysconfig/httpd`.
 
-### 기존 Managed Services 고객에 대한 Dispatcher 구성 단계 {#steps-for-configuring-dispatcher}
+### 기존 Managed Services 고객에 대한 발송자 구성 단계 {#steps-for-configuring-dispatcher}
 
-Dispatcher 구성의 초기 프로세스를 완료하려면 아래 절차를 따르십시오.
+Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 절차를 따르십시오.
 
 1. CSE에서 현재 프로덕션 구성 파일을 가져옵니다.
-1. 하드 코딩된 환경별 데이터(예: 퍼블리싱 렌더러 IP)를 제거하고 변수로 대체합니다.
-1. 각 대상 Dispatcher에 대한 키-값 쌍으로 필요한 변수를 정의하고 CSE가 각 인스턴스에 대해 ***/etc/sysconfig/httpd*** 에 추가하도록 요청합니다.
+1. 하드 코딩된 환경별 데이터(예: 퍼블리싱 렌더러 IP)를 제거하고 변수로 바꿉니다.
+1. 각 대상 발송자에 대한 키-값 쌍으로 필수 변수를 정의하고 CSE가 각 인스턴스에 추가되도록 `/etc/sysconfig/httpd` 요청합니다.
 1. 스테이지 환경에서 업데이트된 구성을 테스트한 다음 CSE에서 프로덕션에 배포하도록 요청합니다.
 1. 파일을 **Git 리포지토리에 커밋합니다**.
 
@@ -41,11 +41,11 @@ Dispatcher 구성의 초기 프로세스를 완료하려면 아래 절차를 따
 
 >[!NOTE]
 >
->Dispatcher 및 웹 서버 구성을 **Git 보관소로** 마이그레이션하는 작업은 Cloud Manager 온보딩 작업 중에 수행할 수 있지만 나중에 수행할 수도 있습니다.
+>Dispatcher 및 웹 서버 구성을 **Git** 리포지토리로 마이그레이션하는 작업은 Cloud Manager 온보딩 중에 수행할 수 있지만 나중 시점에 수행할 수도 있습니다.
 
 ### 예 {#example}
 
-특정 파일 및 디렉토리 구조는 프로젝트의 특성에 따라 달라질 수 있지만 이 예에서는 프로젝트를 구조화하여 Apache 및 Dispatcher 구성을 포함하는 방법에 대한 구체적인 지침을 제공해야 합니다.
+특정 파일 및 디렉토리 구조는 프로젝트의 세부 사항에 따라 달라질 수 있지만 이 예에서는 프로젝트를 구조화하여 Apache 및 Dispatcher 구성을 포함하는 방법에 대한 구체적인 가이드를 제공해야 합니다.
 
 1. 이름이 지정된 하위 디렉터리를 만듭니다 `dispatcher`.
 
@@ -194,7 +194,7 @@ Dispatcher 구성의 초기 프로세스를 완료하려면 아래 절차를 따
            └── 02-dispatcher.conf
    ```
 
-1. 마지막으로 프로젝트 루트의 pom.xml 파일에서 디스패처 모듈을 포함할 `<module>` 요소를 추가합니다.
+1. 마지막으로 프로젝트 루트의 pom.xml 파일에 디스패처 모듈을 포함할 `<module>` 요소를 추가합니다.
 
    예를 들어 기존 모듈 목록이
 
