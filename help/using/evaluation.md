@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -21,13 +21,13 @@ ht-degree: 0%
 제품 업데이트 마법사의 첫 번째 단계는 **[!UICONTROL Evaluation]** 단계입니다.
 마법사에서 직접 액세스할 수 있는 패턴 탐지기를 사용하여 업그레이드 복잡성을 평가할 수 있습니다. 이 단계가 끝나면 평가 보고서에 액세스할 수 있습니다.
 
-생성된 보고서를 사용하면 다음과 같은 패턴을 감지하여 작성자 인스턴스가 업그레이드 가능성을 확인할 수 있습니다.
+생성된 보고서를 사용하면 다음과 같은 패턴을 감지하여 작성자 인스턴스를 확인하여 업그레이드할 수 있습니다.
 
 * 특정 규칙을 위반하고 업그레이드로 인해 영향을 받거나 덮어쓸 영역에서 수행됩니다.
 
-* 새 AEM에서 역호환이 되지 않고 업그레이드 후 중단될 가능성이 있는 AEM 6.x 기능 또는 API를 사용하십시오.
+* 새 AEM에서 역호환하지 않는 AEM 6.x 기능 또는 API를 사용하고 업그레이드 후 언제든지 중단할 수 있습니다.
 
-AEM(Adobe Experience Manager) 6.5로 업그레이드하는 데 관련된 개발 노력에 대한 평가 역할을 합니다.
+이는 Adobe Experience Manager(AEM) 6.5로 업그레이드하는 데 관련된 개발 노력에 대한 평가 역할을 합니다.
 
 >[!NOTE]
 >
