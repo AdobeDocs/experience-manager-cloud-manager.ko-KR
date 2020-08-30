@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 1%
@@ -127,13 +127,11 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우, 가능한 
    1. 파이프라인 구성에 지정된 각 경로는 디스패처 캐시에서 무효화되거나 플러시됩니다.
 
    >[!NOTE]
-   >
    >Cloud Manager에서는 디스패처 아티팩트에 전체 파일 세트가 들어 있어야 합니다.  모든 발송자 구성 파일이 git 리포지토리에 있어야 합니다. 파일 또는 폴더가 누락되면 배포에 실패합니다.
 
 1. 모든 AEM 및 발송자 패키지를 모든 노드에 성공적으로 배포하면 디스패처가 로드 밸런서에 다시 추가되고 배포가 완료됩니다.
 
    >[!NOTE]
-   >
    >개발 및 단계 배포에서 로드 밸런서 변경 사항을 건너뛸 수 있습니다. 즉, 비프로덕션 파이프라인, 개발자 환경, 프로덕션 파이프라인 등의 경우 단계들을 분리하고 연결할 수 있습니다.
 
 ### 제작 단계 배포 {#deployment-production-phase}
