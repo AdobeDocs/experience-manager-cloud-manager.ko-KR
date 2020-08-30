@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 76c1a8e4-d66f-4a3b-8c0c-b80c9e17700e
 translation-type: tm+mt
-source-git-commit: ea9c4836caba1221cae75c600f77fd542a71d52c
+source-git-commit: f281b919b0ffaf4ca20a241d056c132e08e95206
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 1%
+source-wordcount: '1867'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 고객이 Cloud Manager에 온보드 방식을 사용하는 경우 빈 git 저장소가 제공됩니다. 현재 AMS(Adobe Managed Services) 고객(또는 AMS로 마이그레이션하는 온프레미스 AEM 고객)은 일반적으로 프로젝트 코드를 git(또는 다른 버전 제어 시스템)에 이미 가지고 있으며 프로젝트를 Cloud Manager git 리포지토리로 가져옵니다. 그러나 새 고객은 기존 프로젝트를 가지고 있지 않습니다.
 
-새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다&#x200B;**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+새로운 고객을 위한 Cloud Manager의 시작점으로 최소한의 AEM 프로젝트를 제작할 수 있습니다. 이 프로세스는 [**AEM 프로젝트 원형을 기반으로 합니다**](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 
 Cloud Manager에서 AEM 애플리케이션 프로젝트를 만들려면 아래 절차를 따르십시오.
@@ -266,6 +266,9 @@ Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에
 
 ## 암호로 보호된 Maven 리포지토리 지원 {#password-protected-maven-repositories}
 
+>[!NOTE]
+>암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 Quality Gates를 통해 실행되지 않으므로 매우 조심스럽게 사용해야 합니다. 따라서 드문 경우나 AEM에 연결되지 않은 코드에만 사용해야 합니다. 또한 이진 파일과 함께 전체 프로젝트 소스 코드뿐 아니라 Java 소스도 배포하는 것이 좋습니다.
+
 Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 서버 ID는 다음으로 시작하며 `adobe` `cloud-manager` 는 예약으로 간주되며 사용자 지정 서버에서 사용해서는 안 됩니다. 이러한 접두어 중 하나와 일치하지 **않는** 서버 ID가 Cloud Manager에 의해 미러링되지 `central` 않습니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)내에 포함되지만, 꼭 필요한 것은 아닙니다.
 
 예를 들어 저장소가 https://repository.myco.com/maven2에 있고 Cloud Manager가 사용해야 하는 사용자 이름 `cloudmanager` 은 is이고 암호는 is `secretword`라고 가정해 봅시다.
@@ -331,6 +334,54 @@ Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면
         </build>
     </profile>
 </profiles>
+```
+
+### 소스 배포 {#deploying-sources}
+
+바이너리와 함께 Java 소스를 Maven 저장소에 배포하는 것이 좋습니다.
+
+프로젝트에서 maven-source-plugin을 구성합니다.
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar-no-fork</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+```
+
+### 프로젝트 소스 배포 {#deploying-project-sources}
+
+이진 파일과 함께 전체 프로젝트 소스를 Maven 저장소에 배포하는 것이 좋습니다. 이를 통해 정확한 결함을 다시 작성할 수 있습니다.
+
+프로젝트에서 maven-assembly-plugin을 구성합니다.
+
+```xml
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>project-assembly</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                    <configuration>
+                        <descriptorRefs>
+                            <descriptorRef>project</descriptorRef>
+                        </descriptorRefs>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
 ```
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
