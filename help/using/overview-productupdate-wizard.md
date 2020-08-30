@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 4%
@@ -18,9 +18,9 @@ ht-degree: 4%
 
 # 개요 {#overview-product-update-wizard}
 
-제품 업데이트 마법사는 최신 Adobe Experience Manager(AEM) 6.5로 업그레이드하고 있는 Cloud Manager 고객을 위한 단계별 가이드 경험입니다. 이를 통해 전체 프로세스를 간소화하고, Cloud Manager의 CI/CD 프레임워크와 내장된 자동 테스트를 사용하여 AEM 모범 사례를 준수할 수 있습니다.
+제품 업데이트 마법사는 최신 Adobe Experience Manager(AEM) 6.5로 업그레이드하는 Cloud Manager 고객을 위한 단계별 가이드 방식의 경험입니다. 전체 프로세스를 간소화하고 클라우드 관리자의 CI/CD 프레임워크와 내장된 자동 테스트를 사용하여 AEM 모범 사례를 준수할 수 있습니다.
 
-이 마법사에는 AEM 제품 업데이트 동안 사용자를 안내하는 5가지 단계가 포함되어 있습니다.
+이 마법사에는 AEM 제품 업데이트 도중 사용자를 안내하는 5가지 단계가 포함되어 있습니다.
 
 * **평가**
 * **교정**
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Cloud Manager에 가입되어 있고 AEM 6.5로 업그레이드할 수 있는 고객은 제품 업데이트 마법사를 활용할 수 있습니다. 자세한 내용은 고객 성공 엔지니어(CSE)에 문의하십시오.
+>Cloud Manager에 온보드 및 AEM 6.5로 업그레이드할 수 있는 고객은 제품 업데이트 마법사를 활용할 수 있습니다. 자세한 내용은 고객 성공 엔지니어(CSE)에 문의하십시오.
 
 1. AEM 6.5를 프로그램에서 사용할 수 있음을 알리는 Cloud Manager를 통해 펄스 알림을 받게 됩니다.
 
