@@ -6,19 +6,22 @@ seo-description: Adobe AEM Cloud Manager 도움말 개요
 uuid: d4a23a6e-347e-41c3-9e3b-b7b7469c4754
 contentOwner: jsyal
 discoiquuid: 5ca5a413-639e-43fb-93dd-16ce8935a3fd
-translation-type: ht
-source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
+translation-type: tm+mt
+source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 73%
 
 ---
 
 
-# AEM [!UICONTROL Cloud Manager] 개요{#overview-index}
+# AEM [!UICONTROL Cloud Manager]{#overview-index} 개요
 
 [!UICONTROL Cloud Manager]는 모든 Adobe Managed Services 고객이 사용할 수 있는 도구와 기술 프레임워크입니다.
 
 이 섹션에서는 [!UICONTROL Cloud Manager]를 시작할 수 있는 리소스 목록을 자세히 살펴봅니다.
 
-아래 리소스에 따라 주요 개념 및 용어를 이해하고 구성을 설정(전제 조건)하여 최종적으로 [!UICONTROL Cloud Manager]를 시작할 수 있는 [!UICONTROL Cloud Manager] 사용 여정을 시작합니다.
+Follow the resources below to begin your journey for using [!UICONTROL Cloud Manager], from understanding the key concepts and terminologies to setting up configurations (pre-requisites), that finally lets you get started with [!UICONTROL Cloud Manager].
 
 아래는 [!UICONTROL Cloud Manager] 학습 로드맵을 보여주는 그림입니다.
 
@@ -26,7 +29,7 @@ source-git-commit: 617b04e7465fa41542606b733ded76a32467738d
 
 [!UICONTROL Cloud Manager]를 소개하는 개요 섹션의 리소스를 따릅니다.
 
-* **[[!UICONTROL Cloud Manager] 소개](introduction-to-cloud-manager.md)**
+* **[소개[!UICONTROL Cloud Manager]](introduction-to-cloud-manager.md)**
 * **[주요 개념](key-concepts.md)**
 * **[[!UICONTROL Customer Journey]](customer-journey.md)**
 
