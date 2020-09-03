@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager 릴리스 노트(2020.9.0)
 description: Cloud Manager 릴리스 2020.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
+source-git-commit: 988cebcb0503725946d33751d111e10f28f09ce7
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 릴리스 날짜 {#release-date}
 
-버전 2020.8.0 [!UICONTROL Cloud Manager] 의 릴리스 날짜는 2020년 9월 3일입니다.
+버전 2020.9.0 [!UICONTROL Cloud Manager] 의 릴리스 날짜는 2020년 9월 3일입니다.
 
 ## 새로운 기능 {#whats-new}
 
