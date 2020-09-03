@@ -5,9 +5,9 @@ archetype: administrator
 user-guide-title: Experience Manager Cloud Manager 도움말
 user-guide-description: Learn to use Adobe Managed Services to self-manage Experience Manager in the cloud.
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c1d07c95088a279376ef495001a5165c7e459642
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '218'
 ht-degree: 87%
 
 ---
@@ -31,7 +31,9 @@ ht-degree: 87%
 + 시작하기 {#getting-started}
    + [처음 로그인](first-time-login.md)
    + [프로그램 설정](setting-up-program.md)
-   + [AEM 애플리케이션 프로젝트 만들기](create-an-application-project.md)
+   + AEM 애플리케이션 프로젝트 만들기 {#create-application-project}
+      + [AEM 애플리케이션 프로젝트 만들기](create-an-application-project.md)
+      + [마법사 사용](using-the-wizard.md)
    + [릴리스 분기 구성](configure-your-release-branches.md)
    + [디스패처 구성 관리](dispatcher-configurations.md)
 + 사용 방법 {#how-to-use}
@@ -52,7 +54,8 @@ ht-degree: 87%
    + [개요](overview-productupdate-wizard.md)
    + [평가](evaluation.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트(2020.8.0)](release-notes-current.md)
+   + [현재 릴리스 노트(2020.9.0)](release-notes-current.md)
+   + [2020.8.0 릴리스 노트](release-notes-2020-8-0.md)
    + [2020.7.0 릴리스 노트](release-notes-2020-7-0.md)
    + [2020.6.0 릴리스 노트](release-notes-2020-6-0.md)
    + [2020.5.0 릴리스 노트](release-notes-2020-5-0.md)
