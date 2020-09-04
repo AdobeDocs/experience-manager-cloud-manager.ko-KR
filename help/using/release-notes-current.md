@@ -4,7 +4,7 @@ seo-title: AEM Cloud Manager 릴리스 노트(2020.9.0)
 description: Cloud Manager 릴리스 2020.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 988cebcb0503725946d33751d111e10f28f09ce7
+source-git-commit: 92249cbb7134082fcc66455c90dda8bdcb9dbf1d
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 10%
@@ -23,6 +23,6 @@ ht-degree: 10%
 
 * 빌드 프로세스는 세 개의 개별 Maven 명령으로 분리되었습니다.
 * git 리포지토리를 복제하지 못하면 최대 3회 다시 시도됩니다.
-* 이제 성능 테스트 중에 인증이 사용될 때 파이프라인 실행 세부 정보 페이지에 표시기가 있습니다
+* 이제 성능 테스트 중에 인증이 사용될 때 파이프라인 실행 세부 정보 페이지에 표시기가 있습니다.
 
 
