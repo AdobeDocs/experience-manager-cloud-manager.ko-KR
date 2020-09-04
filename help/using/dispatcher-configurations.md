@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 Cloud Manager는 일반 AEM 컨텐츠 패키지뿐만 아니라 웹 서버와 Dispatcher 구성 파일을 **Git 리포지토리에**&#x200B;저장한다고 가정할 때 배포할 수 있습니다.
 
-이 기능을 활용하려면 Maven 빌드가 두 개 이상의 디렉토리(conf ***및*** conf.d)를 포함하는 zip 파일을 만들어야 합니다 ******. 이 zip 파일은 maven-assembly-plugin을 사용하여 만들 수 있습니다. 내장된 [마법사를](/help/using/create-an-application-project.md) 사용하여 Cloud Manager에서 생성한 프로젝트에는 프로젝트 생성의 일부로 생성된 올바른 Maven 프로젝트 구조가 있습니다. 신규 Managed Services 고객을 위한 권장 방법입니다.
+이 기능을 활용하려면 Maven 빌드가 두 개 이상의 디렉토리(conf ***및*** conf.d)를 포함하는 zip 파일을 만들어야 합니다 ******. 이 zip 파일은 maven-assembly-plugin을 사용하여 만들 수 있습니다. 내장된 [마법사를](/help/using/using-the-wizard.md) 사용하여 Cloud Manager에서 생성한 프로젝트에는 프로젝트 생성의 일부로 생성된 올바른 Maven 프로젝트 구조가 있습니다. 신규 Managed Services 고객을 위한 권장 방법입니다.
 
 발송자 인스턴스에 배포하면 **이러한 디렉토리**&#x200B;내용이 Dispatcher 인스턴스의 이러한 디렉토리 내용을 덮어씁니다. 웹 서버와 디스패처 구성 파일은 환경별 정보를 자주 필요로 하므로 이 기능을 올바르게 사용하려면 먼저 CSE(Customer Success Engineers)와 협력하여 이러한 환경 변수를 설정해야 합니다 `/etc/sysconfig/httpd`.
 
