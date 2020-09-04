@@ -1,6 +1,6 @@
 ---
 title: 2018.8.0 릴리스 노트
-seo-title: 2018.8.0용 AEM Cloud Manager 릴리스 노트
+seo-title: AEM Cloud Manager 2018.8.0용 릴리스 노트
 description: Cloud Manager 릴리스 2018.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2018.8.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 uuid: e8aaba32-89b4-4bc5-b295-09b753252612
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 9222ac3b-525e-47c1-b481-ac9d22e3d559
 translation-type: tm+mt
-source-git-commit: cdf2c82192c2e9c375316ae6e28646594ba2a462
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '329'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 # 2018.8.0 릴리스 노트 {#release-notes-for}
 
-2018.8.0 릴리스는 git 약정 시 자동으로 CI/CD 파이프라인을 트리거하는 지원과 AEM Project 원형형을 기반으로 git에서 애플리케이션 프로젝트를 만드는 새로운 마법사를 추가합니다. [!UICONTROL Cloud Manager]
+2018.8.0 릴리스는 git 약정 시 자동으로 CI/CD 파이프라인을 트리거하는 지원과 AEM Project Tranype을 기반으로 하는 git에서 애플리케이션 프로젝트를 만드는 새로운 마법사를 추가합니다. [!UICONTROL Cloud Manager]
 
 ## 릴리스 날짜 {#release-date}
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## 새로운 기능 {#what-s-new}
 
-* **프로그램 설정** - AEM 프로젝트 원형 유형을 사용하여 git에서 응용 프로그램 프로젝트를 만드는 새로운 마법사. 자세한 내용은 [AEM 응용 프로그램 프로젝트](/help/using/create-an-application-project.md) 만들기를 참조하십시오.
+* **프로그램 설정** - AEM Project 원형형을 사용하여 git에서 애플리케이션 프로젝트를 만드는 새로운 마법사
 
 * **CI/CD 파이프라인** - 다음 변경 사항이 CI/CD 파이프라인에 추가됩니다. 자세한 내용은 [CI/CD 파이프라인](configuring-pipeline.md) 구성을 참조하십시오.
 
