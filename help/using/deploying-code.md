@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '952'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
    단계 **배포에는**&#x200B;다음 단계가 포함됩니다.
 
    * 유효성 검사:이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되어 있는지 확인합니다. 예를 들어 구성된 분기가 있고 환경을 사용할 수 있습니다.
-   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은 AEM 응용 프로그램 프로젝트](create-an-application-project.md) 만들기를 참조하십시오.
+   * 빌드 및 단위 테스트:이 단계에서는 포함된 빌드 프로세스가 실행됩니다. 빌드 [환경에 대한 자세한 내용은 빌드 환경](/help/using/build-environment-details.md) 이해를 참조하십시오.
    * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트](understand-your-test-results.md) 결과 이해를 참조하십시오.
    * 스테이지에 배포
 
