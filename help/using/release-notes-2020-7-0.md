@@ -4,7 +4,7 @@ seo-title: 2020.7.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 seo-description: AEM Cloud Manager 릴리스 2020.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 3be958aa21d5423ddf371c286825d01afd554c4b
+source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 51%
@@ -26,7 +26,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 * 이제 Cloud Manager 빌드 컨테이너가 Java 8과 Java 11을 모두 지원합니다.
 
 * 이제 Cloud Manager 파이프라인이 고객 설정 변수 및 기밀을 지원합니다.
-자세한 내용은 [파이프라인 변수](/help/using/create-an-application-project.md#pipeline-variables)를 참조하십시오.
+자세한 내용은 [파이프라인 변수](/help/using/build-environment-details.md#pipeline-variables)를 참조하십시오.
 
 ## 버그 수정 {#bug-fixes}
 
