@@ -2,7 +2,7 @@
 title: 프로젝트 설정
 description: 프로젝트 설정 방법을 알려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: f73ea3db4bc50891518bebbe5da2d69dd2890a81
+source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Cloud Manager 빌드 환경 내에서 마스터 프로필의 활성화는 위에
 >[!NOTE]
 >암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 Quality Gates를 통해 실행되지 않으므로 매우 조심스럽게 사용해야 합니다. 따라서 드문 경우나 AEM에 연결되지 않은 코드에만 사용해야 합니다. 또한 이진 파일과 함께 전체 프로젝트 소스 코드뿐 아니라 Java 소스도 배포하는 것이 좋습니다.
 
-Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 서버 ID는 다음으로 시작하며 `adobe` `cloud-manager` 는 예약으로 간주되며 사용자 지정 서버에서 사용해서는 안 됩니다. 이러한 접두어 중 하나와 일치하지 **않는** 서버 ID가 Cloud Manager에 의해 미러링되지 `central` 않습니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](/help/using/create-an-application-project.md#activating-maven-profiles-in-cloud-manager)내에 포함되지만, 꼭 필요한 것은 아닙니다.
+Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 사용자 이름(선택 사항)를 비밀 [파이프라인 변수로](/help/using/build-environment-details.md#pipeline-variables) 지정한 다음 git 리포지토리에 있는 파일 `.cloudmanager/maven/settings.xml` 에서 해당 암호를 참조합니다. 이 파일은 [마비설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일로 병합됩니다. 서버 ID는 다음으로 시작하며 `adobe` `cloud-manager` 는 예약으로 간주되며 사용자 지정 서버에서 사용해서는 안 됩니다. 이러한 접두어 중 하나와 일치하지 **않는** 서버 ID가 Cloud Manager에 의해 미러링되지 `central` 않습니다. 이 파일을 적절히 사용하면 서버 ID가 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내부에서 `pom.xml` 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager별 프로필](#activating-maven-profiles-in-cloud-manager)내에 포함되지만, 꼭 필요한 것은 아닙니다.
 
 예를 들어 저장소가 https://repository.myco.com/maven2에 있고 Cloud Manager가 사용해야 하는 사용자 이름 `cloudmanager` 은 is이고 암호는 is `secretword`라고 가정해 봅시다.
 
