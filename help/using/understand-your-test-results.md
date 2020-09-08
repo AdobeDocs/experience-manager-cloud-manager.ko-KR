@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: d38b6da61c552a3e9ad03dac49a64553f0cb00b4
+source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 7%
@@ -162,7 +162,7 @@ CI/CD 파이프라인 [구성에서 버킷 컨트롤에 대해 자세히 알아�
 | 분당 페이지 보기 횟수 | 중요 사항 | &lt; 프로그램 수준 KPI |
 | 디스크 대역폭 사용률 | 중요 사항 | >= 90% |
 | 네트워크 대역폭 사용 | 중요 사항 | >= 90% |
-| 분당 요청 수 | 정보 | &lt; 6000 |
+| 분당 요청 수 | 정보 | >= 6000 |
 
 ### 성능 테스트 결과 그래프 {#performance-testing-results-graphs}
 
