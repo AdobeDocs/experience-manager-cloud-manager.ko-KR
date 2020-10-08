@@ -8,7 +8,7 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 8d1a100420129d234fe21911f165621405a04a9b
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
@@ -40,6 +40,7 @@ ht-degree: 0%
 1. 을 클릭합니다 **[!UICONTROL Run Evaluation]**.
 
    >[!NOTE]
+   >
    >패턴 탐지기는 모든 환경에서 실행될 수 있습니다. 하지만 중요한 비즈니스 인스턴스에 대한 감지 비율을 높이고 속도 저하를 방지하기 위해 Cloud Manager는 작성 인스턴스의 스테이징 환경에서 이 인스턴스를 실행합니다.
 
    ![](assets/Run-Evaluation.png)
