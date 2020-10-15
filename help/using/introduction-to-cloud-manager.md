@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 4838de3d6c78884333d8088eb38f388fbcd0e707
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 94%
+source-wordcount: '680'
+ht-degree: 91%
 
 ---
 
@@ -70,4 +70,4 @@ UI에서 파이프라인 구성에 대한 자세한 내용 [!UICONTROL Cloud Man
 
 자동 크기 조정 이벤트 동안 자동으로 [!UICONTROL Cloud Manager]에서 자동 크기 조정 제공 프로세스를 트리거하고, 자동 크기 조정 이벤트 알림을 보내고, 몇 분 안에 추가 용량을 온라인 상태로 전환합니다. 추가 용량은 영역이 같고 실행 중인 디스패처/게시 노드와 시스템 사양이 일치하는 프로덕션 환경에서 제공됩니다.
 
-자동 크기 조정 기능은 디스패처/게시 계층에만 적용되고, 항상 가로 크기 조정 방법을 사용하여 실행되며, 추가 디스패처/게시 쌍 세그먼트가 1~10개 있습니다. 제공된 추가 용량은 CSE(Customer Success Engineer)가 결정하는 10일 이내 기간에 수동으로 조정됩니다.
+자동 크기 조정 기능은 디스패처/게시 계층에만 적용되고, 항상 가로 크기 조정 방법을 사용하여 실행되며, 추가 디스패처/게시 쌍 세그먼트가 1~10개 있습니다. 제공된 추가 용량은 CSE(Customer Success Engineer)가 결정하는 10일 이내 기간에 수동으로 조정됩니다. Autoscaling이 애플리케이션에 적합한지 여부를 확인하려면 CSE 또는 Adobe 담당자에게 문의해야 합니다.
