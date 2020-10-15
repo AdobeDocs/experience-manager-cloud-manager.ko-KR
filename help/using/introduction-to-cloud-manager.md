@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 2005b7e7689d3bc0656f92ecdbe368519f0d52a9
+source-git-commit: d3f17b1fd4fcc1c75836c9dd67d54e22422db120
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 91%
@@ -73,4 +73,4 @@ UI에서 파이프라인 구성에 대한 자세한 내용 [!UICONTROL Cloud Man
 자동 크기 조정 기능은 디스패처/게시 계층에만 적용되고, 항상 가로 크기 조정 방법을 사용하여 실행되며, 추가 디스패처/게시 쌍 세그먼트가 1~10개 있습니다. 제공된 추가 용량은 CSE(Customer Success Engineer)가 결정하는 10일 이내 기간에 수동으로 조정됩니다.
 
 >[!NOTE]
->Autoscaling이 애플리케이션에 적합한지 여부를 확인하려면 CSE 또는 Adobe 담당자에게 문의해야 합니다.
+>승인 과정이 애플리케이션에 적합한지 여부를 확인하려면 CSE 또는 Adobe 담당자에게 문의해야 합니다.
