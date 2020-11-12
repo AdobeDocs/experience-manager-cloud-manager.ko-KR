@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
 workflow-type: tm+mt
-source-wordcount: '1751'
+source-wordcount: '1776'
 ht-degree: 1%
 
 ---
@@ -164,7 +164,7 @@ Dispatcher Invalidate를 구성하려면 아래 단계를 따르십시오.
 
    **AEM Sites:**
 
-   Cloud Manager는 스테이지 게시 서버에서 기본적으로 인증되지 않은 사용자로 페이지(인증되지 않은 사용자)를 30분 테스트 기간 동안 요청하고 다양한 시스템 수준 지표와 각 페이지에 대한 응답 시간을 측정하여 AEM Sites 프로그램에 대한 성능 테스트를 실행합니다.
+   Cloud Manager는 스테이지 게시 서버에서 기본적으로 인증되지 않은 사용자로 페이지(인증되지 않은 사용자)를 30분 테스트 기간 동안 요청하고 다양한 시스템 수준 지표와 각 페이지에 대한 응답 시간을 측정하여 AEM Sites 프로그램에 대한 성능 테스트를 실행합니다. 이러한 요청은 알려진 전용 주소 집합에서 수행됩니다. 주소 범위는 고객 성공 엔지니어 또는 Adobe 담당자가 구할 수 있습니다.
 
    30분 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 *시드* URL을 사용하여 스테이지 환경을 크롤합니다. 이 URL부터 각 페이지의 HTML이 검사되고 링크를 우선적으로 탐색합니다. 이 크롤링 프로세스는 최대 5,000페이지로 제한됩니다. 크롤러 요청에 10초의 고정 시간 초과가 있습니다.
 
