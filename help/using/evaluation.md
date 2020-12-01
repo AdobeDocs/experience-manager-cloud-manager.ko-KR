@@ -31,13 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->패턴 탐지기에 대한 자세한 내용은 패턴 탐지기 [를 사용한 업그레이드 복잡성 평가를 참조하십시오.](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)
+>패턴 탐지기에 대한 자세한 내용은 [패턴 탐지기를 사용한 업그레이드 복잡성 평가](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/pattern-detector.html)를 참조하십시오.
 
-## 평가기 실행 {#running-evaluator}
+## 평가기 {#running-evaluator} 실행
 
 아래 절차에 따라 평가 보고서를 생성합니다.
 
-1. 을 클릭합니다 **[!UICONTROL Run Evaluation]**.
+1. **[!UICONTROL Run Evaluation]**&#x200B;을 클릭합니다.
 
    >[!NOTE]
    >
@@ -45,13 +45,13 @@ ht-degree: 0%
 
    ![](assets/Run-Evaluation.png)
 
-1. 마법사가 작업 상태를 알려줍니다. 귀하는 평가 보고서 **가 생성되면** 진행 **중이거나** 완료되었음을알 수 있습니다.
+1. 마법사가 작업 상태를 알려줍니다. 평가 보고서가 생성되는 경우 해당하는 **진행 중** 또는 **completed**&#x200B;을 보게 됩니다.
 
-   보고서가 생성되면 아이콘을 클릭하여 복사본 **[!UICONTROL Download report]** 을 저장할 수 있습니다.
+   보고서가 생성되면 **[!UICONTROL Download report]**&#x200B;을 클릭하여 복사본을 저장할 수 있습니다.
 
    ![](assets/Evaluation-1.png)
 
 
    >[!NOTE]
    >
-   >Cloud Manager의 현재 제품 업데이트 마법사는 **평가** 단계만 지원합니다. 다른 4단계, 즉 **교정**, **실행**, **검증**&#x200B;및 **완료** 가곧 출시됩니다.
+   >Cloud Manager의 제품 업데이트 마법사의 현재 릴리스는 **평가** 단계만 지원합니다. 다른 4단계, 즉 **Remediation**, **Execution**, **Validation** 및 **Completion**&#x200B;이 곧 제공될 예정입니다.
