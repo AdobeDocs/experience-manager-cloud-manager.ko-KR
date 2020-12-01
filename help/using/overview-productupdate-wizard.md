@@ -29,7 +29,7 @@ ht-degree: 4%
 * **완료**
 
 
-## Using Product Update Wizard {#using-product-update-wizard}
+## 제품 업데이트 마법사 {#using-product-update-wizard} 사용
 
 >[!NOTE]
 >
@@ -37,8 +37,8 @@ ht-degree: 4%
 
 1. AEM 6.5를 프로그램에서 사용할 수 있음을 알리는 Cloud Manager를 통해 펄스 알림을 받게 됩니다.
 
-1. 의 개요 화면에 **[!UICONTROL AEM 6.5 Update]** 카드가 표시됩니다 [!UICONTROL Cloud Manager]. 이 카드는 현재 업데이트 프로세스의 단계를 추적하는 데 도움이 되며 다음 단계를 진행할 수 있는지 알려 줍니다. 마법사 **[!UICONTROL Start Update]** 를 시작하려면 선택합니다.
+1. **[!UICONTROL AEM 6.5 Update]** 카드가 [!UICONTROL Cloud Manager]의 개요 화면에 표시됩니다. 이 카드는 현재 업데이트 프로세스의 단계를 추적하는 데 도움이 되며 다음 단계를 진행할 수 있는지 알려 줍니다. **[!UICONTROL Start Update]**&#x200B;을 선택하여 마법사를 시작합니다.
 
    ![](assets/Start-Update.png)
 
-   이제 **[!UICONTROL AEM 6.5 Update]** 평가 단계에서와 같이 프로세스 [](evaluation.md)첫 번째 단계가 표시됩니다.
+   이제 [평가 단계](evaluation.md)에 표시된 것처럼 마법사가 **[!UICONTROL AEM 6.5 Update]** 프로세스의 첫 번째 단계를 표시합니다.
