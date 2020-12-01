@@ -21,7 +21,7 @@ ht-degree: 73%
 
 이 섹션에서는 [!UICONTROL Cloud Manager]를 시작할 수 있는 리소스 목록을 자세히 살펴봅니다.
 
-Follow the resources below to begin your journey for using [!UICONTROL Cloud Manager], from understanding the key concepts and terminologies to setting up configurations (pre-requisites), that finally lets you get started with [!UICONTROL Cloud Manager].
+[!UICONTROL Cloud Manager] 사용을 위한 여정은 아래 리소스를 참고하여 주요 개념 및 용어 이해에서부터 구성(전제 조건) 설정, 마지막으로 [!UICONTROL Cloud Manager]으로 시작할 수 있도록 해줍니다.
 
 아래는 [!UICONTROL Cloud Manager] 학습 로드맵을 보여주는 그림입니다.
 
