@@ -13,15 +13,15 @@ ht-degree: 7%
 
 # 2020.11.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 릴리스 2020.11.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.11.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-버전 2020.11.0 [!UICONTROL Cloud Manager] 의 릴리스 날짜는 2020년 11월 12일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.11.0의 릴리스 날짜는 2020년 11월 12일입니다.
 
 ## 새로운 기능 {#whats-new}
 
-* Cloud **Manager의 학습** 탭은 UI의 새 이미지로 새로 고쳐집니다.
+* Cloud Manager의 **학습** 탭은 UI의 새 이미지로 새로 고쳐집니다.
 
 ## 버그 수정 {#bug-fixes}
 
