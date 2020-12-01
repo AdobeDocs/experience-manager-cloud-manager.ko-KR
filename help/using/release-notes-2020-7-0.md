@@ -13,11 +13,11 @@ ht-degree: 51%
 
 # 2020.7.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 릴리스 2020.7.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.7.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 2020.
+[!UICONTROL Cloud Manager] 버전 2020.7.0의 릴리스 날짜는 2020년 7월 09일입니다.
 
 ## 새로운 기능 {#whats-new}
 
@@ -30,7 +30,7 @@ The Release Date for [!UICONTROL Cloud Manager] Version 2020.7.0 is July 09, 202
 
 ## 버그 수정 {#bug-fixes}
 
-* The **Cancel** and **Save** options on the Non-Production Pipeline Edit page were not always visible.
+* 비프로덕션 파이프라인 편집 페이지의 **취소** 및 **저장** 옵션이 항상 표시되는 것은 아닙니다.
 
 * 코드 품질 프로세스의 일부 오류로 인해 로그 파일이 올바로 생성되지 않을 수 있습니다.
 
