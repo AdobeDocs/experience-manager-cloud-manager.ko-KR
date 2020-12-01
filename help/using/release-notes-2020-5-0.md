@@ -13,11 +13,11 @@ ht-degree: 66%
 
 # 2020.5.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 릴리스 2020.5.0 [!UICONTROL Cloud Manager] 에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.5.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-버전 2020.5.0의 릴리스 날짜는 2020년 5월 7일입니다. [!UICONTROL Cloud Manager]
+[!UICONTROL Cloud Manager] 버전 2020.5.0의 릴리스 날짜는 2020년 5월 7일입니다.
 
 ## 새로운 기능 {#whats-new}
 
