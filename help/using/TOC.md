@@ -48,7 +48,7 @@ ht-degree: 85%
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
-+ 코드 관리 {#managing-code}
++ 코드 {#managing-code} 관리
    + [Maven 프로젝트 버전 처리](activating-maven-project.md)
    + [Git 액세스](accessing-git.md)
    + [Git과 통합](setup-cloud-manager-git-integration.md)
