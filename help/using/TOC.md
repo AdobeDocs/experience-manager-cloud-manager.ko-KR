@@ -44,7 +44,7 @@ ht-degree: 83%
    + [테스트 결과 이해](understand-your-test-results.md)
    + [환경 관리](manage-your-environment.md)
    + [환경 모니터링](monitor-your-environments.md)
-   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [클라우드 관리자 API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
