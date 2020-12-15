@@ -1,8 +1,8 @@
 ---
 title: 2020.5.0 릴리스 노트
 seo-title: 2020.5.0용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2020.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
-seo-description: AEM Cloud Manager 릴리스 2020.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
+description: Cloud Manager 릴리스 2020.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+seo-description: AEM Cloud Manager 릴리스 2020.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
 source-git-commit: 0652436ec0c1c95d270a06a600424dbfd0140b27
 workflow-type: tm+mt
@@ -39,5 +39,5 @@ ht-degree: 66%
 
 * 개요 페이지의 특정 카드에 개체 이름이 올바로 표시되지 않았습니다.
 
-* 특정 토폴로지 구성은 성능 테스트 단계에서 누락된 지표를 보고하는 대신 오류를 생성합니다.
+* 특정 토폴로지 구성에서는 누락된 지표를 보고하는 대신 성능 테스트 단계에서 오류가 생성됩니다.
 
