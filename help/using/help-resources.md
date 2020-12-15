@@ -1,8 +1,8 @@
 ---
 title: 도움말 리소스
-seo-title: Adobe AEM Cloud Manager 도움말 리소스
-description: 클라우드 관리자를 위한 도움말 리소스
-seo-description: Adobe AEM Cloud Manager 도움말 리소스
+seo-title: Adobe AEM Cloud Manager용 도움말 리소스
+description: Cloud Manager 도움말 리소스
+seo-description: Adobe AEM Cloud Manager용 도움말 리소스
 uuid: bab98819-57c1-4408-98ab-2898bd9b1a1d
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
