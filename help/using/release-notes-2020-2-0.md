@@ -1,8 +1,8 @@
 ---
 title: 2020.2.0 릴리스 노트
 seo-title: 2020.2.0용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
-seo-description: AEM Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오
+description: Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+seo-description: AEM Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
 source-git-commit: 44671d89edad0ccb6ded998b62beb5fa012678e9
 workflow-type: tm+mt
@@ -26,8 +26,8 @@ ht-degree: 55%
 * Experience Cloud 알림에 사용된 URL은 추가 리디렉션을 방지하도록 최적화되었습니다.
 * 시간 초과된 파이프라인 실행 단계는 이제 명시적으로 이를 기술합니다.
 * 이제 코드 스캔 단계에 다운로드 가능한 로그가 있습니다.
-* 보안 테스트 단계에 다운로드 가능한 로그가 있습니다.
-* 이제 성능 테스트 중 액세스한 페이지 목록을 다운로드할 수 있습니다.
+* 이제 보안 테스트 단계에 다운로드 가능한 로그가 있습니다.
+* 성능 테스트 중 액세스한 페이지 목록을 이제 다운로드할 수 있습니다.
 * 코드 스캔 중에 발견된 문제가 들어 있는 스프레드시트에 특정 규칙에 대한 설명서 링크가 있는 열이 있습니다.
 * 성능 테스트 단계를 시작하지 못하면 이제 실패 이유가 표시됩니다.
 
