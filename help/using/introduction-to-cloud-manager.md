@@ -21,7 +21,7 @@ ht-degree: 88%
 
 ## 소개 {#introduction}
 
-[!UICONTROL Cloud Manager]Cloud의 Adobe Experience Manager(AEM)에 포함된 Adobe Sign을 사용하면 조직에서 클라우드에서 Experience Manager을 자체 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다.
+[!UICONTROL Cloud Manager]는 Cloud에서 Adobe Experience Manager(AEM)에 포함되어 있으므로 조직에서 클라우드에서 Experience Manager을 자체 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다.
 
 **조직**&#x200B;에서 [!UICONTROL Cloud Manager]셀프서비스 고객 포털을 이용하여 다음을 수행/활용할 수 있습니다.
 
@@ -44,7 +44,7 @@ ht-degree: 88%
 
 성공적인 배포를 측정하는 기준을 최종적으로 형성하는 애플리케이션별 KPI(주요 성능 지표)인 최대 페이지 보기 횟수 및 페이지 로드 예상 응답 시간을 고객이 정의합니다. 여러 팀 구성원의 역할과 권한을 쉽게 정의할 수 있습니다. 새로운 셀프서비스 인터페이스를 통해 고객이 다시 제어하게 되었지만, 우수 사례 링크와 필요할 때 필요한 지침을 제공할 수 있는 Adobe 내 전문가 액세스도 제공됩니다.
 
-[!UICONTROL Cloud Manager]의 UI를 살펴보고 시작하려면 [첫 번째 로그인](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)을 참조하십시오.
+[!UICONTROL Cloud Manager]의 UI를 탐색하고 시작하려면 [첫 번째 로그인](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)을 참조하십시오.
 
 ### CI/CD 파이프라인 {#ci-cd-pipeline}
 
@@ -52,7 +52,7 @@ ht-degree: 88%
 
 [!UICONTROL Cloud Manager] UI를 통해 고객이 CI/CD 파이프라인을 구성하고 시작할 수 있습니다. 이 파이프라인의 처음부터 끝까지 고품질 애플리케이션만 프로덕션 환경에 전달되도록 철저한 코드 검사가 실행됩니다.
 
-[!UICONTROL Cloud Manager] UI에서 파이프라인 구성에 대한 자세한 내용은 [CI/CD 파이프라인 구성](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)을 참조하십시오.
+[!UICONTROL Cloud Manager] UI에서 파이프라인을 구성하는 방법에 대한 자세한 내용은 [CI/CD 파이프라인 구성](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)을 참조하십시오.
 
 ### 유연한 배포 모드 {#flexible-deployment-modes}
 
@@ -73,4 +73,4 @@ ht-degree: 88%
 자동 크기 조정 기능은 디스패처/게시 계층에만 적용되고, 항상 가로 크기 조정 방법을 사용하여 실행되며, 추가 디스패처/게시 쌍 세그먼트가 1~10개 있습니다. 제공된 추가 용량은 CSE(Customer Success Engineer)가 결정하는 10일 이내 기간에 수동으로 조정됩니다.
 
 >[!NOTE]
->승인 과정이 애플리케이션에 적합한지 여부를 확인하려면 CSE 또는 Adobe 담당자에게 문의해야 합니다.
+>자동 지정이 해당 애플리케이션에 적합한지 여부를 확인하려면 CSE 또는 Adobe 담당자에게 문의해야 합니다.
