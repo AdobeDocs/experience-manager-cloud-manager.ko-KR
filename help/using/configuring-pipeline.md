@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 30d782f5a095b1b07ec4f2039def9ba30a559325
+source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -71,8 +71,6 @@ Git 분기를 선택하고 **다음**&#x200B;을 클릭합니다.
    >[!NOTE]
    >
    >Git 리포지토리에 있는 분기가 프로그램에 연결됩니다.
-
-   ![](assets/Configure_ci-cd-2.png)
 
 
 1. **환경** 탭에 액세스하여 **스테이지** 및 **프로덕션** 옵션을 선택합니다.
