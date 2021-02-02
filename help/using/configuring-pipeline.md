@@ -10,7 +10,7 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: d02292e4f6369e0e0bf8fcf60cb8fe299854b3cc
+source-git-commit: bbcd5e59a9f9e8cb83cefb8af79d3ce7987bf388
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -170,7 +170,7 @@ Git 분기를 선택하고 **다음**&#x200B;을 클릭합니다.
 
    예를 들어, 인기 있는 라이브 페이지와 새 페이지 세트(이 예에서는 다른 라이브 페이지가 사용되지 않음) 간에 50%/50%의 분할이 있고 새 페이지 세트에 3000페이지가 포함되어 있다고 가정해 보겠습니다. 분당 페이지 뷰 수 KPI는 200으로 설정됩니다. 30분 동안의 테스트 기간:
 
-   * 인기 있는 라이브 페이지 세트의 25개 페이지는 각각 240회 - ((200 * 0.5) / 25) * 30 = 120개
+   * 인기 있는 라이브 페이지 세트의 25개 페이지는 각각 120회 - ((200 * 0.5) / 25) * 30 = 120으로 히트합니다.
 
    * 새 페이지 세트의 3000개 각 페이지가 한 번 히트 - ((200 * 0.5) / 3000) * 30 = 1
 
