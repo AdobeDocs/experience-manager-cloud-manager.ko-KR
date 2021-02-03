@@ -6,7 +6,7 @@ user-guide-title: Experience Manager 클라우드 관리자 안내서
 breadcrumb-title: Cloud Manager 안내서
 user-guide-description: Adobe Managed Services를 사용하여 클라우드에서 Experience Manager을 자체 관리하는 방법을 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 5688e956c4c21968ce691b560a6ce519496f7563
+source-git-commit: f3e5e4be7ac4ba7eef158cea3c1c19ea83ec4d75
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 83%
@@ -45,7 +45,7 @@ ht-degree: 83%
    + [환경 관리](manage-your-environment.md)
    + [환경 모니터링](monitor-your-environments.md)
    + [클라우드 관리자 API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/master/README.md)
+   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
 + 코드 {#managing-code} 관리
