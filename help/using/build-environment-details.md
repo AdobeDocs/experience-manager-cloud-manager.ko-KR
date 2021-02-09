@@ -2,9 +2,9 @@
 title: 빌드 환경 이해
 description: 환경에 대해 알려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 000843f902a180181981de2b1307fd2777d32994
+source-git-commit: 60270a7adb612355ff6d6928adcff8e94cabe092
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 작성하고 테
 
 >[!NOTE]
 >Cloud Manager가 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만, 사용된 버전은 적어도 `0.7.5.201505241946`이어야 합니다.
+
+
+>[!NOTE]
+>Cloud Manager API를 사용하는 방법에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
+> * [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+>* [API 통합 만들기](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/create-api-integration.md)
+>* [API 권한](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)
+
 
 ## Java 11 {#using-java-11} 사용
 
@@ -124,6 +132,7 @@ CLI를 사용하여 변수를 설정하려면 다음과 같은 명령을 실행�
             </properties>
         </profile>
 ```
+
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
