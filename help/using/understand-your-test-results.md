@@ -1,7 +1,7 @@
 ---
 title: 테스트 결과 이해
 seo-title: 테스트 결과 이해
-description: 'null'
+description: Cloud Manager에서 파이프라인을 실행하는 동안 3개의 계층 게이트에 대한 자세한 내용
 seo-description: Cloud Manager에서 파이프라인, 코드 스캔, 성능 및 보안 테스트를 실행하는 동안 3개의 계층 게이트에 대해 알아보려면 이 페이지를 따르십시오.
 uuid: 93caa01f-0df2-4a6f-81dc-23dfee24dc93
 contentOwner: jsyal
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 39e6af753cdd43da96746c7609a8f502b3ac9e77
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1556'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 7%
 코드 품질 테스트에서 소스 코드가 특정 품질 기준을 충족하는지 확인하기 위해 스캔됩니다. 현재 SonarQube와 OakPAL을 사용하여 컨텐츠 패키지 레벨 검사를 조합하여 구현됩니다. 일반 Java 규칙과 AEM 관련 규칙을 결합하는 100개 이상의 규칙이 있습니다. AEM 관련 규칙 중 일부는 AEM 엔지니어링 우수 사례를 기반으로 만들어지며 [사용자 지정 코드 품질 규칙](/help/using/custom-code-quality-rules.md)이라고 합니다.
 
 >[!NOTE]
->[여기에서 규칙 전체 목록을 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-latest.xlsx).
+>[여기에서 규칙 전체 목록을 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 이 단계의 결과는 *등급*&#x200B;으로 전달됩니다. 아래 표에는 다양한 테스트 기준에 대한 등급이 요약되어 있습니다.
 
