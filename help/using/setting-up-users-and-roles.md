@@ -1,7 +1,7 @@
 ---
 title: 사용자 및 역할 추가
 seo-title: 사용자 및 역할 추가
-description: 'null'
+description: 사용자 및 역할과 Admin Console을 사용하여 프로필을 만드는 방법에 대해 알아봅니다.
 seo-description: Admin Console에서 Cloud Manager 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 할당할 수 있습니다. 자세한 내용은 이 섹션을 참조하십시오.
 uuid: fa204c28-83df-48bb-8360-e158f080dee7
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: requirements
 discoiquuid: 1b421993-22c3-4de0-ba64-c1080d07ad5e
 translation-type: tm+mt
-source-git-commit: a96500b57c980d31d3a70341d8be7b92ae73a1c5
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 4%
+source-wordcount: '630'
+ht-degree: 3%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >이러한 제품 프로필을 만들 때 **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에 의해 정의된 기술 값이어야 합니다(아래 표 참조). 혼란을 방지하려면 아래 **권장 프로필 이름** 열에 있는 값을 사용하는 것이 좋습니다. ** 이렇게 하려면 제품 프로필을 만들 때 **프로필 이름과 동일**&#x200B;의 선택을 취소하고 해당 값을 **표시 이름**&#x200B;으로 지정합니다.
+   >이러한 제품 프로필을 만들 때 **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에 의해 정의된 기술 값이어야 합니다(아래 표 참조). 혼란을 방지하려면 아래 *권장 프로필 이름* 열에 있는 값을 사용하는 것이 좋습니다. **** 이렇게 하려면 제품 프로필을 만들 때 **프로필 이름과 동일**&#x200B;의 선택을 취소하고 해당 값을 **표시 이름**&#x200B;으로 지정합니다.
 
    | **역할** | **표시 이름(필수)** | **권장 프로필 이름** |
    |---|---|---|
