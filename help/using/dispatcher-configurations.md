@@ -1,7 +1,7 @@
 ---
 title: 디스패처 구성 관리
 seo-title: 디스패처 구성 관리
-description: 'null'
+description: Cloud Manager를 사용하여 발송자 구성 파일을 배포하는 방법에 대해 알아봅니다.
 seo-description: 디스패처 구성에 대해 알려면 이 페이지를 따르십시오.
 uuid: 3ecd8ca3-5241-4811-87fd-3284a8012eda
 contentOwner: jsyal
@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '606'
 ht-degree: 2%
 
 ---
