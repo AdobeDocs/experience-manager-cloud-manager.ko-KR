@@ -1,18 +1,18 @@
 ---
 title: 코드 배포
 seo-title: 코드 배포
-description: 'null'
-seo-description: 파이프라인(저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다. 자세한 내용은 이 페이지를 참조하십시오.
+description: Cloud Manager의 배포 프로세스에 대한 개요를 제공합니다.
+seo-description: 파이프라인을 구성한 후 코드를 배포하는 방법(저장소, 환경 및 테스트 환경)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 translation-type: tm+mt
-source-git-commit: c35398110e9d8311bf58f217efdd082cf0cfd90a
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 1%
+source-wordcount: '957'
+ht-degree: 0%
 
 ---
 
@@ -142,10 +142,10 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우 가능한 �
 
 1. 제작자에게 AEM 패키지를 배포합니다.
 1. 부하 균형 조정기에서 dispatcher1을 분리합니다.
-1. publish1에 AEM 패키지를 배포하고 디스패처 패키지를 dispatcher1에 배포하고, 플러시 디스패처 캐시를 배포합니다.
+1. publish1에 AEM 패키지를 배포하고 디스패처 패키지는 동시에 발송자 캐시에서 dispatcher1에 배포합니다.
 1. dispatcher1을 로드 밸런서에 다시 넣습니다.
 1. dispatcher1이 다시 서비스를 받으면 부하 균형 조정기에서 dispatcher2를 분리합니다.
-1. publish2에 AEM 패키지를 배포하고 디스패처 패키지를 dispatcher2에 배포하고, 플러시 디스패처 캐시를 배포합니다.
+1. publish2에 AEM 패키지를 배포하고 디스패처 패키지는 동시에 발송자 캐시에서 dispatcher2에 배포합니다.
 1. dispatcher2를 다시 로드 밸런서에 넣습니다.
 배포가 토폴로지의 모든 게시자 및 디스패처에 도달할 때까지 이 프로세스가 계속됩니다.
 
