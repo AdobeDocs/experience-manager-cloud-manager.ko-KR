@@ -1,18 +1,18 @@
 ---
 title: 2018.7.0 릴리스 노트
 seo-title: 2018.7.0 릴리스 노트
-description: 'null'
-seo-description: Cloud Manager 릴리스 2019.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+description: Cloud Manager 릴리스 2018.7.0에 대한 자세한 내용
+seo-description: Cloud Manager 릴리스 2018.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 12%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 다음 섹션에서는 *자동 처리* 기능을 제공하는 [!UICONTROL Cloud Manager] 2018.7.0 릴리스에 대해 간략하게 설명합니다.
 
-**자동** 크기 조절은 프로덕션 환경에서  `Dispatcher/Publish` 세그먼트별로 수평 크기 축소를 통해 활성화되므로 로드, 볼륨, 액세스 및 기타 정의된 모니터된 지표의 갑작스러운 증가를 지원합니다.
+**로드, 볼륨, 액세스 및 기타 정의된 모니터링 지표가 급격히 증가하는 경우를 지원하기 위해서 프로덕션 환경의 세그먼트를 수평 확장하여 자동 크기 조절을 활성화합니다.**`Dispatcher/Publish`
 
 ## 릴리스 날짜 {#release-date}
 
