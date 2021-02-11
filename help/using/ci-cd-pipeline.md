@@ -1,15 +1,15 @@
 ---
 title: CI/CD 파이프라인
 seo-title: CI/CD 파이프라인
-description: 'null'
-seo-description: Cloud Manager의 스테이지 및 프로덕션에 대한 배포를 처리하는 CI/CD 파이프라인에 대해 알아보려면 이 섹션을 따르십시오.
+description: Cloud Manager의 스테이지 및 프로덕션에 대한 배포를 처리하는 CI/CD 파이프라인 개요
+seo-description: Cloud Manager의 스테이지 및 프로덕션에 대한 배포를 처리하는 CI/CD 파이프라인에 대해 알아보려면 이 섹션을 따르십시오
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
 translation-type: tm+mt
-source-git-commit: 8580cec50ac5dafb4e2525371a39d58c82f1cbc9
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
