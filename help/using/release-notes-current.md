@@ -4,14 +4,14 @@ seo-title: 2021.2.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2021.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2021.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: 88b17f05a577b5c46b5b352d7340228353b49a38
+source-git-commit: 67cdd39cb511763a42391c7896924a1433e4e58f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '231'
 ht-degree: 5%
 
 ---
 
-# 2020.12.0 릴리스 노트 {#release-notes-for}
+# 2021.2.0 릴리스 노트 {#release-notes-for}
 
 다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2021.2.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
@@ -27,9 +27,9 @@ ht-degree: 5%
 
 * 이제 프로덕션 배포가 쌍을 이룬 게시 및 디스패처 인스턴스와 동시에 배포됩니다.
 
-* Cloud Manager용 SonarQube 프로필이 Sonar 규칙 squid:S2142를 제거하도록 업데이트되었습니다. 더 이상 스레드 중단 검사와 충돌하지 않습니다.
+* Cloud Manager용 SonarQube 프로필이 Sonar 규칙 `squid:S2142`을(를) 제거하도록 업데이트되었습니다. 더 이상 스레드 중단 검사와 충돌하지 않습니다.
 
-* 음파 탐지 접두사가 있는 customer pom.xml 파일에 설정된 속성이 이제 빌드 및 품질 스캔 오류를 방지하기 위해 동적으로 제거됩니다.
+* Sonar로 접두사가 추가된 고객 `pom.xml` 파일에 설정된 속성은 이제 빌드 및 품질 스캔 오류를 방지하기 위해 동적으로 제거됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
