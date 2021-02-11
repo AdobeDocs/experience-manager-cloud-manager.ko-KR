@@ -1,7 +1,7 @@
 ---
 title: 환경 관리
 seo-title: 환경 관리
-description: 'null'
+description: Cloud Manager 환경에 대한 자세한 내용
 seo-description: Cloud Manager에서 CI/CD 파이프라인을 설정하고 실행하는 데 사용되는 프로덕션 및 비프로덕션 환경 목록을 보려면 이 페이지를 따르십시오.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
 translation-type: tm+mt
-source-git-commit: c81243708d938a8bffdec8a35f32a2cf552c1c95
+source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 4%
+source-wordcount: '269'
+ht-degree: 3%
 
 ---
 
