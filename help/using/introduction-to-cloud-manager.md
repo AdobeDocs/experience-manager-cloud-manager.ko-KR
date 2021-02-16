@@ -9,15 +9,22 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 translation-type: tm+mt
-source-git-commit: 213d1b2ee52496cc8cf6bc699488d9da9f7b9946
+source-git-commit: 6ff4b6e950e153c98b6981ec09dfa0648809c693
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 88%
+source-wordcount: '749'
+ht-degree: 85%
 
 ---
 
 
 # [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} 소개
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cloudmanager_introduction"
+>title="Cloud Manager 소개"
+>abstract="조직에서 클라우드에서 Experience Manager을 자체 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=en#cloud-manager" text="프로그램 만들기"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=en#cloud-manager" text="환경 만들기"
 
 ## 소개 {#introduction}
 
