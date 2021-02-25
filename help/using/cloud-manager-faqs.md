@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: 문제 해결 팁을 얻으려면 Cloud Manager FAQ를 참조하십시오.
 seo-description: Cloud Manager FAQ에 대한 답변을 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
+source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 * *성능 단계*&#x200B;는 웹 성능 단계입니다. 즉, 웹 브라우저를 사용하여 페이지를 로드할 시간입니다.
 * 테스트 중에 결과 *CSV* 파일에 나열된 URL이 클라우드 관리자 인프라의 Chrome 브라우저에 로드됩니다.
 * 실패하는 일반적인 지표는 *오류 비율*&#x200B;입니다. URL이 전달되려면 기본 URL을 `200` 상태와 `20` 초 이내로 로드해야 합니다. `20`초를 초과하는 페이지 로드는 `504` 오류로 표시됩니다.
-* 사이트에 사용자 인증이 필요한 경우 사이트 인증을 위한 테스트를 구성하려면 [인증된 성능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)를 참조하십시오.
+* 사이트에 사용자 인증이 필요한 경우 사이트에 인증하도록 테스트를 구성하려면 [인증된 성능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)를 참조하십시오.
 
 ## Maven 프로젝트 버전에서 SNAPSHOT을 사용할 수 있습니까? 패키지 및 번들 jar 파일의 버전 관리가 단계 및 프로덕션에서 어떻게 작동합니까?{#snapshot-version}
 
