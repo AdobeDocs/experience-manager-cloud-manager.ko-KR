@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: 문제 해결 팁을 얻으려면 Cloud Manager FAQ를 참조하십시오.
 seo-description: Cloud Manager FAQ에 대한 답변을 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: d901fd27626640e71d367d3f138d7ba2e907fa9a
+source-git-commit: 31627bf11a46b2e6f1d0aa196bc4a9cf9648e775
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-다음 섹션에서는 Cloud Manager와 관련하여 자주 묻는 일부 FAQ에 대한 답변을 제공합니다.
+다음 섹션에서는 Cloud Manager와 관련된 질문과 답변을 제공합니다.
 
 ## Cloud Manager 빌드에 Java 11을 사용할 수 있습니까?{#java-11-cloud-manager}
 
@@ -22,7 +22,7 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 
 * 문서화된 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started)에 Java 11에 대한 올바른 설정으로 maven-toolchain-plugin을 추가합니다.  예를 들어 [샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
 
-* 아래 오류가 발생하면 maven-scr-plugin의 사용을 제거하고 모든 OSGi 주석을 OSGi R6 주석으로 변환해야 합니다. 자세한 내용은 [여기](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)를 참조하십시오.
+* 아래 오류가 발생하면 `maven-scr-plugin` 사용을 제거하고 모든 OSGi 주석을 OSGi R6 주석으로 변환해야 합니다. 자세한 내용은 [여기](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)를 참조하십시오.
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
@@ -47,11 +47,11 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 
 ## Maven 프로젝트 버전에서 SNAPSHOT을 사용할 수 있습니까? 패키지 및 번들 jar 파일의 버전 관리가 단계 및 프로덕션에서 어떻게 작동합니까?{#snapshot-version}
 
-1. 개발 배포의 경우 Git 분기 `pom.xml` 파일은 `<version>` 값 끝에 -SNAPSHOT을 포함해야 합니다. 따라서 버전이 변경되지 않고 계속 설치되도록 후속 배포가 가능합니다. 개발 배포에서는 mVen 빌드에 대해 자동 버전이 추가되거나 생성되지 않습니다.
+1. 개발 배포의 경우 Git 분기 `pom.xml` 파일은 `<version>` 값의 끝에 `-SNAPSHOT`을(를) 포함해야 합니다. 따라서 버전이 변경되지 않고 계속 설치되도록 후속 배포가 가능합니다. 개발 배포에서는 마스터 빌드에 대해 자동 버전이 추가 또는 생성되지 않습니다.
 
 1. 스테이지 및 프로덕션 배포에서는 자동 버전이 문서화된 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code)로 생성됩니다.
 
-1. 스테이지와 프로덕션에서 사용자 정의 버전 관리를 수행하려면 `1.0.0`과 같은 3부 적합한 전문가 버전을 설정하십시오. 다른 제작 배포 작업을 수행할 때마다 버전을 늘립니다.
+1. 스테이지와 프로덕션에서 사용자 정의 버전 관리를 수행하려면 `1.0.0`과 같은 3부 적합한 마스터 버전을 설정하십시오. 다른 제작 배포 작업을 수행할 때마다 버전을 늘립니다.
 
 1. Cloud Manager는 해당 버전을 스테이지 및 프로덕션 빌드에 자동으로 추가하고 Git 분기까지 만듭니다. 특별한 구성이 필요하지 않습니다. 위의 3단계를 건너뛸 경우 배포는 여전히 정상적으로 작동하며 버전은 자동으로 설정됩니다.
 
