@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: 문제 해결 팁을 얻으려면 Cloud Manager FAQ를 참조하십시오.
 seo-description: Cloud Manager FAQ에 대한 답변을 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: cb63a8bbe30b28668313dc851f17aa34fc166474
+source-git-commit: 1d4f07ba0aa4630585ccbb35f2d48f0c7e1f3df2
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Cloud Manager FAQ {#cloud-manager-faqs}
 
-다음 섹션에서는 Cloud Manager와 관련하여 자주 묻는 FAQ 중 일부에 대한 답변을 제공합니다.
+다음 섹션에서는 Cloud Manager와 관련하여 자주 묻는 일부 FAQ에 대한 답변을 제공합니다.
 
 ## 1. Cloud Manager 빌드에 Java 11을 사용할 수 있습니까?{#java-11-cloud-manager}
 
-Java 8에서 Java 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합니다. 이 문제는 많은 원인을 가질 수 있으며 가장 일반적인 원인은 아래에 설명되어 있습니다.
+Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합니다. 이 문제는 많은 원인을 가질 수 있으며 가장 일반적인 원인은 아래에 설명되어 있습니다.
 
 * 문서화된 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=en#getting-started)에 Java 11에 대한 올바른 설정으로 maven-toolchain-plugin을 추가합니다.  예를 들어 [샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
 
@@ -43,7 +43,7 @@ Java 8에서 Java 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실�
 * *성능 단계*&#x200B;는 웹 성능 단계입니다. 즉, 웹 브라우저를 사용하여 페이지를 로드할 때입니다.
 * 결과 CSV 파일에 나열된 URL은 테스트 중에 클라우드 관리자 인프라의 Chrome 브라우저에 로드됩니다.
 * 실패하는 일반적인 지표는 *오류 비율*&#x200B;입니다. URL이 전달되려면 기본 URL이 200초 이내에 20초 이내에 로드되어야 합니다. 20초를 초과하는 페이지 로드는 504 오류로 표시됩니다.
-* 사이트에 사용자 인증이 필요한 경우 이 설명서를 참조하여 테스트를 구성하여 사이트에 인증할 수 있습니다.
+* 사이트에 사용자 인증이 필요한 경우 사이트 인증을 위한 테스트를 구성하려면 [인증된 성능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)를 참조하십시오.
 
 ## 4. 마스터 프로젝트 버전에서 스냅샷을 사용할 수 있습니까? 패키지 및 번들 jar 파일의 버전 관리가 단계 및 프로덕션에서 어떻게 작동합니까?{#snapshot-version}
 
@@ -75,7 +75,7 @@ Java 8에서 Java 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실�
 
 ## 6. aio cloud manager 세트 파이프라인 변수를 통해 변수를 설정할 수 없습니다. 이러한 문제를 디버깅하는 방법?{#set-variable}
 
-아래 명령과 유사한 명령을 통해 파이프라인 변수를 나열하거나 설정할 때 403 오류가 발생하는 경우 관리 콘솔에서 *배포 관리자* 클라우드 관리자 제품 역할로 추가해야 합니다.\
+아래 명령과 유사한 명령을 통해 파이프라인 변수를 나열하거나 설정할 때 403 오류가 발생하는 경우 Admin Console에서 *배포 관리자* 클라우드 관리자 제품 역할로 추가해야 합니다.\
 자세한 내용은 [API 권한](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md)을 참조하십시오.
 
 관련 명령 및 오류:
