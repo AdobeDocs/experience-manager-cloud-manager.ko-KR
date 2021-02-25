@@ -6,10 +6,10 @@ user-guide-title: Experience Manager 클라우드 관리자 안내서
 breadcrumb-title: Cloud Manager 안내서
 user-guide-description: Adobe Managed Services를 사용하여 클라우드에서 Experience Manager을 자체 관리하는 방법을 알아보십시오.
 translation-type: tm+mt
-source-git-commit: 88b17f05a577b5c46b5b352d7340228353b49a38
+source-git-commit: 12898b57c3e7039da271481a6619d4ad0a0a90d1
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 83%
+source-wordcount: '258'
+ht-degree: 82%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 83%
    + [CI/CD 파이프라인](ci-cd-pipeline.md)
    + [보안 및 개인 정보](security-and-privacy.md)
    + [도움말 리소스](help-resources.md)
+   + [Cloud Manager FAQ](cloud-manager-faqs.md)
 + 필수 사항 {#requirements}
    + [부여된 액세스 권한](access-rights-granted.md)
    + [소스 코드 저장소](source-code-repository.md)
