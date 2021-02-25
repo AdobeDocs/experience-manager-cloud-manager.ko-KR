@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: 문제 해결 팁을 얻으려면 Cloud Manager FAQ를 참조하십시오.
 seo-description: Cloud Manager FAQ에 대한 답변을 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
+source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 
 1. Cloud Manager는 해당 버전을 스테이지 및 프로덕션 빌드에 자동으로 추가하고 Git 분기까지 만듭니다. 특별한 구성이 필요하지 않습니다. 위의 3단계를 건너뛸 경우 배포는 여전히 정상적으로 작동하며 버전은 자동으로 설정됩니다.
 
-1. 스테이지와 프로덕션 빌드 또는 배포를 위해 버전을 `-SNAPSHOT`으로 남겨 두는 경우에도 정상입니다. Cloud Manager는 적합한 버전 번호를 자동으로 설정하고 Git에서 자동으로 태그를 만듭니다. 필요한 경우 이 태그를 나중에 참조할 수 있습니다.
+1. 스테이지 및 프로덕션 빌드 또는 배포에 대해 `-SNAPSHOT`으로 버전을 유지하는 경우에는 문제가 없습니다. Cloud Manager는 적합한 버전 번호를 자동으로 설정하고 Git에서 자동으로 태그를 만듭니다. 필요한 경우 이 태그를 나중에 참조할 수 있습니다.
 
 1. 개발 환경에서 몇 가지 실험적인 코드를 시도하려는 경우 새 Git 분기를 만들고 이 다른 분기를 사용하도록 파이프라인을 설정할 수 있습니다. 이 기능은 배포가 실패할 때 이전 버전의 코드를 테스트하여 언제 중단했는지 확인할 때 유용합니다.
 
