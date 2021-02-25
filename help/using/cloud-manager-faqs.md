@@ -4,7 +4,7 @@ seo-title: Cloud Manager FAQ
 description: 문제 해결 팁을 얻으려면 Cloud Manager FAQ를 참조하십시오.
 seo-description: Cloud Manager FAQ에 대한 답변을 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: fbf91ad0d200a9f1cbde4e87cf6b78a8479d0614
+source-git-commit: 0db6a6a4e430cd2619db1739fd322224e4e129e7
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 0%
@@ -47,11 +47,11 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 
 ## Maven 프로젝트 버전에서 SNAPSHOT을 사용할 수 있습니까? 패키지 및 번들 jar 파일의 버전 관리가 단계 및 프로덕션에서 어떻게 작동합니까?{#snapshot-version}
 
-1. 개발 배포의 경우 Git 분기 `pom.xml` 파일은 `<version>` 값의 끝에 `-SNAPSHOT`을(를) 포함해야 합니다. 따라서 버전이 변경되지 않고 계속 설치되도록 후속 배포가 가능합니다. 개발 배포에서는 마스터 빌드에 대해 자동 버전이 추가 또는 생성되지 않습니다.
+1. 개발자 배포의 경우 Git 분기 `pom.xml` 파일은 `<version>` 값의 끝에 `-SNAPSHOT`을(를) 포함해야 합니다. 따라서 버전이 변경되지 않고 계속 설치되도록 후속 배포가 가능합니다. 개발자 배포에서는 maven 빌드에 대해 자동 버전이 추가되거나 생성되지 않습니다.
 
 1. 스테이지 및 프로덕션 배포에서는 자동 버전이 문서화된 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=en#managing-code)로 생성됩니다.
 
-1. 스테이지와 프로덕션에서 사용자 정의 버전 관리를 수행하려면 `1.0.0`과 같은 3부 적합한 마스터 버전을 설정하십시오. 다른 제작 배포 작업을 수행할 때마다 버전을 늘립니다.
+1. 스테이지 및 프로덕션 배포에서 사용자 정의 버전 매기기를 사용하려면 `1.0.0`과 같은 3개 부분 적합한 마스터 버전을 설정하십시오. 다른 제작 배포 작업을 수행할 때마다 버전을 늘립니다.
 
 1. Cloud Manager는 해당 버전을 스테이지 및 프로덕션 빌드에 자동으로 추가하고 Git 분기까지 만듭니다. 특별한 구성이 필요하지 않습니다. 위의 3단계를 건너뛸 경우 배포는 여전히 정상적으로 작동하며 버전은 자동으로 설정됩니다.
 
@@ -82,8 +82,8 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 
 `$ aio cloudmanager:list-pipeline-variables 222`
 
-오류: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*오류*:  `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
 
 `$ aio cloudmanager:set-pipeline-variables 222 --variable TEST 1`
 
-오류: `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
+*오류*:  `Cannot get variables: https://cloudmanager.adobe.io/api/program/111/pipeline/222/variables (403 Forbidden)`
