@@ -4,9 +4,9 @@ seo-title: Cloud Manager FAQ
 description: 문제 해결 팁을 얻으려면 Cloud Manager FAQ를 참조하십시오.
 seo-description: Cloud Manager FAQ에 대한 답변을 얻으려면 이 페이지를 따르십시오
 translation-type: tm+mt
-source-git-commit: da3346852df4e421a69321830d7efee81d58e20c
+source-git-commit: cf5c02c8c594015b6baa00e1a8aaa2d898aa60a9
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,9 @@ Java 8에서 11로 빌드를 전환할 때 AEM Cloud Manager 빌드가 실패합
 * 실패하는 일반적인 지표는 *오류 비율*&#x200B;입니다. URL이 전달되려면 기본 URL을 `200` 상태와 `20` 초 이내로 로드해야 합니다. `20`초를 초과하는 페이지 로드는 `504` 오류로 표시됩니다.
 * 사이트에 사용자 인증이 필요한 경우 사이트에 인증하도록 테스트를 구성하려면 [인증된 성능 테스트](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)를 참조하십시오.
 
-## Maven 프로젝트 버전에서 SNAPSHOT을 사용할 수 있습니까? 패키지 및 번들 jar 파일의 버전 관리가 단계 및 프로덕션에서 어떻게 작동합니까?{#snapshot-version}
+## Maven 프로젝트 버전에서 SNAPSHOT을 사용할 수 있습니까? 스테이지 및 프로덕션 배포에서 패키지 및 번들 jar 파일의 버전 관리가 어떻게 작동합니까?{#snapshot-version}
+
+스테이지 및 프로덕션 배포에 대한 패키지 및 번들 jar 파일의 버전 관리에 대해 알아보려면 다음 시나리오를 참조하십시오.
 
 1. 개발자 배포의 경우 Git 분기 `pom.xml` 파일은 `<version>` 값의 끝에 `-SNAPSHOT`을(를) 포함해야 합니다. 따라서 버전이 변경되지 않고 계속 설치되도록 후속 배포가 가능합니다. 개발자 배포에서는 maven 빌드에 대해 자동 버전이 추가되거나 생성되지 않습니다.
 
