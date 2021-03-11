@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: 7cfa7826f851cb55be72211f8e8a980451846f3b
+source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 1%
+source-wordcount: '3622'
+ht-degree: 0%
 
 ---
 
@@ -225,7 +225,7 @@ public class DontDoThis implements Page {
 
 ResourceResolverFactory에서 얻은 ResourceResolver 개체는 시스템 리소스를 사용합니다. ResourceResolver를 더 이상 사용하지 않을 때 이러한 리소스를 다시 회수하기 위한 조치가 있지만 close() 메서드를 호출하여 열려 있는 모든 ResourceResolver 객체를 명시적으로 닫는 것이 더 효율적입니다.
 
-한 가지 비교적 일반적인 오해는 기존 JCR 세션을 사용하여 만든 ResourceResolver 객체를 명시적으로 닫지 말아야 하거나 닫으면 기본 JCR 세션이 닫힐 수 있다는 것입니다. ResourceResolver를 연 방법에 관계없이 더 이상 사용하지 않을 때 닫아야 합니다. ResourceResolver는 Closeable 인터페이스를 구현하므로 명시적으로 close()를 호출하지 않고 Try-with-resources 구문을 사용할 수도 있습니다.
+한 가지 비교적 일반적인 오해는 기존 JCR 세션을 사용하여 만든 ResourceResolver 객체를 명시적으로 닫지 말아야 하거나 닫으면 기본 JCR 세션이 닫힐 수 있다는 것입니다. ResourceResolver를 연 방법에 관계없이 더 이상 사용하지 않을 때 닫아야 합니다. ResourceResolver는 Closeable 인터페이스를 구현하므로 명시적으로 close()를 호출하지 않고 try-with-resources 구문을 사용할 수도 있습니다.
 
 #### 호환되지 않는 코드 {#non-compliant-code-4}
 
@@ -921,6 +921,43 @@ AEM Cloud Service에서는 사용자 정의 검색 색인 정의(즉, `oak:Query
 
 AEM Cloud Service에서는 사용자 정의 검색 색인 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 reindex라는 속성을 포함하지 못하도록 합니다. AEM Cloud Service으로 마이그레이션하기 전에 이 속성을 사용한 인덱싱을 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 인덱싱](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=en#how-to-use)을 참조하십시오.
 
+## 발송자 최적화 도구 {#dispatcher-optimization-tool-rules}
 
+다음 섹션에서는 클라우드 관리자가 실행하는 DOT 검사를 강조 표시합니다.
 
+* [DOT - 구문 분석 위반 - 발송자 구성 예기치 않은 토큰](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unexpected-tokens)
+
+* [DOT - 구문 분석 위반 - 발송자 구성이 일치하지 않는 견적](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-unmatched-quote)
+
+* [DOT - 구문 분석 위반 - 디스패처 구성이 중괄호가 없습니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-brace)
+
+* [DOT - 구문 분석 위반 - 디스패처 구성 추가 중괄호](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-extra-brace)
+
+* [DOT - 구문 분석 위반 - 발송자 구성에 필수 속성이 없습니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-missing-mandatory-property)
+
+* [DOT - 구문 분석 위반 - 발송자 구성 사용 중단된 속성](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-deprecated-property)
+
+* [DOT - 구문 분석 위반 - 발송자 구성을 찾을 수 없음](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-not-found)
+
+* [DOT - 구문 분석 위반 - HTTPD 구성 포함 파일을 찾을 수 없음](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---httpd-configuration-include-file-not-found)
+
+* [DOT - 구문 분석 위반 - 발송자 구성 일반](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---parsing-violation---dispatcher-configuration-general)
+
+* [DOT - Dispatcher 게시 팜 캐시에는 serverStaleOnError가 활성화되어 있어야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-servestaleonerror-enabled)
+
+* [DOT - Dispatcher 게시 팜 필터는 AEM 원형의 6.x.x 버전의 기본 거부 규칙을 포함해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-contain-the-default-deny-rules-from-the-6xx-version-of-the-aem-archetype)
+
+* [DOT - Dispatcher 게시 팜 캐시 상태 파일레벨 속성은 2보다 커야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-statfileslevel-property-should-be--2)
+
+* [DOT - 디스패처 게시 팜 gracePeriod 속성은 2보다 커야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-graceperiod-property-should-be--2)
+
+* [DOT - 각 디스패처 팜의 이름은 고유해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
+
+* [DOT - 디스패처 게시 팜 캐시에는 허용 목록 방식으로 구성된 ignoreUrlParams 규칙이 있어야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+
+* [DOT - Dispatcher 게시 팜 필터는 허용 목록 방식으로 허용되는 Sling 선택기를 지정해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+
+* [DOT - Dispatcher 게시 팜 필터는 허용 목록 방식으로 허용되는 Sling 접미어 패턴을 지정해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+
+* [DOT - 루트 디렉토리 경로가 있는 VirtualHost Directory 섹션에서 &#39;Require all granted&#39; 지시문을 사용할 수 없습니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
 
