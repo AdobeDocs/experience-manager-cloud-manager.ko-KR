@@ -4,7 +4,7 @@ seo-title: 2021.3.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: b0c29ed6712abd556458aea6d49f6382f183cdae
+source-git-commit: e12adf3549af6ecd5e7487ef27f25abc44eaa794
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 4%
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 * 이제 필요한 권한이 있는 사용자는 셀프 서비스 방식으로 프로그램을 편집할 수 있습니다.
 
-   *자산(또는 그 반대로)이 있는 기존 프로그램에 사이트 솔루션을 추가합니다.
+   * 자산(또는 그 반대로)이 있는 기존 프로그램에 사이트 솔루션을 추가합니다.
    * 사이트 및 자산을 모두 포함하는 기존 프로그램에서 사이트(또는 자산)를 제거합니다.
    * 솔루션을 추가(뒤)하면 기존 프로그램이나 새 프로그램으로 할 수 있습니다.
 
