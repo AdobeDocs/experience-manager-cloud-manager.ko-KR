@@ -4,10 +4,10 @@ seo-title: 2021.3.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 translation-type: tm+mt
-source-git-commit: fde8cbd22ff36e0d30409f68e8a0523c814ccf90
+source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 3%
+source-wordcount: '257'
+ht-degree: 4%
 
 ---
 
@@ -21,12 +21,6 @@ ht-degree: 3%
 다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
 
 ## 새로운 기능 {#whats-new}
-
-* 이제 필요한 권한이 있는 사용자가 프로그램을 편집하여 셀프 서비스 방식으로 다음을 수행할 수 있습니다.
-
-   * 자산(또는 그 반대로)이 있는 기존 프로그램에 사이트 솔루션을 추가합니다.
-   * 사이트 및 자산을 모두 포함하는 기존 프로그램에서 사이트(또는 자산)를 제거합니다.
-   * 솔루션을 추가(뒤)하면 기존 프로그램이나 새 프로그램으로 할 수 있습니다.
 
 * 고객 디스패처 구성의 유효성을 확인하기 위해 새 코드 품질 도구 [디스패처 최적화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules)가 도입되었습니다.
 
