@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 translation-type: tm+mt
-source-git-commit: b5233e1932888b515d8dc26a6493cbd26686bc3c
+source-git-commit: c15421daf81561a2407776d69741006bee3c3d6c
 workflow-type: tm+mt
 source-wordcount: '3622'
 ht-degree: 0%
@@ -783,7 +783,7 @@ AEM 클라이언트 라이브러리에는 이미지 및 글꼴과 같은 정적 
 
 **유형**:코드 냄새
 
-**심각도**:마이너
+**심각도**:차단기
 
 **이후**:버전 2021.2.0
 
