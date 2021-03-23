@@ -1,10 +1,11 @@
 ---
 title: 프로젝트 설정
 description: 프로젝트 설정 방법을 알려면 이 페이지를 따르십시오
+feature: 시작하기, 프로덕션
 translation-type: tm+mt
-source-git-commit: 2ada697ca21acd0c73dbce2bce3e9481ac50272c
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
@@ -228,7 +229,7 @@ Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면
 ## 내용 패키지 {#skipping-content-packages} 건너뛰기
 
 Cloud Manager에서 빌드는 콘텐츠 패키지를 수에 관계없이 생성할 수 있습니다.
-다양한 이유로 컨텐츠 패키지를 배포하지 않고 제품화하는 것이 좋을 수 있습니다. 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계로 다시 패키지화되는 컨텐츠 패키지를 작성할 때, 즉 다른 패키지의 하위 패키지로 사용할 수 있습니다.
+다양한 이유로 컨텐츠 패키지를 배포하지 않고 제품화하는 것이 좋을 수 있습니다. 이 기능은 예를 들어 테스트용으로만 사용되거나 빌드 프로세스의 다른 단계에 의해 다시 패키징되는 컨텐츠 패키지(즉, 다른 패키지의 하위 패키지로)를 작성할 때 유용합니다.
 
 이러한 시나리오를 수용하기 위해 Cloud Manager는 빌드된 콘텐츠 패키지의 속성에서 ***cloudManagerTarget***&#x200B;이라는 속성을 찾습니다. 이 속성을 none으로 설정하면 패키지를 건너뛰고 배포하지 않습니다. 이 속성을 설정하는 메커니즘은 빌드가 콘텐츠 패키지를 생성하는 방법에 따라 달라집니다. 예를 들어 filevault-maven-plugin을 사용하면 다음과 같이 플러그인을 구성할 수 있습니다.
 
@@ -264,4 +265,4 @@ content-package-maven-plugin은 다음과 유사합니다.
 
 ## 우수 사례 {#develop-your-code-based-on-best-practices}에 따라 코드 개발
 
-Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 포괄적인 모범 사례 세트를 개발했습니다](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/best-practices.html).[
+Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 포괄적인 모범 사례 세트를 개발했습니다](https://helpx.adobe.com/kr/experience-manager/6-4/sites/developing/using/best-practices.html).[
