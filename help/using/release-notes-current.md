@@ -1,15 +1,15 @@
 ---
 title: 2021.3.0 릴리스 노트
-seo-title: 2021.3.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-seo-description: AEM Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 8c057ca2d3dfe8c8575300084b7bc83c95556d67
+source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 4%
+source-wordcount: '242'
+ht-degree: 5%
 
 ---
+
 
 # 2021.3.0 릴리스 노트 {#release-notes-for}
 
