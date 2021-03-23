@@ -8,10 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: c2393540-e852-4f7c-aafd-1427209065d2
+feature: 시작하기
 translation-type: tm+mt
-source-git-commit: 6851884b08c0c0a971242a958f72a7673a1a1196
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '689'
 ht-degree: 2%
 
 ---
@@ -66,7 +67,7 @@ ht-degree: 2%
 
    **AEM Assets**
 
-   Cloud Manager는 처음 릴리스부터 AEM Sites 프로그램에 대한 성능 테스트를 실행할 수 있었습니다. 이번 릴리스에서는 AEM Assets 프로그램에 대한 성능 테스트를 실행하는 기능도 추가되었습니다. 자산 성능 테스트는 30분 테스트 기간 동안 반복적으로 자산을 업로드하고 다양한 시스템 수준 지표와 각 자산에 대한 처리 시간을 측정하여 수행됩니다.
+   Cloud Manager는 처음 릴리스부터 AEM Sites 프로그램에 대한 성능 테스트를 실행할 수 있었습니다. 이번 릴리스에서는 AEM Assets 프로그램에 대한 성능 테스트를 실행하는 기능도 추가되었습니다. 자산 성능 테스트는 30분 테스트 기간 동안 반복적으로 자산을 업로드하고 각 자산에 대한 처리 시간과 다양한 시스템 수준 지표를 측정하여 수행됩니다.
 프로그램 설정 중에 자산별 KPI가 지정됩니다.
 
    * 95번째 백분위수 처리 시간
