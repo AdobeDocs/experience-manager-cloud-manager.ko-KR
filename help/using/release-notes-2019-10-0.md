@@ -3,11 +3,12 @@ title: 2019.10.0 릴리스 노트
 seo-title: 2019.10.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.10.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.10.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 52c54568d8ab7b5091c25b3b65b4baa126bf61f5
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 4%
+source-wordcount: '248'
+ht-degree: 5%
 
 ---
 
