@@ -5,11 +5,12 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
+feature: 사용자 역할
 translation-type: tm+mt
-source-git-commit: 9cbe8f58cf04001ba9851ba321f03c7687e58014
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 14%
+source-wordcount: '519'
+ht-degree: 17%
 
 ---
 
@@ -37,7 +38,7 @@ ht-degree: 14%
 
 ## 사용자 권한 {#user-permissions}
 
-각 역할에는 각 역할과 연관된 특정 권한, 사전 구성된 작업 또는 권한이 있습니다. 이 테이블에는 사용할 수 있는 함수 및 함수를 실행할 수 있는 역할이 나열됩니다.
+각 역할에는 특정 권한, 사전 구성된 작업 또는 각 역할에 연관된 권한이 있습니다. 이 테이블에는 사용할 수 있는 함수 및 함수를 실행할 수 있는 역할이 나열됩니다.
 
 사용자를 설정하는 방법에 대한 자세한 내용은 [사용자 및 역할 설정](setting-up-users-and-roles.md)을 참조하십시오.
 
