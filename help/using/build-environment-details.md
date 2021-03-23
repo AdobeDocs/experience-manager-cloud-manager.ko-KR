@@ -1,10 +1,11 @@
 ---
 title: 빌드 환경 이해
 description: 환경에 대해 알려면 이 페이지를 따르십시오.
+feature: 환경
 translation-type: tm+mt
-source-git-commit: 5a6148fd7750544def87147c5f012c09077b2b60
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
