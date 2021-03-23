@@ -3,11 +3,12 @@ title: 2019.4.0 릴리스 노트
 seo-title: 2019.4.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2019.4.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2019.4.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: b368c46c2a9f40d0c3867db6eb2a333bd71fe22a
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 6%
+source-wordcount: '222'
+ht-degree: 7%
 
 ---
 
