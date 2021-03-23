@@ -6,10 +6,11 @@ seo-description: Cloud Manager의 스테이지 및 프로덕션에 대한 배포
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
+feature: CI-CD 파이프라인
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -41,7 +42,7 @@ ht-degree: 1%
 | 6. AMS AEM Stage에 대한 가공물의 자동 배포 | 릴리즈 객체는 스테이지 환경에 배포됩니다. |
 | 7. 자동 테스트 트리거 | [!UICONTROL Cloud Manager] 가공물에 대해 성능 및 보안 테스트를 실행합니다. |
 | 8. 프로덕션 트리거 배포 | 자동화된 테스트가 완료되면 [!UICONTROL Cloud Manager]이(가) 프로덕션에 대한 배포를 시작합니다. |
-| 9.[!UICONTROL Cloud Manager]은(는) 배포할 객체를 가져옵니다. | [!UICONTROL Cloud Manager] 저장된 릴리스 아티팩트를 가져옵니다. |
+| 9.[!UICONTROL Cloud Manager]은(는) 배포할 아티팩트를 가져옵니다. | [!UICONTROL Cloud Manager] 저장된 릴리스 아티팩트를 가져옵니다. |
 | 10. 제작에 대한 가공물 배포 | 릴리즈 객체는 프로덕션 환경에 배포됩니다. |
 
 ### CI/CD 파이프라인을 설정하는 방법 {#how-to-setup-a-ci-cd-pipeline}
