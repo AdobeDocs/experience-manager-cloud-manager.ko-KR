@@ -3,10 +3,11 @@ title: Adobe Cloud Manager와 Git 통합
 description: Adobe Cloud Manager와 고객 관리(온-프레미스) git 리포지토리의 설정 및 통합을 단계별로 살펴보는 비디오 시리즈입니다.
 seo-title: Adobe Cloud Manager와 Git 통합
 seo-description: Adobe Cloud Manager와 고객 관리(온-프레미스) git 리포지토리의 설정 및 통합을 단계별로 살펴보는 비디오 시리즈입니다.
+feature: Git 리포지토리
 translation-type: tm+mt
-source-git-commit: 519f43ff16e0474951f97798a8e070141e5c124b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '405'
 ht-degree: 5%
 
 ---
