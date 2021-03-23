@@ -3,10 +3,11 @@ title: Git 액세스
 seo-title: Git 액세스
 description: 이 페이지에서는 Git 리포지토리에 액세스하여 관리하는 방법에 대해 설명합니다.
 seo-description: Git 리포지토리에 액세스하고 관리하는 방법을 알아보려면 이 페이지를 따르십시오.
+feature: Git 리포지토리
 translation-type: tm+mt
-source-git-commit: 3bb435aae932b9446867c30b7dd6b0a8e0839ee2
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '154'
 ht-degree: 3%
 
 ---
