@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 translation-type: tm+mt
-source-git-commit: 7061910ae2cb0aae10876faf448838570f02d9be
+source-git-commit: f62c967feec3960499de93443548422167fedfa7
 workflow-type: tm+mt
-source-wordcount: '2593'
+source-wordcount: '2681'
 ht-degree: 4%
 
 ---
@@ -112,28 +112,30 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 [!UICONTROL Cloud Manager] 배포 후 기존  ***AEM 보안 상태*** 검사 단계를 실행하고 UI를 통해 상태를 보고합니다. 결과는 환경의 모든 AEM 인스턴스에서 집계됩니다.
 
+이와 동일한 상태 검사는 웹 콘솔 또는 작업 대시보드를 통해 언제든지 실행할 수 있습니다.
+
 **인스턴스** 중 특정 상태 확인에 대한 오류가 보고되는 경우 전체 **환경**&#x200B;에서 해당 상태 확인에 실패합니다. 코드 품질 및 성능 테스트와 마찬가지로 이러한 상태 검사는 카테고리로 분류되어 3계층 게이팅 시스템을 사용하여 보고됩니다. 유일한 차이점은 보안 테스트의 경우 임계값이 없다는 점입니다. 모든 상태 확인은 그냥 통과되거나 실패한다.
 
 다음 표에는 현재 검사가 나열됩니다.
 
 | **이름** | **상태 확인 구현** | **카테고리** |
 |---|---|---|
-| 비직렬화 방화벽 첨부 API 준비 상태가 허용 상태입니다. | Deserialization Firewall Attach API Readiness | 중요 |
-| 비직렬화 방화벽이 사용 가능합니다. | Deserialization Firewall Functional | 중요 |
-| 비직렬화 방화벽이 로드됨 | Deserialization Firewall Loaded | 중요 |
-| AuthorizableNodeName 구현은 노드 이름/경로에 인증 가능한 ID를 표시하지 않습니다. | 승인 가능한 노드 이름 생성 | 중요 |
-| 기본 암호가 변경되었습니다. | 기본 로그인 계정 | 중요 |
+| 비직렬화 방화벽 첨부 API 준비 상태가 허용 상태입니다. | [Deserialization Firewall Attach API Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 중요 |
+| 비직렬화 방화벽이 사용 가능합니다. | [Deserialization Firewall Functional](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 중요 |
+| 비직렬화 방화벽이 로드됨 | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/mitigating-serialization-issues.html?lang=en#security) | 중요 |
+| AuthorizableNodeName 구현은 노드 이름/경로에 인증 가능한 ID를 표시하지 않습니다. | [승인 가능한 노드 이름 생성](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/security-checklist.html?lang=en#security) | 중요 |
+| 기본 암호가 변경되었습니다. | [기본 로그인 계정](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=en#users-and-groups-in-aem) | 중요 |
 | 기본 GET 서블릿은 DOS 공격으로부터 보호됩니다. | Sling Get Servlet | 중요 |
 | Sling Java 스크립트 핸들러는 적절하게 구성됩니다 | Sling Java Script Handler | 중요 |
 | Sling JSP 스크립트 핸들러는 적절하게 구성되어 있습니다. | Sling JSP Script Handler | 중요 |
 | SSL이 올바르게 구성됨 | SSL 구성 | 중요 |
 | 안전하지 않은 사용자 프로필 정책을 찾을 수 없음 | 사용자 프로필 기본 액세스 | 중요 |
-| CSRF 공격을 방지하기 위해 Sling 레퍼러 필터가 구성되었습니다. | Sling Referrer Filter | 중요 사항 |
+| CSRF 공격을 방지하기 위해 Sling 레퍼러 필터가 구성되었습니다. | [Sling Referrer Filter](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-checklist.html?lang=en#security) | 중요 사항 |
 | Adobe Granite HTML 라이브러리 관리자가 적절하게 구성되어 있습니다. | CQ HTML 라이브러리 관리자 구성 | 중요 사항 |
 | CRXDE 지원 번들을 사용할 수 없음 | CRXDE 지원 | 중요 사항 |
 | Sling DavEx 번들 및 서블릿이 비활성화됨 | DavEx 상태 검사 | 중요 사항 |
 | 샘플 콘텐트가 설치되지 않았습니다. | 컨텐츠 패키지 예 | 중요 사항 |
-| WCM 요청 필터와 WCM 디버그 필터가 모두 비활성화되었습니다. | WCM 필터 구성 | 중요 사항 |
+| WCM 요청 필터와 WCM 디버그 필터가 모두 비활성화되었습니다. | [WCM 필터 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=en#configuring) | 중요 사항 |
 | Sling WebDAV 번들 및 서블릿이 적절하게 구성됨 | WebDAV 상태 검사 | 중요 사항 |
 | 웹 서버가 클릭재킹을 방지하도록 구성되었습니다. | 웹 서버 구성 | 중요 사항 |
 | 복제에서 &#39;admin&#39; 사용자를 사용하고 있지 않습니다. | 복제 및 전송 사용자 | 정보 |
