@@ -8,11 +8,12 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: 67a54bae-99a9-4405-91e3-9a0a8b3ccc98
+feature: 시작하기
 translation-type: tm+mt
-source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
@@ -36,6 +37,6 @@ Admin Console 및 사용자 역할 권한에 할당할 수 있는 가능한 역�
 
 ## 데이터 개인 정보 {#data-privacy}
 
-[!UICONTROL Cloud Manager] adobe에 의해 정의된 개인정보 보호 원칙을 준수합니다. 개발자는 HTTPS를 통해 **Git 리포지토리**&#x200B;에 코드를 안전하게 푸시합니다.
+[!UICONTROL Cloud Manager] Adobe에 의해 정의된 개인정보 보호 원칙을 준수합니다. 개발자는 HTTPS를 통해 **Git 리포지토리**&#x200B;에 코드를 안전하게 푸시합니다.
 
 [!UICONTROL Cloud Manager]의 사용자 인터페이스(UI)는 Adobe에 의해 정의된 공통 제어 프레임워크를 준수하는 서비스 위에 구축됩니다. [!UICONTROL Cloud Manager]용 사용자 인터페이스는 여러 클라우드 공급자의 보안 서비스를 사용합니다.
