@@ -1,10 +1,11 @@
 ---
 title: 마법사 사용
 description: 마법사를 사용하여 AEM 응용 프로그램 프로젝트를 만드는 방법을 알아보려면 이 페이지를 따르십시오
+feature: 시작하기
 translation-type: tm+mt
-source-git-commit: 7146a41d64365c9de03d32f4fc4c33f9e366c244
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
