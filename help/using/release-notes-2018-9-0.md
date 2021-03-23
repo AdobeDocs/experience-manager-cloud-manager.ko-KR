@@ -8,18 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: ace032fbb26235d87d61552a11996ec2bb42abce
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 5%
+source-wordcount: '277'
+ht-degree: 9%
 
 ---
 
 
 # 2018.9.0 릴리스 노트 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2018.9.0 릴리스는 [!UICONTROL Cloud Manager]의 CI/CD 파이프라인과 다른 시스템을 통합하는 Adobe I/O 기반 API에 대한 지원을 추가합니다. 반응에서 UI 레이어의 다시 작성도 시작합니다.
+[!UICONTROL Cloud Manager] 2018.9.0 릴리스는 [!UICONTROL Cloud Manager]의 CI/CD 파이프라인을 다른 시스템과 통합하기 위해 이벤트를 포함한 Adobe I/O 기반 API에 대한 지원을 추가합니다. 또한 반응으로 UI 레이어의 재작성을 시작합니다.
 
 ## 릴리스 날짜 {#release-date}
 
