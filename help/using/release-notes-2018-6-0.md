@@ -1,18 +1,19 @@
 ---
 title: 2018.6.0 릴리스 노트
 seo-title: 2018.6.0용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2018.6.0에 대한 정보를 얻으려면 이 페이지를 클릭하십시오.
+description: Cloud Manager 릴리스 2018.6.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2018.6.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 uuid: 211b6e1b-10fb-46b0-b591-44d5e44abd77
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 8584f467-3e61-41ea-98e4-f79e68c86469
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 15f75ca67c3d52ae511357c5b564daaa3d9def6b
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 3%
+source-wordcount: '336'
+ht-degree: 4%
 
 ---
 
