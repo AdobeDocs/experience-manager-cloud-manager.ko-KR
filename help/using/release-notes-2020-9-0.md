@@ -3,11 +3,12 @@ title: 2020.9.0 릴리스 노트
 seo-title: 2020.9.0용 AEM Cloud Manager 릴리스 노트
 description: Cloud Manager 릴리스 2020.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 seo-description: AEM Cloud Manager 릴리스 2020.9.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: aad2da58e5934999884553619dd97d42cc725d88
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 10%
+source-wordcount: '101'
+ht-degree: 11%
 
 ---
 
