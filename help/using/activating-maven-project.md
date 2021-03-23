@@ -3,11 +3,12 @@ title: Maven 프로젝트 버전 처리
 seo-title: Maven 프로젝트 버전 처리
 description: 마스터 프로젝트 버전 처리에 대해 자세히 알아보십시오.
 seo-description: 마스터 프로젝트 버전 처리에 대한 자세한 내용을 보려면 이 페이지를 따르십시오.
+feature: 시작하기
 translation-type: tm+mt
-source-git-commit: e2187565e7f06d64841eb2af9b4b1a56feb5ebe4
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 7%
+source-wordcount: '255'
+ht-degree: 8%
 
 ---
 
