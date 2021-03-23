@@ -8,10 +8,11 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 8888dd80-d908-464e-927d-779db1a832a4
+feature: Dispatcher
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -95,7 +96,7 @@ Dispatcher 구성에서 초기 프로세스를 완료하려면 아래 절차를 
    >[!NOTE]
    1단계에서와 같이 원하는 경우 여기에서 artifactId와 이름은 다른 값이 될 수 있습니다.`dispatcher`은(는) 단순화에 사용되는 예입니다.
 
-1. Maven 어셈블리 플러그인을 사용하려면 zip 파일을 만드는 방법을 정의하려면 *설명자*&#x200B;가 필요합니다. 이 설명자를 만들려면 이 콘텐트를 사용하여 `assembly.xml` 하위 디렉터리에 `dispatcher` 하위 디렉터리에 다시 파일을 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일에서 26행에서 참조됩니다.
+1. Maven 어셈블리 플러그인을 사용하려면 zip 파일을 만드는 방법을 정의하려면 *설명자*&#x200B;가 필요합니다. 이 설명자를 만들려면 이 콘텐트를 사용하여 `assembly.xml` 하위 디렉토리에 `dispatcher` 파일을 다시 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일에서 26행에서 참조됩니다.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
