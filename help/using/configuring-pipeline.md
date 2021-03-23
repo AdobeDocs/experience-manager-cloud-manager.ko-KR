@@ -10,9 +10,9 @@ topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 translation-type: tm+mt
-source-git-commit: 5542942da33efc2926e62cce00ea39e3c65b3e16
+source-git-commit: 7a33d6dc2240b61c9413bba34880ee5e7d49e02d
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1249'
 ht-degree: 1%
 
 ---
@@ -99,7 +99,6 @@ Git 분기를 선택하고 **다음**&#x200B;을 클릭합니다.
 * **예약됨**  - 이 옵션을 사용하면 예약된 프로덕션 배포를 활성화할 수 있습니다.
 
 >[!NOTE]
->
 >**예약됨** 옵션이 선택된 경우, 프로덕션 배포를 스테이지 배포(**이후에) 파이프라인**&#x200B;에 예약하고(활성화된 경우 **GoLive 승인 사용**) 일정이 설정될 때까지 대기할 수 있습니다. 사용자는 프로덕션 배포를 즉시 실행하도록 선택할 수도 있습니다.
 >
 >배포 일정을 설정하거나 즉시 프로덕션을 실행하려면 [**코드 배포**](deploying-code.md)&#x200B;를 참조하십시오.
@@ -153,62 +152,17 @@ Git 분기를 선택하고 **다음**&#x200B;을 클릭합니다.
 
    ![](assets/image2018-8-7_15-4-30.png)
 
+1. **테스트** 탭에 액세스하여 프로그램의 테스트 기준을 정의합니다. 이제 성능 테스트 매개 변수를 구성할 수 있습니다.
 
-1. **테스트** 탭에 액세스하여 프로그램의 테스트 기준을 정의합니다.
-
-   이제 성능 테스트 매개 변수를 구성할 수 있습니다.
-
-   라이센스를 구입한 제품에 따라 *AEM Sites* 및 *AEM Assets* 성능 테스트를 구성할 수 있습니다.
-
-   **AEM Sites:**
-
-   Cloud Manager는 스테이지 게시 서버에서 30분 동안(기본적으로 인증되지 않은 사용자로) 페이지를 요청하여 AEM Sites 프로그램에 대한 성능 테스트를 실행하고 다양한 시스템 수준 지표와 각 페이지에 대한 응답 시간을 측정합니다. 이러한 요청은 알려진 전용 주소 집합에서 수행됩니다. 주소 범위는 고객 성공 엔지니어 또는 Adobe 담당자가 구할 수 있습니다.
-
-   30분 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 *시드* URL 세트를 사용하여 스테이지 환경을 크롤링합니다. 이 URL부터 시작하여 각 페이지의 HTML을 검사하고 링크를 첫 번째 방식으로 탐색합니다. 이 크롤링 프로세스는 최대 5,000페이지로 제한됩니다. 크롤러 요청에 10초의 고정 시간 초과가 있습니다.
-
-   3개의 **페이지 세트**;1세트 부터 3세트 모두 어느 곳이든 선택할 수 있습니다. 트래픽 분배는 선택된 집합 수를 기반으로 합니다. 즉, 3개를 모두 선택한 경우 총 페이지 보기의 33%가 각 집합에 배치됩니다.두 개를 선택하면 50%가 각 세트로 이동됩니다.하나를 선택하면 트래픽의 100%가 해당 세트로 이동합니다.
-
-   예를 들어, 인기 있는 라이브 페이지와 새 페이지 세트(이 예에서는 다른 라이브 페이지가 사용되지 않음) 간에 50%/50%의 분할이 있고 새 페이지 세트에 3000페이지가 포함되어 있다고 가정해 보겠습니다. 분당 페이지 뷰 수 KPI는 200으로 설정됩니다. 30분 동안의 테스트 기간:
-
-   * 인기 있는 라이브 페이지 세트의 25개 페이지는 각각 120회 - ((200 * 0.5) / 25) * 30 = 120으로 히트합니다.
-
-   * 새 페이지 세트의 3000개 각 페이지가 한 번 히트 - ((200 * 0.5) / 3000) * 30 = 1
-
-   ![](assets/Configuring_Pipeline_AEM-Sites.png)
-
-   자세한 내용은 [인증된 성능 테스트](#authenticated-performance-testing)를 참조하십시오.
-
-   **AEM Assets:**
-
-   Cloud Manager는 30분 테스트 기간 동안 자산을 반복적으로 업로드하고 각 자산에 대한 처리 시간과 다양한 시스템 수준 지표를 측정하여 AEM Assets 프로그램에 대한 성능 테스트를 실행합니다. 이 기능은 이미지와 PDF 문서를 모두 업로드할 수 있습니다. 각 유형의 업로드된 에셋 수에 대한 분배는 파이프라인 설정(Pipeline Setup) 또는 편집(Edit) 화면에서 설정됩니다.
-
-   예를 들어, 아래 그림에서와 같이 70/30 분할을 사용하는 경우 분당 10개의 에셋이 업로드되고 분당 7개의 이미지가 업로드되며 3개의 문서가 업로드됩니다.
-
-   ![](assets/Configuring_Pipeline_AEM-Assets.png)
-
-   >[!NOTE]
-   >
-   >기본 이미지와 PDF 문서가 있지만 대부분의 경우 고객은 자신의 에셋을 업로드해야 합니다. 이 작업은 파이프라인 설정(Pipeline Setup) 또는 편집(Edit) 화면에서 수행할 수 있습니다. JPEG, PNG, GIF 및 BMP와 같은 일반적인 이미지 형식은 Photoshop, Illustrator 및 Postscript 파일과 함께 지원됩니다.
+   라이센스를 구입한 제품에 따라 *AEM Sites* 및 *AEM Assets* 성능 테스트를 구성할 수 있습니다. 자세한 내용은 [성능 테스트](understand-your-test-results.md#performance-testing)를 참조하십시오.
 
 1. **저장**&#x200B;을 클릭하여 파이프라인 프로세스 설정을 완료합니다.
 
    >[!NOTE]
-   >
    >또한 파이프라인을 설정한 후에도 [!UICONTROL Cloud Manager] UI의 **프로덕션 파이프라인 설정** 타일을 사용하여 동일한 대상에 대한 설정을 편집할 수 있습니다.
 
    ![](assets/Production-Pipeline.png)
 
-### 인증된 성능 테스트 {#authenticated-performance-testing}
-
-인증된 사이트를 보유한 AMS 고객은 Cloud Manager가 사이트 성능 테스트 동안 웹 사이트에 액세스하는 데 사용할 사용자 이름과 암호를 지정할 수 있습니다.
-
-사용자 이름과 암호는 `CM_PERF_TEST_BASIC_USERNAME` 및 `CM_PERF_TEST_BASIC_PASSWORD` 이름으로 [파이프라인 변수](/help/using/build-environment-details.md#pipeline-variables)로 지정됩니다.
-
-반드시 필요한 것은 아니지만 사용자 이름에 문자열 변수 유형을 사용하고 암호에 대해 secretString 변수 유형을 사용하는 것이 좋습니다. 이 두 가지가 모두 지정되면 성능 테스트 크롤러 및 테스트 가상 사용자의 모든 요청에 이러한 자격 증명이 HTTP Basic 인증으로 포함됩니다.
-
-[클라우드 관리자 CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager)를 사용하여 이러한 변수를 설정하려면 다음을 실행하십시오.
-
-`$ aio cloudmanager:set-pipeline-variables <pipeline id> --variable CM_PERF_TEST_BASIC_USERNAME <username> --secret CM_PERF_TEST_BASIC_PASSWORD <password>`
 
 ## 비프로덕션 및 코드 품질만 파이프라인
 
