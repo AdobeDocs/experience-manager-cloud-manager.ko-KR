@@ -2,16 +2,17 @@
 title: 2018.7.0 릴리스 노트
 seo-title: 2018.7.0 릴리스 노트
 description: Cloud Manager 릴리스 2018.7.0에 대한 자세한 내용
-seo-description: Cloud Manager 릴리스 2018.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+seo-description: Cloud Manager 릴리스 2019.7.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 uuid: d7b49e32-01dc-48ce-b744-e6a806fbdd8a
 contentOwner: jsyal
 topic-tags: release-notes
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 discoiquuid: b64bf9ab-27ed-4f33-adc8-d73d34094f1b
+feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 2dda85baa5e7ed9bfd8933df3580ec6fc3c210fd
+source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 12%
 
 ---
