@@ -6,12 +6,12 @@ user-guide-title: Experience Manager 클라우드 관리자 안내서
 breadcrumb-title: Cloud Manager 안내서
 user-guide-description: Adobe Managed Services를 사용하여 클라우드에서 Experience Manager을 자체 관리하는 방법을 알아보십시오.
 feature-set: Experience Manager Cloud Manager
-role: 관리자
-level: 중간
+role: Administrator
+level: Intermediate
 translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+source-git-commit: 13a918f69185c684ca69b812df7eb5c2bd43e064
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '264'
 ht-degree: 82%
 
 ---
@@ -61,7 +61,8 @@ ht-degree: 82%
    + [개요](overview-productupdate-wizard.md)
    + [평가](evaluation.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트(2021.3.0)](release-notes-current.md)
+   + [현재 릴리스 노트(2021.4.0)](release-notes-current.md)
+   + [2021.3.0 릴리스 노트](release-notes-2021-3-0.md)
    + [2021.2.0 릴리스 노트](release-notes-2021-2-0.md)
    + [2020.12.0 릴리스 노트](release-notes-2020-12-0.md)
    + [2020.11.0 릴리스 노트](release-notes-2020-11-0.md)
