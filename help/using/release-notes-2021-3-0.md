@@ -1,0 +1,41 @@
+---
+title: 2021.3.0 릴리스 노트
+description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+feature: 릴리스 정보
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+translation-type: tm+mt
+source-git-commit: 13a918f69185c684ca69b812df7eb5c2bd43e064
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 5%
+
+---
+
+# 2021.3.0 릴리스 노트 {#release-notes-for}
+
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2021.3.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+
+## 릴리스 날짜 {#release-date}
+
+[!UICONTROL Cloud Manager] 버전 2021.3.0의 릴리스 날짜는 2021년 3월 11일입니다.
+다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
+
+## 새로운 기능 {#whats-new}
+
+* 고객 디스패처 구성의 유효성을 확인하기 위해 새 코드 품질 도구 [디스패처 최적화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules)가 도입되었습니다.
+
+* 이제 사용자는 통합 셸의 사용자 프로필 아이콘(오른쪽 상단)으로 이동한 후 **클라우드 관리자 역할 보기** 옵션을 선택하여 클라우드 관리자 역할을 볼 수 있습니다.
+
+* 레이블 **승인 신청**&#x200B;이(가) **프로덕션 승인**&#x200B;으로 다시 표시되었습니다.
+
+* **버전** 레이블은 프로덕션 파이프라인 실행 화면에서 **Git 태그**&#x200B;에 다시 표시되었습니다.
+
+* 중요한 지표가 정의된 임계값에 맞지 않을 때 동작을 정의하는 레이블의 실제 비헤이비어를 반영하도록 레이블이 다시 지정되어 있습니다. **즉시 취소** 및 **즉시 승인**. 자세한 내용은 [파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager)을 참조하십시오.
+
+* 클래스 및 메서드 사용 중단 목록은 AEM Cloud Service SDK의 `2021.3.4997.20210303T022849Z-210225` 버전을 기준으로 업데이트되었습니다.
+
+## 버그 수정 {#bug-fixes}
+
+* 패키지가 다른 패키지에 포함된 경우 일부 품질 문제를 제대로 찾지 못했습니다.
+
+* 때때로 사용자가 파이프라인을 시작한 직후 파이프라인 실행 페이지를 벗어나는 경우 작업이 실패했지만 실제로 실행이 시작된다는 오류 메시지가 표시됩니다.
