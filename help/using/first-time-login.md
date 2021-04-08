@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
 feature: 시작하기
+exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+source-git-commit: 9be78d21b455095c1b1bd49cdb267a8aa5624927
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '213'
 ht-degree: 3%
 
 ---
-
 
 # 처음 로그인 {#first-time-login}
 
@@ -24,14 +24,6 @@ ht-degree: 3%
 
 >[!NOTE]
 >[!UICONTROL Cloud Manager]에 할당된 역할 및 응용 프로그램 상태에 따라 [!UICONTROL Cloud Manager] UI를 사용하는 동안 다른 화면이 표시됩니다.
-
-## 비디오 자습서 {#video-tutorial-one}
-
-### 클라우드 관리자 프로그램 {#programs-video}
-
-다음 비디오는 일반적으로 SLA(Service Level Agreement)에 해당하는, 논리적 비즈니스 이니셔티브를 지원하는 AEM 환경 세트를 나타내는 Cloud Manager 프로그램에 대한 개요를 제공합니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
