@@ -2,9 +2,9 @@
 title: 2021.3.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 feature: 릴리스 정보
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea,e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
 translation-type: tm+mt
-source-git-commit: 13a918f69185c684ca69b812df7eb5c2bd43e064
+source-git-commit: 9c3e748f8aed969af861b505ee336eb5501d826f
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 5%
