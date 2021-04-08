@@ -1,41 +1,43 @@
 ---
-title: 2021.3.0 릴리스 노트
-description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
+title: 2021.4.0 릴리스 노트
+description: Cloud Manager 릴리스 2021.4.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 feature: 릴리스 정보
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+source-git-commit: 0c33fd9f1af4c98564c9fd14a468fc3bf27744ee
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 5%
+source-wordcount: '192'
+ht-degree: 7%
 
 ---
 
+# 2021.4.0 릴리스 노트 {#release-notes-for}
 
-# 2021.3.0 릴리스 노트 {#release-notes-for}
-
-다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2021.3.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2021.4.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 버전 2021.3.0의 릴리스 날짜는 2021년 3월 11일입니다.
-다음 릴리스는 2021년 4월 8일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 버전 2021.4.0의 릴리스 날짜는 2021년 4월 08일입니다.
+다음 릴리스는 2021년 5월 6일에 예정되어 있습니다.
 
 ## 새로운 기능 {#whats-new}
 
-* 고객 디스패처 구성의 유효성을 확인하기 위해 새 코드 품질 도구 [디스패처 최적화 도구](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/custom-code-quality-rules.html?lang=en#dispatcher-optimization-tool-rules)가 도입되었습니다.
+* 성능 테스트 가상 사용자에 대한 요청 시간 초과가 20초에서 60초로 증가했습니다.
 
-* 이제 사용자는 통합 셸의 사용자 프로필 아이콘(오른쪽 상단)으로 이동한 후 **클라우드 관리자 역할 보기** 옵션을 선택하여 클라우드 관리자 역할을 볼 수 있습니다.
+* 파이프라인이 구성되지 않은 경우에도 파이프라인 카드에 Git 관리 단추가 표시됩니다.
 
-* 레이블 **승인 신청**&#x200B;이(가) **프로덕션 승인**&#x200B;으로 다시 표시되었습니다.
+* 파이프라인 실행 페이지의 배포 단계 동안 사용자는 *진행 중* 상태에 대한 UI의 현재 단계 외에 완료된 배포 단계 및 향후 배포 단계를 볼 수 있습니다.
 
-* **버전** 레이블은 프로덕션 파이프라인 실행 화면에서 **Git 태그**&#x200B;에 다시 표시되었습니다.
+* Cloud Manager에서 사용하는 AEM 프로젝트 원형 버전이 버전 27로 업데이트되었습니다.
 
-* 중요한 지표가 정의된 임계값에 맞지 않을 때 동작을 정의하는 레이블의 실제 비헤이비어를 반영하도록 레이블이 다시 지정되어 있습니다. **즉시 취소** 및 **즉시 승인**. 자세한 내용은 [파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager)을 참조하십시오.
+* 환경이 삭제되었을 때 파이프라인을 시작할 때의 오류 메시지가 명확해졌습니다.
 
-* 클래스 및 메서드 사용 중단 목록은 AEM Cloud Service SDK의 `2021.3.4997.20210303T022849Z-210225` 버전을 기준으로 업데이트되었습니다.
+* Eclipse 프로젝트에서 제공하는 OSGi 번들은 이제 규칙에서 제외됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 패키지가 다른 패키지에 포함된 경우 일부 품질 문제를 제대로 찾지 못했습니다.
+* 프로덕션 파이프라인의 자산 테스트 단계에서 발생할 수 있는 드물고 일시적인 오류입니다.
 
-* 때때로 사용자가 파이프라인을 시작한 직후 파이프라인 실행 페이지를 벗어나는 경우 작업이 실패했지만 실제로 실행이 시작된다는 오류 메시지가 표시됩니다.
+* 프로덕션 파이프라인 로드 테스트의 후행 슬래시로 404 오류가 발생했습니다.
+
+* `Runmode` 검사가 비폴더 노드에서 잘못된 양수를 생성하고 있었습니다.
