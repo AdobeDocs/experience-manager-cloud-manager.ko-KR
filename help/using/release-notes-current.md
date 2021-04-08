@@ -4,7 +4,7 @@ description: Cloud Manager 릴리스 2021.4.0에 대한 정보를 얻으려면 �
 feature: 릴리스 정보
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 translation-type: tm+mt
-source-git-commit: 0c33fd9f1af4c98564c9fd14a468fc3bf27744ee
+source-git-commit: 1f7f87a4b944d1fadc708958a96a1bda7d41da5d
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -32,11 +32,11 @@ ht-degree: 7%
 
 * 환경이 삭제되었을 때 파이프라인을 시작할 때의 오류 메시지가 명확해졌습니다.
 
-* Eclipse 프로젝트에서 제공하는 OSGi 번들은 이제 규칙에서 제외됩니다.
+* 이제 Eclipse 프로젝트에서 제공하는 OSGi 번들은 규칙 `CQBP-84--dependencies`에서 제외됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 프로덕션 파이프라인의 자산 테스트 단계에서 발생할 수 있는 드물고 일시적인 오류입니다.
+* 프로덕션 파이프라인의 *자산 테스트* 단계에서 발생할 수 있는 드물고 일시적인 오류입니다.
 
 * 프로덕션 파이프라인 로드 테스트의 후행 슬래시로 404 오류가 발생했습니다.
 
