@@ -3,7 +3,7 @@ title: 환경 모니터링
 seo-title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법 학습
 seo-description: 이 페이지에서 환경 내의 개별 인스턴스를 관찰하고 각 인스턴스에 대한 다양한 지표를 추적함으로써 수행되는 Cloud Manager의 시스템 모니터링에 대해 알아보십시오.
-feature: 환경
+feature: Environments
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

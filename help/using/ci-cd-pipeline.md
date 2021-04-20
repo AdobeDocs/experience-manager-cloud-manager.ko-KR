@@ -6,7 +6,7 @@ seo-description: Cloud Manager의 스테이지 및 프로덕션에 대한 배포
 uuid: 763ddb24-05cd-463f-8d72-a2e69bbe6b7e
 topic-tags: introduction
 discoiquuid: 1cdb76eb-1a91-4689-8579-0fa9fccc0592
-feature: CI-CD 파이프라인
+feature: CI-CD Pipeline
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt

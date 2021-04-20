@@ -1,7 +1,7 @@
 ---
 title: 여러 소스 Git 리포지토리를 사용한 작업
 description: 여러 소스 Git 리포지토리를 사용한 작업 - 클라우드 관리자
-feature: Git 리포지토리
+feature: Git Repositories
 translation-type: tm+mt
 source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
 workflow-type: tm+mt

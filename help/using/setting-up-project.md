@@ -1,7 +1,7 @@
 ---
 title: 프로젝트 설정
 description: 프로젝트 설정 방법을 알려면 이 페이지를 따르십시오
-feature: 시작하기, 프로덕션
+feature: Getting Started, Production
 translation-type: tm+mt
 source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
 workflow-type: tm+mt
