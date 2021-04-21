@@ -5,11 +5,11 @@ archetype: administrator
 user-guide-title: Experience Manager 클라우드 관리자 안내서
 breadcrumb-title: Cloud Manager 안내서
 user-guide-description: Adobe Managed Services를 사용하여 클라우드에서 Experience Manager을 자체 관리하는 방법을 알아보십시오.
-feature-set: Experience Manager Cloud Manager
+feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
 translation-type: tm+mt
-source-git-commit: 13a918f69185c684ca69b812df7eb5c2bd43e064
+source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 82%
