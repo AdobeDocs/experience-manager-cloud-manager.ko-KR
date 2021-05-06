@@ -3,10 +3,10 @@ title: 2021.5.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
+source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 6%
+source-wordcount: '181'
+ht-degree: 7%
 
 ---
 
@@ -32,8 +32,6 @@ ht-degree: 6%
 * 편집 프로그램 환경이 새로 고침되었습니다.
 
 ## 버그 수정 {#bug-fixes}
-
-* 경우에 따라 해당 구성이 배포되지 않은 경우에도 IP 옆에 녹색 *활성* 상태가 표시될 수 허용 목록에 추가하다 있습니다.
 
 * 파이프라인 변수 API는 &#39;삭제됨&#39; 변수를 제거하는 대신 &#39;삭제됨&#39; 상태로만 표시합니다.
 
