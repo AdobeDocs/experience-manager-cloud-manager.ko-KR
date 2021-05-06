@@ -8,15 +8,15 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: Code Deployment
+feature: 코드 배포
+exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 translation-type: tm+mt
-source-git-commit: c5d32d49782c899d013fcc60b9c4d2b67e9350ae
+source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 0%
+source-wordcount: '994'
+ht-degree: 1%
 
 ---
-
 
 # 코드 배포 {#deploy-your-code}
 
@@ -92,6 +92,19 @@ ht-degree: 0%
 
    ![](assets/Production_Deployment2.png)
 
+## 시간 초과 {#timeouts}
+
+사용자 피드백을 기다리는 동안 다음 단계가 시간 초과됩니다.
+
+| 단계 | 시간 초과 |
+|--- |--- |
+| 코드 품질 테스트 | 7일 |
+| 보안 테스트 | 7일 |
+| 성능 테스트 | 7일 |
+| 승인 신청 | 7일 |
+| 프로덕션 배포 예약 | 7일 |
+| CSE 지원 | 7일 |
+
 ## 배포 프로세스 {#deployment-process}
 
 다음 섹션에서는 AEM 및 디스패처 패키지가 단계 및 제작 단계에서 배포되는 방식을 설명합니다.
@@ -149,5 +162,3 @@ Cloud Manager가 비프로덕션 토폴로지에 배포되는 경우 가능한 �
 1. publish2에 AEM 패키지를 배포하고 디스패처 패키지는 동시에 발송자 캐시에서 dispatcher2에 배포합니다.
 1. dispatcher2를 다시 로드 밸런서에 넣습니다.
 배포가 토폴로지의 모든 게시자 및 디스패처에 도달할 때까지 이 프로세스가 계속됩니다.
-
-
