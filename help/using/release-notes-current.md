@@ -3,7 +3,7 @@ title: 2021.5.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 feature: 릴리스 정보
 translation-type: tm+mt
-source-git-commit: 5f81fdb86b1dfa6c748bb7784ef00dc062c9f8ef
+source-git-commit: 3d6f9a760a1e5bafdae6ece5627358524467a0d2
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 6%
@@ -17,7 +17,7 @@ ht-degree: 6%
 ## 릴리스 날짜 {#release-date}
 
 [!UICONTROL Cloud Manager] 버전 2021.5.0의 릴리스 날짜는 2021년 5월 6일입니다.
-다음 릴리스는 2021년 6월 6일에 예정되어 있습니다.
+다음 릴리스는 2021년 6월 3일에 예정되어 있습니다.
 
 ## 새로운 기능 {#whats-new}
 
