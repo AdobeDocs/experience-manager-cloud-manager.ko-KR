@@ -3,16 +3,15 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager 클라우드 관리자 안내서
-breadcrumb-title: Cloud Manager 안내서
+breadcrumb-title: AEM 6.x용 Cloud Manager 가이드
 user-guide-description: Adobe Managed Services를 사용하여 클라우드에서 Experience Manager을 자체 관리하는 방법을 알아보십시오.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
 level: Intermediate
-translation-type: tm+mt
-source-git-commit: 5f81fdb86b1dfa6c748bb7784ef00dc062c9f8ef
+source-git-commit: 9cca6fd7d4ef3351fa024bac0f95f5592105dbae
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 83%
+source-wordcount: '270'
+ht-degree: 81%
 
 ---
 
