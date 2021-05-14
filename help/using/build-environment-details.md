@@ -1,15 +1,14 @@
 ---
 title: 빌드 환경 이해
 description: 환경에 대해 알려면 이 페이지를 따르십시오.
-feature: Environments
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+feature: 환경
+exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
+source-git-commit: 0a5556729e64c9e8736d13b357db001dd57bc03a
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '773'
 ht-degree: 0%
 
 ---
-
 
 # 빌드 환경 이해 {#build-environment-details}
 
@@ -34,7 +33,7 @@ Cloud Manager는 전문 빌드 환경을 사용하여 코드를 작성하고 테
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 
-* maven은 공용 Adobe **Artifact** 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 구성됩니다.
+* maven은 `adobe-public` 프로파일을 사용하여 공개 Adobe **Artifact** 저장소를 자동으로 포함하는 settings.xml 파일을 사용하여 시스템 수준에서 구성됩니다.
 자세한 내용은 [Adobe Public Maven 리포지토리](https://repo.adobe.com/)를 참조하십시오.
 
 >[!NOTE]
