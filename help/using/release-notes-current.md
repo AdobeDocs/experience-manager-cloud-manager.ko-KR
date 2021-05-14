@@ -2,11 +2,10 @@
 title: 2021.5.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
 feature: 릴리스 정보
-translation-type: tm+mt
-source-git-commit: 849a2df2f272973740c1dd8580daaa518f2c9ec4
+source-git-commit: b9adcc700edb7ba54a92037e86e86df812c93c83
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 7%
+source-wordcount: '204'
+ht-degree: 6%
 
 ---
 
@@ -38,3 +37,5 @@ ht-degree: 7%
 * 일부 코드 후각 유형 품질 문제가 안정성 등급에 잘못 영향을 주었습니다.
 
 * 자정~오전 1시 UTC 사이에 파이프라인 실행이 시작되었을 때 Cloud Manager에서 생성된 아티팩트 버전이 전날 생성된 버전보다 클 것으로 보장되지 않았습니다.
+
+* 특정 AMS(Adobe Managed Services) 고객이 클라우드 관리자 API를 사용하여 Adobe I/O 개발자 콘솔에서 새 프로젝트를 만들 수 없습니다.
