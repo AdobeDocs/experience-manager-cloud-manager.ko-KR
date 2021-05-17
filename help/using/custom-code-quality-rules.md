@@ -8,17 +8,19 @@ contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: 코드 품질 규칙
+exl-id: 7d118225-5826-434e-8869-01ee186e0754
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3654'
 ht-degree: 0%
 
 ---
 
-
 # 사용자 지정 코드 품질 규칙 {#custom-code-quality-rules}
+
+>[!NOTE]
+>AEM에서 Cloud Service으로 Cloud Manager에 대한 사용자 지정 코드 품질 규칙에 대해 알려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 이 페이지에서는 AEM Engineering의 우수 사례를 기반으로 만들어진 Cloud Manager가 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다.
 
@@ -961,4 +963,3 @@ AEM Cloud Service에서는 사용자 정의 검색 색인 정의(즉, `oak:Query
 * [DOT - Dispatcher 게시 팜 필터는 허용 목록 방식으로 허용되는 Sling 접미어 패턴을 지정해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
 * [DOT - 루트 디렉토리 경로가 있는 VirtualHost Directory 섹션에서 &#39;Require all granted&#39; 지시문을 사용할 수 없습니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
-
