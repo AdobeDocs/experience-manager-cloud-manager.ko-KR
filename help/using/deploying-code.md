@@ -10,10 +10,9 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: 코드 배포
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-translation-type: tm+mt
-source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -21,6 +20,9 @@ ht-degree: 1%
 # 코드 배포 {#deploy-your-code}
 
 ## 클라우드 관리자를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
+
+>[!NOTE]
+>AEM에서 Cloud Manager용 코드를 Cloud Service으로 배포하는 방법에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 프로덕션 파이프라인(저장소, 환경 및 테스트 환경)을 구성하면 코드를 배포할 준비가 됩니다.
 
