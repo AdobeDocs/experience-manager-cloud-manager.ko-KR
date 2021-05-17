@@ -9,17 +9,19 @@ products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI-CD Pipeline
-translation-type: tm+mt
-source-git-commit: 12a7d6199983e2d19ef401051f60e3f24bb6d4f8
+feature: CI-CD 파이프라인
+exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
+source-git-commit: 83fcc49c7e3e3742930a7179b27f899bff3c4ae1
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1280'
 ht-degree: 1%
 
 ---
 
-
 # CI/CD 파이프라인 구성 {#configure-your-ci-cd-pipeline}
+
+>[!NOTE]
+>AEM에서 Cloud Manager에 대한 CI/CD 파이프라인을 Cloud Service으로 구성하는 방법을 알아보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 다음 페이지에서는 **파이프라인**&#x200B;을 구성하는 방법에 대해 설명합니다. 파이프라인이 작동하는 방식에 대한 자세한 개념 정보를 검토하려면 [CI/CD 파이프라인 개요](ci-cd-pipeline.md)를 참조하십시오.
 
