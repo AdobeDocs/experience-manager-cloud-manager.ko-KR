@@ -10,15 +10,17 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD 파이프라인, 테스트 결과
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-translation-type: tm+mt
-source-git-commit: 9e7c6f7241900432155a1a32abfb440fb3f93172
+source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
 workflow-type: tm+mt
-source-wordcount: '2694'
+source-wordcount: '2722'
 ht-degree: 4%
 
 ---
 
 # 테스트 결과 이해 {#understand-your-test-results}
+
+>[!NOTE]
+>Cloud Services 파이프라인에 대해 클라우드 관리자가 지원하는 테스트 결과 및 테스트에 대해 알려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/overview-test-results.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 파이프라인 실행 중에 비즈니스 소유자가 정의한 주요 성과 지표(KPI) 또는 Adobe Managed Services가 설정한 표준과 비교하여 많은 지표가 캡처되어 비교됩니다.
 
