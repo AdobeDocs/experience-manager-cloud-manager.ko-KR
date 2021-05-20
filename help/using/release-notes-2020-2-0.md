@@ -1,11 +1,11 @@
 ---
 title: 2020.2.0 릴리스 노트
-seo-title: 2020.2.0용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-seo-description: AEM Cloud Manager 릴리스 2020.2.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.2.0용 릴리스 노트
+description: Cloud Manager 릴리스 2021.2.0에 대한 정보를 보려면 이 페이지를 따르십시오
+seo-description: AEM Cloud Manager 릴리스 2020.2.0에 대한 정보를 보려면 이 페이지를 따르십시오
+feature: 릴리스 정보
+exl-id: 3f225c07-b217-4568-8f8e-cbc1f20989bf
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 55%
@@ -14,23 +14,23 @@ ht-degree: 55%
 
 # 2020.2.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.2.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.2.0에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 버전 2020.2.0의 릴리스 날짜는 2020년 2월 13일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.2.0의 출시일은 2020년 2월 13일입니다.
 
 ## 새로운 기능 {#whats-new}
 
 * Adobe Experience Manager 기본 버전이 버전 22로 업데이트되었습니다.
-* 스테이지 배포 로그에 활성 인스턴스가 추가되었습니다.
+* 단계 배포 로그에 활성 인스턴스가 추가되었습니다
 * Experience Cloud 알림에 사용된 URL은 추가 리디렉션을 방지하도록 최적화되었습니다.
 * 시간 초과된 파이프라인 실행 단계는 이제 명시적으로 이를 기술합니다.
 * 이제 코드 스캔 단계에 다운로드 가능한 로그가 있습니다.
 * 이제 보안 테스트 단계에 다운로드 가능한 로그가 있습니다.
-* 성능 테스트 중 액세스한 페이지 목록을 이제 다운로드할 수 있습니다.
+* 이제 성능 테스트 중에 액세스한 페이지 목록을 다운로드할 수 있습니다.
 * 코드 스캔 중에 발견된 문제가 들어 있는 스프레드시트에 특정 규칙에 대한 설명서 링크가 있는 열이 있습니다.
-* 성능 테스트 단계를 시작하지 못하면 이제 실패 이유가 표시됩니다.
+* 성능 테스트 단계가 시작되지 않으면 이제 실패 이유가 표시됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
