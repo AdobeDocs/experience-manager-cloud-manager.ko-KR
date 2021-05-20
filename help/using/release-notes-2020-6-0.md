@@ -1,11 +1,11 @@
 ---
 title: 2020.6.0 릴리스 노트
-seo-title: 2020.6.0용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2020.6.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-seo-description: AEM Cloud Manager 릴리스 2020.6.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.6.0용 릴리스 노트
+description: Cloud Manager 릴리스 2020.6.0에 대한 정보를 보려면 이 페이지를 따르십시오
+seo-description: AEM Cloud Manager 릴리스 2020.6.0에 대한 정보를 보려면 이 페이지를 따르십시오
+feature: 릴리스 정보
+exl-id: 92eda9ea-f916-429e-97e3-be3a1ecef7cb
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 64%
@@ -14,11 +14,11 @@ ht-degree: 64%
 
 # 2020.6.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.6.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.6.0에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 버전 2020.6.0의 릴리스 날짜는 2020년 6월 04일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.6.0의 출시일은 2020년 6월 4일입니다.
 
 ## 새로운 기능 {#whats-new}
 
@@ -26,7 +26,7 @@ ht-degree: 64%
 
 * 이제 **LEARN** 페이지를 Cloud Manager에서 사용할 수 있으며 위쪽 탐색을 통해 액세스할 수 있습니다. 이 페이지에는 Cloud Manager에서 할당된 역할과 관련하여 가장 자주 사용되는 워크플로우에 대한 사용자 학습을 돕는 리소스가 포함되어 있습니다.
 
-* 자산 95번째 백분위수 처리 시간의 최대값이 500초로 증가했습니다.
+* 자산 95번째 백분위수 처리 시간의 최대 값이 500초로 증가했습니다.
 
 * 이제 빌드 로그에는 생략된 컨텐츠 패키지를 포함하여 검색된 객체 목록이 포함됩니다.
 
