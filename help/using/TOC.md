@@ -3,7 +3,7 @@ product: adobe experience manager
 sub-product: experience manager cloud manager
 archetype: administrator
 user-guide-title: Experience Manager 클라우드 관리자 안내서
-breadcrumb-title: AEM 6.x용 Cloud Manager 가이드
+breadcrumb-title: AEM 6.x용 Cloud Manager 안내서
 user-guide-description: Adobe Managed Services를 사용하여 클라우드에서 Experience Manager을 자체 관리하는 방법을 알아보십시오.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Administrator
@@ -47,7 +47,7 @@ ht-degree: 81%
    + [테스트 결과 이해](understand-your-test-results.md)
    + [환경 관리](manage-your-environment.md)
    + [환경 모니터링](monitor-your-environments.md)
-   + [클라우드 관리자 API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
+   + [Cloud Manager API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
@@ -55,7 +55,7 @@ ht-degree: 81%
    + [Maven 프로젝트 버전 처리](activating-maven-project.md)
    + [Git 액세스](accessing-git.md)
    + [Git과 통합](setup-cloud-manager-git-integration.md)
-   + [여러 소스 Git 리포지토리를 사용한 작업](/help/using/working-with-multiple-source-git-repos.md)
+   + [여러 소스 Git 리포지토리 작업](/help/using/working-with-multiple-source-git-repos.md)
 + 제품 업데이트 마법사 {#product-update-wizard}
    + [개요](overview-productupdate-wizard.md)
    + [평가](evaluation.md)
