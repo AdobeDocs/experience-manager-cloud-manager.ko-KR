@@ -1,11 +1,11 @@
 ---
 title: 2020.5.0 릴리스 노트
-seo-title: 2020.5.0용 AEM Cloud Manager 릴리스 노트
-description: Cloud Manager 릴리스 2020.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-seo-description: AEM Cloud Manager 릴리스 2020.5.0에 대한 정보를 얻으려면 이 페이지를 따르십시오.
-feature: Release Information
-translation-type: tm+mt
-source-git-commit: fb10d775c930b5bb475b497aac2fd59b053a9a00
+seo-title: AEM Cloud Manager 2020.5.0용 릴리스 노트
+description: Cloud Manager 릴리스 2021.5.0에 대한 정보를 보려면 이 페이지를 따르십시오
+seo-description: AEM Cloud Manager 릴리스 2020.5.0에 대한 정보를 보려면 이 페이지를 따르십시오
+feature: 릴리스 정보
+exl-id: f8a80419-e480-450a-8768-6d9ab690a425
+source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 67%
@@ -14,11 +14,11 @@ ht-degree: 67%
 
 # 2020.5.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.5.0에 대한 일반 릴리스 노트에 대해 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2020.5.0에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 버전 2020.5.0의 릴리스 날짜는 2020년 5월 7일입니다.
+[!UICONTROL Cloud Manager] 버전 2020.5.0의 출시일은 2020년 5월 7일입니다.
 
 ## 새로운 기능 {#whats-new}
 
@@ -41,4 +41,3 @@ ht-degree: 67%
 * 개요 페이지의 특정 카드에 개체 이름이 올바로 표시되지 않았습니다.
 
 * 특정 토폴로지 구성에서는 누락된 지표를 보고하는 대신 성능 테스트 단계에서 오류가 생성됩니다.
-
