@@ -11,10 +11,10 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: 시작하기
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 81c14382821de6b2d249000a79799747a6d9cb19
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 85%
+source-wordcount: '805'
+ht-degree: 79%
 
 ---
 
@@ -30,6 +30,8 @@ ht-degree: 85%
 ## 소개 {#introduction}
 
 [!UICONTROL Cloud Manager]Cloud에서 Adobe Experience Manager(AEM)의 일부인 를 통해 조직에서 자체적으로 클라우드에서 Experience Manager을 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다.
+
+이 설명서 사이트에서는 AMS(Adobe Managed Services) 고객이 사용할 수 있는 Cloud Manager의 기능과 특징을 구체적으로 설명합니다. AEM as a Cloud Service 고객을 위한 Cloud Manager 기능 및 기능에 대한 설명서는 [AEM용 Cloud Service 구현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en)에서 찾을 수 있습니다.
 
 **조직**&#x200B;에서 [!UICONTROL Cloud Manager]셀프서비스 고객 포털을 이용하여 다음을 수행/활용할 수 있습니다.
 
