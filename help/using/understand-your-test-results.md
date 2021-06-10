@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD 파이프라인, 테스트 결과
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
 workflow-type: tm+mt
 source-wordcount: '2722'
 ht-degree: 4%
@@ -53,7 +53,7 @@ ht-degree: 4%
 코드 품질 테스트에서 소스 코드가 특정 품질 기준을 충족하는지 검사합니다. 현재 SonarQube와 OakPAL을 사용하는 컨텐츠 패키지 수준 검사 및 Dispatcher 최적화 도구를 사용하는 디스패처 유효성 검사의 조합을 통해 구현됩니다. 일반 Java 규칙과 AEM 관련 규칙을 결합하는 규칙이 100개 이상 있습니다. AEM 관련 규칙 중 일부는 AEM Engineering의 우수 사례를 기반으로 작성되며 [사용자 지정 코드 품질 규칙](/help/using/custom-code-quality-rules.md)이라고 합니다.
 
 >[!NOTE]
->여기에서 [규칙의 전체 목록을 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-AMS.xlsx).
+>여기에서 [규칙의 전체 목록을 다운로드할 수 있습니다](/help/using/assets/CodeQuality-rules-latest-AMS.xlsx).
 
 이 단계의 결과는 *Rating*&#x200B;으로 전달됩니다. 아래 표에는 다양한 테스트 기준에 대한 등급이 요약되어 있습니다.
 
