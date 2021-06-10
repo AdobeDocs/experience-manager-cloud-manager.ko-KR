@@ -10,9 +10,9 @@ topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: 코드 품질 규칙
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
 workflow-type: tm+mt
-source-wordcount: '3654'
+source-wordcount: '3652'
 ht-degree: 0%
 
 ---
@@ -187,32 +187,6 @@ public void orDoThis() {
   }
  
   in.close();
-}
-```
-
-### @ProviderType으로 주석 처리된 제품 API는 고객이 구현하거나 확장하면 안 됩니다 {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
-
-**키**:CQBP-84, CQBP-84-종속성
-
-**유형**:버그
-
-**심각도**:중요
-
-**다음** 이후:버전 2018.7.0
-
-AEM API에는 사용자 지정 코드에 의해서만 사용되지만 구현되지 않는 Java 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 *com.day.cq.wcm.api.Page* 인터페이스는 ***AEM 전용***&#x200B;에 의해 구현되도록 디자인되었습니다.
-
-이러한 인터페이스에 새 메서드를 추가하면 이러한 추가 메서드가 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하는 것은 이전 버전과 호환되는 것으로 간주됩니다. 그러나 사용자 지정 코드 ***이 이러한 인터페이스 중 하나를 구현하는 경우 해당 사용자 지정 코드가 고객에게 이전 버전과의 호환성 위험을 초래했습니다.***
-
-AEM에서 구현하기 위한 인터페이스(및 클래스)에 *org.osgi.annotation.versioning.ProviderType*(또는 경우에 따라 유사한 이전 주석 *aQute.bnd.annotation.ProviderType*)이 주석 처리되었습니다. 이 규칙은 사용자 지정 코드에 의해 인터페이스가 구현되거나 클래스가 확장된 경우를 식별합니다.
-
-#### 비호환 코드 {#non-compliant-code-3}
-
-```java
-import com.day.cq.wcm.api.Page;
-
-public class DontDoThis implements Page {
-// implementation here
 }
 ```
 
@@ -597,6 +571,32 @@ Cloud Manager에서 실행되는 OakPAL 검사 아래에 있습니다.
 >[!NOTE]
 >
 >OakPAL은 AEM 파트너(및 2019 AEM Rockstar North America)에서 개발한 프레임워크로서 독립형 Oak 저장소를 사용하여 컨텐츠 패키지를 검증합니다.
+
+### @ProviderType으로 주석 처리된 제품 API는 고객이 구현하거나 확장하면 안 됩니다 {#product-apis-annotated-with-providertype-should-not-be-implemented-or-extended-by-customers}
+
+**키**:CQBP-84
+
+**유형**:버그
+
+**심각도**:중요
+
+**다음** 이후:버전 2018.7.0
+
+AEM API에는 사용자 지정 코드에 의해서만 사용되지만 구현되지 않는 Java 인터페이스 및 클래스가 포함되어 있습니다. 예를 들어 *com.day.cq.wcm.api.Page* 인터페이스는 ***AEM 전용***&#x200B;에 의해 구현되도록 디자인되었습니다.
+
+이러한 인터페이스에 새 메서드를 추가하면 이러한 추가 메서드가 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으므로 이러한 인터페이스에 새 메서드를 추가하는 것은 이전 버전과 호환되는 것으로 간주됩니다. 그러나 사용자 지정 코드 ***이 이러한 인터페이스 중 하나를 구현하는 경우 해당 사용자 지정 코드가 고객에게 이전 버전과의 호환성 위험을 초래했습니다.***
+
+AEM에서 구현하기 위한 인터페이스(및 클래스)에 *org.osgi.annotation.versioning.ProviderType*(또는 경우에 따라 유사한 이전 주석 *aQute.bnd.annotation.ProviderType*)이 주석 처리되었습니다. 이 규칙은 사용자 지정 코드에 의해 인터페이스가 구현되거나 클래스가 확장된 경우를 식별합니다.
+
+#### 비호환 코드 {#non-compliant-code-3}
+
+```java
+import com.day.cq.wcm.api.Page;
+
+public class DontDoThis implements Page {
+// implementation here
+}
+```
 
 ### 고객 패키지는 /libs {#oakpal-customer-package} 아래에 노드를 만들거나 수정해서는 안 됩니다.
 
