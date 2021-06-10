@@ -2,10 +2,10 @@
 title: 2021.6.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.6.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
-source-git-commit: 5111a918b8063ab576ef587dc3c8d66ad976fc1a
+source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 5%
+source-wordcount: '285'
+ht-degree: 4%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 * 프로젝트를 만드는 동안 및 git 워크플로우 관리를 통한 기본 푸시 명령에 사용된 기본 분기 이름이 `main`(으)로 변경되었습니다.
 
-* UI에서 프로그램 편집 환경을 새로 고쳤습니다.
+* UI에서 프로그램 편집 환경을 새로 고쳤습니다. 자세한 내용은 [프로그램 편집](/help/using/setting-up-program.md#editing-program)을 참조하십시오.
 
 * `/oak:index` 노드를 변경할 수 없는 것으로 분류하도록 품질 규칙 `ImmutableMutableMixCheck`이 업데이트되었습니다.
 
