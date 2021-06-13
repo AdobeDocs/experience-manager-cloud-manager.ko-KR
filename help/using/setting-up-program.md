@@ -5,9 +5,9 @@ description: 온보딩 후에는 비즈니스 소유자가 프로그램의 초�
 seo-description: '온보딩 후에 비즈니스 소유자는 AEM Cloud Manager Adobe의 초기 설정을 수행해야 합니다. 여기에는 프로그램 설명을 설정하고 성능 테스트에 사용할 KPI를 정의하는 작업이 포함됩니다. '
 feature: 시작하기
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
+source-git-commit: 71a6f2709efb9c4c3831deaa1ce89d93e30b775c
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 2%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 2%
 
 1. 프로그램을 업데이트하거나 수정할 수 있는 **프로그램 편집** 화면이 표시됩니다.
 
-   **일반** 탭에서 프로그램 이름과 설명을 업데이트할 수 있습니다.
+   **일반** 탭에서 프로그램 설명을 업데이트할 수 있습니다.
 
    ![](assets/set-up-program/edit-program-general.png)
 
