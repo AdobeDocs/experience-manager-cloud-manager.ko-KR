@@ -2,9 +2,9 @@
 title: 2021.6.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.6.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
-source-git-commit: c39390f34cf4ab6c9b2d5957b169c3c2cb43e6d3
+source-git-commit: 5ddbf718ad01b11dcba5dc2c5d1ab5d3cff2e9a9
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '310'
 ht-degree: 4%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 4%
 
 * `/oak:index` 노드를 변경할 수 없는 것으로 분류하도록 품질 규칙 `ImmutableMutableMixCheck`이 업데이트되었습니다.
 
-* 품질 규칙 `CQBP-84` 및 `CQBP-84--dependencies`이(가) 단일 규칙으로 통합되었습니다.
+* 품질 규칙 `CQBP-84` 및 `CQBP-84--dependencies`이(가) 단일 규칙으로 통합되었습니다. 이 통합의 일부로, 종속성을 스캔하면 AEM 런타임으로 배포되는 타사 종속성의 문제를 보다 정확하게 식별할 수 있습니다.
 
 * 경우에 따라 건너뛴 테스트 지표를 계산하지 않으면 파이프라인 실행이 실패합니다.
 
