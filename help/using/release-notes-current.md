@@ -1,48 +1,42 @@
 ---
-title: 2021.6.0 릴리스 노트
-description: Cloud Manager 릴리스 2021.6.0에 대한 정보를 보려면 이 페이지를 따르십시오
+title: 2021.7.0 릴리스 노트
+description: Cloud Manager 릴리스 2021.7.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
-source-git-commit: 5ddbf718ad01b11dcba5dc2c5d1ab5d3cff2e9a9
+source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 4%
+source-wordcount: '243'
+ht-degree: 6%
 
 ---
 
-# 2021.6.0 릴리스 노트 {#release-notes-for}
+# 2021.7.0 릴리스 노트 {#release-notes-for}
 
-다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2021.6.0에 대한 일반 릴리스 노트를 간략하게 설명합니다.
+다음 섹션에서는 [!UICONTROL Cloud Manager] 릴리스 2021.7.0에 대한 일반 릴리스 노트를 간략하게 설명합니다.
 
 >[!NOTE]
 >AEM as a Cloud Service에서 Cloud Manager에 대한 최신 릴리스 노트를 보려면 [현재 릴리스 노트](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/release-notes-cloud-manager/release-notes-cm-current.html?lang=en#getting-access)를 참조하십시오.
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 버전 2021.6.0의 출시일은 2021년 6월 10일입니다.
-다음 릴리스는 2021년 7월 15일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 버전 2021.7.0의 출시일은 2021년 7월 15일입니다.
+다음 릴리스는 2021년 8월 12일에 예정되어 있습니다.
 
 ## 새로운 기능 {#whats-new}
 
-* 이제 자산 및 사이트 테스트가 병렬(해당되는 경우)로 실행되므로 총 파이프라인 실행 시간이 줄어듭니다. 이 기능은 다음 몇 주 동안 고객에 대해 활성화됩니다.
+* 고객은 이제 Cloud Manager 빌드 프로세스에 Azul 8 및 11개의 JDK를 사용할 수 있으며 이러한 JDK 중 하나를 도구 체인 호환 Maven 플러그인 *또는 전체 Maven 프로세스 실행에 사용하도록 선택할 수 있습니다.*
 
-* 이제 빌드 단계 중에 다운로드한 Maven 종속성이 파이프라인 실행 간에 캐시됩니다. 이 기능은 다음 몇 주 동안 고객에 대해 활성화됩니다.
+* 이제 아웃바운드 송신 IP가 빌드 단계 로그 파일에 기록됩니다.
 
-* 프로젝트를 만드는 동안 및 git 워크플로우 관리를 통한 기본 푸시 명령에 사용된 기본 분기 이름이 `main`(으)로 변경되었습니다.
+* Git 관리 단추가 Git 정보에 대한 액세스 권한을 제거했으며 대화 상자가 시각적으로 새로 고침되었습니다.
 
-* UI에서 프로그램 편집 환경을 새로 고쳤습니다. 자세한 내용은 [프로그램 편집](/help/using/setting-up-program.md#editing-program)을 참조하십시오.
-
-* `/oak:index` 노드를 변경할 수 없는 것으로 분류하도록 품질 규칙 `ImmutableMutableMixCheck`이 업데이트되었습니다.
-
-* 품질 규칙 `CQBP-84` 및 `CQBP-84--dependencies`이(가) 단일 규칙으로 통합되었습니다. 이 통합의 일부로, 종속성을 스캔하면 AEM 런타임으로 배포되는 타사 종속성의 문제를 보다 정확하게 식별할 수 있습니다.
-
-* 경우에 따라 건너뛴 테스트 지표를 계산하지 않으면 파이프라인 실행이 실패합니다.
+* 일부 예기치 않은 토폴로지 재구성으로 인해 파이프라인 실행 세부 정보 페이지에서 더 이상 세부 테스트 보고서를 사용할 수 없게 될 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 루트 요소 이름을 올바르게 구문 분석한 후 새 행을 포함하는 JCR 노드 정의가 있습니다.
+* 존재하지 않는 실행을 위한 실행 세부 사항 페이지로 수동으로 탐색해도 오류가 표시되지 않고 끝없이 로드되는 화면만 표시됩니다.
 
-* 목록 저장소 API는 삭제된 저장소를 필터링하지 않습니다.
+* 경우에 따라 사이트 성능에 사용된 실패한 컨테이너에 대한 자동 재시도는 2시간 동안 적용되지 않아 테스트 오류가 발생합니다.
 
-* 예약 단계에 잘못된 값을 제공한 경우 잘못된 오류 메시지가 표시되었습니다.
+## 알려진 문제 {#known-issues}
 
-* 경우에 따라 파이프라인 실행이 프로덕션 단계에 배포되고 사용자가 실행을 중지하는 경우 UI의 배포 상태 메시지가 실제로 발생하는 사항을 올바르게 반영하지 못했습니다.
+Azul JDK를 사용하도록 전환하는 고객은 Azul JDK에 오류가 없는 모든 기존 애플리케이션이 컴파일되는 것은 아니라는 것을 알고 있어야 합니다. 전환하기 전에 로컬로 테스트하는 것이 좋습니다.
