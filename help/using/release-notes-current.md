@@ -2,9 +2,9 @@
 title: 2021.7.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.7.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
-source-git-commit: ee701dd2d0c3921455a0960cbb6ca9a3ec4793e7
+source-git-commit: 1da4ceef0d89223580800d9018c46aaec51f8927
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '259'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,9 @@ ht-degree: 6%
 
 * 이제 아웃바운드 송신 IP가 빌드 단계 로그 파일에 기록됩니다.
 
-* Git 관리 단추가 Git 정보에 대한 액세스 권한을 제거했으며 대화 상자가 시각적으로 새로 고침되었습니다.
+* **Git** 관리 단추가 **Access Git Info**&#x200B;로 변경되었으며 대화 상자가 시각적으로 새로 고침되었습니다.
+
+* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
 
 * 일부 예기치 않은 토폴로지 재구성으로 인해 파이프라인 실행 세부 정보 페이지에서 더 이상 세부 테스트 보고서를 사용할 수 없게 될 수 있습니다.
 
