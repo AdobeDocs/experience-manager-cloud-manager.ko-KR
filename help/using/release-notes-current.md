@@ -2,10 +2,10 @@
 title: 2021.8.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.8.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
-source-git-commit: 460964e8882a30d9289a25ec7c4162221031b0da
+source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 7%
+source-wordcount: '169'
+ht-degree: 8%
 
 ---
 
@@ -32,7 +32,5 @@ ht-degree: 7%
 * Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
 
 ## 버그 수정 {#bug-fixes}
-
-* *최신* 릴리스가 현재 릴리스보다 작을 경우 Update Available 상태가 표시되지 않아야 합니다.
 
 * 경우에 따라 파이프라인이 두 번 트리거되면 *이(가) 파이프라인 실행 상태* 오류로 인해 실행 중 하나가 실패하는 경우가 있습니다.
