@@ -1,14 +1,14 @@
 ---
-title: Git 액세스
+title: 저장소 액세스
 seo-title: 저장소 액세스
 description: 이 페이지에서는 Git 리포지토리에 액세스하고 관리하는 방법에 대해 설명합니다.
 seo-description: 이 페이지를 따라 Git 리포지토리에 액세스하고 관리하는 방법을 알아봅니다.
 feature: Git 리포지토리
 exl-id: 403fc93d-60fc-4439-8c9d-0a512ca34458
-source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
+source-git-commit: 1d278a47e74ddb50e70dc9d5d29e738a1616768b
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
