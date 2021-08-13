@@ -2,7 +2,7 @@
 title: 2021.8.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.8.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
-source-git-commit: 510c523423a8d7cf9ad4c5ba2af11ff12df2b1cc
+source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 8%
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 * 이제 파이프라인당 Maven 종속성 캐시를 무효화하는 데 사용할 수 있는 API가 있습니다.
 
-* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 28로 업데이트되었습니다.
+* Cloud Manager에서 사용하는 AEM 프로젝트 원형 버전이 버전 29로 업데이트되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
