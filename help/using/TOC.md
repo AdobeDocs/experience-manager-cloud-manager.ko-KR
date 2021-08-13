@@ -8,10 +8,10 @@ user-guide-description: Adobe Managed Services를 사용하여 클라우드에�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: e490a8f1dd17e63f35ed00d4cdf95b6e7a07b150
+source-git-commit: c4deb06615652736ff7584566507a2b42a88bfb1
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 81%
+source-wordcount: '283'
+ht-degree: 79%
 
 ---
 
@@ -53,7 +53,8 @@ ht-degree: 81%
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
 + 코드 {#managing-code} 관리
    + [Maven 프로젝트 버전 처리](activating-maven-project.md)
-   + [Git 액세스](accessing-git.md)
+   + [Cloud Manager의 저장소](cloud-manager-repositories.md)
+   + [저장소 액세스](accessing-repos.md)
    + [Git과 통합](setup-cloud-manager-git-integration.md)
    + [여러 소스 Git 리포지토리 작업](/help/using/working-with-multiple-source-git-repos.md)
 + 제품 업데이트 마법사 {#product-update-wizard}
