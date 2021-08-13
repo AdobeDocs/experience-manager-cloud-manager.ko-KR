@@ -5,7 +5,7 @@ description: Cloud Manager 릴리스 2020.1.0에 대한 정보를 보려면 이 
 seo-description: AEM Cloud Manager 릴리스 2020.1.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: 릴리스 정보
 exl-id: 105e526f-b3c6-49d2-bb4d-d19a5afad6cc
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: f4b0957ce2dda55ad9b0d7a736263bece54d2139
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 9%
@@ -22,7 +22,7 @@ ht-degree: 9%
 
 ## 새로운 기능 {#whats-new}
 
-* 이제 Cloud Manager 사용자 인터페이스 내에서 Git 자격 증명을 가져올 수 있습니다. 자세한 내용은 [Git](/help/using/accessing-git.md) 액세스 를 참조하십시오.
+* 이제 Cloud Manager 사용자 인터페이스 내에서 Git 자격 증명을 가져올 수 있습니다. 자세한 내용은 [Git](accessing-repos.md) 액세스 를 참조하십시오.
 * 로그인 경험 및 URL 구조가 Adobe 전체 이니셔티브의 일부로 변경되었습니다. 이전 책갈피는 새 URL로 리디렉션됩니다.
 
 
