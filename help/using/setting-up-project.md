@@ -3,14 +3,14 @@ title: 프로젝트 설정
 description: 프로젝트를 설정하는 방법을 배우려면 이 페이지를 따르십시오
 feature: 시작하기, 프로덕션 프로그램
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: cf19c7dfd593810779c03c51e08081954f8fc11e
+source-git-commit: 2a253abb98fa096f9f1c07bac94804849fad2ebb
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
 
-# 프로젝트 {#setting-up-your-project} 설정
+# 프로젝트 설정 {#setting-up-your-project}
 
 ## 프로젝트 설정 세부 정보 수정 {#modifying-project-setup-details}
 
@@ -108,7 +108,7 @@ Cloud Manager 빌드 환경 내의 Maven 프로필 활성화는 위에 설명된
 ## 암호로 보호된 Maven 저장소 지원 {#password-protected-maven-repositories}
 
 >[!NOTE]
->암호로 보호된 Maven 저장소의 가공물은 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트를 통해 실행되지 않으므로 매우 신중하게 사용해야 합니다. 따라서 드문 경우와 AEM에 연결되지 않은 코드에만 사용해야 합니다. Java 소스뿐만 아니라 전체 프로젝트 소스 코드도 바이너리와 함께 배포하는 것이 좋습니다.
+>암호로 보호된 Maven 저장소의 가공물은 이 메커니즘을 통해 배포된 코드가 현재 Cloud Manager의 품질 게이트에서 구현된 모든 품질 규칙을 통해 실행되지 않으므로 매우 신중하게 사용해야 합니다. 따라서 드문 경우와 AEM에 연결되지 않은 코드에만 사용해야 합니다. Java 소스뿐만 아니라 전체 프로젝트 소스 코드도 바이너리와 함께 배포하는 것이 좋습니다.
 
 Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면 암호(및 선택적으로 사용자 이름)를 암호 [파이프라인 변수](/help/using/build-environment-details.md#pipeline-variables) 암호로 지정한 다음, git 리포지토리의 `.cloudmanager/maven/settings.xml` 파일 내에서 해당 암호를 참조합니다. 이 파일은 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다. Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소가 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다. `adobe` 및 `cloud-manager` 로 시작하는 서버 ID는 예약된 것으로 간주되므로 사용자 지정 서버에서 사용해서는 안 됩니다. 서버 ID **이 이러한 접두사 중 하나와 일치하지 않거나 기본 ID `central`가 Cloud Manager에 의해 미러링되지 않습니다.** 이 파일이 배치되면 서버 ID는 `pom.xml` 파일 내의 `<repository>` 및/또는 `<pluginRepository>` 요소 내에서 참조됩니다. 일반적으로 이러한 `<repository>` 및/또는 `<pluginRepository>` 요소는 [Cloud Manager 관련 프로필](#activating-maven-profiles-in-cloud-manager) 내에 포함되지만, 반드시 필요한 것은 아닙니다.
 
@@ -177,7 +177,7 @@ Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면
 </profiles>
 ```
 
-### 소스 배포 중 {#deploying-sources}
+### 소스 배포 {#deploying-sources}
 
 바이너리와 함께 Java 소스를 Maven 저장소에 배포하는 것이 좋습니다.
 
@@ -198,7 +198,7 @@ Cloud Manager에서 암호로 보호된 Maven 리포지토리를 사용하려면
         </plugin>
 ```
 
-### 프로젝트 소스 배포 중 {#deploying-project-sources}
+### 프로젝트 소스 배포 {#deploying-project-sources}
 
 이진 파일과 함께 전체 프로젝트 소스를 Maven 저장소에 배포하는 것이 좋습니다. 이렇게 하면 정확한 아티팩트를 다시 빌드할 수 있습니다.
 
