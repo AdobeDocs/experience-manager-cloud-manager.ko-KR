@@ -1,19 +1,19 @@
 ---
 title: 처음 로그인
-seo-title: AEM Cloud Manager에 처음 로그인
+seo-title: First Time Login to Adobe AEM Cloud Manager
 description: 일반 구성을 설정했으며 Cloud Manager를 처음 사용할 준비가 되면 이 페이지를 따르십시오.
-seo-description: 일반 구성을 설정하고 처음 AEM Cloud Manager를 사용할 준비가 되면 이 페이지를 따르십시오.
+seo-description: Follow this page if you have set up your general configurations and you are ready to use Adobe AEM Cloud Manager for the first time.
 uuid: 7c8458a6-6de8-4946-ac0c-fb10bce17a15
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: getting-started
 discoiquuid: 2221d1d5-dbc2-4175-8371-60344f932a82
-feature: 시작하기
+feature: Getting Started
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 9be78d21b455095c1b1bd49cdb267a8aa5624927
+source-git-commit: eea3d82a803e7dcd172ce4c0b3506f952f46ff51
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 3%
+source-wordcount: '201'
+ht-degree: 2%
 
 ---
 
@@ -24,17 +24,17 @@ ht-degree: 3%
 >[!NOTE]
 >[!UICONTROL Cloud Manager]에 할당된 역할과 응용 프로그램의 상태에 따라 [!UICONTROL Cloud Manager] UI를 사용하는 동안 다른 화면이 표시됩니다.
 
-## 처음 {#logging-in-for-the-first-time} 로그인
+## 처음으로 로그인 {#logging-in-for-the-first-time}
 
 1. **Adobe[!UICONTROL Experience Cloud]**&#x200B;에 로그인하면 **프로그램** 목록이 표시됩니다.
 
    ![](assets/screen_shot_2018-06-04at120643pm.png)
 
-1. 프로그램(예: **We.Retail Global**)을 선택하고 왼쪽 상단 아이콘을 클릭하여 [!UICONTROL Cloud Manager]를 엽니다.
+1. 프로그램을 선택합니다(예: **We.Retail Global**). 랜딩 페이지에 프로그램 카드가 표시되면 **..** 사용 가능한 메뉴 옵션을 보려면 다음을 수행하십시오.   **Cloud Manager**&#x200B;를 선택하여 Cloud Manager의 **개요** 페이지로 이동합니다.
 
-   ![](assets/first-timea1.png)
+   ![](assets/navigate-cm1.png)
 
-1. [!UICONTROL Cloud Manager]에 대한 대시보드가 표시됩니다.
+1. Cloud Manager의 **개요** 페이지가 표시됩니다.
 
    ![](assets/FirstLogin1.png)
 
