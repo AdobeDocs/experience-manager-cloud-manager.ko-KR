@@ -1,9 +1,10 @@
 ---
 title: Cloud Manager 저장소
 description: Cloud Manager 저장소
-source-git-commit: 7bda34be143d2d7587e61c09dab642f3419dfad9
+exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
+source-git-commit: 2a1f471f2e4148a424688ab9858c534935c3fe69
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Git 하위 모듈을 사용하여 빌드 시 Git 리포지토리에서 여러 �
 $ git submodule update --init
 ```
 
-이렇게 하면 각 하위 모듈이 해당 디렉토리에 체크 아웃됩니다. 이 기법은 Git 하위 모듈 사용에 익숙하고 외부 병합 프로세스를 관리하지 않으려는 조직의 경우 https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html에 대한 잠재적 대안입니다.
+이렇게 하면 각 하위 모듈이 해당 디렉토리에 체크 아웃됩니다. 이 기법은 Git 하위 모듈을 사용하고 외부 병합 프로세스를 관리하지 않으려는 조직에 대해 여러 소스 Git 리포지토리(](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html))에서 작업하는 [에 대한 잠재적인 대안입니다.
 
 예를 들어, 각각 main 이라는 단일 분기를 포함하는 세 개의 리포지토리가 있다고 가정합니다. &quot;기본&quot; 저장소, 즉 파이프라인에 구성된 저장소에는 다른 두 저장소에 포함된 프로젝트를 선언하는 pom.xml 파일이 있습니다.
 
@@ -101,4 +102,3 @@ Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 * Git URL은 위에서 설명한 구문에서 정확히 일치해야 합니다. 보안상의 이유로 이러한 URL에 자격 증명을 포함하지 마십시오.
 * 분기의 루트에 있는 하위 모듈만 지원됩니다.
 * Git 하위 모듈 참조는 특정 Git 커밋에 저장됩니다. 따라서 하위 모듈 리포지토리를 변경할 때 예를 들어 `git submodule update --remote` 을 사용하여 커밋 참조 를 업데이트해야 합니다.
-
