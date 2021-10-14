@@ -1,28 +1,28 @@
 ---
 title: 코드 배포
-seo-title: 코드 배포
+seo-title: Deploy your Code
 description: Cloud Manager의 배포 프로세스에 대한 개요를 제공합니다
-seo-description: 파이프라인(저장소, 환경 및 테스트 환경)을 구성한 후 코드를 배포하는 방법을 알아봅니다
+seo-description: Learn how to deploy your code once you have configured your pipeline (repository, environment, and testing environment)
 uuid: 4e3807e1-437e-4922-ba48-0bcadf293a99
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
-feature: 코드 배포
+feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 2fcefda1e30871d44e3a1353470a4728904d7598
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 1%
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
 # 코드 배포 {#deploy-your-code}
 
-## Cloud Manager {#deploying-code-with-cloud-manager}와 함께 코드 배포
+## Cloud Manager를 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
 
 >[!NOTE]
->AEM as a Cloud Service으로 Cloud Manager에 대한 코드를 배포하는 방법에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)를 참조하십시오.
+>AEM as a Cloud Service에서 Cloud Manager용 코드를 배포하는 방법에 대한 자세한 내용은 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 프로덕션 파이프라인(저장소, 환경 및 테스트 환경)을 구성했으면 코드를 배포할 준비가 된 것입니다.
 
@@ -50,17 +50,17 @@ ht-degree: 1%
 
    **스테이지 배포**&#x200B;에는 다음 단계가 포함됩니다.
 
-   * 유효성 검사:이 단계에서는 파이프라인이 현재 사용 가능한 리소스(예: 구성된 분기가 존재하며 환경을 사용할 수 있도록 구성됩니다.
-   * 빌드 및 단위 테스트:이 단계에서는 컨테이너화된 빌드 프로세스를 실행합니다. 빌드 환경에 대한 자세한 내용은 [빌드 환경 이해](/help/using/build-environment-details.md)를 참조하십시오.
-   * 코드 스캔:이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](understand-your-test-results.md)를 참조하십시오.
+   * 유효성 검사: 이 단계에서는 파이프라인이 현재 사용 가능한 리소스(예: 구성된 분기가 존재하며 환경을 사용할 수 있도록 구성됩니다.
+   * 빌드 및 단위 테스트: 이 단계에서는 컨테이너화된 빌드 프로세스를 실행합니다. 빌드 환경에 대한 자세한 내용은 [빌드 환경 이해](/help/using/build-environment-details.md)를 참조하십시오.
+   * 코드 스캔: 이 단계에서는 애플리케이션 코드의 품질을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](understand-your-test-results.md)를 참조하십시오.
    * 스테이지에 배포
 
    ![](assets/Stage_Deployment1.png)
 
    **스테이지 테스트**&#x200B;에는 다음 단계가 포함됩니다.
 
-   * 보안 테스트:이 단계는 AEM 환경에 애플리케이션 코드가 미치는 보안 영향을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](understand-your-test-results.md)를 참조하십시오.
-   * 성능 테스트:이 단계에서는 애플리케이션 코드의 성능을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](understand-your-test-results.md)를 참조하십시오.
+   * 보안 테스트: 이 단계는 AEM 환경에 애플리케이션 코드가 미치는 보안 영향을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](understand-your-test-results.md)를 참조하십시오.
+   * 성능 테스트: 이 단계에서는 애플리케이션 코드의 성능을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](understand-your-test-results.md)를 참조하십시오.
 
    ![](assets/Stage_Testing1.png)
 
@@ -164,3 +164,32 @@ AEM 사이트 방문자에 대한 영향을 최소화하기 위해 프로덕션 
 1. AEM 패키지를 배포하여 publish2 및 dispatcher 패키지를 dispatcher2에 동시에 플러시 디스패처 캐시를 배포합니다.
 1. dispatcher2를 로드 밸런서에 다시 넣습니다.
 이 프로세스는 배포가 토폴로지의 모든 게시자 및 디스패처에 도달할 때까지 계속됩니다.
+
+## 긴급 파이프라인 실행 모드 {#emergency-pipeline}
+
+중요한 상황에서 Adobe Managed Services 고객은 전체 Cloud Manager 테스트 주기가 실행될 때까지 기다리지 않고 단계 및 프로덕션 환경에 코드 변경 사항을 배포해야 할 수 있습니다.
+
+이러한 상황을 해결하기 위해 Cloud Manager 프로덕션 파이프라인은 *응급* 모드에서 실행될 수 있습니다. 이 모드를 사용하면 보안 및 성능 테스트 단계가 실행되지 않습니다. 구성된 승인 단계를 포함한 기타 모든 단계는 일반적인 파이프라인 실행 모드에서 실행됩니다.
+
+>[!NOTE]
+>긴급 파이프라인 실행 모드 기능은 고객 성공 엔지니어가 프로그램을 기반으로 활성화됩니다.
+
+### 긴급 파이프라인 실행 모드 사용 {#using-emergency-pipeline}
+
+프로덕션 파이프라인 실행을 시작할 때 이 기능이 활성화되면 아래 그림과 같이 대화 상자에서 일반 모드 또는 긴급 모드로 실행을 시작할 수 있습니다.
+
+![](assets/execution-emergency1.png)
+
+또한 응급 모드에서 실행되기 위한 파이프라인 실행 세부 사항 페이지를 볼 때 화면 상단의 탐색 표시는 이 특정 실행에 긴급 모드 가 사용되었음을 나타냅니다.
+
+![](assets/execution-emergency2.png)
+
+
+이 비상 모드에서 파이프라인 실행을 생성하는 것은 Cloud Manager API 또는 CLI를 통해 수행할 수도 있습니다. 응급 모드에서 실행을 시작하려면 쿼리 매개 변수 `?pipelineExecutionMode=EMERGENCY` 또는 CLI를 사용할 때 파이프라인의 실행 종단점에 PUT 요청을 제출하십시오.
+
+```
+$ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
+```
+
+>[!IMPORTANT]
+>`--emergency` 플래그를 사용하려면 최신 `aio-cli-plugin-cloudmanager` 버전으로 업데이트해야 할 수 있습니다.
