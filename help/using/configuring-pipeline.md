@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: bdbee51ff0a61c2a72ff7ae3a742e2dd817c671a
+source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트
       * **단계 배포 후** 승인 기능은 프로덕션 배포 전 승인과 유사하게 작동하지만 단계 배포 단계 바로 뒤에 발생합니다. 이는 모든 테스트가 완료된 후 수행되는 프로덕션 배포 전 승인 대비 수행되는 테스트 방식입니다.
 
       * **로드 밸런서 건너뛰기**
-   1. 스테이지의 **Dispatcher 구성**&#x200B;을 선택합니다.
+   1. 스테이지의 **Dispatcher 구성**&#x200B;을 선택합니다. 경로를 입력하고 **유형**&#x200B;에서 작업을 선택한 다음 **경로 추가**&#x200B;를 클릭합니다. 환경당 최대 100개의 경로를 지정할 수 있습니다.
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-stage.png)
 
    1. 프로덕션에 대해 **배포 옵션**&#x200B;을 선택합니다. 이제 프로덕션 배포를 제어하는 매개 변수를 정의합니다. 사용 가능한 세 가지 옵션은 다음과 같습니다.
 
@@ -114,7 +116,9 @@ CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트
          >**Scheduled** 옵션이 선택된 경우, 단계 배포(및 **GoLive 승인 사용**)가 활성화된 경우 파이프라인 **에 프로덕션 배포를 예약하여 일정이 설정될 때까지 기다릴 수 있습니다.** 사용자는 프로덕션 배포를 즉시 실행하도록 선택할 수도 있습니다.
          >
          >배포 일정을 설정하거나 프로덕션 즉시 실행하려면 [코드 배포](deploying-code.md)를 참조하십시오.
-   1. 프로덕션에 대해 **Dispatcher 구성**&#x200B;을 설정합니다.
+   1. 프로덕션에 대해 **Dispatcher 구성**&#x200B;을 설정합니다. 경로를 입력하고 **유형**&#x200B;에서 작업을 선택한 다음 **경로 추가**&#x200B;를 클릭합니다. 환경당 최대 100개의 경로를 지정할 수 있습니다.
+
+      ![](/help/using/assets/configure-pipelines/dispatcher-prod.png)
 
       배포 관리자는 파이프라인을 설정하거나 편집하는 동안 게시 인스턴스를 위해 AEM Dispatcher 캐시에서 **무효화** 또는 **플러시된**&#x200B;의 컨텐츠 경로 집합을 구성할 수 있습니다.
 
