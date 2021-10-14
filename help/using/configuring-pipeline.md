@@ -1,27 +1,27 @@
 ---
 title: CI/CD 파이프라인 구성
-seo-title: CI/CD 파이프라인 구성
+seo-title: Configure your CI/CD Pipeline
 description: 이 페이지를 따라 Cloud Manager에서 파이프라인 설정을 구성합니다.
-seo-description: '코드 배포를 시작하기 전에 AEM Cloud Manager에서 파이프라인 설정을 구성해야 합니다. '
+seo-description: Before you start to deploy your code, you must configure your pipeline settings from the AEM Cloud Manager.
 uuid: 35fd56ac-dc9c-4aca-8ad6-36c29c4ec497
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
-feature: CI-CD 파이프라인
+feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1c103b1c43a1e5fe7a6fa27110fc692bba6fb8b2
+source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 1%
+source-wordcount: '1378'
+ht-degree: 0%
 
 ---
 
 # CI/CD 파이프라인 구성 {#configure-your-ci-cd-pipeline}
 
 >[!NOTE]
->AEM에서 Cloud Service으로 Cloud Manager에 대한 CI/CD 파이프라인을 구성하는 방법에 대해 알아보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager)를 참조하십시오.
+>AEM as a Cloud Service에서 Cloud Manager에 대한 CI/CD 파이프라인을 구성하는 방법에 대해 알아보려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en#using-cloud-manager)를 참조하십시오.
 
 다음 페이지에서는 **파이프라인**&#x200B;을 구성하는 방법을 설명합니다. 파이프라인의 작동 방식에 대한 자세한 개념 정보를 검토하려면 [CI/CD 파이프라인 개요](ci-cd-pipeline.md)를 참조하십시오.
 
@@ -179,30 +179,53 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
 
 >[!VIDEO](https://video.tv.adobe.com/v/26316/)
 
+### 비프로덕션 파이프라인 추가 {#add-non-production-pipeline}
+
 홈 화면에서는 이러한 파이프라인이 새 카드에 나열됩니다.
 
-1. Cloud Manager 홈 화면에서 **비프로덕션 파이프라인** 타일에 액세스합니다.
+1. Cloud Manager 홈 화면에서 **파이프라인** 카드에 액세스합니다. **+추가**&#x200B;를 클릭하고 **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
 
-   ![](/help/using/assets/non-prod-add.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
-1. **추가** 단추를 클릭하여 파이프라인 이름, 파이프라인 유형 및 Git 분기를 지정합니다.
+1. **비프로덕션 파이프라인 추가**  대화 상자가 표시됩니다. 만들려는 파이프라인 유형을 **코드 품질 파이프라인** 또는 **배포 파이프라인** 선택합니다.
 
-   또한 파이프라인 옵션에서 배포 트리거 및 중요 실패 동작을 설정할 수도 있습니다.
+   또한 **배포 옵션**&#x200B;에서 **배포 트리거** 및 **중요 실패 동작**&#x200B;을 설정할 수도 있습니다. **계속**&#x200B;을 클릭합니다.
 
-   ![](assets/non-prod-pipe.png)
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add2.png)
 
-1. **저장** 을 클릭하면 파이프라인이 홈 화면의 카드에 5가지 작업과 함께 표시됩니다.
 
-   * **편집**  - 파이프라인 설정을 편집할 수 있습니다.
-   * **세부 사항**  - 마지막 파이프라인 실행이 표시됩니다(있는 경우)
-   * **빌드**  - 파이프라인을 실행할 수 있는 실행 페이지로 이동합니다
-   * **리포지토리 정보에 액세스**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다
+1. 이제 새로 생성된 비프로덕션 파이프라인이 **파이프라인** 카드에 표시됩니다.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-pipeline-add4.png)
+
+
+   파이프라인은 아래와 같이 세 가지 작업이 있는 홈 화면의 카드에 표시됩니다.
+
+   * **추가**  - 새 파이프라인을 추가할 수 있습니다.
+   * **리포지토리 정보에 액세스**  - 사용자가 Cloud Manager Git 리포지토리에 액세스하는 데 필요한 정보를 얻을 수 있습니다.
    * **자세히 알아보기**  - CI/CD 파이프라인 설명서 리소스를 이해합니다.
 
-      ![](assets/prod-one.png)
-   >[!NOTE]
-   >
-   >파이프라인이 실행되는 동안 현재 단계가 표시되고 **세부 정보** 작업만 사용할 수 있습니다.
+### 비프로덕션 파이프라인 편집 {#editing-nonprod-pipeline}
+
+**프로그램 개요** 페이지의 **파이프라인 카드**&#x200B;에서 파이프라인 구성을 편집할 수 있습니다.
+
+구성된 비프로덕션 파이프라인을 편집하려면 아래 절차를 따르십시오.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. 비프로덕션 파이프라인을 선택하고 **... 을 클릭합니다.**. 아래 그림과 같이 **편집**&#x200B;을 클릭합니다.
+
+
+1. **프로덕션 파이프라인 편집** 대화 상자가 표시됩니다.
+
+   1. **구성** 탭에서는 **파이프라인 이름**, **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 업데이트할 수 있습니다.
+
+      >[!NOTE]
+      >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+
+
+1. 비프로덕션 파이프라인의 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
+
 
 ## 다음 단계 {#the-next-steps}
 
