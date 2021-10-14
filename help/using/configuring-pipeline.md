@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
+source-git-commit: e748383fb627ac6ecf69f1b6e313bb5710fbf444
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -215,13 +215,14 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
 
 1. 비프로덕션 파이프라인을 선택하고 **... 을 클릭합니다.**. 아래 그림과 같이 **편집**&#x200B;을 클릭합니다.
 
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit1.png)
 
-1. **프로덕션 파이프라인 편집** 대화 상자가 표시됩니다.
+1. **프로덕션 파이프라인 편집** 대화 상자가 표시되면 **파이프라인 이름**, **저장소**, **Git 분기**, **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 업데이트할 수 있습니다.
 
-   1. **구성** 탭에서는 **파이프라인 이름**, **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 업데이트할 수 있습니다.
+   ![](/help/using/assets/configure-pipelines/non-prod-pipeline-edit2.png)
 
-      >[!NOTE]
-      >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
+   >[!NOTE]
+   >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
 
 
 1. 비프로덕션 파이프라인의 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
