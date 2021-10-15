@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 78a6c939cdb7c4335891e27209b221fc3e6efec2
+source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
@@ -199,6 +199,9 @@ CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트
 
    ![](/help/using/assets/configure-pipelines/prod-delete.png)
 
+   >[!NOTE]
+   >이제 배포 관리자 역할의 사용자는 파이프라인 카드에서 **삭제** 옵션을 통해 셀프 서비스 방식으로 프로덕션 파이프라인을 삭제할 수 있습니다.
+
 ## 비프로덕션 및 코드 품질 전용 파이프라인
 
 스테이징 및 프로덕션에 배포되는 기본 파이프라인 외에도 고객은 **비프로덕션 파이프라인**&#x200B;이라고 하는 추가 파이프라인을 설정할 수 있습니다. 이러한 파이프라인은 항상 빌드 및 코드 품질 단계를 실행합니다. Adobe Managed Services 환경에 선택적으로 배포할 수도 있습니다.
@@ -269,6 +272,28 @@ CI/CD 비프로덕션 파이프라인은 코드 품질 파이프라인 및 배�
 
 
 1. 비프로덕션 파이프라인의 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
+
+### 추가 비프로덕션 파이프라인 작업 {#additional-nonprod-actions}
+
+#### 비프로덕션 파이프라인 실행 {#run-nonprod}
+
+파이프라인 카드에서 프로덕션 파이프라인을 실행할 수 있습니다.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **실행**&#x200B;을 클릭합니다.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-run1.png)
+
+#### 비프로덕션 파이프라인 삭제 {#delete-nonprod}
+
+파이프라인 카드에서 프로덕션 파이프라인을 삭제할 수 있습니다.
+
+1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
+
+1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **삭제**&#x200B;를 클릭합니다.
+
+   ![](/help/using/assets/configure-pipelines/nonprod-delete.png)
 
 
 ## 다음 단계 {#the-next-steps}
