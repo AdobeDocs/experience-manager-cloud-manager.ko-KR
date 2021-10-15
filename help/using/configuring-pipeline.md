@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 1e3dc17d28ab69dcd6b2337280bb38ba07352beb
+source-git-commit: 9509f83f3cecbeaa81543e3c1f8ec33028009e6a
 workflow-type: tm+mt
 source-wordcount: '1834'
 ht-degree: 0%
@@ -25,14 +25,6 @@ ht-degree: 0%
 
 다음 페이지에서는 **파이프라인**&#x200B;을 구성하는 방법을 설명합니다. 파이프라인의 작동 방식에 대한 자세한 개념 정보를 검토하려면 [CI/CD 파이프라인 개요](ci-cd-pipeline.md)를 참조하십시오.
 
-## 비디오 자습서 {#video-tutorial-one}
-
-### Cloud Manager에서 파이프라인 구성 {#config-pipeline-video}
-
-CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개 변수 및 성능 테스트 매개 변수를 정의합니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
-
 
 ## 흐름 이해 {#understanding-the-flow}
 
@@ -43,6 +35,14 @@ CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트
 * 파이프라인을 시작할 트리거를 정의합니다.
 * 프로덕션 배포를 제어하는 매개 변수 정의
 * 성능 테스트 매개 변수 구성
+
+## 비디오 자습서 {#video-tutorial-one}
+
+### Cloud Manager에서 파이프라인 구성 {#config-pipeline-video}
+
+CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트리거, 프로덕션 배포를 제어하는 매개 변수 및 성능 테스트 매개 변수를 정의합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/26314/)
 
 ## 파이프라인 설정 {#setting-up-the-pipeline}
 
@@ -56,7 +56,7 @@ CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트
 >
 >초기 설정 후 파이프라인 설정을 변경할 수 있습니다.
 
-## 파이프라인 카드에서 새 프로덕션 파이프라인 추가 {#adding-production-pipeline}
+### 파이프라인 카드에서 새 프로덕션 파이프라인 추가 {#adding-production-pipeline}
 
 프로그램을 설정하고 [!UICONTROL Cloud Manager] UI를 사용하는 환경이 하나 이상 있으면 프로덕션 파이프라인을 추가할 준비가 된 것입니다.
 
