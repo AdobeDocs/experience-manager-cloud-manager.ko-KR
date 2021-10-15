@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ba6c763a-b78a-439e-8c40-367203a719b3
 feature: CI-CD Pipeline
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: fd172a7168074630e85f3b110e032f783d39ddca
+source-git-commit: 973fec504cd5f35435b10e3d1d28f3ba20ff4ab9
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
@@ -158,29 +158,19 @@ CI/CD 프로덕션 파이프라인 구성은 파이프라인을 시작하는 트
 
 1. **클릭..**&#x200B;파이프라인&#x200B;**카드에서**&#x200B;을 클릭하고 아래 그림과 같이 **편집**&#x200B;을 클릭합니다.
 
+   ![](/help/using/assets/configure-pipelines/edit-prod1.png)
 
 1. **프로덕션 파이프라인 편집** 대화 상자가 표시됩니다.
 
-   1. **구성** 탭에서는 **파이프라인 이름**, **배포 트리거** 및 **중요한 지표 실패 동작**&#x200B;을 업데이트할 수 있습니다.
+   1. **구성** 탭에서는 **파이프라인 이름**, **저장소**, **Git 분기**, **배포 트리거**, **중요한 지표 실패 동작**, **배포 옵션** 및 **Dispatcher 구성** 을 업데이트할 수 있습니다.
 
       >[!NOTE]
       >Cloud Manager에서 저장소를 추가 및 관리하는 방법에 대해 알아보려면 [저장소 추가 및 관리](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md)를 참조하십시오.
 
 
-   1. **소스** 탭에서는 **프로덕션**&#x200B;에 배포하기 전에 일시 중지 및 **프로덕션 배포 옵션**&#x200B;에서 예약된&#x200B;**옵션을 선택하거나 선택 취소할 수 있는 옵션을 제공합니다.**
-
-
-   1. **경험 감사** 옵션을 사용하면 새 페이지를 업데이트하거나 추가할 수 있습니다.
-
+   1. **스테이지 테스트** 탭에서는 **사이트 컨텐츠 전달/분산 로드 가중치** 및 **자산 성능 테스트 배포**&#x200B;에서 옵션을 다시 선택할 수 있는 옵션을 제공합니다.
 
 1. 파이프라인 편집을 완료했으면 **업데이트**&#x200B;를 클릭합니다.
-
-1. **파이프라인 설정** 을 클릭하여 파이프라인을 설정하고 구성합니다.
-
-   ![](assets/Setup-Pipeline.png)
-
-
-
 
 ## 비프로덕션 및 코드 품질 전용 파이프라인
 
