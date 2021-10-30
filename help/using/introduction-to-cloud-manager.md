@@ -1,24 +1,24 @@
 ---
 title: Cloud Manager 소개
-seo-title: Cloud Manager 소개
+seo-title: Introduction to Cloud Manager
 description: '이 페이지는 Cloud Manager 학습 시작점의 역할을 합니다. '
-seo-description: '이 페이지는 Adobe AEM Cloud Manager 학습 시작점의 역할을 하며 이점과 주요 기능을 중점적으로 다룹니다. '
+seo-description: This page serves as a starting point for learning about Adobe AEM Cloud Manager and highlights the benefits and key features.
 uuid: 62d68e79-c2ba-4d8b-ba7d-33709014d5b6
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: introduction
 discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
-feature: 시작하기
+feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 81c14382821de6b2d249000a79799747a6d9cb19
+source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 79%
+source-wordcount: '814'
+ht-degree: 66%
 
 ---
 
-# [!UICONTROL Cloud Manager]{#introduction-to-cloud-manager} 소개
+# [!UICONTROL Cloud Manager] 소개{#introduction-to-cloud-manager}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
@@ -29,22 +29,25 @@ ht-degree: 79%
 
 ## 소개 {#introduction}
 
-[!UICONTROL Cloud Manager]Cloud에서 Adobe Experience Manager(AEM)의 일부인 를 통해 조직에서 자체적으로 클라우드에서 Experience Manager을 관리할 수 있습니다. IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 사용자 지정 내용 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다.
+[!UICONTROL Cloud Manager] Adobe Experience Manager용 는 Adobe Experience Manager 우수 사례를 기반으로 구축된 간소화된 워크플로우를 통해 개발자에게 효과적인 고객 경험을 만들 수 있는 기능을 제공합니다. Adobe Experience Manager에 최적화된 CI/CD 파이프라인을 사용하면 코드를 확인하고 프로덕션 상태로 전환하기만 하면 개발 워크플로우를 쉽게 병합할 수 있습니다. 빌드 단계 동안 사용자 지정 코드 업데이트는 성공적인 디지털 경험을 고객에게 제공하기 위해 시도되고 학습된 모범 사례를 사용하여 철저하게 테스트됩니다. Cloud Manager는 개방형 API 접근 방식을 사용하므로 기존 프로세스 및 도구를 방해하지 않고 시스템과 통합할 수 있습니다.
 
-이 설명서 사이트에서는 AMS(Adobe Managed Services) 고객이 사용할 수 있는 Cloud Manager의 기능과 특징을 구체적으로 설명합니다. AEM as a Cloud Service 고객을 위한 Cloud Manager 기능 및 기능에 대한 설명서는 [AEM용 Cloud Service 구현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en)에서 찾을 수 있습니다.
+이 설명서 사이트에서는 AMS(Adobe Managed Services) 고객을 위한 Cloud Manager의 기능과 특징을 구체적으로 설명합니다. AEM as a Cloud Service 고객을 위한 동등한 설명서는 [AEM as a Cloud Service용 애플리케이션 구현](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html?lang=en).
 
-**조직**&#x200B;에서 [!UICONTROL Cloud Manager]셀프서비스 고객 포털을 이용하여 다음을 수행/활용할 수 있습니다.
+Cloud Manager를 사용하면 개발 팀이 다음을 활용할 수 있습니다.
 
-* 출시 시기를 월/주 단위에서 일/시간 단위로 단축하는 코드 **지속적 통합/지속적 배포**
-* 프로덕션에 투입하기 전에 프로덕션 중단을 최소화하기 위한 우수 사례 기반 **코드 검사, 성능 테스트 및 보안 유효성 검사**
-* 영업시간 외에도 유연성과 제어를 극대화하기 위한 **자동, 예약 또는 수동 배포**
-* 용량 증가 필요성을 지능적으로 탐지하고 추가 디스패처/게시 세그먼트를 자동으로 온라인 상태로 전환하는 **자동 크기 조정** 기능
+* 출시 시기를 월/주 단위에서 일/시간 단위로 단축하는 코드 지속적 통합/지속적 배포
+
+* 프로덕션에 투입하기 전에 프로덕션 중단을 최소화하기 위한 우수 사례 기반 코드 검사, 성능 테스트 및 보안 유효성 검사
+
+* 기존 DevOps 프로세스를 보완하기 위한 API 연결.
+
+* 용량 증가 필요성을 지능적으로 탐지하고 추가 디스패처/게시 세그먼트를 자동으로 온라인 상태로 전환하는 자동 크기 조정 기능
 
 다음은 [!UICONTROL Cloud Manager]에서 사용되는 CI/CD 프로세스 플로우를 보여주는 이미지입니다.
 
 ![](assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL Cloud Manager]의 주요 기능 {#key-features-in-cloud-manager}
+## [!UICONTROL Cloud Manager]의 주요 기능  {#key-features-in-cloud-manager}
 
 조직에서 [!UICONTROL Cloud Manager]를 통해 다음 기능을 이용할 수 있습니다.
 
@@ -54,7 +57,7 @@ ht-degree: 79%
 
 성공적인 배포를 측정하는 기준을 최종적으로 형성하는 애플리케이션별 KPI(주요 성능 지표)인 최대 페이지 보기 횟수 및 페이지 로드 예상 응답 시간을 고객이 정의합니다. 여러 팀 구성원의 역할과 권한을 쉽게 정의할 수 있습니다. 새로운 셀프서비스 인터페이스를 통해 고객이 다시 제어하게 되었지만, 우수 사례 링크와 필요할 때 필요한 지침을 제공할 수 있는 Adobe 내 전문가 액세스도 제공됩니다.
 
-[!UICONTROL Cloud Manager] 의 UI를 살펴보고 시작하려면 [처음 로그인](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html)을 참조하십시오.
+탐색 및 시작하기 [!UICONTROL Cloud Manager]의 UI를 참조하십시오. [처음 로그인](https://helpx.adobe.com/experience-manager/cloud-manager/using/first-time-login.html).
 
 ### CI/CD 파이프라인 {#ci-cd-pipeline}
 
@@ -62,7 +65,7 @@ ht-degree: 79%
 
 [!UICONTROL Cloud Manager] UI를 통해 고객이 CI/CD 파이프라인을 구성하고 시작할 수 있습니다. 이 파이프라인의 처음부터 끝까지 고품질 애플리케이션만 프로덕션 환경에 전달되도록 철저한 코드 검사가 실행됩니다.
 
-[!UICONTROL Cloud Manager] 의 UI에서 파이프라인을 구성하는 방법에 대한 자세한 내용은 [CI/CD 파이프라인 구성](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html)을 참조하십시오.
+파이프라인 구성에 대한 자세한 내용은 [!UICONTROL Cloud Manager]의 UI를 참조하십시오. [CI/CD 파이프라인 구성](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
 
 ### 유연한 배포 모드 {#flexible-deployment-modes}
 
