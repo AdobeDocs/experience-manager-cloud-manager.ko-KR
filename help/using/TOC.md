@@ -8,9 +8,9 @@ user-guide-description: Adobe Managed Services를 사용하여 클라우드에�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: dde991d2dbd02f4b4145f79d67b6d2f1244e5648
+source-git-commit: 0ba21a1223c5cee5d8a46e08f38fc59b5188fd40
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '288'
 ht-degree: 80%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 80%
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](notifications.md)
    + [사용자 지정 코드 품질 규칙](custom-code-quality-rules.md)
-+ 코드 {#managing-code} 관리
++ 코드 관리 {#managing-code}
    + [Maven 프로젝트 버전 처리](activating-maven-project.md)
    + [Cloud Manager의 저장소](cloud-manager-repositories.md)
    + [저장소 액세스](accessing-repos.md)
@@ -61,7 +61,8 @@ ht-degree: 80%
    + [개요](overview-productupdate-wizard.md)
    + [평가](evaluation.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트(2021.10.0)](release-notes-current.md)
+   + [현재 릴리스 노트(2021.11.0)](release-notes-current.md)
+   + [2021.10.0 릴리스 노트](release-notes-2021-10-0.md)
    + [2021.9.0 릴리스 노트](release-notes-2021-9-0.md)
    + [2021.8.0 릴리스 노트](release-notes-2021-8-0.md)
    + [2021.7.0 릴리스 노트](release-notes-2021-7-0.md)
