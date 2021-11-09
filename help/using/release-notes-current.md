@@ -3,14 +3,14 @@ title: 2021.11.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.11.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: e6e5a17c16c42e0b0ed5aedd2f9a6360fd81d8cd
+source-git-commit: 0a8373f9613715f8945f482198710cefd84b169d
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 3%
 
 ---
 
-# 2021.10.0 릴리스 노트 {#release-notes-for}
+# 2021.11.0 릴리스 노트 {#release-notes-for}
 
 다음 섹션에서는 다음에 대한 일반 릴리스 노트를 간략하게 설명합니다 [!UICONTROL Cloud Manager] 릴리스 2021.11.0.
 
