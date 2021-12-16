@@ -1,20 +1,20 @@
 ---
 title: Cloud Manager와 Git 통합
 description: Cloud Manager를 통해 고객 관리(온-프레미스) git 리포지토리의 설정 및 통합을 거치는 비디오 시리즈입니다.
-seo-title: Cloud Manager와 Git 통합
-seo-description: Cloud Manager를 통해 고객 관리(온-프레미스) git 리포지토리의 설정 및 통합을 거치는 비디오 시리즈입니다.
-feature: Git 리포지토리
+seo-title: Git Integration with Adobe Cloud Manager
+seo-description: A video series that walks through the set up and integration of a customer-managed (on-premise) git repository with Adobe Cloud Manager.
+feature: Git Repositories
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 0bc3e775ef2432cdb8d3bd5470953c07c6628148
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 4%
 
 ---
 
 # Cloud Manager와 Git 통합
 
-Adobe Cloud Manager에는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 리포지토리가 제공됩니다. 고객은 Cloud Manager의 git 리포지토리를 즉시 사용할 수 있습니다. 또한 고객은 온-프레미스 또는 **고객 관리** git 리포지토리를 Cloud Manager와 통합할 수 있습니다.
+Adobe Cloud Manager에는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 리포지토리가 제공됩니다. 고객은 Cloud Manager의 git 리포지토리를 즉시 사용할 수 있습니다. 고객은 온-프레미스 또는 을 통합하는 옵션을 사용할 수도 있습니다 **고객 관리** Cloud Manager를 사용한 git 리포지토리.
 
 ## Git 통합 개요
 
@@ -28,7 +28,7 @@ Adobe Cloud Manager에는 Cloud Manager의 CI/CD 파이프라인을 사용하여
 * [프로덕션 배포](#production-deployment)
 * [릴리스 태그 동기화](#sync-tags)
 
-전체 개요를 보려면 [Cloud Manager 사용 안내서](https://docs.adobe.com/content/help/ko-KR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)를 검토하십시오. 이 비디오 시리즈는 Git 및 소스 제어 관리에 대한 기본적인 지식을 제공합니다. git에 대한 자세한 내용은 ](#additional-resources) 아래의 [추가 리소스를 참조하십시오.
+전체 개요를 보려면 [Cloud Manager 사용 안내서.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=ko-KR) 이 비디오 시리즈는 Git 및 소스 제어 관리에 대한 기본적인 지식을 제공합니다. 자세한 내용은 [아래의 추가 리소스](#additional-resources) git에 대한 자세한 내용.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Adobe Cloud Manager에는 Cloud Manager의 CI/CD 파이프라인을 사용하여
 
 ## 기본 분기 전략 {#branching-strategy}
 
-Cloud Manager의 [프로덕션 및 비프로덕션 파이프라인](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)을 활용하려면 기본 분기 전략을 설정하십시오.
+Cloud Manager의 [프로덕션 및 비프로덕션 파이프라인](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -66,7 +66,7 @@ Cloud Manager의 [프로덕션 및 비프로덕션 파이프라인](https://docs
 
 ## 추가 리소스 {#additional-resources}
 
-* [Cloud Manager 설명서](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GitHub 리소스](https://try.github.io)
 * [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials/what-is-version-control)
 * [Git 치트 시트](https://education.github.com/git-cheat-sheet-education.pdf)

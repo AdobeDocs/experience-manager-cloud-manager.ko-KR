@@ -8,9 +8,9 @@ user-guide-description: Adobe Managed Services를 사용하여 클라우드에�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: 0ba21a1223c5cee5d8a46e08f38fc59b5188fd40
+source-git-commit: 53c5aed5e42408ae4503b6003350de3ae1f27edf
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '291'
 ht-degree: 80%
 
 ---
@@ -61,7 +61,8 @@ ht-degree: 80%
    + [개요](overview-productupdate-wizard.md)
    + [평가](evaluation.md)
 + 릴리스 노트 {#release-notes}
-   + [현재 릴리스 노트(2021.11.0)](release-notes-current.md)
+   + [현재 릴리스 노트](release-notes-current.md)
+   + [2021.11.0 릴리스 노트](release-notes-2021-11-0.md)
    + [2021.10.0 릴리스 노트](release-notes-2021-10-0.md)
    + [2021.9.0 릴리스 노트](release-notes-2021-9-0.md)
    + [2021.8.0 릴리스 노트](release-notes-2021-8-0.md)
