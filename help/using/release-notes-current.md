@@ -2,9 +2,10 @@
 title: 2021.12.0 릴리스 노트
 description: Cloud Manager 릴리스 2021.12.0에 대한 릴리스 노트입니다.
 feature: Release Information
-source-git-commit: 910def6d82c09e0220a50a3cb34a61f2c7284cb9
+exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
+source-git-commit: 61f2d1e0882b752d1a1d5e62f9c028aa71941efe
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '265'
 ht-degree: 3%
 
 ---
@@ -30,6 +31,7 @@ ht-degree: 3%
 * 이제 배포 관리자 역할을 가진 사용자는 저장소 페이지의 작업 메뉴에서 분기가 없는 저장소에 대한 프로젝트/분기 생성 마법사를 시작할 수 있습니다.
 * 이제 파이프라인 추가 또는 편집 워크플로우에 있는 배포 관리자에 선택한 저장소에 분기가 없는 경우 분기나 프로젝트를 생성하는 방법에 대한 정보를 제공합니다.
 * 프로덕션 파이프라인 편집 창에서 프로덕션에 대한 스테이지 환경이 두 개 이상 있는 경우 환경 선택에 대한 드롭다운을 사용할 수 있습니다.
+* Cloud Manager에서 사용하는 AEM Project Archetype 버전이 버전 32로 업데이트되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
