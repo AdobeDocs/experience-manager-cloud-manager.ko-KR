@@ -1,15 +1,16 @@
 ---
-title: 2021.3.0 릴리스 노트
+title: 2021.3.0 릴리스 정보
 description: Cloud Manager 릴리스 2021.3.0에 대한 정보를 보려면 이 페이지를 따르십시오
 feature: Release Information
-source-git-commit: 09dd8fe608d95cd9dbc95129cf86b9693c2839b5
+exl-id: e05b22fe-f071-4b69-9db1-e3d7ee4cfbcc
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '231'
 ht-degree: 5%
 
 ---
 
-# 2021.3.0 릴리스 노트 {#release-notes-for}
+# 2021.3.0 릴리스 정보 {#release-notes-for}
 
 다음 섹션에서는 다음에 대한 일반 릴리스 노트를 간략하게 설명합니다 [!UICONTROL Cloud Manager] 릴리스 2021.3.0.
 
@@ -28,7 +29,7 @@ ht-degree: 5%
 
 * 다음 **버전** 레이블의 레이블이 **Git 태그** 를 클릭합니다.
 
-* 중요한 지표가 정의된 임계값을 충족하지 못할 때 동작을 정의하는 레이블을 실제 동작을 반영하도록 레이블을 재지정했습니다. **즉시 취소** 및 **즉시 승인**. 을(를) 참조하십시오. [파이프라인 설정 구성](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#configuring-the-pipeline-settings-from-cloud-manager) 자세한 내용
+* 중요한 지표가 정의된 임계값을 충족하지 못할 때 동작을 정의하는 레이블을 실제 동작을 반영하도록 레이블을 재지정했습니다. **즉시 취소** 및 **즉시 승인**. 문서를 참조하십시오 [프로덕션 파이프라인 구성](configuring-production-pipelines.md) 자세한 내용
 
 * 클래스 및 메서드 사용 중단 목록이 버전을 기준으로 업데이트되었습니다 `2021.3.4997.20210303T022849Z-210225` AEM Cloud Service SDK의 구성 요소 중 하나를 선택합니다.
 

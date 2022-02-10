@@ -1,36 +1,36 @@
 ---
-title: 2019.1.0 릴리스 노트
-seo-title: AEM Cloud Manager 2019.1.0용 릴리스 노트
+title: 2019.1.0 릴리스 정보
+seo-title: AEM Cloud Manager Release Notes for 2019.1.0
 description: Cloud Manager 릴리스 2019.1.0에 대한 정보를 보려면 이 페이지를 따르십시오.
-seo-description: AEM Cloud Manager 릴리스 2019.1.0에 대한 정보를 보려면 이 페이지를 따르십시오.
+seo-description: Follow this page to get information for AEM Cloud Manager Release 2019.1.0.
 uuid: 3af5808f-828f-4846-bee4-1e62194b48ad
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: release-notes
 discoiquuid: 85a1dcf3-2eef-4ba8-b4d1-09e4a88c7bd0
-feature: 릴리스 정보
+feature: Release Information
 exl-id: 383ca5a0-4b0b-48e9-aa48-1d1388875329
-source-git-commit: 43bb3c477ef9c1ce178509b8180479d7616edc66
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 2019.1.0 릴리스 노트 {#release-notes-for}
+# 2019.1.0 릴리스 정보 {#release-notes-for}
 
-[!UICONTROL Cloud Manager] 2018.9.0 릴리스에서는 테스트 AEM Assets 프로그램과 빌드 및 코드 품질 단계를 실행하는 추가 파이프라인 유형을 추가하여 비프로덕션 환경에 선택적으로 배포합니다.
+다음 [!UICONTROL Cloud Manager] 2018.9.0 릴리스에는 AEM Assets 프로그램 테스트 및 빌드 및 코드 품질 단계를 실행하는 추가 파이프라인 유형이 추가되며, 선택적으로 비프로덕션 환경에 배포할 수 있습니다.
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 버전 2019.1.0의 출시일은 2019년 1월 17일입니다.
+에 대한 릴리스 날짜 [!UICONTROL Cloud Manager] 버전 2019.1.0은 2019년 1월 17일입니다.
 
 ## 새로운 기능 {#whats-new}
 
-* AEM Assets의 성능 테스트에 대한 지원이 추가되었습니다. 자세한 내용은 [CI/CD 파이프라인 구성](configuring-pipeline.md)을 참조하십시오.
-* 비프로덕션 환경에 배포하는 빌드 및 코드 품질 단계와 파이프라인만 실행하는 파이프라인에 대한 지원이 추가되었습니다. 자세한 내용은 [CI/CD 파이프라인 구성](configuring-pipeline.md)에서 **비프로덕션 및 코드 품질 전용 파이프라인** 섹션을 참조하십시오.
+* AEM Assets의 성능 테스트에 대한 지원이 추가되었습니다. 문서를 참조하십시오 [프로덕션 파이프라인 구성](configuring-production-pipelines.md) 추가 정보
+* 비프로덕션 환경에 배포하는 빌드 및 코드 품질 단계와 파이프라인만 실행하는 파이프라인에 대한 지원이 추가되었습니다. 문서를 참조하십시오 [비프로덕션 파이프라인 구성](configuring-non-production-pipelines.md) 추가 정보
 * 빌드 환경에서 사용자 지정 환경 변수에 대한 지원을 추가했습니다.
-* 여러 단계 또는 프로덕션 환경을 사용하는 고객의 경우 프로덕션 파이프라인의 일부로 배포될 환경 선택을 [CI/CD 파이프라인 구성](configuring-pipeline.md) 페이지에서 사용할 수 있습니다.
+* 여러 단계 또는 프로덕션 환경을 사용하는 고객의 경우 프로덕션 파이프라인의 일부로 이 환경에 배포될 환경을 선택할 수 있습니다. 문서를 참조하십시오 [프로덕션 파이프라인 구성](configuring-production-pipelines.md) 추가 정보
 * httxt2dbm이 빌드 컨테이너에 추가되었습니다.
 * 모든 도움말 메뉴 항목에서 새 탭을 엽니다.
 
@@ -48,4 +48,4 @@ ht-degree: 4%
 
 ## 알려진 문제 {#known-issues}
 
-* Assets, KPI가 설정되지 않은 사이트가 있는 프로그램을 열면 모든 사용자는 **설정 프로그램** 버튼을 사용하여 작업 카드에 대한 호출을 볼 수 있습니다. 그러나 비즈니스 소유자 역할의 사용자만 실제로 **설치 프로그램** 단추를 클릭할 수 있습니다.
+* Assets, KPI가 설정되지 않은 사이트가 있는 프로그램을 열면 모든 사용자는 **설치 프로그램** 버튼을 클릭합니다. 하지만 비즈니스 소유자 역할의 사용자만 실제로 **설치 프로그램** 버튼을 클릭합니다.

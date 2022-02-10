@@ -8,10 +8,10 @@ user-guide-description: Adobe Managed Services를 사용하여 클라우드에�
 feature-set: Experience Manager Cloud Manager, Experience Manager
 role: Admin
 level: Intermediate
-source-git-commit: e3f0759437707f73dfc6851608e06e30064c0f16
+source-git-commit: 4f0e1d163001fd18cfa838256c813152d65c3b4c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,10 @@ ht-degree: 91%
    + [릴리스 분기 구성](configure-your-release-branches.md)
    + [디스패처 구성 관리](dispatcher-configurations.md)
 + 사용 방법 {#how-to-use}
-   + [CI/CD 파이프라인 구성](configuring-pipeline.md)
+   + CI/CD 파이프라인 {#pipelines}
+      + [프로덕션 파이프라인 구성](configuring-production-pipelines.md)
+      + [비프로덕션 파이프라인 구성](configuring-non-production-pipelines.md)
+      + [파이프라인 관리](managing-pipelines.md)
    + [코드 배포](deploying-code.md)
    + [테스트 결과 이해](understand-your-test-results.md)
    + [환경 관리](manage-your-environment.md)
@@ -62,6 +65,7 @@ ht-degree: 91%
    + [평가](evaluation.md)
 + 릴리스 정보 {#release-notes}
    + [최신 릴리스 정보](release-notes-current.md)
+   + [2022.1.0 릴리스 정보](release-notes-2022-1-0.md)
    + [2021.12.0 릴리스 정보](release-notes-2021-12-0.md)
    + [2021.11.0 릴리스 정보](release-notes-2021-11-0.md)
    + [2021.10.0 릴리스 정보](release-notes-2021-10-0.md)

@@ -11,10 +11,10 @@ discoiquuid: ebcc91a5-be9e-4684-8146-d88f4013d4d1
 feature: Getting Started
 level: Beginner
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 08d831c560510d58062ed81fab809c12169810cb
+source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 66%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,7 @@ Cloud Manager를 사용하면 개발 팀이 다음을 활용할 수 있습니다
 
 [!UICONTROL Cloud Manager] UI를 통해 고객이 CI/CD 파이프라인을 구성하고 시작할 수 있습니다. 이 파이프라인의 처음부터 끝까지 고품질 애플리케이션만 프로덕션 환경에 전달되도록 철저한 코드 검사가 실행됩니다.
 
-파이프라인 구성에 대한 자세한 내용은 [!UICONTROL Cloud Manager]의 UI를 참조하십시오. [CI/CD 파이프라인 구성](https://helpx.adobe.com/experience-manager/cloud-manager/using/configuring-pipeline.html).
+파이프라인 구성에 대한 자세한 내용은 [!UICONTROL Cloud Manager]의 UI에서 문서를 참조하십시오 [프로덕션 파이프라인 구성](configuring-production-pipelines.md) 및 [비프로덕션 파이프라인 구성.](configuring-non-production-pipelines.md)
 
 ### 유연한 배포 모드 {#flexible-deployment-modes}
 
