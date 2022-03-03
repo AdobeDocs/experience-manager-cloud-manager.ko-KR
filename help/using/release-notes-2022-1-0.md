@@ -1,17 +1,18 @@
 ---
-title: 2022.01.0 릴리스 정보
-description: Cloud Manager 릴리스 2022.01.0에 대한 릴리스 노트입니다.
+title: 2022.1.0 릴리스 정보
+description: Cloud Manager 릴리스 2022.1.0의 릴리스 노트입니다.
 feature: Release Information
-source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
+exl-id: 9cc40326-cb8e-415f-b2ad-937d42189ee3
+source-git-commit: 797731ff0f9a499fe359d2e4e6044877fdcac702
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 29%
+ht-degree: 24%
 
 ---
 
-# Cloud Manager 릴리스 2021.12.0 릴리스 노트 {#release-notes}
+# Cloud Manager 릴리스 2022.1.0 릴리스 노트 {#release-notes}
 
-다음 섹션에서는 다음에 대한 일반 릴리스 노트를 간략하게 설명합니다 [!UICONTROL Cloud Manager] 릴리스 2022.01.0.
+다음 섹션에서는 다음에 대한 일반 릴리스 노트를 간략하게 설명합니다 [!UICONTROL Cloud Manager] 릴리스 2022.1.0.
 
 >[!NOTE]
 >
@@ -19,12 +20,12 @@ ht-degree: 29%
 
 ## 릴리스 날짜 {#release-date}
 
-에 대한 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2022.01.0은 2022년 1월 20일입니다. 다음 릴리스는 2022년 2월 10일에 예정되어 있습니다.
+에 대한 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2022.1.0은 2022년 1월 20일입니다. 다음 릴리스는 2022년 2월 10일에 예정되어 있습니다.
 
 ## 새로운 기능 {#whats-new}
 
 * Cloud Manager가 [동일한 git 커밋이 사용됨을 감지하면 코드 베이스를 다시 빌드하지 마십시오](/help/using/setting-up-project.md#build-artifact-reuse) 여러 전체 스택 파이프라인 실행에서.
-* Git 비밀번호 생성 시 만료 날짜가 표시됩니다.
+* Git 암호 생성 시 만료 날짜가 표시됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
