@@ -2,13 +2,13 @@
 title: 2022.2.0 릴리스 정보
 description: Cloud Manager 릴리스 2022.2.0에 대한 릴리스 노트입니다.
 feature: Release Information
-source-git-commit: 845724c9dec08c043aa305a5c9591d315995cbe7
+exl-id: c13ee200-197e-4855-a08c-99d36b471bb6
+source-git-commit: d074bc1af7e681377ec5b961db23f0bde5d1aaca
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '139'
 ht-degree: 6%
 
 ---
-
 
 # Cloud Manager 릴리스 2022.2.0의 릴리스 노트 {#release-notes}
 
@@ -24,7 +24,10 @@ ht-degree: 6%
 
 ## 새로운 기능 {#whats-new}
 
-* 새로 고친 Cloud Manager 랜딩 페이지 환경을 통해 탐색 기능이 향상되고, 그리드/타일 보기 및 팝오버를 간편하게 전환하여 빠른 프로그램 요약을 볼 수 있습니다.
+2월 릴리스의 새로운 기능:
+
+* (Cloud Service 전용) AEM 환경 로그에 액세스하는 작업은 개발자 역할을 사용하여 수행할 수 있습니다.
+* 이제 신뢰성_rating 중요 지표를 비활성화할 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 
