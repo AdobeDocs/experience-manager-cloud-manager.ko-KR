@@ -3,7 +3,7 @@ title: 2022.3.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2022.3.0의 릴리스 노트입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 6e98f9d2fcd69799bad86d1e247212b26273bd0b
+source-git-commit: 0d14adda454889eebbb0a875978ceeaa5ee4f7ea
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 4%
@@ -25,8 +25,9 @@ ht-degree: 4%
 
 ## 새로운 기능 {#what-is-new}
 
-* [다음 `reliability_rating` 중요 지표](understand-your-test-results.md) 이 비활성화되었습니다.
-* 이제 사용자가 **파이프라인** 페이지를 Cloud Manager에 추가합니다.
+* (Cloud Service 전용) AEM 환경 로그에 액세스하는 작업은 개발자 역할을 사용하여 수행할 수 있습니다.
+* 다음 [`reliability_rating` 중요 지표](understand-your-test-results.md) 이 비활성화되었습니다.
+
 
 ## 버그 수정 {#bug-fixes}
 
