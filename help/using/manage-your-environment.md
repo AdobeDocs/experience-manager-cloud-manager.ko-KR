@@ -1,28 +1,28 @@
 ---
 title: 환경 관리
-seo-title: 환경 관리
+seo-title: Manage your Environments
 description: Cloud Manager 환경에 대해 알아보기
-seo-description: Cloud Manager에서 CI/CD 파이프라인을 설정하고 실행하는 데 사용되는 프로덕션 및 비프로덕션 환경 목록을 보려면 이 페이지를 따르십시오.
+seo-description: Follow this page to view the list of production and non-production environments that are used for setting up and running the CI/CD pipeline in Cloud Manager.
 uuid: 04e67572-11db-4d5d-acf3-fd7f644a95f0
 contentOwner: jsyal
 products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
 topic-tags: using
 discoiquuid: c5b39de2-3a9b-437f-98e8-e6e6249a5b3a
-feature: 환경
+feature: Environments
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: df2f598f91201d362f54b17e4092ff6bd6a72cec
+source-git-commit: 6ff704ec11dd4a5f73d5b5df5721c4fee649527b
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 3%
+source-wordcount: '280'
+ht-degree: 6%
 
 ---
 
 # 환경 관리 {#manage-your-environments}
 
 >[!NOTE]
->AEM as a Cloud Service으로 Cloud Manager에 대한 환경 관리에 대해 알려면 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=en#using-cloud-manager)를 참조하십시오.
+>AEM as a Cloud Service에서 Cloud Manager의 환경 관리에 대해 알아보려면 다음을 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=ko-kr#using-cloud-manager).
 
-Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경을 나열하는 **환경** 타일이 포함되어 있습니다.
+다음 **개요** Cloud Manager의 페이지에는 **환경** 관리되는 모든 AEM 환경을 나열하는 타일입니다.
 
 나열된 각 환경에 연결된 상태가 표시됩니다.
 
@@ -36,9 +36,9 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경을 �
 
 >[!VIDEO](https://video.tv.adobe.com/v/26318/)
 
-## Cloud Manager {#accessing-environments-in-cloud-manager} 의 환경에 액세스
+## Cloud Manager에서 환경 액세스 {#accessing-environments-in-cloud-manager}
 
-**환경** 타일에는 프로그램에서 제공된 프로덕션 및 스테이지 환경이 상태와 함께 표시됩니다.
+다음 **환경** 타일은 프로그램에서 제공된 프로덕션 및 스테이지 환경과 상태를 표시합니다.
 
 상태는 환경의 노드에 걸쳐 롤업된 전원 상태입니다. 모든 노드가 실행 중이면 녹색이고, 한 노드가 중지되더라도 빨간색, 한 노드가 작동 중이면 파란색으로 표시되고, 한 노드가 작동 가능하지 않으면 노랑으로 표시됩니다(이 우선 순위 순서로).
 
@@ -46,12 +46,16 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경을 �
 
 ### 환경 {#environments}
 
-**관리** 를 클릭하여 **환경** 화면을 표시합니다.
+클릭 **관리** 를 **환경** 화면.
 
-**환경** 화면에는 프로그램에서 *프로덕션* 및 *스테이지* 환경(해당하는 경우)에 대해 각각 카드가 표시됩니다. 환경 이름이 각 카드 위에 표시됩니다. 이 카드에는 CPU, 스토리지, 영역 및 상태와 함께 환경의 노드 테이블이 포함됩니다.
+다음 **환경** 화면에는 다음에 대한 카드가 각각 표시됩니다 *프로덕션* 및 *단계* 환경(해당하는 경우)을 사용하십시오. 환경 이름이 각 카드 위에 표시됩니다. 이 카드에는 CPU, 스토리지, 영역 및 상태와 함께 환경의 노드 테이블이 포함됩니다.
 
 >[!NOTE]
 >
->노드의 **STATUS**&#x200B;는 VM의 전원 상태를 나타내며 서버의 AEM 상태를 반영하지 않습니다. 상태는 **실행**(녹색 원), **중지됨**(빨간색 원), **다가오기**(파란색 원) 또는 **사용할 수 없음**(노란색 원)일 수 있습니다.
+>다음 **상태** 노드의 전원 상태는 VM의 전원 상태를 나타내며 서버의 AEM 상태를 반영하지 않습니다. 상태는 **실행 중** (녹색 원), **중지됨** (빨간색 원), **준비 중** (파란색 원) 또는 **사용할 수 없음** (노란색 원)
 
 ![](assets/Environments-tab.png)
+
+>[!NOTE]
+>
+>환경 로그가 필요한 경우 고객 성공 엔지니어를 통해 요청할 수 있습니다.
