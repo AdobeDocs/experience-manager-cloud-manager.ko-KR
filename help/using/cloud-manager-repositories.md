@@ -2,7 +2,7 @@
 title: Cloud Manager 저장소
 description: Cloud Manager 저장소
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 17f79fdc7278cae532485570a6e2b8700683ef0d
+source-git-commit: 280d760766cf445e609b865f827c01b4ab1db69c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -17,9 +17,9 @@ Cloud Manager에서 생성 및 사용 가능한 리포지토리는 저장소 페
 
 Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르십시오.
 
-1. **프로그램 개요** 페이지에서 **저장소** 탭을 클릭하고 **저장소** 페이지로 이동합니다.
+1. 에서 **프로그램 개요** 페이지를 클릭합니다. **저장소** 탭을 클릭하고 **저장소** 페이지.
 
-1. **저장소 추가**&#x200B;를 클릭하여 마법사를 시작합니다.
+1. 클릭 **저장소 추가** 마법사를 시작하려면 다음을 수행하십시오.
 
    >[!NOTE]
    >저장소를 추가하려면 배포 관리자 또는 비즈니스 소유자 역할의 사용자가 로그인해야 합니다.
@@ -27,7 +27,7 @@ Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르�
    ![](assets/create-repo2.png)
 
 
-1. 원하는 이름과 설명을 입력하고 **저장**&#x200B;을 클릭합니다.
+1. 원하는 이름과 설명을 입력하고 을(를) 클릭합니다 **저장**.
 
    ![](assets/repo-1.png)
 
@@ -38,7 +38,7 @@ Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르�
    >[!NOTE]
    >Cloud Manager에서 만든 리포지토리는 추가 또는 편집 단계 중에 선택할 수도 있습니다.
 
-1. 아래 그림과 같이 리포지토리를 선택하고 테이블의 맨 오른쪽에 있는 메뉴 옵션을 클릭하여 **저장소 URL 복사**, **보기 및 업데이트** 또는 **저장소 삭제**&#x200B;를 클릭할 수 있습니다.
+1. 리포지토리를 선택하고 테이블의 맨 오른쪽에 있는 메뉴 옵션을 클릭하여 **저장소 URL 복사**, **보기 및 업데이트** 또는 **삭제** 아래 그림과 같이 저장소입니다.
 
    ![](assets/create-repo3.png)
 
@@ -46,13 +46,13 @@ Cloud Manager에서 저장소를 보고 관리하려면 아래 단계를 따르�
 
 ## Git 하위 모듈 지원 {#git-submodule-support}
 
-Git 하위 모듈을 사용하여 빌드 시 Git 리포지토리에서 여러 분기의 콘텐츠를 병합할 수 있습니다. Cloud Manager의 빌드 프로세스가 실행되면 파이프라인에 대해 구성된 리포지토리를 복제하고 구성된 분기를 체크 아웃한 후 분기에 루트 디렉토리에 `.gitmodules` 파일이 있는 경우 명령이 실행됩니다.
+Git 하위 모듈을 사용하여 빌드 시 Git 리포지토리에서 여러 분기의 콘텐츠를 병합할 수 있습니다. Cloud Manager의 빌드 프로세스가 실행될 때 분기에 가 포함되어 있으면 파이프라인에 대해 구성된 리포지토리를 복제하고 구성된 분기를 체크 아웃한 후 `.gitmodules` 루트 디렉토리에 있는 파일에서 명령이 실행됩니다.
 
 ```
 $ git submodule update --init
 ```
 
-이렇게 하면 각 하위 모듈이 해당 디렉토리에 체크 아웃됩니다. 이 기법은 Git 하위 모듈을 사용하고 외부 병합 프로세스를 관리하지 않으려는 조직에 대해 여러 소스 Git 리포지토리(](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/working-with-multiple-source-git-repositories.html))에서 작업하는 [에 대한 잠재적인 대안입니다.
+이렇게 하면 각 하위 모듈이 해당 디렉토리에 체크 아웃됩니다. 이 기술은 [여러 소스 Git 리포지토리 작업](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/working-with-multiple-source-git-repos.html) git 하위 모듈 사용에 익숙하며 외부 병합 프로세스를 관리하지 않으려는 조직의 경우.
 
 예를 들어, 각각 main 이라는 단일 분기를 포함하는 세 개의 리포지토리가 있다고 가정합니다. &quot;기본&quot; 저장소, 즉 파이프라인에 구성된 저장소에는 다른 두 저장소에 포함된 프로젝트를 선언하는 pom.xml 파일이 있습니다.
 
@@ -82,7 +82,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/projectB/ project-b
 ```
 
-이렇게 하면 다음과 같은 `.gitmodules` 파일이 생성됩니다.
+이 경우 `.gitmodules` 파일 형식:
 
 ```
 [submodule "project-a"]
@@ -95,11 +95,11 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
     branch = main
 ```
 
-Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서](https://git-scm.com/book/en/v2/Git-Tools-Submodules)에서 확인할 수 있습니다.
+Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 
 * Git URL은 위에서 설명한 구문에서 정확히 일치해야 합니다. 보안상의 이유로 이러한 URL에 자격 증명을 포함하지 마십시오.
 * 분기의 루트에 있는 하위 모듈만 지원됩니다.
-* Git 하위 모듈 참조는 특정 Git 커밋에 저장됩니다. 따라서 하위 모듈 리포지토리를 변경할 때 예를 들어 `git submodule update --remote` 을 사용하여 커밋 참조 사항을 업데이트해야 합니다.
-* 별도로 필요하지 않는 한 &quot;얕은&quot; 하위 모듈을 사용하는 것이 좋습니다. 이렇게 하려면 각 하위 모듈에 대해 `git config -f .gitmodules submodule.<submodule path>.shallow true` 을 실행하십시오.
+* Git 하위 모듈 참조는 특정 Git 커밋에 저장됩니다. 따라서 하위 모듈 리포지토리를 변경할 때 예를 들어, 를 사용하여 커밋 참조 사항을 업데이트해야 합니다 `git submodule update --remote`.
+* 별도로 필요하지 않는 한 &quot;얕은&quot; 하위 모듈을 사용하는 것이 좋습니다. 이렇게 하려면 를 실행합니다. `git config -f .gitmodules submodule.<submodule path>.shallow true` 각 하위 모듈용.
