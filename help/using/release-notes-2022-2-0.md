@@ -3,10 +3,10 @@ title: 2022.2.0 릴리스 정보
 description: Cloud Manager 릴리스 2022.2.0에 대한 릴리스 노트입니다.
 feature: Release Information
 exl-id: c13ee200-197e-4855-a08c-99d36b471bb6
-source-git-commit: d074bc1af7e681377ec5b961db23f0bde5d1aaca
+source-git-commit: 0ddfd152cb15731882d198d043dd8897b5073ab4
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 6%
+source-wordcount: '136'
+ht-degree: 22%
 
 ---
 
@@ -26,10 +26,10 @@ ht-degree: 6%
 
 2월 릴리스의 새로운 기능:
 
-* (Cloud Service 전용) AEM 환경 로그에 액세스하는 작업은 개발자 역할을 사용하여 수행할 수 있습니다.
+* AEM 환경 로그에 액세스하는 작업은 개발자 역할을 사용하여 수행할 수 있습니다.
 * 이제 신뢰성_rating 중요 지표를 비활성화할 수 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 
 * 이제 롤백 실행은 전체 스택 파이프라인 실행과 적절히 구별됩니다.
-* 새 암호가 생성되면 이전 Git 리포지토리 암호가 항상 무효화됩니다.
+* 새 암호가 생성되면 이제 기존 Git 저장소 암호는 항상 무효화됩니다.
