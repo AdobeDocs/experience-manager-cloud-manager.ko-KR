@@ -10,9 +10,9 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 0ba7c49b3550666030249562219b2d0dc51f4ae1
+source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1615'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,6 @@ AEM 사이트 방문자에 대한 영향을 최소화하기 위해 프로덕션 
 
 ![](assets/execution-emergency2.png)
 
-
 이 비상 모드에서 파이프라인 실행을 생성하는 것은 Cloud Manager API 또는 CLI를 통해 수행할 수도 있습니다. 응급 모드에서 실행을 시작하려면 쿼리 매개 변수를 사용하여 파이프라인의 실행 종단점에 PUT 요청을 제출하십시오 `?pipelineExecutionMode=EMERGENCY` 또는 CLI를 사용하는 경우
 
 ```
@@ -193,3 +192,73 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 >[!IMPORTANT]
 >사용 `--emergency` 플래그를 최신 버전으로 업데이트해야 할 수 있습니다. `aio-cli-plugin-cloudmanager` 버전.
+
+## 프로덕션 배포 재실행 {#Reexecute-Deployment}
+
+프로덕션 배포 단계의 재실행은 프로덕션 배포 단계가 완료된 실행에 대해 지원됩니다. 완료 유형은 중요하지 않습니다. 배포가 성공했거나(AMS 프로그램에만 해당) 취소되었거나 실패했습니다. 즉, 기본 사용 사례는 일시적인 이유로 프로덕션 배포 단계가 실패한 경우일 것입니다. 다시 실행하면 동일한 파이프라인을 사용하여 새 실행이 생성됩니다. 이 새 실행은 다음 세 단계로 구성됩니다.
+
+1. 유효성 검사 단계 - 이는 기본적으로 일반적인 파이프라인 실행 중에 발생하는 것과 동일한 유효성 검사입니다.
+1. 빌드 단계 - 재실행 컨텍스트에서 빌드 단계는 새 빌드 프로세스를 실제로 실행하는 것이 아니라 아티팩트를 복사하는 것입니다.
+1. 프로덕션 배포 단계 - 일반적인 파이프라인 실행에서 프로덕션 배포 단계와 동일한 구성 및 옵션을 사용합니다.
+
+빌드 단계는 아티팩트를 다시 빌드하지 않고 복사하는 것임을 반영하도록 UI에서 약간 다르게 레이블이 지정될 수 있습니다.
+
+![](assets/Re-deploy.png)
+
+제한 사항:
+
+* 프로덕션 배포 단계를 다시 실행하는 것은 마지막 실행에서만 사용할 수 있습니다.
+* 롤백 실행에는 다시 실행할 수 없습니다.
+* 마지막 실행이 롤백 실행인 경우 재실행할 수 없습니다.
+* 마지막 실행이 푸시 업데이트 실행인 경우 다시 실행할 수 없습니다.
+* 프로덕션 배포 단계 이전의 어느 시점에서 마지막 실행이 실패한 경우 다시 실행할 수 없습니다.
+
+### API 재실행 {#Reexecute-API}
+
+### 재실행 실행 실행 식별
+
+실행이 재실행 실행인지 확인하기 위해 트리거 필드를 검사할 수 있습니다. 값은 다음과 같습니다 *RE_EXECUTE*.
+
+### 새 실행 트리거
+
+재실행을 트리거하려면 HAL 링크 &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> 를 클릭하여 제품에서 사용할 수 있습니다. 이 링크가 있으면 해당 단계에서 실행을 다시 시작할 수 있습니다. 없는 경우 해당 단계에서 실행을 다시 시작할 수 없습니다. 초기 릴리스에서는 이 링크가 프로덕션 배포 단계에만 존재하지만 이후 릴리스에서는 다른 단계에서 파이프라인을 시작할 수 있습니다. 예:
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+HAL 링크의 구문 *href*  위의 값은 참조 지점으로 사용되지 않습니다. 실제 값은 항상 HAL 링크에서 읽어야 하며 생성되지 않습니다.
+
+제출 *PUT* 이 종단점에 대한 요청은 결과를 생성합니다. *201년* 응답이 성공하면 응답 본문이 새 실행을 나타냅니다. 이는 API를 통해 일반 실행을 시작하는 것과 비슷합니다.
