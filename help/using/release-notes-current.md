@@ -3,10 +3,10 @@ title: 2022.5.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2022.5.0의 릴리스 노트입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: d183e470db271bde0b5725f93b2a7bf97f00a89d
+source-git-commit: f2b8670baa81e0ddb1ef374d42d6b3192299c1e9
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 6%
+source-wordcount: '126'
+ht-degree: 7%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 6%
 
 ## 새로운 기능 {#what-is-new}
 
-* 환경 페이지에는 AEM 버전의 환경을 표시하는 열이 있습니다.
 * 이제 파이프라인 실행에서 실행 화면에 UI 최상위 수준 오류가 표시됩니다.
 * B/G 구성에 대한 일시 중지를 포함하도록 기본 구성을 업데이트했습니다.
 
