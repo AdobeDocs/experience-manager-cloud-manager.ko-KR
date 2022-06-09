@@ -1,19 +1,19 @@
 ---
-title: 2022.5.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2022.5.0의 릴리스 노트입니다.
+title: 2022.6.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2022.6.0의 릴리스 노트입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: dc28bbacfe86a68f416a525d386a2d8d1c1b0190
+source-git-commit: 844aa7c697c793af05766048ef4263a1bba87c94
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 6%
 
 ---
 
 
-# Cloud Manager 릴리스 2022.5.0의 릴리스 노트 {#release-notes}
+# Cloud Manager 릴리스 2022.6.0의 릴리스 노트 {#release-notes}
 
-이 페이지에서는 다음에 대한 릴리스 노트를 문서화합니다 [!UICONTROL Cloud Manager] 릴리스 2022.5.0.
+이 페이지에서는 다음에 대한 릴리스 노트를 문서화합니다 [!UICONTROL Cloud Manager] 릴리스 2022.6.0.
 
 >[!NOTE]
 >
@@ -21,15 +21,12 @@ ht-degree: 6%
 
 ## 릴리스 날짜 {#release-date}
 
-에 대한 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2022.5.0은 2022년 5월 5일입니다. 다음 릴리스는 2022년 6월 9일에 예정되어 있습니다.
+에 대한 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2022.6.0은 2022년 6월 9일입니다. 다음 릴리스는 2022년 6월 30일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 파이프라인 실행에서 실행 화면에 UI 최상위 수준 오류가 표시됩니다.
-* B/G 구성에 대한 일시 중지를 포함하도록 기본 구성을 업데이트했습니다.
-* Cloud Manager UI를 통해 프로덕션 배포 단계를 다시 실행합니다.
+* Cloud Manager 랜딩 페이지의 새로운 시작 카드를 통해 사용자는 임차인과 관련된 온보딩 자습서 및 진행 지표에 빠르게 액세스할 수 있습니다.
+   * 이 기능은 2022.06.0 릴리스 후 주에 걸쳐 단계적인 접근 방식으로 롤아웃됩니다.
+* [이제 빌드 아티팩트를 다시 사용할 수 있습니다.](/help/using/setting-up-project.md#build-artifact-reuse) git 미러링 사용 시.
 
 ## 버그 수정 {#bug-fixes}
-
-* 504 시간 초과 오류가 있는 잘못된 성능 테스트 결과입니다.
-* 일부 실행은 커밋 트리거 및 승인 단계 취소 컨텍스트에서 중단되었습니다.
