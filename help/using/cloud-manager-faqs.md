@@ -5,9 +5,9 @@ description: 문제 해결 팁은 Cloud Manager FAQ 를 참조하십시오
 seo-description: Follow this page to get answers on Cloud Manager FAQs
 feature: Getting Started
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 71d44c7e3673ca62fcd2203ecc0bc4ed9fa22002
+source-git-commit: 6dce1f48b66c6970c3ba025031f0adcbd01195dd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,11 @@ Java 8에서 11로 빌드를 전환하려고 할 때 AEM Cloud Manager 빌드가
 
 ## 코드 품질 검사가 실패하여 배포가 중단되었습니다. 이 수표를 우회할 수 있는 방법이 있나요? {#deployment-stuck}
 
-다음을 제외한 모든 코드 품질 오류 *보안 등급* 는 중요하지 않은 지표이므로 결과 UI에서 항목을 확장하여 생략할 수 있습니다.
+예. 다음을 제외한 모든 코드 품질 오류 *보안 등급* 는 중요하지 않은 지표이므로 결과 UI에서 항목을 확장하여 배포 파이프라인의 일부로 우회할 수 있습니다.
 
-을 사용하는 사용자 [배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=en#requirements) 역할은 문제를 재정의할 수 있습니다. 이 경우 파이프라인이 진행되거나 해당 문제를 수락할 수 있습니다. 이 경우 파이프라인이 오류로 중지됩니다.  자세한 내용은 [파이프라인 실행 중 3계층 게이트](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=en#how-to-use) 자세한 내용
+을 사용하는 사용자 [배포 관리자, 프로젝트 관리자 또는 비즈니스 소유자](/help/using/setting-up-users-and-roles.md#role-definitions) 역할은 문제를 재정의할 수 있습니다. 이 경우 파이프라인이 진행되거나 해당 문제를 수락할 수 있습니다. 이 경우 파이프라인이 오류로 중지됩니다.
+
+문서 보기 [파이프라인 실행 중 3계층 게이트](/help/using/understand-your-test-results.md#three-tier-gates-while-running-a-pipeline) 및 [비프로덕션 파이프라인 구성](/help/using/configuring-non-production-pipelines.md#understanding-the-flow) 자세한 내용
 
 ## Cloud Manager 배포는 Adobe Managed Services 환경의 성능 테스트 단계에서 실패합니다. 중요한 지표를 전달하려면 이 디버그 방법을 어떻게 적용합니까? {#debug-critical-metrics}
 
