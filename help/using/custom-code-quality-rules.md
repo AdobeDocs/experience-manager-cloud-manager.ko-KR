@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
 feature: Code Quality Rules
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 834508109e34eb1e052abac482e981735c72d43d
+source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3609'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->AEM as a Cloud Service에서 Cloud Manager의 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 다음을 참조하십시오 [참조하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
+>AEM as a Cloud Service에서 Cloud Manager의 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 다음을 참조하십시오 [이 설명서에 연결합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
 
 >[!NOTE]
 >
@@ -651,7 +651,7 @@ OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내에서 
 * 클래식 UI 디자인 대화 상자(예: `design_dialog` 노드)에는 해당 Touch UI 디자인 대화 상자(즉, `cq:design_dialog` 하위 노드).
 * 클래식 UI 대화 상자와 클래식 UI 디자인 대화 상자가 모두 있는 구성 요소에는 해당 터치 UI 대화 상자와 해당 터치 UI 디자인 대화 상자가 모두 있어야 합니다.
 
-AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 Touch UI로 변환하는 방법에 대한 세부 사항 및 도구를 제공합니다. 을(를) 참조하십시오. [AEM 현대화 도구 설명서 ](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) 자세한 내용
+AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 Touch UI로 변환하는 방법에 대한 세부 사항 및 도구를 제공합니다. 을(를) 참조하십시오. [AEM 현대화 도구 설명서 ](https://opensource.adobe.com/aem-modernize-tools/) 자세한 내용
 
 ### 패키지는 가변 콘텐츠와 변경할 수 없는 콘텐츠를 혼합하지 않아야 합니다. {#oakpal-packages-immutable}
 
@@ -739,7 +739,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset Micro-services로 이동�
 * **심각도**: Minor
 * **이후**: 버전 2021.2.0
 
-기존 기초 구성 요소(즉, `/libs/foundation`)은 일부 AEM 릴리스에서 더 이상 사용되지 않으며, [핵심 구성 요소.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=ko-KR) 오버레이든 상속이든 사용자 지정 구성 요소의 기준으로서 레거시 기초 구성 요소의 사용은 금지되어 있으므로 해당 코어 구성 요소로 변환해야 합니다.
+기존 기초 구성 요소(즉, `/libs/foundation`)은 일부 AEM 릴리스에서 더 이상 사용되지 않으며, [핵심 구성 요소.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 오버레이든 상속이든 사용자 지정 구성 요소의 기준으로서 레거시 기초 구성 요소의 사용은 금지되어 있으므로 해당 코어 구성 요소로 변환해야 합니다.
 
 이 변환은 다음을 통해 용이하게 할 수 있습니다 [AEM 현대화 도구.](https://opensource.adobe.com/aem-modernize-tools/)
 

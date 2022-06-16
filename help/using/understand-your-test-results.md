@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 2179314120911cac8a0dd99a8b57974751959871
+source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
 workflow-type: tm+mt
-source-wordcount: '2897'
+source-wordcount: '2896'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->AEM as a Cloud Service용 Cloud Manager에서 지원하는 테스트에 대해 알아보려면 [AEM as a Cloud Service 설명서입니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
+>AEM as a Cloud Service용 Cloud Manager에서 지원하는 테스트에 대해 알아보려면 [AEM as a Cloud Service 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/test-results/overview-test-results.html).
 
 
 ## 3층 등급  {#three-tier-gates-while-running-a-pipeline}
@@ -76,7 +76,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->을(를) 참조하십시오. [SonarQube의 지표 정의](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) 를 참조하십시오.
+>을(를) 참조하십시오. [SonarQube의 지표 정의](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) 를 참조하십시오.
 
 >[!NOTE]
 >
@@ -309,3 +309,4 @@ Cloud Manager는에서 CSE가 설정한 사용자 이름과 암호를 사용하�
 >
 >* 이 최적화는 AEM에 배포된 패키지에 영향을 주지 않습니다.
 >* 포함된 컨텐츠 패키지와 건너뛴 컨텐츠 패키지 간의 일치는 파일 이름을 기반으로 하므로 건너뛴 여러 컨텐츠 패키지에 동일한 파일 이름이 있거나 포함 중에 파일 이름이 변경된 경우에는 이 최적화를 수행할 수 없습니다.
+

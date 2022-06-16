@@ -10,7 +10,7 @@ topic-tags: using
 discoiquuid: 832a4647-9b83-4a9d-b373-30fe16092b15
 feature: Code Deployment
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 9a9d7067a1369e80ccf9b2925369a466b3da2901
+source-git-commit: 4c86446127c8cd66f964b192f3602f02fd2ddf8e
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 1%
@@ -221,7 +221,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 새 실행 트리거
 
-재실행을 트리거하려면 HAL 링크 &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> 를 클릭하여 제품에서 사용할 수 있습니다. 이 링크가 있으면 해당 단계에서 실행을 다시 시작할 수 있습니다. 없는 경우 해당 단계에서 실행을 다시 시작할 수 없습니다. 초기 릴리스에서는 이 링크가 프로덕션 배포 단계에만 존재하지만 이후 릴리스에서는 다른 단계에서 파이프라인을 시작할 수 있습니다. 예:
+재실행을 트리거하려면 HAL 링크에 PUT 요청을 수행해야 합니다 ```http://ns.adobe.com/adobecloud/rel/pipeline/reExecute``` 프로덕션 배포 단계 상태에 있습니다. 이 링크가 있으면 해당 단계에서 실행을 다시 시작할 수 있습니다. 없는 경우 해당 단계에서 실행을 다시 시작할 수 없습니다. 초기 릴리스에서는 이 링크가 프로덕션 배포 단계에만 존재하지만 이후 릴리스에서는 다른 단계에서 파이프라인을 시작할 수 있습니다. 예:
 
 ```Javascript
  {
