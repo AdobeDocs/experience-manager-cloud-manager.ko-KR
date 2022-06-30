@@ -7,9 +7,9 @@ topic-tags: using
 discoiquuid: 83299ed8-4b7a-4b1c-bd56-1bfc7e7318d4
 feature: CI-CD Pipeline, Test Results
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: bfcb0fb5b9cf8317eb75e3b7b46455b14cd9d7b7
+source-git-commit: fefb267793e5e1dc6f604a753e89cce2bf2620dd
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '2917'
 ht-degree: 3%
 
 ---
@@ -160,7 +160,12 @@ Cloud Manager에서 분리된 가상 사용자 또는 컨테이너의 수는 와
 
 #### 크롤러 {#crawler}
 
-30분 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 시드 URL을 사용하여 스테이징 환경을 크롤링합니다. 이 URL부터 각 페이지의 HTML이 검사되고 링크가 폭 우선 탐색 됩니다. 이 크롤링 프로세스는 최대 5000페이지로 제한됩니다. Crawler의 요청에는 10초의 고정 시간 제한이 있습니다.
+30분 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 시드 URL을 사용하여 스테이징 환경을 크롤링합니다. 이 URL부터 각 페이지의 HTML이 검사되고 링크가 폭 우선 탐색 됩니다.
+
+* 이 크롤링 프로세스는 기본적으로 최대 5000페이지로 제한됩니다.
+* 테스트할 최대 페이지 수는 [환경 변수](build-environment-details.md#environment-variables) `MAX_PAGES`.
+   * 허용되는 값은 다음과 같습니다 `2000` - `7000`.
+* Crawler의 요청에는 10초의 고정 시간 제한이 있습니다.
 
 #### 테스트를 위한 페이지 세트 {#page-sets}
 
