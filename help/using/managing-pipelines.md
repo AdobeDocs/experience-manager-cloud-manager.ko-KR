@@ -1,11 +1,11 @@
 ---
 title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
-index: true
-source-git-commit: 099a4490e3a8578b9f3485fd1514d1e97db977ab
+exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
+source-git-commit: 99325c28c379103db2ba4c19bb6d206849c6e126
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 다음 **파이프라인** 카드 **프로그램 개요** cloud Manager의 페이지에서는 모든 파이프라인과 해당 현재 상태에 대한 개요를 제공합니다.
 
-![Cloud Manager의 파이프라인 카드](/help/using/assets/configure-pipelines/pipelines-card.png)
+![Cloud Manager의 파이프라인 카드](/help/assets/configure-pipelines/pipelines-card.png)
 
 각 파이프라인 옆에 있는 줄임표 단추를 클릭하여 다음 작업을 수행할 수 있습니다.
 
@@ -29,8 +29,8 @@ ht-degree: 0%
 
 파이프라인 목록 하단에는 일반적인 옵션이 있습니다.
 
-* **추가** - 종료 [새 프로덕션 파이프라인 추가](configuring-production-pipelines.md) 또는 [새 비프로덕션 파이프라인 추가](configuring-non-production-pipelines.md)
-* **모두 표시** - 사용자를 **파이프라인** 더 자세한 표에서 모든 파이프라인을 볼 수 있습니다.
+* **추가** - 종료 [새 프로덕션 파이프라인 추가](/help/using/production-pipelines.md) 또는 [새 비프로덕션 파이프라인 추가](/help/using/non-production-pipelines.md)
+* **모두 표시** - 사용자를 **파이프라인** 더 자세한 표에서 모든 파이프라인을 볼 수 있는 화면
 * **보고서 정보에 액세스** - Cloud Manager git 저장소에 액세스하는 데 필요한 정보를 표시합니다
 * **추가 정보** - CI/CD 파이프라인 설명서 리소스로 이동합니다.
 
@@ -55,8 +55,8 @@ ht-degree: 0%
 1. 다음 **프로덕션 파이프라인 편집** 또는 **비프로덕션 파이프라인 편집** 파이프라인을 생성할 때 입력한 것과 동일한 세부 정보를 편집할 수 있는 대화상자가 표시됩니다.
 
    * 파이프라인에 사용할 수 있는 모든 필드 및 구성 옵션에 대한 자세한 내용은 다음 페이지를 참조하십시오.
-      * [프로덕션 파이프라인 구성](configuring-production-pipelines.md)
-      * [비프로덕션 파이프라인 구성](configuring-non-production-pipelines.md)
+      * [프로덕션 파이프라인 구성](/help/using/production-pipelines.md)
+      * [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)
 
 1. 클릭 **업데이트** 파이프라인 편집을 완료하면 됩니다.
 
@@ -82,9 +82,9 @@ ht-degree: 0%
 
 1. 실행 중인 파이프라인의 세부 사항 페이지로 이동합니다.
 
-![파이프라인 세부 사항](/help/using/assets/configure-pipelines/pipeline-running-details.png)
+![파이프라인 세부 정보](/help/assets/configure-pipelines/pipeline-running-details.png)
 
-여기에서 파이프라인의 다양한 단계 상태를 확인하고 진단 목적으로 빌드 로그를 검색할 수 있습니다. 문서를 참조하십시오 [코드 배포](deploying-code.md) 추가 정보.
+여기에서 파이프라인의 다양한 단계 상태를 확인하고 진단 목적으로 빌드 로그를 검색할 수 있습니다. 문서를 참조하십시오 [코드 배포](/help/using/code-deployment.md) 추가 정보.
 
 >[!NOTE]
 >

@@ -1,15 +1,10 @@
 ---
 title: 맞춤형 코드 품질 규칙
-description: 이 페이지에서는 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대해 설명합니다. AEM Engineering의 우수 사례를 기반으로 합니다.
-uuid: a7feb465-1982-46be-9e57-e67b59849579
-products: SG_EXPERIENCEMANAGER/CLOUDMANAGER
-topic-tags: using
-discoiquuid: d2338c74-3278-49e6-a186-6ef62362509f
-feature: Code Quality Rules
+description: AEM Engineering의 우수 사례를 기반으로 코드 품질 테스트의 일부로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대한 자세한 내용을 알아봅니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: d4c92a36ca3af123730d68fedf1dbf7ee819c66b
+source-git-commit: 5fe0d20d9020e6b90353ef5a54e49c93be5c00be
 workflow-type: tm+mt
-source-wordcount: '3609'
+source-wordcount: '3575'
 ht-degree: 3%
 
 ---
@@ -17,11 +12,7 @@ ht-degree: 3%
 
 # 맞춤형 코드 품질 규칙 {#custom-code-quality-rules}
 
-이 페이지에서는 Cloud Manager가 의 일부로 실행하는 사용자 지정 코드 품질 규칙에 대해 설명합니다 [코드 품질 테스트.](understand-your-test-results.md) AEM Engineering의 우수 사례를 기반으로 합니다.
-
->[!NOTE]
->
->AEM as a Cloud Service에서 Cloud Manager의 사용자 지정 코드 품질 규칙에 대한 자세한 내용은 다음을 참조하십시오 [이 설명서에 연결합니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/custom-code-quality-rules.html#using-cloud-manager).
+의 일부로 Cloud Manager에서 실행되는 사용자 지정 코드 품질 규칙에 대한 세부 사항을 알아봅니다. [코드 품질 테스트,](/help/using/code-quality-testing.md) AEM Engineering의 우수 사례 기반.
 
 >[!NOTE]
 >
