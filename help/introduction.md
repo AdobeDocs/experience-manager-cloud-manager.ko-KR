@@ -2,10 +2,10 @@
 title: AMS용 Cloud Manager 소개
 description: 먼저 Adobe Managed Services(AMS)용 Cloud Manager와 조직에서 Adobe Experience Manager을 자체 관리할 수 있는 방법을 확인하십시오.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
+source-git-commit: 22d40a1f07f56ee7a7dddb4897e4079f1e346674
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 14%
+source-wordcount: '1292'
+ht-degree: 10%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 14%
 >
 >이 설명서는 AMS(Adobe Managed Services)용 Cloud Manager의 기능과 특징을 구체적으로 설명합니다.
 >
->AEM as a Cloud Service에 대한 동등한 설명서는 [AEM as a Cloud Service 설명서입니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/home.html)
+>AEM as a Cloud Service에 대한 동등한 설명서는 [AEM as a Cloud Service 설명서입니다.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/home.html)
 
 Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할 수 있습니다.
 
@@ -75,14 +75,59 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 코드 배포 및 품질 검사에 대한 자세한 내용은 문서를 참조하십시오 [코드 배포.](/help/using/code-deployment.md)
 
+## Cloud Manager의 옵션 기능 {#optional-features-in-cloud-manager}
+
+Cloud Manager는 특정 환경 설정 및 요구 사항에 따라 프로젝트에 유용할 수 있는 추가 고급 기능을 제공합니다. 이러한 기능이 유용하면 CSE(Customer Success Engineer) 또는 Adobe 담당자에게 연락하여 자세한 내용을 문의하십시오.
+
 ### 자동 크기 조정 {#autoscaling}
 
 프로덕션 환경에서 로드가 비정상적으로 많을 경우 [!UICONTROL Cloud Manager] 에서는 추가 용량의 필요성을 탐지하여 자동 크기 조정 기능을 사용하여 자동으로 추가 용량을 온라인 상태로 전환합니다.
 
 이런 경우에는 [!UICONTROL Cloud Manager] 자동 크기 조정 제공 프로세스를 트리거하고, 자동 크기 조정 이벤트 알림을 보내고, 몇 분 안에 추가 용량을 온라인 상태로 전환합니다. 추가 용량은 영역이 같고 실행 중인 디스패처/게시 노드와 시스템 사양이 일치하는 프로덕션 환경에서 제공됩니다.
 
-자동 크기 조정 기능은 디스패처/게시 계층에만 적용되며, 가로 크기 조정 방법을 사용하여 실행되며, 최대 10개의 세그먼트까지 디스패처/게시 페어의 추가 세그먼트가 최소 1개 더 있습니다. 제공된 추가 용량은 CSE(Customer Success Engineer)가 결정하는 10일 이내 기간에 수동으로 조정됩니다.
+자동 크기 조정 기능은 디스패처/게시 계층에만 적용되며, 가로 크기 조정 방법을 사용하여 실행되며, 최대 10개의 세그먼트까지 디스패처/게시 쌍 중 최소 1개의 추가 세그먼트가 있습니다. 제공된 추가 용량은 CSE(Customer Success Engineer)가 결정하는 10일 이내 기간에 수동으로 조정됩니다.
 
 >[!NOTE]
 >
->자동 크기 조절이 애플리케이션에 적합한지 여부에 관심이 있는 고객은 CSE 또는 Adobe 담당자에게 문의해야 합니다.
+>자동 크기 조절이 응용 프로그램에 적합한지 여부를 알아보려면 CSE 또는 Adobe 담당자에게 문의하십시오.
+
+### 파란색/녹색 배포 {#blue-green}
+
+파란색/녹색 배포는 파란색 및 녹색이라는 동일한 두 가지 운영 환경을 실행하여 다운타임과 위험을 줄이는 기술입니다.
+
+언제든지 환경 중 하나만 라이브되고 라이브 환경은 모든 프로덕션 트래픽을 제공합니다. 일반적으로 파란색은 현재 라이브 환경이며 녹색은 유휴 상태입니다.
+
+* 파란색/녹색 배포는 Cloud Manager CI/CD 파이프라인에 대한 추가 기능으로서, 두 번째 게시 및 Dispatcher 인스턴스(녹색)가 생성되고 배포에 사용됩니다. 그런 다음 녹색 인스턴스가 프로덕션 로드 밸런서에 연결되고 이전 인스턴스(파란색)가 제거되고 종료됩니다.
+* 이 파란색/녹색 구현은 인스턴스를 일시적이며 파란색/녹색 파이프라인의 모든 반복은 새 게시 및 Dispatcher 서버 세트를 만듭니다.
+* 녹색 로드 밸런서가 설정의 일부로 만들어집니다. 이 로드 밸런서는 변경되지 않으며 녹색 또는 테스트 URL을 가리키도록 지정해야 합니다.
+* 파란색/녹색 배포 중에 기존 게시/디스패처 계층의 정확한 복제본이 만들어집니다(TDL에서 읽음).
+
+#### 파란색/녹색 배포 흐름 {#flow}
+
+파란색/녹색 배포가 활성화되면 배포 플로우가 표준 Cloud Service 배포 플로우와 다릅니다.
+
+| 단계 | 파란색/녹색 배포 | 표준 배포 |
+|---|---|---|
+| 1 | 작성자에게 배포 | 작성자에게 배포 |
+| 2 | 테스트 일시 중지 | - |
+| 3 | 녹색 인프라 생성 | - |
+| 4 | 녹색 게시/Dispatcher 계층에 배포 | 게시자에 배포 |
+| 5 | 테스트 일시 중지(최대 24시간) | - |
+| 6 | 프로덕션 로드 밸런서에 녹색 인프라 추가 | - |
+| 7 | 운영 로드 밸런서에서 블루 인프라 제거 - |
+| 8 | 파란색 인프라가 자동으로 종료됨 | - |
+
+#### 파란색/녹색 구현 {#implementing}
+
+프로덕션 배포에 Cloud Manager를 사용하는 모든 AMS 사용자는 파란색/녹색 배포를 사용할 수 있습니다. 하지만 파란색/녹색 배포를 사용하려면 환경을 추가로 확인하고 Adobe CSE를 통해 설정해야 합니다.
+
+파란색/녹색 배포에 관심이 있는 경우 다음 요구 사항 및 제한 사항을 고려하고 CSE에 문의하십시오.
+
+#### 요구 사항 및 제한 사항 {#limitations}
+
+* 파란색/녹색은 게시/디스패처 쌍에만 사용할 수 있습니다.
+* 미리 보기 디스패처/게시 쌍이 파란색/녹색 배포의 일부가 아닙니다.
+* 모든 Dispatcher/publish 쌍은 다른 모든 Dispatcher/publish 쌍과 동일합니다.
+* 파란색/녹색은 프로덕션 환경에서만 사용할 수 있습니다.
+* 파란색/녹색은 Azure뿐만 아니라 AWS에서 사용할 수 있습니다.
+* 고객만 Assets에서 파란색/녹색을 사용할 수 없습니다.
