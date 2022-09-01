@@ -2,9 +2,9 @@
 title: 최초 로그인
 description: 일반 구성을 설정했으며 Cloud Manager를 처음 사용할 준비가 되면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '181'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 처음으로 로그인 {#logging-in-for-the-first-time}
 
-1. Adobe에 로그인 [!UICONTROL Experience Cloud] 그러면 프로그램 목록이 표시됩니다.
+1. Adobe에 로그인 [!UICONTROL Experience Cloud] 그리고 프로그램 목록을 봅니다.
 
 1. 프로그램을 선택합니다.
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 1. 클릭 **설치 프로그램** 프로그램 설명을 설정하고 주요 성과 지표(KPI)를 정의하려면
 
-문서를 계속 진행하십시오 [프로그램 설정](https://helpx.adobe.com/experience-manager/cloud-manager/using/program-setup.html) 을 참조하십시오.
+문서를 계속 진행하십시오 [프로그램 설정](/help/getting-started/program-setup.md) 을 참조하십시오.
 
 ## Cloud Manager 활동 {#activity}
 
