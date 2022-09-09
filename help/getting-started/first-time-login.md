@@ -2,10 +2,10 @@
 title: 최초 로그인
 description: 일반 구성을 설정했으며 Cloud Manager를 처음 사용할 준비가 되면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 43d05eed9c2e7c4cf6c3becdbc3e4522428722b7
+source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 3%
+source-wordcount: '255'
+ht-degree: 2%
 
 ---
 
@@ -39,3 +39,7 @@ ht-degree: 3%
 ## Cloud Manager 활동 {#activity}
 
 Cloud Manager는 프로그램의 활동에 대한 통합 보기를 제공하여 모든 CI/CD 파이프라인 실행, 프로덕션 및 비프로덕션 모두를 나열하여 과거 및 현재 활동을 표시할 수 있습니다.
+
+>[!NOTE]
+>
+>기본적으로 AEM 환경에 액세스할 수 있는 사용자에게도 Cloud Manager 사용자 역할이 있습니다. 의 이 역할 자체는 사용자에게 프로그램 세부 사항 보기에 대한 액세스 권한을 제공하기에 충분하지 않습니다. 이러한 Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 통해 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.
