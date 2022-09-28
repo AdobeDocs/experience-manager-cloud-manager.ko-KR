@@ -1,19 +1,19 @@
 ---
 title: 도움말 리소스
-description: Cloud Manager 사용에 도움이 되는 사용 가능한 리소스에 대해 알아봅니다.
+description: Cloud Manager에 사용할 수 있는 리소스에 대해 알아보십시오.
 exl-id: 6a4573a6-d9f0-41bc-8ce2-289ba9cc9f47
 source-git-commit: dcdb9aca03a905e875fbf8f805d7a7ae7b5b594b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '92'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # 도움말 리소스 {#help-resources}
 
-먼저 연락하여 [!UICONTROL Adobe Managed Services Customer Success Engineer] (CSE) 지원 대상 [!UICONTROL Cloud Manager]. CSE에서는 문제를 해결하는 데 도움을 줄 수 있는지 또는 Adobe 고객 지원 센터에서 지원 티켓을 만들어야 하는지 여부를 알려줍니다.
+먼저 [!UICONTROL Adobe Managed Services Customer Success Engineer](CSE)에 연락하여 [!UICONTROL Cloud Manager]와 관련된 지원을 받아야 합니다. CSE가 문제를 해결하는 데 도움을 줄 수 있는지 또는 Adobe 고객 지원 센터에서 지원 티켓을 만들어야 하는지 여부를 알려 줍니다.
 
-액세스할 수 있습니다 [엔터프라이즈 지원](https://experienceleague.adobe.com/?support-tab=home#support) 지원 티켓을 만들려면 다음을 수행하십시오.
+[기업 지원](https://experienceleague.adobe.com/?support-tab=home#support)에 액세스하여 지원 티켓을 생성할 수 있습니다.
 
-문서를 참조하십시오 [AEM 지원 포털 액세스](https://helpx.adobe.com/enterprise/using/support-and-expert-services.html) Adobe 고객 지원 센터를 통한 지원 티켓 만들기에 대한 자세한 정보.
+Adobe 고객 지원 센터를 사용하여 지원 티켓을 만드는 방법에 대한 자세한 내용은 [AEM 지원 포털 액세스](https://helpx.adobe.com/kr/enterprise/using/support-and-expert-services.html) 문서를 참조하십시오.
