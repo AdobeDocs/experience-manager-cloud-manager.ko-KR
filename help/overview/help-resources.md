@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # 도움말 리소스 {#help-resources}
 
-먼저 [!UICONTROL Adobe Managed Services Customer Success Engineer](CSE)에 연락하여 [!UICONTROL Cloud Manager]와 관련된 지원을 받아야 합니다. CSE가 문제를 해결하는 데 도움을 줄 수 있는지 또는 Adobe 고객 지원 센터에서 지원 티켓을 만들어야 하는지 여부를 알려 줍니다.
+먼저 [!UICONTROL Adobe Managed Services Customer Success Engineer] (CSE)에 연락하여 [!UICONTROL Cloud Manager]와 관련된 지원을 받아야 합니다. CSE가 문제를 해결하는 데 도움을 줄 수 있는지 또는 Adobe 고객 지원 센터에서 지원 티켓을 만들어야 하는지 여부를 알려 줍니다.
 
 [기업 지원](https://experienceleague.adobe.com/?support-tab=home#support)에 액세스하여 지원 티켓을 생성할 수 있습니다.
 
