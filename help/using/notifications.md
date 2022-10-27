@@ -4,8 +4,8 @@ description: Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 23%
+source-wordcount: '573'
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,13 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ## Cloud Manager의 알림 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager]는 프로덕션 파이프라인이 시작되고(성공 또는 실패), 프로덕션 배포를 시작할 때뿐만 아니라 **Go-Live 승인** 및 **예약됨** 단계에 도달하면 알림을 보냅니다. 이러한 알림은 [!UICONTROL Experience Cloud] 알림 시스템을 통해 전송됩니다.
+[!UICONTROL Cloud Manager] 프로덕션 파이프라인이 시작되고 완료될 때(성공 또는 실패) 및 프로덕션 배포의 시작 시 알림을 보냅니다. **Go-Live 승인** 및 **예약됨** 단계에 도달했습니다. 이러한 알림은 을 통해 전송됩니다 [!UICONTROL Experience Cloud] 알림 시스템.
 
 >[!NOTE]
 >
 >승인 및 예약됨 알림은 **비즈니스 소유자**, **프로그램 관리자** 및 **배포 관리자** 역할의 사용자에게만 전송됩니다.
 
-알림은 [!UICONTROL Cloud Manager] 내에서 그리고 Adobe [!UICONTROL Experience Cloud] 전체에서 사이드바에 나타납니다.
+내의 사이드바에 알림이 나타납니다 [!UICONTROL Cloud Manager] Adobe 전체에서 [!UICONTROL Experience Cloud].
 
 새 알림이 있을 때 헤더의 벨 아이콘에 배지가 표시됩니다.
 

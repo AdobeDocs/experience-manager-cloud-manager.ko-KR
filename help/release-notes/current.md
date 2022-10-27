@@ -5,15 +5,15 @@ feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 69c1c8a1136c037a5eea635a75f2d4d187f2ac4d
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 63%
+source-wordcount: '124'
+ht-degree: 54%
 
 ---
 
 
 # Cloud Manager 릴리스 2022.10.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2022.10.0에 대한 릴리스 정보를 설명합니다.
+이 페이지에서는 다음에 대한 릴리스 노트를 문서화합니다 [!UICONTROL Cloud Manager] 릴리스 2022.10.0.
 
 >[!NOTE]
 >

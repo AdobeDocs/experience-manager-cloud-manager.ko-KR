@@ -1,11 +1,11 @@
 ---
 title: 최초 로그인
-description: 일반 구성을 설정했으며 Cloud Manager를 처음 사용할 준비가 되면 이 페이지를 따르십시오.
+description: 일반 구성을 설정하고 Cloud Manager를 처음 사용할 준비가 되었으면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: d8f16deacfe52c76ff6b0aee0344d50bfe2b9c74
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 2%
+source-wordcount: '261'
+ht-degree: 51%
 
 ---
 
@@ -18,27 +18,27 @@ ht-degree: 2%
 >
 >에 할당된 역할에 따라 [!UICONTROL Cloud Manager] 응용 프로그램의 상태에서는 화면에 표시되는 화면의 모양은 그림마다 다를 수 있습니다.
 
-## 처음으로 로그인 {#logging-in-for-the-first-time}
+## 처음 로그인 {#logging-in-for-the-first-time}
 
 1. Adobe에 로그인 [!UICONTROL Experience Cloud] 그리고 프로그램 목록을 봅니다.
 
 1. 프로그램을 선택합니다.
 
-1. 프로그램의 카드에서 줄임표 단추를 선택한 다음 **Cloud Manager** Cloud Manager의 **개요** 페이지.
+1. 프로그램 카드에서 줄임표 버튼을 선택한 다음 **Cloud Manager**&#x200B;를 선택하여 Cloud Manager의 **개요** 페이지로 이동합니다.
 
    ![Cloud Manager 옵션](/help/assets/navigate-cm1.png)
 
-1. Cloud Manager가 **개요** 페이지.
+1. Cloud Manager에 **Overview(개요)** 페이지가 열립니다.
 
    ![Cloud Manager 개요 페이지](/help/assets/FirstLogin1.png)
 
-1. 클릭 **설치 프로그램** 프로그램 설명을 설정하고 주요 성과 지표(KPI)를 정의하려면
+1. **Setup Program(프로그램 설정)**&#x200B;을 클릭하여 프로그램 설명을 설정하고 주요 성과 지표(KPI)를 정의합니다.
 
-문서를 계속 진행하십시오 [프로그램 설정](/help/getting-started/program-setup.md) 을 참조하십시오.
+프로그램 설정의 다음 단계를 보려면 [프로그램 설정](/help/getting-started/program-setup.md) 문서를 계속 진행하십시오.
 
 ## Cloud Manager 활동 {#activity}
 
-Cloud Manager는 프로그램의 활동에 대한 통합 보기를 제공하여 모든 CI/CD 파이프라인 실행, 프로덕션 및 비프로덕션 모두를 나열하여 과거 및 현재 활동을 표시할 수 있습니다.
+Cloud Manager는 프로그램의 활동의 통합된 뷰를 제공하여 프로덕션 및 비프로덕션의 모든 CI/CD 파이프라인 실행을 나열하므로 과거 및 현재 활동을 볼 수 있습니다.
 
 >[!NOTE]
 >
