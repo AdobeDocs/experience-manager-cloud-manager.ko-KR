@@ -74,7 +74,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 >
 >실행 중인 파이프라인은 삭제할 수 없습니다.
 
-## 세부 사항 보기 {#view-details}
+## 세부 정보 보기 {#view-details}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
