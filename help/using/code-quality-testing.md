@@ -1,10 +1,10 @@
 ---
 title: 코드 품질 테스트
-description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아보십시오.
+description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: ht
-source-wordcount: '2863'
+source-wordcount: '2867'
 ht-degree: 100%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 100%
 | 보안 등급 | A = 취약점 없음<br/>B = 1개 이상의 사소한 취약점<br/>C = 1개 이상의 주요 취약점<br/>D = 1개 이상의 심각한 취약점<br/>E = 1개 이상의 차단 취약점 | 심각 | &lt; B |
 | 안정성 등급 | A = 버그 없음<br/>B = 1개 이상의 사소한 버그<br/>C = 1개 이상의 주요 버그<br/>D = 1개 이상의 심각한 버그<br/>E = 1개 이상의 차단 버그 | 중요 | &lt; C |
 | 유지 가능성 등급 | 코드 스멜에 대한 미해결 교정 비용으로 정의되며, 애플리케이션에 이미 들어간 시간의 백분율입니다.<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 중요 | &lt; A |
-| 범위 | 다음 공식을 사용하여 단위 테스트 라인 범위와 조건 범위의 혼합으로 정의됩니다. <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = 단위 테스트를 실행하는 동안 한 번 이상 `true`로 평가된 조건</li><li>`CF` = 단위 테스트를 실행하는 동안 한 번 이상 `false`로 평가된 조건</li><li>`LC` = 적용 라인 = lines_to_cover - uncovered_lines</li><li>`B` = 총 조건 수</li><li>`EL` = 총 실행 가능한 라인 수(lines_to_cover)</li></ul> | 중요 | &lt; 50% |
+| 범위 | 다음 공식을 사용하여 단위 테스트 라인 범위와 조건 범위의 혼합으로 정의됩니다. <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = 단위 테스트를 실행하는 동안 한 번 이상 `true`로 평가된 조건</li><li>`CF` = 단위 테스트를 실행하는 동안 한 번 이상 `false`로 평가된 조건</li><li>`LC` = 적용 라인 = lines_to_cover - uncovered_lines</li><li>`B` = 총 조건 수</li><li>`EL` = 총 실행 가능한 라인 수 (lines_to_cover)</li></ul> | 중요 | &lt; 50% |
 | 건너뛴 단위 테스트 | 건너뛴 단위 테스트 수 | 정보 | > 1 |
-| 문제 열기 | 전반적인 문제 유형 - 취약점, 버그 및 코드 스멜 | 정보 | > 0 |
+| 미해결 문제 | 전반적인 문제 유형 - 취약점, 버그 및 코드 스멜 | 정보 | > 0 |
 | 중복 라인 | 중복된 블록과 관련된 라인의 수로 정의됩니다. 다음 조건에서는 코드 블록이 중복된 것으로 간주됩니다.<br>비 Java 프로젝트:<ul><li>연속 토큰과 중복 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 최소한 다음과 같이 분산되어야 합니다. </li><li>COBOL의 경우 30개 코드 라인 </li><li>ABAP의 경우 20개 코드 라인 </li><li>기타 언어의 경우 10개 코드 라인</li></ul>Java 프로젝트:<ul></li><li> 토큰과 라인 수에 관계없이 연속적이고 중복된 문이 10개 이상 있어야 합니다.</li></ul>중복을 감지할 때 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
 | Cloud Service 호환성 | 식별된 Cloud Service 호환성 문제 수 | 정보 | > 0 |
 
@@ -69,13 +69,13 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->[!UICONTROL Cloud Manager]에서 실행한 사용자 정의 코드 품질 규칙에 대한 자세한 내용은 [사용자 정의 코드 품질 규칙](custom-code-quality-rules.md) 문서를 참조하십시오.
+>[!UICONTROL Cloud Manager]에서 실행한 [사용자 정의 코드 품질 규칙](custom-code-quality-rules.md)에 대한 자세한 내용은 사용자 정의 코드 품질 규칙 문서를 참조하십시오.
 
-### 긍정 오류(False Positives) 처리 {#dealing-with-false-positives}
+### 긍정 오류 처리 {#dealing-with-false-positives}
 
 품질 검사 프로세스는 완벽하지 않으며 실제로 문제가 아닌 문제를 잘못 식별하기도 합니다. 이를 긍정 오류(false positive)라고 합니다.
 
-이러한 경우 소스 코드는 규칙 ID를 주석 속성으로 지정하는 표준 Java `@SuppressWarnings` 주석으로 추가할 수 있습니다. 예를 들어 한 가지 일반적인 긍정 오류(false positive)는 하드코딩된 암호를 탐지하는 SonarQube 규칙이 하드코딩된 암호를 식별하는 방법에 대해 공격적일 수 있다는 것입니다.
+이러한 경우 소스 코드는 규칙 ID를 주석 속성으로 지정하는 표준 Java `@SuppressWarnings` 주석으로 추가할 수 있습니다. 예를 들어 한 가지 일반적인 긍정 오류는 하드코딩된 암호를 탐지하는 SonarQube 규칙이 하드코딩된 암호를 식별하는 방법에 대해 공격적일 수 있다는 것입니다.
 
 다음 코드는 일부 외부 서비스에 연결하는 코드가 있는 AEM 프로젝트에서 상당히 일반적입니다.
 
@@ -280,17 +280,17 @@ Cloud Manager는 CSE가 설정한 사용자 이름과 암호를 사용하여 작
 
 ## 콘텐츠 패키지 검색 최적화 {#content-package-scanning-optimization}
 
-품질 분석 프로세스의 일환으로 Cloud Manager는 Maven 빌드에서 생성된 콘텐츠 패키지에 대한 분석을 수행합니다. Cloud Manager는 이 프로세스를 가속화하기 위한 최적화를 제공하며, 이는 특정 패키징 제한이 관찰될 때 효과적입니다. 가장 중요한 것은 일반적으로 &quot;모든&quot; 패키지라고 하는 단일 콘텐츠 패키지를 출력하는 프로젝트에 대해 수행되는 최적화입니다. 이 패키지에는 빌드에 의해 생성된 여러 다른 콘텐츠 패키지가 포함되어 있으며, 이 패키지는 건너뛰기로 표시됩니다. Cloud Manager가 이 시나리오를 감지하면 &quot;모든&quot; 패키지의 압축을 푸는 대신 개별 콘텐츠 패키지가 직접 스캔되고 종속성에 따라 정렬됩니다. 예를 들어 다음 빌드 출력을 고려해 보십시오.
+품질 분석 프로세스의 일환으로 Cloud Manager는 Maven 빌드에서 생성된 콘텐츠 패키지에 대한 분석을 수행합니다. Cloud Manager는 이 프로세스를 가속화하기 위한 최적화를 제공하며, 이는 특정 패키징 제한이 관찰될 때 효과적입니다. 가장 중요한 것은 일반적으로 “모든” 패키지라고 하는 단일 콘텐츠 패키지를 출력하는 프로젝트에 대해 수행되는 최적화입니다. 이 패키지에는 빌드에 의해 생성된 여러 다른 콘텐츠 패키지가 포함되어 있으며, 이 패키지는 건너뛰기로 표시됩니다. Cloud Manager가 이 시나리오를 감지하면 “모든” 패키지의 압축을 푸는 대신 개별 콘텐츠 패키지가 직접 스캔되고 종속성에 따라 정렬됩니다. 예를 들어 다음 빌드 출력을 고려해 보십시오.
 
-* `all/myco-all-1.0.0-SNAPSHOT.zip` (콘텐츠-패키지)
-* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (건너뜀-콘텐츠-패키지)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (건너뜀-콘텐츠-패키지)
+* `all/myco-all-1.0.0-SNAPSHOT.zip` (content-package)
+* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (skipped-content-package)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (skipped-content-package)
 
-`myco-all-1.0.0-SNAPSHOT.zip` 내에 있는 항목만 건너뛴 두 개의 콘텐츠 패키지인 경우 &quot;모든&quot; 콘텐츠 패키지 대신 임베드된 두 개의 패키지가 스캔됩니다.
+`myco-all-1.0.0-SNAPSHOT.zip` 내에 있는 항목만 건너뛴 두 개의 콘텐츠 패키지인 경우 “모든” 콘텐츠 패키지 대신 두 개의 임베드된 패키지가 스캔됩니다.
 
 수십 개의 임베드된 패키지를 생성하는 프로젝트의 경우, 이 최적화는 파이프라인 실행당 10분 이상 절약되는 것으로 나타났습니다.
 
-&quot;모든&quot; 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip`에 앞서 언급한 두 개의 임베드된 패키지가 포함된 경우 하나 이상의 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
+“모든” 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip`에 앞서 언급한 두 개의 임베드된 패키지가 포함된 경우 하나 이상의 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
 
 >[!NOTE]
 >
