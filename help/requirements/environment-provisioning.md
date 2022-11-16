@@ -4,7 +4,7 @@ description: Cloud Manager 온보딩 프로세스의 일부로 환경을 프로�
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
 source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
 workflow-type: ht
-source-wordcount: '293'
+source-wordcount: '314'
 ht-degree: 100%
 
 ---
