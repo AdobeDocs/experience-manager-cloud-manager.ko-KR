@@ -4,7 +4,7 @@ description: Cloud Manager에서 코드 및 아티팩트 에셋의 보안 및 �
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
 workflow-type: ht
-source-wordcount: '189'
+source-wordcount: '205'
 ht-degree: 100%
 
 ---
@@ -16,13 +16,13 @@ Cloud Manager에서 코드 및 아티팩트 에셋의 보안 및 개인정보 �
 
 ## 역할 및 권한 {#roles}
 
-[!UICONTROL Cloud Manager]에는 적절한 권한이 있는 미리 구성된 역할이 있습니다.
+[!UICONTROL Cloud Manager]에는 적절한 권한으로 미리 구성된 역할이 있습니다.
 
 Admin Console에서 할당할 수 있는 가능한 역할과 사용자 역할 권한에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md) 문서를 참조하십시오.
 
 ## 리소스 격리 {#resource-isolation}
 
-[!UICONTROL Cloud Manager]에 연결된 모든 권한이 IMS 조직에 연결되므로 [!UICONTROL Cloud Manager] 고객은 인증하기 위해 IMS 자격 증명이 필요합니다. 온보딩 프로세스 동안 프로비저닝 팀은 [!UICONTROL Cloud Manager]에서 리소스 격리가 수행되도록 보장합니다.
+[!UICONTROL Cloud Manager]에 연결된 모든 권한이 IMS 조직에 연결되므로 [!UICONTROL Cloud Manager] 고객은 인증을 위해 IMS 자격 증명이 필요합니다. 온보딩 프로세스 동안 프로비저닝 팀은 [!UICONTROL Cloud Manager]에서 리소스 격리가 수행되도록 보장합니다.
 
 ## 데이터 보안 {#data-security}
 
