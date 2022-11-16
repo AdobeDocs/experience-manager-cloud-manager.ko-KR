@@ -5,7 +5,7 @@ description: 제품 업데이트 마법사의 평가 단계에서 패턴 감지�
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
 source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
 workflow-type: ht
-source-wordcount: '291'
+source-wordcount: '296'
 ht-degree: 100%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 평가 단계 {#evaluation}
 
-제품 업데이트 마법사의 첫 번째 단계는 **[!UICONTROL Evaluation]** 단계로, 마법사 내에서 직접 패턴 감지기를 사용하여 업그레이드 복잡성을 평가합니다. 이 단계를 마치면 평가 보고서에 액세스할 수 있습니다.
+제품 업데이트 마법사의 첫 번째 단계는 **[!UICONTROL 평가]** 단계로, 마법사 내에서 직접 패턴 감지기를 사용하여 업그레이드 복잡성을 평가합니다. 이 단계를 마치면 평가 보고서에 액세스할 수 있습니다.
 
 생성된 보고서를 통해 다음 패턴을 감지하여 작성자 인스턴스의 업그레이드 적격성을 확인할 수 있습니다.
 
@@ -35,13 +35,13 @@ ht-degree: 100%
 
 1. [제품 업데이트 마법사](/help/product-update-wizard/overview.md)의 설명에 따라 마법사를 시작합니다.
 
-1. **[!UICONTROL Run Evaluation]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 평가 실행]**&#x200B;을 클릭합니다.
 
    ![평가 실행](/help/assets/Run-Evaluation.png)
 
 1. 마법사가 작업 상태를 알려 줍니다. 평가 보고서가 생성되면 **진행 중** 또는 **완료됨**&#x200B;이 표시됩니다.
 
-1. 보고서가 생성되면 **[!UICONTROL Download report]**&#x200B;를 클릭하여 사본을 저장할 수 있습니다.
+1. 보고서가 생성되면 **[!UICONTROL 보고서 다운로드]**&#x200B;를 클릭하여 사본을 저장할 수 있습니다.
 
    ![보고서 생성됨](/help/assets/Evaluation-1.png)
 
