@@ -4,7 +4,7 @@ description: 여기에서 Adobe Managed Services(AMS)용 Cloud Manager에 대해
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 14e35882765783b234ca35da14257279af5130a0
 workflow-type: ht
-source-wordcount: '1287'
+source-wordcount: '1311'
 ht-degree: 100%
 
 ---
@@ -45,7 +45,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 ![CI/CD 플로우](/help/assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL Cloud Manager]의 주요 기능 {#key-features-in-cloud-manager}
+## [!UICONTROL 의 주요 기능Cloud Manager] {#key-features-in-cloud-manager}
 
 다음은 Cloud Manager의 선택된 주요 기능에 대해 자세히 살펴봅니다.
 
@@ -59,7 +59,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 ### CI/CD 파이프라인 {#ci-cd-pipeline}
 
-[!UICONTROL Cloud Manager]의 주요 기능 중 하나는 최적화된 CI/CD 파이프라인을 이용하여 사용자 정의 코드 또는 업데이트(예: 웹 사이트에 새 구성 요소 추가)의 게재 속도를 단축하는 기능입니다.
+[!UICONTROL Cloud Manager]의 주요 기능 중 하나는 최적화된 CI/CD 파이프라인을 이용하여 사용자 지정 코드 또는 업데이트(예: 웹 사이트에 새 구성 요소 추가)의 게재 속도를 단축하는 기능입니다.
 
 [!UICONTROL Cloud Manager] UI를 통해 고객이 CI/CD 파이프라인을 구성하고 시작할 수 있습니다. 이 파이프라인의 일부로, 고품질 애플리케이션만 프로덕션 환경에 전달되도록 철저한 코드 검사가 실행됩니다.
 
