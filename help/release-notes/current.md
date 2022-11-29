@@ -1,19 +1,19 @@
 ---
-title: 2022.11.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2022.11.0의 릴리스 정보입니다.
+title: 2022.12.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2022.12.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 2defbdbee0221540f66f7d824ccf1bd33179c9d9
-workflow-type: ht
-source-wordcount: '132'
-ht-degree: 100%
+source-git-commit: 83a404c1f54bc6a791a4c13a22b7a78f83755869
+workflow-type: tm+mt
+source-wordcount: '120'
+ht-degree: 65%
 
 ---
 
 
-# Cloud Manager 릴리스 2022.11.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2022.12.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2022.11.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2022.12.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,12 +21,13 @@ ht-degree: 100%
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2022.11.0의 릴리스 날짜는 2020년 11월 3일입니다. 다음 릴리스는 2022년 11월 29일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2022.12.0의 릴리스 날짜는 2020년 11월 29일입니다. 다음 릴리스는 2023년 1월 19일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 파이프라인과 연결된 환경이 파이프라인을 실행할 수 없는 상태인 경우 설명 툴팁과 함께 실행 작업이 비활성화됩니다.
+* 이제 다중 영역 자동 크기 조절을 사용할 수 있습니다. 특정 제한 사항이 적용될 수 있습니다.
+* 의 가용성 및 신뢰성 향상 [Cloud Manager 파이프라인](/help/overview/ci-cd-pipelines.md) 만들어졌어요
 
 ## 버그 수정 {#bug-fixes}
 
-* 프로덕션 파이프라인 편집 중 피드백이 개선되어 하나 이상의 누락된 환경이 드물게 발생했습니다.
+* 을(를) 방지하기 위해 변경했습니다. `PATCH /program//environment//variables` 을 사용하여 환경 요청 `FAILED` 상태.
