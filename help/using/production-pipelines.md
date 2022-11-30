@@ -3,9 +3,9 @@ title: 프로덕션 파이프라인 구성
 description: Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1302'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인�
             1. **유형** 아래에서 해당 경로에 대해 수행할 작업을 선택합니다.
 
                * **플러시** - 캐시 삭제를 수행합니다.
-               * **무효화** - 캐시 무효화를 수행합니다. 이 작업은 작성 인스턴스에서 게시 인스턴스로 컨텐츠가 활성화될 때와 유사합니다.
+               * **무효화** - 저작 인스턴스에서 게시 인스턴스로 콘텐츠가 활성화된 경우와 유사하게 캐시 무효화를 수행합니다.
             1. **경로 추가**&#x200B;를 클릭하여 지정된 경로를 추가합니다. 환경당 최대 100개의 경로를 추가할 수 있습니다.
 
          ![Dispatcher 구성](/help/assets/configure-pipelines/dispatcher-stage.png)
