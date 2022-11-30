@@ -3,10 +3,10 @@ title: 2022.12.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2022.12.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 5c97e8bfa30ed6bbbaf361e5d3987aa2a0bf5b13
+source-git-commit: 1fe5fb860da07105ac7e8ce21fce683b238637c1
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 73%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,5 +25,6 @@ ht-degree: 73%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 다중 영역 자동 크기 조절을 사용할 수 있습니다. 특정 제한 사항이 적용될 수 있습니다.
-* 의 가용성 및 신뢰성 향상 [Cloud Manager 파이프라인](/help/overview/ci-cd-pipelines.md) 만들어졌어요
+* 이제 다중 지역 자동 확장 기능을 사용할 수 있습니다. 특정 제한 사항이 적용될 수 있습니다.
+   * 이 변경 사항은 2022.12.0 릴리스 이후 4~6주 내에 단계적인 방식으로 진행될 것입니다.
+* [Cloud Manager 파이프라인](/help/overview/ci-cd-pipelines.md)의 가용성 및 안정성이 개선되었습니다.
