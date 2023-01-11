@@ -2,9 +2,9 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1152'
 ht-degree: 91%
 
 ---
@@ -138,7 +138,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 #### Dispatcher {#dispatcher}
 
-일반 환경 변수만 디스패처에서 사용할 수 있습니다. 암호는 사용할 수 없습니다.
+일반 환경 변수만 [디스패처.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 암호는 사용할 수 없습니다.
 
 그러나 환경 변수는에서 사용할 수 없습니다 `IfDefine` 지시어
 
@@ -148,7 +148,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 #### OSGi 구성 {#osgi}
 
-OSGi 구성에서 일반 환경 변수와 암호를 모두 사용할 수 있습니다.
+일반 환경 변수와 암호는 [OSGi 구성.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
 
 ### 파이프라인 변수 {#pipeline-variables}
 
