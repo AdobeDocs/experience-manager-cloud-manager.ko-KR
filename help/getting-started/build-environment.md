@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 4c051cd1696f8a00d0278131c9521ad4dcb956a3
-workflow-type: ht
-source-wordcount: '1044'
-ht-degree: 100%
+source-git-commit: 60a6fd062a3878230dafdc34d9ce289ade361120
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 91%
 
 ---
 
@@ -127,6 +127,28 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 | `CM_PROGRAM_ID` | 숫자 프로그램 식별자 |
 | `CM_PROGRAM_NAME` | 프로그램 이름 |
 | `ARTIFACTS_VERSION` | 스테이징 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 통합 버전 |
+
+### 표준 환경 변수 가용성 {#availability}
+
+표준 환경 변수는 여러 위치에서 사용할 수 있습니다.
+
+#### 작성자, 미리 보기 및 게시 {#author-preview-publish}
+
+일반 환경 변수와 암호는 작성, 미리 보기 및 게시 환경에서 사용할 수 있습니다.
+
+#### Dispatcher {#dispatcher}
+
+일반 환경 변수만 디스패처에서 사용할 수 있습니다. 암호는 사용할 수 없습니다.
+
+그러나 환경 변수는에서 사용할 수 없습니다 `IfDefine` 지시어
+
+>[!TIP]
+>
+>를 사용하여 환경 변수를 사용하는지 확인해야 합니다. [dispatcher 로컬로](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 배포하기 전에
+
+#### OSGi 구성 {#osgi}
+
+OSGi 구성에서 일반 환경 변수와 암호를 모두 사용할 수 있습니다.
 
 ### 파이프라인 변수 {#pipeline-variables}
 
