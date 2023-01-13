@@ -5,7 +5,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
 workflow-type: tm+mt
 source-wordcount: '1152'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -130,25 +130,25 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 ### 표준 환경 변수 가용성 {#availability}
 
-표준 환경 변수는 여러 위치에서 사용할 수 있습니다.
+표준 환경 변수는 여러 곳에서 사용할 수 있습니다.
 
-#### 작성자, 미리 보기 및 게시 {#author-preview-publish}
+#### 작성, 미리보기 및 게시 {#author-preview-publish}
 
-일반 환경 변수와 암호는 작성, 미리 보기 및 게시 환경에서 사용할 수 있습니다.
+일반 환경 변수와 비밀은 작성, 미리보기 및 게시 환경에서 사용할 수 있습니다.
 
 #### Dispatcher {#dispatcher}
 
-일반 환경 변수만 [디스패처.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 암호는 사용할 수 없습니다.
+[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 비밀은 사용할 수 없습니다.
 
-그러나 환경 변수는에서 사용할 수 없습니다 `IfDefine` 지시어
+그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
 
 >[!TIP]
 >
->를 사용하여 환경 변수를 사용하는지 확인해야 합니다. [dispatcher 로컬로](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) 배포하기 전에
+>배포하기 전에 [로컬에서 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html)를 사용하여 환경 변수 사용을 확인해야 합니다.
 
 #### OSGi 구성 {#osgi}
 
-일반 환경 변수와 암호는 [OSGi 구성.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
+일반 환경 변수와 비밀 모두 [OSGi 구성](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)에서 사용할 수 있습니다.
 
 ### 파이프라인 변수 {#pipeline-variables}
 
