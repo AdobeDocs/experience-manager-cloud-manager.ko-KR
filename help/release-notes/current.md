@@ -3,10 +3,10 @@ title: 2023.1.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2023.1.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 3e4937fc262016cef5c5c692c06244f411b28c0f
+source-git-commit: dc534e6339f910014a3edbd684f7b1535079f039
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 61%
+source-wordcount: '164'
+ht-degree: 49%
 
 ---
 
@@ -25,7 +25,9 @@ ht-degree: 61%
 
 ## 새로운 기능 {#what-is-new}
 
-* 사용 편의성 향상은 사용자가 작업을 수행할 수 있는 위치와 기본 포인터를 구분하는 커서 스타일을 업데이트함으로써 수행되었습니다.
+* 지원 대상 [셀프 서비스 콘텐츠 복사](/help/using/content-copy.md) 은 이 릴리스 이후 단계적 롤아웃을 통해 사용할 수 있습니다. 특정 제한 사항이 적용될 수 있습니다.
+* 이제 환경 및 파이프라인 실행 목록에서 개별 행을 클릭하여 세부 사항에 액세스할 수 있습니다.
+* 사용자가 작업을 수행할 수 있는 위치와 기본 포인터를 구분하는 커서 스타일을 업데이트하여 사용 편의성을 개선했습니다.
 
 ## 버그 수정 {#bug-fixes}
 
