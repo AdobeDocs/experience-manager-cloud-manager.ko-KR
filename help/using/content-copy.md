@@ -1,10 +1,10 @@
 ---
 title: 컨텐츠 복사 도구
 description: Cloud Manager 컨텐츠 복사 도구를 사용하면 사용자가 AEM 프로덕션 환경에서 온디맨드로 변경할 수 있는 컨텐츠를 테스트 목적으로 낮은 환경에 복사할 수 있습니다.
-source-git-commit: e32e51f7d10e753b7ecb2a63adb36d1b6c90fcc1
+source-git-commit: 360cbf7e3a21e530a4e43f13f6d414dae4afa104
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 8%
+source-wordcount: '1017'
+ht-degree: 7%
 
 ---
 
@@ -33,12 +33,7 @@ Cloud Manager 컨텐츠 복사 도구를 사용하면 사용자가 AEM 프로덕
 
 ## 권한 {#permissions}
 
-컨텐츠 복사 도구를 사용하려면 소스 환경과 타겟 환경 모두에서 특정 권한이 필요합니다.
-
-| 컨텐츠 복사 기능 | AEM 관리자 그룹에서 사용할 수 있습니까? | 배포 관리자 역할에서 사용할 수 있습니까? |
-|---|---|---|
-| 만들기 및 수정 [콘텐츠 세트](#create-content-set) | 예 | 아니요 |
-| 시작 또는 취소 [컨텐츠 복사 프로세스](#copy-content) | 예 | 예 |
+컨텐츠 복사 도구를 사용하려면 사용자를 **배포 관리자** 소스 및 타겟 환경에서의 역할.
 
 ## 컨텐츠 세트 만들기 {#create-content-set}
 
