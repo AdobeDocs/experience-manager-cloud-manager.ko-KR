@@ -4,7 +4,7 @@ description: Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 
 source-git-commit: 360cbf7e3a21e530a4e43f13f6d414dae4afa104
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목
 
 ## 권한 {#permissions}
 
-컨텐츠 복사 도구를 사용하려면 사용자를 **배포 관리자** 소스 및 타겟 환경에서의 역할.
+콘텐츠 복사 도구를 사용하려면 사용자는 소스 및 대상 환경에서 **배포 관리자** 역할에 할당되어야 합니다.
 
 ## 콘텐츠 세트 만들기 {#create-content-set}
 
