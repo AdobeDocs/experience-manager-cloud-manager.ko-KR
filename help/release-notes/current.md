@@ -1,19 +1,19 @@
 ---
-title: 2023.1.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2023.1.0의 릴리스 정보입니다.
+title: 2023.2.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2023.2.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: dc534e6339f910014a3edbd684f7b1535079f039
-workflow-type: ht
-source-wordcount: '164'
+source-git-commit: ab1747e14be783004544681f9aefefaa0587302e
+workflow-type: tm+mt
+source-wordcount: '82'
 ht-degree: 100%
 
 ---
 
 
-# Cloud Manager 릴리스 2023.1.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2023.2.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.1.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.2.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,14 +21,4 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.1.0의 출시 일자는 2023년 1월 19일입니다. 다음 릴리스는 2023년 2월 16일로 예정되어 있습니다.
-
-## 새로운 기능 {#what-is-new}
-
-* [셀프서비스 콘텐츠 복사](/help/using/content-copy.md)에 대한 지원은 이 릴리스 이후 단계별 롤아웃을 통해 제공될 예정입니다. 특정 제한 사항이 적용될 수 있습니다.
-* 환경 및 파이프라인 실행 목록에서 이제 개별 행을 클릭하여 세부 정보에 액세스할 수 있습니다.
-* 사용자가 작업을 수행할 수 있는 위치와 기본 포인터를 구별하는 커서 스타일 업데이트를 통해 사용성이 개선되었습니다.
-
-## 버그 수정 {#bug-fixes}
-
-* Cloud Manager가 두 개의 파이프라인 실행이 동시에 (또는 거의 동시에) 시작되지 않도록 하여 파이프라인 오류를 방지합니다.
+[!UICONTROL Cloud Manager] 릴리스 2023.1.0의 릴리스 날짜는 2023년 2월 16일입니다. 다음 릴리스는 2023년 3월 16일에 예정되어 있습니다.
