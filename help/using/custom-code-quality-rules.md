@@ -3,9 +3,9 @@ title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 611cd8f874e8e0d21a475365f4aceb6ae2565644
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3537'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ AEM 엔지니어링의 모범 사례를 기반으로 [코드 품질 테스트](/
 
 >[!NOTE]
 >
->여기에 제공된 코드 샘플은 설명 목적으로만 제공됩니다. 다음을 참조하십시오 [SonarQube의 개념 설명서](https://docs.sonarqube.org/latest/) 개념과 품질 규칙에 대해 알아봅니다.
+>여기에 제공된 코드 샘플은 설명 목적으로만 제공됩니다. SonarQube의 개념 및 품질 규칙에 대해 알아보려면 [SonarQube의 개념 설명서](https://docs.sonarqube.org/latest/)를 참조하십시오.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
@@ -104,7 +104,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **심각도**: 심각
 * **이후**: 버전 2018.6.0
 
-AEM 애플리케이션 내부에서 HTTP 요청을 실행할 때 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. 불행히도 Java™ 기본 HTTP 클라이언트의 기본 비헤이비어 `java.net.HttpUrlConnection`및 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트는 시간 초과를 하지 않기 때문에 시간 초과를 명시적으로 설정해야 합니다. 가장 좋은 방법은 이러한 시간 초과를 60초 이내로 설정하는 것입니다.
+AEM 애플리케이션 내부에서 HTTP 요청을 실행할 때 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. 불행히도 Java™ 기본 HTTP 클라이언트인 `java.net.HttpUrlConnection`과 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 비헤이비어는 시간 초과를 하지 않기 때문에 시간 초과를 명시적으로 설정해야 합니다. 가장 좋은 방법은 이러한 시간 초과를 60초 이내로 설정하는 것입니다.
 
 #### 비준수 코드 {#non-compliant-code-2}
 
@@ -172,16 +172,16 @@ public void orDoThis() {
 }
 ```
 
-### ResourceResolver 개체를 항상 닫아야 함 {#resourceresolver-objects-should-always-be-closed}
+### ResourceResolver 오브젝트를 항상 닫아야 함 {#resourceresolver-objects-should-always-be-closed}
 
 * **키**: CQRules:CQBP-72
 * **유형**: 코드 스멜
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
-`ResourceResolverFactory`에서 가져온 `ResourceResolver` 개체는 시스템 리소스를 사용합니다. `ResourceResolver`가 더 이상 사용되지 않을 때 이러한 리소스를 회수하는 방법이 있지만 `close()` 메서드를 호출하여 열려 있는 `ResourceResolver` 개체를 명시적으로 닫는 것이 더 효율적입니다.
+`ResourceResolverFactory`에서 가져온 `ResourceResolver` 오브젝트는 시스템 리소스를 사용합니다. `ResourceResolver`가 더 이상 사용되지 않을 때 이러한 리소스를 회수하는 방법이 있지만 `close()` 메서드를 호출하여 열려 있는 `ResourceResolver` 오브젝트를 명시적으로 닫는 것이 더 효율적입니다.
 
-한 가지 일반적인 오해는 다음과 같습니다 `ResourceResolver` 기존 JCR 세션을 사용하여 생성된 개체를 명시적으로 닫거나 그렇게 하면 기본 JCR 세션이 닫히지 않아야 합니다. 이는 사실이 아닙니다. `ResourceResolver`를 여는 방법과 상관없이 더 이상 사용하지 않을 때는 닫아야 합니다. `ResourceResolver`는 `Closeable` 인터페이스를 구현하기 때문에 `close()`를 명시적으로 호출하는 대신 `try-with-resources` 구문을 사용하는 것도 가능합니다.
+일반적인 오해 중 하나는 기존 JCR 세션을 사용하여 생성된 `ResourceResolver` 오브젝트를 명시적으로 닫지 말아야 하거나 그렇게 하면 기본 JCR 세션이 닫힐 것이라는 것입니다. 이는 사실이 아닙니다. `ResourceResolver`를 여는 방법과 상관없이 더 이상 사용하지 않을 때는 닫아야 합니다. `ResourceResolver`는 `Closeable` 인터페이스를 구현하기 때문에 `close()`를 명시적으로 호출하는 대신 `try-with-resources` 구문을 사용하는 것도 가능합니다.
 
 #### 비준수 코드 {#non-compliant-code-4}
 
@@ -283,7 +283,7 @@ public void orDoThis() throws MyCustomException {
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
-피해야 할 또 다른 일반적인 패턴은 메시지를 기록한 다음 즉시 예외를 발생시키는 것입니다. 이는 일반적으로 예외 메시지가 로그 파일에 중복됨을 나타냅니다.
+피해야 할 또 다른 일반적인 패턴은 메시지를 기록한 다음 즉시 예외를 발생시키는 것입니다. 이는 일반적으로 예외 메시지가 로그 파일에 중복됨을 나타내는 것입니다.
 
 #### 비준수 코드 {#non-compliant-code-7}
 
@@ -403,7 +403,7 @@ public void doThis() {
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
-로그 메시지를 이해할 때 컨텍스트는 중요합니다. `Exception.printStackTrace()`를 사용하면 스택 추적만 표준 오류 스트림으로 출력되므로 모든 컨텍스트가 손실됩니다. 또한, AEM과 같은 다중 스레드 애플리케이션에서 이 방법을 사용하여 여러 예외를 병렬로 인쇄하면 스택 추적이 겹쳐서 상당한 혼동을 일으킬 수 있습니다. 예외는 로깅 프레임워크에서만 기록되어야 합니다.
+로그 메시지를 이해할 때 컨텍스트는 중요합니다. `Exception.printStackTrace()`를 사용하면 스택 추적만 표준 오류 스트림으로 출력되므로 모든 컨텍스트가 손실됩니다. 또한 AEM과 같은 다중 스레드 애플리케이션에서 이 방법을 사용하여 여러 예외를 병렬로 인쇄하면 스택 추적이 겹쳐서 상당한 혼동을 일으킬 수 있습니다. 예외는 로깅 프레임워크에서만 기록되어야 합니다.
 
 #### 비준수 코드 {#non-compliant-code-11}
 
@@ -496,7 +496,7 @@ public void doThis(Resource resource) {
 
 보장된 실행이 필요한 작업에는 Sling 스케줄러를 사용하지 마십시오. Sling의 예정된 작업은 실행을 보장하며 클러스터된 환경과 클러스터되지 않은 환경 모두에 더 적합합니다.
 
-을(를) 참조하십시오 [Apache Sling 이벤트 및 작업 처리 설명서](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) 클러스터 환경에서 슬링 작업이 처리되는 방법에 대해 자세히 알아보십시오.
+클러스터 환경에서 Sling 작업이 처리되는 방법에 대한 자세한 내용은 [Apache Sling 이벤트 및 작업 처리 설명서](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)를 참조하십시오.
 
 ### 더 이상 사용되지 않는 AEM API를 사용하면 안 됨 {#sonarqube-aem-deprecated}
 
@@ -507,9 +507,9 @@ public void doThis(Resource resource) {
 
 AEM API 영역은 사용이 권장되지 않아 더 이상 사용되지 않는 것으로 간주되는 API를 식별하기 위해 지속적으로 수정되고 있습니다.
 
-대부분의 경우 이러한 API는 표준 Java를 사용하여 더 이상 사용되지 않습니다™ *@Deprecated* 주석 및 그에 따라 식별됨 `squid:CallToDeprecatedMethod`.
+대부분의 경우 이러한 API는 표준 Java™ *@Deprecated* 주석을 사용하여 더 이상 사용되지 않으며, `squid:CallToDeprecatedMethod`에 의해 식별됩니다.
 
-그러나 AEM의 컨텍스트에서는 API가 더 이상 사용되지 않지만 다른 컨텍스트에서는 더 이상 사용되지 않을 수 있는 경우가 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
+그러나 AEM의 컨텍스트에서는 API가 더 이상 사용되지 않지만 다른 컨텍스트에서는 사용되는 경우가 있습니다. 이 규칙은 이 두 번째 클래스를 식별합니다.
 
 ## OakPAL 콘텐츠 규칙 {#oakpal-rules}
 
@@ -526,11 +526,11 @@ AEM API 영역은 사용이 권장되지 않아 더 이상 사용되지 않는 �
 * **심각도**: 심각
 * **이후**: 버전 2018.7.0
 
-AEM API에는 사용자 지정 코드에 의해 사용될 뿐 구현되지 않는 Java™ 인터페이스와 클래스가 포함되어 있습니다. 예: 인터페이스 `com.day.cq.wcm.api.Page` 는 AEM에서만 구현됩니다.
+AEM API는 사용자 정의 코드에 의해 사용될 뿐 구현되지 않는 Java™ 인터페이스와 클래스를 포함합니다. 예를 들어 `com.day.cq.wcm.api.Page` 인터페이스는 AEM에서만 구현됩니다.
 
 이러한 인터페이스에 새로운 메서드가 추가될 때, 이러한 추가 메서드는 이러한 인터페이스를 사용하는 기존 코드에 영향을 주지 않으며, 결과적으로 이러한 인터페이스에 새로운 메서드를 추가하는 것은 역호환성이 있는 것으로 간주됩니다. 그러나 사용자 정의 코드가 이러한 인터페이스 중 하나를 구현하는 경우 해당 사용자 정의 코드는 고객에게 역호환성 위험을 초래합니다.
 
-AEM에 의해서만 구현되도록 의도된 인터페이스와 클래스는 `org.osgi.annotation.versioning.ProviderType` 또는 경우에 따라 유사한 레거시 주석 `aQute.bnd.annotation.ProviderType`. 이 규칙은 이러한 인터페이스가 구현되거나 사용자 정의 코드에 의해 클래스가 확장되는 경우를 식별합니다.
+AEM에 의해서만 구현되도록 의도된 인터페이스와 클래스는 `org.osgi.annotation.versioning.ProviderType` 또는 경우에 따라 유사한 레거시 주석 `aQute.bnd.annotation.ProviderType`으로 주석을 달 수 있습니다. 이 규칙은 이러한 인터페이스가 구현되거나 사용자 정의 코드에 의해 클래스가 확장되는 경우를 식별합니다.
 
 #### 비준수 코드 {#non-compliant-code-3}
 
@@ -549,7 +549,7 @@ public class DontDoThis implements Page {
 * **심각도**: Blocker
 * **이후**: 버전 2019.6.0
 
-AEM 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 읽기 전용으로 간주해야 하는 것이 오랜 모범 사례였습니다. `/libs`에서 노드 및 속성을 수정하면 주 업데이트 및 부 업데이트에 상당한 위험이 발생합니다. 수정 사항 `/libs` 은 공식 채널을 통해 Adobe에 의해서만 만들어집니다.
+AEM 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 읽기 전용으로 간주해야 하는 것이 오랜 모범 사례였습니다. `/libs`에서 노드 및 속성을 수정하면 주 업데이트 및 부 업데이트에 상당한 위험이 발생합니다. `/libs`에 대한 수정은 공식 채널을 통해 Adobe에 의해서만 이루어져야 합니다.
 
 ### 패키지에 중복된 OSGi 구성이 포함되어서는 안 됨 {#oakpal-package-osgi}
 
@@ -558,7 +558,7 @@ AEM 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 읽기 전용�
 * **심각도**: 주요
 * **이후**: 버전 2019.6.0
 
-복잡한 프로젝트에서 발생하는 일반적인 문제는 동일한 OSGi 구성 요소가 여러 번 구성되는 경우입니다. 따라서 어떤 구성이 작동 가능할지 모호해집니다. 이 규칙은 동일한 구성 요소가 동일한 실행 모드 또는 실행 모드 조합에서 여러 번 구성된 문제만 식별한다는 점에서 &quot;실행 모드 인식&quot;입니다.
+복잡한 프로젝트에서 발생하는 일반적인 문제는 동일한 OSGi 구성 요소가 여러 번 구성되는 경우입니다. 그로 인해 어떤 구성이 작동 가능할지 모호해집니다. 이 규칙은 동일한 구성 요소가 동일한 실행 모드 또는 실행 모드 조합에서 여러 번 구성된 문제만 식별한다는 점에서 “실행 모드 인식”입니다.
 
 #### 비준수 코드 {#non-compliant-code-osgi}
 
@@ -627,7 +627,7 @@ AEM 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 읽기 전용�
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내의 기본 제작 모드를 정의합니다. 이유 [클래식 UI는 AEM 6.4 이후 더 이상 사용되지 않습니다.](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) 이제 기본 작성 모드가 클래식 UI로 구성되면 문제가 발생합니다.
+OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내의 기본 제작 모드를 정의합니다. [AEM 6.4 이후 클래식 UI가 더 이상 사용되지 않으므로](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) 기본 제작 모드가 클래식 UI로 구성되면 문제가 발생합니다.
 
 ### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 함 {#oakpal-components-dialogs}
 
@@ -651,7 +651,7 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 터치 UI�
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-Cloud Service 배포 모델과 호환되려면 개별 콘텐츠 패키지에 저장소의 변경 불가능한 영역(즉, `/apps` 및 `/libs`) 또는 변경 가능한 영역(즉, `/apps` 또는 `/libs`에 있지 않은 모든 것)에 대한 콘텐츠가 포함되어 있어야 하지만 둘 다 포함되어서는 안 됩니다. 예: 두 가지를 모두 포함하는 패키지 `/apps/myco/components/text and /etc/clientlibs/myco` 은(는) Cloud Service과 호환되지 않으므로 문제가 보고됩니다.
+Cloud Service 배포 모델과 호환되려면 개별 콘텐츠 패키지에 저장소의 변경 불가능한 영역(즉, `/apps` 및 `/libs`) 또는 변경 가능한 영역(즉, `/apps` 또는 `/libs`에 있지 않은 모든 것)에 대한 콘텐츠가 포함되어 있어야 하지만 둘 다 포함되어서는 안 됩니다. 예를 들어 `/apps/myco/components/text and /etc/clientlibs/myco`가 모두 포함된 패키지는 Cloud Service와 호환되지 않으므로 문제가 보고됩니다.
 
 자세한 내용은 [AEM 프로젝트 구조 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)를 참조하십시오.
 
@@ -719,7 +719,7 @@ AEM Cloud Service에서 에셋 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-정적 템플릿의 사용은 역사적으로 AEM Projects에서 흔했지만 편집 가능한 템플릿은 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 매우 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html) 문서에서 확인할 수 있습니다.
+정적 템플릿의 사용은 역사적으로 AEM 프로젝트에서 흔했지만 편집 가능한 템플릿은 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 적극 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-editable.html) 문서에서 확인할 수 있습니다.
 
 정적 템플릿에서 편집 가능 템플릿으로의 마이그레이션은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대부분 자동화할 수 있습니다.
 
@@ -741,7 +741,7 @@ AEM Cloud Service에서 에셋 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service에서는 실행 모드 이름에 대해 엄격한 이름 지정 정책을 시행하고 해당 실행 모드에 대해 엄격한 순서를 적용합니다. 지원되는 실행 모드 목록은 [AEM as a Cloud Service에 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) 그리고 이와 관련된 모든 편차는 문제로 식별됩니다.
+AEM Cloud Service는 실행 모드 이름에 대해 엄격한 이름 지정 정책을 시행하고 해당 실행 모드에 대해 엄격한 순서를 적용합니다. 지원되는 실행 모드 목록은 [AEM as a Cloud Service에 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)에서 확인할 수 있으며, 이와 관련된 모든 편차는 문제로 식별됩니다.
 
 ### 사용자 정의 검색 인덱스 정의 노드는 /oak:index의 직접 하위 노드여야 함 {#oakpal-custom-search}
 
@@ -768,7 +768,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-사용자 정의 검색 인덱스 정의 노드에 순서가 지정되지 않은 하위 노드가 있을 경우 문제를 해결하기 어려운 문제가 발생할 수 있습니다. 이러한 문제를 방지하려면 `oak:QueryIndexDefinition` 노드의 모든 하위 노드가 `nt:unstructured` 유형인 것이 좋습니다.
+사용자 정의 검색 인덱스 정의 노드에 순서가 지정되지 않은 하위 노드가 있으면 문제를 해결하기 어려운 문제가 발생할 수 있습니다. 이러한 문제를 방지하려면 `oak:QueryIndexDefinition` 노드의 모든 하위 노드가 `nt:unstructured` 유형인 것이 좋습니다.
 
 ### 사용자 정의 검색 인덱스 정의 노드는 하위 노드가 있는 indexRules라는 하위 노드를 포함해야 함 {#oakpal-custom-search-index}
 
@@ -847,10 +847,10 @@ AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryInd
 
 * [각 Dispatcher 팜에는 고유한 이름이 있어야 함](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---each-dispatcher-farm-should-have-a-unique-name)
 
-* [Dispatcher 게시 팜 캐시에는 ignoreUrlParams 규칙이 허용 목록에 추가하다 방식으로 구성되어 있어야 함](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
+* [Dispatcher 게시 팜 캐시에는 ignoreUrlParams 규칙이 허용 목록 방식으로 구성되어 있어야 함](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-cache-should-have-its-ignoreurlparams-rules-configured-in-an-allow-list-manner)
 
-* [Dispatcher는 허용되는 Sling 선택기를 허용 목록에 추가하다 방식으로 지정해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
+* [Dispatcher 게시 팜 필터는 허용 목록 방식으로 허용되는 Sling 선택기를 지정해야 함](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-selectors-in-an-allow-list-manner)
 
-* [Dispatcher는 허용되는 Sling 접미사 패턴을 허용 목록에 추가하다 방식으로 게시해야 합니다.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
+* [Dispatcher 게시 팜 필터는 허용 목록 방식으로 허용되는 Sling 접미사 패턴을 지정해야 함](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-dispatcher-publish-farm-filters-should-specify-the-allowed-sling-suffix-patterns-in-an-allow-list-manner)
 
-* [루트 디렉터리 경로가 있는 VirtualHost Directory 섹션에서 &#39;Require all granted&#39; 지시문을 사용하지 마십시오.](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
+* [루트 디렉터리 경로가 있는 VirtualHost Directory 섹션에서 “Require all granted” 지시어를 사용하면 안 됨](https://github.com/adobe/aem-dispatcher-optimizer-tool/blob/main/docs/Rules.md#dot---the-require-all-granted-directive-should-not-be-used-in-a-virtualhost-directory-section-with-a-root-directory-path)
