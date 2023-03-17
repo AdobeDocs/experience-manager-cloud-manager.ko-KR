@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2023.3.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 6ff44d7a7ccccc64f937df4dca854788c973bfd0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 82%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.3.0의 릴리스 날짜는 2023년 3월 16일입니다. 다음 릴리스는 2023년 4월 13일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2023.3.0의 릴리스 일자는 2023년 3월 16일입니다. 다음 릴리스는 2023년 4월 13일에 예정되어 있습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 의 상거래 타일 **학습** 이제 Cloud Manager의 탭에서 사용자가 올바른 페이지로 이동합니다.
+* 이제 Cloud Manager의 **학습** 탭에 있는 상거래 타일이 사용자를 올바른 페이지로 안내합니다.
