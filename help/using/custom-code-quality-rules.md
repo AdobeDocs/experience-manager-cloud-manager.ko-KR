@@ -2,9 +2,9 @@
 title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 611cd8f874e8e0d21a475365f4aceb6ae2565644
-workflow-type: ht
-source-wordcount: '3537'
+source-git-commit: ef87e13eb81faf5605cdd16c6fd46d5f7b3233a9
+workflow-type: tm+mt
+source-wordcount: '3531'
 ht-degree: 100%
 
 ---
@@ -627,7 +627,7 @@ AEM 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 읽기 전용�
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내의 기본 제작 모드를 정의합니다. [AEM 6.4 이후 클래식 UI가 더 이상 사용되지 않으므로](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html) 기본 제작 모드가 클래식 UI로 구성되면 문제가 발생합니다.
+OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내의 기본 제작 모드를 정의합니다. AEM 6.4 이후 클래식 UI가 더 이상 사용되지 않으므로 기본 제작 모드가 클래식 UI로 구성되면 문제가 발생합니다.
 
 ### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 함 {#oakpal-components-dialogs}
 
