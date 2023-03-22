@@ -2,10 +2,10 @@
 title: Cloud Manager 저장소
 description: Cloud Manager 프로그램의 저장소에 액세스, 생성 및 편집하는 방법에 대해 알아보십시오.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 80%
 
 ---
 
@@ -81,9 +81,19 @@ Cloud Manager에서 만든 저장소는 [파이프라인을 만들](/help/overvi
 
 1. **프로그램 개요** 페이지에서 **저장소** 탭을 클릭하고 **저장소** 페이지로 이동합니다. 여기서 기존 저장소의 세부 정보를 볼 수 있습니다.
 
-1. 저장소를 선택하고 테이블 오른쪽 끝에 있는 줄임표 버튼을 클릭하여 **저장소 URL 복사**, **보기 및 업데이트** 또는 저장소 **삭제**&#x200B;를 수행합니다.
+1. 저장소를 선택하고 표의 맨 오른쪽에 있는 줄임표 단추를 누릅니다 **저장소 URL 복사** 또는 **보기 및 업데이트** 리포지토리.
 
 ![저장소 편집](/help/assets/create-repo3.png)
+
+## 저장소 삭제 {#delete-repos}
+
+저장소를 삭제하려면 동일한 단계를 수행합니다 [저장소를 보고 편집합니다.](#edit-repos) 하지만 **저장소** 페이지 선택 **삭제** 삭제할 저장소의 줄임표 단추에서 삭제할 수 있습니다.
+
+Cloud Manager에서 저장소를 삭제하면 삭제로 표시되고 사용자가 더 이상 액세스할 수 없지만 복구를 위해 시스템에서 유지됩니다.
+
+같은 이름의 저장소를 삭제한 후 새 저장소를 생성하려고 하면 &quot;저장소를 만드는 동안 오류가 발생했습니다. CSE 또는 Adobe 지원에 문의하십시오.&quot;
+
+이 오류 메시지가 표시되면 Adobe 지원 센터에 문의하여 삭제된 저장소 이름을 바꾸거나 새 리포지토리의 다른 이름을 선택할 수 있습니다.
 
 ## git 하위 모듈 지원 {#git-submodule-support}
 
