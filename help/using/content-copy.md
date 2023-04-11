@@ -1,10 +1,10 @@
 ---
 title: 콘텐츠 복사 도구
 description: Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목적으로 AEM 프로덕션 환경에서 하위 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
-source-git-commit: 7ab5bdea2b388f3e9e199a6d32a1a80977eba35b
-workflow-type: ht
-source-wordcount: '1074'
-ht-degree: 100%
+source-git-commit: 5b10ac5e47052cabd7478050651a4ca04287a8f0
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,10 @@ Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목
 
 * 콘텐츠가 대상 환경에서 수정된 경우 경로가 동일하면 소스의 콘텐츠로 덮어씁니다.
 * 경로가 다른 경우 소스의 콘텐츠가 대상의 콘텐츠와 병합됩니다.
+
+   >[!NOTE]
+   >
+   >파일 데이터 저장소 기반 토폴로지만 지원됩니다.
 
 ## 권한 {#permissions}
 
