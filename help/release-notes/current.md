@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2023.4.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '118'
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 0%
 
 ## 새로운 기능 {#what-is-new}
 
-* [AEM 프로젝트 원형](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 이 버전 41로 업데이트되었습니다.
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이 버전 41으로 업데이트되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 파란색 디스패처는 [파란색/녹색 배포](/help/introduction.md#blue-green) 실패.
+* [파란색/녹색 배포](/help/introduction.md#blue-green)가 실패할 경우 파란색 디스패처는 더 이상 녹색 ELB에 연결되지 않습니다.
