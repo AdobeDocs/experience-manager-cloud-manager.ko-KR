@@ -3,9 +3,9 @@ title: 콘텐츠 복사 도구
 description: Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목적으로 AEM 프로덕션 환경에서 하위 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 7ef29a244688de82537da0b879fbf397900427c0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1083'
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목
 
 >[!NOTE]
 >
->컨텐츠 세트에 최대 50개의 경로를 추가할 수 있습니다.
+>콘텐츠 세트에 최대 50개의 경로를 추가할 수 있습니다.
 >제외된 경로에는 제한이 없습니다.
 
 ## 콘텐츠 세트 편집 {#edit-content-set}
