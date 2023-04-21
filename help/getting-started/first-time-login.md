@@ -3,9 +3,9 @@ title: 최초 로그인
 description: 일반 구성을 설정하고 Cloud Manager를 처음 사용할 준비가 되었으면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 source-git-commit: 413edd167b5eda51c207113aaa00a92c808fb09f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 86%
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
-1. Cloud Manager에 로그인 위치 [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) 프로그램 목록을 볼 수 있습니다.
+1. [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인하면 프로그램 목록이 표시됩니다.
 
    ![Cloud Manager 콘솔](/help/assets/cloud-manager-console.png)
 
-1. 프로그램의 카드에서 줄임표 단추를 선택한 다음 **프로그램 개요** Cloud Manager의 **개요** 페이지.
+1. 프로그램 카드에서 줄임표 버튼을 선택한 다음 **프로그램 개요**&#x200B;를 선택하여 Cloud Manager의 **개요** 페이지로 이동합니다.
 
    ![Cloud Manager 옵션](/help/assets/program-overview-option.png)
 
