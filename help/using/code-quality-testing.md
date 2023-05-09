@@ -2,10 +2,10 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: 8c3b59ab9e00d6ee3b90b9255d025d9e19b3b89a
+source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
 workflow-type: tm+mt
 source-wordcount: '2867'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -152,7 +152,7 @@ Cloud Manager에서 스핀업하는 가상 사용자 또는 컨테이너의 수�
 30분간의 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 시드 URL 세트를 사용하여 스테이징 환경을 크롤합니다. 이러한 URL에서 시작하여 각 페이지의 HTML을 검사하고 링크를 폭 우선 방식으로 이동됩니다.
 
 * 이 크롤링 프로세스는 기본적으로 최대 5000페이지로 제한됩니다.
-* 테스트할 최대 페이지 수는 [환경 변수 ](/help/getting-started/build-environment.md#environment-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`를 설정하여 덮어쓸 수 있습니다.
+* 테스트할 최대 페이지 수는 [파이프라인 변수](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`.
    * 허용되는 값은 `2000` - `7000`입니다.
 * 크롤러의 요청에는 10초의 고정 시간 초과가 있습니다.
 
