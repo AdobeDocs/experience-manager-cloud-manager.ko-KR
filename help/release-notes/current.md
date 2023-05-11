@@ -1,19 +1,19 @@
 ---
-title: 2023.4.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2023.4.0의 릴리스 정보입니다.
+title: 2023.5.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2023.5.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 0ea63c0c8a4fa216ac3d70db1fb12add7f036495
-workflow-type: ht
-source-wordcount: '118'
-ht-degree: 100%
+source-git-commit: 5a92ceb98de68025ca917c9b9cb358d54282b235
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 67%
 
 ---
 
 
-# Cloud Manager 릴리스 2023.4.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2023.5.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.4.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.5.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,12 +21,8 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.4.0의 릴리스 날짜는 2023년 4월 13일입니다. 다음 릴리스는 2023년 11월 5일에 예정되어 있습니다.
+에 대한 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2023.5.0은 2023년 5월 11일입니다. 다음 릴리스는 2023년 6월 8일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이 버전 41으로 업데이트되었습니다.
-
-## 버그 수정 {#bug-fixes}
-
-* [파란색/녹색 배포](/help/introduction.md#blue-green)가 실패할 경우 파란색 디스패처는 더 이상 녹색 ELB에 연결되지 않습니다.
+* [셀프 서비스 콘텐츠 복사](/help/using/content-copy.md) 이제 Cloud Manager UI를 통해 더 높은 환경에서 더 낮은 환경으로 사용할 수 있습니다. 자세한 내용은 고객 성공 엔지니어에게 문의하십시오.
