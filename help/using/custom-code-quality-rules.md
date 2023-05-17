@@ -3,9 +3,9 @@ title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3566'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ AEM 엔지니어링의 모범 사례를 기반으로 [코드 품질 테스트](/
 
 >[!NOTE]
 >
->Adobe 소유 정보로 인해 전체 SonarQube 규칙을 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) 규칙의 설명 및 예제를 보려면 이 문서를 계속 읽으십시오.
+>전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
 다음 섹션에서는 Cloud Manager에서 실행되는 SonarQube 규칙에 대해 자세히 설명합니다.
 
-### 잠재적으로 위험한 기능을 사용 안 함 {#do-not-use-potentially-dangerous-functions}
+### 잠재적으로 위험한 기능을 사용하지 않음 {#do-not-use-potentially-dangerous-functions}
 
 * **키**: CQRules:CWE-676
 * **유형**: 취약성
@@ -82,7 +82,7 @@ public class DoThis implements Runnable {
 }
 ```
 
-### 외부에서 제어할 수 있는 형식 문자열 사용 안 함 {#do-not-use-format-strings-which-may-be-externally-controlled}
+### 외부에서 제어할 수 있는 형식 문자열을 사용하지 않음 {#do-not-use-format-strings-which-may-be-externally-controlled}
 
 * **키**: CQRules:CWE-134
 * **유형**: 취약성
@@ -101,14 +101,14 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 }
 ```
 
-### HTTP 요청에 항상 소켓 및 연결 시간 초과가 있어야 함 {#http-requests-should-always-have-socket-and-connect-timeouts}
+### HTTP 요청에 항상 소켓 및 연결 시간 초과가 포함되어 있어야 함 {#http-requests-should-always-have-socket-and-connect-timeouts}
 
 * **키**: CQRules:ConnectionTimeoutMechanism
 * **유형**: 버그
 * **심각도**: 심각
 * **이후**: 버전 2018.6.0
 
-AEM 애플리케이션 내부에서 HTTP 요청을 실행할 때 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. 불행히도 Java™ 기본 HTTP 클라이언트인 `java.net.HttpUrlConnection`과 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 비헤이비어는 시간 초과를 하지 않기 때문에 시간 초과를 명시적으로 설정해야 합니다. 가장 좋은 방법은 이러한 시간 초과를 60초 이내로 설정하는 것입니다.
+AEM 애플리케이션 내부에서 HTTP 요청을 실행할 때 불필요한 스레드 소비를 방지하기 위해 적절한 시간 초과가 구성되도록 하는 것이 중요합니다. Java™ 기본 HTTP 클라이언트인 `java.net.HttpUrlConnection`과 일반적으로 사용되는 Apache HTTP 구성 요소 클라이언트의 기본 비헤이비어는 시간 초과를 하지 않기 때문에 시간 초과를 명시적으로 설정해야 합니다. 가장 좋은 방법은 이러한 시간 초과를 60초 이내로 설정하는 것입니다.
 
 #### 비준수 코드 {#non-compliant-code-2}
 
@@ -712,7 +712,7 @@ AEM 클라이언트 라이브러리는 이미지 및 글꼴과 같은 정적 리
 * **심각도**: Blocker
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service에서 에셋 처리를 위해 Asset 마이크로 서비스로 이동하면서, AEM의 온프레미스 및 AMS 버전에서 사용되던 여러 워크플로 프로세스가 지원되지 않거나 불필요하게 되었습니다.
+AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 이동하면서, AEM의 온프레미스 및 AMS 버전에서 사용되던 여러 워크플로 프로세스가 지원되지 않거나 불필요하게 되었습니다.
 
 [AEM Assets as a Cloud Service GitHub 저장소](https://github.com/adobe/aem-cloud-migration)에 있는 마이그레이션 도구를 사용하여 AEM as a Cloud Service로 마이그레이션하는 동안 워크플로 모델을 업데이트할 수 있습니다.
 
