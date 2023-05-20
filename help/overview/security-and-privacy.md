@@ -3,7 +3,7 @@ title: 보안 및 개인정보 보호
 description: Cloud Manager에서 코드 및 아티팩트 에셋의 보안 및 개인정보 보호에 대해 알아보십시오.
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: d7751757c1d3bda3d60406a1d39cb41c61f5c863
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아보십시오.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 5907ca6337d33c26ff19a14bfeb358cd9f7b935d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 100%
 

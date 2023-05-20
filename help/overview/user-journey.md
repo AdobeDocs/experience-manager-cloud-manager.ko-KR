@@ -3,7 +3,7 @@ title: 사용자 여정
 description: 이 문서에서는 다양한 온보드 시나리오에 대해 설명하고 Cloud Manager를 사용하여 시작하는 과정을 설명합니다.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 source-git-commit: b0dbb602253939464ff034941ffbad84b7df77df
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 100%
 

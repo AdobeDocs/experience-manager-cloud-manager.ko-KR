@@ -3,7 +3,7 @@ title: 제품 업데이트 마법사
 description: 제품 업데이트 마법사가 Cloud Manager 내에서 엔드 투 엔드 AEM 업데이트 프로세스를 간소화하는 방법을 알아보십시오.
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: bbee49987e2f80825f5f7f5caf29c841e2b00dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
 

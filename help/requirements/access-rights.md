@@ -3,7 +3,7 @@ title: 액세스 권한
 description: Adobe ID와 이를 사용하여 Experience Cloud 리소스에 액세스하는 방법에 대해 알아보십시오.
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '250'
 ht-degree: 100%
 

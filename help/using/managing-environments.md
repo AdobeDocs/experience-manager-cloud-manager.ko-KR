@@ -3,7 +3,7 @@ title: 환경 관리
 description: Cloud Manager를 사용하여 환경을 관리하는 방법에 대해 알아보십시오.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
 source-git-commit: 80f8707e00357f5a08dd835b846c9ee610f3e573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: 프로덕션 파이프라인 구성
 description: Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 39b38da17ed1cadf4f2e9633a9e76b537325316f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 100%
 

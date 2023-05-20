@@ -3,7 +3,7 @@ title: 알림
 description: Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십시오.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: e767d9ff5e3df0047d2cf47d7b0842854101a01a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 100%
 

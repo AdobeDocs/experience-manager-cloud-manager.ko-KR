@@ -3,7 +3,7 @@ title: 소스 코드 저장소
 description: Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저닝된 git 저장소에 대해 알아보십시오.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 100%
 

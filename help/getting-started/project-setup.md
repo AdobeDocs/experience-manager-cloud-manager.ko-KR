@@ -3,7 +3,7 @@ title: 프로젝트 설정
 description: Cloud Manager를 사용하여 프로젝트를 관리하고 배포할 수 있도록 프로젝트를 설정하는 방법에 대해 알아보십시오.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 100%
 

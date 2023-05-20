@@ -3,7 +3,7 @@ title: CI/CD 파이프라인
 description: CI/CD 파이프라인과 Cloud Manager에서 스테이징 및 프로덕션 환경에 대한 배포를 처리하는 방법에 대해 알아보십시오.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Adobe Cloud Manager와 Git 통합
 description: 이 비디오 시리즈는 Adobe Cloud Manager와 함께 고객 관리(온프레미스) git 저장소를 설정하고 통합하는 과정을 안내합니다.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 100%
 
