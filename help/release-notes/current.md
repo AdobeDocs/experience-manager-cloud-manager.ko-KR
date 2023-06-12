@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2023.6.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 77%
 
 ## 새로운 기능 {#what-is-new}
 
-* 다시 시작할 때 [프로덕션 파이프라인,](/help/using/production-pipelines.md) 이제 승인 단계에서 확인 대화 상자가 표시됩니다.
+* 이제 [프로덕션 파이프라인](/help/using/production-pipelines.md)을 다시 시작할 때 승인 단계에서 확인 대화 상자가 표시됩니다.
