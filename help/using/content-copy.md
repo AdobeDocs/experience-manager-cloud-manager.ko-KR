@@ -3,9 +3,9 @@ title: 콘텐츠 복사 도구
 description: Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목적으로 AEM 프로덕션 환경에서 하위 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 435efe2e6cecae738a62869c55034113c09f70e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1090'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -164,5 +164,5 @@ Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 테스트 목
 * 콘텐츠 세트당 최대 50개의 경로를 지정할 수 있습니다. 제외된 경로에는 제한이 없습니다.
 * 콘텐츠 복사 도구는 소스에서 이동되거나 삭제된 콘텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
 * 콘텐츠 복사는 시작되고 나면 일시 중지하거나 취소할 수 없습니다.
-* 콘텐츠 복사 도구는 Dynamic Media 관련 메타데이터와 함께 자산을 상위 환경에서 선택한 하위 환경으로 복사합니다.
-   * 복사된 에셋은 다음을 사용하여 재처리되어야 합니다. [DAM 자산 처리 워크플로우](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html) 각 dynamic media 구성을 사용하기 위한 하위 환경.
+* 콘텐츠 복사 도구는 상위 환경에서 선택한 하위 환경으로 다이내믹 미디어 관련 메타데이터와 함께 자산을 복사합니다.
+   * 이후 각각의 다이내믹 미디어 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)를 사용하여 복사된 자산을 재처리해야 합니다.
