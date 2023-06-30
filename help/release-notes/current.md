@@ -1,19 +1,19 @@
 ---
-title: 2023.6.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2023.6.0의 릴리스 정보입니다.
+title: 2023.7.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2023.7.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 1bbdc88a2c7a86e258d5fd56fab504aa7232e9fc
-workflow-type: ht
-source-wordcount: '99'
-ht-degree: 100%
+source-git-commit: 950fef5781c53f9bccf4c33c8b9d958edd5a0327
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 68%
 
 ---
 
 
-# Cloud Manager 릴리스 2023.6.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2023.7.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.6.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.7.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,8 +21,9 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.6.0의 릴리스 날짜는 2023년 6월 8일입니다. 다음 릴리스는 2023년 7월 6일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2023.7.0의 릴리스 날짜는 2023년 6월 29일입니다. 다음 릴리스는 2023년 8월 10일에 예정되어 있습니다.
 
-## 새로운 기능 {#what-is-new}
+## 버그 수정 {#bug-fixes}
 
-* 이제 [프로덕션 파이프라인](/help/using/production-pipelines.md)을 다시 시작할 때 승인 단계에서 확인 대화 상자가 표시됩니다.
+* 이제 Cloud Manager 랜딩 페이지의 카드에 [향상된 보안](/help/getting-started/program-setup.md) 이 해당 프로그램에 대해 활성화되어 있습니다.
+* 날짜 [프로덕션 파이프라인 편집,](/help/using/managing-pipelines.md#editing-pipelines) 에서 에셋을 제거하려고 하는 경우 **스테이지 테스트** 탭에 오류가 표시됩니다.
