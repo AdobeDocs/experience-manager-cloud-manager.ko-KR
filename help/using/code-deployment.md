@@ -2,10 +2,10 @@
 title: 코드 배포
 description: 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 100%
+source-wordcount: '1655'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 * **보안 테스트**: 이 단계에서는 코드가 AEM 환경에 미치는 보안 영향을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](/help/using/code-quality-testing.md) 문서를 참조하십시오.
    * **성능 테스트**: 이 단계에서는 코드의 성능을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](/help/using/code-quality-testing.md)를 참조하십시오.
 
-   ![스테이지 테스트](/help/assets/Stage_Testing1.png)
+  ![스테이지 테스트](/help/assets/Stage_Testing1.png)
 
 ### 프로덕션 배포 단계 {#production-deployment}
 
@@ -68,7 +68,7 @@ ht-degree: 100%
 * **프로덕션 배포 예약**
    * 이 옵션은 파이프라인을 구성하는 동안 활성화됩니다.
    * 예약된 날짜 및 시간은 사용자의 표준 시간대로 지정됩니다.
-      ![배포 예약](/help/assets/Production_Deployment1.png)
+     ![배포 예약](/help/assets/Production_Deployment1.png)
 * **CSE 지원**(활성화된 경우)
 * **프로덕션에 배포**
 
@@ -111,6 +111,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포하는 경우 가능한 �
 1. 각 AEM 아티팩트는 Package Manager API를 통해 각 AEM 인스턴스에 배포되며, 패키지 종속성이 배포 순서를 결정합니다.
 
    * 패키지를 사용하여 새 기능을 설치하고 인스턴스 간에 콘텐츠를 전송하고 저장소 콘텐츠를 백업하는 방법에 대한 자세한 내용은 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 문서를 참조하십시오.
+
    >[!NOTE]
    >
    >모든 AEM 아티팩트는 작성자와 게시자 모두에게 배포됩니다. 노드별 구성이 필요한 경우 실행 모드를 활용해야 합니다. 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service로 배포 문서의 실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) 섹션을 참조하십시오.
@@ -175,17 +176,21 @@ Cloud Manager가 비프로덕션 토폴로지에 배포하는 경우 가능한 �
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 ```
 
-## 프로덕션 배포 재실행 {#re-execute-deployment}
+## 프로덕션 배포 재실행 {#reexecute-deployment}
 
-프로덕션 배포 단계가 완료된 실행에 대해 프로덕션 배포 단계의 재실행을 사용할 수 있습니다. 완료 유형은 중요하지 않습니다. 배포가 성공(AMS 프로그램에만 해당), 취소 또는 실패할 수 있습니다. 주요 사용 사례는 일시적인 이유로 프로덕션 배포 단계가 실패한 경우입니다. 재실행은 동일한 파이프라인을 사용하여 새 실행을 만듭니다. 이 새로운 실행은 세 단계로 구성됩니다.
+드문 경우지만 일시적인 이유로 프로덕션 배포 단계가 실패할 수 있습니다. 이러한 경우 완료 유형(예: 성공, 취소 또는 실패)에 관계없이 프로덕션 배포 단계가 완료된 한 프로덕션 배포 단계의 재실행이 지원됩니다. 재실행은 세 단계로 구성된 동일한 파이프라인을 사용하여 새 실행을 만듭니다.
 
-1. **유효성 검사 단계** – 기본적으로 일반 파이프라인 실행 중에 발생하는 유효성 검사와 동일합니다.
-1. **빌드 단계** – 재실행의 맥락에서 빌드 단계는 실제로 새 빌드 프로세스를 실행하는 것이 아니라 아티팩트를 복사하는 것입니다.
-1. **프로덕션 배포 단계** – 일반 파이프라인 실행에서 프로덕션 배포 단계와 동일한 구성 및 옵션을 사용합니다.
+1. **유효성 검사 단계** - 기본적으로 일반 파이프라인 실행 중에 발생하는 유효성 검사와 동일합니다.
+1. **빌드 단계** - 재실행의 맥락에서 빌드 단계는 실제로 새 빌드 프로세스를 실행하지 않고 아티팩트를 복사합니다.
+1. **프로덕션 배포 단계** - 일반 파이프라인 실행에서 프로덕션 배포 단계와 동일한 구성 및 옵션을 사용합니다.
 
-빌드 단계는 재빌드가 아니라 아티팩트를 복사하는 것임을 나타내기 위해 UI에 다른 레이블이 지정될 수 있습니다.
+재실행이 가능한 경우 프로덕션 파이프라인 상태 페이지에서 다음을 제공합니다. **재실행** 일반 옆의 옵션 **빌드 로그 다운로드** 옵션을 선택합니다.
 
-![재실행](/help/assets/Re-deploy.png)
+![파이프라인 개요 창의 재실행 옵션](/help/assets/re-execute.png)
+
+>[!NOTE]
+>
+>재실행에서 빌드 단계는 재빌드가 아니라 아티팩트를 복사하는 것임을 나타내기 위해 UI에 레이블이 지정됩니다.
 
 ### 제한 사항 {#limitations}
 
@@ -193,15 +198,21 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 롤백 실행 또는 푸시 업데이트 실행은 재실행이 불가능합니다.
 * 프로덕션 배포 단계 이전의 어느 시점에서 마지막 실행이 실패한 경우 재실행이 불가능합니다.
 
-### 재실행 식별 {#identifying}
 
-실행이 재실행인지 식별하기 위해 `trigger` 필드를 검사할 수 있습니다. 이 값은 `RE_EXECUTE`가 됩니다.
+### 재실행 API {#reexecute-api}
 
-### 재실행 트리거 {#triggering}
+UI에서 사용할 수 있을 뿐만 아니라 [cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 재실행을 트리거하고 재실행으로 트리거된 실행을 식별합니다.
 
-재실행을 트리거하려면 프로덕션 배포 단계 상태에서 HAL 링크 `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute`에 대해 `PUT` 요청을 수행해야 합니다. 이 링크가 있으면 해당 단계에서 재실행할 수 있습니다. 이 링크가 없으면 해당 단계에서 재실행할 수 없습니다. 이 링크는 프로덕션 배포 단계에만 표시됩니다.
+#### 재실행 트리거 {#triggering}
 
-```Javascript
+재실행을 트리거하려면 프로덕션 배포 단계 상태에서 HAL 링크 `http://ns.adobe.com/adobecloud/rel/pipeline/reExecute`에 대해 `PUT` 요청을 수행해야 합니다.
+
+* 이 링크가 있으면 해당 단계에서 재실행할 수 있습니다.
+* 이 링크가 없으면 해당 단계에서 재실행할 수 없습니다.
+
+이 링크는 프로덕션 배포 단계에서만 사용할 수 있습니다.
+
+```javascript
  {
   "_links": {
     "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
@@ -236,6 +247,10 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
   "status": "FINISHED"
 ```
 
-HAL 링크의 `href` 값 구문은 참조 지점으로 사용하기 위한 것이 아닙니다. 실제 값은 항상 HAL 링크에서 읽어야 하며 생성되지 않아야 합니다.
+HAL 링크의 구문 `href` 값은 하나의 예일 뿐이며 실제 값은 항상 HAL 링크에서 읽어야 하며 생성되지 않아야 합니다.
 
 이 끝점에 `PUT` 요청을 제출하면 성공 시 `201` 응답이 발생하고 응답 본문은 새 실행을 나타냅니다. 이는 API를 통해 일반 실행을 시작하는 것과 유사합니다.
+
+#### 재실행 식별 {#identifying}
+
+재실행된 실행은 값으로 식별할 수 있습니다. `RE_EXECUTE` 다음에서 `trigger` 필드.

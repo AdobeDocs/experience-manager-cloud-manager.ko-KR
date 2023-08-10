@@ -2,9 +2,9 @@
 title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 1ba4ed6c311eeaff9c71313d265531f427ef2736
+source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
 workflow-type: tm+mt
-source-wordcount: '3566'
+source-wordcount: '3377'
 ht-degree: 100%
 
 ---
@@ -648,21 +648,6 @@ OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내의 기
 
 AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 터치 UI로 변환하는 방법에 대한 세부 정보와 도구를 제공합니다. 자세한 내용은 [AEM 현대화 도구 설명서](https://opensource.adobe.com/aem-modernize-tools/)를 참조하십시오.
 
-### 패키지는 변경 가능한 콘텐츠 및 변경 불가능한 콘텐츠를 혼합해서는 안 됨 {#oakpal-packages-immutable}
-
-* **키**: ImmutableMutableMixedPackage
-* **유형**: 코드 스멜/Cloud Service 호환성
-* **심각도**: 사소
-* **이후**: 버전 2020.5.0
-
-Cloud Service 배포 모델과 호환되려면 개별 콘텐츠 패키지에 저장소의 변경 불가능한 영역(즉, `/apps` 및 `/libs`) 또는 변경 가능한 영역(즉, `/apps` 또는 `/libs`에 있지 않은 모든 것)에 대한 콘텐츠가 포함되어 있어야 하지만 둘 다 포함되어서는 안 됩니다. 예를 들어 `/apps/myco/components/text and /etc/clientlibs/myco`가 모두 포함된 패키지는 Cloud Service와 호환되지 않으므로 문제가 보고됩니다.
-
-자세한 내용은 [AEM 프로젝트 구조 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)를 참조하십시오.
-
->[!NOTE]
->
->[고객 패키지는 /libs에서 노드를 생성하거나 수정해서는 안 됨](#oakpal-customer-package) 규칙은 항상 적용됩니다.
-
 ### 역방향 복제 에이전트를 사용하면 안 됨 {#oakpal-reverse-replication}
 
 * **키**: ReverseReplication
@@ -737,15 +722,6 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 레거시 Foundation 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 [코어 구성 요소를 위한 여러 AEM 릴리스에서 더 이상 사용되지 않습니다.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 기존 Foundation 구성 요소를 오버레이 또는 상속 여부에 관계없이 사용자 정의 구성 요소의 기준으로 사용하는 것은 권장되지 않으며 해당 코어 구성 요소로 변환해야 합니다.
 
 이러한 변환은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 촉진될 수 있습니다.
-
-### 지원되는 실행 모드 이름 및 순서만 사용해야 함 {#oakpal-supported-runmodes}
-
-* **키**: SupportedRunmode
-* **유형**: 코드 스멜
-* **심각도**: 사소
-* **이후**: 버전 2021.2.0
-
-AEM Cloud Service는 실행 모드 이름에 대해 엄격한 이름 지정 정책을 시행하고 해당 실행 모드에 대해 엄격한 순서를 적용합니다. 지원되는 실행 모드 목록은 [AEM as a Cloud Service에 배포 설명서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes)에서 확인할 수 있으며, 이와 관련된 모든 편차는 문제로 식별됩니다.
 
 ### 사용자 정의 검색 인덱스 정의 노드는 /oak:index의 직접 하위 노드여야 함 {#oakpal-custom-search}
 
