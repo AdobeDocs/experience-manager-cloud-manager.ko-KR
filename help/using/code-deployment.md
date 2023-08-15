@@ -3,9 +3,9 @@ title: 코드 배포
 description: 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: b85bd1bdf38360885bf2777d75bf7aa97c6da7ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1655'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -170,7 +170,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포하는 경우 가능한 �
 
 ![긴급 모드 경로](/help/assets/execution-emergency2.png)
 
-긴급 모드에서 파이프라인을 실행하는 것은 Cloud Manager API 또는 CLI를 통해서도 가능합니다. 긴급 모드에서 실행을 시작하려면 쿼리 매개변수 `?pipelineExecutionMode=EMERGENCY` 또는 CLI를 사용하여 파이프라인의 실행 끝점에 `PUT` 요청을 제출합니다.
+긴급 모드에서 파이프라인을 실행하는 것은 Cloud Manager API 또는 CLI를 통해서도 가능합니다. 긴급 모드에서 실행을 시작하려면 쿼리 매개변수 `?pipelineExecutionMode=EMERGENCY` 또는 CLI를 사용하여 파이프라인의 실행 엔드포인트에 `PUT` 요청을 제출합니다.
 
 ```
 $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
@@ -178,13 +178,13 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ## 프로덕션 배포 재실행 {#reexecute-deployment}
 
-드문 경우지만 일시적인 이유로 프로덕션 배포 단계가 실패할 수 있습니다. 이러한 경우 완료 유형(예: 성공, 취소 또는 실패)에 관계없이 프로덕션 배포 단계가 완료된 한 프로덕션 배포 단계의 재실행이 지원됩니다. 재실행은 세 단계로 구성된 동일한 파이프라인을 사용하여 새 실행을 만듭니다.
+드문 경우지만 일시적인 이유로 프로덕션 배포 단계에 실패할 수 있습니다. 이러한 경우 완료 유형(예: 성공, 취소 또는 실패)에 관계없이 프로덕션 배포 단계가 완료되는 한 프로덕션 배포 단계의 재실행이 지원됩니다. 재실행은 세 단계로 구성된 동일한 파이프라인을 사용하여 새 실행을 만듭니다.
 
 1. **유효성 검사 단계** - 기본적으로 일반 파이프라인 실행 중에 발생하는 유효성 검사와 동일합니다.
-1. **빌드 단계** - 재실행의 맥락에서 빌드 단계는 실제로 새 빌드 프로세스를 실행하지 않고 아티팩트를 복사합니다.
+1. **빌드 단계** - 재실행의 맥락에서 빌드 단계는 실제로 새 빌드 프로세스를 실행하는 것이 아니라 아티팩트를 복사하는 것입니다.
 1. **프로덕션 배포 단계** - 일반 파이프라인 실행에서 프로덕션 배포 단계와 동일한 구성 및 옵션을 사용합니다.
 
-재실행이 가능한 경우 프로덕션 파이프라인 상태 페이지에서 다음을 제공합니다. **재실행** 일반 옆의 옵션 **빌드 로그 다운로드** 옵션을 선택합니다.
+재실행이 가능한 상황에서 프로덕션 파이프라인 상태 페이지는 일반적인 **빌드 로그 다운로드** 옵션 옆에 **재실행** 옵션을 제공합니다.
 
 ![파이프라인 개요 창의 재실행 옵션](/help/assets/re-execute.png)
 
@@ -201,7 +201,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 재실행 API {#reexecute-api}
 
-UI에서 사용할 수 있을 뿐만 아니라 [cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) 재실행을 트리거하고 재실행으로 트리거된 실행을 식별합니다.
+UI에서 사용할 수 있으며, [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고, 재실행으로 트리거된 실행을 식별할 수도 있습니다.
 
 #### 재실행 트리거 {#triggering}
 
@@ -247,10 +247,10 @@ UI에서 사용할 수 있을 뿐만 아니라 [cloud Manager API](https://devel
   "status": "FINISHED"
 ```
 
-HAL 링크의 구문 `href` 값은 하나의 예일 뿐이며 실제 값은 항상 HAL 링크에서 읽어야 하며 생성되지 않아야 합니다.
+HAL 링크의 `href` 값의 구문은 예시일 뿐이며 실제 값은 항상 HAL 링크에서 읽어야 하고 생성되지 않아야 합니다.
 
-이 끝점에 `PUT` 요청을 제출하면 성공 시 `201` 응답이 발생하고 응답 본문은 새 실행을 나타냅니다. 이는 API를 통해 일반 실행을 시작하는 것과 유사합니다.
+이 엔드포인트에 `PUT` 요청을 제출하면 성공 시 `201` 응답이 발생하고 응답 본문은 새 실행을 나타냅니다. 이는 API를 통해 일반 실행을 시작하는 것과 유사합니다.
 
 #### 재실행 식별 {#identifying}
 
-재실행된 실행은 값으로 식별할 수 있습니다. `RE_EXECUTE` 다음에서 `trigger` 필드.
+재실행된 실행은 `trigger` 필드의 `RE_EXECUTE` 값으로 식별할 수 있습니다.
