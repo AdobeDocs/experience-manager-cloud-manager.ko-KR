@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2023.8.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ ht-degree: 39%
 
 ## 새로운 기능 {#what-is-new}
 
-* Cloud Manager UI에서 오류 메시지의 이해도와 노출을 개선했습니다.
+* Cloud Manager UI에서 오류 메시지의 이해도 및 표시가 개선되었습니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 드문 사례 [콘텐츠 복사](/help/using/content-copy.md) 중지 프로세스가 해결되었습니다.
-* New Relic One을 사용하지 않는 고객의 일시적인 테스트 문제가 해결되었습니다.
-* [사용자 지정 코드 품질 규칙](/help/using/custom-code-quality-rules.md) `SupportedRunmode` 및 `ImmutableMutableMixedPackage` AEM as a Cloud Service에만 적용되므로 SonarQube에서 제거되었습니다.
-* 사용자에게 더 이상 실행 중인 것처럼 보이는 중단된 파이프라인이 발생하지 않습니다.
-* 다음 **환경** 이제 를 트리거한 후 메뉴가 닫힙니다. **[콘텐츠 복사](/help/using/content-copy.md)** 모달
-* [파이프라인 재실행](/help/using/code-deployment.md#reexecute-deployment) 이전 실행에 가 없는 경우 이 더 이상 허용되지 않습니다. `commitId` 빌드 단계 상태를 설정합니다.
-* 이제 사용자가 의 파이프라인을 클릭하면 드물게 발생하는 오류에 대해 보다 이해하기 쉬운 메시지가 표시됩니다. **활동** 또는 **파이프라인** screens.
+* 드물게 발생하는 [콘텐츠 복사](/help/using/content-copy.md)가 보류되는 문제가 해결되었습니다.
+* New Relic One을 사용하지 않는 고객에 대한 임시 테스트 문제가 해결되었습니다.
+* [사용자 정의 코드 품질 규칙](/help/using/custom-code-quality-rules.md) `SupportedRunmode` 및 `ImmutableMutableMixedPackage`은(는) AEM as a Cloud Service에만 적용되므로 SonarQube에서 제거되었습니다.
+* 중단된 파이프라인이 더 이상 실행 중인 상태로 표시되지 않습니다.
+* 이제 **환경** 메뉴는 **[콘텐츠 복사](/help/using/content-copy.md)** 모달을 트리거한 후에 닫힙니다.
+* 이전 실행에서 빌드 단계 상태에 설정된 `commitId`(이)가 없는 경우 [파이프라인 재실행](/help/using/code-deployment.md#reexecute-deployment)이 더 이상 허용되지 않습니다.
+* 이제 사용자가 **활동** 또는 **파이프라인** 화면에서 파이프라인을 클릭할 때 드물게 발생하는 오류에 대해 보다 이해하기 쉬운 메시지가 표시됩니다.
