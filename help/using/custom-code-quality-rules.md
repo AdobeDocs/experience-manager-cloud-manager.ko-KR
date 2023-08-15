@@ -3,7 +3,7 @@ title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3377'
 ht-degree: 100%
 
@@ -509,7 +509,7 @@ public void doThis(Resource resource) {
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-AEM API 영역은 사용이 권장되지 않아 더 이상 사용되지 않는 것으로 간주되는 API를 식별하기 위해 지속적으로 수정되고 있습니다.
+AEM API 표면은 사용이 권장되지 않아 더 이상 사용되지 않는 것으로 간주되는 API를 식별하기 위해 지속적으로 수정되고 있습니다.
 
 대부분의 경우 이러한 API는 표준 Java™ *@Deprecated* 주석을 사용하여 더 이상 사용되지 않으며, `squid:CallToDeprecatedMethod`에 의해 식별됩니다.
 
