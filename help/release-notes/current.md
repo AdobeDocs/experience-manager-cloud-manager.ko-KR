@@ -3,10 +3,10 @@ title: 2023.9.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2023.9.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 326e47e769c4f183fa3ee7d26952cb0f58e5067a
+source-git-commit: 74381d5d154f7c61135a990d2806fa9e39be7690
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,4 +25,10 @@ ht-degree: 100%
 
 ## 새로운 기능 {#what-is-new}
 
+이 릴리스에는 버그 수정이 포함됩니다.
+
 ## 버그 수정 {#bug-fixes}
+
+* 프로그램이 삭제되면 연결된 실행 중인 파이프라인도 모두 삭제되어 파이프라인이 실패 상태로 잘못 지정되지 않도록 합니다.
+* 경우에 따라 파이프라인 실행의 모든 단계가 &#39;완료&#39;되면 파이프라인의 상태가 &#39;실행 중&#39;으로 표시되어 중단 상태로 보일 수 있습니다. 이제 &#39;완료&#39;로 표시됩니다.
+* 코드 생성기 Archetype을 사용하여 생성된 저장소 분기의 경우 CI/CD 파이프라인이 실패합니다.
