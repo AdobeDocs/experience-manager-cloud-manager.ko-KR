@@ -1,18 +1,18 @@
 ---
-title: 2023.8.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2023.8.0의 릴리스 정보입니다.
+title: 2023.9.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2023.9.0의 릴리스 정보입니다.
 feature: Release Information
-source-git-commit: 26c4c945e18f21b812f65dbabc14a4e8ab9f6b43
+source-git-commit: a3e926fa13d54da1322f3a5219519fae07ddb273
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 100%
+source-wordcount: '164'
+ht-degree: 52%
 
 ---
 
 
-# Cloud Manager 릴리스 2023.8.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2023.9.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.8.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.9.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -20,18 +20,14 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.8.0의 릴리스 날짜는 2023년 8월 10일입니다. 다음 릴리스는 2023년 14월 9일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2023.9.0의 릴리스 날짜는 2023년 9월 14일입니다. 다음 릴리스는 2023년 10월 5일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* Cloud Manager UI에서 오류 메시지의 이해도 및 표시가 개선되었습니다.
+* 이 릴리스는 Cloud Manager에 대한 버그 수정으로만 구성됩니다.
 
 ## 버그 수정 {#bug-fixes}
 
-* 드물게 발생하는 [콘텐츠 복사](/help/using/content-copy.md)가 보류되는 문제가 해결되었습니다.
-* New Relic One을 사용하지 않는 고객에 대한 임시 테스트 문제가 해결되었습니다.
-* [사용자 정의 코드 품질 규칙](/help/using/custom-code-quality-rules.md) `SupportedRunmode` 및 `ImmutableMutableMixedPackage`은(는) AEM as a Cloud Service에만 적용되므로 SonarQube에서 제거되었습니다.
-* 중단된 파이프라인이 더 이상 실행 중인 상태로 표시되지 않습니다.
-* 이제 **환경** 메뉴는 **[콘텐츠 복사](/help/using/content-copy.md)** 모달을 트리거한 후에 닫힙니다.
-* 이전 실행에서 빌드 단계 상태에 설정된 `commitId`(이)가 없는 경우 [파이프라인 재실행](/help/using/code-deployment.md#reexecute-deployment)이 더 이상 허용되지 않습니다.
-* 이제 사용자가 **활동** 또는 **파이프라인** 화면에서 파이프라인을 클릭할 때 드물게 발생하는 오류에 대해 보다 이해하기 쉬운 메시지가 표시됩니다.
+* 프로그램이 삭제되면 연결된 실행 중인 파이프라인도 모두 삭제되어 파이프라인이 실패 상태로 잘못 지정되지 않도록 합니다.
+* 경우에 따라 파이프라인 실행의 모든 단계가 &#39;완료&#39;되면 파이프라인의 상태가 &#39;실행 중&#39;으로 표시되어 중단 상태로 보일 수 있습니다. 이제 &#39;완료&#39;로 표시됩니다.
+* 코드 생성기 Archetype을 사용하여 생성된 저장소 분기의 경우 CI/CD 파이프라인이 실패합니다.
