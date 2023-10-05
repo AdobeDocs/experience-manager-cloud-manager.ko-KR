@@ -7,9 +7,9 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: a3e926fa13d54da1322f3a5219519fae07ddb273
-workflow-type: ht
-source-wordcount: '345'
+source-git-commit: f1f1d53181362e4a92ad6918182107d710724496
+workflow-type: tm+mt
+source-wordcount: '348'
 ht-degree: 100%
 
 ---
@@ -65,6 +65,7 @@ ht-degree: 100%
 + 릴리스 정보 {#release-notes}
    + [최신 릴리스 정보](/help/release-notes/current.md)
    + 2023 {#2023}
+      + [2023.9.0 릴리스 정보](/help/release-notes/2023/2023-9-0.md)
       + [2023.8.0 릴리스 정보](/help/release-notes/2023/2023-8-0.md)
       + [2023.7.0 릴리스 정보](/help/release-notes/2023/2023-7-0.md)
       + [2023.6.0 릴리스 정보](/help/release-notes/2023/2023-6-0.md)
