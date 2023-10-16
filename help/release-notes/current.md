@@ -6,7 +6,7 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 851364e74864c28b3bcd9285dfbe06ddb530eb10
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 77%
    * 이러한 캐시 작업은 콘텐츠 패키지가 배포된 직후에 배포 파이프라인 단계의 일부로 수행됩니다.
    * 이러한 설정은 표준 AEM Dispatcher 비헤이비어를 사용합니다.
 * Cloud Manager의 2023년 10월 릴리스에서는 Java 버전이 단계적 출시를 통해 업데이트되고 있습니다.
-   * Java 8 및 11과 Maven의 부 버전이 업데이트되었으며 향후 2개월에 걸쳐 단계적으로 출시될 예정입니다. 새 버전에는 여러 보안 수정 사항 및 버그 수정이 있습니다. 새 버전은 다음과 같습니다.
+   * Java 8 및 11과 Maven의 보조 버전이 업데이트되었으며 향후 2개월에 걸쳐 단계적으로 출시될 예정입니다. 새 버전에는 여러 보안 수정 사항과 버그 수정이 포함되어 있습니다. 새 버전은 다음과 같습니다.
    * *Maven: 3.8.8*
    * *Java 8 버전: /usr/lib/jvm/jdk1.8.0_371*
    * *Java 11 버전: /usr/lib/jvm/jdk-11.0.20*
