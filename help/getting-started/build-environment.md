@@ -2,7 +2,7 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 42cafc03a607ace183d58adbe1c397c1a6c5c22f
+source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -19,9 +19,11 @@ Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용�
 Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 * 빌드 환경은 Linux 기반이며, Ubuntu 18.04에서 파생되었습니다.
-* Apache Maven 3.6.0이 설치되어 있습니다.
-* 설치된 Java 버전은 Oracle JDK 8u202 및 Oracle JDK 11.0.2입니다.
-* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u202를 포함하는 `/usr/lib/jvm/jdk1.8.0_202`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
+* Apache Maven 3.8.8이 설치되어 있습니다.
+* 설치된 Java 버전은 Oracle JDK 8u371 및 Oracle JDK 11.0.20입니다.
+   * `/usr/lib/jvm/jdk1.8.0_371`
+   * `/usr/lib/jvm/jdk-11.0.20`
+* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u371를 포함하는 `/usr/lib/jvm/jdk1.8.0_371`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
@@ -47,7 +49,6 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [API 통합 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
-
 
 ## 특정 Java 버전 사용 {#using-java-version}
 
@@ -138,7 +139,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 #### Dispatcher {#dispatcher}
 
-[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=ko-KR) 비밀은 사용할 수 없습니다.
+[Dispatcher에는 일반 환경 변수만 사용할 수 있습니다.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 비밀은 사용할 수 없습니다.
 
 그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
 

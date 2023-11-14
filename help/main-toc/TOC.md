@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: f1f1d53181362e4a92ad6918182107d710724496
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 98%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 100%
    + [소스 코드 저장소](/help/requirements/source-code-repository.md)
    + [역할 기반 권한](/help/requirements/role-based-permissions.md)
    + [사용자 및 역할 설정](/help/requirements/users-and-roles.md)
+   + [사용자 정의 권한](/help/using/custom-permissions.md)
    + [환경 프로비저닝](/help/requirements/environment-provisioning.md)
 + 시작하기 {#getting-started}
    + [최초 로그인](/help/getting-started/first-time-login.md)
@@ -59,12 +60,14 @@ ht-degree: 100%
    + [저장소](/help/managing-code/repositories.md)
    + [git과 통합하기](/help/managing-code/git-integration.md)
    + [다중 git 저장소를 사용하여 작업](/help/managing-code/multiple-git-repos.md)
+   + [자체 GitHub 저장소 작업](/help/managing-code/byo-github.md)
 + 제품 업데이트 마법사 {#product-update-wizard}
    + [개요](/help/product-update-wizard/overview.md)
    + [평가](/help/product-update-wizard/evaluation.md)
 + 릴리스 정보 {#release-notes}
    + [최신 릴리스 정보](/help/release-notes/current.md)
    + 2023 {#2023}
+      + [2023.10.0 릴리스 정보](/help/release-notes/2023/2023-10-0.md)
       + [2023.9.0 릴리스 정보](/help/release-notes/2023/2023-9-0.md)
       + [2023.8.0 릴리스 정보](/help/release-notes/2023/2023-8-0.md)
       + [2023.7.0 릴리스 정보](/help/release-notes/2023/2023-7-0.md)
