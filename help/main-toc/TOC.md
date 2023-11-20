@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 76a3dc6df41032488a3cfe11d0c72769562b96df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 98%
    + [저장소](/help/managing-code/repositories.md)
    + [git과 통합하기](/help/managing-code/git-integration.md)
    + [다중 git 저장소를 사용하여 작업](/help/managing-code/multiple-git-repos.md)
-   + [자체 GitHub 저장소 작업](/help/managing-code/byo-github.md)
+   + [자체 GitHub 저장소를 사용하여 작업](/help/managing-code/byo-github.md)
 + 제품 업데이트 마법사 {#product-update-wizard}
    + [개요](/help/product-update-wizard/overview.md)
    + [평가](/help/product-update-wizard/evaluation.md)
