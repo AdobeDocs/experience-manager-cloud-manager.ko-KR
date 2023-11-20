@@ -3,7 +3,7 @@ title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1152'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 * 설치된 Java 버전은 Oracle JDK 8u371 및 Oracle JDK 11.0.20입니다.
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
-* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u371를 포함하는 `/usr/lib/jvm/jdk1.8.0_371`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
+* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u371을 포함하는 `/usr/lib/jvm/jdk1.8.0_371`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
