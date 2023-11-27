@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2023.11.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '386'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ ht-degree: 88%
 * [파이프라인 실행 세부 정보 페이지](/help/using/managing-pipelines.md#view-details)에는 이제 아직 시작되지 않은 단계는 회색으로 바뀌어 모든 파이프라인 실행 단계가 표시됩니다.
 * 이제 **[활동](/help/using/managing-pipelines.md#activity)** 및 **[파이프라인](/help/using/managing-pipelines.md#pipelines)** 페이지에서 실행 상태의 파이프라인을 클릭하면 파이프라인 실행 요약을 사용할 수 있습니다.
 * 새 **기간** 섹션이 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인 단계의 평균 기간을 포함하는 [파이프라인 세부 정보 페이지](/help/using/managing-pipelines.md#view-details)에 추가되었습니다.
-* 다음에서 [파이프라인 실행 페이지,](/help/using/managing-pipelines.md#activity-window) 이제 완료된 단계에 기간이 표시됩니다.
+* [파이프라인 실행 페이지](/help/using/managing-pipelines.md#activity-window)에서 이제 완료된 단계에 기간이 표시됩니다.
 * Cloud Manager [콘텐츠 복사 도구](/help/using/content-copy.md)를 사용하면 사용자가 테스트 목적으로 AMS 호스팅된 AEM 6.x 프로덕션 환경에서 하위 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
-* 실행 [빌드 아티팩트 재사용](/help/getting-started/project-setup.md#build-artifact-reuse) 이제 해당 아티팩트를 처음 빌드한 실행에 대한 링크가 표시됩니다.
-* 선택할 옵션 **중요한 지표 실패** 이제 을(를) 구성할 수 있습니다. [코드 품질 파이프라인](/help/using/non-production-pipelines.md) 또한.
+* [빌드 아티팩트를 재사용](/help/getting-started/project-setup.md#build-artifact-reuse)하는 실행이 이제 해당 아티팩트를 처음으로 빌드한 실행에 대한 링크를 표시합니다.
+* 이제 [코드 품질 파이프라인](/help/using/non-production-pipelines.md)에 대해서도 **중요한 지표 장애**&#x200B;를 선택하는 옵션을 구성할 수 있습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
