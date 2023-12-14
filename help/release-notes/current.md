@@ -1,19 +1,19 @@
 ---
-title: 2023.11.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2023.11.0의 릴리스 정보입니다.
+title: 2023.12.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2023.12.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 264c7ffcbc9e10903880a511a4ca605be666f7e8
-workflow-type: ht
-source-wordcount: '386'
-ht-degree: 100%
+source-git-commit: 16eef51d86647ae4f2515f3f3c4cb2d15e948854
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 75%
 
 ---
 
 
-# Cloud Manager 릴리스 2023.11.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2023.12.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.11.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 다음에 대한 릴리스 정보를 설명합니다. [!UICONTROL Cloud Manager] 릴리스 2023.12.0.
 
 >[!NOTE]
 >
@@ -21,17 +21,11 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.11.0의 릴리스 일자는 2023년 11월 14일입니다. 다음 릴리스는 2023년 12월 7일에 예정되어 있습니다.
+의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2023.12.0은 2023년 12월 14일입니다. 다음 릴리스는 2024년 1월 18일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* [파이프라인 실행 세부 정보 페이지](/help/using/managing-pipelines.md#view-details)에는 이제 아직 시작되지 않은 단계는 회색으로 바뀌어 모든 파이프라인 실행 단계가 표시됩니다.
-* 이제 **[활동](/help/using/managing-pipelines.md#activity)** 및 **[파이프라인](/help/using/managing-pipelines.md#pipelines)** 페이지에서 실행 상태의 파이프라인을 클릭하면 파이프라인 실행 요약을 사용할 수 있습니다.
-* 새 **기간** 섹션이 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인 단계의 평균 기간을 포함하는 [파이프라인 세부 정보 페이지](/help/using/managing-pipelines.md#view-details)에 추가되었습니다.
-* [파이프라인 실행 페이지](/help/using/managing-pipelines.md#activity-window)에서 이제 완료된 단계에 기간이 표시됩니다.
-* Cloud Manager [콘텐츠 복사 도구](/help/using/content-copy.md)를 사용하면 사용자가 테스트 목적으로 AMS 호스팅된 AEM 6.x 프로덕션 환경에서 하위 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
-* [빌드 아티팩트를 재사용](/help/getting-started/project-setup.md#build-artifact-reuse)하는 실행이 이제 해당 아티팩트를 처음으로 빌드한 실행에 대한 링크를 표시합니다.
-* 이제 [코드 품질 파이프라인](/help/using/non-production-pipelines.md)에 대해서도 **중요한 지표 장애**&#x200B;를 선택하는 옵션을 구성할 수 있습니다.
+* [Cloud Manager 사용자 정의 권한](/help/using/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
@@ -42,9 +36,3 @@ ht-degree: 100%
 GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며, 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다.
 
 이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager_BYOG@adobe.com`에 이메일을 보내주십시오.
-
-### 사용자 정의 권한 {#custom-permissions}
-
-[Cloud Manager 사용자 정의 권한](/help/using/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
-
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager_ams_custompermissions@adobe.com`에 이메일을 보내주십시오.
