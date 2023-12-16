@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 7f9866976667b485124cef60453ec3908ba41ec8
-workflow-type: ht
-source-wordcount: '1152'
-ht-degree: 100%
+source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
+workflow-type: tm+mt
+source-wordcount: '1283'
+ht-degree: 86%
 
 ---
 
@@ -18,8 +18,9 @@ Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용�
 
 Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
-* 빌드 환경은 Linux 기반이며, Ubuntu 18.04에서 파생되었습니다.
+* 빌드 환경은 Linux 기반이며, Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.8.8이 설치되어 있습니다.
+   * Adobe은 사용자를 권장합니다. [http 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트합니다.](#https-maven)
 * 설치된 Java 버전은 Oracle JDK 8u371 및 Oracle JDK 11.0.20입니다.
    * `/usr/lib/jvm/jdk1.8.0_371`
    * `/usr/lib/jvm/jdk-11.0.20`
@@ -38,6 +39,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven은 `adobe-public`이라는 프로필을 사용하여 자동으로 공개 Adobe 아티팩트 저장소를 포함하는 `settings.xml` 파일로 시스템 수준에서 구성됩니다.
    * 자세한 내용은 [Adobe 공개 Maven 저장소](https://repo1.maven.org/)를 참조하십시오.
+* Node.js 18은에서 사용할 수 있습니다. [프론트엔드 및 전체 스택 파이프라인](/help/overview/ci-cd-pipelines.md)
 
 >[!NOTE]
 >
@@ -49,6 +51,14 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [API 통합 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
 >* [API 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
+
+## HTTPS Maven 저장소 {#https-maven}
+
+Cloud Manager [릴리스 2023.10.0](/help/release-notes/2023/2023-10-0.md) maven 3.8.8에 대한 업데이트가 포함된 빌드 환경에 대한 롤링 업데이트(릴리스 2023.12.0으로 완료)가 시작되었습니다. Maven 3.8.1에 도입된 중요한 변화는 잠재적인 취약성을 완화하기 위한 보안 개선이었습니다. 특히 Maven은 이제 모든 비보안 기능을 비활성화합니다 `http://*` 다음에 요약된 대로 기본적으로 미러 [Maven 릴리스 노트](http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)
+
+이러한 보안 향상으로 인해 일부 사용자는 빌드 단계 동안, 특히 비보안 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 문제가 발생할 수 있습니다.
+
+업데이트된 버전에 대한 원활한 경험을 보장하기 위해, Adobe은 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다. 이러한 조정은 보안 통신 프로토콜로 전환되는 업계의 추세와 일치하며 안전하고 안정적인 빌드 프로세스를 유지하는 데 도움이 됩니다.
 
 ## 특정 Java 버전 사용 {#using-java-version}
 
