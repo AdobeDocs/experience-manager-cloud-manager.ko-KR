@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2023.12.0에 대한 릴리스 정
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ ht-degree: 81%
 ## 새로운 기능 {#what-is-new}
 
 * [Cloud Manager 사용자 정의 권한](/help/using/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
-* 에 대한 업데이트 롤아웃 [빌드 환경](/help/getting-started/build-environment.md) 다음 작업: [Cloud Manager의 10월 릴리스에서 발표 및 시작](/help/release-notes/2023/2023-10-0.md) 완료되었습니다.
-   * 에 대해 노드 18에 대한 지원이 추가되었습니다. [프론트엔드 및 전체 스택 파이프라인](/help/overview/ci-cd-pipelines.md)
+* [Cloud Manager의 10월 릴리스를 통해 발표되고 시작된](/help/release-notes/2023/2023-10-0.md) [빌드 환경](/help/getting-started/build-environment.md)에 대한 업데이트의 롤아웃이 완료되었습니다.
+   * [프론트엔드 및 전체 스택 파이프라인](/help/overview/ci-cd-pipelines.md)의 Node 18에 대한 지원이 추가되었습니다.
    * Java 8 보조 버전이 `jdk1.8.0_371`로 업데이트되었습니다.
    * Java 11 보조 버전이 `jdk-11.0.20`로 업데이트되었습니다.
    * Maven이 3.8.8 버전으로 업데이트되었습니다.
-      * 이제 Maven이 모든 비보안 기능을 비활성화합니다. `http://*` 미러는 기본적으로 사용됩니다.
-      * [Adobe 추천](/help/getting-started/build-environment.md#https-maven) 사용자는 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트합니다.
+      * Maven은 이제 기본적으로 모든 안전하지 않은 `http://*` 미러를 비활성화합니다.
+      * [Adobe](/help/getting-started/build-environment.md#https-maven)는 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다.
 * 빌드 컨테이너 기본 이미지가 Ubuntu 22.04로 업데이트되었습니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
