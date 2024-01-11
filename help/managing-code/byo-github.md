@@ -4,7 +4,7 @@ description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: 3bb59686a3c25e47e5c747bb8d5f626055e54a06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
 
