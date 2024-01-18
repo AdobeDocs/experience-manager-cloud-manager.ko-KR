@@ -1,19 +1,19 @@
 ---
-title: 2023.12.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2023.12.0에 대한 릴리스 정보입니다.
+title: 2024.1.0 릴리스 정보
+description: 다음은 Cloud Manager 릴리스 2024.1.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 2ac254508e4015fea21c4fcd087703ac5fbeeec6
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: b901c7bf9d821f6e84fc513e5e6cba5eab8ea894
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 75%
 
 ---
 
 
-# Cloud Manager 릴리스 2023.12.0에 대한 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2024.1.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2023.12.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 다음에 대한 릴리스 정보를 설명합니다. [!UICONTROL Cloud Manager] 릴리스 2024.1.0.
 
 >[!NOTE]
 >
@@ -21,19 +21,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2023.12.0의 릴리스 일자는 2023년 12월 14일입니다. 다음 릴리스는 2024년 1월 18일에 예정되어 있습니다.
-
-## 새로운 기능 {#what-is-new}
-
-* [Cloud Manager 사용자 정의 권한](/help/using/custom-permissions.md)을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 생성할 수 있습니다.
-* [Cloud Manager의 10월 릴리스를 통해 발표되고 시작된](/help/release-notes/2023/2023-10-0.md) [빌드 환경](/help/getting-started/build-environment.md)에 대한 업데이트의 롤아웃이 완료되었습니다.
-   * [프론트엔드 및 전체 스택 파이프라인](/help/overview/ci-cd-pipelines.md)의 Node 18에 대한 지원이 추가되었습니다.
-   * Java 8 보조 버전이 `jdk1.8.0_371`로 업데이트되었습니다.
-   * Java 11 보조 버전이 `jdk-11.0.20`로 업데이트되었습니다.
-   * Maven이 3.8.8 버전으로 업데이트되었습니다.
-      * Maven은 이제 기본적으로 모든 안전하지 않은 `http://*` 미러를 비활성화합니다.
-      * [Adobe](/help/getting-started/build-environment.md#https-maven)는 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다.
-* 빌드 컨테이너 기본 이미지가 Ubuntu 22.04로 업데이트되었습니다.
+의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2024.1.0은 2024년 1월 17일입니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
