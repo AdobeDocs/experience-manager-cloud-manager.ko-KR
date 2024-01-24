@@ -6,14 +6,14 @@ exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: b235e398b42e9da3dd2efacdc0ef38b6803bd213
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 55%
+ht-degree: 68%
 
 ---
 
 
 # Cloud Manager 릴리스 2024.1.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 다음에 대한 릴리스 정보를 설명합니다. [!UICONTROL Cloud Manager] 릴리스 2024.1.0.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2024.1.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
