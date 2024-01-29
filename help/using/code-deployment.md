@@ -3,9 +3,9 @@ title: 코드 배포
 description: 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1650'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ ht-degree: 98%
 | 승인 신청(단계) | 7일 |
 | 승인 신청(프로덕션) | 14일 |
 | 프로덕션 배포 예약 | 14일 |
-| 관리되는 프로덕션 배포 | 14일 |
+| 관리 프로덕션 배포 | 14일 |
 
 ## 배포 프로세스 세부 정보 {#deployment-process}
 
