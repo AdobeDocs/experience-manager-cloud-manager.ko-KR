@@ -3,10 +3,10 @@ title: Cloud Manager에서 자체 GitHub 저장소를 사용하여 작업
 description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 3bb59686a3c25e47e5c747bb8d5f626055e54a06
-workflow-type: ht
-source-wordcount: '753'
-ht-degree: 100%
+source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 98%
 
 ---
 
@@ -18,6 +18,10 @@ ht-degree: 100%
 >[!NOTE]
 >
 >이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md#early-adoption)에만 사용할 수 있습니다.
+
+>[!NOTE]
+>
+>이 기능은 공개 GitHub에만 적용됩니다. 자체 호스팅되는 GitHub에 대한 지원은 사용할 수 없습니다.
 
 ## 구성 {#configuration}
 
