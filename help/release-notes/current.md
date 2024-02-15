@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2024.1.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '257'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 84%
 
 ### 자체 GitHub 가져오기 {#byo-github}
 
-GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/managing-code/byo-github.md) 이 통합을 사용하면 코드를 Adobe 저장소와 일관되게 동기화할 필요가 없으며, 가져오기 요청을 주 분기로 병합하기 전에 이를 확인할 수 있습니다. 이 기능은 공개 GitHub에만 적용됩니다. 자체 호스팅되는 GitHub에 대한 지원은 사용할 수 없습니다.
+GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager를 통해 GitHub 저장소 내에서 직접 코드의 유효성을 검사할 수 있습니다.](/help/managing-code/byo-github.md) 이 통합을 통해 코드를 Adobe 저장소와 지속적으로 동기화할 필요가 없으며, 기본 분기에 병합하기 전에 가져오기 요청을 확인할 수 있습니다. 이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
 
 이러한 새 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 `Grp-CloudManager_BYOG@adobe.com`에 이메일을 보내주십시오.
 
