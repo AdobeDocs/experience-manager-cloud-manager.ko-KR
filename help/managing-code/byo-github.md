@@ -4,9 +4,9 @@ description: 자체 GitHub 저장소에서 작동하도록 Cloud Manager를 설�
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
 source-git-commit: b5907179d3de329e8b86546bb8aa99608a5b351a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '767'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->이 기능은 공개 GitHub에만 적용됩니다. 자체 호스팅되는 GitHub에 대한 지원은 사용할 수 없습니다.
+>이 기능은 공개 GitHub 전용입니다. 자체 호스팅 GitHub에 대해서는 지원되지 않습니다.
 
 ## 구성 {#configuration}
 
