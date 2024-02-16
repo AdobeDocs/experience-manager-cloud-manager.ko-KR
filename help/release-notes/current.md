@@ -3,7 +3,7 @@ title: 2024.2.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2024.2.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 524471a87217c15dae96c3e6aee57426b43dcccb
+source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 50%
@@ -21,7 +21,7 @@ ht-degree: 50%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2024.2.0은 2024년 2월 16일입니다. 다음 릴리스는 2024년 3월 16일에 예정되어 있습니다.
+의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2024.2.0은 2024년 2월 15일입니다. 다음 릴리스는 2024년 3월 16일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
@@ -41,3 +41,4 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 ## 버그 수정 {#bug-fixes}
 
 * 빌드 컨테이너의 JDK가 다음 문제를 해결하는 버전으로 업데이트되었습니다 [8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
+§
