@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 0bf961bffa1cb5afcdf2a0ed8fea0da178c556e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 99%
    + [평가](/help/product-update-wizard/evaluation.md)
 + 릴리스 정보 {#release-notes}
    + [최신 릴리스 정보](/help/release-notes/current.md)
-   + 20 {#2024}
+   + 2024 {#2024}
       + [2024.1.0 릴리스 정보](/help/release-notes/2024/2024-1-0.md)
    + 2023 {#2023}
       + [2023.12.0 릴리스 정보](/help/release-notes/2023/2023-12-0.md)
