@@ -1,19 +1,19 @@
 ---
 title: 2024.2.0 릴리스 정보
-description: 다음은 Cloud Manager 릴리스 2024.2.0의 릴리스 정보입니다.
+description: 다음은 Cloud Manager 릴리스 2024.2.0에 대한 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: cc87246503ab63d6dd60c691f15fc4759fcf6939
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 
-# Cloud Manager 릴리스 2024.2.0의 릴리스 정보 {#release-notes}
+# Cloud Manager 릴리스 2024.2.0에 대한 릴리스 정보 {#release-notes}
 
-이 페이지는 다음에 대한 릴리스 정보를 설명합니다. [!UICONTROL Cloud Manager] 릴리스 2024.2.0.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2024.2.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ ht-degree: 50%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2024.2.0은 2024년 2월 15일입니다. 다음 릴리스는 2024년 3월 16일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2024.2.0의 릴리스 일자는 2024년 2월 15일입니다. 다음 릴리스는 2024년 3월 16일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 의 일부로 [배포,](/help/using/code-deployment.md) 에서 Dispatcher 캐시를 플러시했습니다. **Dispatcher 첨부** 단계. 응용 프로그램 로드 밸런서에 첨부하기 전에 각 노드에서 변경 사항을 테스트할 수 있도록 특정 게시자에게 코드를 배포한 후 해당 Dispatcher를 로드 밸런서에 첨부하기 전에 연결된 Dispatcher에서 직접 변경 사항을 테스트할 수 있습니다.
-* [빌드 환경](/help/getting-started/build-environment.md) 는 Maven 버전 3.9.4 및 JDK 버전 jdk-11.0.22 및 jdk1.8.0_401로 업데이트되었습니다.
+* Dispatcher 캐시는 [배포](/help/using/code-deployment.md)의 일부로 **Dispatcher 연결** 단계에서 플러시되었습니다. 애플리케이션 로드 밸런서에 연결하기 전에 각 노드의 변경 내용을 테스트하려는 경우, 이제 특정 게시자에 코드를 배포한 후 연결된 Dispatcher를 로드 밸런서에 연결하기 전에 해당 Dispatcher에서 직접 변경 내용을 테스트할 수 있습니다.
+* [빌드 환경](/help/getting-started/build-environment.md)이 Maven 버전 3.9.4 및 JDK 버전 jdk-11.0.22 및 jdk1.8.0_401로 업데이트되었습니다.
 
-## 조기 채택 프로그램 {#early-adoption}
+## 얼리 어답터 프로그램 {#early-adoption}
 
-조기 채택 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오
+얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
 ### 자체 GitHub 가져오기 {#byo-github}
 
@@ -40,5 +40,4 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 
 ## 버그 수정 {#bug-fixes}
 
-* 빌드 컨테이너의 JDK가 다음 문제를 해결하는 버전으로 업데이트되었습니다 [8313765.](https://bugs.openjdk.org/browse/JDK-8313765)
-§
+* 빌드 컨테이너의 JDK가 [JDK-8313765](https://bugs.openjdk.org/browse/JDK-8313765)를 해결하는 버전으로 업데이트되었습니다.
