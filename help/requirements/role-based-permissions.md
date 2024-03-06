@@ -2,10 +2,10 @@
 title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 522e5fbc650a8159602eb1aeaf42d64f4e23e8b4
+source-git-commit: 10297789ac8f905f242ac52bdc6fc4812b989e8a
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '602'
+ht-degree: 93%
 
 ---
 
@@ -13,6 +13,12 @@ ht-degree: 100%
 # 역할 기반 권한 {#role-based-permissions}
 
 [!UICONTROL Cloud Manager]에는 적절한 권한으로 미리 구성된 역할이 있습니다. 예를 들어 개발자는 코드를 개발하고 git 저장소에 코드를 푸시할 수 있는 권한을 가지고 있습니다. 비즈니스 소유자는 KPI(주요 성과 지표)를 정의하고 배포를 승인할 수 있는 다양한 권한을 가지고 있습니다.
+
+>[!NOTE]
+>
+>이 설명서에서는 Managed Services(AMS) Adobe을 위한 Cloud Manager의 역할 기반 권한에 대해 설명합니다.
+>
+>AEM as a Cloud Service에 대한 동등한 문서는 문서에서 찾을 수 있습니다 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) AEM as a Cloud Service 설명서에서 확인할 수 있습니다.
 
 ## 사용자 역할 {#user-roles}
 
