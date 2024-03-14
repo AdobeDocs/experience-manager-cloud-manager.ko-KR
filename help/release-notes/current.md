@@ -3,10 +3,10 @@ title: 2024.3.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2024.3.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 95a7a7be3ba20e05311ff90b91bd0773f6e77a07
+source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 52%
+source-wordcount: '268'
+ht-degree: 56%
 
 ---
 
@@ -25,8 +25,7 @@ ht-degree: 52%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 파란색/녹색 배포 중에 생성된 인스턴스에 대해 서버 상태의 유효성을 확인하고 로그를 검토하는 등의 작업을 수행할 수 있습니다.
-   * 이제 녹색 서버의 FQDN(IP/DNS) 정보를 포함한 세부 사항이 Cloud Manager의 UI에 표시됩니다.
+* 이제 녹색 서버의 FQDN(IP/DNS) 정보를 포함한 세부 사항이 Cloud Manager UI에 표시됩니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
