@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2024.3.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 22730ba281f7c1c4720158a3a813c56b815a0af1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '268'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 93%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 녹색 서버의 FQDN(IP/DNS) 정보를 포함한 세부 사항이 Cloud Manager UI에 표시됩니다.
+* 이제 녹색 서버의 IP/DNS(FQDN) 정보를 포함한 세부 정보가 Cloud Manager UI에 표시됩니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
