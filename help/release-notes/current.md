@@ -4,16 +4,16 @@ description: 다음은 Cloud Manager 릴리스 2024.4.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 4a7c6fbc3fa936ff1470420966823f94fb3a4d7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager 릴리스 2024.4.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 다음에 대한 릴리스 정보를 설명합니다. [!UICONTROL Cloud Manager] 릴리스 2024.4.0.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2024.4.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,12 +21,12 @@ ht-degree: 58%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2024.4.0은 2024년 4월 10일입니다. 다음 릴리스는 2024년 5월 9일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2024.4.0의 릴리스 일자는 2024년 4월 10일입니다. 다음 릴리스는 2024년 5월 9일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 스테이징 전용 및 프로덕션 전용 파이프라인에 대한 지원이 도입되어 전체 스택 프로덕션 배포 파이프라인을 더 작고 전문화된 배포로 분할할 수 있습니다.
-* 코드 빌드 문제에 대한 향상된 오류 메시지를 통해 근본 원인과 다음 실행 가능한 단계를 보다 쉽게 식별할 수 있습니다.
+* 스테이징 전용 및 프로덕션 전용 파이프라인에 대한 지원이 도입되어 전체 스택 프로덕션 배포 파이프라인을 더 작고 전문적인 배포로 분할할 수 있습니다.
+* 코드 빌드 문제에 대한 개선된 오류 메시지를 통해 근본 원인과 실행 가능한 다음 단계를 보다 쉽게 식별할 수 있습니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
@@ -40,4 +40,4 @@ GitHub를 사용하여 저장소를 관리하는 경우, [이제 Cloud Manager�
 
 ## 버그 수정 {#bug-fixes}
 
-* Cloud Manager가 잘못된 커밋 해시가 있는 아티팩트를 재사용한 버그가 해결되었습니다.
+* Cloud Manager가 잘못된 커밋 해시가 있는 아티팩트를 재사용하는 버그가 해결되었습니다.
