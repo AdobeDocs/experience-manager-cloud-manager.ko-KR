@@ -3,9 +3,9 @@ title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '620'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 97%
 >
 >이 설명서에서는 Adobe Managed Services(AMS)용 Cloud Manager의 역할 기반 권한에 대해 설명합니다.
 >
->AEM as a Cloud Service에 대한 동등한 설명서는 AEM as a Cloud Service 설명서의 [Cloud Manager 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) 문서에서 찾을 수 있습니다.
+>AEM as a Cloud Service에 대한 동등한 설명서는 AEM as a Cloud Service 설명서의 [Cloud Manager 소개](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/concepts/cloud-manager-introduction.html#role-based-permissions) 문서에서 찾을 수 있습니다.
 
 ## 사용자 역할 {#user-roles}
 
@@ -69,4 +69,4 @@ ht-degree: 97%
 
 >[!TIP]
 >
->구성 가능한 권한이 있는 사용자 지정 권한 프로필도 사용할 수 있습니다. 문서를 참조하십시오. [사용자 지정 권한](/help/using/custom-permissions.md) 을 참조하십시오.
+>구성 가능한 권한이 있는 사용자 정의 권한 프로필도 사용할 수 있습니다. 자세한 내용은 [사용자 정의 권한](/help/using/custom-permissions.md) 문서를 참조하십시오.
