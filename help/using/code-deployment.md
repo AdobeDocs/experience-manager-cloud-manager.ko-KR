@@ -2,9 +2,9 @@
 title: 코드 배포
 description: 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: 70e68f8af17b0acf644176c2ed3afaf8fc219063
-workflow-type: ht
-source-wordcount: '1650'
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '1648'
 ht-degree: 100%
 
 ---
@@ -55,8 +55,6 @@ ht-degree: 100%
 
 * **보안 테스트**: 이 단계에서는 코드가 AEM 환경에 미치는 보안 영향을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](/help/using/code-quality-testing.md) 문서를 참조하십시오.
    * **성능 테스트**: 이 단계에서는 코드의 성능을 평가합니다. 테스트 프로세스에 대한 자세한 내용은 [테스트 결과 이해](/help/using/code-quality-testing.md)를 참조하십시오.
-
-  ![스테이지 테스트](/help/assets/Stage_Testing1.png)
 
 ### 프로덕션 배포 단계 {#production-deployment}
 

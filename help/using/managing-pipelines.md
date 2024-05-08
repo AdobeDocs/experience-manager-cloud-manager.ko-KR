@@ -2,10 +2,10 @@
 title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 28ab641ec85335d8330aeb465c07bf0264218fe4
-workflow-type: ht
-source-wordcount: '807'
-ht-degree: 100%
+source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. 여기서는 **파이프라인 카드**&#x200B;에서와 같이 프로그램의 모든 파이프라인 목록을 볼 수 있을 뿐만 아니라 파이프라인 실행을 시작 및 정지할 수도 있습니다.
 
-파이프라인이 실행 중인 경우, **상태** 열 위로 마우스를 가져가면 실행에 대한 세부 정보가 표시됩니다.
+탭 또는 클릭 `i` 아이콘은 파이프라인의 마지막 또는 현재 실행에 대한 세부 정보를 표시합니다.
 
 ![파이프라인 실행 세부 정보](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. 여기에서는 현재 실행과 이전 실행을 포함하여 프로그램에 대한 모든 파이프라인 실행 목록을 볼 수 있습니다.
 
-파이프라인이 실행 중인 경우, **상태** 열 위로 마우스를 가져가면 실행에 대한 세부 정보가 표시됩니다.
+탭 또는 클릭 `i` 아이콘은 선택한 파이프라인 실행의 세부 정보를 표시합니다.
 
 ![파이프라인 실행 세부 정보](/help/assets/configure-pipelines/pipeline-activity.png)
 

@@ -2,10 +2,10 @@
 title: 주요 개념
 description: 모든 강력한 도구와 마찬가지로 Cloud Manager는 많은 개념과 용어를 포함합니다. 이 문서에서는 Cloud Manager 사용을 시작할 때 가장 중요한 몇 가지를 요약합니다.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: 73e322cf93dc7709b7581860974079c8d94034ba
+source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
 workflow-type: tm+mt
-source-wordcount: '419'
-ht-degree: 100%
+source-wordcount: '413'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 애플리케이션 {#application}
 
-또한 애플리케이션은 고객이 특정 사용 사례와 필요에 따라 기본 [솔루션](#solution)(예: AEM Sites 또는 AEM Assets)을 조정하기 위해 만든 일련의 사용자 정의 및 구성입니다. 애플리케이션은 여러 [아티팩트](#artifact)로 구성될 수 있는 논리적 단위입니다.
+애플리케이션은 고객이 기본 요소를 조정하기 위해 만든 일련의 사용자 정의 및 구성입니다 [솔루션](#solution) (AEM Sites 또는 AEM Assets 등) 특정 사용 사례와 필요에 따라 선택할 수 있습니다. 애플리케이션은 여러 [아티팩트](#artifact)로 구성될 수 있는 논리적 단위입니다.
 
 예제 애플리케이션은 가상의 [WKND 라이프스타일 애플리케이션](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)입니다.
 

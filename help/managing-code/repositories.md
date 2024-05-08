@@ -2,10 +2,10 @@
 title: Cloud Manager 저장소
 description: Cloud Manager 프로그램의 저장소에 액세스, 생성 및 편집하는 방법에 대해 알아보십시오.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: 63cbcf8724a840efa67b8fafc4c321e04a5d70d9
+source-git-commit: 1d4ab9704fdb743b097e24be335fbf069d1e78bd
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 98%
 
 ---
 
@@ -26,11 +26,7 @@ Cloud Manager에서 셀프서비스로 git 저장소에 액세스하고 관리�
 
    ![저장소 정보 액세스 버튼](/help/assets/access-repo1.png)
 
-1. **비프로덕션** 파이프라인 탭으로 전환하면 [파이프라인에 구성된](/help/using/non-production-pipelines.md) 대로 **저장소 정보 액세스** 옵션도 사용할 수 있습니다.
-
-   ![비프로덕션 파이프라인 ](/help/assets/access-repo-nonprod.png)
-
-1. **저장소 정보 액세스** 버튼을 클릭하여 다음 정보가 표시되는 대화 상자를 엽니다.
+1. 을(를) 탭하거나 클릭합니다 **저장소 정보 액세스** 단추를 클릭하여 다음 내용이 표시되는 대화 상자를 엽니다.
 
    * git 저장소의 URL
    * 사용자 이름
@@ -68,8 +64,6 @@ Cloud Manager에서 셀프서비스로 git 저장소에 액세스하고 관리�
 1. **저장**&#x200B;을 선택합니다.
 
 새로 생성한 저장소가 표시됩니다.
-
-![새 저장소 생성됨](/help/assets/create-repo3.png)
 
 Cloud Manager에서 만든 저장소는 [파이프라인을 만들](/help/overview/ci-cd-pipelines.md) 때 선택할 수 있습니다.
 
