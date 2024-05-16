@@ -3,14 +3,14 @@ product: Adobe Experience Manager
 sub-product: Cloud Manager
 user-guide-title: Cloud Manager 설명서
 breadcrumb-title: AEM 6.x용 Cloud Manager 설명서
-user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 Adobe Experience Manager를 자체 관리하는 방법에 대해 알아보십시오.
+user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 Adobe Experience Manager를 자체 관리하는 방법에 대해 알아봅니다.
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: fbbc8b7aee04d1c153aeac87cc086883c0c6b980
+source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 99%
 
 ---
 
@@ -46,6 +46,7 @@ ht-degree: 100%
    + CI/CD 파이프라인 {#pipelines}
       + [프로덕션 파이프라인 구성](/help/using/production-pipelines.md)
       + [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)
+      + [스테이지 및 프로덕션만 파이프라인](/help/using/stage-prod-only.md)
       + [파이프라인 관리](/help/using/managing-pipelines.md)
    + [코드 배포](/help/using/code-deployment.md)
    + [코드 품질 테스트](/help/using/code-quality-testing.md)
@@ -68,6 +69,7 @@ ht-degree: 100%
 + 릴리스 정보 {#release-notes}
    + [최신 릴리스 정보](/help/release-notes/current.md)
    + 2024 {#2024}
+      + [2024.4.0 릴리스 정보](/help/release-notes/2024/2024-4-0.md)
       + [2024.3.0 릴리스 정보](/help/release-notes/2024/2024-3-0.md)
       + [2024.2.0 릴리스 정보](/help/release-notes/2024/2024-2-0.md)
       + [2024.1.0 릴리스 정보](/help/release-notes/2024/2024-1-0.md)
