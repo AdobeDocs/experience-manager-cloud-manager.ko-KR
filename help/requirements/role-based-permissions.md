@@ -2,10 +2,10 @@
 title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 1c0c3a751ba2023fc2c2dd5d0d54f914373ad95b
-workflow-type: ht
+source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 | 배포 관리자 | 이 사용자는 [!UICONTROL Cloud Manager]를 사용하여 배포 작업을 관리하여 스테이징 및 프로덕션 배포를 실행하고, 필요한 경우 중요한 3계층 오류를 승인하며, git 저장소에 액세스할 수 있습니다. |
 | 개발자 | 이 사용자는 사용자 정의 애플리케이션 코드를 개발 및 테스트하고 주로 [!UICONTROL Cloud Manager]를 사용하여 배포 상태를 보고 git 저장소에 대한 커밋 액세스 권한이 있습니다. |
 | 고객 성공 엔지니어 | 이 사용자는 일반적으로 AMS 고객을 위해 고객의 성공을 지원하고 고객 성공 엔지니어(CSE) 감독이 필요한 배포 실행을 위해 [!UICONTROL Cloud Manager]와 상호 작용합니다. |
-| 콘텐츠 작성자 | 이 사용자는 일반적으로 [!UICONTROL Cloud Manager]와 상호 작용하지 않지만 [!UICONTROL Cloud Manager] 프로그램 스위처([!UICONTROL Experience Cloud]에서 탐색)를 사용하여 Adobe Experience Manager(AEM)에 액세스할 수 있습니다. |
+| 콘텐츠 작성자 | 이 사용자는 일반적으로 Cloud Manager와 상호 작용하지 않지만 Cloud Manager 프로그램 스위처(Experience Cloud에서 탐색)를 사용하여 Adobe Experience Manager(AEM)에 액세스할 수 있습니다. |
 
 ## 사용자 권한 {#user-permissions}
 
