@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: f930f12b5f50dd96a1677ff7a56cf0e92a400556
-workflow-type: ht
-source-wordcount: '3377'
-ht-degree: 100%
+source-git-commit: 48ae41cb23f6a94fbaf31423f9c5cea3bfd45020
+workflow-type: tm+mt
+source-wordcount: '3513'
+ht-degree: 92%
 
 ---
 
@@ -794,6 +794,74 @@ AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryInd
 * **이후**: 버전 2021.2.0
 
 AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `reindex`라는 속성을 포함하는 것을 금지합니다. 이 속성을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#how-to-use)를 참조하십시오.
+
+### 인덱스 정의 노드를 UI 콘텐츠 패키지에 배포할 수 없음 {#oakpal-ui-content-package}
+
+* **키**: IndexNotUnderUIContent
+* **유형**: 개선 사항
+* **심각도**: 사소
+* **이후**: 버전 2024.6.0
+
+AEM Cloud Service에서는 사용자 정의 검색 인덱스 정의(유형의 노드)를 금지합니다 `oak:QueryIndexDefinition`)을 클릭하여 UI 콘텐츠 패키지에 배포할 수 있습니다.
+
+>[!WARNING]
+>
+>이 경우 로 시작하는 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다. [Cloud Manager 2024년 8월 릴리스.](/help/release-notes/current.md)
+
+### damAssetLucene 유형의 사용자 정의 전체 텍스트 인덱스 정의에 &#39;damAssetLucene&#39; 접두사가 올바르게 있어야 함 {#oakpal-dam-asset-lucene}
+
+* **키**: CustomFulltextIndexesOfTheDamAssetCheck
+* **유형**: 개선 사항
+* **심각도**: 사소
+* **이후**: 버전 2024.6.0
+
+AEM Cloud Service에서는 유형의 사용자 정의 전체 텍스트 인덱스 정의를 금지합니다. `damAssetLucene` 을 접두사로 사용하는 대신 `damAssetLucene`.
+
+>[!WARNING]
+>
+>이 경우 로 시작하는 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다. [Cloud Manager 2024년 8월 릴리스.](/help/release-notes/current.md)
+
+### 인덱스 정의 노드에는 같은 이름의 속성이 포함되어서는 안 됨 {#oakpal-index-property-name}
+
+* **키**: DuplicateNameProperty
+* **유형**: 개선 사항
+* **심각도**: 사소
+* **이후**: 버전 2024.6.0
+
+AEM Cloud Service에서는 사용자 정의 검색 인덱스 정의(즉, 유형의 노드)를 금지합니다 `oak:QueryIndexDefinition`) 같은 이름의 속성을 포함하는 경우
+
+>[!WARNING]
+>
+>이 경우 로 시작하는 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다. [Cloud Manager 2024년 8월 릴리스.](/help/release-notes/current.md)
+
+### 특정 OOTB 색인 정의는 사용자 정의할 수 없습니다. {#oakpal-customizing-ootb-index}
+
+* **키**: RestrictIndexCustomization
+* **유형**: 개선 사항
+* **심각도**: 사소
+* **이후**: 버전 2024.6.0
+
+AEM Cloud Service에서는 다음 OOTB 색인에 대한 무단 수정을 금지합니다.
+
+* `nodetypeLucene`
+* `slingResourceResolver`
+* `socialLucene`
+* `appsLibsLucene`
+* `authorizables`
+* `pathReference`
+
+>[!WARNING]
+>
+>이 경우 로 시작하는 파이프라인이 실패하므로 가능한 한 빨리 이 문제를 해결해야 합니다. [Cloud Manager 2024년 8월 릴리스.](/help/release-notes/current.md)
+
+### 분석기의 토큰라이저 구성은 &#39;토큰라이저&#39;라는 이름으로 만들어야 합니다. {#oakpal-tokenizer}
+
+* **키**: AnalyzerTokenizerConfigCheck
+* **유형**: 개선 사항
+* **심각도**: 사소
+* **이후**: 버전 2024.6.0
+
+AEM Cloud Service에서는 분석기에서 이름이 잘못된 토큰라이저를 만들 수 없습니다. 토큰화자는 항상 다음으로 정의되어야 합니다. `tokenizer`.
 
 ## Dispatcher 최적화 도구 {#dispatcher-optimization-tool-rules}
 

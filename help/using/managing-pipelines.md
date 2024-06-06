@@ -2,10 +2,10 @@
 title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 96%
+source-wordcount: '901'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. 여기서는 **파이프라인 카드**&#x200B;에서와 같이 프로그램의 모든 파이프라인 목록을 볼 수 있을 뿐만 아니라 파이프라인 실행을 시작 및 정지할 수도 있습니다.
 
-탭 또는 클릭 `i` 아이콘은 파이프라인의 마지막 또는 현재 실행에 대한 세부 정보를 표시합니다.
+`i` 아이콘을 탭하거나 클릭하면 파이프라인의 마지막 실행 또는 현재 실행에 대한 세부 정보가 표시됩니다.
 
 ![파이프라인 실행 세부 정보](/help/assets/configure-pipelines/pipeline-status.png)
 
@@ -60,7 +60,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 1. 여기에서는 현재 실행과 이전 실행을 포함하여 프로그램에 대한 모든 파이프라인 실행 목록을 볼 수 있습니다.
 
-탭 또는 클릭 `i` 아이콘은 선택한 파이프라인 실행의 세부 정보를 표시합니다.
+`i` 아이콘을 탭하거나 클릭하면 선택한 파이프라인 실행의 실행에 대한 세부 정보가 표시됩니다.
 
 ![파이프라인 실행 세부 정보](/help/assets/configure-pipelines/pipeline-activity.png)
 
@@ -96,6 +96,10 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 >
 >실행 중인 파이프라인은 편집할 수 없습니다.
 
+>[!NOTE]
+>
+>웹 계층 및 구성 파이프라인은 개인 저장소에서 지원되지 않습니다. 문서를 참조하십시오. [Cloud Manager에서 개인 저장소 추가](/help/managing-code/private-repositories.md) 자세한 내용 및 전체 제한 사항 목록
+
 ## 파이프라인 삭제 {#deleting-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
@@ -127,6 +131,15 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 **기간** 섹션을 표시하려면 **세부 정보 보기** 링크를 탭하거나 클릭합니다. 여기에는 해당 프로그램의 과거 트렌드를 기반으로 한 파이프라인의 평균 기간이 포함됩니다.
 
 ![기간](/help/assets/configure-pipelines/duration.png)
+
+파이프라인에 **코드 스캔** 문제가 제기된 단계입니다. **다운로드 세부 정보** 목록을 보기 위한 단추 [코드 품질 테스트](/help/using/code-quality-testing.md) 지나가지 않았어요.
+
+![코드 품질 문제](assets/managing-pipelines-code-quality-issues.png)
+
+A **프로젝트 파일 위치** 열은 CSV 파일에서 문제가 되는 코드의 위치를 나타낼 수 있습니다. 이 열은 프로젝트 상대 경로이지만 **파일 위치** 열은 Maven에서 생성됩니다.
+
+![프로젝트 코드 스캔 문제 세부 정보](assets/managing-pipelines-code-quality-details.png)
+
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: 비프로덕션 파이프라인 구성
 description: Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 33ccb0f2139162845cc1b72505b6a5bfc7cf43e7
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 100%
@@ -29,7 +29,7 @@ Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라�
 
 >[!NOTE]
 >
->연결된 git 저장소에 분기가 하나 이상 있고 [프로그램 설정](/help/getting-started/program-setup.md)이 완료될 때까지 파이프라인을 설정할 수 없습니다. Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [Cloud Manager 저장소](/help/managing-code/repositories.md) 문서를 참조하십시오.
+>연결된 git 저장소에 분기가 하나 이상 있고 [프로그램 설정](/help/getting-started/program-setup.md)이 완료될 때까지 파이프라인을 설정할 수 없습니다. Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [Cloud Manager 저장소](/help/managing-code/managing-repositories.md) 문서를 참조하십시오.
 
 ## 비프로덕션 파이프라인 추가 {#add-non-production-pipeline}
 

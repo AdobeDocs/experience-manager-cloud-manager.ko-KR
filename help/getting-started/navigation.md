@@ -2,7 +2,7 @@
 title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 9d0f4dd29e2d05ab3f6900ee23c536b91c849e65
+source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
 workflow-type: tm+mt
 source-wordcount: '1292'
 ht-degree: 100%
@@ -168,7 +168,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 * 개요 - 현재 문서에 설명된 프로그램 개요
 * [활동](/help/using/managing-pipelines.md#activity) - 프로그램의 파이프라인 실행 기록
 * [파이프라인](/help/using/managing-pipelines.md#pipelines) - 프로그램에 대해 구성된 모든 파이프라인
-* [저장소](/help/managing-code/repositories.md) - 프로그램에 대해 구성된 모든 저장소
+* [저장소](/help/managing-code/managing-repositories.md) - 프로그램에 대해 구성된 모든 저장소
 * [보고서](/help/using/monitoring-environments.md#system-monitoring-overview) - SLA 데이터 등의 지표
 * [환경](/help/using/managing-environments.md) - 프로그램에 대해 구성된 모든 환경
 * [콘텐츠 세트](/help/using/content-copy.md) - 복사 목적으로 만들어진 콘텐츠 세트
