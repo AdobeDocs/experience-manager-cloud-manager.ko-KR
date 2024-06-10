@@ -3,10 +3,10 @@ title: Cloud Manager에서 개인 저장소 추가
 description: 고유한 개인 GitHub 저장소를 사용하여 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 84a6d8b7a44af124eb227999ad1cbd1fe14ab7ee
+source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 68%
+source-wordcount: '868'
+ht-degree: 70%
 
 ---
 
@@ -124,7 +124,6 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 Cloud Manager에서 개인 저장소를 사용할 때에는 특정 제한 사항이 적용됩니다.
 
-* 개인 저장소를 관리하는 파이프라인의 직접 저장소 소스로 사용할 수는 없습니다.
 * Cloud Manager의 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 중지할 수 없습니다.
    * GitHub 리포지토리의 유효성을 Cloud Manager에서 확인하면 Cloud Manager는 항상 해당 리포지토리에 대해 생성된 가져오기 요청의 유효성을 검사합니다.
 * Adobe GitHub 앱이 GitHb 조직에서 제거되면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.

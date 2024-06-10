@@ -2,10 +2,10 @@
 title: Cloud Manager에서 저장소 관리
 description: Cloud Manager에서 git 저장소를 생성, 확인 및 편집하는 방법에 대해 알아봅니다.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: b15ef71ae24f51811798d2d25c8f75320e21c01f
+source-git-commit: 73add7bee892769d1b3864e3238aff26bf96162d
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 27%
+source-wordcount: '660'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 
 * 저장소 유형
    * **Adobe** Adobe 관리 저장소를 나타냅니다.
-   * **비공개** 관리하는 GitHub 저장소를 나타냅니다.
+   * **GitHub** 사용자가 관리하는 개인 GitHub 저장소를 나타냅니다.
 * 생성 시기
 * 저장소와 연결된 파이프라인
 
@@ -76,6 +76,13 @@ Cloud Manager는 Adobe이 관리하는 두 저장소를 모두 지원합니다(*
 다음 **저장소 정보** 세부 정보가 포함된 창이 열립니다. 저장소 정보 액세스에 대한 자세한 내용은 문서를 참조하십시오 [저장소 정보에 액세스](accessing-repositories.md)
 
 ## 분기 확인 {#check-branches}
+
+다음 **분기 확인 / 프로젝트 만들기** 작업은 저장소의 상태에 따라 두 가지 기능을 수행합니다.
+
+* 저장소가 새로 만들어지면 작업은 다음에 준하여 샘플 프로젝트를 만듭니다. [AEM project archetype.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview)
+* 저장소에서 이미 샘플 프로젝트를 만든 경우, 저장소 및 해당 분기의 상태를 확인하고 샘플 프로젝트가 이미 있는지 다시 보고합니다.
+
+![분기 작업 확인](assets/check-branches.png)
 
 ## 저장소 URL 복사 {#copy-url}
 
