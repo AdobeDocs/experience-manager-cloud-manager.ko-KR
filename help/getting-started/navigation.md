@@ -3,7 +3,7 @@ title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
 ht-degree: 100%
 

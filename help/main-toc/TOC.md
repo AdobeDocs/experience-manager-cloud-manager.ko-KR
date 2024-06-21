@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 3beee350dda077c16975ea628bd4c7b80d7d9160
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,14 +57,14 @@ ht-degree: 96%
    + [알림](/help/using/notifications.md)
    + [사용자 정의 코드 품질 규칙](/help/using/custom-code-quality-rules.md)
    + [콘텐츠 복사](/help/using/content-copy.md)
-+ 코드 관리 {#managing-code}
++ {#managing-code} 코드 관리
    + [Cloud Manager에서 저장소 관리](/help/managing-code/managing-repositories.md)
    + [저장소 액세스 정보](/help/managing-code/accessing-repositories.md)
    + [Adobe 저장소 추가](/help/managing-code/adobe-repositories.md)
-   + [개인 저장소 추가](/help/managing-code/private-repositories.md)
-   + [git 하위 모듈 지원](/help/managing-code/git-submodules.md)
-   + [GitHub 구성 확인](/help/managing-code/github-check-config.md)
-   + [GitHub 확인 주석](/help/managing-code/github-annotations.md)
+   + [비공개 저장소 추가](/help/managing-code/private-repositories.md)
+   + [Git 하위 모듈 지원](/help/managing-code/git-submodules.md)
+   + [GitHub 검사 구성](/help/managing-code/github-check-config.md)
+   + [GitHub 검사 주석](/help/managing-code/github-annotations.md)
    + [Maven 프로젝트 버전 처리](/help/managing-code/maven-project-version.md)
    + [git과 통합하기](/help/managing-code/git-integration.md)
    + [다중 git 저장소를 사용하여 작업](/help/managing-code/multiple-git-repos.md)

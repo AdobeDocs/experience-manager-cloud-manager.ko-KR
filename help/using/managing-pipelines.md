@@ -3,9 +3,9 @@ title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
 source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 >[!NOTE]
 >
->웹 계층 및 구성 파이프라인은 개인 저장소에서 지원되지 않습니다. 문서를 참조하십시오. [Cloud Manager에서 개인 저장소 추가](/help/managing-code/private-repositories.md) 자세한 내용 및 전체 제한 사항 목록
+>웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 자세한 내용과 제한 사항 전체 목록은 [Cloud Manager에서 비공개 저장소 추가](/help/managing-code/private-repositories.md) 문서를 참조하십시오.
 
 ## 파이프라인 삭제 {#deleting-pipelines}
 
@@ -132,11 +132,11 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 ![기간](/help/assets/configure-pipelines/duration.png)
 
-파이프라인에 **코드 스캔** 문제가 제기된 단계입니다. **다운로드 세부 정보** 목록을 보기 위한 단추 [코드 품질 테스트](/help/using/code-quality-testing.md) 지나가지 않았어요.
+파이프라인에 문제가 발생한 **코드 스캔** 단계가 있는 경우 **세부 정보 다운로드** 버튼을 탭하거나 클릭하여 통과하지 못한 [코드 품질 테스트](/help/using/code-quality-testing.md) 목록을 볼 수 있습니다.
 
 ![코드 품질 문제](assets/managing-pipelines-code-quality-issues.png)
 
-A **프로젝트 파일 위치** 열은 CSV 파일에서 문제가 되는 코드의 위치를 나타낼 수 있습니다. 이 열은 프로젝트 상대 경로이지만 **파일 위치** 열은 Maven에서 생성됩니다.
+**프로젝트 파일 위치** 열은 문제가 있는 코드의 위치를 &#x200B;&#x200B;나타내는 CSV 파일에서 사용할 수 있습니다. 이 열은 프로젝트 관련 경로이며, **파일 위치** 열은 Maven에서 생성됩니다.
 
 ![프로젝트 코드 스캔 문제 세부 정보](assets/managing-pipelines-code-quality-details.png)
 

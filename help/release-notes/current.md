@@ -4,16 +4,16 @@ description: 다음은 Cloud Manager 릴리스 2024.6.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: a41ea35cb685d4e88e016bc887eb2465963747e1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
 
 # Cloud Manager 릴리스 2024.6.0의 릴리스 정보 {#release-notes}
 
-이 페이지는 다음에 대한 릴리스 정보를 설명합니다. [!UICONTROL Cloud Manager] 릴리스 2024.6.0.
+이 페이지는 [!UICONTROL Cloud Manager] 릴리스 2024.6.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,16 +21,16 @@ ht-degree: 37%
 
 ## 릴리스 일자 {#release-date}
 
-의 릴리스 날짜 [!UICONTROL Cloud Manager] 릴리스 2024.6.0은 2024년 6월 6일입니다. 다음 릴리스는 2024년 7월 11일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2024.6.0의 릴리스 날짜는 2024년 6월 6일입니다. 다음 릴리스는 2024년 7월 11일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 다음을 수행할 수 있습니다. [고유한 GitHub 저장소 사용](/help/managing-code/private-repositories.md) 전체 스택 및 프론트엔드 파이프라인 모두의 소스로 사용됩니다.
-   * 또한 다음을 통해 GitHub 저장소를 활용할 수 있습니다. [git 하위 모듈,](/help/managing-code/git-submodules.md) 가져오기 요청 유효성 검사에 사용되는 자동 생성 파이프라인에 대한 향상된 제어 기능을 제공하고 코드 스캔 단계 동안 중요한 지표에 대한 비헤이비어를 정의할 수 있도록 합니다.
-   * [또한 다음을 선택할 수 있습니다.](/help/managing-code/github-check-config.md) gitHub에서 보고서 기록을 보존하려면 파이프라인 이름을 지정하고 필요에 맞게 파이프라인 변수를 설정합니다.
-* 새 OakPal 규칙이 [Cloud Manager 코드 품질 검사.](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)
-   * 2024년 6월 현재 추가된 모든 새 규칙은 변경되지 않는 변경 사항입니다.
-   * 이러한 새로운 규칙은 Cloud Manager 2024년 8월 릴리스부터 파이프라인이 실패하게 되므로 가능한 한 빨리 이러한 문제를 해결해야 합니다.
+* 이제 [자체 GitHub 저장소](/help/managing-code/private-repositories.md)를 전체 스택 및 프론트엔드 파이프라인 모두의 소스로 사용할 수 있습니다.
+   * 또한 [Git 하위 모듈](/help/managing-code/git-submodules.md)을 통해 GitHub 저장소를 활용할 수 있으며, 가져오기 요청 검증에 사용되는 자동 생성 파이프라인에 대한 제어 기능을 강화하고 코드 스캔 단계에서 중요한 지표에 대한 동작을 정의할 수 있습니다.
+   * [GitHub에 보고서 기록을 보존하고 파이프라인 이름을 지정하며 필요에 맞게 파이프라인 변수를 설정할 수도 있습니다.](/help/managing-code/github-check-config.md)
+* 새로운 OakPal 규칙이 [Cloud Manager 코드 품질 검사](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)에 추가되었습니다.
+   * 2024년 6월에 추가된 모든 새로운 규칙은 획기적인 변경 사항입니다.
+   * 이러한 새로운 규칙으로 인해 Cloud Manager 2024년 8월 릴리스부터 파이프라인에 장애가 발생하므로 가능한 한 빨리 이 문제를 해결해야 합니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
