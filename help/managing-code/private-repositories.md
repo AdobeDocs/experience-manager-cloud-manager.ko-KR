@@ -3,10 +3,10 @@ title: Cloud Manager에서 비공개 저장소 추가
 description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 6f14a8e9ff8e56f9f7b84799733e26b4c0ff8dcb
-workflow-type: ht
-source-wordcount: '868'
-ht-degree: 100%
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '855'
+ht-degree: 98%
 
 ---
 
@@ -114,11 +114,7 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 ## 비공개 저장소를 파이프라인과 연결 {#pipelines}
 
-유효성이 확인된 비공개 저장소는 [전체 스택 및 프론트엔드 파이프라인](/help/overview/ci-cd-pipelines.md)과 연결될 수 있습니다.
-
->[!NOTE]
->
->웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
+검증된 개인 저장소를 연결할 수 있음 [전체 스택 파이프라인.](/help/overview/ci-cd-pipelines.md)
 
 ## 제한 사항 {#limitations}
 

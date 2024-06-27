@@ -2,9 +2,9 @@
 title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 4ab4bd416658c55d72228b701c57a1845d2d0f41
-workflow-type: ht
-source-wordcount: '901'
+source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+workflow-type: tm+mt
+source-wordcount: '872'
 ht-degree: 100%
 
 ---
@@ -95,10 +95,6 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 >[!NOTE]
 >
 >실행 중인 파이프라인은 편집할 수 없습니다.
-
->[!NOTE]
->
->웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다. 자세한 내용과 제한 사항 전체 목록은 [Cloud Manager에서 비공개 저장소 추가](/help/managing-code/private-repositories.md) 문서를 참조하십시오.
 
 ## 파이프라인 삭제 {#deleting-pipelines}
 
