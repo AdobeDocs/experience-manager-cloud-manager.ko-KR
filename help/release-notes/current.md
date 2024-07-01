@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2024.6.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '288'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 95%
 
 ## 새로운 기능 {#what-is-new}
 
-* 이제 다음을 수행할 수 있습니다. [고유한 GitHub 저장소 사용](/help/managing-code/private-repositories.md) 전체 스택 파이프라인의 소스로 사용됩니다.
+* 이제 [자체 GitHub 저장소](/help/managing-code/private-repositories.md)를 전체 스택 파이프라인의 소스로 사용할 수 있습니다.
    * 또한 [Git 하위 모듈](/help/managing-code/git-submodules.md)을 통해 GitHub 저장소를 활용할 수 있으며, 가져오기 요청 검증에 사용되는 자동 생성 파이프라인에 대한 제어 기능을 강화하고 코드 스캔 단계에서 중요한 지표에 대한 동작을 정의할 수 있습니다.
    * [GitHub에 보고서 기록을 보존하고 파이프라인 이름을 지정하며 필요에 맞게 파이프라인 변수를 설정할 수도 있습니다.](/help/managing-code/github-check-config.md)
 * 새로운 OakPal 규칙이 [Cloud Manager 코드 품질 검사](/help/using/custom-code-quality-rules.md#oakpal-ui-content-package)에 추가되었습니다.
