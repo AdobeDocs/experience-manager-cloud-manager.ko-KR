@@ -3,10 +3,10 @@ title: 2024.6.0 릴리스 정보
 description: 다음은 Cloud Manager 릴리스 2024.6.0의 릴리스 정보입니다.
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
-workflow-type: ht
+source-git-commit: 851b556c0917d9f6d97d958a0c8e8aeff4141079
+workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 릴리스 2024.6.0의 릴리스 날짜는 2024년 6월 6일입니다. 다음 릴리스는 2024년 7월 11일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 릴리스 2024.6.0의 릴리스 날짜는 2024년 6월 6일입니다. 다음 릴리스는 2024년 7월 18일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
