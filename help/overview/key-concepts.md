@@ -5,7 +5,7 @@ exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: 67621fb2dbb0c32371b2ffc16ec45f47daf04e05
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 
 ## 애플리케이션 {#application}
 
-애플리케이션은 고객이 기본 요소를 조정하기 위해 만든 일련의 사용자 정의 및 구성입니다 [솔루션](#solution) (AEM Sites 또는 AEM Assets 등) 특정 사용 사례와 필요에 따라 선택할 수 있습니다. 애플리케이션은 여러 [아티팩트](#artifact)로 구성될 수 있는 논리적 단위입니다.
+애플리케이션은 고객이 특정 사용 사례와 필요에 따라 기본 [솔루션](#solution)(예: AEM Sites 또는 AEM Assets)을 조정하기 위해 만든 일련의 사용자 정의 및 구성입니다. 애플리케이션은 여러 [아티팩트](#artifact)로 구성될 수 있는 논리적 단위입니다.
 
 예제 애플리케이션은 가상의 [WKND 라이프스타일 애플리케이션](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)입니다.
 
@@ -62,4 +62,4 @@ git 저장소는 고객별 소스 코드가 저장되고 [git을 사용](https:/
 
 ## 단계 {#step}
 
-단계는 [파이프라인](#pipeline)의 구성 요소로서 작업의 일부 단위를 수행하는 구성된 명령 집합입니다.
+단계는 [파이프라인](#pipeline)의 빌딩 블록으로서 작업의 일부 단위를 수행하는 구성된 명령 집합입니다.

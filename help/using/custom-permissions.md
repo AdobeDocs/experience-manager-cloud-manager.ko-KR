@@ -3,7 +3,7 @@ title: 사용자 정의 권한
 description: 사용자 정의 권한을 사용하여 Cloud Manager 사용자의 프로그램, 파이프라인 및 환경에 대한 액세스를 제한하는 구성 가능한 권한으로 새 사용자 정의 권한 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: 4a784f1594be4831be1c1c4aecb41b4f1b3b8be2
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 100%
 

@@ -4,8 +4,8 @@ description: 여기에서 Adobe Managed Services(AMS)용 Cloud Manager에 대해
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
 workflow-type: tm+mt
-source-wordcount: '1322'
-ht-degree: 100%
+source-wordcount: '1300'
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 ![CI/CD 플로우](/help/assets/screen_shot_2018-05-12at73843pm.png)
 
-## [!UICONTROL 의 주요 기능Cloud Manager] {#key-features-in-cloud-manager}
+## [!UICONTROL Cloud Manager]의 주요 기능 {#key-features-in-cloud-manager}
 
 다음은 Cloud Manager의 선택된 주요 기능에 대해 자세히 살펴봅니다.
 

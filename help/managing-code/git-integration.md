@@ -4,7 +4,7 @@ description: 이 비디오 시리즈는 Adobe Cloud Manager와 함께 고객 관
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 91e909273bf2b21d7f6413731923011915079e45
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '340'
 ht-degree: 100%
 
 ---

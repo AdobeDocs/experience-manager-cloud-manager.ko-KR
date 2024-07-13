@@ -3,7 +3,7 @@ title: GitHub 검사 주석
 description: GitHub가 비공개 저장소에 대한 주석 PR을 검사하여 유용한 피드백을 제공하는 방법을 알아봅니다.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
 

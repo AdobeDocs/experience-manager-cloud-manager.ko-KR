@@ -4,7 +4,7 @@ description: 파이프라인의 코드 품질 테스트가 어떻게 작동하�
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: 38cf86a5effa201afdc8e00d8f33582fc06214d7
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2848'
 ht-degree: 100%
 
 ---
@@ -296,4 +296,3 @@ Cloud Manager는 CSE가 설정한 사용자 이름과 암호를 사용하여 작
 >
 >* 이 최적화는 AEM에 배포된 패키지에 영향을 주지 않습니다.
 >* 임베드된 콘텐츠 패키지와 건너뛴 콘텐츠 패키지 간의 일치는 파일 이름을 기반으로 하므로 여러 건너뛴 콘텐츠 패키지의 파일 이름이 정확히 동일하거나 임베드하는 동안 파일 이름이 변경된 경우에는 이 최적화를 수행할 수 없습니다.
-

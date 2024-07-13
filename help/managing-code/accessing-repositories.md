@@ -1,13 +1,13 @@
 ---
 title: 저장소 액세스 정보
 description: Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 Adobe 관리 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
-source-git-commit: b15ef71ae24f51811798d2d25c8f75320e21c01f
-workflow-type: ht
+exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 100%
 
 ---
-
 
 # 저장소 액세스 정보 {#accessing-repos}
 

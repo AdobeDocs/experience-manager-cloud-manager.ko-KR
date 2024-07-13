@@ -1,13 +1,13 @@
 ---
 title: 비공개 저장소에 대한 GitHub 검사 구성
 description: 비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어 방법에 대해 알아봅니다.
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
-workflow-type: ht
+exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
+source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 100%
 
 ---
-
 
 # 비공개 저장소에 대한 GitHub 검사 구성 {#github-check-config}
 

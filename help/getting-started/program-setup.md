@@ -4,8 +4,8 @@ description: 온보딩 후 비즈니스 소유자는 프로그램의 일부 초�
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 비즈니스 소유자는 온보딩 후 성능 테스트에 사용되는 프로그램 설명을 설정하고 주요 성과 지표(KPI) 정의 등 프로그램의 초기 설정을 완료합니다.
 
-## [!UICONTROL 로 프로그램 설정Cloud Manager] {#program-setup-cloud-manager}
+## [!UICONTROL Cloud Manager](으)로 프로그램 설정 {#program-setup-cloud-manager}
 
 다음 단계에 따라 프로그램을 설정하고 KPI를 정의합니다.
 

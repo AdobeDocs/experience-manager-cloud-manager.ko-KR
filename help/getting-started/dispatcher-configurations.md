@@ -4,7 +4,7 @@ description: Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '586'
 ht-degree: 100%
 
 ---

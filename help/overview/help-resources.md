@@ -4,7 +4,7 @@ description: Cloud Manager에 사용할 수 있는 리소스에 대해 알아보
 exl-id: 6a4573a6-d9f0-41bc-8ce2-289ba9cc9f47
 source-git-commit: dcdb9aca03a905e875fbf8f805d7a7ae7b5b594b
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '92'
 ht-degree: 100%
 
 ---
