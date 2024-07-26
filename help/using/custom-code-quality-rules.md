@@ -3,9 +3,9 @@ title: 사용자 정의 코드 품질 규칙
 description: AEM 엔지니어링의 모범 사례를 기반으로 코드 품질 테스트의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8f0f5e819cf312ef25beac815beca92d4e3ac255
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3544'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -863,14 +863,14 @@ AEM Cloud Service는 다음 OOTB 색인의 무단 수정을 금지합니다.
 
 AEM Cloud Service는 분석기에서 잘못된 이름을 가진 토큰화 생성을 금지합니다. 토큰화는 항상 `tokenizer`로 정의되어야 합니다.
 
-### 색인 정의 구성에 공백이 없어야 합니다. {#oakpal-indexing-definitions-spaces}
+### 색인화 정의 구성에는 공백이 포함되어서는 안 됩니다. {#oakpal-indexing-definitions-spaces}
 
 * **키**: PathSpacesCheck
 * **유형**: 개선
 * **심각도**: 사소
 * **이후**: 버전 2024.7.0
 
-AEM Cloud Service에서는 공백이 있는 속성이 포함된 인덱싱 정의를 만들 수 없습니다.
+AEM Cloud Service는 공백이 있는 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.
 
 ## Dispatcher 최적화 도구 {#dispatcher-optimization-tool-rules}
 
