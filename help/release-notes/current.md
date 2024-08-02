@@ -4,9 +4,9 @@ description: 다음은 Cloud Manager 릴리스 2024.7.0의 릴리스 정보입�
 feature: Release Information
 exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
 source-git-commit: 87c603a89b99f6984828280cba2041da8c72e839
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 95%
 * 이제 [프로덕션 파이프라인](/help/using/production-pipelines.md#adding-production-pipeline) 및 [비프로덕션 파이프라인](/help/using/non-production-pipelines.md#adding-non-production-pipeline) 트리거 **Git 변경 시**&#x200B;를 통해 [비공개 저장소](/help/managing-code/private-repositories.md)에 대해 커밋에서 파이프라인을 시작할 수 있습니다.
 * 사전 프로덕션 파이프라인은 수동으로만 트리거할 수 있으며 **Git 변경 시**&#x200B;로 구성할 수 없습니다.
 * 프로덕션 전용 파이프라인의 경우 승격 가능한 실행 목록에는 프로덕션 환경에 배포된 아티팩트 버전보다 높은 아티팩트 버전이 있는 실행이 포함됩니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이(가) [버전 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)(으)로 업데이트되었습니다
+* [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)이 [버전 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)로 업데이트되었습니다.
 
 
 ## 얼리 어답터 프로그램 {#early-adoption}
