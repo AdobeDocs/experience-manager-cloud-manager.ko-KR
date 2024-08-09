@@ -2,10 +2,10 @@
 title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fc1bc626dc18d25ce8c5bbae71396b234b5676db
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 100%
+source-wordcount: '617'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## 사용자 역할 {#user-roles}
 
-[!UICONTROL Cloud Manager]의 역할 관리는 [Admin Console을 사용하여 수행됩니다.](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) [!UICONTROL Cloud Manager]의 모든 사용자는 고객의 IMS 조직 멤버여야 하며 Adobe Managed Services 제품 컨텍스트를 가지고 있어야 합니다. Admin Console에서 [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
+[!UICONTROL Cloud Manager]의 역할 관리는 [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을(를) 사용하여 수행됩니다. [!UICONTROL Cloud Manager]의 모든 사용자는 고객의 IMS 조직 멤버여야 하며 Managed Services 제품 컨텍스트 Adobe이 있어야 합니다. Admin Console에서 [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
 
 역할을 설정하는 방법에 대한 자세한 내용은 [사용자 및 역할 설정](/help/requirements/users-and-roles.md) 문서를 참조하십시오.
 
@@ -69,4 +69,4 @@ ht-degree: 100%
 
 >[!TIP]
 >
->구성 가능한 권한이 있는 사용자 정의 권한 프로필도 사용할 수 있습니다. 자세한 내용은 [사용자 정의 권한](/help/using/custom-permissions.md) 문서를 참조하십시오.
+>구성 가능한 권한이 있는 사용자 정의 권한 프로필도 사용할 수 있습니다. 자세한 내용은 [사용자 지정 권한](/help/using/custom-permissions.md)을 참조하세요.

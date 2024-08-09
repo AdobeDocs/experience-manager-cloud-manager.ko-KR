@@ -2,10 +2,10 @@
 title: 환경 프로비저닝
 description: Cloud Manager 온보딩 프로세스의 일부로 환경을 프로비저닝하는 방법에 대해 알아보십시오.
 exl-id: eade4255-89b5-4c65-a498-1c6d4e8c73ff
-source-git-commit: d033b7cf53d4d9faf074f1dc09e2958eb91afe3b
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 

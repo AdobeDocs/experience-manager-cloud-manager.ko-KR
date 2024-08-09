@@ -2,10 +2,10 @@
 title: CI/CD 파이프라인
 description: CI/CD 파이프라인과 Cloud Manager에서 스테이징 및 프로덕션 환경에 대한 배포를 처리하는 방법에 대해 알아보십시오.
 exl-id: 7130e5b7-6986-48c8-900c-90f3e4187f91
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
 source-wordcount: '562'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ CI/CD 파이프라인과 Cloud Manager에서 스테이징 및 프로덕션 환�
 
 ### CI/CD 파이프라인 설정 방법 {#how-to-setup-a-ci-cd-pipeline}
 
-파이프라인 구성에 대한 자세한 내용은 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)을 참조하십시오.
+파이프라인 구성에 대한 자세한 내용은 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md) 문서를 참조하십시오.
 
 ## 품질 게이트 {#quality-gates}
 

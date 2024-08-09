@@ -2,10 +2,10 @@
 title: 코드 배포
 description: 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 100%
+source-wordcount: '1637'
+ht-degree: 94%
 
 ---
 
@@ -109,16 +109,16 @@ Cloud Manager가 비프로덕션 토폴로지에 배포하는 경우 가능한 �
 
 1. 각 AEM 아티팩트는 Package Manager API를 통해 각 AEM 인스턴스에 배포되며, 패키지 종속성이 배포 순서를 결정합니다.
 
-   * 패키지를 사용하여 새 기능을 설치하고 인스턴스 간에 콘텐츠를 전송하고 저장소 콘텐츠를 백업하는 방법에 대한 자세한 내용은 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html) 문서를 참조하십시오.
+   * 패키지를 사용하여 새 기능을 설치하고 인스턴스 간에 콘텐츠를 전송하고 저장소 콘텐츠를 백업하는 방법에 대한 자세한 내용은 [패키지 관리자](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html)를 참조하십시오.
 
    >[!NOTE]
    >
-   >모든 AEM 아티팩트는 작성자와 게시자 모두에게 배포됩니다. 노드별 구성이 필요한 경우 실행 모드를 활용해야 합니다. 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service로 배포 문서의 실행 모드](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) 섹션을 참조하십시오.
+   >모든 AEM 아티팩트는 작성자와 게시자 모두에게 배포됩니다. 노드별 구성이 필요한 경우 실행 모드를 활용해야 합니다. 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 AEM as a Cloud Service에 배포](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html#runmodes) 문서의 [실행 모드 섹션을 참조하십시오.
 
 1. Dispatcher 아티팩트는 다음과 같이 각 Dispatcher에 배포됩니다.
 
    1. 현재 구성이 백업되고 임시 위치에 복사됩니다.
-   1. 변경 불가능한 파일을 제외한 모든 구성이 삭제됩니다. 자세한 내용은 [Dispatcher 구성](/help/getting-started/dispatcher-configurations.md) 문서를 참조하십시오. 이렇게 하면 디렉터리가 지워져 고립된 파일이 남지 않습니다.
+   1. 변경 불가능한 파일을 제외한 모든 구성이 삭제됩니다. 자세한 내용은 [Dispatcher 구성](/help/getting-started/dispatcher-configurations.md)을 참조하십시오. 이렇게 하면 디렉터리가 지워져 고립된 파일이 남지 않습니다.
    1. 아티팩트가 `httpd` 디렉터리로 추출됩니다. 변경할 수 없는 파일은 덮어쓰지 않습니다. git 저장소의 변경할 수 없는 파일에 대해 변경한 내용은 배포 시 무시됩니다. 이러한 파일은 AMS Dispatcher 프레임워크의 핵심이며 변경할 수 없습니다.
    1. Apache는 구성 테스트를 수행합니다. 오류가 발견되지 않으면 서비스가 다시 로드됩니다. 오류가 발생하는 경우 구성이 백업에서 복원되고 서비스가 다시 로드되며 오류가 Cloud Manager에 다시 보고됩니다.
    1. 파이프라인 구성에 지정된 각 경로가 무효화되거나 Dispatcher 캐시에서 플러시됩니다.
@@ -200,7 +200,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 재실행 API {#reexecute-api}
 
-UI에서 사용할 수 있으며, [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고, 재실행으로 트리거된 실행을 식별할 수도 있습니다.
+UI에서 사용할 수 있을 뿐만 아니라 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수 있습니다.
 
 #### 재실행 트리거 {#triggering}
 

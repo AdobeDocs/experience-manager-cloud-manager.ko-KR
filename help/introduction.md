@@ -2,10 +2,10 @@
 title: AMS용 Cloud Manager 소개
 description: 여기에서 Adobe Managed Services(AMS)용 Cloud Manager에 대해 알아보고 조직이 클라우드에서 Adobe Experience Manager를 자체 관리하는 방법을 알아보십시오.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: a2cea28061304d109a3c9a48650d01255579443c
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1300'
-ht-degree: 99%
+source-wordcount: '1295'
+ht-degree: 88%
 
 ---
 
@@ -55,7 +55,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 성공적인 배포를 측정하는 기준을 형성하는 애플리케이션별 KPI(주요 성능 지표)(분당 최대 페이지 보기 횟수 및 페이지 로드 예상 응답 시간)를 사용자가 정의합니다. 여러 팀원의 역할과 권한을 쉽게 정의할 수 있습니다. 셀프서비스 인터페이스를 통해 고객이 다시 제어하게 되었지만 모범 사례 리소스 링크와 필요할 때 필요한 지침을 제공할 수 있는 Adobe 내 전문가 액세스도 제공됩니다.
 
-[!UICONTROL Cloud Manager]의 UI를 탐색하고 시작하려면 [최초 로그인](/help/getting-started/first-time-login.md) 문서를 참조하십시오.
+[!UICONTROL Cloud Manager]의 UI를 살펴보고 시작하려면 [처음 로그인](/help/getting-started/first-time-login.md) 문서를 참조하십시오.
 
 ### CI/CD 파이프라인 {#ci-cd-pipeline}
 
@@ -63,7 +63,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 [!UICONTROL Cloud Manager] UI를 통해 고객이 CI/CD 파이프라인을 구성하고 시작할 수 있습니다. 이 파이프라인의 일부로, 고품질 애플리케이션만 프로덕션 환경에 전달되도록 철저한 코드 검사가 실행됩니다.
 
-[!UICONTROL Cloud Manager]의 UI에서 파이프라인 구성에 대한 자세한 내용은 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)을 참조하십시오.
+[!UICONTROL Cloud Manager]의 UI에서 파이프라인을 구성하는 방법에 대한 자세한 내용은 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md) 문서를 참조하십시오.
 
 ### 유연한 배포 모드 {#flexible-deployment-modes}
 
@@ -77,7 +77,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 ## Cloud Manager의 옵션 기능 {#optional-features-in-cloud-manager}
 
-Cloud Manager는 특정 환경 설정 및 필요에 따라 프로젝트에 도움이 될 수 있는 추가 고급 기능을 제공합니다. 이러한 기능에 관심이 있는 경우 CSE(Customer Success Engineer) 또는 Adobe 담당자에게 연락하여 자세한 내용을 문의하십시오.
+Cloud Manager는 특정 환경 설정 및 필요에 따라 프로젝트에 도움이 될 수 있는 추가 고급 기능을 제공합니다. 이러한 기능에 관심이 있는 경우 CSE(고객 성공 엔지니어) 또는 Adobe 담당자에게 연락하여 자세한 내용을 논의하십시오.
 
 ### 자동 크기 조정 {#autoscaling}
 
@@ -131,5 +131,5 @@ Cloud Manager는 특정 환경 설정 및 필요에 따라 프로젝트에 도�
 * 미리보기 Dispatcher/게시 쌍은 파란색/녹색 배포의 일부가 아닙니다.
 * 모든 Dispatcher/게시 쌍은 다른 Dispatcher/게시 쌍과 동일합니다.
 * 파란색/녹색은 프로덕션 환경에만 사용할 수 있습니다.
-* AWS뿐만 아니라 Azure에서도 파란색/녹색을 사용할 수 있습니다.
+* 파란색/녹색은 AWS 및 Azure에서 사용할 수 있습니다.
 * 파란색/녹색은 Assets 전용 고객에게는 제공되지 않습니다.

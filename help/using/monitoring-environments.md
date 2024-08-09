@@ -2,10 +2,10 @@
 title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니다.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: ab527beb706ab73a14cc933a3414873dee6b7a9e
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +26,7 @@ Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니�
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 모니터링하려는 프로그램의 줄임표 버튼을 탭하거나 클릭하고 **모니터링 표시** 옵션을 선택합니다.
+1. 모니터링하려는 프로그램의 줄임표 버튼을 클릭하고 **모니터링 표시** 옵션을 선택합니다.
 
    ![설정](/help/assets/first-timea1.png)
 
@@ -51,7 +51,7 @@ Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니�
 
 ## 시스템 모니터링 세부 정보 {#system-monitoring-detail}
 
-특정 지표의 세부 정보를 보려면 특정 인스턴스의 범주 열 중 하나를 탭하거나 클릭하거나 왼쪽 탐색에서 범주 제목을 클릭합니다. 각 세부 정보 페이지에는 해당 범주 내의 지표에 대한 일련의 그래프가 표시됩니다. 환경의 모든 인스턴스 또는 특정 인스턴스에 대한 지표를 볼 수 있습니다. 오른쪽 상단에 있는 드롭다운 상자를 사용하여 환경과 인스턴스 사이를 전환할 수 있습니다.
+특정 지표의 세부 정보를 보려면 왼쪽 탐색에서 특정 인스턴스의 범주 열 또는 범주 제목 중 하나를 클릭합니다. 각 세부 정보 페이지에는 해당 범주 내의 지표에 대한 일련의 그래프가 표시됩니다. 환경의 모든 인스턴스 또는 특정 인스턴스에 대한 지표를 볼 수 있습니다. 오른쪽 상단에 있는 드롭다운 상자를 사용하여 환경과 인스턴스 사이를 전환할 수 있습니다.
 
 ![환경 선택](/help/assets/System_Monitoring1.png)
 

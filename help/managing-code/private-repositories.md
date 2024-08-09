@@ -3,10 +3,10 @@ title: Cloud Manager에서 비공개 저장소 추가
 description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 15e733117b4458cc53dec309dad5bde8cb17029f
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 100%
+source-wordcount: '836'
+ht-degree: 82%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 100%
 
 ### 저장소 추가 {#add-repo}
 
-1. Cloud Manager의 **프로그램 개요** 페이지에서 **저장소** 탭을 탭하거나 클릭하여 **저장소** 페이지로 전환한 다음 **저장소 추가**&#x200B;를 클릭합니다.
+1. Cloud Manager의 **프로그램 개요** 페이지에서 **저장소** 탭을 클릭하여 **저장소** 페이지로 전환하고 **저장소 추가**&#x200B;를 클릭합니다.
 
 1. **저장소 추가** 대화 상자에서 **비공개 저장소**&#x200B;를 저장소 유형으로 선택합니다.
 
@@ -44,11 +44,11 @@ ht-degree: 100%
 
    ![자체 저장소 추가](/help/assets/repositories/add-own-github.png)
 
-1. **저장**&#x200B;을 탭하거나 클릭합니다.
+1. **저장**&#x200B;을 클릭합니다.
 
 >[!TIP]
 >
->Cloud Manager의 저장소 관리에 대한 자세한 내용은 [Cloud Manager 저장소](/help/managing-code/managing-repositories.md)를 참조하십시오.
+>Cloud Manager에서 저장소를 관리하는 방법에 대한 자세한 내용은 [Cloud Manager 저장소](/help/managing-code/managing-repositories.md) 문서를 참조하십시오.
 
 ### 비공개 저장소 소유권 유효성 검사 {#validate-ownership}
 
@@ -60,11 +60,11 @@ ht-degree: 100%
 
 1. Cloud Manager는 GitHub 앱을 사용하여 저장소와 안전하게 상호 작용합니다.
    * GitHub 조직의 소유자는 `https://github.com/apps/cloud-manager-for-aem`에 있는 앱을 설치하고 저장소에 대한 액세스 권한을 부여해야 합니다.
-   * 이 작업을 수행하는 방법에 대한 자세한 내용은 GitHub 문서를 참조하십시오.
+   * 이 작업을 수행하는 방법에 대한 자세한 내용은 GitHub 설명서 를 참조하십시오.
 
-1. 보안 강화를 위해 저장소의 기본 분기에 시크릿 파일을 만들어야 합니다. **생성**&#x200B;을 탭하거나 클릭합니다.
+1. 보안 강화를 위해 저장소의 기본 분기에 시크릿 파일을 만들어야 합니다. **생성**&#x200B;을 클릭합니다.
 
-1. **확인**&#x200B;을 탭하거나 클릭하여 시크릿 파일이 생성되었는지 확인합니다.
+1. **확인**&#x200B;을 클릭하여 암호 파일 생성을 확인합니다.
 
    ![비밀 생성 확인](/help/assets/repositories/confirm-generation.png)
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 
 1. `.well-known/adobe/cloud-manager-challenge`라는 GitHub 저장소의 기본 분기에 새 파일을 만들고 시크릿 파일 콘텐츠를 해당 파일에 붙여넣어 저장합니다.
 
-1. 앱을 설치하고 시크릿 파일이 저장소에 있으면 **비공개 저장소 소유권 유효성 검사** 대화 상자의 **유효성 검사**&#x200B;를 탭하거나 클릭할 수 있습니다.
+1. 앱이 설치되고 저장소에 비밀 파일이 있으면 **개인 저장소 소유권 확인** 대화 상자에서 **확인**&#x200B;을 클릭할 수 있습니다.
 
 앱을 설치하고 시크릿 파일을 순서에 관계없이 만들 수 있습니다. 그러나 유효성을 검사하려면 두 단계를 모두 완료해야 합니다.
 
@@ -86,7 +86,7 @@ ht-degree: 100%
 
 **유형** 열을 통해 Adobe 제공 저장소(**Adobe**) 및 자체 GitHub 저장소(**GitHub**)를 쉽게 식별할 수 있습니다.
 
-**저장소** 페이지에서 유효성 검사를 완료하기 위해 나중에 저장소로 돌아와야 하는 경우, 행에서 방금 추가한 GitHub 저장소를 나타내는 줄임표 버튼을 탭하거나 클릭하고 드롭다운 메뉴에서 **소유권 유효성 검사**&#x200B;를 선택합니다.
+유효성 검사를 완료하기 위해 나중에 저장소로 돌아가야 하는 경우 **저장소** 페이지에서 방금 추가한 GitHub 저장소를 나타내는 행의 줄임표 버튼을 클릭하고 드롭다운 메뉴에서 **소유권 유효성 검사**&#x200B;를 선택합니다.
 
 ## Cloud Manager로 비공개 저장소 사용 {#using}
 
@@ -110,11 +110,11 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 >[!TIP]
 >
->비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어할 수 있습니다. 자세한 내용은 [비공개 저장소에 대한 GitHub 검사 구성](github-check-config.md) 문서를 참조하십시오.
+>비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어할 수 있습니다. 자세한 내용은 [개인 저장소에 대한 GitHub 구성 확인](github-check-config.md)을 참조하십시오.
 
 ## 비공개 저장소를 파이프라인과 연결 {#pipelines}
 
-유효성이 확인된 비공개 저장소는 [전체 스택 파이프라인](/help/overview/ci-cd-pipelines.md)과 연결될 수 있습니다.
+유효성이 확인된 개인 저장소는 [전체 스택 파이프라인](/help/overview/ci-cd-pipelines.md)과 연결할 수 있습니다.
 
 ## 제한 사항 {#limitations}
 

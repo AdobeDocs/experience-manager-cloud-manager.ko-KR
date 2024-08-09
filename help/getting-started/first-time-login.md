@@ -2,10 +2,10 @@
 title: 최초 로그인
 description: 일반 구성을 설정하고 Cloud Manager를 처음 사용할 준비가 되었으면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 1417d3bfa5a844641e0942d1fe1bd7bf84e41997
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '293'
+ht-degree: 75%
 
 ---
 
@@ -24,15 +24,15 @@ ht-degree: 100%
 
    ![Cloud Manager 콘솔](/help/assets/cloud-manager-console.png)
 
-1. 프로그램 카드를 탭하거나 클릭하여 Cloud Manager의 **개요** 페이지로 이동합니다.
+1. Cloud Manager의 **개요** 페이지로 이동하려면 프로그램 카드를 클릭하십시오.
 
 1. Cloud Manager에 **Overview(개요)** 페이지가 열립니다.
 
    ![Cloud Manager 개요 페이지](/help/assets/program-overview-page.png)
 
-1. 프로그램이 아직 설정되지 않은 경우 [콜 투 액션](/help/getting-started/navigation.md#cta)의 **프로그램 설정**&#x200B;을 탭하거나 클릭하여 프로그램 설명을 설정하고 KPI(주요 성과 지표)를 정의합니다. 프로그램이 이미 설정되어 있는 경우 CTA에서 추가 다음 단계를 제공할 수 있습니다.
+1. 프로그램이 아직 설정되지 않은 경우 [콜 투 액션](/help/getting-started/navigation.md#cta)에서 **프로그램 설정**&#x200B;을 클릭하여 프로그램 설명을 설정하고 주요 성과 지표(KPI)를 정의하세요. 프로그램이 이미 설정되어 있는 경우 CTA에서 추가 다음 단계를 제공할 수 있습니다.
 
-프로그램 설정의 다음 단계를 보려면 [프로그램 설정](/help/getting-started/program-setup.md) 문서를 계속 진행하십시오.
+프로그램 설정의 다음 단계를 보려면 [프로그램 설정](/help/getting-started/program-setup.md) 문서를 계속 진행할 수 있습니다.
 
 ## Cloud Manager 활동 {#activity}
 

@@ -2,10 +2,10 @@
 title: 프로젝트 설정
 description: Cloud Manager를 사용하여 프로젝트를 관리하고 배포할 수 있도록 프로젝트를 설정하는 방법에 대해 알아보십시오.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 100%
+source-wordcount: '1426'
+ht-degree: 98%
 
 ---
 
@@ -110,7 +110,7 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화하려면 `CM_
 
 ## 암호로 보호된 Maven 저장소 지원 {#password-protected-maven-repositories}
 
-암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 Cloud Manager의 품질 게이트에 구현된 모든 품질 규칙을 통해 실행되지 않기 때문에 매우 신중하게 사용해야 합니다. 이진과 함께 전체 프로젝트 소스 코드뿐만 아니라 Java 소스도 배포하는 것이 좋습니다.
+암호로 보호된 Maven 저장소의 아티팩트는 이 메커니즘을 통해 배포된 코드가 Cloud Manager의 품질 게이트에 구현된 모든 품질 규칙을 통해 실행되지 않기 때문에 매우 신중하게 사용해야 합니다. 이진과 함께 전체 프로젝트 소스 코드 외에 Java 소스도 배포하는 것이 좋습니다.
 
 >[!TIP]
 >
@@ -343,4 +343,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 모범 사례를 기반으로 코드 개발 {#develop-your-code-based-on-best-practices}
 
-Adobe 엔지니어링 및 컨설팅 팀은 [AEM 개발자를 위한 포괄적인 모범 사례 세트](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)를 개발했습니다.
+Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 [포괄적인 모범 사례 세트](https://experienceleague.adobe.com/docs/experience-manager-65/developing/bestpractices/best-practices.html)를 개발했습니다.

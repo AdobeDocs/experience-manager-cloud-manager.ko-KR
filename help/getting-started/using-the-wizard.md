@@ -2,10 +2,10 @@
 title: 새 프로젝트 마법사 사용
 description: 마법사를 사용하여 AEM 애플리케이션 프로젝트를 만드는 방법에 대해 배우려면 이 페이지를 따르십시오.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: cb791a4f148ba394687b5e824b75fe1386d83c18
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '325'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. 아직 만들지 않은 경우 [프로그램을 만듭니다.](program-setup.md) 프로그램이 생성되면 Cloud Manager는 저장소가 아직 설정되지 않았음을 인식하고 **개요** 화면에 특별한 콜 투 액션 카드가 표시됩니다.
+1. 아직 만들지 않은 경우 [프로그램을 만듭니다](program-setup.md). 프로그램이 만들어지면 Cloud Manager은 저장소가 아직 설정되지 않았음을 인식하고 **개요** 화면에 특별한 콜 투 액션 카드가 표시됩니다.
 
    ![프로젝트 CTA 제작](/help/assets/image2018-10-3_14-29-44.png)
 

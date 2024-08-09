@@ -2,10 +2,10 @@
 title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: d4d9a9f38c5a969f276140dca98731c670547a3d
-workflow-type: ht
-source-wordcount: '1439'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '1410'
+ht-degree: 80%
 
 ---
 
@@ -31,15 +31,15 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 1. 프로그램의 현재 보기를 토글할 수 있는 탭입니다.
    * **홈** 보기(기본값) - 모든 프로그램의 개요가 포함된 **내 프로그램** 보기 선택
    * **라이선스** - 라이선스 대시보드에 액세스 라이선스 대시보드는 AMS 프로그램이 아닌 AEM as a Cloud Service에만 적용됩니다.
-      * 귀하의 프로그램에 제공되는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
-   * 탭은 기본적으로 닫혀 있으며 [Cloud Manager 헤더](#cloud-manager-header)의 햄버거 메뉴를 사용하여 표시할 수 있습니다.
+      * 프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
+   * 탭은 기본적으로 닫히며 [Cloud Manager 헤더](#cloud-manager-header)의 햄버거 메뉴를 사용하여 표시할 수 있습니다.
 1. [콜 투 액션 및 통계](#cta-statistics) - 최근 활동 개요
 1. [**내 프로그램** 섹션](#my-programs-section) - 사용자의 모든 프로그램에 대한 개요 포함
 1. [빠른 링크](#quick-links) - 관련 리소스에 쉽게 액세스
 
 >[!TIP]
 >
->프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/getting-started/program-setup.md) 문서를 참조하십시오.
+>프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/getting-started/program-setup.md)을 참조하세요.
 
 ### 도구 모음 {#my-programs-toolbars}
 
@@ -53,13 +53,13 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 1. 햄버거 메뉴를 통해 개별 프로그램의 특정 부분으로 이동하거나 컨텍스트에 따라 라이선스 대시보드와 **[내 프로그램](#my-programs-console)** 콘솔 간을 전환할 수 있는 탭에 액세스할 수 있습니다.
    * 라이선스 대시보드는 AMS 프로그램이 아닌 AEM as a Cloud Service에만 적용됩니다.
-   * 귀하의 프로그램에 제공되는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
+   * 프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
 1. Cloud Manager 버튼을 사용하면 Cloud Manager의 어느 위치에 있든 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
-1. Cloud Manager에 대한 피드백을 Adobe에 제공하려면 피드백 버튼을 탭하거나 클릭합니다.
-1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID가 여러 조직과 연결된 경우 탭하거나 클릭하여 다른 조직으로 전환합니다.
-1. 솔루션 전환기를 탭하거나 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
+1. Cloud Manager Adobe에 대한 피드백을 제공하려면 피드백 버튼을 클릭합니다.
+1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID이 여러 조직과 연결되어 있는 경우 을 클릭하여 다른 조직으로 전환합니다.
+1. 솔루션 전환기를 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
 1. 도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
-1. 알림 아이콘에는 현재 할당된 불완전 [알림](/help/using/notifications.md) 수가 배지로 지정됩니다.
+1. 알림 아이콘에 현재 할당된 미완료 [알림](/help/using/notifications.md) 수가 배지로 지정되어 있습니다.
 1. 사용자를 나타내는 아이콘을 선택하여 사용자 설정에 액세스합니다. 사용자 사진을 구성하지 않은 경우, 아이콘이 임의로 할당됩니다.
 
 #### 프로그램 도구 모음 {#program-toolbar}
@@ -85,7 +85,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ### 내 프로그램 섹션 {#my-programs-section}
 
-내 프로그램 콘솔의 주요 내용은 **내 프로그램** 섹션으로, 여기에 프로그램이 개별 카드로 나열됩니다. 프로그램에 대한 자세한 내용을 보려면 카드를 탭하거나 클릭하여 프로그램의 **프로그램 개요** 페이지에 액세스합니다.
+내 프로그램 콘솔의 주요 내용은 **내 프로그램** 섹션으로, 여기에 프로그램이 개별 카드로 나열됩니다. 프로그램에 대한 자세한 내용을 보려면 카드를 클릭하여 프로그램의 **프로그램 개요** 페이지에 액세스합니다.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 프로그램 개요를 통해 Cloud Manager 프로그램의 모든 세부 정보에 액세스할 수 있습니다. 내 프로그램 콘솔과 마찬가지로 여러 부분으로 구성되어 있습니다.
 
-1. [도구 모음](#program-overview-toolbar) - 내 프로그램 콘솔로 빠르게 돌아가고 프로그램 탐색
+1. [도구 모음](#program-overview-toolbar): 내 프로그램 콘솔로 빠르게 돌아가서 프로그램을 탐색합니다.
 1. [탭](#program-tabs) - 프로그램의 다양한 측면 간 전환
 1. [콜 투 액션](#cta) - 프로그램의 마지막 작업에 기반
 1. [환경 개요](#environments) - 프로그램의 환경 개요
@@ -152,7 +152,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ### 도구 모음 {#program-overview-toolbar}
 
-프로그램 개요의 도구 모음은 [내 프로그램 콘솔의 도구 모음과 매우 비슷합니다.](#my-programs-toolbars) 여기서는 차이점만 설명합니다.
+프로그램 개요의 도구 모음은 [내 프로그램 콘솔](#my-programs-toolbars)의 도구 모음과 매우 유사합니다. 차이점만 여기에 나와 있습니다.
 
 #### Cloud Manager 헤더 {#cloud-manager-header-2}
 
@@ -160,7 +160,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ![Cloud Manager 햄버거 메뉴](assets/cloud-manager-hamburger.png)
 
-탭을 숨기려면 햄버거 메뉴 아이콘을 탭하거나 클릭합니다.
+햄버거 메뉴 아이콘을 클릭하여 탭을 숨깁니다.
 
 #### 프로그램 도구 모음 {#program-toolbar-2}
 
@@ -190,7 +190,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ### 콜 투 액션 {#cta}
 
-콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 제공되는 다음 단계와 실행 날짜 알림([프로그램을 만들 때 설정](/help/getting-started/program-setup.md))을 볼 수 있습니다.
+콜 투 액션 섹션에서는 프로그램 상태에 따라 유용한 정보를 제공합니다. 새 프로그램의 경우 제공되는 다음 단계 및 Go-Live 날짜 알림 메시지를 볼 수 있습니다. [프로그램 생성 중 설정](/help/getting-started/program-setup.md).
 
 라이브 상태인 프로그램의 경우, 세부 정보 및 새 배포 시작 링크가 포함된 마지막 배포 상태입니다.
 
@@ -198,19 +198,19 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ### 환경 카드 {#environments}
 
-**환경** 카드는 환경에 대한 개요와 빠른 작업을 위한 링크를 제공합니다.
+**환경** 카드를 통해 환경 개요 및 빠른 작업에 대한 링크를 확인할 수 있습니다.
 
 **환경** 카드에는 세 가지 환경만 나열됩니다. 프로그램의 모든 환경을 보려면 **모두 표시**&#x200B;를 클릭합니다.
 
-환경을 관리하는 방법에 대한 자세한 내용은 [환경 관리](/help/using/managing-environments.md) 문서를 참조하십시오.
+환경 관리 방법에 대한 자세한 내용은 [환경 관리](/help/using/managing-environments.md)를 참조하십시오.
 
 ### 파이프라인 카드 {#pipelines}
 
-**파이프라인** 카드는 파이프라인에 대한 개요와 빠른 작업을 위한 링크를 제공합니다.
+**파이프라인** 카드는 빠른 작업에 대한 파이프라인 및 링크에 대한 개요를 제공합니다.
 
 **파이프라인** 카드에는 세 가지 파이프라인만 나열됩니다. 프로그램의 모든 파이프라인을 보려면 **모두 표시**&#x200B;를 클릭합니다.
 
-파이프라인을 관리하는 방법에 대한 자세한 내용은 [파이프라인 관리](/help/using/managing-pipelines.md) 문서를 참조하십시오.
+파이프라인 관리 방법에 대한 자세한 내용은 [파이프라인 관리](/help/using/managing-pipelines.md)를 참조하십시오.
 
 ### 유용한 리소스 {#useful-resources}
 

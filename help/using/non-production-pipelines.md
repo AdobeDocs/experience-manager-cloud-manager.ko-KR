@@ -2,16 +2,16 @@
 title: 비프로덕션 파이프라인 구성
 description: Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: 85c1e22609dc5646d3de0ccc71e9423d4243e13a
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 100%
+source-wordcount: '710'
+ht-degree: 94%
 
 ---
 
 # 비프로덕션 파이프라인 구성 {#configuring-non-production-pipelines}
 
-Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오. 먼저 Cloud Manager에서 파이프라인이 작동하는 방식에 대한 보다 개념적인 개요를 원하는 경우 [CI/CD 파이프라인](/help/overview/ci-cd-pipelines.md) 문서를 참조하십시오.
+Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오. 먼저 Cloud Manager에서 파이프라인이 작동하는 방식에 대한 보다 개념적인 개요를 원하는 경우 [CI/CD 파이프라인](/help/overview/ci-cd-pipelines.md)을 참조하십시오.
 
 ## 개요 {#overview}
 
@@ -80,7 +80,7 @@ Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라�
 
 ## 다음 단계 {#the-next-steps}
 
-파이프라인을 구성했으면 코드를 배포해야 합니다. 자세한 내용은 [코드 배포](/help/using/code-deployment.md) 문서를 참조하십시오.
+파이프라인을 구성했으면 코드를 배포해야 합니다. 자세한 내용은 [코드 배포](/help/using/code-deployment.md)를 참조하세요.
 
 ## 비디오 튜토리얼 {#video-tutorial}
 

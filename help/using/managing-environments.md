@@ -2,10 +2,10 @@
 title: 환경 관리
 description: Cloud Manager를 사용하여 환경을 관리하는 방법에 대해 알아봅니다.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 116a930eea08b2bb9d288ec153519699754e0374
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 94%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경이 �
 
 ## 환경 관리 {#managing-environments-with-cloud-manager}
 
-**환경** 타일에서 환경 행을 탭하거나 클릭하여 **환경** 화면을 표시합니다.
+**환경** 타일에서 환경의 행을 클릭하여 **환경** 화면을 표시합니다.
 
 **환경** 화면은 프로그램에서 프로덕션 및 스테이징 환경(해당되는 경우)에 대해 각각 카드를 표시합니다. 환경 이름이 각 카드 위에 표시됩니다. 카드에는 CPU의 티셔츠 크기, 스토리지, 영역 및 상태와 함께 환경의 노드 테이블이 포함됩니다.
 

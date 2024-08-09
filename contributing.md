@@ -1,15 +1,15 @@
 ---
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 93%
 
 ---
 # Adobe Experience Manager Screens 설명서에 대한 기여
 
 Adobe Experience Manager Screens 문서에 기여해 주셔서 감사합니다! Adobe는 전체 Reader 커뮤니티의 기여뿐만 아니라 동료 Adobe 직원의 콘텐츠 기여 또한 환영합니다.
 
-이 파일은 설명서에 기여할 수 있는 방법을 설명하고 기여할 때 따라야 할 지침을 안내합니다.
+이 파일은 기여할 수 있는 방법을 설명하고 기여할 때 따라야 할 지침을 안내합니다.
 
 ## Adobe 오픈 소스 행동 수칙
 
@@ -30,7 +30,7 @@ GitHub에서 직접 설명서를 편집할 때의 편의성에 따라서 편한 
 
 >[!NOTE]
 >
->제출하는 기여는 [Adobe 사용 약관](https://www.adobe.com/kr/legal/terms.html)이 적용됩니다.
+>제출하는 기여는 [Adobe 사용 약관](https://www.adobe.com/kr/legal/terms.html)의 적용을 받습니다.
 
 ### 문제 만들기 {#create-an-issue}
 

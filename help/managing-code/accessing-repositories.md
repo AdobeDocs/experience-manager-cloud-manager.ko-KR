@@ -2,10 +2,10 @@
 title: 저장소 액세스 정보
 description: Cloud Manager의 셀프서비스 git 계정 관리를 사용하여 Adobe 관리 git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: e93285f7c7495ec9d2f11d289adaf6aaba7e58ea
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
 
    ![환경 카드의 저장소 정보 액세스 버튼](assets/pipelines-card.png)
 
-1. **저장소 정보 액세스** 버튼을 탭하거나 클릭하여 **저장소 정보** 대화 상자를 열고 다음을 확인합니다.
+1. **저장소 정보 액세스** 단추를 클릭하여 **저장소 정보** 대화 상자를 열고 다음을 봅니다.
 
    * git 사용자 이름
    * git 암호
@@ -32,9 +32,9 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
 
    ![저장소 정보 창](assets/access-repo-info.png)
 
-1. 암호에 액세스하려면 새로운 암호를 생성해야 합니다. 암호를 생성하려면 **암호 생성** 버튼을 탭하거나 클릭합니다.
+1. 암호에 액세스하려면 새로운 암호를 생성해야 합니다. 이렇게 하려면 **암호 생성** 단추를 클릭하십시오.
 
-1. **계속 진행하시겠습니까?** 대화 상자에서 **암호 생성**&#x200B;을 탭하거나 클릭하여 암호 생성을 확인합니다.
+1. **암호 생성**&#x200B;을 클릭하여 **계속하시겠습니까...** 대화 상자에서 암호 생성을 확인하십시오.
 
    ![암호 생성 확인](assets/confirm-password-generation.png)
 
@@ -55,10 +55,10 @@ Cloud Manager를 사용하면 파이프라인 카드에 있는 **저장소 정�
 
 ## 저장소 창에서 저장소 정보 액세스 {#repositories-window}
 
-**저장소 정보 액세스** 버튼은 [**저장소** 창의 도구 모음에서도 사용할 수 있습니다.](managing-repositories.md) Adobe 관리 저장소 액세스에 대한 정보와 동일한 내용이 표시됩니다.
+**저장소 정보 액세스** 단추는 [**저장소** 창](managing-repositories.md)의 도구 모음에서도 사용할 수 있습니다. 이 단추에는 Adobe 관리 저장소에 액세스하는 것과 동일한 정보가 표시됩니다.
 
 ## 액세스 암호 취소 {#revoke-password}
 
-언제든지 액세스 암호를 취소할 수 있습니다. 암호를 취소하려면 [이 요청에 대한 지원 티켓을 만드십시오.](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support)
+언제든지 액세스 암호를 취소할 수 있습니다. 이렇게 하려면 [이 요청에 대한 지원 티켓을 만듭니다](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 티켓이 우선적으로 처리되며 1일 이내에 취소해야 합니다.

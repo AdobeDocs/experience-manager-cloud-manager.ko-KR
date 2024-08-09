@@ -2,10 +2,10 @@
 title: GitHub 검사 주석
 description: GitHub가 비공개 저장소에 대한 주석 PR을 검사하여 유용한 피드백을 제공하는 방법을 알아봅니다.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 210d40a5e12b40fd84efc461c6a1c48559120837
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 100%
+source-wordcount: '251'
+ht-degree: 86%
 
 ---
 
@@ -24,7 +24,7 @@ Cloud Manager 프로그램에 [비공개 저장소](private-repositories.md)를 
 
 ![코드 문제 주석의 예](assets/github-check-annotations-example.png)
 
-문제가 있는 정확한 코드 행이 제공되며 해당 코드를 클릭하면 관련 코드가 표시됩니다. 이러한 주석은 가져오기 요청에서 변경된 것뿐만 아니라 모든 코드 문제에 대해 제공됩니다.
+문제가 있는 정확한 코드 줄이 제공되고 이를 클릭하여 관련 코드를 표시할 수 있습니다. 이러한 주석은 가져오기 요청에서 변경된 것뿐만 아니라 모든 코드 문제에 대해 제공됩니다.
 
 ![코드 문제 주석의 예](assets/github-check-annotations-example-code.png)
 
@@ -40,4 +40,4 @@ Cloud Manager 프로그램에 [비공개 저장소](private-repositories.md)를 
 
 ![주석의 예](assets/github-check-annotations-code-quality-2.png)
 
-문제를 CSV 형식으로 시각화할 수도 있습니다. 이는 [Cloud Manager에서 파이프라인 실행에 대한 세부 정보 보기](/help/using/managing-pipelines.md)로 검색할 수 있습니다.
+문제를 CSV 형식으로 시각화할 수도 있습니다. [Cloud Manager에서 파이프라인 실행에 대한 세부 정보를 보고](/help/using/managing-pipelines.md)하여 검색할 수 있습니다.

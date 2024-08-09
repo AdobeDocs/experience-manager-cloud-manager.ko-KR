@@ -3,10 +3,10 @@ title: 평가 단계
 seo-title: Evaluation Phase
 description: 제품 업데이트 마법사의 평가 단계에서 패턴 감지기의 업그레이드 복잡성을 평가하는 방법에 대해 알아봅니다.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: ce2145da3b9e605e8a41bac28df520f14e255557
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 100%
+source-wordcount: '285'
+ht-degree: 85%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->패턴 감지기에 대한 자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=ko) 문서를 참조하십시오.
+>패턴 감지기에 대한 자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=ko)를 참조하십시오.
 
 ## 평가 실행 {#running}
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 평가 보고서를 생성하려면 다음 단계를 수행하십시오.
 
-1. [제품 업데이트 마법사](/help/product-update-wizard/overview.md)의 설명에 따라 마법사를 시작합니다.
+1. [제품 업데이트 마법사](/help/product-update-wizard/overview.md) 문서에 설명된 대로 마법사를 시작합니다.
 
 1. **[!UICONTROL 평가 실행]**&#x200B;을 클릭합니다.
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. 마법사가 작업 상태를 알려 줍니다. 평가 보고서가 생성되면 **진행 중** 또는 **완료됨**&#x200B;이 표시됩니다.
 
-1. 보고서가 생성되면 **[!UICONTROL 보고서 다운로드]**&#x200B;를 클릭하여 사본을 저장할 수 있습니다.
+1. 보고서가 생성되면 **[!UICONTROL 보고서 다운로드]**&#x200B;를 클릭하여 복사본을 저장할 수 있습니다.
 
    ![보고서 생성됨](/help/assets/Evaluation-1.png)
 

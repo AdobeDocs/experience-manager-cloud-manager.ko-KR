@@ -2,17 +2,17 @@
 title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '3483'
-ht-degree: 100%
+source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+workflow-type: tm+mt
+source-wordcount: '3482'
+ht-degree: 93%
 
 ---
 
 
 # 사용자 정의 코드 품질 규칙 {#custom-code-quality-rules}
 
-AEM 엔지니어링의 모범 사례를 기반으로 [코드 품질 테스트](/help/using/code-quality-testing.md)의 일환으로 Cloud Manager가 실행하는 사용자 정의 코드 품질 규칙에 대해 자세히 알아보십시오.
+AEM 엔지니어링의 모범 사례를 기반으로 하여 [코드 품질 테스트](/help/using/code-quality-testing.md)의 일부로 Cloud Manager에서 실행하는 사용자 지정 코드 품질 규칙에 대해 자세히 알아보십시오.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ AEM 엔지니어링의 모범 사례를 기반으로 [코드 품질 테스트](/
 
 >[!NOTE]
 >
->전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다.](/help/assets/CodeQuality-rules-latest-AMS.xlsx) 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
+>전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다](/help/assets/CodeQuality-rules-latest-AMS.xlsx). 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
@@ -500,7 +500,7 @@ public void doThis(Resource resource) {
 
 보장된 실행이 필요한 작업에는 Sling 스케줄러를 사용하지 마십시오. Sling의 예정된 작업은 실행을 보장하며 클러스터된 환경과 클러스터되지 않은 환경 모두에 더 적합합니다.
 
-클러스터 환경에서 Sling 작업이 처리되는 방법에 대한 자세한 내용은 [Apache Sling 이벤트 및 작업 처리 설명서](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)를 참조하십시오.
+클러스터 환경에서 슬링 작업이 처리되는 방법에 대한 자세한 내용은 [Apache 슬링 이벤트 및 작업 처리 설명서](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html)를 참조하십시오.
 
 ### 더 이상 사용되지 않는 AEM API를 사용하면 안 됨 {#sonarqube-aem-deprecated}
 
@@ -666,7 +666,7 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 터치 UI�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM 클라이언트 라이브러리는 이미지 및 글꼴과 같은 정적 리소스를 포함할 수 있습니다. [클라이언트측 라이브러리 사용 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)에 설명된 대로 프록시 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`라는 하위 폴더에 포함되어 있어야 합니다.
+AEM 클라이언트 라이브러리는 이미지 및 글꼴과 같은 정적 리소스를 포함할 수 있습니다. [클라이언트측 라이브러리 사용 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)에 설명된 대로 프록시 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`이라는 하위 폴더에 포함되어 있어야 합니다.
 
 #### 비준수 코드 {#non-compliant-proxy-enabled}
 
@@ -708,9 +708,9 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-정적 템플릿의 사용은 역사적으로 AEM 프로젝트에서 흔했지만 편집 가능한 템플릿은 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 적극 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable) 문서에서 확인할 수 있습니다.
+정적 템플릿의 사용은 역사적으로 AEM 프로젝트에서 흔했지만 편집 가능한 템플릿은 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 적극 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능한 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable)에서 확인할 수 있습니다.
 
-정적 템플릿에서 편집 가능 템플릿으로의 마이그레이션은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대부분 자동화할 수 있습니다.
+정적 템플릿에서 편집 가능한 템플릿으로의 마이그레이션은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대부분 자동화할 수 있습니다.
 
 ### 기존 기초 구성 요소를 사용하지 않음 {#oakpal-usage-legacy}
 
@@ -719,7 +719,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-레거시 Foundation 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 [코어 구성 요소를 위한 여러 AEM 릴리스에서 더 이상 사용되지 않습니다.](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction) 기존 Foundation 구성 요소를 오버레이 또는 상속 여부에 관계없이 사용자 정의 구성 요소의 기준으로 사용하는 것은 권장되지 않으며 해당 코어 구성 요소로 변환해야 합니다.
+레거시 Foundation 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)를 위한 여러 AEM 릴리스에서 더 이상 사용되지 않습니다. 기존 Foundation 구성 요소를 오버레이 또는 상속 여부에 관계없이 사용자 정의 구성 요소의 기준으로 사용하는 것은 권장되지 않으며 해당 코어 구성 요소로 변환해야 합니다.
 
 이러한 변환은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 촉진될 수 있습니다.
 
@@ -730,7 +730,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 `/oak:index`의 직접 하위 노드여야 합니다. AEM Cloud Service와 호환되려면 다른 위치의 인덱스를 이동해야 합니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
+AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 `/oak:index`의 직접 하위 노드여야 합니다. AEM Cloud Service와 호환되려면 다른 위치의 인덱스를 이동해야 합니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하세요.
 
 ### 사용자 정의 검색 인덱스 정의 노드의 compatVersion을 2로 설정해야 함 {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `2`로 설정된 `compatVersion` 속성이 있어야 합니다. 다른 값은 AEM Cloud Service에서 지원되지 않습니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
+AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `2`로 설정된 `compatVersion` 속성이 있어야 합니다. 다른 값은 AEM Cloud Service에서 지원되지 않습니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하세요.
 
 ### 사용자 정의 검색 인덱스 정의 노드의 하위 노드 유형은 `nt:unstructured`여야 함 {#oakpal-descendent-nodes}
 
@@ -757,7 +757,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-올바르게 정의된 사용자 정의 검색 인덱스 정의 노드에는 `indexRules`라는 하위 노드가 있어야 하며, 이 노드에는 하나 이상의 하위 노드가 있어야 합니다. 자세한 내용은 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/query/lucene.html)에서 확인할 수 있습니다.
+올바르게 정의된 사용자 정의 검색 인덱스 정의 노드에는 `indexRules`라는 하위 노드가 있어야 하며, 이 노드에는 하나 이상의 하위 노드가 있어야 합니다. 자세한 내용은 [Oak 설명서](https://jackrabbit.apache.org/oak/docs/query/lucene.html)를 참조하세요.
 
 ### 사용자 정의 검색 인덱스 정의 노드는 명명 규칙을 준수해야 함 {#oakpal-custom-search-definitions}
 
