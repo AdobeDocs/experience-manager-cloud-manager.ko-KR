@@ -1,19 +1,18 @@
 ---
-title: 2024.7.0 릴리스 정보
-description: Cloud Manager 2024.7.0의 릴리스 정보에 대해 알아봅니다.
+title: Cloud Manager 2024.8.0 릴리스 노트
+description: Cloud Manager 2024.8.0의 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
-exl-id: 2d38abb1-cfc7-44a9-b303-b555e2827eea
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: 34f15aff7478a6a0884f88f534a7dff996a8570e
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 4%
+source-wordcount: '265'
+ht-degree: 3%
 
 ---
 
 
-# Cloud Manager 2024.7.0 릴리스 노트 {#release-notes}
+# Cloud Manager 2024.8.0 릴리스 노트 {#release-notes}
 
-이 페이지는 [!UICONTROL Cloud Manager] 2024.7.0에 대한 릴리스 정보를 설명합니다.
+이 페이지는 [!UICONTROL Cloud Manager] 2024.8.0에 대한 릴리스 정보를 설명합니다.
 
 >[!NOTE]
 >
@@ -21,21 +20,29 @@ ht-degree: 4%
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.7.0의 릴리스 날짜는 2024년 7월 18일입니다. 다음 릴리스는 2024년 8월 13일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 2024.8.0의 릴리스 날짜는 2024년 8월 13일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 커밋에서 파이프라인을 시작하기 위한 [프로덕션 파이프라인](/help/using/production-pipelines.md#adding-production-pipeline) 및 [비프로덕션 파이프라인](/help/using/non-production-pipelines.md#adding-non-production-pipeline) 트리거 **Git 변경 시**&#x200B;를 이제 [개인 저장소](/help/managing-code/private-repositories.md)에 사용할 수 있습니다.
-* 사전 프로덕션 파이프라인은 수동으로만 트리거할 수 있으며 **Git 변경 시**(으)로 구성할 수 없습니다.
-* 프로덕션 전용 파이프라인의 경우 프로모션 가능한 실행 목록에는 프로덕션 환경에 배포된 아티팩트 버전보다 큰 아티팩트 버전을 사용하는 실행이 포함됩니다.
-* [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)이(가) [버전 49](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)(으)로 업데이트되었습니다.
+* 단계 전용 및 프로덕션 전용 파이프라인([얼리어답터 프로그램](#staging-production-only-pipelines)의 일부로 사용 가능)의 경우 이제 [긴급 모드](/help/using/stage-prod-only.md#emergency-mode)에서 실행할 수 있습니다. 단계 테스트를 건너뜁니다.
 
 ## 조기 채택 프로그램 {#early-adoption}
 
-Cloud Manager의 초기 채택 프로그램의 일부가 되어 예정된 기능을 테스트할 수 있습니다
+Adobe의 초기 채택 프로그램의 일부가 되어 예정된 기능을 테스트할 수 있습니다.
 
 ### 스테이징 전용 및 프로덕션 전용 파이프라인 {#staging-production-only-pipelines}
 
-[스테이징 전용 및 프로덕션 전용 파이프라인](/help/using/stage-prod-only.md)에 대한 지원이 도입되어 전체 스택 프로덕션 배포 파이프라인을 더 작고 전문화된 배포로 분할할 수 있습니다.
+Adobe이 [스테이징 전용 및 프로덕션 전용 파이프라인](/help/using/stage-prod-only.md)에 대한 지원 도입을 발표하게 되었습니다. 이 새로운 기능을 사용하면 전체 스택 프로덕션 배포 파이프라인을 더 작고 더 특수화된 배포로 나눌 수 있습니다.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe ID과 연결된 전자 메일 주소에서 `Grp-cloudmanager_splitpipelines@adobe.com`(으)로 전자 메일을 보내세요.
+이 기능을 테스트하고 피드백을 제공하려면 Adobe ID과 연결된 전자 메일 주소를 사용하여 `Grp-cloudmanager_splitpipelines@adobe.com`에 전자 메일을 보내십시오.
+
+## 버그 수정
+
+* 파이프라인이 삭제된 후 파이프라인 단계가 실행되는 드문 문제가 수정되었습니다.
+* 이제 파이프라인을 다시 실행하면 첫 번째 시도에서 작동하므로 재실행을 여러 번 시작해야 하는 드문 문제가 해결되었습니다.
+* 전체 스택 파이프라인에 대해 예약된 배포 단계가 이제 선택한 예약된 날짜를 준수하며 **지금**(으)로 되돌려지지 않습니다.
+* 실패한 콘텐츠 복사 작업의 상태가 이제 제대로 반영되었으며 드물게 `In Progress` 상태를 더 이상 잘못 표시하지 않습니다.
+
+## 알려진 문제 {#known-issues}
+
+{{content-copy-known-issues}}
