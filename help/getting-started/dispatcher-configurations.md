@@ -2,10 +2,10 @@
 title: Dispatcher 구성
 description: Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: 6572c16aea2c5d2d1032ca5b0f5d75ade65c3a19
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아보기
 
-## Cloud Manager를 사용하여 Dispatcher 구성 배포 {#deploying-dispatcher-configurations}
+## Cloud Manager을 사용하여 Dispatcher 구성 배포 {#deploying-dispatcher-configurations}
 
 Cloud Manager는 웹 서버 및 Dispatcher 구성 파일이 일반 AEM 콘텐츠 패키지와 함께 git 저장소에 저장된다고 가정하여 배포할 수 있습니다.
 
@@ -24,7 +24,7 @@ Cloud Manager가 내장된 [프로젝트 생성 마법사](/help/getting-started
 
 Dispatcher 인스턴스에 배포하면 Dispatcher 인스턴스에 있는 이러한 디렉터리의 내용은 git 저장소에 있는 디렉터리에 있는 내용으로 덮어씁니다. 웹 서버 및 Dispatcher 구성 파일은 이 기능을 올바르게 사용하기 위해 종종 환경별 정보가 필요하므로 먼저 CSE(고객 성공 엔지니어)와 협력하여 `/etc/sysconfig/httpd`에서 이러한 환경 변수를 설정해야 합니다.
 
-## 기존 관리 서비스 고객에 대한 Dispatcher 구성 {#steps-for-configuring-dispatcher}
+## 기존 관리 서비스 고객을 위한 Dispatcher 구성 {#steps-for-configuring-dispatcher}
 
 다음 단계에 따라 초기 Dispatcher 구성을 완료합니다.
 
@@ -48,7 +48,7 @@ Dispatcher 인스턴스에 배포하면 Dispatcher 인스턴스에 있는 이러
 
    여기서 임의의 이름을 사용할 수 있지만 이 단계에서 작성된 디렉터리 이름은 6단계에서 사용한 이름과 같아야 합니다.
 
-1. 이 하위 디렉터리에는 Maven 어셈블리 플러그인을 사용하여 Dispatcher.zip 파일을 작성하는 Maven 모듈이 포함됩니다. 이를 시작하려면 `dispatcher` 디렉터리에서 이 내용이 포함된 `pom.xml` 파일을 만들고 필요에 따라 `parent` 참조 `artifactId` 및 `name`를 변경합니다.
+1. 이 하위 디렉터리에는 Maven 어셈블리 플러그인을 사용하여 Dispatcher .zip 파일을 작성하는 Maven 모듈이 포함됩니다. 이를 시작하려면 `dispatcher` 디렉터리에서 이 내용이 포함된 `pom.xml` 파일을 만들고 필요에 따라 `parent` 참조 `artifactId` 및 `name`를 변경합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Dispatcher 인스턴스에 배포하면 Dispatcher 인스턴스에 있는 이러
 
    * 1단계에서와 같이 artifactId와 name은 원하는 경우 다른 값이 될 수 있습니다. `dispatcher`는 여기서 단지 예시일 뿐입니다.
 
-1. Maven 어셈블리 플러그인은 .zip 파일이 생성되는 방법을 정의하기 위해 `descriptor`가 필요합니다. 이 설명자를 만들려면 `dispatcher` 하위 디렉터리에 다음 내용이 포함된 `assembly.xml`이라는 이름의 파일을 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일의 26행에 있습니다.
+1. Maven 어셈블리 플러그인을 사용하려면 .zip 파일을 만드는 방법을 정의하기 위해 `descriptor`이(가) 필요합니다. 이 설명자를 만들려면 `dispatcher` 하위 디렉터리에 다음 내용이 포함된 `assembly.xml`이라는 이름의 파일을 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일의 26행에 있습니다.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"

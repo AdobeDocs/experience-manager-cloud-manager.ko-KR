@@ -2,10 +2,10 @@
 title: 프로그램 설정
 description: 온보딩 후 비즈니스 소유자는 프로그램의 일부 초기 설정을 수행해야 합니다.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 91%
+source-wordcount: '582'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 91%
 
 1. Cloud Manager 홈 화면에서 프로그램으로 이동합니다.
 
-1. **개요** 페이지에서 **프로그램 편집**&#x200B;을 클릭하여 프로그램을 업데이트하거나 수정합니다.
+1. **개요** 페이지에서 프로그램을 업데이트하거나 수정하려면 **프로그램 편집**&#x200B;을 클릭하세요.
 
    ![프로그램 편집 옵션](/help/assets/set-up-program/edit-program1.png)
 
@@ -66,7 +66,7 @@ ht-degree: 91%
 
    ![프로그램 편집 대화 상자](/help/assets/set-up-program/edit-program-general.png)
 
-1. **업데이트**&#x200B;를 클릭하여 변경 내용을 저장합니다.
+1. 변경 내용을 저장하려면 **업데이트**&#x200B;를 클릭하세요.
 
 변경 사항은 Cloud Manager에 즉시 저장되지만 다음 파이프라인이 실행될 때까지 사용자 환경에 반영되지 않습니다.
 

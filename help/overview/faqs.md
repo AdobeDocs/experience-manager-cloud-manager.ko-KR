@@ -2,7 +2,7 @@
 title: Cloud Manager FAQ
 description: 이 문서에서는 AMS 고객을 위한 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 알아봅니다.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 93%

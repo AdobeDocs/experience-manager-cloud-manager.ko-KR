@@ -2,10 +2,10 @@
 title: 파이프라인 관리
 description: 편집, 실행 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 67%
+source-wordcount: '847'
+ht-degree: 63%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 **세부 정보 보기**&#x200B;를 클릭하면 [파이프라인 실행에 대한 세부 정보](#view-details)로 이동합니다.
 
-## 파이프라인 실행 {#running-pipelines}
+## Ruu 파이프라인 {#running-pipelines}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 

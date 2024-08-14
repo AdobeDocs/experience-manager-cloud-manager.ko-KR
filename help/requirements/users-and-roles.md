@@ -2,10 +2,10 @@
 title: 사용자 및 역할 추가
 description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 84%
+source-wordcount: '768'
+ht-degree: 81%
 
 ---
 

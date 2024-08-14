@@ -2,10 +2,10 @@
 title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니다.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 93%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
@@ -20,13 +20,11 @@ Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니�
 
 지표가 중요 임계값을 초과하는 경우 중요 상태에 있는 것으로 간주됩니다. 지표가 경고 임계값을 초과하는(하지만 중요 임계값 이하) 경우 경고 상태에 있는 것으로 간주됩니다. 임계값은 Adobe Managed Services에서 설정하며 [!UICONTROL Cloud Manager]에서 시각화할 수 있습니다. 대부분의 경우 임계값은 고객 간에 일관되지만 Adobe Managed Services가 특정 고객 요구 사항에 맞게 임계값을 수정하는 경우가 있습니다. 임계값에 대한 질문이 있는 경우 고객 성공 엔지니어(CSE)에게 문의하십시오.
 
-## 시스템 모니터링 액세스 {#accessing-system-monitoring}
-
-다음 단계에 따라 시스템 모니터링에 액세스하십시오.
+## 액세스 시스템 모니터링 {#accessing-system-monitoring}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 모니터링하려는 프로그램의 줄임표 버튼을 클릭하고 **모니터링 표시** 옵션을 선택합니다.
+1. 모니터링할 프로그램의 줄임표 버튼을 클릭하고 **모니터링 표시** 옵션을 선택합니다.
 
    ![설정](/help/assets/first-timea1.png)
 
@@ -114,12 +112,12 @@ Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니�
 
 ## SLA 지표 {#sla-metrics}
 
-* **작성자 약정**: 이는 작성자 계층에 대해 Adobe Managed Services와의 약정에 정의된 SLA입니다.
+* **작성자 계약**: 작성자 계층에 대해 Adobe Managed Services과의 계약에 정의된 SLA.
 * **AMS 작성자 SLA**: Adobe 또는 공급업체에 의해 발생한 프로덕션 작성자 계층 팩토링 인시던트의 측정된 가동 시간입니다.
-* **작성자 SLA**: 유지 보수 기간과 같은 예약된 가동 중단을 무시하는 작성자 계층의 측정된 가동 시간입니다.
-* **최종 사용자 약정**: 게시자 계층에 대해 Adobe Managed Services와의 약정에 정의된 SLA입니다.
+* **작성자 SLA**: 유지 관리 기간과 같은 예약된 가동 중단을 무시하는 작성자 계층의 측정된 가동 시간입니다.
+* **최종 사용자 계약**: 게시 계층에 대해 Adobe Managed Services과의 계약에 정의된 SLA.
 * **AMS 최종 사용자 SLA**: Adobe 또는 공급업체에 의해 발생한 프로덕션 게시자 계층 팩토링 인시던트의 측정된 가동 시간입니다.
-* **최종 사용자 SLA**: 유지 보수 기간과 같은 예약된 가동 중단을 무시하는 게시자 계층의 측정된 가동 시간입니다.
+* **최종 사용자 SLA**: 유지 관리 기간과 같은 예약된 가동 중단을 무시하는 게시 계층의 측정된 가동 시간입니다.
 
 ## 비디오 튜토리얼 {#video-tutorial}
 

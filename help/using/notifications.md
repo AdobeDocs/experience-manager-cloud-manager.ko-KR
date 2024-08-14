@@ -2,10 +2,10 @@
 title: 알림
 description: Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십시오.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
+source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 94%
+source-wordcount: '564'
+ht-degree: 79%
 
 ---
 
@@ -36,17 +36,17 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ![알림 사이드바](/help/assets/notificaitons-announcements.png)
 
-자세한 내용을 보려면 알림 또는 공지를 클릭합니다. 파이프라인 배포와 같은 활동에 연결된 알림은 파이프라인 실행 창과 같은 해당 활동의 세부 정보로 이동합니다.
+세부 정보를 보려면 알림 또는 공지를 클릭하십시오. 파이프라인 배포와 같은 활동에 연결된 알림은 파이프라인 실행 창과 같은 해당 활동의 세부 정보로 이동합니다.
 
-받은 편지함의 모든 공지를 보려면 패널 하단의 **모두 보기** 옵션을 선택합니다.
+받은 편지함의 모든 공지를 보려면 패널 하단의 **모두 보기** 옵션을 클릭합니다.
 
-읽지 않은 모든 알림을 읽은 것으로 표시하고 종 모양 아이콘 배지를 지우려면 패널 하단의 **모두 읽은 상태로 표시** 옵션을 선택합니다.
+읽지 않은 모든 알림을 읽은 것으로 표시하고 종 모양 아이콘 배지를 지우려면 패널 하단의 **모두 읽은 상태로 표시** 옵션을 클릭합니다.
 
 ## 알림 구성 {#configuration}
 
 알림 수신 방법과 수신 알림을 사용자 정의할 수 있습니다.
 
-알림 사이드바 상단에 있는 기어 아이콘을 클릭합니다.
+알림 사이드바 상단에 있는 톱니바퀴 아이콘을 클릭합니다.
 
 ![알림 설정 아이콘](/help/assets/notifications-configuration.png)
 
@@ -58,7 +58,7 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ![알림 구독](/help/assets/notifications-subscriptions.png)
 
-기본적으로 모든 제품에 대한 모든 알림을 받게 됩니다. 제품 옆에 있는 **사용자 정의**&#x200B;를 클릭하여 해당 제품에 대해 수신하는 알림 유형을 정의합니다.
+기본적으로 모든 제품에 대한 모든 알림을 받게 됩니다. 제품 옆에 있는 **사용자 지정**&#x200B;을 클릭하여 해당 제품에 대해 수신하는 알림 유형을 정의합니다.
 
 ![알림 구독 사용자 정의](/help/assets/notifications-subscriptions-customize.png)
 
