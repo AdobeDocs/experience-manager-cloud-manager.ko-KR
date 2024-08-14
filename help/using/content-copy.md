@@ -2,10 +2,10 @@
 title: 콘텐츠 복사 도구
 description: Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 AMS가 호스팅하는 AEM 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 콘텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2563c58431e58d2fc5917a2ad88835bbdd4224f2
+source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
-source-wordcount: '1150'
-ht-degree: 44%
+source-wordcount: '1144'
+ht-degree: 36%
 
 ---
 
@@ -165,11 +165,10 @@ Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 AMS가 호스
 * 동일한 환경에서 컨텐츠 복사 작업을 동시에 실행할 수 없습니다.
 * 대상 또는 소스 환경(예: CI/CD 파이프라인)에서 실행 중인 활성 작업이 있는 경우 콘텐츠 복사를 수행할 수 없습니다.
 * 콘텐츠 세트당 최대 50개의 경로를 지정할 수 있습니다. 제외된 경로에는 제한이 없습니다.
-* 콘텐츠 복사 도구는 소스에서 이동되거나 삭제된 콘텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
-* 콘텐츠 복사는 시작되고 나면 일시 중지하거나 취소할 수 없습니다.
-* 콘텐츠 복사 도구는 상위 환경에서 선택한 하위 환경으로 다이내믹 미디어 관련 메타데이터와 함께 자산을 복사합니다.
-   * 이후 각각의 다이내믹 미디어 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)를 사용하여 복사된 자산을 재처리해야 합니다.
-* 버전 기록이 복사되지 않으면 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
+* 콘텐츠 복사 도구는 소스에서 이동하거나 삭제된 콘텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용하면 안 됩니다.
+* 콘텐츠 복사가 시작되면 일시 중지하거나 취소할 수 없습니다.
+* 콘텐츠 복사 도구는 에셋 및 Dynamic Media 메타데이터를 상위 환경에서 선택한 하위 환경으로 복사합니다. 복사된 에셋이 각 Dynamic Media 구성을 사용하려면 하위 환경의 [DAM 에셋 처리 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 다시 처리해야 합니다.
+* 버전 기록이 복사되지 않는 경우 콘텐츠 복사 프로세스가 상당히 빨라집니다.
 * [자산 크기가 2GB보다 큰 Dynamic Media 구성이 활성화됨](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)은(는) 지원되지 않습니다.
 * 버전 기록이 복사되지 않으면 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
 * 대상 환경의 영역은 소스 환경의 영역과 같거나 그 하위 집합이어야 합니다.
