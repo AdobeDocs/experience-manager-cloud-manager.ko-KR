@@ -2,7 +2,7 @@
 title: Cloud Manager 2024.8.0 릴리스 노트
 description: Cloud Manager 2024.8.0의 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: 34f15aff7478a6a0884f88f534a7dff996a8570e
+source-git-commit: dd764bb17127ba0a1e88e85592329cc9ddff42e3
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ## 릴리스 날짜 {#release-date}
 
-[!UICONTROL Cloud Manager] 2024.8.0의 릴리스 날짜는 2024년 8월 13일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
+[!UICONTROL Cloud Manager] 2024.8.0의 릴리스 날짜는 2024년 8월 14일입니다. 다음 릴리스는 2024년 9월 14일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
