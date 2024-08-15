@@ -2,10 +2,10 @@
 title: AMS용 Cloud Manager 소개
 description: 여기에서 Adobe Managed Services(AMS)용 Cloud Manager에 대해 알아보고 조직이 클라우드에서 Adobe Experience Manager를 자체 관리하는 방법을 알아보십시오.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 56%
+source-wordcount: '1256'
+ht-degree: 48%
 
 ---
 
@@ -35,15 +35,13 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 * 출시 시기를 월/주 단위에서 일/시간 단위로 단축하는 코드 지속적 통합/지속적 배포(CI/CD)
 
-* 프로덕션에 투입하기 전에 프로덕션 중단을 최소화하기 위한 모범 사례 기반 코드 검사, 성능 테스트 및 보안 유효성 검사
+* 프로덕션에 투입하기 전에 프로덕션 중단을 최소화하기 위한 우수 사례 기반 코드 검사, 성능 테스트 및 보안 유효성 검사
 
-* 기존 DevOps 프로세스를 보완하는 API 연결
+* 기존 DevOps 프로세스를 보완하는 API 연결.
 
 * 용량 증가 필요성을 지능적으로 탐지하고 추가 Dispatcher/게시 세그먼트를 자동으로 온라인 상태로 전환하는 자동 크기 조정
 
-이 이미지는 [!UICONTROL Cloud Manager]에서 사용되는 CI/CD 프로세스 플로우를 보여 주는 이미지입니다.
-
-![CI/CD 플로우](/help/assets/screen_shot_2018-05-12at73843pm.png)
+![CI/CD 흐름](/help/assets/screen_shot_2018-05-12at73843pm.png)[!UICONTROL Cloud Manager]에서 사용되는 CI/CD 프로세스 흐름입니다.
 
 ## [!UICONTROL Cloud Manager]의 주요 기능 {#key-features-in-cloud-manager}
 
