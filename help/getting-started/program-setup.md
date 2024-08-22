@@ -2,10 +2,10 @@
 title: 프로그램 설정
 description: 온보딩 후 비즈니스 소유자는 프로그램의 일부 초기 설정을 수행해야 합니다.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 53%
+source-wordcount: '564'
+ht-degree: 49%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 53%
 
 1. 변경 내용을 저장하려면 **업데이트**&#x200B;를 클릭하세요.
 
-변경 사항은 Cloud Manager에 즉시 저장되지만 다음 파이프라인이 실행될 때까지 사용자 환경에 반영되지 않습니다.
+변경 사항은 즉시 Cloud Manager에 저장되지만 다음 파이프라인이 실행될 때까지 환경에 반영되지 않습니다.
 
 파이프라인을 아직 만들지 않은 경우 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)을 참조하십시오.
 

@@ -2,19 +2,19 @@
 title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 51%
+ht-degree: 49%
 
 ---
 
 
-# Cloud Manager UI 탐색 {#navigation}
+# Cloud Manger UI 탐색 {#navigation}
 
 Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 
-Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니다.
+Cloud Manager UI는 주로 다음 두 가지 그래픽 인터페이스로 구성됩니다.
 
 * [내 프로그램 콘솔](#my-programs-console)에서 모든 프로그램을 보고 관리할 수 있습니다.
 * [프로그램 개요 창](#program-overview)에서 개별 프로그램의 세부 정보를 확인하고 관리할 수 있습니다.

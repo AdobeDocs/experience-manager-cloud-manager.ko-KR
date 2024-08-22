@@ -2,10 +2,10 @@
 title: 분기 구성
 description: Git에서 첫 번째 분기를 설정하는 방법과 CI/CD 파이프라인에서 애플리케이션 코드를 배포하는 데 어떻게 사용되는지 알아봅니다.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 14%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ Git에서 첫 번째 분기를 설정하는 방법과 CI/CD 파이프라인에�
 
 ## Git에서 첫 분기 설정 {#setting-up-your-first-branch-in-git}
 
-Cloud Manager에 온보딩된 각 프로그램에 대해 처음에는 비어 있던 단일 git 저장소가 [프로비저닝됩니다](/help/requirements/environment-provisioning.md). 이 저장소에는 개발 프로세스에 필요한 만큼의 분기가 포함될 수 있지만 CI/CD 파이프라인에서 스테이징 및 프로덕션에 애플리케이션 코드를 배포하는 데 사용되는 분기가 하나 이상 있어야 합니다. 이 분기의 이름으로 `main`을 사용하는 것이 좋습니다. 편리하게, 이 접근 방식은 새 프로젝트를 설정할 때 Git 클라이언트의 기본 동작입니다.
+Cloud Manager에 온보딩된 각 프로그램에 대해 처음에는 비어 있던 단일 Git 저장소 [이(가) 프로비저닝됨](/help/requirements/environment-provisioning.md)됩니다. 이 저장소에는 개발 프로세스에 필요한 만큼의 분기가 포함될 수 있지만 CI/CD 파이프라인에서 스테이징 및 프로덕션에 애플리케이션 코드를 배포하는 데 사용되는 분기가 하나 이상 있어야 합니다. 이 분기의 이름으로 `main`을 사용하는 것이 좋습니다. 편리하게, 이 접근 방식은 새 프로젝트를 설정할 때 Git 클라이언트의 기본 동작입니다.
 
 예를 들어 새 프로젝트를 설정할 때 다음과 유사한 명령 집합을 실행합니다.
 
@@ -50,7 +50,7 @@ $ git commit -m "initial commit"
 
 >[!NOTE]
 >
->명령줄 클라이언트를 사용할 필요는 없습니다. 독립 실행형 애플리케이션이나 Eclipse 또는 IntelliJ와 같은 통합 개발 환경(IDE)의 일부로 사용할 수 있는 다양한 그래픽 Git 클라이언트가 있습니다. 클라이언트 애플리케이션이 HTTPS를 사용하여 git을 지원하는 한 [!UICONTROL Cloud Manager]와 호환되어야 합니다.
+>명령줄 클라이언트를 사용할 필요는 없습니다. 독립 실행형 애플리케이션이나 Eclipse 또는 IntelliJ와 같은 통합 개발 환경(IDE)의 일부로 사용할 수 있는 다양한 그래픽 Git 클라이언트가 있습니다. 클라이언트 애플리케이션이 HTTPS를 사용하여 Git을 지원하는 한 [!UICONTROL Cloud Manager]와 호환되어야 합니다.
 
 ## 첫 번째 분기 푸시 {#pushing-your-first-branch}
 

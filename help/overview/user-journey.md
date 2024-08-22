@@ -2,9 +2,9 @@
 title: 사용자 여정
 description: 다양한 온보딩 시나리오 및 Cloud Manager 시작에 대해 알아봅니다.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
-source-git-commit: 6a5615c0db91c62fc8858b967021b46c7b383aa0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '532'
 ht-degree: 21%
 
 ---

@@ -2,7 +2,7 @@
 title: 비프로덕션 파이프라인 구성
 description: Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 61%
@@ -29,7 +29,7 @@ Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라�
 
 >[!NOTE]
 >
->연결된 git 저장소에 분기가 하나 이상 있고 [프로그램 설정](/help/getting-started/program-setup.md)이 완료될 때까지 파이프라인을 설정할 수 없습니다. Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [Cloud Manager 저장소](/help/managing-code/managing-repositories.md)를 참조하세요.
+>연결된 Git 저장소에 분기가 하나 이상 있고 [프로그램 설정](/help/getting-started/program-setup.md)이 완료될 때까지 파이프라인을 설정할 수 없습니다. Cloud Manager에서 저장소를 추가하고 관리하는 방법은 [Cloud Manager 저장소](/help/managing-code/managing-repositories.md)를 참조하세요.
 
 ## 비프로덕션 파이프라인 추가 {#add-non-production-pipeline}
 
@@ -51,7 +51,7 @@ Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라�
 
 1. 파이프라인이 코드를 검색할 저장소를 제공합니다.
 
-   * **저장소** - 파이프라인에서 코드를 검색해야 하는 git 저장소를 정의합니다.
+   * **저장소** - 파이프라인에서 코드를 검색해야 하는 Git 저장소를 정의합니다.
    * **Git 분기** - Git에서 선택한 파이프라인이 코드를 검색해야 하는 분기를 정의합니다.
 
 1. 배포 옵션을 정의합니다.

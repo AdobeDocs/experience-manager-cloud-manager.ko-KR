@@ -2,7 +2,7 @@
 title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 57%
@@ -62,7 +62,7 @@ ht-degree: 57%
 | 파이프라인 수정 관리 배포 | CSE 감독 옵션 편집 허용 | | x | | | |
 | 파이프라인 삭제 | 파이프라인 삭제 허용 | | x | | | |
 | 단계 읽기 | 단계 품질 지표 결과 확인 | x | x | x | x | x |
-| 개인 액세스 토큰 생성 | git 액세스 | | x | | x | |
+| 개인 액세스 토큰 생성 | 액세스 Git | | x | | x | |
 
 사용자를 설정하는 방법에 대한 자세한 내용은 [사용자 및 역할 설정](/help/requirements/users-and-roles.md)을 참조하세요.
 

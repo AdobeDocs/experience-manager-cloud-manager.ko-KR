@@ -2,10 +2,10 @@
 title: 환경 관리
 description: Cloud Manager를 사용하여 환경을 관리하는 방법에 대해 알아봅니다.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '275'
-ht-degree: 100%
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 83%
 
 ---
 
@@ -54,7 +54,7 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경이 �
 
 >[!NOTE]
 >
->이름과 같은 환경 세부 정보는 프로비저닝되고 나면 변경할 수 없습니다.
+>이름 등 환경 세부 정보는 제공된 후에는 변경할 수 없습니다.
 
 >[!NOTE]
 >
@@ -64,4 +64,4 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경이 �
 
 이 비디오는 AEM 작성, 게시 및 Dispatcher 인스턴스로 구성된 Cloud Manager 환경에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/26318/)(3분 1초)

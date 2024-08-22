@@ -2,7 +2,7 @@
 title: 콘텐츠 복사 도구
 description: Cloud Manager 콘텐츠 복사 도구를 사용하면 사용자가 AMS가 호스팅하는 AEM 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 콘텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1144'
 ht-degree: 42%

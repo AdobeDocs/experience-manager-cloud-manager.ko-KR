@@ -1,11 +1,11 @@
 ---
 title: 사용자 및 역할 추가
-description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
+description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법을 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 95%
+source-wordcount: '758'
+ht-degree: 64%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 95%
 
 [!UICONTROL Cloud Manager]의 많은 기능을 사용하려면 특정 권한이 필요합니다. 예를 들어 특정 사용자만 프로그램에 대한 KPI(주요 성과 지표)를 설정할 수 있습니다. 이러한 권한은 논리적으로 역할로 그룹화됩니다.
 
-[!UICONTROL Cloud Manager]는 현재 특정 기능의 가용성을 제어하는 네 가지 사용자 역할을 정의합니다.
+[!UICONTROL Cloud Manager]은(는) 현재 특정 기능의 가용성을 제어하는 네 가지 사용자 역할을 정의합니다.
 
 * 비즈니스 소유자
 * 프로그램 관리자
@@ -27,16 +27,16 @@ ht-degree: 95%
 
 ## 역할 정의 {#role-definitions}
 
-이 표에는 역할이 요약되어 있습니다.
+다음 표에는 Cloud Manager의 역할이 요약되어 있습니다.
 
 | [!UICONTROL Cloud Manager] 역할 | 설명 |
-|--- |--- |
-| 비즈니스 소유자 | 이 사용자는 KPI를 정의하고, 프로덕션 구축을 승인하며, 필요한 경우 중요한 3계층 오류를 재정의할 책임이 있습니다. |
-| 프로그램 관리자 | 이 사용자는 [!UICONTROL Cloud Manager]를 사용하여 팀 설정, 상태 검토, KPI 보기를 수행하며 필요한 경우 중요한 3계층 오류를 승인할 수 있습니다. |
-| 배포 관리자 | 이 사용자는 배포 작업을 관리하고 [!UICONTROL Cloud Manager]를 사용하여 스테이징/프로덕션 배포를 실행하고, CI/CD 파이프라인을 편집하고, 필요한 경우 중요한 3계층 오류를 승인하며, git 저장소에 액세스할 수 있습니다. |
-| 개발자 | 이 사용자는 사용자 정의 애플리케이션 코드를 개발 및 테스트하고 주로 [!UICONTROL Cloud Manager]를 사용하여 배포 상태를 보고 코드 커밋을 위해 git 저장소에 액세스할 수 있습니다. |
-| 고객 성공 엔지니어 | 이 사용자는 일반적으로 AMS 고객을 위해 고객의 성공을 지원하고 CSE 감독이 필요한 배포 실행을 위해 [!UICONTROL Cloud Manager]와 상호 작용합니다. |
-| 콘텐츠 작성자 | 이 사용자는 일반적으로 [!UICONTROL Cloud Manager]와 상호 작용하지 않지만 [!UICONTROL Cloud Manager] 프로그램 스위처를 사용하여 AEM에 액세스할 수 있습니다. |
+| --- | --- |
+| 비즈니스 소유자 | KPI를 정의하고, 프로덕션 배포를 승인하며, 필요한 경우 중요한 3계층 오류를 재정의할 책임이 있습니다. |
+| 프로그램 관리자 | [!UICONTROL Cloud Manager]을(를) 사용하여 팀 설정, 상태 검토, KPI 보기를 수행하고 필요한 경우 중요한 3계층 오류를 승인할 수 있습니다. |
+| 배포 관리자 | 배포 작업을 관리하고 [!UICONTROL Cloud Manager]을(를) 사용하여 스테이징 및 프로덕션 배포를 실행하고, CI/CD 파이프라인을 편집하고, 필요한 경우 중요한 3계층 오류를 승인합니다. 또한 Git 저장소에 액세스할 수 있습니다. |
+| 개발자 | 사용자 지정 응용 프로그램 코드를 개발 및 테스트하고 주로 [!UICONTROL Cloud Manager]을(를) 사용하여 배포 상태를 보고 코드 커밋을 위해 Git 저장소에 액세스할 수 있습니다. |
+| 고객 성공 엔지니어 | CSE는 일반적으로 AMS 고객을 위해 고객의 성공을 지원합니다. CSE 감독이 필요한 배포를 실행하기 위해 [!UICONTROL Cloud Manager]과(와) 상호 작용합니다. |
+| 콘텐츠 작성자 | 일반적으로 [!UICONTROL Cloud Manager]와 상호 작용하지 않지만 [!UICONTROL Cloud Manager] 프로그램 전환기를 사용하여 AEM에 액세스할 수 있습니다. |
 
 >[!NOTE]
 >
@@ -46,20 +46,20 @@ ht-degree: 95%
 
 [!UICONTROL Cloud Manager] 역할은 Admin Console에서 관리합니다. [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
 
-Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 설명서를 참조하십시오.
+Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 참조하세요.
 
-[!UICONTROL Cloud Manager] 사용자에게 적절한 역할 기반 권한을 제공하기 위해 고객 조직의 관리자는 4개의 [!UICONTROL Cloud Manager] 역할에 해당하는 [!UICONTROL AEM Managed Services] 제품 컨텍스트에서 새 제품 프로필을 만들어야 합니다.
+관리자는 [!UICONTROL AEM Managed Services] 제품 컨텍스트에서 새 제품 프로필을 만들어 [!UICONTROL Cloud Manager] 사용자에게 4개의 [!UICONTROL Cloud Manager] 역할에 해당하는 역할 기반 권한을 할당해야 합니다.
 
 * 비즈니스 소유자
 * 배포 관리자
 * 개발자
 * 프로그램 관리자
 
-Admin Console을 사용하여 이러한 제품 프로필에 사용자/그룹을 만들거나 추가할 수 있습니다.
+Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그룹을 만들거나 추가할 수 있습니다.
 
 1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)의 Admin Console에 로그인합니다.
 
-1. **개요** 탭을 클릭하고 **제품 및 서비스** 카드에서 수정할 제품을 클릭합니다. 목록에 없으면 **제품** 탭에서 제품을 찾아 클릭합니다.
+1. **개요** 탭을 클릭한 다음 **제품 및 서비스** 카드에서 편집할 제품을 클릭합니다. 목록에 없으면 **제품** 탭에서 제품을 찾아 클릭합니다.
 
    ![Admin Console 개요 탭](/help/assets/admin-console-overview.png)
 

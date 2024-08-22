@@ -1,11 +1,11 @@
 ---
 title: 제품 업데이트 마법사
-description: 제품 업데이트 마법사가 Cloud Manager 내에서 엔드 투 엔드 AEM 업데이트 프로세스를 간소화하는 방법을 알아보십시오.
+description: 제품 업데이트 마법사가 Cloud Manager 내에서 전체적인 AEM 업데이트 프로세스를 간소화하는 방법을 알아봅니다.
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
-source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 49%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 Cloud Manager에 온보딩하고 AEM 6.5로 업그레이드할 수 있는 고객은 제품 업데이트 마법사를 이용할 수 있습니다. 자세한 내용은 고객 성공 엔지니어(CSE)에게 문의하십시오.
 
-1. 프로그램에 AEM 6.5를 사용할 수 있음을 알리는 푸시 알림이 Cloud Manager를 통해 전송됩니다.
+1. 프로그램에 AEM 6.5를 사용할 수 있음을 알리는 Cloud Manager을 통해 푸시 알림을 받게 됩니다.
 
 1. **[!UICONTROL AEM 6.5 업데이트]** 카드가 [!UICONTROL Cloud Manager]의 개요 화면에 표시됩니다. 이 카드는 현재 업데이트 프로세스의 어느 단계에 있는지 추적하는 데 도움이 되며 다음에 취해야 할 단계가 무엇인지 알려 줍니다.
 
@@ -36,5 +36,5 @@ Cloud Manager에 온보딩하고 AEM 6.5로 업그레이드할 수 있는 고객
 
 1. 마법사는 **[!UICONTROL AEM 6.5 업데이트]** 프로세스의 첫 번째 단계를 표시합니다.
 
-마법사의 첫 번째 단계에 대한 자세한 내용은 [평가 단계](/help/product-update-wizard/evaluation.md) 문서를 참조하십시오.
+마법사의 첫 번째 단계에 대한 자세한 내용은 [평가 단계](/help/product-update-wizard/evaluation.md)를 참조하십시오.
 

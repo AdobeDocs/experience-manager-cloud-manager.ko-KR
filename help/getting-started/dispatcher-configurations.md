@@ -2,7 +2,7 @@
 title: Dispatcher 구성
 description: Cloud Manager을 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
-source-git-commit: ba08da1b25a1f9ba8bc954b2fbd27b60d4ddf1a0
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 48%

@@ -2,10 +2,10 @@
 title: Cloud Manager FAQ
 description: AMS 고객을 위한 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변에 대해 알아봅니다.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 60%
+ht-degree: 52%
 
 ---
 
@@ -62,11 +62,11 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 해당 오류와 함�
 
 ## Maven 프로젝트 버전에 SNAPSHOT을 사용할 수 있습니까? {#snapshot}
 
-예. 개발자 배포의 경우 git 분기 `pom.xml` 파일의 `<version>` 값 끝에 `-SNAPSHOT`이 포함되어야 합니다.
+예. 개발자 배포의 경우 Git 분기 `pom.xml` 파일은 `<version>` 값의 끝에 `-SNAPSHOT`을(를) 포함해야 합니다.
 
 버전을 변경하지 않은 경우에도 후속 배포를 계속 설치할 수 있습니다. 개발자 배포에서는 Maven 빌드에 대해 자동 버전이 추가되거나 생성되지 않습니다.
 
-단계 및 프로덕션 빌드 또는 배포에 대해 버전을 `-SNAPSHOT`으로 설정할 수도 있습니다. Cloud Manager는 자동으로 적절한 버전 번호를 설정하고 git에 태그를 생성합니다. 이 태그는 필요한 경우 나중에 참조할 수 있습니다.
+단계 및 프로덕션 빌드 또는 배포에 대해 버전을 `-SNAPSHOT`으로 설정할 수도 있습니다. Cloud Manager은 적절한 버전 번호를 자동으로 설정하고 Git에서 자동으로 태그를 만듭니다. 이 태그는 필요한 경우 나중에 참조할 수 있습니다.
 
 버전 처리에 대한 자세한 내용은 [여기에 문서화](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)되어 있습니다.
 
@@ -76,11 +76,11 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 해당 오류와 함�
 
 스테이지 및 프로덕션 배포에서 사용자 정의 버전을 사용하려면 `1.0.0`과 같이 적절한 3부분으로 구성된 Maven 버전을 설정합니다. 프로덕션에 배포할 때마다 버전을 늘립니다.
 
-Cloud Manager는 스테이지 및 프로덕션 빌드에 해당 버전을 자동으로 추가하고 git 분기를 만듭니다. 특별한 구성은 필요하지 않습니다. 앞에서 설명한 대로 Maven 버전을 설정하지 않으면 배포가 계속 성공하고 버전이 자동 설정됩니다.
+Cloud Manager은 스테이지 및 프로덕션 빌드에 버전을 자동으로 추가하고 Git 분기를 만듭니다. 특별한 구성은 필요하지 않습니다. 앞에서 설명한 대로 Maven 버전을 설정하지 않으면 배포가 계속 성공하고 버전이 자동 설정됩니다.
 
 ## Maven 빌드가 Cloud Manager 배포에 실패하지만 오류 없이 로컬로 빌드됩니다. 무엇이 문제입니까? {#maven-build-fail}
 
-자세한 내용은 이 [git 리소스](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)를 참조하십시오.
+자세한 내용은 이 [Git 리소스](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md)를 참조하세요.
 
 ## aio 명령을 사용하여 변수를 설정할 수 없습니다. 어떻게 하면 표시할 수 있습니까? {#set-variable}
 

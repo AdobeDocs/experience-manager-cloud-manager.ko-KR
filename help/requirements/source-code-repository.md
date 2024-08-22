@@ -1,18 +1,18 @@
 ---
 title: 소스 코드 저장소
-description: Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저닝된 git 저장소에 대해 알아보십시오.
+description: Cloud Manager에 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아봅니다.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 4c977cdfbef438fdabd90ee104d98887f2467b49
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 32%
+ht-degree: 7%
 
 ---
 
 
 # Source 코드 저장소 {#source-code-repository}
 
-Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저닝된 git 저장소에 대해 알아보십시오.
+Cloud Manager에 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아봅니다.
 
 ## Cloud Manager 저장소 {#cloud-manager-repository}
 
@@ -22,7 +22,7 @@ Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저�
 
 Git에서 분기를 설정하는 방법에 대한 자세한 내용은 [릴리스 분기 구성](/help/getting-started/configuring-branches.md)을 참조하십시오.
 
-Cloud Manager의 git 저장소를 CI/CD 파이프라인과 함께 사용하는 방법에 대한 자세한 내용은 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)을 참조하십시오.
+Cloud Manager의 Git 저장소를 CI/CD 파이프라인과 함께 사용하는 방법에 대한 자세한 내용은 [프로덕션 파이프라인 구성](/help/using/production-pipelines.md) 및 [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)을 참조하십시오.
 
 ## On-Premise 저장소 {#on-premise-repository}
 

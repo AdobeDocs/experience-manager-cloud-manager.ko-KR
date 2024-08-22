@@ -2,10 +2,10 @@
 title: Git 하위 모듈 지원
 description: 빌드 시 Git 하위 모듈을 사용하여 Git 저장소 전체에 걸쳐 여러 분기의 콘텐츠를 병합하는 방법에 대해 알아봅니다.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
+source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 31%
+ht-degree: 20%
 
 ---
 
@@ -66,9 +66,9 @@ Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서](https://g
 
 ## 제한 사항 {#limitations}
 
-git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
+Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 
-* git URL은 위에서 설명한 구문과 정확히 일치해야 합니다.
+* Git URL은 위에서 설명한 구문과 정확히 일치해야 합니다.
 * 보안상의 이유로 이러한 URL에 자격 증명을 임베드하지 마십시오.
 * 분기의 루트에 있는 하위 모듈만 지원됩니다.
 * git 하위 모듈 참조는 특정 Git 커밋에 저장됩니다. 결과적으로 하위 모듈 저장소가 변경되면 참조된 커밋을 업데이트해야 합니다. 예를 들어 `git submodule update --remote`을(를) 사용합니다.
@@ -87,8 +87,8 @@ git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 
 ### 제한 사항 및 권장 사항 {#limitations-recommendations-private-repos}
 
-비공개 저장소에 git 하위 모듈을 사용할 때는 다음 제한 사항에 유의하십시오.
+개인 리포지토리에 Git 하위 모듈을 사용할 때는 다음 제한 사항에 유의하십시오.
 
-* 하위 모듈에 대한 git URL은 HTTPS 또는 SSH 형식일 수 있지만 Github.com 저장소에 연결되어야 합니다. GitHub 집계 저장소에 Adobe 저장소 하위 모듈을 추가하거나 그 반대로 추가할 수 없습니다.
+* 하위 모듈에 대한 Git URL은 HTTPS 또는 SSH 형식일 수 있지만 Github.com 저장소에 연결되어야 합니다. GitHub 집계 저장소에 Adobe 저장소 하위 모듈을 추가하거나 그 반대로 추가할 수 없습니다.
 * GitHub 하위 모듈은 Adobe GitHub 애플리케이션에 액세스할 수 있어야 합니다.
-* [Adobe 관리 저장소의 git 하위 모듈 사용 시 제한 사항](#limitations-recommendations)도 적용됩니다.
+* [Adobe 관리 리포지토리에 Git 하위 모듈을 사용할 때의 제한 사항](#limitations-recommendations)도 적용됩니다.
