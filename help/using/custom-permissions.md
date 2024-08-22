@@ -5,7 +5,7 @@ exl-id: a81eda9f-aa89-40ea-8e4c-52367a0a6aba
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '1416'
-ht-degree: 47%
+ht-degree: 56%
 
 ---
 
@@ -26,17 +26,17 @@ Cloud Manager에는 다양한 Cloud Manager 기능에 대한 액세스를 제어
 
 >[!TIP]
 >
->미리 정의된 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하세요.
+>미리 정의된 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하십시오.
 
 ## 사용자 지정 권한 사용 {#using}
 
 자신만의 사용자 지정 권한을 만들고 사용하려면 다음 세 단계를 수행해야 합니다.
 
 1. [새 제품 프로필을 만듭니다](#create).
-1. [새 제품 프로필에 사용자 지정 권한을 할당](#assign-permissions).
-1. [새 제품 프로필에 사용자를 할당](#assign-users).
+1. [새 제품 프로필에 사용자 정의 권한을 할당합니다](#assign-permissions).
+1. [새 제품 프로필에 사용자를 할당합니다](#assign-users).
 
-이 섹션에서는 이러한 단계를 자세히 설명합니다. 사용자 지정 권한을 만들 때 [용어](#terms) 및 [구성 가능한 권한](#configurable-permissions) 섹션을 보는 것이 유용할 수 있습니다.
+이 섹션에서는 이러한 단계를 자세히 설명합니다. 자체 사용자 정의 권한을 만들 때 [용어](#terms) 및 [구성 가능한 권한](#configurable-permissions) 섹션을 참조하면 유용할 것입니다.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Cloud Manager에는 다양한 Cloud Manager 기능에 대한 액세스를 제어
 
 1. **AEM Managed Services** 제품을 선택합니다.
 
-1. `*-cloud-manager` 패턴과 이름이 일치하는 및 인스턴스를 검색하고 클릭하여 사용자 및 권한을 관리합니다.
+1. `*-cloud-manager` 패턴과 일치하는 이름이 있는 인스턴스를 검색하고 사용자 및 권한을 클릭합니다.
 
 1. Admin Console의 **제품** 탭으로 리디렉션되어 Cloud Manager에 대한 사용자 및 권한을 관리할 수 있습니다. Admin Console에서 **새 프로필**&#x200B;을 클릭합니다.
 
@@ -71,7 +71,7 @@ Cloud Manager에는 다양한 Cloud Manager 기능에 대한 액세스를 제어
 
 새 제품 프로필이 있으므로 해당 프로필에 사용자 정의 권한을 할당할 수 있습니다.
 
-1. Admin Console에서 방금 만든 [새 제품 프로필의 이름을 클릭합니다](#create).
+1. Admin Console에서 [방금 만든 새 제품 프로필](#create)의 이름을 클릭합니다.
 
 1. 창이 열리면 **권한** 탭을 선택하여 편집 가능한 권한 목록을 봅니다.
 
@@ -98,7 +98,7 @@ Cloud Manager에는 다양한 Cloud Manager 기능에 대한 액세스를 제어
 
 이제 사용자 정의 권한으로 만든 새 제품 프로필에 사용자를 할당할 수 있습니다.
 
-1. Admin Console에서 방금 사용자 지정 권한을 할당한 [새 제품 프로필의 이름을 클릭합니다](#assign-permissions).
+1. Admin Console에서 [방금 사용자 정의 권한을 할당한 새 제품 프로필](#assign-permissions)의 이름을 클릭합니다.
 
 1. 창이 열리면 **사용자** 탭을 선택합니다.
 
@@ -143,7 +143,7 @@ Cloud Manager의 조직 수준 사용 권한의 한 예는 **저장소 정보 �
 
 | 용어 | 설명 |
 |---|---|
-| 미리 정의된 권한 | **비즈니스 소유자**, **배포 관리자** 등과 같이 미리 정의된 역할입니다. Cloud Manager의 다양한 기능을 관리합니다. 미리 정의된 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하세요. |
+| 미리 정의된 권한 | **비즈니스 소유자**, **배포 관리자** 등과 같이 미리 정의된 역할입니다. Cloud Manager의 다양한 기능을 관리합니다. 미리 정의된 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하십시오. |
 | 사용자 정의 권한 | 사용자가 권한 프로필을 만들어 Cloud Manager의 지원되는 기능을 제어하는 역할을 정의할 수 있는 Cloud Manager 기능 |
 | 권한 프로필 | 권한 프로필의 일부인 사용자에게 적용할 수 있는 구성 가능한 권한을 관리하기 위해 Admin Console에 작성됨 |
 | 구성 가능한 권한 | Cloud Manager 권한은 권한 프로필에서 구성할 수 있습니다 |
@@ -160,7 +160,7 @@ Cloud Manager의 조직 수준 사용 권한의 한 예는 **저장소 정보 �
 
 ## 제한 사항 {#limitations}
 
-사용자 지정 권한을 사용할 때는 다음 제한 사항에 유의하십시오.
+사용자 정의 권한을 사용할 때 다음 제한 사항에 유의하십시오.
 
 * 사용자 정의 프로필을 만드는 데 [제한된 권한 세트를 사용할 수 있습니다](#configurable-permissions).
 * 프로그램, 환경, 파이프라인 등과 같은 리소스 Cloud Manager에서 만든 항목은 권한 구성을 위해 Admin Console에 표시되는 데 2분 정도 걸릴 수 있습니다.
@@ -175,7 +175,7 @@ Cloud Manager의 조직 수준 사용 권한의 한 예는 **저장소 정보 �
 * 배포 관리자
 * 개발자
 
-미리 정의된 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하세요.
+미리 정의된 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하십시오.
 
 ### 사용자 정의 프로필이 도입되면 미리 정의된 권한 프로필은 어떻게 됩니까?
 

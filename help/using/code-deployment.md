@@ -5,7 +5,7 @@ exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: a7dc30ed31e87ab486f0b279b70c850a33a903eb
 workflow-type: tm+mt
 source-wordcount: '1637'
-ht-degree: 54%
+ht-degree: 58%
 
 ---
 
@@ -113,7 +113,7 @@ Cloud Manager가 비프로덕션 토폴로지에 배포하는 경우 가능한 �
 
    >[!NOTE]
    >
-   >모든 AEM 아티팩트는 작성자와 게시자 모두에게 배포됩니다. 노드별 구성이 필요한 경우 실행 모드를 활용해야 합니다. 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 AEM as a Cloud Service에 배포](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes) 문서의 [실행 모드 섹션을 참조하십시오.
+   >모든 AEM 아티팩트는 작성자와 게시자 모두에게 배포됩니다. 노드별 구성이 필요한 경우 실행 모드를 활용해야 합니다. 실행 모드를 사용하여 특정 목적을 위해 AEM 인스턴스를 조정하는 방법에 대한 자세한 내용은 [AEM as a Cloud Service로 배포 문서의 실행 모드 섹션](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/deploying/overview#runmodes)을 참조하십시오.
 
 1. Dispatcher 아티팩트는 다음과 같이 각 Dispatcher에 배포됩니다.
 
@@ -200,7 +200,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 
 ### 재실행 API {#reexecute-api}
 
-UI에서 사용할 수 있을 뿐만 아니라 [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수 있습니다.
+UI에서 사용할 수 있으며, [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수도 있습니다.
 
 #### 재실행 트리거 {#triggering}
 

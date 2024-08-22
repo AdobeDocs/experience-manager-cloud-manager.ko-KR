@@ -5,7 +5,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 53%
+ht-degree: 63%
 
 ---
 
@@ -20,7 +20,7 @@ Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.9.4가 설치되어 있습니다.
-   * Adobe은 사용자에게 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다](#https-maven).
+   * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것](#https-maven)을 권장합니다.
 * 설치된 Java 버전은 Oracle JDK 8u401 및 Oracle JDK 11.0.22입니다.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
@@ -46,7 +46,7 @@ Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
 
 >[!TIP]
 >
->Cloud Manager API를 사용하는 방법을 알아보려면 다음 추가 리소스를 참조하십시오.
+>Cloud Manager API를 사용하는 방법에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
 >
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 >* [API 통합 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
@@ -54,7 +54,7 @@ Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
 
 ## HTTPS Maven 저장소 {#https-maven}
 
-Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)이(가) Maven 3.8.8에 대한 업데이트를 포함하는 빌드 환경에 대한 롤링 업데이트를 시작했습니다(2023.12.0 릴리스로 완료). Maven 3.8.1에 도입된 중요한 변화는 잠재적인 취약성을 완화하기 위한 보안 개선이었습니다. 특히 Maven은 이제 [Maven 릴리스 노트](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 대로 기본적으로 모든 비보안 `http://*` 미러를 비활성화합니다.
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(2023.12.0 릴리스로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로, Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
 
 이러한 보안 강화로 인해 일부 사용자는 빌드 단계에서 문제에 직면할 수 있으며, 특히 안전하지 않은 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 이와 같은 문제가 보다 빈번하게 발생할 수 있습니다.
 
@@ -111,7 +111,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)이(가) Maven 3
 
 >[!NOTE]
 >
->2022년 4월부터 Oracle JDK는 AEM 애플리케이션의 개발과 운영을 위한 기본 JDK가 될 것입니다. Cloud Manager의 빌드 프로세스는 Maven 툴체인에 대체 옵션이 명시적으로 선택되어 있더라도 Oracle JDK를 사용하는 것으로 자동 전환됩니다. 자세한 내용은 [4월 릴리스 정보](/help/release-notes/2022/2022-4-0.md)를 참조하세요.
+>2022년 4월부터 Oracle JDK는 AEM 애플리케이션의 개발과 운영을 위한 기본 JDK가 될 것입니다. Cloud Manager의 빌드 프로세스는 Maven 툴체인에 대체 옵션이 명시적으로 선택되어 있더라도 Oracle JDK를 사용하는 것으로 자동 전환됩니다. 자세한 내용은 [4월 릴리스 정보](/help/release-notes/2022/2022-4-0.md)를 참조하십시오.
 
 ### 대체 Maven 실행 JDK 버전 {#alternate-maven}
 

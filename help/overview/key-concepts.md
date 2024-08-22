@@ -5,7 +5,7 @@ exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 49%
+ht-degree: 64%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 49%
 
 ## 환경 {#environment}
 
-환경은 [program](#program) 내의 가상 컴퓨터의 단일 클러스터입니다. AEM의 경우 이 환경은 작성 인스턴스(선택적으로 추가 콜드 대기 작성 인스턴스 포함), 0개 이상의 게시 인스턴스, 하나 이상의 Dispatcher 인스턴스 및 로드 밸런서로 구성됩니다.
+환경은 [프로그램](#program) 내의 가상 시스템의 단일 클러스터입니다. AEM의 경우 이 환경은 작성 인스턴스(선택적으로 추가 콜드 대기 작성 인스턴스 포함), 0개 이상의 게시 인스턴스, 하나 이상의 Dispatcher 인스턴스 및 로드 밸런서로 구성됩니다.
 
 ## Git 저장소 {#git-repository}
 

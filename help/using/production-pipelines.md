@@ -5,14 +5,14 @@ exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
 workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 48%
+ht-degree: 55%
 
 ---
 
 
 # 프로덕션 파이프라인 구성 {#configuring-production-pipelines}
 
-Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오. 먼저 Cloud Manager에서 파이프라인이 작동하는 방식에 대한 보다 개념적인 개요를 원하는 경우 [CI/CD 파이프라인](/help/overview/ci-cd-pipelines.md)을 참조하십시오.
+Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오. 먼저 Cloud Manager에서 파이프라인이 작동하는 방식에 대한 보다 개념적인 개요를 원하는 경우 [CI/CD 파이프라인](/help/overview/ci-cd-pipelines.md) 문서를 참조하십시오.
 
 ## 개요 {#overview}
 
@@ -115,7 +115,7 @@ Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인�
 
            >[!TIP]
            >
-           >배포 일정을 설정하거나 파이프라인을 즉시 실행하는 방법은 [코드 배포](/help/using/code-deployment.md)를 참조하세요.
+           >배포 일정을 설정하거나 파이프라인을 즉시 실행하는 방법은 [코드 배포](/help/using/code-deployment.md)를 참조하십시오.
 
             * **CSE 감독 사용** - 이 옵션을 선택하면 CSE(고객 성공 엔지니어)가 실제 배포를 시작하는 데 사용됩니다. 이 옵션을 활성화할 때 파이프라인을 생성하거나 편집할 때 **Deployment Manager** 역할에는 다음과 같은 옵션이 있습니다.
 
@@ -140,7 +140,7 @@ Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인�
 
       ![사이트 부하 가중치](/help/assets/configure-pipelines/add-prod5.png)
 
-   1. **Assets 성능 테스트 배포** 섹션에서 이미지 및 PDF의 테스트 배포를 정의하고 고유한 테스트 자산을 정의합니다.
+   1. **자산 성능 테스트 배포** 섹션에서 이미지 및 PDF의 테스트 배포를 정의하고 자체 테스트 자산을 정의합니다.
 
       * **이미지** - 슬라이더를 조정하여 이미지와 PDF 사이의 테스트 분할을 조정합니다.
       * **PDF** - 슬라이더를 조정하여 이미지와 PDF 사이의 테스트 분할을 조정합니다.
@@ -157,7 +157,7 @@ Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인�
 
 ## 다음 단계 {#the-next-steps}
 
-파이프라인을 구성한 후 코드를 배포합니다. 자세한 내용은 [코드 배포](/help/using/code-deployment.md)를 참조하세요.
+파이프라인을 구성한 후 코드를 배포합니다. 자세한 내용은 [코드 배포](/help/using/code-deployment.md)를 참조하십시오.
 
 ## 비디오 튜토리얼 {#video-tutorial-one}
 

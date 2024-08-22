@@ -5,7 +5,7 @@ exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 41%
+ht-degree: 51%
 
 ---
 
@@ -40,7 +40,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 >[!TIP]
 >
->프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/getting-started/program-setup.md)을 참조하세요.
+>프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/getting-started/program-setup.md)을 참조하십시오.
 
 ### 도구 모음 {#my-programs-toolbars}
 
@@ -54,13 +54,13 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 1. 헤더 왼쪽에 있는 햄버거 아이콘은 개별 프로그램의 특정 부분에 대한 탭에 대한 액세스를 제공하는 드롭다운 메뉴입니다. 컨텍스트에 따라 라이선스 대시보드와 **[내 프로그램](#my-programs-console)** 콘솔 간에 전환할 수도 있습니다.
    * 라이선스 대시보드는 AMS 프로그램이 아닌 AEM as a Cloud Service 프로그램에만 적용됩니다.
-   * 프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
+   * 귀하의 프로그램에 제공되는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
 1. Cloud Manager 버튼을 사용하면 Cloud Manager 내 위치와 관계없이 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
-1. Cloud Manager Adobe에 대한 피드백을 제공하려면 피드백 버튼을 클릭합니다.
-1. 조직 선택기는 현재 로그인한 조직을 표시합니다(이 예에서는 Foundation Internal). Adobe ID이 여러 조직과 연결되어 있는 경우 을 클릭하여 다른 조직으로 전환합니다.
+1. Cloud Manager에 대한 피드백을 Adobe에 제공하려면 피드백 버튼을 클릭합니다.
+1. 조직 선택기는 현재 로그인한 조직을 표시합니다(이 예에서는 Foundation Internal). Adobe ID가 여러 조직과 연결된 경우 클릭하여 다른 조직으로 전환합니다.
 1. 솔루션 전환기를 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
 1. 도움말 아이콘을 통해 학습 및 지원 리소스에 빠르게 액세스할 수 있습니다.
-1. 알림 아이콘에 현재 할당된 미완료 [알림](/help/using/notifications.md) 수가 배지로 지정되어 있습니다.
+1. 알림 아이콘에는 현재 할당된 불완전 [알림](/help/using/notifications.md) 수가 배지로 지정됩니다.
 1. 사용자를 나타내는 아이콘을 선택하여 사용자 설정에 액세스합니다. 사용자 사진을 선택하지 않으면 아이콘이 임의로 할당됩니다.
 
 #### 프로그램 도구 모음 {#program-toolbar}
@@ -153,7 +153,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ### 도구 모음 {#program-overview-toolbar}
 
-프로그램 개요의 도구 모음은 [내 프로그램 콘솔](#my-programs-toolbars)의 도구 모음과 비슷합니다. 차이점만 여기에 나와 있습니다.
+프로그램 개요의 도구 모음은 [내 프로그램 콘솔](#my-programs-toolbars)의 도구 모음과 비슷합니다. 여기서는 차이점만 설명합니다.
 
 #### Cloud Manager 헤더 {#cloud-manager-header-2}
 
@@ -199,19 +199,19 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ### 환경 카드 {#environments}
 
-**환경** 카드를 통해 환경 개요 및 빠른 작업에 대한 링크를 확인할 수 있습니다.
+**환경** 카드는 환경에 대한 개요와 빠른 작업을 위한 링크를 제공합니다.
 
 **환경** 카드에는 세 가지 환경만 나열됩니다. 프로그램의 모든 환경을 보려면 **모두 표시**&#x200B;를 클릭합니다.
 
-환경 관리 방법에 대한 자세한 내용은 [환경 관리](/help/using/managing-environments.md)를 참조하십시오.
+환경을 관리하는 방법에 대한 자세한 내용은 [환경 관리](/help/using/managing-environments.md)를 참조하십시오.
 
 ### 파이프라인 카드 {#pipelines}
 
-**파이프라인** 카드는 빠른 작업에 대한 파이프라인 및 링크에 대한 개요를 제공합니다.
+**파이프라인** 카드는 파이프라인에 대한 개요와 빠른 작업을 위한 링크를 제공합니다.
 
 **파이프라인** 카드에는 세 가지 파이프라인만 나열됩니다. 프로그램의 모든 파이프라인을 보려면 **모두 표시**&#x200B;를 클릭합니다.
 
-파이프라인 관리 방법에 대한 자세한 내용은 [파이프라인 관리](/help/using/managing-pipelines.md)를 참조하십시오.
+파이프라인을 관리하는 방법에 대한 자세한 내용은 [파이프라인 관리](/help/using/managing-pipelines.md)를 참조하십시오.
 
 ### 유용한 리소스 {#useful-resources}
 

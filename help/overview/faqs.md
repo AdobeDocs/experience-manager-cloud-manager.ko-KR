@@ -5,7 +5,7 @@ exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '748'
-ht-degree: 57%
+ht-degree: 60%
 
 ---
 
@@ -72,7 +72,7 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 해당 오류와 함�
 
 ## 패키지 및 번들 버전 관리는 스테이징 및 프로덕션 배포에서 어떻게 작동합니까? {#staging-production}
 
-스테이징 및 프로덕션 배포에서는 [여기에 설명된 대로 ](/help/managing-code/maven-project-version.md)자동 버전이 생성됩니다.
+스테이징 및 프로덕션 배포에서는 [여기](/help/managing-code/maven-project-version.md)에 설명된 대로 자동 버전이 생성됩니다.
 
 스테이지 및 프로덕션 배포에서 사용자 정의 버전을 사용하려면 `1.0.0`과 같이 적절한 3부분으로 구성된 Maven 버전을 설정합니다. 프로덕션에 배포할 때마다 버전을 늘립니다.
 

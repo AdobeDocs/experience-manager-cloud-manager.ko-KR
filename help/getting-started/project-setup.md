@@ -5,7 +5,7 @@ exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '1395'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -340,4 +340,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 모범 사례를 기반으로 코드 개발 {#develop-your-code-based-on-best-practices}
 
-Adobe 엔지니어링 및 컨설팅 팀은 AEM 개발자를 위한 [포괄적인 모범 사례 세트](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)를 개발했습니다.
+Adobe 엔지니어링 및 컨설팅 팀은 [AEM 개발자를 위한 포괄적인 모범 사례 세트](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)를 개발했습니다.

@@ -5,7 +5,7 @@ exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 81%
 
 [!UICONTROL Cloud Manager] 역할은 Admin Console에서 관리합니다. [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
 
-Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. To learn more about the Adobe Admin Console, see the documentation for [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html).
+Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html) 설명서를 참조하십시오.
 
 [!UICONTROL Cloud Manager] 사용자에게 적절한 역할 기반 권한을 제공하기 위해 고객 조직의 관리자는 4개의 [!UICONTROL Cloud Manager] 역할에 해당하는 [!UICONTROL AEM Managed Services] 제품 컨텍스트에서 새 제품 프로필을 만들어야 합니다.
 
@@ -57,7 +57,7 @@ Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에
 
 Admin Console을 사용하여 이러한 제품 프로필에 사용자/그룹을 만들거나 추가할 수 있습니다.
 
-1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에 Admin Console에 로그인합니다.
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)의 Admin Console에 로그인합니다.
 
 1. **개요** 탭을 클릭하고 **제품 및 서비스** 카드에서 수정할 제품을 클릭합니다. 목록에 없으면 **제품** 탭에서 제품을 찾아 클릭합니다.
 
@@ -93,26 +93,26 @@ Admin Console을 사용하여 이러한 제품 프로필에 사용자/그룹을 
 
 제품 프로필을 만든 후에는 사용자 또는 사용자 그룹을 추가할 수 있습니다.
 
-1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)에 Admin Console에 로그인합니다.
+1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)의 Admin Console에 로그인합니다.
 
 1. Admin Console에서 **사용자** 탭을 선택합니다.
 
    ![사용자 탭](/help/assets/admin-console-users.png)
 
-1. 왼쪽 탐색 패널에서 **사용자**&#x200B;를 클릭한 다음 수정할 사용자를 클릭합니다.
+1. 왼쪽 탐색 패널에서 **사용자**&#x200B;를 클릭한 후 수정할 사용자를 선택합니다.
 
-1. **제품** 섹션에서 줄임표 버튼을 클릭하고 **편집**&#x200B;을 선택합니다.
+1. **제품** 섹션에서 줄임표 버튼을 클릭한 후 **편집**&#x200B;을 선택합니다.
 
    ![사용자 편집](/help/assets/admin-console-edit-user.png)
 
 1. **제품 및 사용자 그룹 편집** 대화 상자에서 더하기 버튼을 클릭하고 사용자에게 할당할 프로필을 선택합니다.
 
-   * 사용자가 이미 역할에 할당된 경우 더하기 버튼은 편집 버튼(연필)이지만 동일한 방식으로 작동합니다.
+   * 사용자가 이미 역할에 할당된 경우 더하기 버튼에 편집 버튼(연필)이 나타나며 같은 방식으로 사용할 수 있습니다.
 
    ![제품 및 사용자 그룹 편집](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. **저장**&#x200B;을 클릭하여 사용자에 프로필을 저장합니다.
 
-프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고 **할당된 제품 프로필** 탭을 선택한 다음 **제품 프로필 할당**&#x200B;을 클릭하여 프로필을 할당합니다.
+프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고&#x200B;**할당된 제품 프로필** 탭을 선택한 후 **제품 프로필 할당**&#x200B;을 클릭하여 프로필을 할당합니다.
 
 ![그룹에 프로필 할당](/help/assets/admin-console-edit-user-groups.png)

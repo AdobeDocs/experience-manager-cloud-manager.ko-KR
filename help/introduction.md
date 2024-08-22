@@ -5,7 +5,7 @@ exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
 workflow-type: tm+mt
 source-wordcount: '1256'
-ht-degree: 48%
+ht-degree: 55%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="AMS용 Cloud Manager 소개"
->abstract="조직은 클라우드에서 Adobe Experience Manager를 자체 관리할 수 있습니다. 여기에는 IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 맞춤화 또는 업데이트를 신속하게 전달할 수 있는 CI/CD(지속적 통합 및 지속적 배포) 프레임워크가 포함되어 있습니다."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="프로그램 제작"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="환경 만들기"
+>abstract="조직은 클라우드에서 Adobe Experience Manager를 자체 관리할 수 있습니다. 여기에는 IT팀 및 구현 파트너가 성능 또는 보안을 손상하지 않고 맞춤화 또는 업데이트를 신속하게 게재할 수 있는 CI/CD(지속적 통합 및 지속적 게재) 프레임워크가 포함되어 있습니다."
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="프로그램 제작"
+>additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="환경 만들기"
 
 ## 소개 {#introduction}
 
@@ -57,7 +57,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 ### CI/CD 파이프라인 {#ci-cd-pipeline}
 
-[!UICONTROL Cloud Manager]의 주요 기능 중 하나는 최적화된 CI/CD 파이프라인을 이용하여 사용자 지정 코드 또는 업데이트(예: 웹 사이트에 새 구성 요소 추가)의 게재 속도를 단축하는 기능입니다.
+[!UICONTROL Cloud Manager]의 주요 기능 중 하나는 최적화된 CI/CD 파이프라인을 이용하여 사용자 정의 코드 또는 업데이트(예: 웹 사이트에 새 구성 요소 추가)의 게재 속도를 단축하는 기능입니다.
 
 [!UICONTROL Cloud Manager] UI를 통해 고객이 CI/CD 파이프라인을 구성하고 시작할 수 있습니다. 이 파이프라인의 일부로, 고품질 애플리케이션만 프로덕션 환경에 전달되도록 철저한 코드 검사가 실행됩니다.
 
@@ -67,7 +67,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 [!UICONTROL Cloud Manager]에서는 변화하는 비즈니스 수요에 따라 경험을 게재할 수 있도록 유연하고 구성 가능한 배포 모드를 제공합니다.
 
-자동 트리거 모드에서는 코드 커밋과 같은 특정 이벤트에 따라 코드가 환경에 자동으로 배포됩니다. 또한, 영업시간 외에도 기간을 지정하여 코드 배포를 예약할 수 있습니다.
+자동 트리거 모드에서는 코드 커밋과 같은 특정 이벤트에 따라 코드가 환경에 자동으로 배포됩니다. 또한 영업시간 외에도 기간을 지정하여 코드 배포를 예약할 수 있습니다.
 
 배포 트리거와 관계없이, 배포가 트리거될 때마다 품질 검사가 CI/CD 파이프라인 실행의 일부로 항상 수행됩니다. 품질 검사에는 코드 검사, 보안 테스트 및 성능 테스트가 포함되며, 이러한 테스트는 사용자 또는 파트너의 노력 없이 즉시 제공됩니다.
 
@@ -75,7 +75,7 @@ Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할
 
 ## Cloud Manager의 옵션 기능 {#optional-features-in-cloud-manager}
 
-Cloud Manager은 특정 환경 설정 및 필요에 따라 프로젝트에 도움이 될 수 있는 추가 고급 기능을 제공합니다. 이러한 기능에 관심이 있는 경우 CSE(고객 성공 엔지니어) 또는 Adobe 담당자에게 연락하여 자세한 내용을 논의하십시오.
+Cloud Manager은 특정 환경 설정 및 필요에 따라 프로젝트에 도움이 될 수 있는 추가 고급 기능을 제공합니다. 이러한 기능에 관심이 있는 경우 CSE(Customer Success Engineer) 또는 Adobe 담당자에게 연락하여 자세한 내용을 문의하십시오.
 
 ### 자동 크기 조정 {#autoscaling}
 
@@ -129,5 +129,5 @@ Cloud Manager은 특정 환경 설정 및 필요에 따라 프로젝트에 도�
 * 미리보기 Dispatcher/게시 쌍은 파란색/녹색 배포의 일부가 아닙니다.
 * 모든 Dispatcher/게시 쌍은 다른 모든 Dispatcher/게시자 쌍과 동일합니다.
 * 파란색/녹색은 프로덕션 환경에만 사용할 수 있습니다.
-* 파란색/녹색은 AWS 및 Azure에서 사용할 수 있습니다.
+* AWS 및 Azure에서도 파란색/녹색을 사용할 수 있습니다.
 * 파란색/녹색은 Assets 전용 고객에게는 제공되지 않습니다.
