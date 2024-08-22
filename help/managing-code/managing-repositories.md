@@ -3,9 +3,9 @@ title: Cloud Manager에서 저장소 관리
 description: Cloud Manager에서 git 저장소 만들기, 확인 및 편집하는 방법을 알아봅니다.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 
 ## 저장소 추가 {#adding-repositories}
 
-**저장소** 창에서 **저장소 추가** 단추를 클릭하여 **저장소 추가** 마법사를 시작합니다.
+**저장소 창**&#x200B;에서 **저장소 추가** 버튼을 클릭하여 **저장소 추가** 마법사를 시작합니다.
 
 ![저장소 추가 마법사](assets/add-repository-wizard.png)
 
-Cloud Manager은 Adobe이 관리하는 저장소(**Adobe 저장소**)와 자체 자체 관리하는 저장소(**개인 저장소**)를 모두 지원합니다. 필수 필드는 추가하기 위해 선택한 저장소 유형에 따라 다릅니다. 자세한 내용은 다음 문서를 참조하십시오.
+Cloud Manager는 Adobe에서 관리하는 저장소(**Adobe 저장소**)와 사용자 관리 저장소(**비공개 저장소**)를 모두 지원합니다. 필수 필드는 추가하기 위해 선택한 저장소 유형에 따라 다릅니다. 자세한 내용은 다음 문서를 참조하십시오.
 
 * [Cloud Manager에서 Adobe 저장소 추가](adobe-repositories.md)
 * [Cloud Manager에서 비공개 저장소 추가](private-repositories.md)
@@ -69,7 +69,7 @@ Cloud Manager은 Adobe이 관리하는 저장소(**Adobe 저장소**)와 자체 
 
 ## 저장소 정보 확인 {#repo-info}
 
-**저장소** 창에서 저장소를 볼 때 도구 모음의 **저장소 정보 액세스** 단추를 클릭하여 프로그래밍 방식으로 Adobe 관리 저장소에 액세스하는 방법에 대한 세부 정보를 볼 수 있습니다.
+**저장소** 창에서 저장소를 볼 때 도구 모음에서 **저장소 정보 액세스** 버튼을 클릭하여 Adobe 관리 저장소에 액세스하는 방법에 대한 세부 정보를 프로그래밍 방식으로 볼 수 있습니다.
 
 ![저장소 정보](assets/access-repo-info.png)
 
@@ -79,7 +79,7 @@ Cloud Manager은 Adobe이 관리하는 저장소(**Adobe 저장소**)와 자체 
 
 **분기 확인 / 프로젝트 만들기** 액션은 저장소의 상태에 따라 두 가지 기능을 수행합니다.
 
-* 저장소를 새로 만드는 경우 작업은 [AEM project archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을(를) 기반으로 샘플 프로젝트를 만듭니다.
+* 저장소가 새로 생성된 경우 이 액션은 [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을 기반으로 샘플 프로젝트를 생성합니다.
 * 저장소에 이미 샘플 프로젝트가 생성된 경우 저장소와 해당 분기의 상태를 확인하고 샘플 프로젝트가 이미 존재하는지 여부를 다시 보고합니다.
 
 ![분기 확인 액션](assets/check-branches.png)
@@ -90,7 +90,7 @@ Cloud Manager은 Adobe이 관리하는 저장소(**Adobe 저장소**)와 자체 
 
 ## 보기 및 업데이트 {#view-update}
 
-**보기 및 업데이트** 액션은 **저장소 업데이트** 대화 상자를 엽니다. 이를 사용하여 **이름** 및 **저장소 URL 미리 보기**&#x200B;를 보고 저장소의 **설명**&#x200B;을 업데이트할 수 있습니다.
+**보기 및 업데이트** 액션은 **저장소 업데이트** 대화 상자를 엽니다. 이를 사용하여 **이름** 및 **저장소 URL 미리보기**&#x200B;를 확인하고 저장소에 대한 **설명**&#x200B;을 업데이트할 수 있습니다.
 
 ![저장소 정보 보기 및 업데이트](assets/update-repository.png)
 
@@ -104,4 +104,4 @@ Cloud Manager은 Adobe이 관리하는 저장소(**Adobe 저장소**)와 자체 
 
 동일한 이름의 저장소를 삭제한 후 새 저장소를 만들려고 하면 `An error has occurred while trying to create repository. Contact your CSE or Adobe Support.` 오류 메시지가 나타납니다.
 
-이 오류 메시지가 표시되면 Adobe 지원 센터에 문의하여 삭제된 저장소의 이름을 바꾸거나 새 저장소의 다른 이름을 선택할 수 있도록 하십시오.
+이 오류 메시지가 표시되면 Adobe 지원 센터에 문의하여 삭제된 저장소의 이름을 바꾸거나 새 저장소에 대해 다른 이름을 선택할 수 있도록 하십시오.

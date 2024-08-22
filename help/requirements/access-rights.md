@@ -3,9 +3,9 @@ title: 액세스 권한
 description: Adobe ID와 이를 사용하여 Experience Cloud 리소스에 액세스하는 방법에 대해 알아보십시오.
 exl-id: 9e51936c-9727-4b9c-a86a-2ea3aabd42cf
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe ID와 이를 사용하여 Experience Cloud 리소스에 액세스하는 �
 
 온보딩 프로세스의 일환으로 Adobe는 Adobe Identity Management System(IMS)에 회사의 조직 식별자를 만듭니다. IMS는 모든 사용자와 사용자의 권한을 관리할 수 있는 곳입니다. 이 조직의 멤버로, [!UICONTROL Experience Cloud] 서비스에 대한 액세스 권한이 부여되는 각 사용자는 고유한 Adobe ID가 있어야 합니다.
 
-Adobe ID을 시작하려면 사용 가능한 ID 유형 중 하나를 사용하여 Adobe ID을 가져오는 방법에 대한 자세한 지침은 [Adobe ID 유형 관리](https://helpx.adobe.com/kr/enterprise/using/identity.html)를 참조하십시오.
+Adobe ID로 시작하려면 사용 가능한 ID 유형 중 하나를 사용하여 Adobe ID를 얻는 방법에 대한 자세한 지침은 [Adobe ID 유형 관리](https://helpx.adobe.com/kr/enterprise/using/identity.html)를 참조하십시오.
 
 ### 사용자 및 역할 {#users-and-roles}
 

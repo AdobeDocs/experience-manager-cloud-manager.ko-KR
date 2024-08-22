@@ -3,16 +3,16 @@ title: 제품 업데이트 마법사
 description: 제품 업데이트 마법사가 Cloud Manager 내에서 엔드 투 엔드 AEM 업데이트 프로세스를 간소화하는 방법을 알아보십시오.
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
 # 제품 업데이트 마법사 {#product-update-wizard}
 
-제품 업데이트 마법사는 Cloud Manager를 사용하여 Adobe Experience Manager 6.5의 최신 버전으로 단계별 업그레이드 환경을 안내합니다. Cloud Manager의 CI/CD 프레임워크 및 내장된 자동 테스트를 사용하여 엔드 투 엔드 프로세스를 간소화하고 AEM 모범 사례를 준수하도록 보장합니다.
+제품 업데이트 마법사는 Cloud Manager를 사용하여 Adobe Experience Manager 6.5의 최신 버전으로 단계별 업그레이드 환경을 안내합니다. Cloud Manager의 CI/CD 프레임워크 및 기본 제공되는 자동 테스트를 사용하여 엔드 투 엔드 프로세스를 간소화하고 AEM 모범 사례를 준수하도록 보장합니다.
 
 마법사에는 AEM 제품 업데이트 중에 사용자를 안내하는 5가지 단계가 포함되어 있습니다.
 

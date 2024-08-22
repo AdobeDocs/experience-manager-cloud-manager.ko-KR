@@ -3,16 +3,16 @@ title: Adobe Cloud Manager와 Git 통합
 description: 이 비디오 시리즈는 Adobe Cloud Manager와 함께 고객 관리(온프레미스) git 저장소를 설정하고 통합하는 과정을 안내합니다.
 exl-id: e517f8a4-23f0-4486-8278-91396dba76ec
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
 # Adobe Cloud Manager와 Git 통합
 
-Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 저장소와 함께 제공됩니다. Cloud Manager의 git 저장소를 즉시 사용할 수 있으며, 또한 온프레미스 또는 고객 관리 git 저장소를 Cloud Manager와 통합하는 옵션도 있습니다.
+Adobe Cloud Manager는 Cloud Manager의 CI/CD 파이프라인을 사용하여 코드를 배포하는 데 사용되는 단일 git 저장소와 함께 제공됩니다. Cloud Manager의 git 저장소를 즉시 사용할 수 있으며 또한 온프레미스 또는 고객 관리 git 저장소를 Cloud Manager와 통합하는 옵션도 있습니다.
 
 ## Git 통합 개요
 

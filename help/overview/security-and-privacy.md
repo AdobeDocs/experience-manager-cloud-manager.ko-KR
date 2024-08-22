@@ -1,24 +1,24 @@
 ---
 title: 보안 및 개인정보 보호
-description: Cloud Manager에서 코드 및 아티팩트 에셋의 보안 및 개인정보 보호에 대해 알아보십시오.
+description: Cloud Manager에서 코드 및 아티팩트 자산의 보안 및 개인정보 보호에 대해 알아보십시오.
 exl-id: 67df1987-8db7-40bd-9717-1bf194e957f7
 source-git-commit: 200366e5db92b7ffc79b7a47ce8e7825b29b7969
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # 보안 및 개인정보 보호 {#security-and-privacy}
 
-Cloud Manager에서 코드 및 아티팩트 에셋의 보안 및 개인정보 보호에 대해 알아보십시오.
+Cloud Manager에서 코드 및 아티팩트 자산의 보안 및 개인정보 보호에 대해 알아보십시오.
 
 ## 역할 및 권한 {#roles}
 
 [!UICONTROL Cloud Manager]에는 적절한 권한으로 미리 구성된 역할이 있습니다.
 
-Admin Console 및 사용자 역할 권한에서 할당할 수 있는 가능한 역할에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하세요.
+Admin Console에서 할당할 수 있는 가능한 역할과 사용자 역할 권한에 대한 자세한 내용은 [역할 기반 권한](/help/requirements/role-based-permissions.md)을 참조하십시오.
 
 ## 리소스 격리 {#resource-isolation}
 
