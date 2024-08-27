@@ -2,7 +2,7 @@
 title: GitHub 검사 주석
 description: GitHub가 개인 저장소에 대한 주석 PR을 확인하여 유용한 피드백을 제공하는 방법에 대해 알아봅니다.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 47%
@@ -10,7 +10,7 @@ ht-degree: 47%
 ---
 
 
-# GitHub 확인 알림 {#github-annotations}
+# GitHub 확인 주석 {#github-annotations}
 
 GitHub가 개인 저장소에 대한 주석 PR을 확인하여 유용한 피드백을 제공하는 방법에 대해 알아봅니다.
 

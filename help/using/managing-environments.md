@@ -2,10 +2,10 @@
 title: 환경 관리
 description: Cloud Manager를 사용하여 환경을 관리하는 방법에 대해 알아봅니다.
 exl-id: 700b0b4c-1e1a-4993-b366-426b14a98f8e
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
+source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 83%
+source-wordcount: '273'
+ht-degree: 86%
 
 ---
 
@@ -58,7 +58,7 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경이 �
 
 >[!NOTE]
 >
->환경 로그가 필요한 경우 고객 성공 엔지니어를 통해 요청할 수 있습니다.
+>고객 성공 엔지니어를 통해 환경 로그를 요청합니다.
 
 ## 비디오 튜토리얼 {#video-tutorial}
 
