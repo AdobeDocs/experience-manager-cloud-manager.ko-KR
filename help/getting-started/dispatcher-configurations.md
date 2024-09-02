@@ -1,30 +1,30 @@
 ---
 title: Dispatcher 구성
-description: Cloud Manager을 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
+description: Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 48%
+ht-degree: 98%
 
 ---
 
 
 # Dispatcher 구성 {#manage-your-dispatcher-configurations}
 
-Cloud Manager을 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다
+Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
 
 ## Cloud Manager을 사용하여 Dispatcher 구성 배포 {#deploying-dispatcher-configurations}
 
-Cloud Manager은 웹 서버 및 Dispatcher 구성 파일이 일반 AEM 콘텐츠 패키지와 함께 Git 저장소에 저장된다고 가정하여 배포할 수 있습니다.
+Cloud Manager는 웹 서버 및 Dispatcher 구성 파일이 일반 AEM 콘텐츠 패키지와 함께 Git 저장소에 저장된다고 가정하여 배포할 수 있습니다.
 
-이 기능을 활용하려면 Maven 빌드는 `conf` 및 `conf.d` 두 개 이상의 디렉터리가 포함된 .zip 파일을 생성해야 합니다. 이 .zip 파일을 `maven-assembly-plugin`을 사용하여 생성할 수 있습니다.
+이 기능을 활용하려면 Maven 빌드는 `conf` 및 `conf.d`의 두 개 이상의 디렉터리가 포함된 .zip 파일을 생성해야 합니다. 이 .zip 파일을 `maven-assembly-plugin`을 사용하여 생성할 수 있습니다.
 
-Cloud Manager가 내장된 [프로젝트 생성 마법사](/help/getting-started/using-the-wizard.md)를 사용하여 생성한 프로젝트는 자동으로 올바른 Maven 프로젝트 구조가 생성됩니다. AMS(Managed Services) Adobe을 처음 사용하는 경우 이 경로가 권장됩니다.
+Cloud Manager가 내장된 [프로젝트 생성 마법사](/help/getting-started/using-the-wizard.md)를 사용하여 생성한 프로젝트는 자동으로 올바른 Maven 프로젝트 구조가 생성됩니다. Adobe Managed Services(AMS)를 처음 사용하는 경우 권장되는 경로입니다.
 
-Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저장소의 해당 디렉터리로 대체됩니다. 웹 서버 및 Dispatcher 구성 파일에는 종종 환경별 세부 정보가 필요하므로 이 기능을 올바르게 사용하기 전에 CSE(고객 성공 엔지니어)와 협력하여 `/etc/sysconfig/httpd`에서 적절한 환경 변수를 설정해야 합니다.
+Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저장소의 디렉터리로 바뀝니다. 웹 서버 및 Dispatcher 구성 파일에는 환경별 세부 정보가 필요한 경우가 많기 때문에 이 기능을 올바르게 사용하기 전에 CSE(고객 성공 엔지니어)와 협력하여 `/etc/sysconfig/httpd`에서 적절한 환경 변수를 설정해야 합니다.
 
-## 기존 관리 서비스 고객을 위한 Dispatcher 구성 {#steps-for-configuring-dispatcher}
+## 기존 관리 서비스 고객에 대한 Dispatcher 구성 {#steps-for-configuring-dispatcher}
 
 다음 단계에 따라 초기 Dispatcher 구성을 완료합니다.
 
@@ -33,12 +33,12 @@ Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저�
 1. 각 대상 Dispatcher의 키-값 쌍에 필요한 변수를 정의하고 CSE에 각 인스턴스의 `/etc/sysconfig/httpd`에 추가하도록 요청합니다.
 1. 스테이징 환경에서 업데이트된 구성을 테스트합니다.
 1. 테스트가 완료되면 CSE에 프로덕션에 배포하도록 요청합니다.
-1. 파일을 Git 저장소에 커밋합니다.
+1. Git 저장소에 파일을 커밋합니다.
 1. Cloud Manager를 통해 배포합니다.
 
 >[!NOTE]
 >
->Dispatcher 및 웹 서버 구성을 Git 저장소로 마이그레이션하는 작업은 Cloud Manager 온보딩 중에 수행할 수 있지만 나중에 수행할 수도 있습니다.
+>Dispatcher 및 웹 서버 구성을 Git 저장소로 마이그레이션하는 작업은 Cloud Manager 온보딩 작업 중에 수행할 수 있지만 나중에 수행할 수도 있습니다.
 
 ### 예 {#example}
 
@@ -48,7 +48,7 @@ Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저�
 
    여기서 임의의 이름을 사용할 수 있지만 이 단계에서 작성된 디렉터리 이름은 6단계에서 사용한 이름과 같아야 합니다.
 
-1. 이 하위 디렉터리에는 Maven 어셈블리 플러그인을 사용하여 Dispatcher .zip 파일을 작성하는 Maven 모듈이 포함되어 있습니다. `dispatcher` 디렉터리에서 이 내용이 포함된 `pom.xml` 파일을 만들고 필요에 따라 `parent` 참조, `artifactId` 및 `name`을(를) 변경합니다.
+1. 이 하위 디렉터리에는 Maven 어셈블리 플러그인을 사용하여 Dispatcher.zip 파일을 작성하는 Maven 모듈이 포함됩니다. `dispatcher` 디렉터리에서 이 내용이 포함된 `pom.xml` 파일을 만들고 필요에 따라 `parent` 참조 `artifactId` 및 `name`를 변경합니다.
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -90,7 +90,7 @@ Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저�
 
    * 1단계에서와 같이 artifactId와 name은 원하는 경우 다른 값이 될 수 있습니다. `dispatcher`는 여기서 단지 예시일 뿐입니다.
 
-1. Maven 어셈블리 플러그인을 사용하려면 .zip 파일을 만드는 방법을 정의하기 위해 `descriptor`이(가) 필요합니다. 이 설명자를 만들려면 `dispatcher` 하위 디렉터리에 다음 내용이 포함된 `assembly.xml`이라는 이름의 파일을 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일의 26행에 있습니다.
+1. Maven 어셈블리 플러그인은 .zip 파일이 생성되는 방법을 정의하기 위해 `descriptor`가 필요합니다. 이 설명자를 만들려면 `dispatcher` 하위 디렉터리에 다음 내용이 포함된 `assembly.xml`이라는 이름의 파일을 만듭니다. 이 파일 이름은 위의 `pom.xml` 파일의 26행에 있습니다.
 
    ```xml
    <assembly xmlns="http://maven.apache.org/ASSEMBLY/2.0.0"
@@ -113,7 +113,7 @@ Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저�
    </assembly>
    ```
 
-1. Dispatcher 하위 디렉터리 내부에 `src`(위 11행의 어셈블리 설명자에서 참조)라는 하위 디렉터리를 만들어 실제 Apache 및 Dispatcher 구성을 저장합니다. 이 `src` 디렉터리 내에서 `conf`, `conf.d`, `conf.dispatcher.d` 및 `conf.modules.d`라는 디렉터리를 만듭니다.
+1. Dispatcher 하위 디렉터리 내부에 `src`라는 하위 디렉터리(위 11행의 어셈블리 설명자에서 참조)를 생성하여 실제 Apache 및 Dispatcher 구성을 저장합니다. 이 `src` 디렉터리 내에서 `conf`, `conf.d`, `conf.dispatcher.d` 및 `conf.modules.d`라는 디렉터리를 만듭니다.
 
 1. `conf`, `conf.d`, `conf.dispatcher.d` 및 `conf.modules.d` 디렉터리를 구성 파일로 채웁니다. 예를 들어 기본 구성은 이러한 파일과 심볼 링크로 구성됩니다.
 
@@ -190,9 +190,9 @@ Dispatcher 인스턴스에 배포하면 인스턴스의 디렉터리가 Git 저�
            └── 02-dispatcher.conf
    ```
 
-1. 마지막으로 프로젝트의 루트에 있는 `pom.xml` 파일에서 `<module>` 요소를 추가하여 Dispatcher 모듈을 포함합니다.
+1. 마지막으로 프로젝트의 루트에 있는 `pom.xml` 파일에 `<module>` 요소를 추가하여 Dispatcher 모듈을 포함합니다.
 
-   예를 들어 기존 모듈 목록이 다음과 같은 경우
+   예를 들어 기존 모듈 목록은 다음과 같습니다.
 
    ```xml
        <modules>

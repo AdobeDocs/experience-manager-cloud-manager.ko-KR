@@ -5,7 +5,7 @@ exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
 workflow-type: tm+mt
 source-wordcount: '1263'
-ht-degree: 63%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용�
 
 ## 환경 세부 정보 {#details}
 
-Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
+Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.9.4가 설치되어 있습니다.
@@ -24,7 +24,7 @@ Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
 * 설치된 Java 버전은 Oracle JDK 8u401 및 Oracle JDK 11.0.22입니다.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
-* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
+* 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
 * 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
    * `bzip2`
    * `unzip`
@@ -32,7 +32,7 @@ Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
    * `imagemagick`
    * `graphicsmagick`
 * [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지를 설치할 수 있습니다.
-* 모든 빌드는 깨끗한 환경에서 수행됩니다. 빌드 컨테이너는 실행 간에 상태를 유지하지 않습니다.
+* 모든 빌드는 완전히 새로운 환경에서 수행됩니다. 빌드 컨테이너는 실행 간에 상태를 유지하지 않습니다.
 * Maven은 항상 다음 세 가지 명령을 사용하여 실행됩니다.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -54,7 +54,7 @@ Cloud Manager의 빌드 환경에는 다음 속성이 있습니다.
 
 ## HTTPS Maven 저장소 {#https-maven}
 
-Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(2023.12.0 릴리스로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로, Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(2023.12.0 릴리스로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
 
 이러한 보안 강화로 인해 일부 사용자는 빌드 단계에서 문제에 직면할 수 있으며, 특히 안전하지 않은 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 이와 같은 문제가 보다 빈번하게 발생할 수 있습니다.
 
@@ -62,14 +62,14 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 ## 특정 Java 버전 사용 {#using-java-version}
 
-기본적으로 Cloud Manager 빌드 프로세스를 통해 빌드된 프로젝트는 Oracle 8 JDK를 사용합니다. 대체 JDK를 사용하려는 고객은 두 가지 옵션이 있습니다.
+기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스를 통해 구축됩니다. 대체 JDK를 사용하려는 고객은 두 가지 옵션이 있습니다.
 
 * [Maven 툴체인](#maven-toolchains)
 * [전체 Maven 실행 프로세스에 대한 대체 JDK 버전 선택](#alternate-maven)
 
 ### Maven 툴체인 {#maven-toolchains}
 
-[Maven 툴체인 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하면 프로젝트가 툴체인 인식 Maven 플러그인의 맥락에서 사용할 특정 JDK(또는 툴체인)를 선택할 수 있습니다. 이 프로세스는 공급업체 및 버전 값을 지정하여 프로젝트의 `pom.xml` 파일에서 수행됩니다. `pom.xml` 파일의 샘플 섹션은 다음과 같습니다.
+[Maven 툴체인 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하면 프로젝트가 툴체인 인식 Maven 플러그인의 맥락에서 사용될 특정 JDK(또는 툴체인)를 선택할 수 있습니다. 공급업체 및 버전 값을 지정하여 프로젝트의 `pom.xml` 파일에서 이 프로세스를 수행합니다. `pom.xml` 파일의 샘플 섹션은 다음과 같습니다.
 
 ```xml
         <plugin>
@@ -94,7 +94,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 </plugin>
 ```
 
-이 프로세스를 수행하면 모든 툴체인 인식 Maven 플러그인이 Oracle JDK 버전 11을 사용하게 됩니다.
+그러면 모든 툴체인 인식 Maven 플러그인이 Oracle JDK 버전 11을 사용하게 됩니다.
 
 이 방법을 사용하면 Maven 자체는 기본 JDK(Oracle 8)를 사용하여 계속 실행되며 `JAVA_HOME` 환경 변수는 변경되지 않습니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)과 같은 플러그인을 통해 Java 버전의 확인 또는 적용은 작동하지 않으며 이러한 플러그인은 사용해서는 안 됩니다.
 
@@ -115,7 +115,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 ### 대체 Maven 실행 JDK 버전 {#alternate-maven}
 
-전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수도 있습니다. 툴체인 옵션과 달리 툴체인 구성도 설정되지 않은 경우 모든 플러그인에 사용되는 JDK가 변경됩니다. 이 경우 툴체인 인식 Maven 플러그인에 툴체인 구성이 계속 적용됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
+전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수도 있습니다. 툴체인 옵션과 달리 툴체인 구성이 툴체인 인식 Maven 플러그인에 여전히 적용되는 경우 툴체인 구성도 설정되어 있지 않는 한 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
 
 이 프로세스를 수행하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`(이)라는 파일을 만드십시오. 이 파일은 콘텐츠 `11` 또는 `8`을 가질 수 있습니다. 다른 모든 값은 무시됩니다. `11`을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`로 설정됩니다. `8`을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_401`로 설정됩니다.
 
@@ -125,7 +125,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 경우에 따라 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 할 수도 있습니다.
 
-예를 들어 JavaScript 축소에 대해 gulp와 같은 도구를 사용하는 경우 스테이징 및 프로덕션 환경보다 개발에 대해 다른 축소 수준을 선호할 수 있습니다.
+예를 들어 JavaScript 최소화를 위해 gulp와 같은 도구를 사용하는 경우, 개발과 스테이징 및 프로덕션 환경에 대해 다른 최소화 수준을 선호할 수 있습니다.
 
 이를 지원하기 위해 Cloud Manager는 모든 실행 시 빌드 컨테이너에 표준 환경 변수를 추가합니다.
 
@@ -143,23 +143,23 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 표준 환경 변수는 여러 곳에서 사용할 수 있습니다.
 
-#### 환경 작성, 미리보기 및 게시 {#author-preview-publish}
+#### 작성, 미리보기 및 게시 환경 {#author-preview-publish}
 
-일반 환경 변수와 비밀은 작성, 미리보기 및 게시 환경에서 사용할 수 있습니다.
+일반 환경 변수와 시크릿은 작성, 미리보기 및 게시 환경에서 사용할 수 있습니다.
 
 #### Dispatcher {#dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)에서는 일반 환경 변수만 사용할 수 있습니다. 비밀은 사용할 수 없습니다.
+[Dispatcher](https://experienceleague.adobe.com/ko/docs/experience-manager-dispatcher/using/dispatcher)에는 일반 환경 변수만 사용할 수 있습니다. 시크릿은 사용할 수 없습니다.
 
-그러나 환경 변수는 `IfDefine` 지시문에서 사용할 수 없습니다.
+그러나 환경 변수는 `IfDefine` 지침에서 사용할 수 없습니다.
 
 >[!TIP]
 >
->배포하기 전에 [로컬에서 Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)를 사용하여 환경 변수 사용을 확인하십시오.
+>배포하기 전에 [로컬에서 Dispatcher](https://experienceleague.adobe.com/ko/docs/ experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)를 사용하여 환경 변수 사용을 확인합니다.
 
 #### OSGi 구성 {#osgi}
 
-일반 환경 변수 및 비밀 모두 [OSGi 구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi)에서 사용할 수 있습니다.
+일반 환경 변수 및 시크릿 모두 [OSGi 구성](https://experienceleague.adobe.com/ko/docs/ experience-manager-65/content/implementing/deploying/configuring/configuring-osgi)에서 사용할 수 있습니다.
 
 ### 파이프라인 변수 {#pipeline-variables}
 
@@ -184,9 +184,9 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 * 변수 이름에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.
    * 규칙상 이름은 모두 대문자로 해야 합니다.
 * 파이프라인당 200개의 변수 제한이 있습니다.
-* 각 이름은 100자 미만이어야 합니다.
-* 각 문자열 값은 2048자 미만이어야 합니다.
-* 각 `secretString` 값은 500자 미만이어야 합니다.
+* 각 이름은 100자 이하여야 합니다.
+* 각 문자열 값은 2048자 이하여야 합니다.
+* 각 `secretString` 값은 500자 이하여야 합니다.
 
 Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다.
 
@@ -206,7 +206,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-제대로 작동하려면 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며, 결과적으로 적절한 언어 인터프리터가 설치되어야 합니다. 이 시나리오는 APT를 호출하기 위해 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)을(를) 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 예를 들어 Python을 설치하려면 다음을 수행할 수 있습니다.
+완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며, 결과적으로 적절한 언어 인터프리터가 설치되어야 합니다. 이 시나리오는 APT를 호출하기 위해 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 예를 들어 Python을 설치하려면 다음 작업을 수행해야 합니다.
 
 ```xml
         <profile>
@@ -259,7 +259,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
         </profile>
 ```
 
-이 기법은 언어별 패키지를 설치하는 데도 사용할 수 있습니다. 즉, RubyGems의 경우 `gem`, Python 패키지의 경우 `pip`을(를) 사용합니다.
+이 기술은 언어별 패키지를 설치하는 데에도 사용할 수 있습니다. 즉, RubyGems에는 `gem` 또는 Python Package에는 `pip`를 사용하는 것입니다.
 
 >[!NOTE]
 >
