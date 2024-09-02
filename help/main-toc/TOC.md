@@ -8,9 +8,9 @@ feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
 source-git-commit: 8e2c57d2594691e7fb18d8a538caa9b54a26b6bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 99%
    + [GitHub 검사 구성](/help/managing-code/github-check-config.md)
    + [GitHub 검사 주석](/help/managing-code/github-annotations.md)
    + [Maven 프로젝트 버전 처리](/help/managing-code/maven-project-version.md)
-   + [Git과 통합](/help/managing-code/git-integration.md)
+   + [Git과 통합하기](/help/managing-code/git-integration.md)
    + [다중 Git 저장소를 사용하여 작업](/help/managing-code/multiple-git-repos.md)
 + 제품 업데이트 마법사 {#product-update-wizard}
    + [개요](/help/product-update-wizard/overview.md)
