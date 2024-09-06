@@ -3,9 +3,9 @@ title: Git 하위 모듈 지원
 description: Git 하위 모듈을 사용하여 빌드 시 Git 저장소에 있는 여러 분기의 콘텐츠를 병합할 수 있는 방법을 알아봅니다.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -87,8 +87,8 @@ Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 
 ### 제한 사항 및 권장 사항 {#limitations-recommendations-private-repos}
 
-개인 리포지토리에 Git 하위 모듈을 사용할 때는 다음 제한 사항에 유의하십시오.
+비공개 저장소에 Git 하위 모듈을 사용할 때는 다음 제한 사항에 유의하십시오.
 
-* 하위 모듈에 대한 Git URL은 HTTPS 또는 SSH 형식일 수 있지만 Github.com 저장소에 연결되어야 합니다. Adobe 저장소 하위 모듈을 GitHub 집계기 저장소에 추가하거나 그 반대로 추가하는 것은 작동하지 않습니다.
+* 하위 모듈의 Git URL은 HTTPS 또는 SSH 포맷일 수 있지만 Github.com 저장소에 연결해야 합니다. Adobe 저장소 하위 모듈을 GitHub 집계기 저장소에 추가하거나 그 반대로 추가하는 것은 작동하지 않습니다.
 * GitHub 하위 모듈은 Adobe GitHub 애플리케이션에 액세스할 수 있어야 합니다.
-* [Adobe 관리 리포지토리에 Git 하위 모듈을 사용할 때의 제한 사항](#limitations-recommendations)도 적용됩니다.
+* [Adobe 관리 저장소의 Git 하위 모듈 사용 시 제한 사항](#limitations-recommendations)도 적용됩니다.

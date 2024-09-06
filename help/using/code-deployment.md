@@ -3,9 +3,9 @@ title: 코드 배포
 description: 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 exl-id: 3d6610e5-24c2-4431-ad54-903d37f4cdb6
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 97%
 
 코드를 배포하는 방법과 배포 시 Cloud Manager에서 어떤 일이 발생하는지 알아보십시오.
 
-## Cloud Manager을 사용하여 코드 배포 {#deploying-code-with-cloud-manager}
+## Cloud Manager로 코드 배포 {#deploying-code-with-cloud-manager}
 
 필요한 저장소 및 환경을 포함하여 프로덕션 파이프라인을 구성했으면 코드를 배포할 준비가 된 것입니다.
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 
 ### 스테이지 배포 단계 {#stage-deployment}
 
-**스테이지 배포** 단계에는 다음 작업이 포함됩니다.
+**스테이지 배포** 단계에는 다음 액션이 포함됩니다.
 
 * **유효성 검사**: 이 단계에서는 파이프라인이 현재 사용 가능한 리소스를 사용하도록 구성되었는지 확인합니다. 예를 들어 구성된 분기가 존재하고 환경이 사용 가능한지를 확인합니다.
 * **빌드 및 단위 테스트**: 이 단계는 컨테이너화된 빌드 프로세스를 실행합니다. 자세한 내용은 [빌드 환경](/help/getting-started/build-environment.md)을 참조하십시오.
@@ -198,7 +198,7 @@ $ aio cloudmanager:pipeline:create-execution PIPELINE_ID --emergency
 * 프로덕션 배포 단계 이전의 어느 시점에서 마지막 실행이 실패한 경우 재실행이 불가능합니다.
 
 
-### API 재실행 {#reexecute-api}
+### 재실행 API {#reexecute-api}
 
 UI에서 사용할 수 있으며, [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution)를 사용하여 재실행을 트리거하고 재실행으로 트리거된 실행을 식별할 수도 있습니다.
 
@@ -250,6 +250,6 @@ HAL 링크의 `href` 값의 구문은 예시일 뿐이며 실제 값은 항상 H
 
 이 엔드포인트에 `PUT` 요청을 제출하여 성공하면 `201` 응답이 나타납니다. 응답 본문은 새로운 실행의 표시입니다. 이 기능은 API를 통해 일반 실행을 시작하는 것과 유사합니다.
 
-#### 재실행된 실행 식별 {#identifying}
+#### 재실행 식별 {#identifying}
 
 시스템은 트리거 필드에서 값 `RE_EXECUTE`로 재실행된 실행을 식별합니다.

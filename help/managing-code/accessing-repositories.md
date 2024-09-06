@@ -3,15 +3,15 @@ title: 저장소 액세스 정보
 description: Cloud Manager의 셀프서비스 Git 계정 관리를 사용하여 Adobe 관리 Git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '361'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # 저장소 액세스 정보 {#accessing-repos}
 
-Cloud Manager에서 셀프서비스 Git 계정 관리를 사용하여 Adobe 관리 Git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
+Cloud Manager의 셀프서비스 Git 계정 관리를 사용하여 Adobe 관리 Git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 
 ## 개요 페이지에서 저장소 정보 액세스 {#overview-page}
 
@@ -26,7 +26,7 @@ Cloud Manager에서 셀프서비스 Git 계정 관리를 사용하여 Adobe 관�
    * Git 사용자 이름
    * Git 암호
    * Cloud Manager Git 저장소의 URL
-   * Git 저장소에 원격으로 빠르게 추가하고 코드를 푸시하도록 Git 명령을 사전 빌드했습니다.
+   * 사전 설치 Git 명령을 사용하여 Git 저장소 및 푸시 코드에 대한 연결을 빠르게 추가할 수 있습니다.
 
    ![저장소 정보 창](assets/access-repo-info.png)
 

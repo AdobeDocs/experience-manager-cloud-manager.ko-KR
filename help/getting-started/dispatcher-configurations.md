@@ -3,9 +3,9 @@ title: Dispatcher 구성
 description: Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
 exl-id: ffc2b60e-bde7-48ca-b268-dea0f8fd4e30
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 98%
 
 Cloud Manager를 사용하여 Dispatcher 구성 파일을 배포하는 방법에 대해 알아봅니다.
 
-## Cloud Manager을 사용하여 Dispatcher 구성 배포 {#deploying-dispatcher-configurations}
+## Cloud Manager를 사용하여 Dispatcher 구성 배포 {#deploying-dispatcher-configurations}
 
 Cloud Manager는 웹 서버 및 Dispatcher 구성 파일이 일반 AEM 콘텐츠 패키지와 함께 Git 저장소에 저장된다고 가정하여 배포할 수 있습니다.
 

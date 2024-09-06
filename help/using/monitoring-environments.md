@@ -3,9 +3,9 @@ title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니다.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Managed Services는 임계값을 설정하는데, [!UICONTROL Cloud Manage
 
 왼쪽의 탐색에는 현재 선택한 범주 내에서 사용 가능한 지표가 표시되며, 현재 선택한 환경 및 인스턴스에 대한 데이터가 있습니다.
 
-개별 그래프는 임계값과 함께 시간 경과에 따른 데이터의 상태 및 그래프를 보여 줍니다. 여러 인스턴스가 표시되는 경우 각 인스턴스의 데이터는 별도의 시리즈에 저장됩니다.
+개별 그래프는 임계값과 함께 시간 경과에 따른 데이터의 상태와 그래프를 보여 줍니다. 여러 인스턴스가 표시되는 경우 각 인스턴스의 데이터는 별도의 시리즈에 저장됩니다.
 
 ![지표 그래프](/help/assets/Monitoring_Graphs1.png)
 

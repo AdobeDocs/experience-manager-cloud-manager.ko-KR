@@ -3,9 +3,9 @@ title: 알림
 description: Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십시오.
 exl-id: cfd5655f-2d2c-4304-b25c-6cdffe7ff64c
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '561'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ## Cloud Manager의 알림 {#cloud-manager-notifications}
 
-[!UICONTROL Cloud Manager]에서 프로덕션 파이프라인이 시작되고(성공 또는 실패) 프로덕션 배포를 시작할 때 알림을 보냅니다. **Go-Live 승인** 및 **예약됨** 단계에 도달하면. 이러한 알림은 [!UICONTROL Experience Cloud] 알림 시스템을 통해 전송됩니다.
+[!UICONTROL Cloud Manager]를 사용하여 프로덕션 배포 시작 시 프로덕션 파이프라인이 시작되고 완료될 때 알림(성공 또는 실패)을 보냅니다. 또한 **Go Live 승인** 및 **예약됨** 단계에 도달하면 알림을 보냅니다. 이러한 알림은 [!UICONTROL Experience Cloud] 알림 시스템을 통해 전송됩니다.
 
 >[!NOTE]
 >
@@ -58,17 +58,17 @@ Cloud Manager가 중요한 이벤트를 알리는 방법에 대해 알아보십�
 
 ![알림 구독](/help/assets/notifications-subscriptions.png)
 
-기본적으로 모든 제품에 대한 모든 알림을 받습니다. 제품 옆에 있는 **사용자 정의**&#x200B;를 클릭하여 해당 제품에 대해 수신하는 알림 유형을 정의합니다.
+기본적으로 모든 제품에 대한 모든 알림을 받게 됩니다. 제품 옆에 있는 **사용자 정의**&#x200B;를 클릭하여 해당 제품에 대해 수신하는 알림 유형을 정의합니다.
 
 ![알림 구독 사용자 정의](/help/assets/notifications-subscriptions-customize.png)
 
 ### 우선 순위 {#priority}
 
-우선 순위 경고는 **높음** 태그로 표시됩니다. 경고로만 수신되도록 구성할 수 있습니다. **우선 순위** 섹션에서 우선 순위 알림에 적합한 범주를 정의할 수 있습니다.
+우선순위 알림에는 **높음** 태그가 표시됩니다. 알림으로만 수신되도록 설정할 수 있습니다. **우선 순위** 섹션에서 우선 순위 알림에 적합한 범주를 정의할 수 있습니다.
 
 ![알림 우선 순위](/help/assets/notifications-priority.png)
 
-드롭다운을 사용하여 우선 순위로 적합한 범주 목록에 추가합니다. 범주 이름 옆의 `X`을(를) 클릭하여 제거합니다.
+드롭다운을 사용하여 우선 순위로 적합한 범주 목록에 추가합니다. 범주 이름 옆의 `X`를 클릭하여 제거합니다.
 
 ### 경고 {#alerts}
 

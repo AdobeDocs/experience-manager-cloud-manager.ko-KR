@@ -3,16 +3,16 @@ title: 새 프로젝트 마법사 사용
 description: 마법사를 사용하여 AEM 애플리케이션 프로젝트를 만드는 방법에 대해 배우려면 이 페이지를 따르십시오.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 
 # 새 프로젝트 마법사 사용 {#using-the-wizard}
 
-새 고객으로 Cloud Manager에 온보딩되면 빈 Git 저장소가 제공됩니다. 시작하는 데 도움을 주기 위해 Cloud Manager는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을 기반으로 최소 AEM 프로젝트를 생성하는 마법사를 제공합니다.
+새로운 고객으로 Cloud Manager에 온보딩되면 빈 Git 저장소를 제공합니다. 시작하는 데 도움을 주기 위해 Cloud Manager는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을 기반으로 최소 AEM 프로젝트를 생성하는 마법사를 제공합니다.
 
 마법사를 사용하여 AEM 프로젝트를 생성하려면 다음 단계를 수행하십시오.
 
@@ -33,7 +33,7 @@ ht-degree: 88%
 
    ![자세한 Archetype 매개변수](/help/assets/screen_shot_2018-10-08at60032am.png)
 
-1. Archetype을 사용하여 스타터 프로젝트를 만들고 지정된 Git 분기에 커밋하려면 **만들기**&#x200B;를 클릭하십시오.
+1. Archetype을 사용하여 스타터 프로젝트를 만들고 지정된 Git 분기에 커밋하려면 **만들기**&#x200B;를 클릭합니다.
 
 이제 기본 프로젝트가 준비되었습니다. 파이프라인을 설정할 시간입니다.
 

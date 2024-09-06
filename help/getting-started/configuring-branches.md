@@ -3,9 +3,9 @@ title: 분기 구성
 description: Git에서 첫 번째 분기를 설정하는 방법과 CI/CD 파이프라인에서 애플리케이션 코드를 배포하는 데 어떻게 사용되는지 알아보십시오.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Git에서 첫 번째 분기를 설정하는 방법과 CI/CD 파이프라인에�
 
 ## Git에서 첫 분기 설정 {#setting-up-your-first-branch-in-git}
 
-Cloud Manager에 온보딩된 각 프로그램에 대해 처음에는 비어 있던 단일 Git 저장소 [이(가) 프로비저닝됨](/help/requirements/environment-provisioning.md)됩니다. 이 저장소에는 개발 프로세스에 필요한 만큼의 분기가 포함될 수 있지만 CI/CD 파이프라인에서 스테이징 및 프로덕션으로 애플리케이션 코드를 배포하는 데 사용되는 분기가 하나 이상 있어야 합니다. 이 분기의 이름으로 `main`을 사용하는 것이 좋습니다. 편리하게, 이 접근 방식은 새 프로젝트를 설정할 때 Git 클라이언트의 기본 비헤이비어입니다.
+Cloud Manager에 온보딩된 각 프로그램에 대해 처음에는 비어 있던 단일 Git 저장소가 [프로비저닝됩니다](/help/requirements/environment-provisioning.md). 이 저장소에는 개발 프로세스에 필요한 만큼의 분기가 포함될 수 있지만 CI/CD 파이프라인에서 스테이징 및 프로덕션으로 애플리케이션 코드를 배포하는 데 사용되는 분기가 하나 이상 있어야 합니다. 이 분기의 이름으로 `main`을 사용하는 것이 좋습니다. 편리하게, 이 접근 방식은 새 프로젝트를 설정할 때 Git 클라이언트의 기본 비헤이비어입니다.
 
 예를 들어 새 프로젝트를 설정할 때 다음과 유사한 명령 집합을 실행합니다.
 

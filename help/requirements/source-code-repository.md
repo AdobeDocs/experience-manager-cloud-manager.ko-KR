@@ -1,18 +1,18 @@
 ---
 title: 소스 코드 저장소
-description: Cloud Manager에 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아봅니다.
+description: Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아보십시오.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '245'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 
 # 소스 코드 저장소 {#source-code-repository}
 
-Cloud Manager에 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아봅니다.
+Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아보십시오.
 
 ## Cloud Manager 저장소 {#cloud-manager-repository}
 

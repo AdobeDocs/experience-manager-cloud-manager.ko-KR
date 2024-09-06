@@ -3,9 +3,9 @@ title: Cloud Manager에서 Adobe 저장소 추가
 description: Cloud Manager에서 Adobe 관리 저장소를 만드는 방법을 알아봅니다.
 exl-id: 24c6ca97-ea70-41b8-b4c7-b8b0f406a57d
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 

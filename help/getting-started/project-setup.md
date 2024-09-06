@@ -3,9 +3,9 @@ title: 프로젝트 설정
 description: Cloud Manager를 사용하여 프로젝트를 관리하고 배포할 수 있도록 프로젝트를 설정하는 방법에 대해 알아보십시오.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1395'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화하려면 `CM_
 >
 >암호로 보호된 Maven 저장소의 아티팩트는 AEM에 연결되지 않은 코드에만 드물게 사용해야 합니다.
 
-Cloud Manager에서 암호로 보호된 Maven 저장소를 사용하려면 암호(및 사용자 이름)를 비밀 [파이프라인 변수](/help/getting-started/build-environment.md#pipeline-variables)(으)로 지정한 다음 Git 저장소의 `.cloudmanager/maven/settings.xml` 파일 내에서 해당 암호를 참조합니다. 이 파일은 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다.
+Cloud Manager에서 암호로 보호된 Maven 저장소를 사용하려면 암호(및 사용자 이름)를 시크릿 [파이프라인 변수](/help/getting-started/build-environment.md#pipeline-variables)로 지정한 다음 Git 저장소에 있는 `.cloudmanager/maven/settings.xml`이라는 파일 내에서 해당 암호를 참조합니다. 이 파일은 [Maven 설정 파일](https://maven.apache.org/settings.html) 스키마를 따릅니다.
 
 Cloud Manager 빌드 프로세스가 시작되면 이 파일의 `<servers>` 요소는 Cloud Manager에서 제공하는 기본 `settings.xml` 파일에 병합됩니다. 사용자 정의 서버는 `adobe` 및 `cloud-manager`로 시작하는 서버 ID를 사용해서는 안 됩니다. 이러한 ID는 예약된 것으로 간주됩니다. Cloud Manager는 지정된 접두사 또는 기본 ID `central` 중 하나와 일치하는 서버 ID만 미러링합니다.
 
@@ -275,7 +275,7 @@ Cloud Manager에서 빌드는 콘텐츠 패키지를 원하는 수만큼 생성�
 
 ## 빌드 아티팩트 재사용 {#build-artifact-reuse}
 
-많은 경우 동일한 코드가 여러 AEM 환경에 배포됩니다. 가능한 경우, Cloud Manager은 동일한 Git Commit이 여러 전체 스택 파이프라인 실행에 사용되는 것을 감지하면 코드 베이스를 다시 빌드하지 않습니다.
+많은 경우 동일한 코드가 여러 AEM 환경에 배포됩니다. 가능한 경우, Cloud Manager는 동일한 Git 커밋이 여러 전체 스택 파이프라인 실행에 사용되는 것을 감지하면 코드 베이스를 다시 빌드하지 않습니다.
 
 실행이 시작되면 분기 파이프라인에 대한 현재 HEAD 커밋이 추출됩니다. 커밋 해시는 UI와 API를 통해 볼 수 있습니다. 빌드 단계가 정상적으로 완료되면 결과 아티팩트가 해당 커밋 해시를 기반으로 저장되고 후속 파이프라인 실행에서 재사용될 수 있습니다.
 

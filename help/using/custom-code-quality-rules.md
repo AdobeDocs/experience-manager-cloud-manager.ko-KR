@@ -3,7 +3,7 @@ title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3482'
 ht-degree: 100%
 
