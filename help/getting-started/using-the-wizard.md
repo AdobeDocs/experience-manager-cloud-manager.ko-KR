@@ -1,11 +1,11 @@
 ---
 title: 새 프로젝트 마법사 사용
-description: 마법사를 사용하여 AEM 애플리케이션 프로젝트를 만드는 방법에 대해 배우려면 이 페이지를 따르십시오.
+description: 마법사를 사용하여 AEM 애플리케이션 프로젝트를 만드는 방법을 배우려면 이 페이지를 따르십시오.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: 7bc874a8dd14544c22201ef2c470faab84d31f8b
+workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
