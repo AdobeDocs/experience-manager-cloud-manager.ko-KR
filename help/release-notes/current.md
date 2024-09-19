@@ -3,13 +3,13 @@ title: Cloud Manager 2024.9.0 릴리스 정보
 description: Cloud Manager 2024.9.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
 source-git-commit: 3671772a1369273d89fde101ba084a6e2f8ce8dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
-# Cloud Manager 2024.9.0 릴리스 노트 {#release-notes}
+# Cloud Manager 2024.9.0 릴리스 정보 {#release-notes}
 
 이 페이지는 [!UICONTROL Cloud Manager] 2024.9.0에 대한 릴리스 정보를 설명합니다.
 
@@ -19,14 +19,14 @@ ht-degree: 70%
 
 ## 릴리스 일자 {#release-date}
 
-Cloud Manager 9월 릴리스에 주목할 만한 버그 또는 기능이 없습니다.
+9월 릴리스된 Cloud Manager에는 주목할만한 버그나 기능이 없습니다.
 
-다음 릴리스는 2024년 10월 3일 금요일에 예정되어 있습니다.
+다음 릴리스는 2024년 10월 3일에 예정되어 있습니다.
 
 
 ## 새로운 기능 {#what-is-new}
 
-* 단계 전용 및 프로덕션 전용 파이프라인([얼리어답터 프로그램](#staging-production-only-pipelines)의 일부로 사용 가능)의 경우 이제 단계 테스트를 건너뛰고 [긴급 모드](/help/using/stage-prod-only.md#emergency-mode)에서 실행할 수 있습니다.
+* ([얼리 어답터 프로그램](#staging-production-only-pipelines)의 일부로 사용 가능한) 스테이징 전용 및 프로덕션 전용 파이프라인의 경우 이제 스테이지 테스트를 건너뛰고 [긴급 모드](/help/using/stage-prod-only.md#emergency-mode)로 실행할 수 있습니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
