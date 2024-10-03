@@ -1,16 +1,16 @@
 ---
-title: 프로덕션 파이프라인 구성
+title: 프로덕션 파이프라인 추가
 description: Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: d489fa3c-df1e-480b-82d0-ac8cce78a710
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1247'
-ht-degree: 100%
+source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
+workflow-type: tm+mt
+source-wordcount: '1249'
+ht-degree: 99%
 
 ---
 
 
-# 프로덕션 파이프라인 구성 {#configuring-production-pipelines}
+# 프로덕션 파이프라인 추가 {#configuring-production-pipelines}
 
 Cloud Manager를 사용하여 코드를 배포할 프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오. 먼저 Cloud Manager에서 파이프라인이 작동하는 방식에 대한 보다 개념적인 개요를 원하는 경우 [CI/CD 파이프라인](/help/overview/ci-cd-pipelines.md) 문서를 참조하십시오.
 

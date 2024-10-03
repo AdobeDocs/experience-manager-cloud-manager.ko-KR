@@ -2,7 +2,7 @@
 title: 저장소 액세스 정보
 description: Cloud Manager의 셀프서비스 Git 계정 관리를 사용하여 Adobe 관리 Git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
-source-git-commit: b66eb29ab86b2a6acf3a1d92c217154d07b9cc1e
+source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 47%
@@ -24,7 +24,7 @@ Cloud Manager을 사용하면 **파이프라인** 카드에서 **저장소 정�
 * Cloud Manager Git 저장소의 URL
 * 사전 설치 Git 명령을 사용하여 Git 저장소 및 푸시 코드에 대한 연결을 빠르게 추가할 수 있습니다.
 
-![저장소 정보 창](assets/repository-info.png)
+  ![저장소 정보 창](assets/repository-info.png)
 
 [비공개 저장소](/help/managing-code/private-repositories.md)에 대한 액세스 정보는 Cloud Manager에서 사용할 수 없습니다.
 
