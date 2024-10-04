@@ -2,9 +2,9 @@
 title: Cloud Manager 2024.10.0 릴리스 정보
 description: Cloud Manager 2024.10.0 릴리스 정보에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: 94d5f3487408f9d8908bb15221c48ef768390527
+source-git-commit: 74e8f7c0f3896e0e33a02b62c003db322c0d50d8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 23%
 
 ---
@@ -67,6 +67,6 @@ Adobe은 [스테이징 전용 및 프로덕션 전용 파이프라인](/help/usi
 * text
 -->
 
-## 알려진 문제 {#known-issues}
+<!-- Known Issues {#known-issues}
 
-{{content-copy-known-issues}}
+ -->
