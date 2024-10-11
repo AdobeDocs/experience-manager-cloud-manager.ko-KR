@@ -10,7 +10,7 @@ role: Admin
 source-git-commit: 1209faf71edbd74cd87acfe24ec438b98ddd4a3a
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 71%
    + CI/CD 파이프라인 {#pipelines}
       + [프로덕션 파이프라인 구성](/help/using/production-pipelines.md)
       + [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)
-      + [스테이지 및 프로덕션만 파이프라인 분할(얼리 어답터)](/help/using/stage-prod-only.md)
+      + [분할 단계 및 프로덕션 전용 파이프라인 (얼리 어답터)](/help/using/stage-prod-only.md)
       + [파이프라인 관리](/help/using/managing-pipelines.md)
    + [코드 배포](/help/using/code-deployment.md)
    + [코드 품질 테스트](/help/using/code-quality-testing.md)
@@ -57,12 +57,12 @@ ht-degree: 71%
    + [알림](/help/using/notifications.md)
    + [사용자 정의 코드 품질 규칙](/help/using/custom-code-quality-rules.md)
    + [콘텐츠 복사](/help/using/content-copy.md)
-+ {#managing-code} 코드 관리
++ 코드 관리 {#managing-code}
    + [Cloud Manager에서 저장소 관리](/help/managing-code/managing-repositories.md)
    + [저장소 액세스 정보](/help/managing-code/accessing-repositories.md)
    + [Adobe 저장소 추가](/help/managing-code/adobe-repositories.md)
-   + [개인 저장소 추가](/help/managing-code/private-repositories.md)
-   + [외부 저장소 추가(얼리 어답터)](/help/managing-code/external-repositories.md)
+   + [비공개 저장소 추가](/help/managing-code/private-repositories.md)
+   + [외부 저장소 추가 (얼리 어답터)](/help/managing-code/external-repositories.md)
    + [Git 하위 모듈 지원](/help/managing-code/git-submodules.md)
    + [GitHub 검사 구성](/help/managing-code/github-check-config.md)
    + [GitHub 검사 주석](/help/managing-code/github-annotations.md)
