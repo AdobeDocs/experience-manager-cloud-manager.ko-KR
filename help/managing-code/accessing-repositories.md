@@ -3,7 +3,7 @@ title: 저장소 액세스 정보
 description: Cloud Manager의 셀프서비스 Git 계정 관리를 사용하여 Adobe 관리 Git 저장소에 액세스하고 관리하는 방법을 알아봅니다.
 exl-id: 1cc88c82-67c7-4553-a1b8-d2ab22be466c
 source-git-commit: 04fbc4a3fdba8b108055d66a4fdb1a31994cb18e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '381'
 ht-degree: 100%
 
