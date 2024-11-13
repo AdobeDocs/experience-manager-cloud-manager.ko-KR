@@ -2,10 +2,11 @@
 title: Cloud Manager 2024.11.0 릴리스 정보
 description: Cloud Manager 2024.11.0 릴리스에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: 4c22de9fa675edcd743d7acce6c7a1def8efa414
-workflow-type: tm+mt
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+source-git-commit: bea7f2e6e7cab764312a800883d0785ff23fd8bf
+workflow-type: ht
 source-wordcount: '457'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -15,19 +16,19 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->[최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/home)를 참조하십시오.
+>[최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home)를 참조하십시오.
 
-## 릴리스 날짜 {#release-date}
+## 릴리스 일자 {#release-date}
 
 <!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
 
-[!UICONTROL Cloud Manager] 2024.11.0의 릴리스 날짜는 2024년 11월 7일입니다.
+[!UICONTROL Cloud Manager] 2024.11.0의 릴리스 일자는 2024년 11월 7일입니다.
 
-다음 예정 릴리스는 2024년 12월 5일입니다.
+다음 릴리스는 2024년 12월 5일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-* 성능 테스트 중에 페이지가 다른 도메인으로 리디렉션되는 경우 실제 성능을 정확하게 나타내지 않으므로 해당 페이지에 대한 테스트 결과는 제외됩니다. <!-- (CMGR-5637) -->
+* 성능 테스트 도중 페이지가 다른 도메인으로 리디렉션되는 경우, 해당 페이지의 테스트 결과는 실제 성능을 정확하게 나타내지 않으므로 제외됩니다. <!-- (CMGR-5637) -->
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
@@ -57,8 +58,8 @@ Adobe는 [스테이징 전용 및 프로덕션 전용 파이프라인](/help/usi
 
 ## 버그 수정
 
-* 컨텐츠 복사 작업의 상태 업데이트 중에 &quot;403&quot; 오류를 일으킨 AEM Cloud Manager의 버그가 이제 해결되었습니다. 이 문제는 잘못된 인그레스 IP 주소 구성으로 인해 상태 전파가 되지 않고 일부 콘텐츠 복사 활동이 무기한 중단 및 실행되는 것으로 나타나므로 수동으로 취소해야 합니다. 이제 수정 사항을 통해 올바른 상태 보고 및 콘텐츠 복사 작업 실행을 보다 원활하게 수행할 수 있습니다. <!-- (CMGR-62739) -->
-* 최근 업데이트에서는 SonarQube에서 특정 경우에 하드 코딩된 암호가 검색되지 않는 문제를 해결했습니다. 이제 이 수정 사항에는 확장된 패턴 검사가 포함되어 있으며 SonarQube의 기본 감지 표준에 맞게 조정됩니다. <!-- CMGR-62682 -->
+* 콘텐츠 복사 작업에 대한 상태 업데이트 도중 “403” 오류를 야기하는 AEM Cloud Manager의 버그가 이제 해결되었습니다. 이 문제는 잘못 구성된 인그레스 IP 주소로 인해 발생했으며, 상태 전파를 방해하고 일부 콘텐츠 복사 활동이 중단되어 무기한 실행되는 것처럼 보이므로 수동으로 취소해야 했습니다. 이번 수정을 통해 적절한 상태 보고와 콘텐츠 복사 작업의 원활한 실행이 보장되었습니다. <!-- (CMGR-62739) -->
+* 최근 업데이트에서는 특정한 경우에서 하드코딩된 암호가 감지되지 않는 SonarQube의 문제가 해결되었습니다. 이제 이번 수정을 통해 확장된 패턴 검사가 포함되었으며, SonarQube의 기본 감지 표준과 일치합니다. <!-- CMGR-62682 -->
 
 <!-- Known Issues {#known-issues}
 
