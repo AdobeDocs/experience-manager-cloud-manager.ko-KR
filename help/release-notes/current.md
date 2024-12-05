@@ -2,10 +2,10 @@
 title: Cloud Manager 2024.12.0 릴리스 정보
 description: Adobe Managed Services의 Cloud Manager 2024.12.0 릴리스에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
+source-git-commit: ee79124a012106e53ffaaf9462202712f7078809
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 63%
+source-wordcount: '348'
+ht-degree: 65%
 
 ---
 
@@ -25,7 +25,7 @@ Adobe Managed Services의 [!UICONTROL Cloud Manager] 2024.12.0 릴리스에 대�
 
 [!UICONTROL Cloud Manager] 2024.12.0의 릴리스 날짜는 2024년 12월 5일입니다.
 
-다음 예정 릴리스는 2024년 1월입니다.
+다음 릴리스는 2025년 1월 23일 금요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
