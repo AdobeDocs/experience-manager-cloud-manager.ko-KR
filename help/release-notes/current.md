@@ -2,10 +2,11 @@
 title: Cloud Manager 2024.12.0 릴리스 정보
 description: Adobe Managed Services의 Cloud Manager 2024.12.0 릴리스에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: ee79124a012106e53ffaaf9462202712f7078809
+exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
+source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 65%
+source-wordcount: '312'
+ht-degree: 72%
 
 ---
 
@@ -27,9 +28,9 @@ Adobe Managed Services의 [!UICONTROL Cloud Manager] 2024.12.0 릴리스에 대�
 
 다음 릴리스는 2025년 1월 23일 금요일에 예정되어 있습니다.
 
-## 새로운 기능 {#what-is-new}
+<!-- ## What's new {#what-is-new} -->
 
-* 이제 AEM 코드 품질 단계에서 SonarQube 9.9 서버를 사용하여 이전 7.4 버전을 대체합니다. 이 업그레이드에서는 프로젝트에 대해 보다 포괄적인 분석과 적용 범위를 제공하는 추가 보안, 성능 및 코드 품질 검사를 제공합니다. <!-- CMGR-45683 -->
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 
