@@ -2,10 +2,10 @@
 title: 환경 일관성을 위한 컨텐츠 복사
 description: Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services에서 호스팅하는 Adobe Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
+source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 36%
+source-wordcount: '1312'
+ht-degree: 33%
 
 ---
 
@@ -85,9 +85,7 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 
    ![경로 목록 편집](/help/assets/add-content-set-excluded-paths.png)
 
-1. **만들기**&#x200B;를 클릭합니다.
-
-이제 콘텐츠 세트를 사용하여 환경 간에 콘텐츠를 복사할 수 있습니다.
+1. **만들기**&#x200B;를 클릭합니다. 이제 콘텐츠 세트를 사용하여 환경 간에 콘텐츠를 복사할 수 있습니다.
 
 ## 콘텐츠 세트 편집 또는 삭제 {#edit-content-set}
 
@@ -132,21 +130,23 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
    * 대상 환경의 영역은 소스 환경의 영역 하위 집합이어야 합니다.
    * 콘텐츠 복사 작업을 실행하기 전에 호환성 문제를 확인합니다. **대상** 환경을 선택하면 시스템에서 원본 및 대상 환경의 유효성을 자동으로 검사합니다. 유효성 검사가 실패하면 프로세스가 중지되고 실패 이유를 설명하는 오류 메시지가 대화 상자에 표시됩니다.
 
+     ![콘텐츠 복사](/help/assets/copying-content.png)
+
 1. (선택 사항) 다음 중 하나를 수행합니다.
 
    1. 대상 환경에서 제외된 경로를 *유지*&#x200B;하려면 **`Do not delete exclude paths from destination`**&#x200B;을(를) 확인하십시오. 이 설정은 콘텐츠 세트에 지정된 제외된 경로를 그대로 유지합니다.
    1. 대상 환경에서 제외된 경로를 *제거*&#x200B;하려면 **`Do not delete exclude paths from destination`**&#x200B;의 선택을 취소하십시오. 이 설정은 콘텐츠 세트에 지정된 제외된 경로를 삭제합니다.
-   1. 원본 환경에서 대상 환경으로 경로의 버전 기록을 복사하려면 **버전 복사**&#x200B;를 확인하세요.
+   1. 원본 환경에서 대상 환경으로 경로의 버전 기록을 복사하려면 **버전 복사**&#x200B;를 확인하세요. 버전 기록이 *복사되지 않음*&#x200B;인 경우 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
 
-      ![콘텐츠 복사](/help/assets/copying-content.png)
+
 
 1. **복사**&#x200B;를 클릭합니다. 복사 프로세스의 상태는 선택한 콘텐츠 세트의 콘솔에 반영됩니다.
 
-## 콘텐츠 복사 활동 상태 모니터링 {#copy-activity}
+## 콘텐츠 복사 상태 모니터링 {#copy-activity}
 
 **콘텐츠 복사 활동** 페이지에서 복사 프로세스의 상태를 모니터링할 수 있습니다.
 
-**콘텐츠 복사 활동의 상태를 모니터링하려면:**
+**콘텐츠 복사 상태를 모니터링하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -165,9 +165,7 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
    | 실패 | 콘텐츠 복사 작업이 실패했습니다. |
 
 
-## 제한 사항 {#limitations}
-
-콘텐츠 사본에는 다음과 같은 제한 사항이 있습니다.
+## 콘텐츠 복사의 제한 사항 {#limitations}
 
 * 하위 환경에서 상위 환경으로 콘텐츠 복사를 수행할 수 없습니다.
 * 콘텐츠 복사는 동일한 계층 내에서만 수행할 수 있습니다. 즉, 작성자-작성자 또는 게시-게시에서 가능합니다.
@@ -175,13 +173,10 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 * 클라우드 데이터 스토어 기반 토폴로지에 대한 콘텐츠 복사는 소스 및 대상 환경이 동일한 클라우드 공급자 및 동일한 지역에 있는 경우에만 수행할 수 있습니다.
 * 동일한 환경에서 동시에 콘텐츠 복사 작업을 실행할 수 없습니다.
 * 대상 또는 소스 환경(예: CI/CD 파이프라인)에서 실행 중인 활성 작업이 있는 경우 콘텐츠 복사를 수행할 수 없습니다.
-* 콘텐츠 세트당 최대 50개의 경로를 지정할 수 있습니다. 제외된 경로에는 제한이 없습니다.
-* 컨텐츠 복사는 소스에서 이동하거나 삭제된 컨텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
+* 콘텐츠 복사본은 소스에서 이동하거나 삭제된 콘텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
 * 콘텐츠 복사는 시작되고 나면 일시 중지하거나 취소할 수 없습니다.
-* 콘텐츠 복사는 에셋 및 Dynamic Media 메타데이터를 상위 환경에서 선택한 하위 환경으로 복사합니다. 이후 각각의 Dynamic Media 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 복사된 자산을 재처리해야 합니다.
-* 버전 기록이 복사되지 않으면 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
+* 콘텐츠 복사는 에셋 및 Dynamic Media 메타데이터를 상위 환경에서 선택한 하위 환경으로 복제합니다. 이후 각각의 Dynamic Media 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 복사된 자산을 재처리해야 합니다.
 * [2 GB보다 큰 크기의 자산을 사용하는 Dynamic Media 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)은 지원되지 않습니다.
-* 버전 기록이 복사되지 않으면 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
 * 대상 환경의 지역은 소스 환경 지역과 동일하거나 하위 집합이어야 합니다.
 
 ## 알려진 문제 {#known-issues}
