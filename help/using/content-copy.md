@@ -1,20 +1,20 @@
 ---
-title: 콘텐츠 복사 도구
+title: 환경 일관성을 위한 컨텐츠 복사
 description: Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: de9cfaa07dc9ff4a6d1cb200d14c5e776d27767d
+source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
 workflow-type: tm+mt
-source-wordcount: '1363'
-ht-degree: 42%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 콘텐츠 복사 도구 {#content-copy}
+# 환경 일관성을 위한 컨텐츠 복제 {#content-copy}
 
 Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 
-## 콘텐츠 복사 도구 정보{#introduction}
+## 콘텐츠 복사 정보 {#introduction}
 
 현재의 실제 데이터는 테스트, 검증 및 사용자 승인 목적에 유용합니다. 콘텐츠 복사 도구를 사용하면 프로덕션 AMS 호스팅된 AEM 6.x 환경에서 스테이징 환경 또는 개발 환경으로 콘텐츠를 복사할 수 있습니다. 이 워크플로는 다양한 테스트 시나리오를 지원합니다.
 
