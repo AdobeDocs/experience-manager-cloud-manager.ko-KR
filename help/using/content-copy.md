@@ -1,22 +1,22 @@
 ---
 title: 환경 일관성을 위한 컨텐츠 복사
-description: Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
+description: Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services에서 호스팅하는 Adobe Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 2c96feb62a4db2424430c9c410563a7f61320fd2
+source-git-commit: e47047c85f9d428e268d147b2e24354026dda0f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1351'
+ht-degree: 36%
 
 ---
 
 
-# 환경 일관성을 위한 컨텐츠 복제 {#content-copy}
+# 환경 일관성을 위한 컨텐츠 복사 {#content-copy}
 
-Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
+Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services에서 호스팅하는 Adobe Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 
 ## 콘텐츠 복사 정보 {#introduction}
 
-현재의 실제 데이터는 테스트, 검증 및 사용자 승인 목적에 유용합니다. 콘텐츠 복사 도구를 사용하면 프로덕션 AMS 호스팅된 AEM 6.x 환경에서 스테이징 환경 또는 개발 환경으로 콘텐츠를 복사할 수 있습니다. 이 워크플로는 다양한 테스트 시나리오를 지원합니다.
+현재의 실제 데이터는 테스트, 검증 및 사용자 승인 목적에 유용합니다. 컨텐츠 복사를 사용하면 프로덕션 AMS 호스팅 AEM 6.x 환경의 컨텐츠를 스테이징 또는 개발 환경으로 복사할 수 있습니다. 이 워크플로는 다양한 테스트 시나리오를 지원합니다.
 
 콘텐츠 세트가 복사할 콘텐츠를 정의합니다. 콘텐츠 세트에는 복사할 변경 가능한 콘텐츠가 있는 JCR 경로 목록이 포함됩니다. 콘텐츠는 소스 환경에서 대상 환경으로 이동합니다. 모든 작업은 동일한 Cloud Manager 프로그램 내에서 수행됩니다.
 
@@ -37,7 +37,7 @@ Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 
 
 ## 권한 {#permissions}
 
-콘텐츠 복사 도구를 사용하려면 사용자는 소스 및 대상 환경에서 **배포 관리자** 역할에 할당되어야 합니다.
+콘텐츠 복사 기능을 사용하려면 사용자는 원본 및 대상 환경에서 **배포 관리자** 역할에 할당되어야 합니다.
 
 ## 콘텐츠 세트 만들기 {#create-content-set}
 
@@ -55,7 +55,7 @@ Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 
 
    ![콘텐츠 세트](/help/assets/content-sets.png)
 
-1. **콘텐츠 세트 추가** 대화 상자의 **세부 정보** 탭에서 **이름** 및 **설명** 필드에 콘텐츠 세트의 이름과 선택적 설명을 입력한 다음 **계속**&#x200B;을 클릭합니다.
+1. **`Add Content Set`** 대화 상자의 **세부 정보** 탭에서 **이름** 및 **설명** 필드에 콘텐츠 세트의 이름과 선택적 설명을 입력한 다음 **계속**&#x200B;을 클릭합니다.
 
    ![콘텐츠 세트 세부 정보](/help/assets/add-content-set-details.png)
 
@@ -167,7 +167,7 @@ Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 
 
 ## 제한 사항 {#limitations}
 
-콘텐츠 복사 도구에는 다음과 같은 제한 사항이 있습니다.
+콘텐츠 사본에는 다음과 같은 제한 사항이 있습니다.
 
 * 하위 환경에서 상위 환경으로 콘텐츠 복사를 수행할 수 없습니다.
 * 콘텐츠 복사는 동일한 계층 내에서만 수행할 수 있습니다. 즉, 작성자-작성자 또는 게시-게시에서 가능합니다.
@@ -176,9 +176,9 @@ Cloud Manager 컨텐츠 복사 도구를 사용하면 Adobe Managed Services이 
 * 동일한 환경에서 동시에 콘텐츠 복사 작업을 실행할 수 없습니다.
 * 대상 또는 소스 환경(예: CI/CD 파이프라인)에서 실행 중인 활성 작업이 있는 경우 콘텐츠 복사를 수행할 수 없습니다.
 * 콘텐츠 세트당 최대 50개의 경로를 지정할 수 있습니다. 제외된 경로에는 제한이 없습니다.
-* 콘텐츠 복사 도구는 소스에서 이동되거나 삭제된 콘텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
+* 컨텐츠 복사는 소스에서 이동하거나 삭제된 컨텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
 * 콘텐츠 복사는 시작되고 나면 일시 중지하거나 취소할 수 없습니다.
-* 콘텐츠 복사 도구는 상위 환경에서 선택한 하위 환경으로 Dynamic Media 메타데이터와 자산을 복사합니다. 이후 각각의 Dynamic Media 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 복사된 자산을 재처리해야 합니다.
+* 콘텐츠 복사는 에셋 및 Dynamic Media 메타데이터를 상위 환경에서 선택한 하위 환경으로 복사합니다. 이후 각각의 Dynamic Media 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 복사된 자산을 재처리해야 합니다.
 * 버전 기록이 복사되지 않으면 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
 * [2 GB보다 큰 크기의 자산을 사용하는 Dynamic Media 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)은 지원되지 않습니다.
 * 버전 기록이 복사되지 않으면 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
