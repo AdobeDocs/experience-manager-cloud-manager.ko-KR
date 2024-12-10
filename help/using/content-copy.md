@@ -2,9 +2,9 @@
 title: 환경 일관성을 위한 컨텐츠 복사
 description: Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services에서 호스팅하는 Adobe Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 228006b424504306e916014bbe8543dc41ba43b5
+source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1321'
 ht-degree: 33%
 
 ---
@@ -35,7 +35,7 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 * 대상 환경에서 콘텐츠를 편집하는 경우 경로가 일치하면 소스 콘텐츠가 해당 콘텐츠를 덮어씁니다.
 * 경로가 다른 경우 소스의 콘텐츠가 대상의 콘텐츠와 병합됩니다.
 
-## 권한 {#permissions}
+### 권한 {#permissions}
 
 콘텐츠 복사 기능을 사용하려면 사용자는 원본 및 대상 환경에서 **배포 관리자** 역할에 할당되어야 합니다.
 
@@ -142,11 +142,11 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 
 1. **복사**&#x200B;를 클릭합니다. 복사 프로세스의 상태는 선택한 콘텐츠 세트의 콘솔에 반영됩니다.
 
-## 콘텐츠 복사 상태 모니터링 {#copy-activity}
+## 콘텐츠 사본 상태 확인 {#copy-activity}
 
 **콘텐츠 복사 활동** 페이지에서 복사 프로세스의 상태를 모니터링할 수 있습니다.
 
-**콘텐츠 복사 상태를 모니터링하려면:**
+**콘텐츠 복사본의 상태를 확인하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -179,6 +179,6 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 * [2 GB보다 큰 크기의 자산을 사용하는 Dynamic Media 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)은 지원되지 않습니다.
 * 대상 환경의 지역은 소스 환경 지역과 동일하거나 하위 집합이어야 합니다.
 
-## 알려진 문제 {#known-issues}
+## 콘텐츠 사본의 알려진 문제 {#known-issues}
 
 {{content-copy-known-issues}}
