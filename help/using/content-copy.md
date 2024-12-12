@@ -2,7 +2,7 @@
 title: 환경 일관성을 위한 컨텐츠 복사
 description: Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services에서 호스팅하는 Adobe Adobe Experience Manager 6.x 프로덕션 환경에서 테스트를 위해 더 낮은 환경으로 변경 가능한 컨텐츠를 온디맨드로 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
-source-git-commit: 16cc1aa0ff45126df9100f337b6259a3f248038f
+source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 33%
@@ -32,8 +32,9 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 
 콘텐츠를 복사할 때 소스 환경은 신뢰할 수 있는 소스입니다.
 
-* 대상 환경에서 콘텐츠를 편집하는 경우 경로가 일치하면 소스 콘텐츠가 해당 콘텐츠를 덮어씁니다.
-* 경로가 다른 경우 소스의 콘텐츠가 대상의 콘텐츠와 병합됩니다.
+대상 환경에서 콘텐츠를 편집하는 경우 경로가 일치하면 소스 콘텐츠가 해당 콘텐츠를 덮어씁니다.
+
+경로가 다른 경우 소스의 콘텐츠가 대상의 콘텐츠와 병합됩니다.
 
 ### 권한 {#permissions}
 
@@ -103,7 +104,6 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 
 ![콘텐츠 세트 편집](/help/assets/edit-content-set.png)
 
-
 ## 콘텐츠 복사 {#copy-content}
 
 콘텐츠 세트가 만들어지면 이를 사용하여 콘텐츠를 복사할 수 있습니다.
@@ -138,8 +138,6 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
    1. 대상 환경에서 제외된 경로를 *제거*&#x200B;하려면 **`Do not delete exclude paths from destination`**&#x200B;의 선택을 취소하십시오. 이 설정은 콘텐츠 세트에 지정된 제외된 경로를 삭제합니다.
    1. 원본 환경에서 대상 환경으로 경로의 버전 기록을 복사하려면 **버전 복사**&#x200B;를 확인하세요. 버전 기록이 *복사되지 않음*&#x200B;인 경우 콘텐츠 복사 프로세스가 훨씬 더 빨라집니다.
 
-
-
 1. **복사**&#x200B;를 클릭합니다. 복사 프로세스의 상태는 선택한 콘텐츠 세트의 콘솔에 반영됩니다.
 
 ## 콘텐츠 사본 상태 확인 {#copy-activity}
@@ -160,10 +158,9 @@ Cloud Manager의 컨텐츠 복사를 사용하면 사용자가 Managed Services�
 
    | 상태 | 설명 |
    | --- | --- |
-   | 진행 중 | 콘텐츠 복사 작업이 진행 중입니다. |
-   | 완료됨 | 콘텐츠 복사 작업이 완료되었습니다. |
-   | 실패 | 콘텐츠 복사 작업이 실패했습니다. |
-
+   | 진행 중 | 콘텐츠 복사 프로세스가 진행 중입니다. |
+   | 완료됨 | 콘텐츠 복사 프로세스가 완료되었습니다. |
+   | 실패 | 콘텐츠 복사 프로세스가 실패했습니다. |
 
 ## 콘텐츠 복사의 제한 사항 {#limitations}
 
