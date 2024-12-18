@@ -3,9 +3,9 @@ title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
 source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3514'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -655,7 +655,7 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 터치 UI�
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
-[릴리스 정보: 복제 에이전트 제거](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)에서 설명한 대로 Cloud Service 배포에서는 역방향 복제에 대한 지원을 사용할 수 없습니다.
+[릴리스 정보: 복제 에이전트 제거](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes#replication-agents)에서 설명한 대로 Cloud Service 배포에서는 역방향 복제에 대한 지원을 사용할 수 없습니다.
 
 역방향 복제를 사용하는 고객은 Adobe에 대체 솔루션을 문의해야 합니다.
 
@@ -666,7 +666,7 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 터치 UI�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM 클라이언트 라이브러리는 이미지 및 글꼴과 같은 정적 리소스를 포함할 수 있습니다. [클라이언트측 라이브러리 사용 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)에 설명된 대로 프록시 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`라는 하위 폴더에 포함되어 있어야 합니다.
+AEM 클라이언트 라이브러리는 이미지 및 글꼴과 같은 정적 리소스를 포함할 수 있습니다. [클라이언트측 라이브러리 사용 설명서](https://experienceleague.adobe.com/kr/docs/experience-manager-65/content/implementing/developing/introduction/clientlibs#using-preprocessors)에 설명된 대로 프록시 클라이언트 라이브러리를 사용할 때 게시 인스턴스에서 효과적으로 참조하려면 이러한 정적 리소스가 `resources`라는 하위 폴더에 포함되어 있어야 합니다.
 
 #### 비준수 코드 {#non-compliant-proxy-enabled}
 
@@ -708,7 +708,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-정적 템플릿의 사용은 역사적으로 AEM 프로젝트에서 흔했지만 편집 가능한 템플릿은 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 적극 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable) 문서에서 확인할 수 있습니다.
+정적 템플릿의 사용은 역사적으로 AEM 프로젝트에서 흔했지만 편집 가능한 템플릿은 가장 유연하고 정적 템플릿에 없는 추가 기능을 지원하기 때문에 적극 권장됩니다. 자세한 내용은 [페이지 템플릿 - 편집 가능](https://experienceleague.adobe.com/kr/docs/experience-manager-65/content/implementing/developing/platform/templates/page-templates-editable) 문서에서 확인할 수 있습니다.
 
 정적 템플릿에서 편집 가능 템플릿으로의 마이그레이션은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 사용하여 대부분 자동화할 수 있습니다.
 
@@ -719,7 +719,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-레거시 Foundation 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/introduction)를 위한 여러 AEM 릴리스에서 더 이상 사용되지 않습니다. 기존 Foundation 구성 요소를 오버레이 또는 상속 여부에 관계없이 사용자 정의 구성 요소의 기준으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
+레거시 Foundation 구성 요소(즉, `/libs/foundation` 아래의 구성 요소)는 [핵심 구성 요소](https://experienceleague.adobe.com/kr/docs/experience-manager-core-components/using/introduction)를 위한 여러 AEM 릴리스에서 더 이상 사용되지 않습니다. 기존 Foundation 구성 요소를 오버레이 또는 상속 여부에 관계없이 사용자 정의 구성 요소의 기준으로 사용하는 것은 권장되지 않으며 해당 핵심 구성 요소로 변환해야 합니다.
 
 이러한 변환은 [AEM 현대화 도구](https://opensource.adobe.com/aem-modernize-tools/)를 통해 촉진될 수 있습니다.
 
@@ -730,7 +730,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 `/oak:index`의 직접 하위 노드여야 합니다. AEM Cloud Service와 호환되려면 다른 위치의 인덱스를 이동해야 합니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
+AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)가 `/oak:index`의 직접 하위 노드여야 합니다. AEM Cloud Service와 호환되려면 다른 위치의 인덱스를 이동해야 합니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드의 compatVersion을 2로 설정해야 함 {#oakpal-custom-search-compatVersion}
 
@@ -739,7 +739,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `2`로 설정된 `compatVersion` 속성이 있어야 합니다. 다른 값은 AEM Cloud Service에서 지원되지 않습니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
+AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `2`로 설정된 `compatVersion` 속성이 있어야 합니다. 다른 값은 AEM Cloud Service에서 지원되지 않습니다. 검색 인덱스에 대한 자세한 내용은 [콘텐츠 검색 및 색인화 설명서](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/operations/indexing)를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드의 하위 노드 유형은 `nt:unstructured`여야 함 {#oakpal-descendent-nodes}
 
@@ -766,7 +766,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)를 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)에 설명된 특정 패턴에 따라 지정해야 합니다.
+AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)를 [콘텐츠 검색 및 색인화](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)에 설명된 특정 패턴에 따라 지정해야 합니다.
 
 ### 사용자 정의 검색 인덱스 정의 노드는 lucene 유형의 인덱스를 사용해야 함 {#oakpal-index-type-lucene}
 
@@ -775,7 +775,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 값이 `lucene`로 설정된 `type` 속성이 있어야 합니다. 레거시 인덱스 유형을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)를 참조하십시오.
+AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 값이 `lucene`로 설정된 `type` 속성이 있어야 합니다. 레거시 인덱스 유형을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드에는 `seed`라는 속성이 포함되어서는 안 됨 {#oakpal-property-name-seed}
 
@@ -784,7 +784,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `seed`라는 속성을 포함하는 것을 금지합니다. 이 속성을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)를 참조하십시오.
+AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `seed`라는 속성을 포함하는 것을 금지합니다. 이 속성을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)를 참조하십시오.
 
 ### 사용자 정의 검색 인덱스 정의 노드에는 `reindex`라는 속성이 포함되어서는 안 됨 {#oakpal-reindex-property}
 
@@ -793,7 +793,7 @@ AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryInd
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
-AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `reindex`라는 속성을 포함하는 것을 금지합니다. 이 속성을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)를 참조하십시오.
+AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryIndexDefinition` 유형의 노드)에 `reindex`라는 속성을 포함하는 것을 금지합니다. 이 속성을 사용하는 색인화는 AEM Cloud Service로 마이그레이션하기 전에 업데이트해야 합니다. 자세한 내용은 [콘텐츠 검색 및 색인화 문서](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/operations/indexing#how-to-use)를 참조하십시오.
 
 ### UI 콘텐츠 패키지에 색인 정의 노드를 배포하면 안 됨 {#oakpal-ui-content-package}
 
@@ -872,14 +872,14 @@ AEM Cloud Service는 분석기에서 잘못된 이름을 가진 토큰화 생성
 
 AEM Cloud Service는 공백이 있는 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.
 
-### 색인 정의 구성에 haystack0 속성이 포함되어서는 안 됨 {#oakpal-indexing-haystack0-property}
+### 색인화 정의 구성에 haystack0 속성이 포함되어서는 안 됨 {#oakpal-indexing-haystack0-property}
 
 * **키**: HayStackPropertyCheck
 * **유형**: 개선
 * **심각도**: 사소
 * **이후**: 버전 2024.12.0
 
-AEM Cloud Service에서는 Haystack 속성이 포함된 색인 정의 생성을 금지합니다.
+AEM Cloud Service는 haystack 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.
 
 ## Dispatcher 최적화 도구 {#dispatcher-optimization-tool-rules}
 

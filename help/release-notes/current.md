@@ -4,7 +4,7 @@ description: Adobe Managed Services용 Cloud Manager 2024.12.0 릴리스에 대�
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
 source-git-commit: e266a4192e2a897f142a6c83ae5766483946320d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2024.12.0 릴리스에 대�
 
 >[!NOTE]
 >
->[최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home)를 참조하십시오.
+>[최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/kr/docs/experience-manager-cloud-service/content/release-notes/home)를 참조하십시오.
 
 ## 릴리스 일자 {#release-date}
 
@@ -26,7 +26,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2024.12.0 릴리스에 대�
 
 [!UICONTROL Cloud Manager] 2024.12.0의 릴리스 일자는 2024년 12월 5일입니다.
 
-다음 릴리스는 2025년 1월 23일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 1월 23일에 예정되어 있습니다.
 
 <!-- ## What's new {#what-is-new} -->
 
