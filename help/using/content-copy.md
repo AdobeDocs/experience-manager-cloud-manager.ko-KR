@@ -3,9 +3,9 @@ title: 환경 일관성을 유지하기 위한 콘텐츠 복사
 description: Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위해 Adobe Managed Services에서 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: e3a656605ac59ca1f95985426932fddf2b53b7c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -140,11 +140,11 @@ Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위�
 
 1. **복사**&#x200B;를 클릭합니다. 복사 프로세스의 상태는 선택한 콘텐츠 세트의 콘솔에 반영됩니다.
 
-## 콘텐츠 사본 상태 확인 {#copy-activity}
+## 콘텐츠 복사 상태 확인 {#copy-activity}
 
 **콘텐츠 복사 활동** 페이지에서 복사 프로세스의 상태를 모니터링할 수 있습니다.
 
-**콘텐츠 복사본의 상태를 확인하려면:**
+**콘텐츠 복사 상태를 확인하려면:**
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
@@ -154,12 +154,12 @@ Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위�
 
    ![콘텐츠 복사 활동](/help/assets/copy-content-activity.png)
 
-   콘텐츠 복사 프로세스는 다음 상태 중 하나를 가질 수 있습니다.
+   콘텐츠 복사 프로세스는 다음 중 하나의 상태가 됩니다.
 
    | 상태 | 설명 |
    | --- | --- |
    | 진행 중 | 콘텐츠 복사 프로세스가 진행 중입니다. |
-   | 완료됨 | 콘텐츠 복사 프로세스가 완료되었습니다. |
+   | 완료됨 | 콘텐츠 복사 프로세스가 정상적으로 완료되었습니다. |
    | 실패 | 콘텐츠 복사 프로세스가 실패했습니다. |
 
 ## 콘텐츠 복사의 제한 사항 {#limitations}
@@ -172,10 +172,10 @@ Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위�
 * 대상 또는 소스 환경(예: CI/CD 파이프라인)에서 실행 중인 활성 작업이 있는 경우 콘텐츠 복사를 수행할 수 없습니다.
 * 콘텐츠 복사는 소스에서 이동되거나 삭제된 콘텐츠를 추적할 수 없으므로 복제 또는 미러링 도구로 사용해서는 안 됩니다.
 * 콘텐츠 복사는 시작되고 나면 일시 중지하거나 취소할 수 없습니다.
-* 콘텐츠 복사는 상위 환경에서 선택한 하위 환경으로 Dynamic Media 메타데이터와 자산을 복제합니다. 이후 각각의 Dynamic Media 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/kr/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 복사된 자산을 재처리해야 합니다.
-* [2GB보다 큰 크기의 자산을 사용하는 Dynamic Media 구성](https://experienceleague.adobe.com/kr/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)은 지원되지 않습니다.
+* 콘텐츠 복사는 상위 환경에서 선택한 하위 환경으로 Dynamic Media 메타데이터와 자산을 복제합니다. 이후 각각의 Dynamic Media 구성을 사용하기 위해 하위 환경에서 [DAM 프로세스 자산 워크플로](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/using/assets-workflow)를 사용하여 복사된 자산을 재처리해야 합니다.
+* [2GB보다 큰 크기의 자산을 사용하는 Dynamic Media 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/assets/dynamic/config-dms7#optional-config-dms7-assets-larger-than-2gb)은 지원되지 않습니다.
 * 대상 환경의 지역은 소스 환경 지역과 동일하거나 하위 집합이어야 합니다.
 
-## 콘텐츠 사본의 알려진 문제 {#known-issues}
+## 콘텐츠 복사의 알려진 문제 {#known-issues}
 
 {{content-copy-known-issues}}
