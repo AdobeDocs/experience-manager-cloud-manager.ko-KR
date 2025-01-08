@@ -3,9 +3,9 @@ title: Cloud Manager 2024.12.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2024.12.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: 811567af-66c9-4c1f-ae9e-60603b70ef80
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: 60db60be95318ebf6f2af91a94a9475604a15003
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '359'
 ht-degree: 87%
 
 ---
@@ -34,7 +34,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2024.12.0 릴리스에 대�
 
 * 2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계에서 이제 업그레이드된 SonarQube 버전 9.9.5.90363이 사용됩니다.
 
-  [이 링크](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-quality-testing#code-quality-testing-step)에서 AMS에 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인에 대한 보안 점수와 코드 품질을 결정합니다. 이 업데이트는 품질 게이트에 영향을 미쳐 배포를 잠재적으로 차단할 수 있습니다.
+  [이 링크](/help/using/code-quality-testing.md#code-quality-testing-step)에서 AMS에 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인에 대한 보안 점수와 코드 품질을 결정합니다. 이 업데이트는 품질 게이트에 영향을 미쳐 배포를 잠재적으로 차단할 수 있습니다.
 
 ## 얼리 어답터 프로그램 {#early-adoption}
 

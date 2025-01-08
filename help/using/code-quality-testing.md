@@ -2,7 +2,7 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: dcf2a4727b800f4364fcc7d757d281bde2738a55
+source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 98%
@@ -48,9 +48,9 @@ ht-degree: 98%
 
 일반적인 Java 규칙과 AEM별 규칙을 결합한 규칙이 100개 이상 있습니다. AEM 관련 규칙 중 일부는 AEM 엔지니어링의 모범 사례를 기반으로 생성되며 [사용자 정의 코드 품질 규칙](/help/using/custom-code-quality-rules.md)이라고 합니다.
 
+[이 링크를 사용하여](/help/assets/CodeQuality-rules-latest-AMS.xlsx)현재 전체 규칙 목록을 다운로드할 수 있습니다.
+
 >[!IMPORTANT]
->
->[이 링크를 사용하여](/help/assets/CodeQuality-rules-latest-AMS.xlsx)현재 전체 규칙 목록을 다운로드할 수 있습니다.
 >
 >2025년 2월 13일 목요일(Cloud Manager 2025.2.0)부터 Cloud Manager 코드 품질은 업데이트된 SonarQube 9.9 버전과 [여기에서 다운로드](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)할 수 있는 업데이트된 규칙 목록을 사용합니다.
 
