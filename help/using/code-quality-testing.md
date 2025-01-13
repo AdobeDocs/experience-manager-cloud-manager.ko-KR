@@ -3,7 +3,7 @@ title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2793'
 ht-degree: 100%
 
