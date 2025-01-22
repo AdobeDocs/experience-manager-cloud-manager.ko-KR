@@ -2,10 +2,11 @@
 title: Cloud Manager 2025.1.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.1.0 릴리스에 대해 알아봅니다.
 feature: Release Information
-source-git-commit: c25508b24f00b8f8cfa7bae3cc4b0d6ecf684db3
+exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
+source-git-commit: 434740b5ad2dafd5a6c55d0272cf5effdfa6baac
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 35%
+source-wordcount: '196'
+ht-degree: 34%
 
 ---
 
@@ -29,7 +30,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.1.0 릴리스에 대�
 
 ## 새로운 기능 {#what-is-new}
 
-**코드 품질 규칙:** Cloud Manager 코드 품질 단계는 2025년 2월 13일 목요일에 예정된 Cloud Manager 2025.2.0 릴리스에서 SonarQube Server 9.9를 사용하여 시작됩니다.
+**코드 품질 규칙 - Sonar 큐브 업그레이드:** Cloud Manager 코드 품질 단계는 2025년 2월 13일 목요일로 예정된 Cloud Manager 2025.2.0 릴리스에서 SonarQube Server 9.9를 사용하여 시작됩니다.
 
 준비를 위해 업데이트된 SonarQube 규칙을 [코드 품질 규칙](/help/using/code-quality-testing.md#code-quality-testing-step)에서 사용할 수 있습니다.
 
