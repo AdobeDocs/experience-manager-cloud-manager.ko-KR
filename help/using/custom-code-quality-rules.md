@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8811ed130b2c7a37a0c811c308b57acf0872e9c8
-workflow-type: ht
-source-wordcount: '3514'
-ht-degree: 100%
+source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
+workflow-type: tm+mt
+source-wordcount: '3490'
+ht-degree: 99%
 
 ---
 
@@ -16,11 +16,13 @@ AEM 엔지니어링의 모범 사례를 기반으로 [코드 품질 테스트](/
 
 >[!NOTE]
 >
->여기에 제공된 코드 샘플은 설명 목적으로만 제공됩니다. SonarQube의 개념 및 품질 규칙에 대해 알아보려면 [SonarQube의 개념 설명서](https://docs.sonarsource.com/sonarqube/latest/)를 참조하십시오.
+>여기에 제공된 코드 샘플은 설명 목적으로만 제공됩니다. SonarQube의 개념 및 품질 규칙에 대해 알아보려면 [SonarQube의 개념 설명서](https://docs.sonarsource.com/sonarqube-server/latest/)를 참조하십시오.
 
->[!NOTE]
+전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다](/help/assets/CodeQuality-rules-latest-AMS.xlsx). 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
+
+>[!IMPORTANT]
 >
->전체 SonarQube 규칙은 Adobe 독점 정보로 인해 다운로드할 수 없습니다. [이 링크를 사용하여 전체 규칙 목록을 다운로드할 수 있습니다](/help/assets/CodeQuality-rules-latest-AMS.xlsx). 규칙에 대한 설명과 예를 보려면 이 문서를 계속 읽어 보십시오.
+>2025년 2월 13일 목요일(Cloud Manager 2025.2.0)부터 Cloud Manager 코드 품질은 업데이트된 SonarQube 9.9 버전과 [여기에서 다운로드](/help/assets/CodeQuality-rules-latest-AMS-2024-12-0.xlsx)할 수 있는 업데이트된 규칙 목록을 사용합니다.
 
 ## SonarQube 규칙 {#sonarqube-rules}
 
@@ -179,7 +181,7 @@ public void orDoThis() {
 ### `ResourceResolver` 오브젝트를 항상 닫아야 함 {#resourceresolver-objects-should-always-be-closed}
 
 * **키**: CQRules:CQBP-72
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
@@ -221,7 +223,7 @@ public void orDoThis(Session session) throws Exception {
 ### 슬링 서블릿 경로를 사용하여 서블릿을 등록 안 함 {#do-not-use-sling-servlet-paths-to-register-servlets}
 
 * **키**: CQRules:CQBP-75
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
@@ -241,7 +243,7 @@ public class DontDoThis extends SlingAllMethodsServlet {
 ### 발견된 예외를 기록하거나 표시하되 둘 다 해서는 안 됨 {#caught-exceptions-should-be-logged-or-thrown-but-not-both}
 
 * **키**: CQRules:CQBP-44---CatchAndEitherLogOrThrow
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -283,7 +285,7 @@ public void orDoThis() throws MyCustomException {
 ### throw 문 바로 뒤에 오는 log 문 방지 {#avoid-having-a-log-statement-immediately-followed-by-a-throw-statement}
 
 * **키**: CQRules:CQBP-44---ConsecutivelyLogAndThrow
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -309,7 +311,7 @@ public void doThis() throws Exception {
 ### GET 또는 HEAD 요청을 처리할 때 INFO에서 로깅하지 않음 {#avoid-logging-at-info-when-handling-get-or-head-requests}
 
 * **키**: CQRules:CQBP-44---LogInfoInGetOrHeadRequests
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 
 일반적으로 INFO 로그 수준은 중요한 작업을 구분하는 데 사용되어야 하며 기본적으로 AEM은 INFO 수준 또는 그 이상에서 기록되도록 구성됩니다. GET 및 HEAD 메서드는 읽기 전용 작업이어야 하므로 중요한 작업을 구성하지 않습니다. GET 또는 HEAD 요청에 대한 응답으로 INFO 수준에서 로깅하면 상당한 로그 노이즈가 발생하여 로그 파일에서 유용한 정보를 식별하기가 더 어려워질 수 있습니다. GET 또는 HEAD 요청을 처리할 때 문제가 발생한 경우 WARN 또는 ERROR 수준으로 로깅해야 합니다. 더 심층적인 문제 해결 정보를 얻으려면 로깅을 DEBUG 또는 TRACE 수준으로 설정해야 합니다.
@@ -337,7 +339,7 @@ public void doGet() throws Exception {
 ### logging 문의 첫 번째 매개변수로 `Exception.getMessage()` 사용 안 함 {#do-not-use-exception-getmessage-as-the-first-parameter-of-a-logging-statement}
 
 * **키**: CQRules:CQBP-44---ExceptionGetMessageIsFirstLogParam
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -370,7 +372,7 @@ public void doThis() {
 ### Catch 블록에 로그인할 때 WARN 또는 ERROR 수준을 유지해야 함 {#logging-in-catch-blocks-should-be-at-the-warn-or-error-level}
 
 * **키**: CQRules:CQBP-44---WrongLogLevelInCatchBlock
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -403,7 +405,7 @@ public void doThis() {
 ### 콘솔에 스택 추적을 인쇄하지 않음 {#do-not-print-stack-traces-to-the-console}
 
 * **키**: CQRules:CQBP-44---ExceptionPrintStackTrace
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -436,7 +438,7 @@ public void doThis() {
 ### 표준 출력 또는 표준 오류로 출력하지 않음 {#do-not-output-to-standard-output-or-standard-error}
 
 * **키**: CQRules:CQBP-44—LogLevelConsolePrinters
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -469,7 +471,7 @@ public void doThis() {
 ### 하드코딩된 `/apps` 경로 및 `/libs` 경로 방지 {#avoid-hardcoded-apps-and-libs-paths}
 
 * **키**: CQRules:CQBP-71
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
@@ -494,7 +496,7 @@ public void doThis(Resource resource) {
 ### 슬링 스케줄러를 사용하면 안 됨 {#sonarqube-sling-scheduler}
 
 * **키**: CQRules:AMSCORE-554
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell` / Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -505,7 +507,7 @@ public void doThis(Resource resource) {
 ### 더 이상 사용되지 않는 AEM API를 사용하면 안 됨 {#sonarqube-aem-deprecated}
 
 * **키**: AMSCORE-553
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell` / Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -627,7 +629,7 @@ AEM 콘텐츠 저장소의 `/libs` 콘텐츠 트리는 고객이 읽기 전용�
 ### 기본 작성 모드는 클래식 UI가 아니어야 함 {#oakpal-default-authoring}
 
 * **키**: ClassicUIAuthoringMode
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell` / Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -636,7 +638,7 @@ OSGi 구성 `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` AEM 내의 기
 ### 대화 상자가 있는 구성 요소에는 터치 UI 대화 상자가 있어야 함 {#oakpal-components-dialogs}
 
 * **키**: ComponentWithOnlyClassicUIDialog
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell` / Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -651,7 +653,7 @@ AEM 현대화 도구 설명서는 구성 요소를 클래식 UI에서 터치 UI�
 ### 역방향 복제 에이전트를 사용하면 안 됨 {#oakpal-reverse-replication}
 
 * **키**: ReverseReplication
-* **유형**: 코드 스멜/Cloud Service 호환성
+* **유형**: `Code Smell` / Cloud Service 호환성
 * **심각도**: 사소
 * **이후**: 버전 2020.5.0
 
@@ -693,7 +695,7 @@ AEM 클라이언트 라이브러리는 이미지 및 글꼴과 같은 정적 리
 ### Cloud Service의 호환되지 않는 워크플로 프로세스 사용 {#oakpal-usage-cloud-service}
 
 * **키**: CloudServiceIncompatibleWorkflowProcess
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: Blocker
 * **이후**: 버전 2021.2.0
 
@@ -704,7 +706,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 ### 편집 가능한 템플릿을 위해 정적 템플릿을 사용하지 않음 {#oakpal-static-template}
 
 * **키**: StaticTemplateUsage
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -715,7 +717,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 ### 기존 기초 구성 요소를 사용하지 않음 {#oakpal-usage-legacy}
 
 * **키**: LegacyFoundationComponentUsage
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -726,7 +728,7 @@ AEM Cloud Service에서 자산 처리를 위해 Asset 마이크로 서비스로 
 ### 사용자 정의 검색 인덱스 정의 노드는 `/oak:index`의 직접 하위 노드여야 함 {#oakpal-custom-search}
 
 * **키**: OakIndexLocation
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -735,7 +737,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 ### 사용자 정의 검색 인덱스 정의 노드의 compatVersion을 2로 설정해야 함 {#oakpal-custom-search-compatVersion}
 
 * **키**: IndexCompatVersion
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -744,7 +746,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 ### 사용자 정의 검색 인덱스 정의 노드의 하위 노드 유형은 `nt:unstructured`여야 함 {#oakpal-descendent-nodes}
 
 * **키**: IndexDescendantNodeType
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -753,7 +755,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 ### 사용자 정의 검색 인덱스 정의 노드는 하위 노드가 있는 `indexRules`라는 하위 노드를 포함해야 함 {#oakpal-custom-search-index}
 
 * **키**: IndexRulesNode
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -762,7 +764,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 ### 사용자 정의 검색 인덱스 정의 노드는 명명 규칙을 준수해야 함 {#oakpal-custom-search-definitions}
 
 * **키**: IndexName
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -771,7 +773,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 ### 사용자 정의 검색 인덱스 정의 노드는 lucene 유형의 인덱스를 사용해야 함 {#oakpal-index-type-lucene}
 
 * **키**: IndexType
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -780,7 +782,7 @@ AEM Cloud Service를 사용하려면 사용자 정의 검색 인덱스 정의(�
 ### 사용자 정의 검색 인덱스 정의 노드에는 `seed`라는 속성이 포함되어서는 안 됨 {#oakpal-property-name-seed}
 
 * **키**: IndexSeedProperty
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
@@ -789,7 +791,7 @@ AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryInd
 ### 사용자 정의 검색 인덱스 정의 노드에는 `reindex`라는 속성이 포함되어서는 안 됨 {#oakpal-reindex-property}
 
 * **키**: IndexReindexProperty
-* **유형**: 코드 스멜
+* **유형**: `Code Smell`
 * **심각도**: 사소
 * **이후**: 버전 2021.2.0
 
