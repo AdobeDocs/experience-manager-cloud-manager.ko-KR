@@ -3,9 +3,9 @@ title: 환경 일관성을 유지하기 위한 콘텐츠 복사
 description: Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위해 Adobe Managed Services에서 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 source-git-commit: 84b3366481c2efd497583627eac67046452f6c38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위�
 
    `/content`, `/conf`, `/etc`, `/var/workflow/models` 또는 `/var/commerce`로 시작되는 경로만 포함될 수 있습니다.
 
-1. 콘텐츠 집합에 경로를 추가하거나 포함하려면 ![폴더 추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **경로 추가**&#x200B;를 클릭하십시오.
+1. ![폴더 추가 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderAdd_18_N.svg) **경로 추가**&#x200B;를 클릭하여 경로를 콘텐츠 세트에 추가(또는 포함)합니다.
 
 1. (선택 사항) 필요한 경우 이전 두 단계를 반복하여 추가 경로(최대 50개)를 추가합니다. 그렇지 않으면 다음 단계를 계속 진행합니다.
 
