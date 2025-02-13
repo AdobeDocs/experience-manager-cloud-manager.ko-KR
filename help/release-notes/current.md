@@ -4,10 +4,10 @@ description: Adobe Managed Services용 Cloud Manager 2025.2.0 릴리스에 대�
 feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 9d9bf7d689c0ace41bce3f31febe8ba78636c01f
+source-git-commit: 51dd060ec9b922ace9ce537cac669c61154284e8
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 90%
+source-wordcount: '241'
+ht-degree: 22%
 
 ---
 
@@ -21,8 +21,6 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.2.0 릴리스에 대�
 
 ## 릴리스 일자 {#release-date}
 
-*Cloud Manager 2월 릴리스에 대해 주목할 만한 버그나 기능이 없습니다.*
-
 [!UICONTROL Cloud Manager] 2025.2.0의 릴리스 날짜는 2025년 2월 13일 목요일입니다.
 
 다음 릴리스는 2025년 3월 13일 금요일에 예정되어 있습니다.
@@ -31,31 +29,45 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.2.0 릴리스에 대�
 
 <!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
-* 2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계에서는 업그레이드된 SonarQube 버전 9.9.5.90363을 사용합니다.
+* **업그레이드된 SonarQube**
 
-  [이 링크](/help/using/code-quality-testing.md#code-quality-testing-step)에서 AMS에 대해 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인의 보안 점수와 코드 품질을 결정합니다. 이 업데이트는 품질 게이트에 영향을 미치며, 배포를 차단할 가능성이 있습니다.
+  2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계는 이제 SonarQube 9.9.5.90363을 사용합니다.
 
-## 얼리 어답터 프로그램 {#early-adoption}
+  [이 링크](/help/using/code-quality-testing.md#code-quality-testing-step)에서 AMS에 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인에 대한 보안 점수와 코드 품질을 결정합니다.
 
-Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+* SonarQube 9.9는 이제 모든 고객을 위한 기본 코드 품질 검색 엔진입니다.
 
-### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
+* **Java 17 및 Java 21 빌드 환경 지원**
 
-<!-- BOTH CS & AMS -->
+  고객은 이제 선택적으로 Java 17 또는 Java 21을 사용하여 빌드할 수 있으므로 성능 향상과 새로운 언어 기능의 이점을 활용할 수 있습니다. Maven 프로젝트 설명 및 특정 라이브러리 버전 업데이트를 포함한 구성 단계는 [빌드 환경](/help/getting-started/build-environment.md)을 참조하십시오.
 
-**자체 Git 가져오기** 기능이 확장되어 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원이 포함되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
+  >[!NOTE]
+  >Cloud Service 환경의 경우, 빌드 버전이 Java 17 또는 Java 21로 설정된 경우 런타임의 기본값은 Java 21입니다.
 
-이제 외부 저장소(GitHub 호스팅된 저장소 제외)와 **배포 트리거**&#x200B;를 **Git 변경 시**&#x200B;로 설정한 파이프라인이 자동으로 시작됩니다.
+* **콘텐츠 복사 유효성 검사 확장**
 
-[Cloud Manager에서 외부 저장소 추가](/help/managing-code/external-repositories.md)를 참조하십시오.
+  콘텐츠 복사 유효성 검사 규칙이 업데이트되었습니다. 이번 릴리스에서는 소스 또는 대상 환경에서 활성 파이프라인 실행이 있는 경우 사용자가 더 이상 콘텐츠 사본을 트리거할 수 없습니다. 사용자는 컨텐츠 복사를 시작하기 전에 진행 중인 모든 파이프라인 실행이 완료될 때까지 기다려야 합니다.
 
-![저장소 추가 대화 상자](/help/release-notes/assets/repositories-add-release-notes.png)
+<!-- 
+## Early adoption program {#early-adoption}
+
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
+
+### Bring Your Own Git - now with support for GitLab and Bitbucket {#gitlab-bitbucket}
+
+The **Bring Your Own Git** feature has been expanded to include support for external repositories, such as GitLab and Bitbucket. This new support is in addition to the already existing support for private and enterprise GitHub repositories. When you add these new repos, you can also link them directly to your pipelines. You can host these repositories on public cloud platforms or within your private cloud or infrastructure. This integration also removes the need for constant code synchronization with the Adobe repository and provides the ability to validate pull requests before merging them into a main branch.
+
+Pipelines using external repositories (excluding GitHub-hosted ones) and the **Deployment Trigger** set to **On Git Changes** now start automatically.
+
+See [Add external repositories in Cloud Manager](/help/managing-code/external-repositories.md).
+
+![Add Repository dialog box](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만, 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
+>Currently, the out-of-the-box pull request code quality checks are exclusive to GitHub-hosted repositories, but an update to extend this functionality to other Git vendors is in the works.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 
 <!-- ## Bug fixes {#bug-fixes}
