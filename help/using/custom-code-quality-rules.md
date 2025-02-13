@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 1b7b703f7cba69878bd98aa971844741ebea7dba
-workflow-type: ht
-source-wordcount: '3490'
-ht-degree: 100%
+source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
+workflow-type: tm+mt
+source-wordcount: '3523'
+ht-degree: 99%
 
 ---
 
@@ -882,6 +882,15 @@ AEM Cloud Service는 공백이 있는 속성을 포함하는 색인화 &#x200B;&
 * **이후**: 버전 2024.12.0
 
 AEM Cloud Service는 haystack 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.
+
+### 인덱싱 정의 구성에는 속성 비동기-previous가 없어야 합니다. {#oakpal-indexing-async-previous-property}
+
+* **키**: IndexAsyncPreviousCheck
+* **유형**: 개선
+* **심각도**: 사소
+* **이후**: 버전 2025.2.0
+
+AEM Cloud Service에서는 비동기 이전 속성이 포함된 인덱싱 정의를 만들 수 없습니다.
 
 ## Dispatcher 최적화 도구 {#dispatcher-optimization-tool-rules}
 
