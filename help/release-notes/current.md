@@ -1,57 +1,61 @@
 ---
-title: Cloud Manager 2025.1.0 릴리스 정보
-description: Adobe Managed Services용 Cloud Manager 2025.1.0 릴리스에 대해 알아봅니다.
+title: Cloud Manager 2025.2.0 릴리스 정보
+description: Adobe Managed Services용 Cloud Manager 2025.2.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exlid: 669b1f2d8fc68526eb091e0f93f70ab93033d193
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: ca9a07354ff8316f531840a42d6ecdda5c072b9b
-workflow-type: ht
-source-wordcount: '196'
-ht-degree: 100%
+source-git-commit: 9d9bf7d689c0ace41bce3f31febe8ba78636c01f
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 90%
 
 ---
 
-# Adobe Managed Services용 Cloud Manager 2025.1.0 릴리스 정보 {#release-notes}
+# Adobe Managed Services용 Cloud Manager 2025.2.0 릴리스 정보 {#release-notes}
 
-<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release -->
+<!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.02.0+Release -->
 
-Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.1.0 릴리스에 대해 알아봅니다.
+Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.2.0 릴리스에 대해 알아봅니다.
 
->[!NOTE]
->
->[최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home)를 참조하십시오.
+[Adobe Experience Manager as a Cloud Service의 최신 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home)도 참조하세요.
 
 ## 릴리스 일자 {#release-date}
 
-<!-- SAVE FOR FUTURE POSSIBLE USE No notable bugs or features for the September release of Cloud Manager. -->
+*Cloud Manager 2월 릴리스에 대해 주목할 만한 버그나 기능이 없습니다.*
 
-[!UICONTROL Cloud Manager] 릴리스 2025.1.0의 릴리스 일자는 2024년 1월 22일 수요일입니다.
+[!UICONTROL Cloud Manager] 2025.2.0의 릴리스 날짜는 2025년 2월 13일 목요일입니다.
 
-다음 릴리스는 2025년 2월 13일에 예정되어 있습니다.
+다음 릴리스는 2025년 3월 13일 금요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
-**코드 품질 규칙 - Sonar Cube 업그레이드:** Cloud Manager 코드 품질 단계는 2025년 2월 13일 목요일로 예정된 Cloud Manager 2025.2.0 릴리스를 통해 SonarQube Server 9.9를 사용하기 시작할 예정입니다.
+<!-- * The AEM Code Quality step now uses SonarQube 9.9 Server, replacing the older 7.4 version. This upgrade brings additional security, performance, and code quality checks, offering more comprehensive analysis and coverage for your projects. --> <!-- CMGR-45683 -->
 
-준비를 위해, 업데이트된 SonarQube 규칙이 이제 [코드 품질 규칙](/help/using/code-quality-testing.md#code-quality-testing-step)에서 제공됩니다.
+* 2025년 2월 13일 목요일부터 Cloud Manager 코드 품질 단계에서는 업그레이드된 SonarQube 버전 9.9.5.90363을 사용합니다.
 
-다음 파이프라인 텍스트 변수를 설정하여 새 규칙을 “조기에 확인”할 수 있습니다(아래 스크린샷 참조).
+  [이 링크](/help/using/code-quality-testing.md#code-quality-testing-step)에서 AMS에 대해 사용할 수 있는 업데이트된 규칙은 Cloud Manager 파이프라인의 보안 점수와 코드 품질을 결정합니다. 이 업데이트는 품질 게이트에 영향을 미치며, 배포를 차단할 가능성이 있습니다.
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+## 얼리 어답터 프로그램 {#early-adoption}
 
-또한 다음 변수를 설정하여 코드 품질 단계가 동일한 커밋에 대해 실행되도록 하십시오(일반적으로 동일한 `commitId`에 대해 건너뜀).
+Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
 
-![변수 구성 페이지](/help/release-notes/assets/variables-config.png)
+<!-- BOTH CS & AMS -->
+
+**자체 Git 가져오기** 기능이 확장되어 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원이 포함되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
+
+이제 외부 저장소(GitHub 호스팅된 저장소 제외)와 **배포 트리거**&#x200B;를 **Git 변경 시**&#x200B;로 설정한 파이프라인이 자동으로 시작됩니다.
+
+[Cloud Manager에서 외부 저장소 추가](/help/managing-code/external-repositories.md)를 참조하십시오.
+
+![저장소 추가 대화 상자](/help/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >
->Adobe에서는 주요 프로덕션 파이프라인과 동일한 브랜치로 구성된 새로운 CI/CD 코드 품질 파이프라인을 만드는 것을 권장합니다. 2025년 2월 13일 릴리스에 *앞서* 적절한 변수를 설정하여 새로 적용된 규칙이 차단 요소를 도입하지 않는지 확인하십시오.
+>현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만, 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
 
-<!-- ## Early adoption program {#early-adoption}
-
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
 
 <!-- ## Bug fixes {#bug-fixes}
