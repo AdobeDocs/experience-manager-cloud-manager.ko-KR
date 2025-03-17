@@ -1,11 +1,11 @@
 ---
-title: Cloud Manager에서 외부 저장소 추가 (얼리 어답터)
+title: Cloud Manager에서 외부 저장소 추가 - 얼리 어답터
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager는 GitHub, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: e7e2268f866105970e02d4bc54c46613749e5ac0
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 98%
 
 ---
 
@@ -63,7 +63,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | --- | --- |
    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
    | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `Read access to metadata`.<br>  • `Read and write access to code and pull requests`.<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
-   |  | **저장소 유형: GitLab**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitLab 설명서](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
+   |  | **저장소 유형: GitLab**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• **액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
    |  | **저장소 유형: Bitbucket**<br>• **토큰 이름** 텍스트 필드에 생성하려는 액세스 토큰의 이름을 입력합니다.<br>• [Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<br>• 필요 권한:<br>  • `Read and write access to code and pull requests`. |
 
    >[!NOTE]

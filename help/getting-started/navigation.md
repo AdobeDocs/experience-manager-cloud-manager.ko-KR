@@ -2,10 +2,10 @@
 title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '1439'
+ht-degree: 96%
 
 ---
 
@@ -52,11 +52,11 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![Experience Cloud 헤더](assets/experience-cloud-header.png)
 
-1. 헤더의 왼쪽에 있는 햄버거 아이콘은 개별 프로그램의 특정 부분에 대한 탭에 액세스할 수 있는 드롭다운 메뉴입니다. 컨텍스트에 따라 라이선스 대시보드와 **[내 프로그램](#my-programs-console)** 콘솔 사이를 전환할 수도 있습니다.
+1. 헤더 왼쪽에 있는 ![메뉴 표시 아이콘, 햄버거](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 아이콘은 개별 프로그램의 특정 부분에 대한 탭에 대한 액세스를 제공하는 드롭다운 메뉴입니다. 컨텍스트에 따라 라이선스 대시보드와 **[내 프로그램](#my-programs-console)** 콘솔 사이를 전환할 수도 있습니다.
    * 라이선스 대시보드는 AMS 프로그램이 아닌 AEM as a Cloud Service에만 적용됩니다.
    * 귀하의 프로그램에 제공되는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
 1. Cloud Manager 버튼을 사용하면 Cloud Manager의 어느 위치에 있든 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
-1. Cloud Manager에 대한 피드백을 Adobe에 제공하려면 피드백 버튼을 클릭합니다.
+1. Adobe에 Cloud Manager에 대한 피드백을 제공하려면 **피드백**&#x200B;을 클릭하세요.
 1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID가 여러 조직과 연결된 경우 클릭하여 다른 조직으로 전환합니다.
 1. 솔루션 전환기를 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
 1. 도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
@@ -106,7 +106,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 #### 프로그램 카드 {#program-cards}
 
-카드 또는 표의 행이 모든 프로그램을 표시해 프로그램 개요, 그리고 조치를 취할 수 있는 빠른 링크를 제공합니다.
+카드 또는 테이블의 행이 모든 프로그램을 표시해 프로그램 개요, 그리고 조치를 취할 수 있는 빠른 링크를 제공합니다.
 
 ![프로그램 카드](assets/program-card.png)
 
@@ -123,7 +123,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![정보](assets/information-view.png)
 
-줄임표 아이콘을 사용하면 프로그램에서 수행할 수 있는 추가 액션에 액세스할 수 있습니다.
+![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 사용하면 프로그램에서 수행할 수 있는 추가 작업에 액세스할 수 있습니다.
 
 ![프로그램의 줄임표 버튼](assets/program-ellipsis.png)
 

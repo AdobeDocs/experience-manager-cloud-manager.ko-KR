@@ -2,10 +2,10 @@
 title: 사용자 및 역할 추가
 description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '758'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 ## 역할 정의 {#role-definitions}
 
-다음 표에는 Cloud Manager에서의 역할이 요약되어 있습니다.
+다음 테이블에는 Cloud Manager에서의 역할이 요약되어 있습니다.
 
 | [!UICONTROL Cloud Manager] 역할 | 설명 |
 | --- | --- |
@@ -74,7 +74,7 @@ Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그
 1. [!UICONTROL Cloud Manager]에 대한 새 역할을 설정하는 데 필요한 정보를 제공합니다.
 
    * **프로필 이름** - **프로필 이름**&#x200B;은 어떤 것이든 사용할 수 있지만 혼동을 피하기 위해 **권장 프로필 이름** 열의 값을 사용하는 것이 좋습니다.
-   * **표시 이름** - **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에서 정의한 기술 값이어야 합니다(다음 표 참조).
+   * **표시 이름** - **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에서 정의한 기술 값이어야 합니다(다음 테이블 참조).
    * **권한 그룹** - 프로필에 대한 권한 그룹을 선택할 수 있습니다(항상 사용 가능한 것은 아님).
 
    ![새 프로필 만들기](/help/assets/screen_shot_2018-05-04at171819.png)
@@ -101,18 +101,18 @@ Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그
 
 1. 왼쪽 탐색 패널에서 **사용자**&#x200B;를 클릭한 후 수정할 사용자를 선택합니다.
 
-1. **제품** 섹션에서 줄임표 버튼을 클릭한 후 **편집**&#x200B;을 선택합니다.
+1. **제품** 섹션에서 ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭하고 **편집**&#x200B;을 클릭합니다.
 
    ![사용자 편집](/help/assets/admin-console-edit-user.png)
 
-1. **제품 및 사용자 그룹 편집** 대화 상자에서 더하기 버튼을 클릭하고 사용자에게 할당할 프로필을 선택합니다.
+1. **제품 및 사용자 그룹 편집** 대화 상자에서 ![추가 아이콘 및 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)를 클릭하고 사용자에게 할당할 프로필을 선택하십시오.
 
-   * 사용자가 이미 역할에 할당된 경우 더하기 버튼에 편집 버튼(연필)이 나타나며 같은 방식으로 사용할 수 있습니다.
+   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘과 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 단추는 편집 단추(연필)이지만 같은 방식으로 작동합니다.
 
    ![제품 및 사용자 그룹 편집](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. **저장**&#x200B;을 클릭하여 사용자에 프로필을 저장합니다.
 
-프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고&#x200B;**할당된 제품 프로필** 탭을 선택한 후 **제품 프로필 할당**&#x200B;을 클릭하여 프로필을 할당합니다.
+프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고 **할당된 제품 프로필을 선택합니다** 프로필을 할당하려면 **제품 프로필 할당**&#x200B;을 클릭합니다.
 
 ![그룹에 프로필 할당](/help/assets/admin-console-edit-user-groups.png)

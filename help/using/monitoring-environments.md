@@ -2,10 +2,10 @@
 title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니다.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '910'
-ht-degree: 100%
+source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Managed Services는 임계값을 설정하는데, [!UICONTROL Cloud Manage
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. 모니터링하려는 프로그램의 줄임표 버튼을 클릭합니다.
+1. 모니터링할 프로그램의 ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭합니다.
 1. 메뉴의 **관리** 제목 아래에서 **모니터링 표시**&#x200B;를 클릭하여 시스템 모니터링 정보를 표시하는 **보고서** 페이지를 엽니다.
 
    ![설정](/help/assets/first-timea1.png)

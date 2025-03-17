@@ -1,21 +1,21 @@
 ---
-title: 스테이징 전용 및 프로덕션 전용 파이프라인
+title: 스테이지 전용 및 프로덕션 전용 파이프라인 - 얼리어답터
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 03f7429fd2c4a6dd4c8ae3228eff9c8cdab1ded8
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 98%
 
 ---
 
-# 스테이징 전용 및 프로덕션 전용 파이프라인 {#stage-prod-only}
+# 스테이지 전용 및 프로덕션 전용 파이프라인(얼리 어답터) {#stage-prod-only}
 
 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
 
 >[!NOTE]
 >
->이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md#early-adoption)에만 사용할 수 있습니다.
+>이 기능은 [얼리 어답터 프로그램](/help/release-notes/2024/2024-8-0.md)에만 사용할 수 있습니다.
 
 ## 개요 {#overview}
 
@@ -116,3 +116,4 @@ ht-degree: 100%
 프로덕션 전용 파이프라인의 경우 프로덕션에 배포할 소스 아티팩트를 식별해야 합니다. 이러한 세부 정보는 **아티팩트 준비** 단계에서 확인할 수 있습니다. 해당 실행으로 이동하여 자세한 내용과 로그를 확인할 수 있습니다.
 
 ![아티팩트 세부 정보](/help/assets/configure-pipelines/prod-only-pipeline-run.png)
+

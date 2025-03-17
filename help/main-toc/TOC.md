@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 97%
 
 ---
 
@@ -52,6 +52,7 @@ ht-degree: 100%
    + [코드 품질 테스트](/help/using/code-quality-testing.md)
    + [환경 관리](/help/using/managing-environments.md)
    + [환경 모니터링](/help/using/monitoring-environments.md)
+   + [개발 환경에 대한 서비스 팩 업데이트(얼리 어답터)](/help/using/service-packs-environments.md)
    + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](/help/using/notifications.md)

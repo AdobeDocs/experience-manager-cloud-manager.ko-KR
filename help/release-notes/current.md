@@ -3,10 +3,10 @@ title: Cloud Manager 2025.3.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.3.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 31ae069c9e121963b4609af3f10ac08ab5539fb8
+source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 29%
+source-wordcount: '307'
+ht-degree: 28%
 
 ---
 
@@ -46,7 +46,6 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 
 ![업데이트 확인 메뉴 옵션](/help/release-notes/assets/check-for-updates-1.png)
 
-
 ![서비스 팩 업데이트 대화 상자](/help/release-notes/assets/check-for-updates-2.png)
 
 설치 및 업그레이드 프로세스는 **활동** 페이지에서 추적할 수 있습니다.
@@ -56,6 +55,8 @@ Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 
 ![서비스 페이지 업데이트 승인](/help/release-notes/assets/check-for-updates-3.png)
 
 이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe 고객 성공 엔지니어에게 문의하십시오.
+
+[개발 환경 - 조기 채택자를 위한 서비스 팩 업데이트](/help/using/service-packs-environments.md)도 참조하세요.
 
 
 <!-- ## Bug fixes {#bug-fixes}
