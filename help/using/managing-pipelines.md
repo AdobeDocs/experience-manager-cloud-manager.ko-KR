@@ -2,10 +2,10 @@
 title: 파이프라인 관리
 description: 실행, 편집 및 삭제를 포함하여 기존 파이프라인을 관리하는 방법을 알아봅니다.
 exl-id: e36420d2-57c5-4375-99fb-dd47c1c8bffd
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 73%
+source-wordcount: '1054'
+ht-degree: 60%
 
 ---
 
@@ -66,7 +66,7 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
 
 **세부 정보 보기**&#x200B;를 클릭해 [파이프라인 실행 세부 정보](#view-details)를 확인합니다.
 
-## 파이프라인 실행 {#running-pipelines}
+## 파이프라인 실행 {#run-one-pipeline}
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 1. **프로그램 개요** 페이지에서 **파이프라인** 카드로 이동합니다.
@@ -77,6 +77,23 @@ Cloud Manager의 **프로그램 개요** 페이지에 있는 **파이프라인**
    ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 다시 클릭하고 **[세부 정보 보기](#view-details)**&#x200B;를 클릭하면 실행 세부 정보를 볼 수 있습니다.
 
    파이프라인 유형에 따라 ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 다시 클릭하고 **취소**&#x200B;를 클릭하여 실행을 취소할 수 있습니다.
+
+## 여러 파이프라인 실행 {#run-multiple-pipelines}
+
+Cloud Manager을 사용하면 여러 파이프라인을 동시에 실행할 수 있으므로 Adobe Managed Services(AMS) 고객의 배포 효율성이 향상됩니다. **선택한 항목 실행** 기능을 사용하면 여러 파이프라인을 선택하고 한 번에 실행되도록 트리거할 수 있습니다. 파이프라인을 개별적으로 실행해야 하는 수작업 부담을 줄이고 빌드 및 배포 워크플로우를 최적화합니다.
+
+**여러 파이프라인을 실행하려면:**
+
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
+1. 왼쪽 메뉴에서 ![워크플로 아이콘 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **파이프라인**&#x200B;을 클릭합니다.
+1. **파이프라인** 페이지의 표에서 실행할 파이프라인 옆에 있는 확인란을 선택합니다.
+필요한 경우 ![필터 아이콘, 단계](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **필터**&#x200B;를 클릭하여 환경이나 배포된 코드 형식 또는 둘 다에 따라 파이프라인을 정렬합니다.
+1. 페이지의 오른쪽 상단 모서리에서 **선택한 항목 실행(x)**&#x200B;을 클릭합니다.
+1. **선택한 파이프라인 실행(x)** 대화 상자에서 **실행(x)**&#x200B;을 클릭합니다.
+
+   **실행** 단추는 진행할 수 있는 파이프라인 수를 반영합니다. 예를 들어 4개의 파이프라인을 선택했지만 하나는 이미 실행 중입니다. 또는 선택한 파이프라인에 연결된 환경이 더 이상 존재하지 않습니다. 이러한 경우 시스템이 그에 따라 조정됩니다. 버튼이 &quot;실행(3)&quot;으로 업데이트되어 세 개의 파이프라인이 진행될 수 있음을 나타냅니다.
+
+1. 파이프라인이 실행되고 상태가 **파이프라인** 목록에서 업데이트됩니다.
 
 ## 파이프라인 편집 {#editing-pipelines}
 

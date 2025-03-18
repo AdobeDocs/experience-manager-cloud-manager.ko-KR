@@ -1,7 +1,8 @@
 ---
 title: 개발 환경용 서비스 팩 업데이트 - 얼리 어답터
 description: Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비스 팩 업데이트를 시작하는 방법을 알아봅니다.
-source-git-commit: 8da0e6cb4587bc7dfc79bec415ff3aeef2d12e3e
+exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
+source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
@@ -14,7 +15,7 @@ Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비
 
 >[!NOTE]
 >
->이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md)에만 사용할 수 있습니다.
+>이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md#early-adoption)에만 사용할 수 있습니다.
 
 ## 개요 {#service-pack-updates-overview}
 
@@ -91,5 +92,3 @@ Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비
 서비스 팩 설치가 취소되고 변경 사항이 적용되지 않습니다.
 
    ![서비스 팩 거부](/help/using/assets/service-pack-reject.png)
-
-
