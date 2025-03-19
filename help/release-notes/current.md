@@ -3,10 +3,10 @@ title: Cloud Manager 2025.3.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.3.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: bb57be6d2cbab8ff47b368bab59cb3072f78b235
+source-git-commit: 36e5e666417508f24a7c142e96bace48abbcb735
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 28%
+source-wordcount: '150'
+ht-degree: 46%
 
 ---
 
@@ -32,31 +32,35 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.3.0 릴리스에 대�
 
   ![선택한 파이프라인 실행 대화 상자](/help/release-notes/assets/run-selected-pipelines.png)
 
+  [여러 파이프라인 실행](/help/using/managing-pipelines.md#run-multiple-pipelines)도 참조하세요.
 
 
-## 얼리 어답터 프로그램 {#early-adoption}
 
-Cloud Manager의 얼리 어답터 프로그램에 참여하여 향후 기능을 테스트할 기회를 얻으십시오.
+<!--
+## Early adoption program {#early-adoption}
 
-### AMS Cloud Manager 고객을 위한 셀프서비스 팩 업데이트
+Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features.
 
-이제 얼리어답터 프로그램의 일부로 Adobe Managed Services Cloud Manager 고객은 **Cloud Manager** 사용자 인터페이스를 통해 셀프 서비스 서비스 팩 업데이트를 수행할 수 있습니다. 이 기능은 현재 *개발 환경에만 사용*&#x200B;되며, 실패에 대한 제한된 오류 보고를 포함합니다.
+### Self-service Service Pack updates for AMS Cloud Manager customers 
 
-고객은 **환경** 섹션(**세 점 메뉴**)의 **프로그램 개요** 페이지에서 서비스 팩 업데이트를 확인할 수 있습니다.
+As part of the early adopters program, Adobe Managed Services Cloud Manager customers can now perform self-service service pack updates through the **Cloud Manager** user interface. This feature is currently available *only for development environments* and includes limited error reporting for failures.  
 
-![업데이트 확인 메뉴 옵션](/help/release-notes/assets/check-for-updates-1.png)
+Customers can check for service pack updates on the **Program Overview** page under the **Environments** section (**three-dot menu**).
 
-![서비스 팩 업데이트 대화 상자](/help/release-notes/assets/check-for-updates-2.png)
+![Check for updates menu option](/help/release-notes/assets/check-for-updates-1.png)
 
-설치 및 업그레이드 프로세스는 **활동** 페이지에서 추적할 수 있습니다.
+![Update Service Pack dialog box](/help/release-notes/assets/check-for-updates-2.png)
 
-프로세스가 완료되면 고객은 서비스 팩 업그레이드를 성공적으로 완료하려면 **실행을 승인**&#x200B;해야 합니다.
+The installation and upgrade process can be tracked on the **Activity** page. 
 
-![서비스 페이지 업데이트 승인](/help/release-notes/assets/check-for-updates-3.png)
+Once the process is complete, customers must **approve the execution** for the service pack upgrade to finalize successfully.
 
-이 새로운 기능을 테스트하고 피드백을 공유하려면 Adobe 고객 성공 엔지니어에게 문의하십시오.
+![Approve service page update](/help/release-notes/assets/check-for-updates-3.png)
 
-[개발 환경 - 조기 채택자를 위한 서비스 팩 업데이트](/help/using/service-packs-environments.md)도 참조하세요.
+If you are interested in testing this new feature and sharing your feedback, contact your Adobe Customer Success Engineer.
+
+See also [Service Pack Updates for Development Environments - Early Adopter](/help/using/service-packs-environments.md).
+-->
 
 
 
