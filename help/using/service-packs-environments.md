@@ -1,8 +1,10 @@
 ---
 title: 개발 환경용 서비스 팩 업데이트 - 얼리 어답터
 description: Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비스 팩 업데이트를 시작하는 방법을 알아봅니다.
+hide: true
+hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 91691878a2c135cc9fe123c06afcf775a962a2e0
+source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 3%
