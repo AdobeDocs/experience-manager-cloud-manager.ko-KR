@@ -6,7 +6,7 @@ exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 source-git-commit: 81894345cd4e0921f3734f6e09a82c192d20f9dd
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 46%
+ht-degree: 96%
 
 ---
 
@@ -20,17 +20,17 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.3.0 릴리스에 대�
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 2025.3.0의 릴리스 날짜는 2025년 3월 13일 목요일입니다.
+[!UICONTROL Cloud Manager] 2025.3.0의 릴리스 일자는 2025년 3월 13일입니다.
 
-다음 릴리스는 2025년 4월 10일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 4월 10일 목요일에 예정되어 있습니다.
 
 ## 새로운 기능 {#what-is-new}
 
 * **여러 파이프라인 실행**
 
-  여러 파이프라인을 동시에 실행하는 기능이 파이프라인 페이지에 도입되었습니다. 사용자는 최소 하나 이상 10개 이하의 파이프라인을 선택해야 합니다. 파이프라인 페이지의 오른쪽 상단 모서리에서 **선택한 항목 실행(x)**&#x200B;을 클릭합니다. 시작할 수 없는 파이프라인을 나열하는 모달 대화 상자가 나타납니다. 유효한 모든 파이프라인을 시작하려면 **실행**&#x200B;을 클릭하세요.
+  여러 파이프라인을 동시에 실행할 수 있는 기능이 파이프라인 페이지에 도입되었습니다. 사용자는 최소한 1개의 파이프라인을 선택해야 하지만 10개를 초과해서는 안 됩니다. 파이프라인 페이지의 오른쪽 상단에서 **선택 항목 실행(x)**&#x200B;을 클릭합니다. 시작할 수 없는 파이프라인을 표시하는 모달 대화 상자가 나타납니다. 모든 유효한 파이프라인을 시작하려면 **실행**&#x200B;을 클릭합니다.
 
-  ![선택한 파이프라인 실행 대화 상자](/help/release-notes/assets/run-selected-pipelines.png)
+  ![선택된 파이프라인 실행 대화 상자](/help/release-notes/assets/run-selected-pipelines.png)
 
   [여러 파이프라인 실행](/help/using/managing-pipelines.md#run-multiple-pipelines)도 참조하세요.
 

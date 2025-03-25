@@ -74,7 +74,7 @@ ht-degree: 97%
    + [개요](/help/product-update-wizard/overview.md)
    + [평가](/help/product-update-wizard/evaluation.md)
 + 릴리스 정보 {#release-notes}
-   + [현재](/help/release-notes/current.md)
+   + [최신](/help/release-notes/current.md)
    + 2025 {#rn-2025}
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
