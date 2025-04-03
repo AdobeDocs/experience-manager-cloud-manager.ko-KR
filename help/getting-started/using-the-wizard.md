@@ -2,17 +2,17 @@
 title: 새 프로젝트 마법사 사용
 description: 마법사를 사용하여 AEM 애플리케이션 프로젝트를 만드는 방법에 대해 배우려면 이 페이지를 따르십시오.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: 7bc874a8dd14544c22201ef2c470faab84d31f8b
-workflow-type: ht
-source-wordcount: '321'
-ht-degree: 100%
+source-git-commit: f3617eb50147f5af33282cb0f25ada7dc423d434
+workflow-type: tm+mt
+source-wordcount: '320'
+ht-degree: 92%
 
 ---
 
 
 # 새 프로젝트 마법사 사용 {#using-the-wizard}
 
-새로운 고객으로 Cloud Manager에 온보딩되면 빈 Git 저장소를 제공합니다. 시작하는 데 도움을 주기 위해 Cloud Manager는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을 기반으로 최소 AEM 프로젝트를 생성하는 마법사를 제공합니다.
+새 고객으로 Cloud Manager에 온보딩되면 빈 Git 저장소가 제공됩니다. 시작하는 데 도움을 주기 위해 Cloud Manager는 [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)을 기반으로 최소 AEM 프로젝트를 생성하는 마법사를 제공합니다.
 
 마법사를 사용하여 AEM 프로젝트를 생성하려면 다음 단계를 수행하십시오.
 
