@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: c50eb54b5603b4370f2d7907a2194477dcc3ba21
-workflow-type: ht
-source-wordcount: '3523'
-ht-degree: 100%
+source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+workflow-type: tm+mt
+source-wordcount: '3644'
+ht-degree: 96%
 
 ---
 
@@ -883,14 +883,33 @@ AEM Cloud Service는 공백이 있는 속성을 포함하는 색인화 &#x200B;&
 
 AEM Cloud Service는 haystack 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.
 
-### 색인화 정의 구성에 async-previous 속성이 포함되어서는 안 됨 {#oakpal-indexing-async-previous-property}
+### 색인화 정의 구성에 async-previous 속성이 포함되어서는 안 됨 {#oakpal-indexing-unsupported-async-properties}
 
-* **키**: IndexAsyncPreviousCheck
+* **키**: IndexUnsupportedAsyncPropertiesCheck
 * **유형**: 개선
 * **심각도**: 사소
-* **이후**: 버전 2025.2.0
+* **이후**: 버전 2025.3.0
 
-AEM Cloud Service는 async-previous 속성을 포함하는 색인화 &#x200B;&#x200B;정의 생성을 금지합니다.
+AEM Cloud Service에서는 지원되지 않는 비동기 속성을 사용하여 인덱싱 정의를 만들 수 없습니다.
+
+### 색인 정의 구성은 여러 색인에 동일한 태그가 없어야 합니다 {#oakpal-indexing-same-tag-multiple-indexes}
+
+* **키**: SameTagInMultipleIndexes
+* **유형**: 개선
+* **심각도**: 사소
+* **이후**: 버전 2025.3.0
+
+AEM Cloud Service에서는 여러 인덱스에 동일한 태그를 포함하는 인덱싱 정의를 만들 수 없습니다.
+
+### 인덱싱 정의 구성에는 금지된 경로에 대한 모드 대체가 포함되어서는 안 됩니다. {#oakpal-xml-mode-analysis}
+
+* **키**: FilterXmlModeAnalysis
+* **유형**: 개선
+* **심각도**: 주요
+* **이후**: 버전 2025.4.0
+
+파일 보관소에서 &quot;대체&quot; 모드는 /content 아래의 경로에는 사용할 수 없습니다. /etc 및 /var 아래의 경로에는 사용할 수 없습니다.
+&quot;바꾸기&quot; 모드는 저장소의 기존 모든 콘텐츠를 콘텐츠 패키지에 제공된 콘텐츠로 바꿉니다. 이 작업을 트리거하는 패키지는 CloudManager를 통해 배포된 패키지의 일부여야 합니다.
 
 ## Dispatcher 최적화 도구 {#dispatcher-optimization-tool-rules}
 
