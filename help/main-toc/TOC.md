@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 97%
+source-wordcount: '366'
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 97%
    + [코드 품질 테스트](/help/using/code-quality-testing.md)
    + [환경 관리](/help/using/managing-environments.md)
    + [환경 모니터링](/help/using/monitoring-environments.md)
-   + [개발 환경에 대한 서비스 팩 업데이트(얼리 어답터)](/help/using/service-packs-environments.md)
+   + [개발 환경에 대한 서비스 팩 업데이트 (얼리 어답터)](/help/using/service-packs-environments.md)
    + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](/help/using/notifications.md)
@@ -76,6 +76,7 @@ ht-degree: 97%
 + 릴리스 정보 {#release-notes}
    + [최신](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
    + 2024 {#rn-2024}
