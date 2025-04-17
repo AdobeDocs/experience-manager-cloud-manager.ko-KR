@@ -2,7 +2,7 @@
 title: Cloud Manager에서 외부 저장소 추가 - 얼리 어답터
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: a63d996b283396efa139bf567c40a51e6f46d9bc
+source-git-commit: 5ba12cdfa4a0d790561fd2f3da738bf697133bee
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 28%
@@ -39,7 +39,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **내 프로그램** 콘솔에서 외부 리포지토리를 연결할 프로그램을 선택합니다.
+1. **[내 프로그램](/help/getting-started/navigation.md#my-programs-console)** 콘솔에서 외부 리포지토리를 연결할 프로그램을 선택합니다.
 
 1. 사이드 메뉴의 **프로그램**&#x200B;에서 ![폴더 개요 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **저장소**&#x200B;를 클릭합니다.
 
@@ -121,7 +121,7 @@ GitHub Enterprise, GitLab 및 Bitbucket과 같이 액세스 토큰과 함께 온
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
-1. **내 프로그램** 콘솔에서 외부 Git 저장소에 대한 웹후크를 구성할 프로그램을 선택합니다.
+1. **[내 프로그램](/help/getting-started/navigation.md#my-programs-console)** 콘솔에서 외부 Git 저장소에 대한 웹후크를 구성할 프로그램을 선택합니다.
 
 1. 페이지의 왼쪽 상단에서 ![메뉴 표시 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)을 클릭하여 왼쪽 사이드 메뉴를 표시합니다.
 
