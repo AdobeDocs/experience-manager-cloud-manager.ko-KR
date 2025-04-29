@@ -1,21 +1,22 @@
 ---
-title: 스테이지 전용 및 프로덕션 전용 파이프라인 - 얼리어답터
+title: 스테이징 전용 및 프로덕션 전용 파이프라인
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
+badge: label="얼리 어답터" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 2c6f5692ffa31e02d7338e68063d0c1c03a0c73b
+source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 98%
+source-wordcount: '937'
+ht-degree: 99%
 
 ---
 
-# 스테이지 전용 및 프로덕션 전용 파이프라인(얼리 어답터) {#stage-prod-only}
+# 스테이징 전용 및 프로덕션 전용 파이프라인 {#stage-prod-only}
 
 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
 
 >[!NOTE]
 >
->이 기능은 [얼리 어답터 프로그램](/help/release-notes/2024/2024-8-0.md)에만 사용할 수 있습니다.
+>이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md#staging-production-only-pipelines)에만 사용할 수 있습니다.
 
 ## 개요 {#overview}
 
@@ -34,7 +35,7 @@ ht-degree: 98%
 
 프로덕션 전용 파이프라인이 수동으로 트리거되지 않으므로 **Git 변경 시** 저장소에 직접 연결되지 않습니다.
 
-이러한 전용 파이프라인은 보다 유연한 기능을 제공하지만, 작동 및 권장 사항에 대한 다음 세부 정보를 참고해야 합니다.
+이러한 전용 파이프라인은 보다 유연한 기능을 제공하지만 작동 및 권장 사항에 대한 다음 세부 정보를 참고해야 합니다.
 
 >[!NOTE]
 >
