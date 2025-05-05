@@ -64,6 +64,6 @@ Cloud Manager의 **개요** 페이지에는 관리되는 모든 AEM 환경이 �
 
 이 비디오는 AEM 작성, 게시 및 Dispatcher 인스턴스로 구성된 Cloud Manager 환경에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26318/)
+>[!VIDEO](https://video.tv.adobe.com/v/34271?captions=kor)
 
 *(3 분, 1 초)*

@@ -92,4 +92,4 @@ ht-degree: 100%
 
 ## 비디오 개요 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/26313/)
+>[!VIDEO](https://video.tv.adobe.com/v/34267?captions=kor)

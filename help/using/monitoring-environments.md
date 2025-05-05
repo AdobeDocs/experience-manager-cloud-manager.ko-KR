@@ -125,4 +125,4 @@ Adobe Managed Services는 임계값을 설정하는데, [!UICONTROL Cloud Manage
 
 이 비디오는 프로그램 환경을 보기 위해 Cloud Manager Reports에서 생성한 차트를 사용하는 방법에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26315/)
+>[!VIDEO](https://video.tv.adobe.com/v/34275?captions=kor)
