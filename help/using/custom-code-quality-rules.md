@@ -2,7 +2,7 @@
 title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 8388edb5510ed4583a7bc703f3781af03d976948
+source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
 workflow-type: tm+mt
 source-wordcount: '3644'
 ht-degree: 96%
@@ -801,7 +801,7 @@ AEM Cloud Service는 사용자 정의 검색 인덱스 정의(즉, `oak:QueryInd
 
 * **키**: IndexNotUnderUIContent
 * **유형**: 개선
-* **심각도**: 사소
+* **심각도**: 주요
 * **이후**: 버전 2024.6.0
 
 AEM Cloud Service는 UI 콘텐츠 패키지에 사용자 정의 검색 색인 정의(유형 `oak:QueryIndexDefinition`의 노드)를 배포할 수 없도록 합니다.
@@ -814,7 +814,7 @@ AEM Cloud Service는 UI 콘텐츠 패키지에 사용자 정의 검색 색인 �
 
 * **키**: CustomFulltextIndexesOfTheDamAssetCheck
 * **유형**: 개선
-* **심각도**: 사소
+* **심각도**: 주요
 * **이후**: 버전 2024.6.0
 
 AEM Cloud Service는 `damAssetLucene`의 사용자 정의 전체 텍스트 색인 정의에 `damAssetLucene` 이외의 접두사가 붙지 못하도록 합니다.
@@ -827,7 +827,7 @@ AEM Cloud Service는 `damAssetLucene`의 사용자 정의 전체 텍스트 색�
 
 * **키**: DuplicateNameProperty
 * **유형**: 개선
-* **심각도**: 사소
+* **심각도**: 주요
 * **이후**: 버전 2024.6.0
 
 AEM Cloud Service는 사용자 정의 검색 색인 정의(즉, 유형 `oak:QueryIndexDefinition`의 노드)에 동일한 이름의 속성을 포함하는 것을 금지합니다.
@@ -840,7 +840,7 @@ AEM Cloud Service는 사용자 정의 검색 색인 정의(즉, 유형 `oak:Quer
 
 * **키**: RestrictIndexCustomization
 * **유형**: 개선
-* **심각도**: 사소
+* **심각도**: 주요
 * **이후**: 버전 2024.6.0
 
 AEM Cloud Service는 다음 OOTB 색인의 무단 수정을 금지합니다.
