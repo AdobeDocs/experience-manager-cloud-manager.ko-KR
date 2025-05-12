@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 4c4ffeb689117620bd810f35d277f5ab20bda8d3
+source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 100%
    + [최초 로그인](/help/getting-started/first-time-login.md)
    + [탐색](/help/getting-started/navigation.md)
    + [프로그램 설정](/help/getting-started/program-setup.md)
-   + AEM 프로젝트 제작 {#project-creation}
+   + AEM 프로젝트 생성 {#project-creation}
       + [마법사 사용](/help/getting-started/using-the-wizard.md)
       + [프로젝트 설정](/help/getting-started/project-setup.md)
       + [빌드 환경](/help/getting-started/build-environment.md)
@@ -76,6 +76,7 @@ ht-degree: 100%
 + 릴리스 정보 {#release-notes}
    + [최신](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)
       + [2025.1.0](/help/release-notes/2025/2025-1-0.md)
