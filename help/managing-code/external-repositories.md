@@ -3,9 +3,9 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 badge: label="얼리 어답터" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
 workflow-type: tm+mt
-source-wordcount: '1867'
+source-wordcount: '1871'
 ht-degree: 28%
 
 ---
@@ -74,6 +74,8 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub Enterprise**<br><ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
    | | **저장소 유형: GitLab**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitLab PAT(개인 액세스 토큰)에 대한 필수 권한<br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
    | | **저장소 유형: Bitbucket**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Bitbucket PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+
+   [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하세요.
 
    >[!NOTE]
    >

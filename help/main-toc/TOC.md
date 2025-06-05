@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: ecee095cfdf929e38823ace77f184db3108cab92
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 97%
+source-wordcount: '373'
+ht-degree: 94%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
    + CI/CD 파이프라인 {#pipelines}
       + [프로덕션 파이프라인 구성](/help/using/production-pipelines.md)
       + [비프로덕션 파이프라인 구성](/help/using/non-production-pipelines.md)
-      + [분할 단계 및 프로덕션 전용 파이프라인 (얼리 어답터)](/help/using/stage-prod-only.md)
+      + [스테이지 및 프로덕션 전용 파이프라인 분할](/help/using/stage-prod-only.md)
       + [파이프라인 관리](/help/using/managing-pipelines.md)
    + [코드 배포](/help/using/code-deployment.md)
    + [코드 품질 테스트](/help/using/code-quality-testing.md)
@@ -64,6 +64,7 @@ ht-degree: 97%
    + [Adobe 저장소 추가](/help/managing-code/adobe-repositories.md)
    + [비공개 저장소 추가](/help/managing-code/private-repositories.md)
    + [외부 저장소 추가 (얼리 어답터)](/help/managing-code/external-repositories.md)
+   + [액세스 토큰 관리(얼리 어답터)](/help/managing-code/manage-access-tokens.md)
    + [Git 하위 모듈 지원](/help/managing-code/git-submodules.md)
    + [GitHub 검사 구성](/help/managing-code/github-check-config.md)
    + [GitHub 검사 주석](/help/managing-code/github-annotations.md)
@@ -76,6 +77,7 @@ ht-degree: 97%
 + 릴리스 정보 {#release-notes}
    + [최신](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.5.0](/help/release-notes/2025/2025-5-0.md)
       + [2025.4.0](/help/release-notes/2025/2025-4-0.md)
       + [2025.3.0](/help/release-notes/2025/2025-3-0.md)
       + [2025.2.0](/help/release-notes/2025/2025-2-0.md)

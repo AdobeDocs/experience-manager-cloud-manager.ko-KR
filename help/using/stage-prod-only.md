@@ -1,22 +1,17 @@
 ---
-title: 스테이징 전용 및 프로덕션 전용 파이프라인
+title: 스테이지 전용 및 프로덕션 전용 파이프라인 분할
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
-badge: label="얼리 어답터" type="Positive" url="/help/release-notes/current.md#staging-production-only-pipelines"
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: b830c30bb6b2b99ef442577325a30de6b9953ec8
+source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 99%
+source-wordcount: '924'
+ht-degree: 98%
 
 ---
 
-# 스테이징 전용 및 프로덕션 전용 파이프라인 {#stage-prod-only}
+# 스테이지 전용 및 프로덕션 전용 파이프라인 분할 {#stage-prod-only}
 
 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
-
->[!NOTE]
->
->이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md#staging-production-only-pipelines)에만 사용할 수 있습니다.
 
 ## 개요 {#overview}
 
