@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.5.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 13e6f33e7ef92f4a27ae30c7550351b20d3e86ed
+source-git-commit: d0acd47ea6011dc5896d20d76ab0fcaa970df6ac
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 65%
+source-wordcount: '558'
+ht-degree: 66%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.6.0 릴리스에 대�
 
 ## 새로운 기능 {#what-is-new}
 
-* **(UI) 스테이징 전용 및 프로덕션 전용 파이프라인**
+* **스테이징 전용 및 프로덕션 전용 파이프라인**
 
   Cloud Manager은 이제 스테이징 전용 및 프로덕션 전용 파이프라인을 지원합니다. 이 기능을 사용하면 전체 스택 프로덕션 배포를 더 작은 용도별 파이프라인으로 분할할 수 있습니다. <!-- This feature went into GA from Early Adopter in the June 5, 2025 CM release -->
 
@@ -39,7 +39,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.6.0 릴리스에 대�
 
   [스테이지 전용 및 프로덕션 전용 파이프라인](/help/using/stage-prod-only.md)을 참조하십시오.
 
-* **(UI) 파이프라인 즐겨찾기**
+* **파이프라인 즐겨찾기**
 
   이번 릴리스에서는 Cloud Manager에서 즐겨찾는 파이프라인을 고정할 수 있는 기능을 도입하여 특정 파이프라인을 즐겨찾기로 표시하여 **파이프라인** 페이지의 목록 맨 위에 나타나도록 할 수 있습니다. 이 향상된 기능을 통해 자주 액세스하는 파이프라인을 더 쉽게 찾고 실행할 수 있습니다. <!-- CMGR-68293 -->
 
