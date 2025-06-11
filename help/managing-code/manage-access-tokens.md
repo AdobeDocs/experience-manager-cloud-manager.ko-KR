@@ -2,13 +2,13 @@
 title: Cloud Manager에서 액세스 토큰 관리
 description: Adobe Managed Services에서 Cloud Manager에서 나만의 Git을 가져오기에 사용되는 액세스 토큰을 보고, 편집하고, 삭제하는 방법에 대해 알아봅니다.
 badge: label="얼리 어답터" type="Positive" url="/help/release-notes/current.md#access-tokens"
-source-git-commit: aa0eff7eb1f6b0cde9b99b7cbbfb3410e0db94a6
+exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
+source-git-commit: 4d95981d14004bde4931bf59846f9be7e10e3083
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '415'
 ht-degree: 3%
 
 ---
-
 
 # 외부 저장소에 대한 액세스 토큰 관리 {#manage-access-tokens}
 
@@ -36,14 +36,14 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 1. **액세스 토큰 관리** 대화 상자에서 다음을 수행합니다.
    * 모든 액세스 토큰이 나열됩니다.
    * 모든 토큰을 **편집**&#x200B;할 수 있습니다.
-   * *현재 사용 중이 아닌 토큰만&#x200B;**삭제**&#x200B;할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
+   * *현재 사용 중이 아닌 토큰만&#x200B;**삭제**할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
 
 ## 액세스 토큰 편집 {#edit-access-tokens}
 
 1. 토큰 이름의 오른쪽에 있는 **액세스 토큰 관리** 대화 상자에서 ![편집 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)을 클릭합니다.
-1. **액세스 토큰 편집** 대화 상자의 **토큰 이름** 텍스트 필드에 토큰 이름을 업데이트하십시오.
+1. **액세스 토큰 편집** 대화 상자에서 **토큰 이름**, **액세스 토큰** 값 또는 둘 다를 업데이트하십시오.
 
-   액세스 토큰 암호 자체는 수정할 수 없습니다.
+   **액세스 토큰**&#x200B;이(가) 현재 사용 중이면 업데이트 후 연결된 모든 저장소의 유효성을 자동으로 다시 검사한다는 알림이 표시됩니다.
 
    ![액세스 토큰 편집 대화 상자](/help/managing-code/assets/access-tokens-edit.png)
 
