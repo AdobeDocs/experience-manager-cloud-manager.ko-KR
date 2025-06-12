@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.5.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 72%
+source-wordcount: '560'
+ht-degree: 68%
 
 ---
 
@@ -55,18 +55,9 @@ Cloud Manager의 비공개 베타 프로그램에 참여하여 일반 릴리스 
 현재 다음과 같은 비공개 베타 기회를 사용할 수 있습니다.
 
 
-### 액세스 토큰 관리{#access-tokens}
-
-Cloud Manager의 **액세스 토큰 관리** 기능을 사용하여 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps와 같은 외부 Bring Your Own Git 저장소와 연결된 액세스 토큰을 보고, 이름을 바꾸고, 삭제합니다.
-
-[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하세요.
-
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
-
-
 ### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
 
-**자체 Git 가져오기** 기능이 확장되어 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원이 포함되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
+**BYOG(Bring Your Own Git**) 기능이 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원을 포함하도록 확장되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
 
 이제 외부 저장소(GitHub 호스팅된 저장소 제외)와 **배포 트리거**&#x200B;를 **Git 변경 시**&#x200B;로 설정한 파이프라인이 자동으로 시작됩니다.
 
@@ -79,6 +70,14 @@ Cloud Manager의 **액세스 토큰 관리** 기능을 사용하여 GitHub Enter
 >현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+
+#### 액세스 토큰 관리{#access-tokens}
+
+GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps와 같은 외부 Bring Your Own Git 저장소와 연결된 액세스 토큰을 보고, 이름을 바꾸고, 삭제하려면 BYOG와 함께 **액세스 토큰 관리** 기능을 사용하십시오.
+
+[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하세요.
+
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
 
 ## 버그 수정 {#bug-fixes}
