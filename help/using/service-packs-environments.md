@@ -1,23 +1,23 @@
 ---
-title: 개발 환경에 대한 서비스 팩 업데이트 - 얼리 어답터
+title: 개발 환경의 서비스 팩 업데이트 - 비공개 베타
 description: Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비스 팩 업데이트를 시작하는 방법을 알아봅니다.
 hide: true
 hidefromtoc: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 55b33db1bf80f066b1a66bc87c0abeefa4771871
-workflow-type: ht
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# 개발 환경에 대한 서비스 팩 업데이트 (얼리 어답터) {#stage-prod-only}
+# 개발 환경에 대한 서비스 팩 업데이트(비공개 베타) {#stage-prod-only}
 
 Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비스 팩 업데이트를 시작하는 방법을 알아봅니다.
 
 >[!NOTE]
 >
->이 기능은 [얼리 어답터 프로그램](/help/release-notes/current.md#early-adoption)에만 사용할 수 있습니다.
+>이 기능은 [비공개 베타 프로그램](/help/release-notes/current.md#beta-program)에서만 사용할 수 있습니다.
 
 ## 개요 {#service-pack-updates-overview}
 

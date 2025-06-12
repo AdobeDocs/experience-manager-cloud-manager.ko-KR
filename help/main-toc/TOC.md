@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 35845e827b0a3fadfe2a55a2171b5e02100cf3eb
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '373'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ ht-degree: 94%
    + [코드 품질 테스트](/help/using/code-quality-testing.md)
    + [환경 관리](/help/using/managing-environments.md)
    + [환경 모니터링](/help/using/monitoring-environments.md)
-   + [개발 환경에 대한 서비스 팩 업데이트 (얼리 어답터)](/help/using/service-packs-environments.md)
+   + [개발 환경에 대한 서비스 팩 업데이트(비공개 베타)](/help/using/service-packs-environments.md)
    + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
    + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](/help/using/notifications.md)
@@ -63,8 +63,8 @@ ht-degree: 94%
    + [저장소 액세스 정보](/help/managing-code/accessing-repositories.md)
    + [Adobe 저장소 추가](/help/managing-code/adobe-repositories.md)
    + [비공개 저장소 추가](/help/managing-code/private-repositories.md)
-   + [외부 저장소 추가 (얼리 어답터)](/help/managing-code/external-repositories.md)
-   + [액세스 토큰 관리(얼리 어답터)](/help/managing-code/manage-access-tokens.md)
+   + [외부 저장소 추가(비공개 베타)](/help/managing-code/external-repositories.md)
+   + [액세스 토큰 관리(비공개 베타)](/help/managing-code/manage-access-tokens.md)
    + [Git 하위 모듈 지원](/help/managing-code/git-submodules.md)
    + [GitHub 검사 구성](/help/managing-code/github-check-config.md)
    + [GitHub 검사 주석](/help/managing-code/github-annotations.md)

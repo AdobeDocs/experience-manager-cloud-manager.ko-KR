@@ -1,12 +1,12 @@
 ---
 title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
-badge: label="얼리 어답터" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
+badge: label="비공개 베타" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 83ba61364d5a492bd7236d7fcaeabf8cf904627a
+source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
 workflow-type: tm+mt
 source-wordcount: '1871'
-ht-degree: 28%
+ht-degree: 27%
 
 ---
 
@@ -16,7 +16,7 @@ Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. 
 
 >[!NOTE]
 >
->이 문서에 설명된 기능은 조기 채택 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 얼리 어답터로 등록하려면 [자신의 Git 가져오기](/help/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
+>이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 개인 Beta에 등록하려면 [나만의 Git 가져오기](/help/release-notes/current.md#gitlab-bitbucket)를 참조하세요.
 
 ## 외부 저장소 구성
 
@@ -79,7 +79,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
    >[!NOTE]
    >
-   >**새로운 액세스 토큰 추가** 기능은 현재 얼리 어답터 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
+   >**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
 
 1. **유효성 검사**&#x200B;를 클릭합니다.
 
