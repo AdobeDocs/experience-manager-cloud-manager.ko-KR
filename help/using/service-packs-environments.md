@@ -90,7 +90,7 @@ Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비
 
    ![서비스 팩 승인](/help/using/assets/service-pack-approve.png)
 
-   * 업데이트를 취소하려면 **거부**를 클릭합니다.
+   * 업데이트를 취소하려면 **거부**&#x200B;를 클릭합니다.
 서비스 팩 설치가 취소되며 변경 사항이 적용되지 않습니다.
 
    ![서비스 팩 거부](/help/using/assets/service-pack-reject.png)
