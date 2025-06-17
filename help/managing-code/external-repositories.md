@@ -3,10 +3,10 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 badge: label="비공개 베타" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
+source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
 workflow-type: tm+mt
-source-wordcount: '2050'
-ht-degree: 24%
+source-wordcount: '2295'
+ht-degree: 31%
 
 ---
 
@@ -51,14 +51,14 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 1. **저장소 추가** 대화 상자에서 **비공개 저장소**&#x200B;를 선택하여 외부 Git 저장소를 프로그램에 연결합니다.
 
-   ![자체 저장소 추가](/help/managing-code/assets/repositories-private-repo-type.png)
+   ![자체 저장소 추가](/help/managing-code/assets/repository-add-private-dialogbox2.png)
 
 1. 각 필드에 저장소에 대한 다음 세부 정보를 입력합니다.
 
    | 필드 | 설명 |
    | --- | --- |
    | **저장소 이름** | 필수. 새로운 저장소의 표현적인 이름. |
-   | **저장소 URL** | 필수. 저장소의 URL.<br><br>GitHub 호스팅 리포지토리를 사용하는 경우 경로는 `.git`에서 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`* (URL 경로는 설명 목적으로만 사용됨)<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
+   | **저장소 URL** | 필수. 저장소의 URL.<br><br>GitHub 호스팅 리포지토리를 사용하는 경우 경로는 `.git`에서 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`*(URL 경로는 일러스트레이션용임).<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
    | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다.<ul><li>**GitHub**(GitHub Enterprise 및 GitHub의 자체 호스팅 버전)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org`(클라우드 버전)만 지원됩니다. 자체 호스팅되는 Bitbucket 버전은 2024년 2월 15일부터 더 이상 사용되지 않습니다.)</li></ul>위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다. |
    | **설명** | 선택 사항. 저장소에 대한 자세한 설명. |
 
@@ -67,20 +67,56 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 1. **비공개 저장소 소유권 유효성 검사** 대화 상자에서 액세스 토큰을 입력하여 외부 저장소에 액세스할 수 있도록 소유권 유효성을 검사합니다.
 
    ![저장소에 대한 기존 액세스 토큰 선택](/help/managing-code/assets/repositories-exisiting-access-token.png)
-   *Bitbucket 저장소에 대한 기존 액세스 토큰을 선택하는 중입니다.*
+   *Bitbucket 리포지토리에 대한 기존 액세스 토큰 선택(일러스트레이션에만 해당)*
 
-   | 토큰 유형 | 설명 |
-   | --- | --- |
-   | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-   | **새로운 액세스 토큰 추가** | **저장소 유형: GitHub Enterprise**<br><ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-   | | **저장소 유형: GitLab**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitLab PAT(개인 액세스 토큰)에 대한 필수 권한<br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-   | | **저장소 유형: Bitbucket**<ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Bitbucket PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+>[!BEGINTABS]
 
-   [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
+>[!TAB GitHub Enterprise]
 
-   >[!NOTE]
-   >
-   >**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
+**GitHub Enterprise**
+
+| 토큰 유형 | 설명 |
+| --- | --- |
+| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
+| **새로운 액세스 토큰 추가** | <ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+
+[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
+
+>[!TAB GitLab]
+
+**GitLab**
+
+| 토큰 유형 | 설명 |
+| --- | --- |
+| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
+| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitLab PAT(개인 액세스 토큰)에 대한 필수 권한<br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+
+[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
+
+>[!TAB Bitbucket]
+
+**Bitbucket**
+
+| 토큰 유형 | 설명 |
+| --- | --- |
+| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
+| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Bitbucket PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+
+[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
+
+>[!NOTE]
+>
+>**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
+
+>[!ENDTABS]
 
 1. **유효성 검사**&#x200B;를 클릭합니다.
 
@@ -154,7 +190,7 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitHub Enterprise]
 
-### GitHub Enterprise
+**GitHub Enterprise**
 
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
@@ -171,6 +207,8 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitLab]
 
+**GitLab**
+
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
    1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
@@ -186,7 +224,7 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB Bitbucket]
 
-### Bitbucket
+**Bitbucket**
 
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
@@ -209,42 +247,51 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 다음과 같은 동작이 적용됩니다.
 
-* **GitHub Enterprise**
+>[!BEGINTABS]
 
-  검사가 생성되면 아래 스크린샷과 같이 표시됩니다. `GitHub.com`과(와) 중요한 차이점은 `GitHub.com`이(가) 확인 실행을 사용하는 반면 GitHub Enterprise(개인 액세스 토큰 사용)는 커밋 상태를 생성한다는 것입니다.
+>[!TAB GitHub Enterprise]
 
-  ![GitHub Enterprise에서 PR 유효성 검사 프로세스를 나타내는 커밋 상태](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
+**GitHub Enterprise**
 
-* **Bitbucket**
+검사가 생성되면 아래 스크린샷과 같이 표시됩니다. `GitHub.com`과(와) 중요한 차이점은 `GitHub.com`이(가) 확인 실행을 사용하는 반면 GitHub Enterprise(개인 액세스 토큰 사용)는 커밋 상태를 생성한다는 것입니다.
 
-  코드 품질 유효성 검사가 실행 중인 경우:
+![GitHub Enterprise에서 PR 유효성 검사 프로세스를 나타내는 커밋 상태](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
-  ![코드 품질 유효성 검사를 실행하는 동안 상태](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+>[!TAB GitLab]
 
-  PR 유효성 검사 진행 추적을 위해 커밋 상태를 사용합니다. 다음의 경우 스크린샷은 고객 문제로 인해 코드 품질 유효성 검사가 실패하면 어떻게 되는지 보여 줍니다. 자세한 오류 정보가 포함된 댓글이 추가되고 실패를 표시하는 커밋 검사가 만들어집니다(오른쪽에 표시).
+**GitLab**
 
-  ![Bitbucket에 대한 끌어오기 요청 유효성 검사 상태](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+GitLab 상호 작용은 주석에만 의존합니다. 유효성 검사가 시작되면 댓글이 추가됩니다. 유효성 검사가 완료되면(성공 또는 실패) 초기 주석을 제거하고 유효성 검사 결과 또는 오류 세부 정보가 포함된 새 주석으로 대체합니다.
 
-* **GitLab**
+코드 품질 유효성 검사가 실행 중인 경우:
 
-  GitLab 상호 작용은 주석에만 의존합니다. 유효성 검사가 시작되면 댓글이 추가됩니다. 유효성 검사가 완료되면(성공 또는 실패) 초기 주석을 제거하고 유효성 검사 결과 또는 오류 세부 정보가 포함된 새 주석으로 대체합니다.
+![코드 품질 유효성 검사를 실행하는 경우](/help/managing-code/assets/repository-webhook-gitlab1.png)
 
-  코드 품질 유효성 검사가 실행 중인 경우:
+냉간 품질 유효성 검사가 완료되면:
 
-  ![코드 품질 유효성 검사를 실행하는 경우](/help/managing-code/assets/repository-webhook-gitlab1.png)
+![냉기 품질 유효성 검사가 완료되면](/help/managing-code/assets/repository-webhook-gitlab2.png)
 
-  냉간 품질 유효성 검사가 완료되면:
+코드 품질 유효성 검사에 실패하고 오류가 발생하는 경우:
 
-  ![냉기 품질 유효성 검사가 완료되면](/help/managing-code/assets/repository-webhook-gitlab2.png)
+![오류와 함께 코드 품질 유효성 검사에 실패하는 경우](/help/managing-code/assets/repository-webhook-gitlab3.png)
 
-  코드 품질 유효성 검사에 실패하고 오류가 발생하는 경우:
+고객 문제로 인해 코드 품질 유효성 검사가 실패하면:
 
-  ![오류와 함께 코드 품질 유효성 검사에 실패하는 경우](/help/managing-code/assets/repository-webhook-gitlab3.png)
+![고객 문제로 인해 코드 품질 유효성 검사에 실패하는 경우](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
-  고객 문제로 인해 코드 품질 유효성 검사가 실패하면:
+>[!TAB Bitbucket]
 
-  ![고객 문제로 인해 코드 품질 유효성 검사에 실패하는 경우](/help/managing-code/assets/repository-webhook-gitlab4.png)
+**Bitbucket**
 
+코드 품질 유효성 검사가 실행 중인 경우:
+
+![코드 품질 유효성 검사를 실행하는 동안 상태](/help/managing-code/assets/repository-webhook-bitbucket1.png)
+
+PR 유효성 검사 진행 추적을 위해 커밋 상태를 사용합니다. 다음의 경우 스크린샷은 고객 문제로 인해 코드 품질 유효성 검사가 실패하면 어떻게 되는지 보여 줍니다. 자세한 오류 정보가 포함된 댓글이 추가되고 실패를 표시하는 커밋 검사가 만들어집니다(오른쪽에 표시).
+
+![Bitbucket에 대한 끌어오기 요청 유효성 검사 상태](/help/managing-code/assets/repository-webhook-bitbucket2.png)
+
+>[!ENDTABS]
 
 ## Webhook 문제 해결
 
