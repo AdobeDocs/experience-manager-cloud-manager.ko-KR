@@ -3,10 +3,10 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 badge: label="비공개 베타" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: dfdbc66c6a447d47d669eb84e6ddf8dca86fc632
+source-git-commit: 3958e36391eaca3450ef765676fcbbd485766318
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 27%
+source-wordcount: '2050'
+ht-degree: 24%
 
 ---
 
@@ -146,9 +146,15 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
    1. **Webhook 암호** 토큰/키 필드 옆에 있는 **생성**&#x200B;을 클릭한 다음 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭합니다.
 암호를 일반 텍스트 파일에 붙여넣습니다. 복사된 암호는 Git 공급업체의 Webhook 설정에 필요합니다.
 1. **닫기**&#x200B;를 클릭합니다.
-1. Git 공급업체 솔루션(GitHub Enterpriser, GitLab 또는 Bitbucket)으로 이동합니다.
+1. Git 공급업체 솔루션(GitHub Enterprise, GitLab 또는 Bitbucket)으로 이동합니다.
 
    Webhook 구성에 대한 모든 세부 정보와 각 공급업체에 필요한 이벤트는 [외부 저장소 추가](#add-ext-repo)에서 확인할 수 있습니다. 8단계에서 표를 참조하십시오.
+
+>[!BEGINTABS]
+
+>[!TAB GitHub Enterprise]
+
+### GitHub Enterprise
 
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
@@ -159,11 +165,43 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 1. 이전에 복사한 웹후크 암호를 **암호**(또는 **암호 키** 또는 **암호 토큰**) 텍스트 필드에 붙여 넣으십시오.
 1. Cloud Manager에서 예상하는 필수 이벤트를 보내도록 웹후크를 구성합니다.
 
-   | 저장소 | 필수 웹후크 이벤트 |
-   | --- | --- |
-   | GitHub Enterprise | 이러한 이벤트를 사용하면 Cloud Manager에서 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>가져오기 요청<li>푸시<li>문제 주석</li></li></li></ul></ul></ul> |
-   | GitLab | 이러한 웹후크 이벤트를 사용하면 코드가 푸시되거나 병합 요청이 제출될 때 Cloud Manager에서 파이프라인을 트리거할 수 있습니다. 또한 메모 이벤트를 통해 끌어오기 요청 유효성 검사와 관련된 댓글도 추적합니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>푸시 이벤트<li>요청 이벤트 병합<li>메모 이벤트</li></li></li></ul></ul></ul> |
-   | Bitbucket | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
+   | 필수 웹후크 이벤트 |
+   | --- |
+   | 이러한 이벤트를 사용하면 Cloud Manager에서 끌어오기 요청 유효성 검사, 파이프라인용 푸시 기반 트리거 또는 Edge Delivery Services 코드 동기화와 같은 GitHub 활동에 응답할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오.<ul><li>가져오기 요청<li>푸시<li>문제 주석</li></li></li></ul></ul></ul> |
+
+>[!TAB GitLab]
+
+1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
+1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
+   1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
+
+      API 키를 생성하려면 Adobe Developer Console에서 통합 프로젝트를 만들어야 합니다. 자세한 내용은 [API 통합 프로젝트 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 참조하십시오.
+
+1. 이전에 복사한 웹후크 암호를 **암호**(또는 **암호 키** 또는 **암호 토큰**) 텍스트 필드에 붙여 넣으십시오.
+1. Cloud Manager에서 예상하는 필수 이벤트를 보내도록 웹후크를 구성합니다.
+
+   | 필수 웹후크 이벤트 |
+   | --- |
+   | 이러한 웹후크 이벤트를 사용하면 코드가 푸시되거나 병합 요청이 제출될 때 Cloud Manager에서 파이프라인을 트리거할 수 있습니다. 또한 메모 이벤트를 통해 끌어오기 요청 유효성 검사와 관련된 댓글도 추적합니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>푸시 이벤트<li>요청 이벤트 병합<li>메모 이벤트</li></li></li></ul></ul></ul> |
+
+>[!TAB Bitbucket]
+
+### Bitbucket
+
+1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
+1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
+   1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
+
+      API 키를 생성하려면 Adobe Developer Console에서 통합 프로젝트를 만들어야 합니다. 자세한 내용은 [API 통합 프로젝트 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)를 참조하십시오.
+
+1. 이전에 복사한 웹후크 암호를 **암호**(또는 **암호 키** 또는 **암호 토큰**) 텍스트 필드에 붙여 넣으십시오.
+1. Cloud Manager에서 예상하는 필수 이벤트를 보내도록 웹후크를 구성합니다.
+
+   | 필수 웹후크 이벤트 |
+   | --- |
+   | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
+
+>[!ENDTABS]
 
 ### 웹후크를 사용한 풀 요청 유효성 검사
 
