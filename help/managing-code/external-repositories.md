@@ -3,10 +3,10 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 badge: label="비공개 베타" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
+source-git-commit: a0836dd24dd3b711c9d1b78f28755e2db98b051c
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 31%
+source-wordcount: '2210'
+ht-degree: 17%
 
 ---
 
@@ -73,48 +73,46 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 >[!TAB GitHub Enterprise]
 
-| 토큰 유형 | 설명 |
-| --- | --- |
-| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-| **새로운 액세스 토큰 추가** | <ul><li> **토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.<br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.<ul><li>가져오기 요청(읽기 및 쓰기)<li>커밋 상태(읽기 및 쓰기)<li>저장소 메타데이터(읽기 전용)</li></li></ul></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-
-[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
-
->[!NOTE]
->
->**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
+    | 토큰 유형 | 설명 |
+    | — | — |
+    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 제공하고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않으면 새 액세스 토큰을 추가합니다. |
+    | **새 액세스 토큰 추가** |&lt;ul>&lt;li> **토큰 이름** 텍스트 필드에 생성 중인 액세스 토큰의 이름을 입력합니다.&lt;li>[GitHub 설명서](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)의 지침에 따라 개인 액세스 토큰을 만듭니다.&lt;li>GitHub Enterprise PAT(개인 액세스 토큰)에 필요한 권한&lt;br>이러한 권한을 통해 Cloud Manager은 가져오기 요청의 유효성을 확인하고 커밋 상태 검사를 관리하며 필요한 저장소 세부 정보에 액세스할 수 있습니다.&lt;br>GitHub Enterprise에서 PAT를 생성할 때 다음 저장소 권한이 포함되어 있는지 확인하십시오.&lt;ul>&lt;li>가져오기 요청(읽기 및 쓰기)&lt;li>커밋 상태(읽기 및 쓰기)&lt;li>저장소 메타데이터(읽기 전용)&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
+    
+    1. **유효성 검사**를 클릭합니다.
+    
+    유효성 검사 후 외부 리포지토리를 사용하여 파이프라인에 연결할 준비가 되었습니다.
+    
+    또한 [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
 
 >[!TAB GitLab]
 
-| 토큰 유형 | 설명 |
-| --- | --- |
-| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.<li>GitLab PAT(개인 액세스 토큰)에 대한 필수 권한<br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.<br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인하십시오.<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-
-[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
-
->[!NOTE]
->
->**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
-
->[!TAB Bitbucket]
-
-| 토큰 유형 | 설명 |
-| --- | --- |
-| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Bitbucket PAT(개인 액세스 토큰)에 필요한 권한<br>이러한 권한을 사용하면 Cloud Manager에서 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 사용 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)<li>가져오기 요청(읽기 및 쓰기)<li>웹 후크(읽기 및 쓰기)</li></li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
-
-[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
-
->[!NOTE]
->
->**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
-
->[!ENDTABS]
+    | 토큰 유형 | 설명 |
+    | — | — |
+    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 제공하고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않으면 새 액세스 토큰을 추가합니다. |
+    | **새 액세스 토큰 추가** |&lt;ul>&lt;li>**토큰 이름** 텍스트 필드에 생성 중인 액세스 토큰의 이름을 입력합니다.&lt;li>[GitLab 설명서](https://docs.gitlab.com/user/profile/personal_access_tokens/)의 지침에 따라 개인 액세스 토큰을 만듭니다.&lt;li>GitLab PAT(개인 액세스 토큰)에 필요한 권한&lt;br>이러한 범위를 통해 Cloud Manager은 유효성 검사 및 웹후크 통합에 필요한 저장소 데이터 및 사용자 정보에 액세스할 수 있습니다.&lt;br>GitLab에서 PAT를 생성할 때 다음 토큰 범위가 포함되어 있는지 확인합니다.&lt;ul>&lt;li>api&lt;li>read_user&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
 
 1. **유효성 검사**&#x200B;를 클릭합니다.
 
-유효성 검사 후에는 외부 저장소를 사용하여 파이프라인에 연결할 준비가 됩니다.
+   유효성 검사 후에는 외부 저장소를 사용하여 파이프라인에 연결할 준비가 됩니다.
+
+   [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)도 참조하세요.
+
+
+>[!TAB Bitbucket]
+
+    | 토큰 유형 | 설명 |
+    | — | — |
+    | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 제공하고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않으면 새 액세스 토큰을 추가합니다. |
+    | **새 액세스 토큰 추가** |&lt;ul>&lt;li>**토큰 이름** 텍스트 필드에 생성 중인 액세스 토큰의 이름을 입력합니다.&lt;li>[Bitbucket 설명서](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)를 사용하여 저장소 액세스 토큰을 만듭니다.&lt;li>PAT(Bitbucket Personal Access Token)에 필요한 권한&lt;br>이러한 권한을 사용하면 Cloud Manager이 저장소 콘텐츠에 액세스하고, 끌어오기 요청을 관리하며, 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.&lt;br>Bitbucket에서 앱 암호를 만들 때 다음 필수 앱 암호 권한이 포함되어 있는지 확인하십시오.&lt;ul>&lt;li>저장소(읽기 전용)&lt;li>가져오기 요청(읽기 및 쓰기)&lt;li>웹후크(읽기 및 쓰기)&lt;/li>&lt;/li>&lt;/ul>&lt;/li>&lt;/ul>&lt;/ul>&lt;ul>&lt;li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여넣습니다. |
+    
+    1. **유효성 검사**를 클릭합니다.
+    
+    유효성 검사 후 외부 리포지토리를 사용하여 파이프라인에 연결할 준비가 되었습니다.
+    
+    또한 [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
+
+>[!ENDTABS]
+
 
 ## 검증된 외부 저장소를 파이프라인에 연결 {#validate-ext-repo}
 
