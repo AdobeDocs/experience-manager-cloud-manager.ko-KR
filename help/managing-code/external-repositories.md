@@ -3,9 +3,9 @@ title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
 badge: label="비공개 베타" type="Positive" url="/help/release-notes/current.md#gitlab-bitbucket"
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 073f1024891e1a1d4298c5c593df011f5572e820
+source-git-commit: 523e8ef1c90bf88aa846e067aa1cca9e6ed5d8ce
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2283'
 ht-degree: 31%
 
 ---
@@ -73,8 +73,6 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 | 토큰 유형 | 설명 |
 | --- | --- |
 | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
@@ -88,8 +86,6 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 >[!TAB GitLab]
 
-**GitLab**
-
 | 토큰 유형 | 설명 |
 | --- | --- |
 | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
@@ -102,8 +98,6 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 >**새 액세스 토큰 추가** 기능은 현재 개인 베타 단계에 있습니다. 추가 기능이 계획 중입니다. 따라서 액세스 토큰에 필요한 권한이 변경될 수 있습니다. 또한 토큰을 관리하기 위한 사용자 인터페이스가 업데이트될 수 있으며, 토큰 만료일과 같은 기능이 포함될 수 있습니다. 또한 저장소에 연결된 토큰이 유효한지 자동으로 확인하는 검사도 제공됩니다.
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 | 토큰 유형 | 설명 |
 | --- | --- |
@@ -190,8 +184,6 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
    1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
@@ -207,8 +199,6 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitLab]
 
-**GitLab**
-
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
    1. Webhook URL의 `api_key` 쿼리 매개 변수를 고유한 실제 API 키로 바꾸십시오.
@@ -223,8 +213,6 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
    | 이러한 웹후크 이벤트를 사용하면 코드가 푸시되거나 병합 요청이 제출될 때 Cloud Manager에서 파이프라인을 트리거할 수 있습니다. 또한 메모 이벤트를 통해 끌어오기 요청 유효성 검사와 관련된 댓글도 추적합니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>푸시 이벤트<li>요청 이벤트 병합<li>메모 이벤트</li></li></li></ul></ul></ul> |
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 1. 솔루션의 **Webhook** 설정 섹션을 찾습니다.
 1. 이전에 복사한 웹후크 URL을 URL 텍스트 필드에 붙여넣습니다.
@@ -251,15 +239,11 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 
 >[!TAB GitHub Enterprise]
 
-**GitHub Enterprise**
-
 검사가 생성되면 아래 스크린샷과 같이 표시됩니다. `GitHub.com`과(와) 중요한 차이점은 `GitHub.com`이(가) 확인 실행을 사용하는 반면 GitHub Enterprise(개인 액세스 토큰 사용)는 커밋 상태를 생성한다는 것입니다.
 
 ![GitHub Enterprise에서 PR 유효성 검사 프로세스를 나타내는 커밋 상태](/help/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 >[!TAB GitLab]
-
-**GitLab**
 
 GitLab 상호 작용은 주석에만 의존합니다. 유효성 검사가 시작되면 댓글이 추가됩니다. 유효성 검사가 완료되면(성공 또는 실패) 초기 주석을 제거하고 유효성 검사 결과 또는 오류 세부 정보가 포함된 새 주석으로 대체합니다.
 
@@ -280,8 +264,6 @@ GitLab 상호 작용은 주석에만 의존합니다. 유효성 검사가 시작
 ![고객 문제로 인해 코드 품질 유효성 검사에 실패하는 경우](/help/managing-code/assets/repository-webhook-gitlab4.png)
 
 >[!TAB Bitbucket]
-
-**Bitbucket**
 
 코드 품질 유효성 검사가 실행 중인 경우:
 
