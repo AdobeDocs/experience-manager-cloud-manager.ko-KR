@@ -7,9 +7,9 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: b2a14280e84bb934053968b0e93e33d30fb6086a
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 91%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 91%
    + [액세스 권한](/help/requirements/access-rights.md)
    + [소스 코드 저장소](/help/requirements/source-code-repository.md)
    + [역할 기반 권한](/help/requirements/role-based-permissions.md)
-   + [사용자 및 역할 설정](/help/requirements/users-and-roles.md)
+   + [사용자 및 역할 추가](/help/requirements/users-and-roles.md)
    + [사용자 정의 권한](/help/using/custom-permissions.md)
    + [환경 프로비저닝](/help/requirements/environment-provisioning.md)
 + 시작하기 {#getting-started}

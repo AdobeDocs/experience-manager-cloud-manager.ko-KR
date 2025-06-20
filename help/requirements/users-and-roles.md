@@ -2,10 +2,10 @@
 title: 사용자 및 역할 추가
 description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 012359b4ecf872ece036b27b48fededf150493d2
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 89%
+source-wordcount: '872'
+ht-degree: 84%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 89%
 >
 >Admin Console의 개발자는 [!UICONTROL Cloud Manager]의 개발자 역할과 관련이 없습니다.
 
-## Admin Console을 사용하여 프로필 만들기 {#using-admin-console-to-create-a-profile}
+## Admin Console을 사용하여 제품 프로필 만들기 {#using-admin-console-to-create-a-profile}
 
 [!UICONTROL Cloud Manager] 역할은 Admin Console에서 관리합니다. [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
 
@@ -55,7 +55,13 @@ Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에
 * 개발자
 * 프로그램 관리자
 
-Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그룹을 만들거나 추가할 수 있습니다.
+Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그룹을 만들거나 추가합니다.
+
+>[!IMPORTANT]
+>
+>Admin Console 및 Cloud Manager의 현재 제한으로 인해 **권한 없음**&#x200B;을(를) 선택하여 프로필을 저장할 수 없습니다. 그렇게 하려고 하면 백엔드 오류가 발생합니다. 이 동작은 배포 관리자 프로필 만들기에 영향을 줍니다. 해결 방법으로, 새 프로필을 만들 때 하나 이상의 권한을 선택합니다.
+
+**Admin Console을 사용하여 제품 프로필을 만들려면:**
 
 1. [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com)의 Admin Console에 로그인합니다.
 
@@ -77,9 +83,13 @@ Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그
    * **표시 이름** - **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에서 정의한 기술 값이어야 합니다(다음 테이블 참조).
    * **권한 그룹** - 프로필에 대한 권한 그룹을 선택할 수 있습니다(항상 사용 가능한 것은 아님).
 
+     >[!IMPORTANT]
+     >
+     >Admin Console 및 Cloud Manager의 현재 제한으로 인해 **권한 없음**&#x200B;을(를) 선택하여 프로필을 저장할 수 없습니다. 그렇게 하려고 하면 백엔드 오류가 발생합니다. 이 동작은 배포 관리자 프로필 만들기에 영향을 줍니다. 해결 방법으로, 새 프로필을 만들 때 하나 이상의 권한을 선택합니다.
+
    ![새 프로필 만들기](/help/assets/screen_shot_2018-05-04at171819.png)
 
-   | 역할 | 표시 이름(필수) | 권장 프로필 이름 |
+   | 역할 | 표시 이름 (필수) | 권장 프로필 이름 |
    |---|---|---|
    | 비즈니스 소유자 | `CM_BUSINESS_OWNER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 비즈니스 소유자 역할 |
    | 배포 관리자 | `CM_DEPLOYMENT_MANAGER_ROLE_PROFILE` | [!UICONTROL Cloud Manager] - 배포 관리자 역할 |
@@ -101,18 +111,18 @@ Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그
 
 1. 왼쪽 탐색 패널에서 **사용자**&#x200B;를 클릭한 후 수정할 사용자를 선택합니다.
 
-1. **제품** 섹션에서 ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭하고 **편집**&#x200B;을 클릭합니다.
+1. **제품** 섹션에서 ![기타 아이콘(줄임표)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 클릭한 다음 **편집**&#x200B;을 클릭합니다.
 
    ![사용자 편집](/help/assets/admin-console-edit-user.png)
 
-1. **제품 및 사용자 그룹 편집** 대화 상자에서 ![추가 아이콘 및 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)를 클릭하고 사용자에게 할당할 프로필을 선택하십시오.
+1. **제품 및 사용자 그룹 편집** 대화 상자에서 ![추가 아이콘(더하기 기호)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)을 클릭하고 사용자에게 할당할 프로필을 선택합니다.
 
-   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘과 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 단추는 편집 단추(연필)이지만 같은 방식으로 작동합니다.
+   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘(더하기 기호)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 버튼에 편집 버튼(연필)이 나타나며 같은 방식으로 사용할 수 있습니다.
 
    ![제품 및 사용자 그룹 편집](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. **저장**&#x200B;을 클릭하여 사용자에 프로필을 저장합니다.
 
-프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고 **할당된 제품 프로필을 선택합니다** 프로필을 할당하려면 **제품 프로필 할당**&#x200B;을 클릭합니다.
+프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고 **할당된 제품 프로필**&#x200B;을 선택한 후 **제품 프로필 할당**&#x200B;을 클릭하여 프로필을 할당합니다.
 
 ![그룹에 프로필 할당](/help/assets/admin-console-edit-user-groups.png)
