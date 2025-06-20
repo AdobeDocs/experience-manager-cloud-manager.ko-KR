@@ -3,10 +3,10 @@ title: Cloud Manager 2025.6.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.5.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 38d398caf2323b603afd293aa9152308fefd323f
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 68%
+source-wordcount: '556'
+ht-degree: 71%
 
 ---
 
@@ -48,11 +48,11 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.6.0 릴리스에 대�
   [파이프라인 즐겨찾기 표시](/help/using/managing-pipelines.md#pipeline-favorites)를 참조하십시오.
 
 
-## 비공개 베타 프로그램 {#beta-program}
+## Private Beta 프로그램 {#beta-program}
 
 Cloud Manager의 비공개 베타 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 액세스할 수 있습니다.
 
-현재 다음과 같은 비공개 베타 기회를 사용할 수 있습니다.
+현재 제공되는 Private Beta 기회는 다음과 같습니다.
 
 
 ### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
@@ -73,11 +73,11 @@ Cloud Manager의 비공개 베타 프로그램에 참여하여 일반 릴리스 
 
 #### 액세스 토큰 관리{#access-tokens}
 
-GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps와 같은 외부 Bring Your Own Git 저장소와 연결된 액세스 토큰을 보고, 이름을 바꾸고, 삭제하려면 BYOG와 함께 **액세스 토큰 관리** 기능을 사용하십시오.
+GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps와 같은 고유한 Git 저장소를 가져오려면 BYOG에서 **액세스 토큰 관리**&#x200B;를 사용하여 외부 액세스 토큰과 연결된 액세스 토큰을 보고, 이름을 바꾸고, 삭제합니다.
 
-[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하세요.
+[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있다면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
+이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com)에 이메일을 보내 주십시오. 사용하려는 Git 플랫폼과 비공개/공개 또는 기업 저장소 구조인지 여부를 반드시 포함해야 합니다.
 
 
 ## 버그 수정 {#bug-fixes}

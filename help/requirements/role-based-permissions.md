@@ -2,10 +2,10 @@
 title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: 682b142f35bc233bad82b0ddfa69bc0f2d5b5fdb
-workflow-type: ht
-source-wordcount: '616'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '560'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 
 역할을 설정하는 방법에 대한 자세한 내용은 [사용자 및 역할 설정](/help/requirements/users-and-roles.md)을 참조하십시오.
 
-다음 표에는 Admin Console에서 할당할 수 있는 역할이 나열되어 있습니다.
+다음 테이블에는 Admin Console에서 할당할 수 있는 역할이 나열되어 있습니다.
 
 | [!UICONTROL Cloud Manager] 역할 | 설명 |
 |---|---|
@@ -39,30 +39,30 @@ ht-degree: 100%
 
 ## 사용자 권한 {#user-permissions}
 
-각 역할에는 사전 구성된 특정 권한이 있습니다. 다음 표에는 사용 가능한 권한과 해당 권한을 실행할 수 있는 역할이 나열되어 있습니다.
+각 역할에는 사전 구성된 특정 권한이 있습니다. 다음 테이블에는 사용 가능한 권한과 해당 권한을 실행할 수 있는 역할이 나열되어 있습니다.
 
 | 권한 | 설명 | 비즈니스 소유자 | 배포 관리자 | 프로그램 관리자 | 개발자 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
-| 애플리케이션 읽기 | 프로그램 KPI 읽기 | x | x | x | x | x |
-| 애플리케이션 쓰기 | 프로그램 설정 또는 편집 | x | | | | |
-| 프로그램 추가 | 새 프로그램 추가 | x |  |  |  |  |
-| 환경 읽기 | 환경 세부 정보 보기 | x | x | x | x | x |
-| 실행 생성 | 파이프라인 시작 | x | x | x | | |
-| 실행 읽기 | 실행 상태 보기 | x | x | x | x | x |
-| 실행 다시 시작 | 일시 정지 시 실행을 재개할 수 있는 기능 | x | x | x | | x |
-| 실행 승인을 프로덕션에 배포 | Go-Live 승인 제공 | x | x | x | | |
-| 실행 예약을 프로덕션에 배포 | 프로덕션 배포 예약 | x | x | x | | x |
-| 실행을 프로덕션에 배포 | CSE 감독을 위해 일시 중지된 경우 프로덕션 환경에 애플리케이션 배포 |  |  |  |  | x |
-| 실행 취소 | 현재 실행 취소 |  |  | x |  |  |
-| 실행 오버라이드 품질 게이트 오류 | 중요한 품질 게이트 실패 승인 | x | x | x |  |  |
-| 파이프라인 만들기 | 파이프라인 설정/편집 |  | x |  |  |  |
-| 파이프라인 읽기 | 파이프라인 세부 정보 보기 | x | x | x | x | x |
-| 파이프라인 쓰기 | 파이프라인 설정/편집 |  | x |  |  |  |
-| 파이프라인 수정 승인 | 비즈니스 소유자 옵션 편집 허용 |  | x |  |  |  |
-| 파이프라인 수정 관리 배포 | CSE 감독 옵션 편집 허용 |  | x |  |  |  |
-| 파이프라인 삭제 | 파이프라인 삭제 허용 |  | x |  |  |  |
-| 단계 읽기 | 단계 품질 지표 결과 확인 | x | x | x | x | x |
-| 개인 액세스 토큰 생성 | 액세스 Git |  | x |  | x |  |
+| `Read the Application` | 프로그램 KPI 읽기 | x | x | x | x | x |
+| `Write Application` | 프로그램 설정 또는 편집 | x | | | | |
+| `Add Program` | 새 프로그램 추가 | x |  |  |  |  |
+| `Read Environment` | 환경 세부 정보 보기 | x | x | x | x | x |
+| `Create Execution` | 파이프라인 시작 | x | x | x | | |
+| `Read Execution` | 실행 상태 보기 | x | x | x | x | x |
+| `Resume Execution` | 일시 정지 시 실행을 재개할 수 있는 기능 | x | x | x | | x |
+| `Execution Approve Deploy to Production` | Go-Live 승인 제공 | x | x | x | | |
+| `Execution Schedule Deploy to Production` | 프로덕션 배포 예약 | x | x | x | | x |
+| `Execution Deploy to Production` | CSE 감독을 위해 일시 중지된 경우 프로덕션 환경에 애플리케이션 배포 |  |  |  |  | x |
+| `Execution Cancel` | 현재 실행 취소 |  |  | x |  |  |
+| `Execution Override Quality Gate Failures` | 중요한 품질 게이트 실패 승인 | x | x | x |  |  |
+| `Pipeline Create` | 파이프라인 설정/편집 |  | x |  |  |  |
+| `Pipeline Read` | 파이프라인 세부 정보 보기 | x | x | x | x | x |
+| `Pipeline Write` | 파이프라인 설정/편집 |  | x |  |  |  |
+| P`ipeline Modify Approval` | 비즈니스 소유자 옵션 편집 허용 |  | x |  |  |  |
+| `Pipeline Modify Managed Deployment` | CSE 감독 옵션 편집 허용 |  | x |  |  |  |
+| `Pipeline Delete` | 파이프라인 삭제 허용 |  | x |  |  |  |
+| `Step Read` | 단계 품질 지표 결과 확인 | x | x | x | x | x |
+| `Generate Personal Access Token` | 액세스 Git |  | x |  | x |  |
 
 <!-- CQDOC-22080 | Download log files  |  |  | x |  | x |  | -->
 

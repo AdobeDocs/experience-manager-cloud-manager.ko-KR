@@ -2,10 +2,10 @@
 title: Cloud Manager에서 저장소 관리
 description: Cloud Manager에서 Git 저장소를 조회, 추가 및 삭제하는 방법을 알아봅니다.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: ee84c682b6bd2b9144b3f75d544dea33a5ad944b
-workflow-type: ht
-source-wordcount: '732'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 97%
 
 ---
 
@@ -73,7 +73,7 @@ Cloud Manager는 Adobe 관리 저장소(**Adobe 저장소**)와 사용자 관리
 
 ## 분기 확인 및 프로젝트 만들기 {#check-branches}
 
-**AEM Cloud Manager**&#x200B;에서 **분기 확인 및 프로젝트 만들기** 액션은 저장소의 현재 상태에 따라 두 가지 용도로 사용됩니다.
+**AEM Cloud Manager**&#x200B;에서 **분기 확인/프로젝트 만들기**&#x200B;는 현재 저장소 상태에 따라 두 가지 용도로 사용됩니다.
 
 * 저장소가 새로 생성된 경우 이 액션은 [AEM Project Archetype](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/developing/archetype/overview)을 사용하여 샘플 프로젝트를 생성합니다.
 * 저장소에 이미 샘플 프로젝트가 생성된 경우 액션은 저장소와 해당 분기의 상태를 확인하고 샘플 프로젝트가 이미 존재하는지 여부에 대한 피드백을 제공합니다.

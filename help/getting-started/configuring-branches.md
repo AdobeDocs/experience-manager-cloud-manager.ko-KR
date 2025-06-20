@@ -2,10 +2,10 @@
 title: 분기 구성
 description: Git에서 첫 번째 분기를 설정하는 방법과 CI/CD 파이프라인에서 애플리케이션 코드를 배포하는 데 어떻게 사용되는지 알아보십시오.
 exl-id: ff2ae28f-902e-4fb2-aeb1-3636cb5cd9bb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '324'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 95%
 
 ---
 
@@ -74,7 +74,7 @@ To <url>
 
 ## 추가 분기 {#additional-branches}
 
-매우 간단한 프로젝트에는 `main` 분기 하나로 충분할 수 있지만 대부분의 경우 보다 복잡한 분기 전략이 필요합니다. 많은 고객이 `develop`이라고 불리는 분기에서 일상적인 개발 활동을 수행하는 프로세스를 따릅니다. 개발 분기는 배포 시점이 되면 `main` 분기로 병합됩니다.
+매우 간단한 프로젝트에는 `main` 분기 하나로 충분할 수 있지만 대부분의 경우 보다 복잡한 분기 전략이 필요합니다. 많은 고객이 `develop`이라고 불리는 분기에서 일상적인 개발 활동을 수행하는 프로세스를 따릅니다. 그런 다음 배포 시간이 되면 `develop` 분기가 `main` 분기로 병합됩니다.
 
 >[!TIP]
 >

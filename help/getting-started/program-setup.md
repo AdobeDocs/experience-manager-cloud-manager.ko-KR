@@ -2,10 +2,10 @@
 title: 프로그램 설정
 description: 온보딩 후 비즈니스 소유자는 프로그램의 일부 초기 설정을 수행해야 합니다.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -84,7 +84,7 @@ ht-degree: 100%
 
 사이트 KPI는 스테이징 환경에서 실행되는 테스트에서 측정됩니다. 일반적으로 이러한 KPI는 스테이징 환경의 기능에 맞게 축소됩니다.
 
-예를 들어 프로덕션 환경에서 분당 평균 1000 페이지 조회수를 예상하고 프로덕션에 4개의 Dispatcher/퍼블리싱 서버가 있는 사용자는 이 시나리오를 분당 250 페이지 조회수로 확장해야 합니다. 이 시나리오는 스테이징 환경이 단일 Dispatcher/게시 서버 쌍으로만 구성된다고 가정합니다.
+예를 들어 프로덕션 환경에서 분당 평균 1000 페이지 조회수를 예상하고 프로덕션에 4개의 Dispatcher/퍼블리싱 서버가 있는 사용자는 이 시나리오를 분당 250 페이지 조회수로 확장해야 합니다. 이 시나리오에서는 스테이징 환경이 단일 Dispatcher/게시 서버 쌍으로만 구성된다고 가정합니다.
 
 자산 성능 테스트에는 30분 동안 자산을 반복적으로 업로드하는 작업이 포함됩니다. 각 자산에 대한 처리 시간과 다양한 시스템 수준 지표가 테스트 전반에 걸쳐 측정됩니다.
 
@@ -92,4 +92,4 @@ ht-degree: 100%
 
 ## 비디오 개요 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34267?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)

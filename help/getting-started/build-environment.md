@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1263'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '1262'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
    * `graphicsmagick`
 * [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지를 설치할 수 있습니다.
 * 모든 빌드는 완전히 새로운 환경에서 수행됩니다. 빌드 컨테이너는 실행 간에 상태를 유지하지 않습니다.
-* Maven은 항상 다음 세 가지 명령을 사용하여 실행됩니다.
+* Maven은 다음 세 가지 명령을 사용하여 실행됩니다.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
    * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
@@ -117,7 +117,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수도 있습니다. 툴체인 옵션과 달리 툴체인 구성이 툴체인 인식 Maven 플러그인에 여전히 적용되는 경우 툴체인 구성도 설정되어 있지 않는 한 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
 
-이렇게 하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 `11` 또는 `8`을 가질 수 있습니다. 다른 모든 값은 무시됩니다. `11`을 지정하면 Oracle 11이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk-11.0.22`로 설정됩니다. `8`을 지정하면 Oracle 8이 사용되고 `JAVA_HOME` 환경 변수가 `/usr/lib/jvm/jdk1.8.0_401`로 설정됩니다.
+이렇게 하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 `11` 또는 `8`을 가질 수 있습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 시스템에서 Oracle 11을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정합니다. `8`을(를) 지정하면 시스템에서 Oracle 8을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정합니다.
 
 ## 환경 변수 {#environment-variables}
 
@@ -155,11 +155,11 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 >[!TIP]
 >
->배포하기 전에 [로컬에서 Dispatcher](https://experienceleague.adobe.com/ko/docs/ experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)를 사용하여 환경 변수 사용을 확인합니다.
+>배포하기 전에 [로컬에서 Dispatcher](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools)를 사용하여 환경 변수 사용을 확인합니다.
 
 #### OSGi 구성 {#osgi}
 
-일반 환경 변수 및 시크릿 모두 [OSGi 구성](https://experienceleague.adobe.com/ko/docs/ experience-manager-65/content/implementing/deploying/configuring/configuring-osgi)에서 사용할 수 있습니다.
+일반 환경 변수 및 시크릿 모두 [OSGi 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi)에서 사용할 수 있습니다.
 
 ### 파이프라인 변수 {#pipeline-variables}
 

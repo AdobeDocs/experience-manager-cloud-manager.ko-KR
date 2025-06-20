@@ -3,29 +3,28 @@ title: 평가 단계
 seo-title: Evaluation Phase
 description: 제품 업데이트 마법사의 평가 단계에서 패턴 감지기의 업그레이드 복잡성을 평가하는 방법에 대해 알아봅니다.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: 11a6a53d8cbfb689810a9a8e7d82293a49863084
-workflow-type: ht
-source-wordcount: '279'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 57%
 
 ---
 
 
 # 평가 단계 {#evaluation}
 
-제품 업데이트 마법사의 첫 번째 단계는 **[!UICONTROL 평가]** 단계로 마법사 내에서 직접 패턴 감지기를 사용하여 업그레이드 복잡성을 평가합니다. 이 단계를 마치면 평가 보고서에 액세스할 수 있습니다.
+제품 업데이트 마법사의 첫 번째 단계는 **[!UICONTROL 평가]** 단계입니다. 마법사 내에서 패턴 감지기를 실행하여 업그레이드 복잡성을 평가합니다. 이 단계가 끝나면 평가 보고서를 볼 수 있습니다.
 
-생성된 보고서를 통해 다음 패턴을 감지하여 작성자 인스턴스의 업그레이드 적격성을 확인할 수 있습니다.
+이 보고서는 다음에 대한 패턴을 감지하여 작성자 인스턴스의 업그레이드 준비 상태를 확인합니다.
 
-* 업그레이드로 인해 영향을 받거나 덮어쓴 영역과 관련된 특정 규칙을 위반합니다.
+* 업그레이드의 영향을 받거나 덮어쓴 영역의 규칙 위반.
+* 이전 버전과 호환되지 않으며 업그레이드 후 중단될 수 있는 AEM 6.x 기능 또는 API를 사용합니다.
 
-* 새 버전의 AEM과 역으로 호환되지 않으며 업그레이드 후 잠재적으로 중단될 수 있는 AEM 6.x 기능 또는 API를 사용합니다.
-
-이 보고서는 Adobe Experience Manager(AEM) 6.5로의 업그레이드와 관련된 개발 노력에 대한 평가 역할로 사용됩니다.
+이 보고서는 Adobe Experience Manager(AEM) 6.5로 업그레이드하는 데 필요한 개발 노력을 예상하는 데 도움이 됩니다.
 
 >[!NOTE]
 >
->패턴 감지기에 대한 자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](https://experienceleague.adobe.com/ko/docs/ experience-manager-65/content/implementing/deploying/upgrading/pattern-detector)를 참조하십시오.
+>패턴 감지기에 대한 자세한 내용은 [패턴 감지기를 사용한 업그레이드 복잡성 평가](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/upgrading/pattern-detector)를 참조하십시오.
 
 ## 평가 보고서 실행 {#running}
 
@@ -45,4 +44,4 @@ ht-degree: 100%
 
    ![보고서 생성됨](/help/assets/Evaluation-1.png)
 
-Cloud Manager에서 제품 업데이트 마법사의 현재 릴리스는 **평가** 단계만 지원합니다. 나머지 네 가지 단계인 **교정**, **실행**, **유효성 검사** 및 **완료**&#x200B;가 곧 제공될 예정입니다.
+Cloud Manager의 현재 제품 업데이트 마법사는 **평가** 단계만 지원합니다. 나머지 네 가지 단계인 **교정**, **실행**, **유효성 검사** 및 **완료**&#x200B;가 곧 제공될 예정입니다.

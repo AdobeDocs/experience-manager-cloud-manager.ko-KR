@@ -2,10 +2,10 @@
 title: 코드 품질 테스트
 description: 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
 exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
-source-git-commit: f5e6ac81c6454730850bb7e884d82be48d2f8525
-workflow-type: ht
-source-wordcount: '2793'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '2783'
+ht-degree: 98%
 
 ---
 
@@ -126,18 +126,18 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | 역직렬화 방화벽이 로드되었습니다. | [Deserialization Firewall Loaded](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/mitigating-serialization-issues#security) | 심각 |
 | `AuthorizableNodeName` 구현이 노드 이름/경로에 인증 가능한 ID가 표시되지 않습니다. | [승인 가능한 노드 이름 생성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/security-checklist#security) | 심각 |
 | 기본 암호가 변경되었습니다. | [기본 로그인 계정](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/security#users-and-groups-in-aem) | 심각 |
-| Sling 기본 GET 서블릿이 DOS 공격으로부터 보호됩니다. | Sling Get Servlet | 심각 |
-| Sling JavaScript 핸들러가 적절하게 구성되어 있습니다. | Sling JavaScript 핸들러 | 심각 |
-| Sling JSP Script 핸들러가 적절히 구성되었습니다. | Sling JSP Script Handler | 심각 |
+| `Sling` 기본 GET 서블릿이 DOS 공격으로부터 보호됩니다. | `Sling Get` 서블릿 | 심각 |
+| `Sling` JavaScript 처리기가 적절하게 구성되었습니다. | `Sling` JavaScript 처리기 | 심각 |
+| `Sling` JSP Script 핸들러가 적절히 구성되었습니다. | `Sling` JSP 스크립트 핸들러 | 심각 |
 | SSL이 올바르게 구성되었습니다. | SSL 구성 | 심각 |
 | 명확하게 안전하지 않은 사용자 프로필 정책을 찾을 수 없습니다. | 사용자 프로필 기본 액세스 | 심각 |
-| CSRF 공격을 막기 위해 Sling Referrer 필터가 구성됩니다. | [Sling Referrer Filter](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/security-checklist#security) | 중요 |
+| `Sling` 레퍼러 필터가 CSRF 공격을 방지하도록 구성되었습니다. | [Sling Referrer Filter](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/security-checklist#security) | 중요 |
 | Adobe Granite HTML 라이브러리 관리자가 적절히 구성되었습니다. | CQ HTML 라이브러리 관리자 구성 | 중요 |
 | CRXDE 지원 번들이 비활성화되었습니다. | CRXDE 지원 | 중요 |
-| Sling DavEx 번들 및 서블릿이 비활성화되었습니다. | DavEx 상태 검사 | 중요 |
+| `Sling` DavEx 번들 및 서블릿이 비활성화되었습니다. | DavEx 상태 검사 | 중요 |
 | 샘플 콘텐츠가 설치되지 않았습니다. | 콘텐츠 패키지 예 | 중요 |
 | WCM 요청 필터 및 WCM 디버그 필터가 모두 비활성화되었습니다. | [WCM 필터 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/configuring/osgi-configuration-settings#configuring) | 중요 |
-| Sling WebDAV 번들 및 서블릿이 적절히 구성되었습니다. | WebDAV 상태 검사 | 중요 |
+| `Sling` WebDAV 번들 및 서블릿이 적절하게 구성되어 있습니다. | WebDAV 상태 검사 | 중요 |
 | 웹 서버가 클릭재킹을 방지하도록 구성되었습니다. | 웹 서버 구성 | 중요 |
 | 복제에서 `admin` 사용자를 사용하고 있지 않습니다. | 복제 및 전송 사용자 | 정보 |
 

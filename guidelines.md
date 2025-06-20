@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2a25b0482800d4c5428a5595c9699dceed327043
-workflow-type: ht
-source-wordcount: '714'
-ht-degree: 100%
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 96%
 
 ---
 # Adobe Experience Manager 설명서에 대한 기여 지침
@@ -31,13 +31,13 @@ AEM 설명서에서는 표준 사용 사례를 다룹니다. 표준 설치 및 �
 
 AEM 설명서에서는 표준 사용 사례를 다룹니다. 따라서 버그, 버그로 인한 효과 및 버그에 대한 해결 방법은 문서화되지 않습니다.
 
-이 규칙에 대한 예외 상황은 제품 관리 팀에서 승인한 가능한 해결 방법과 함께 알려진 문제가 기록될 수 있는 릴리스 정보에 적용됩니다.
+이 규칙에 대한 예외 상황은 제품 관리 팀에서 승인하는 가능한 해결 방법과 함께 알려진 문제가 기록될 수 있는 릴리스 정보에 적용됩니다.
 
 ### 설명서 기여는 기술 관련 질문에 대한 답변을 위한 자료가 아닙니다.
 
 AEM 설명서를 개선하기 위해 필요한 모든 아이디어를 기여할 수 있습니다. 그러나 주석, 문제 및 가져오기 요청만 *기여*&#x200B;에 해당합니다. 하지만 기여는 AEM 사용 방법, AEM 프로젝트 구현 방법, 기술 문제 해결 방법 등에 대한 질문에 답변하기 위한 것이 아닙니다.
 
-AEM 사용 또는 기술 오류에 대한 질문을 보고할 수 있습니다. [Experience Cloud 기업 지원 포털](https://experienceleague.adobe.com/ko?support-solution=General#support)을 통해 또는 [Experience Manager 커뮤니티](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ko)에서 논의되는 일반적인 지원 프로세스를 사용합니다.
+AEM 사용 또는 기술 오류에 대한 질문을 보고할 수 있습니다. [Experience Cloud 기업 지원 포털](https://experienceleague.adobe.com/?support-solution=General#support)을 통해 또는 [Experience Manager 커뮤니티](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)에서 논의되는 일반적인 지원 프로세스를 사용합니다.
 
 ***AEM 설명서 기여는 Adobe 고객 지원 센터를 대체할 수 없으며*** 지원 관련 질문에 대한 답변을 구하는 기여는 거부됩니다.
 

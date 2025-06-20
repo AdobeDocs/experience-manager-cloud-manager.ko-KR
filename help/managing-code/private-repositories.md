@@ -3,10 +3,10 @@ title: Cloud Manager에서 비공개 저장소 추가
 description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: 58cdebf819f2737be5d8e129ff5b9783888f3c21
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 96%
 
 ### 비공개 저장소 소유권 유효성 검사 {#validate-ownership}
 
-이제 Cloud Manager는 GitHub 저장소에 대해 알게 되었지만, 여전히 이에 대한 액세스가 필요합니다. 액세스 권한을 부여하려면 Adobe GitHub 앱을 설치하고 지정된 저장소를 소유하고 있는지 확인해야 합니다.
+이제 Cloud Manager는 GitHub 저장소에 대해 알게 되었지만 여전히 이에 대한 액세스가 필요합니다. 액세스 권한을 부여하려면 Adobe GitHub 앱을 설치하고 지정된 저장소를 소유하고 있는지 확인해야 합니다.
 
 1. 자체 저장소를 추가하면 **비공개 저장소 소유권 유효성 검사** 대화 상자가 나타납니다.
 
@@ -90,7 +90,7 @@ ht-degree: 96%
 
 **유형** 열을 통해 Adobe 제공 저장소(**Adobe**) 및 자체 GitHub 저장소(**GitHub**)를 쉽게 식별할 수 있습니다.
 
-나중에 저장소로 돌아와서 유효성 검사를 완료하려면 **저장소** 페이지로 이동합니다. 추가한 GitHub 저장소 옆에 있는 ![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭한 다음 **소유권 확인**&#x200B;을 클릭합니다.
+나중에 저장소로 돌아와서 유효성 검사를 완료하려면 **저장소** 페이지로 이동합니다. 추가한 GitHub 저장소 옆에 있는 ![기타 아이콘(줄임표)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 클릭한 다음 **소유권 확인**&#x200B;을 클릭합니다.
 
 
 ## Cloud Manager로 비공개 저장소 사용 {#using}
@@ -105,7 +105,7 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 1. 각 가져오기 요청에 대해 [전체 스택 코드 품질 파이프라인](/help/using/managing-pipelines.md)이 자동으로 생성됩니다. 이 파이프라인은 가져오기 요청이 업데이트될 때마다 시작됩니다.
 
-1. GitHub 검사는 코드 품질 검사가 완료될 때까지 실행 중 상태로 유지됩니다. 그러면 코드 품질 결과가 GitHub 검사에 반영됩니다.
+1. GitHub 검사는 코드 품질 검사가 완료될 때까지 실행 상태로 유지됩니다. 그러면 코드 품질 결과가 GitHub 검사에 반영됩니다.
 
    ![GitHub 코드 품질 검사](/help/assets/repositories/github-code-quality.png)
 
@@ -134,6 +134,6 @@ Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사
 * 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
 * Adobe GitHub 애플리케이션이 GitHb 조직에서 제거되면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
-* 비공개 저장소와 커밋 시 빌드 트리거를 사용하는 파이프라인은 새 커밋이 선택한 분기에 푸시될 때 자동으로 시작되지 않습니다.
+* 개인 저장소 및 커밋된 빌드 트리거를 사용하는 파이프라인은 새 커밋이 선택한 분기에 푸시될 때 자동으로 시작되지 않습니다.
 * [아티팩트 재사용 기능](/help/getting-started/project-setup.md#build-artifact-reuse)은 비공개 저장소에는 적용되지 않습니다.
 * Cloud Manager의 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 정지할 수 없습니다. GitHub 저장소가 Cloud Manager에서 검증되면 Cloud Manager는 해당 저장소에 대해 생성된 가져오기 요청의 유효성 검사를 시도합니다.

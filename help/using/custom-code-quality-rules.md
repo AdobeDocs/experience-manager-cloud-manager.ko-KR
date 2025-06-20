@@ -2,10 +2,10 @@
 title: 사용자 정의 코드 품질 규칙
 description: 코드 품질 테스트 도중 Cloud Manager에서 실행되는 사용자 정의 코드 품질 규칙의 특성에 대해 알아봅니다. 이러한 규칙은 AEM Engineering의 모범 사례를 기반으로 합니다.
 exl-id: 7d118225-5826-434e-8869-01ee186e0754
-source-git-commit: 54987d6ccd8c31dab677d90b40466c458743f936
+source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
 workflow-type: tm+mt
-source-wordcount: '3644'
-ht-degree: 96%
+source-wordcount: '3636'
+ht-degree: 95%
 
 ---
 
@@ -227,7 +227,7 @@ public void orDoThis(Session session) throws Exception {
 * **심각도**: 주요
 * **이후**: 버전 2018.4.0
 
-[슬링 설명서](https://sling.apache.org/documentation/the-sling-engine/servlets.html)에 설명된 대로 경로별로 서블릿을 바인딩하는 것은 권장되지 않습니다. 경로 바인딩 서블릿은 표준 JCR 액세스 제어를 사용할 수 없으며, 결과적으로 엄격한 추가 보안이 요구됩니다. 경로 바인딩 서블릿을 사용하는 대신 저장소에 노드를 생성하고 리소스 유형별로 서블릿을 등록하는 것이 좋습니다.
+[Sling 설명서](https://sling.apache.org/documentation/the-sling-engine/servlets.html)에 설명된 대로 경로별로 서블릿을 바인딩하는 것은 권장되지 않습니다. 경로 바인딩 서블릿은 표준 JCR 액세스 제어를 사용할 수 없으며, 결과적으로 엄격한 추가 보안이 요구됩니다. 경로 바인딩 서블릿을 사용하는 대신 저장소에 노드를 생성하고 리소스 유형별로 서블릿을 등록하는 것이 좋습니다.
 
 #### 비준수 코드 {#non-compliant-code-5}
 
@@ -475,7 +475,7 @@ public void doThis() {
 * **심각도**: 사소
 * **이후**: 버전 2018.4.0
 
-`/libs` 및 `/apps`로 시작하는 경로는 일반적으로 하드코딩해서는 안 됩니다. 이러한 경로는 일반적으로 슬링 검색 경로를 기준으로 저장되며, 기본값은 `/libs,/apps`입니다. 절대 경로를 사용하면 프로젝트 수명 주기의 후반에만 나타나는 미묘한 결함이 발생할 수 있습니다.
+`/libs` 및 `/apps`로 시작하는 경로는 일반적으로 하드코딩해서는 안 됩니다. 이러한 경로는 일반적으로 `Sling` 검색 경로를 기준으로 저장되며 기본값은 `/libs,/apps`입니다. 절대 경로를 사용하면 프로젝트 수명 주기의 후반에만 나타나는 미묘한 결함이 발생할 수 있습니다.
 
 #### 비준수 코드 {#non-compliant-code-13}
 
@@ -908,8 +908,7 @@ AEM Cloud Service에서는 여러 인덱스에 동일한 태그를 포함하는 
 * **심각도**: 주요
 * **이후**: 버전 2025.4.0
 
-파일 보관소에서 &quot;대체&quot; 모드는 /content 아래의 경로에는 사용할 수 없습니다. /etc 및 /var 아래의 경로에는 사용할 수 없습니다.
-&quot;바꾸기&quot; 모드는 저장소의 기존 모든 콘텐츠를 콘텐츠 패키지에 제공된 콘텐츠로 바꿉니다. 이 작업을 트리거하는 패키지는 CloudManager를 통해 배포된 패키지의 일부여야 합니다.
+`/content` 아래의 경로에는 파일 보관소의 &quot;대체&quot; 모드를 사용할 수 없습니다. `/etc` 및 `/var.` 아래의 경로에는 이 모드를 사용할 수 없습니다. 바꾸기 모드는 기존 저장소 콘텐츠를 패키지에서 제공되는 콘텐츠로 덮어씁니다. 이 작업을 트리거하는 패키지는 Cloud Manager을 통해 배포된 패키지에 포함되지 않아야 합니다.
 
 ## Dispatcher 최적화 도구 {#dispatcher-optimization-tool-rules}
 
