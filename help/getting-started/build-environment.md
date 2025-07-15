@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 97%
+source-wordcount: '1161'
+ht-degree: 83%
 
 ---
 
@@ -40,6 +40,9 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 * Maven은 `adobe-public`이라는 프로필을 사용하여 자동으로 공개 Adobe 아티팩트 저장소를 포함하는 `settings.xml` 파일로 시스템 수준에서 구성됩니다. 자세한 내용은 [Adobe 공개 Maven 저장소](https://repo1.maven.org/)를 참조하십시오.
 * Node.js 18은 [프론트엔드 파이프라인](/help/overview/ci-cd-pipelines.md)에 사용할 수 있습니다.
 
+>[!IMPORTANT]
+>Maven 툴체인 지원은 Cloud Manager 2025.06.0부터 제거되었습니다. JDK 선택은 이제 `.cloudmanager/java-version`을(를) 통해서만 지원됩니다. 자세한 내용은 [특정 Java 버전 사용](#using-java-version)을 참조하십시오.
+
 >[!NOTE]
 >
 >Cloud Manager에서는 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 `0.7.5.201505241946` 이상이어야 합니다.
@@ -62,14 +65,23 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 
 ## 특정 Java 버전 사용 {#using-java-version}
 
-기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스를 통해 구축됩니다. 대체 JDK를 사용하려는 고객은 두 가지 옵션이 있습니다.
+기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스를 통해 구축됩니다. 대체 JDK를 사용하려는 고객은 전체 Maven 실행 프로세스에 대한 대체 JDK 버전을 선택할 수 있습니다.
 
-* [Maven 툴체인](#maven-toolchains)
-* [전체 Maven 실행 프로세스에 대한 대체 JDK 버전 선택](#alternate-maven)
+>[!IMPORTANT]
+>
+>Maven 툴체인은 Cloud Manager 2025.06.0에서 더 이상 지원되지 않습니다. Maven-toolchains-plugin 구성이 포함된 파이프라인이 `Cannot find matching toolchain definitions.`(으)로 실패합니다. 대신 `.cloudmanager/java-version` 파일을 사용하여 JDK 11, 17 또는 21을 선택하십시오.
+>
+>**마이그레이션 지침:**
+>
+>1. 소스 제어에 커밋된 `org.apache.maven.plugins:maven-toolchains-plugin` 항목과 `toolchains.xml`을(를) 삭제하여 도구 체인을 제거합니다.
+>1. `.cloudmanager/java-version`대체 Maven 실행 JDK 버전[에 설명된 대로 ](#alternate-maven)(21, 17 또는 11)이 포함된 JDK를 선택하십시오.
+>1. Adobe에서는 Cloud Manager 빌드 캐시를 지우거나 새 파이프라인 실행을 트리거하는 것이 좋습니다.
+>
 
-### Maven 툴체인 {#maven-toolchains}
+<!--DEPRECATED 
+### Maven Toolchains {#maven-toolchains}
 
-[Maven 툴체인 플러그인](https://maven.apache.org/plugins/maven-toolchains-plugin/)을 사용하면 프로젝트가 툴체인 인식 Maven 플러그인의 맥락에서 사용될 특정 JDK(또는 툴체인)를 선택할 수 있습니다. 공급업체 및 버전 값을 지정하여 프로젝트의 `pom.xml` 파일에서 이 프로세스를 수행합니다. `pom.xml` 파일의 샘플 섹션은 다음과 같습니다.
+The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
 
 ```xml
         <plugin>
@@ -92,30 +104,31 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
         </toolchains>
     </configuration>
 </plugin>
+
 ```
 
-그러면 모든 툴체인 인식 Maven 플러그인이 Oracle JDK 버전 11을 사용하게 됩니다.
+This process causes all toolchains-aware Maven plug-ins to use the Oracle JDK, version 11.
 
-이 방법을 사용하면 Maven 자체는 기본 JDK(Oracle 8)를 사용하여 계속 실행되며 `JAVA_HOME` 환경 변수는 변경되지 않습니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)과 같은 플러그인을 통해 Java 버전의 확인 또는 적용은 작동하지 않으며 이러한 플러그인은 사용해서는 안 됩니다.
+When using this method, Maven itself still runs using the default JDK (Oracle 8) and the `JAVA_HOME` environment variable is not changed. Therefore, checking or enforcing the Java version through plug-ins like the [Apache Maven Enforcer Plug-in](https://maven.apache.org/enforcer/maven-enforcer-plugin/) does not work and such plug-ins must not be used.
 
-현재 사용 가능한 공급업체/버전 조합은 다음과 같습니다.
+The currently available vendor/version combinations are:
 
-| 공급업체 | 버전 |
+|Vendor|Version|
 |---|---|
-| Oracle | 1.8 |
-| Oracle | 1.11 |
-| Oracle | 11 |
-| 일 | 1.8 |
-| 일 | 1.11 |
-| 일 | 11 |
+| Oracle |1.8|
+| Oracle |1.11|
+| Oracle |11|
+| Sun |1.8|
+| Sun |1.11|
+| Sun |11|
 
 >[!NOTE]
 >
->2022년 4월부터 Oracle JDK는 AEM 애플리케이션의 개발과 운영을 위한 기본 JDK가 될 것입니다. Cloud Manager의 빌드 프로세스는 Maven 툴체인에 대체 옵션이 명시적으로 선택되어 있더라도 Oracle JDK를 사용하는 것으로 자동 전환됩니다. 자세한 내용은 [4월 릴리스 정보](/help/release-notes/2022/2022-4-0.md)를 참조하십시오.
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
 
 ### 대체 Maven 실행 JDK 버전 {#alternate-maven}
 
-전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수도 있습니다. 툴체인 옵션과 달리 툴체인 구성이 툴체인 인식 Maven 플러그인에 여전히 적용되는 경우 툴체인 구성도 설정되어 있지 않는 한 모든 플러그인에 사용되는 JDK가 변경됩니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
+전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수 있습니다. 이 방법은 모든 플러그인에 사용되는 JDK를 변경합니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
 
 이렇게 하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 `11` 또는 `8`을 가질 수 있습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 시스템에서 Oracle 11을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정합니다. `8`을(를) 지정하면 시스템에서 Oracle 8을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정합니다.
 

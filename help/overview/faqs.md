@@ -2,9 +2,9 @@
 title: Cloud Manager FAQ
 description: AMS 고객을 위한 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 알아보십시오.
 exl-id: 52c1ca23-5b42-4eae-b63a-4b22ef1a5aee
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '748'
+source-git-commit: e7e9844b5f06552fc2104584c63935dee7a9fa89
+workflow-type: tm+mt
+source-wordcount: '709'
 ht-degree: 100%
 
 ---
@@ -14,12 +14,13 @@ ht-degree: 100%
 
 이 문서에서는 AMS 고객을 위한 Cloud Manager에 대해 가장 자주 묻는 질문에 대한 답변을 알아봅니다.
 
-## Cloud Manager 빌드와 함께 Java 11을 사용할 수 있습니까? {#java-11}
+<!-- 
+## Is it possible to use Java 11 with Cloud Manager builds? {#java-11}
 
-예. Java 11에 대한 적절한 설정과 함께 `maven-toolchains-plugin`을 추가해야 합니다.
+Yes. You need to add the `maven-toolchains-plugin` with the correct settings for Java 11.
 
-* 이 프로세스는 [여기](/help/getting-started/using-the-wizard.md)에 설명되어 있습니다.
-* 예를 들어 [WKND 샘플 프로젝트 코드](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)를 참조하십시오.
+* This process is documented [here](/help/getting-started/using-the-wizard.md).
+* For an example, see the [WKND sample project code](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75). -->
 
 ## Java 8에서 Java 11로 전환한 후 maven-scr-plugin에 대한 오류와 함께 빌드가 실패합니다. 어떻게 해야 합니까? {#maven-src-plugin}
 
@@ -68,7 +69,7 @@ Cloud Manager 빌드의 경우 `maven-enforcer-plugin`이 해당 오류와 함�
 
 단계 및 프로덕션 빌드 또는 배포에 대해 버전을 `-SNAPSHOT`으로 설정할 수도 있습니다. Cloud Manager는 자동으로 적절한 버전 번호를 설정하고 Git에 태그를 생성합니다. 이 태그는 필요한 경우 나중에 참조할 수 있습니다.
 
-버전 처리에 대한 자세한 내용은 [여기에 문서화](https://experienceleague.adobe.com/ko/docs/ experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)되어 있습니다.
+버전 처리에 대한 자세한 내용은 [여기에 문서화](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/project-version-handling)되어 있습니다.
 
 ## 패키지 및 번들 버전 관리는 스테이징 및 프로덕션 배포에서 어떻게 작동합니까? {#staging-production}
 
