@@ -3,10 +3,10 @@ title: Cloud Manager 2025.7.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.7.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 106caded8056a8a667b6c702b573566f9358f401
+source-git-commit: a1f023b8ecc6fcae97832c5f3fad6bb8ae79ced1
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 66%
+source-wordcount: '528'
+ht-degree: 67%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.7.0 릴리스에 대�
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-다음 릴리스는 2025년 8월 7일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 8월 7일 목요일에 예정되어 있습니다.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -48,11 +48,11 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.7.0 릴리스에 대�
   [파이프라인 즐겨찾기 표시](/help/using/managing-pipelines.md#pipeline-favorites)를 참조하십시오.
 
 
-## 얼리 어답터 프로그램 {#beta-program}
+## Alpha/Beta 프로그램 {#beta-program}
 
-Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 일찍 액세스하십시오.
+Cloud Manager의 알파 및 베타 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 액세스할 수 있습니다.
 
-현재 사용할 수 있는 영업 기회는 다음과 같습니다.
+현재 제공되는 기회는 다음과 같습니다.
 
 
 ### 자체 Git 가져오기 - GitLab 및 Bitbucket 지원 포함 {#gitlab-bitbucket}
