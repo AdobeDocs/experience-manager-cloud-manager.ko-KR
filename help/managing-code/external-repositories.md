@@ -1,17 +1,28 @@
 ---
 title: Cloud Manager에서 외부 저장소 추가
-description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
+description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps 저장소와의 통합을 지원합니다.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '2322'
 ht-degree: 28%
 
 ---
 
 # Cloud Manager에서 외부 저장소 추가 {#external-repositories}
 
+<!-- badge: label="Beta - Azure DevOps only" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket" -->
+
 Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab 및 Bitbucket 저장소와의 통합을 지원합니다.
+
+이제 고객은 최신 Azure DevOps 및 레거시 VSTS(Visual Studio Team Services) 저장소를 모두 지원하여 Azure DevOps(Beta) Git 저장소를 Cloud Manager에 온보딩할 수도 있습니다.
+
+* Edge Delivery Services 사용자의 경우 온보딩된 저장소를 사용하여 사이트 코드를 동기화하고 배포할 수 있습니다.
+* AEM as a Cloud Service와 Adobe Managed Services(AMS) 사용자의 경우 저장소를 전체 스택 파이프라인과 프론트엔드 파이프라인 모두에 연결할 수 있습니다.
+
+>[!NOTE]
+>
+>이 문서에 설명된 Azure DevOps에 대해 추가된 지원은 비공개 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 Beta에 등록하려면 [나만의 Git 가져오기](/help/release-notes/current.md)를 참조하세요.
 
 ## 외부 저장소 구성
 
@@ -54,7 +65,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
    | --- | --- |
    | **저장소 이름** | 필수. 새로운 저장소의 표현적인 이름. |
    | **저장소 URL** | 필수. 저장소의 URL.<br><br>GitHub 호스팅 리포지토리를 사용하는 경우 경로는 `.git`에서 끝나야 합니다.<br>예: *`https://github.com/org-name/repo-name.git`*(URL 경로는 일러스트레이션용임).<br><br>외부 저장소를 사용하는 경우 다음 URL 경로 형식을 사용해야 합니다. <br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 또는 <br>`https://self-hosted-domain/org-name/repo-name.git`<br> 그리고 Git 공급업체와 일치해야 합니다. |
-   | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다.<ul><li>**GitHub**(GitHub Enterprise 및 GitHub의 자체 호스팅 버전)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org`(클라우드 버전)만 지원됩니다. 자체 호스팅되는 Bitbucket 버전은 2024년 2월 15일부터 더 이상 사용되지 않습니다.)</li></ul>위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다. |
+   | **저장소 유형 선택** | 필수. 사용 중인 저장소 유형을 선택합니다.<ul><li>**GitHub**(GitHub Enterprise 및 GitHub의 자체 호스팅 버전)</li><li>**GitLab**(`gitlab.com` 및 자체 호스팅 버전의 GitLab 모두) </li><li>**Bitbucket**(`bitbucket.org`(클라우드 버전)만 지원됩니다. 자체 호스팅되는 Bitbucket 버전은 2024년 2월 15일부터 더 이상 사용되지 않습니다.)</li></ul>위의 저장소 URL 경로에 GitLab이나 Bitbucket과 같은 Git 공급업체 이름이 포함되어 있는 경우 저장소 유형이 미리 선택됩니다.</li><li>**Azure DevOps**(`dev.azure.com`) </ul> |
    | **설명** | 선택 사항. 저장소에 대한 자세한 설명. |
 
 1. **저장**&#x200B;을 선택하여 저장소를 추가합니다.
@@ -108,6 +119,19 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 
 [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)도 참조하세요.
 
+>[!TAB Azure DevOps(Beta)]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| 액세스 토큰 옵션 | 설명 |
+| --- | --- |
+| **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
+| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Azure DevOps 설명서](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Azure DevOps Personal Access Token(PAT)에 필요한 권한.<br>이러한 권한을 통해 Cloud Manager은 저장소 콘텐츠에 액세스하고 끌어오기 요청을 관리하며 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Azure DevOps에서 앱 암호를 만들 때 다음 필수 앱 암호 권한이 포함되어 있는지 확인하십시오.<ul><li>저장소(읽기 전용)</li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+
+유효성 검사 후에는 외부 저장소를 사용하여 파이프라인에 연결할 준비가 됩니다.
+
+[액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)도 참조하세요.
+
 >[!ENDTABS]
 
 
@@ -145,7 +169,7 @@ Cloud Manager을 사용하면 추가한 외부 Git 저장소에 대한 웹후크
 
 Cloud Manager은 GitHub 앱을 통해 직접 통합되므로 `GitHub.com`에서 호스팅되는 저장소에 대해 Webhook 구성이 필요하지 않습니다.
 
-GitHub Enterprise, GitLab 및 Bitbucket과 같이 액세스 토큰과 함께 온보딩되는 다른 모든 외부 저장소의 경우 웹후크 구성을 사용할 수 있으며 수동으로 설정해야 합니다.
+GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps 등 액세스 토큰과 함께 온보딩되는 다른 모든 외부 저장소의 경우 웹후크 구성을 사용할 수 있으며 수동으로 설정해야 합니다.
 
 **외부 저장소에 대한 웹후크를 구성하려면:**
 
@@ -172,7 +196,7 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
    1. **Webhook 암호** 토큰/키 필드 옆에 있는 **생성**&#x200B;을 클릭한 다음 ![복사 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)을 클릭합니다.
 암호를 일반 텍스트 파일에 붙여넣습니다. 복사된 암호는 Git 공급업체의 Webhook 설정에 필요합니다.
 1. **닫기**&#x200B;를 클릭합니다.
-1. Git 공급업체 솔루션(GitHub Enterprise, GitLab 또는 Bitbucket)으로 이동합니다.
+1. Git 공급업체 솔루션(GitHub Enterprise, GitLab, Bitbucket 또는 Azure DevOps)으로 이동합니다.
 
    Webhook 구성에 대한 모든 세부 정보와 각 공급업체에 필요한 이벤트는 [외부 저장소 추가](#add-ext-repo)에서 확인할 수 있습니다. 8단계에서 탭 테이블을 참조하십시오.
 
@@ -210,6 +234,14 @@ URL을 일반 텍스트 파일에 붙여넣습니다. 복사된 URL은 Git 공�
 | 필수 웹후크 이벤트 |
 | --- |
 | 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>끌어오기 요청: 생성됨<li>끌어오기 요청: 업데이트됨<li>가져오기 요청: 병합됨<li>끌어오기 요청: 댓글<li>저장소: 푸시</li></li></li></ul></ul></ul> |
+
+>[!TAB Azure DevOps(Beta)]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
+
+| 필수 웹후크 이벤트 및 인증 |
+| --- |
+| 이러한 이벤트를 통해 Cloud Manager은 가져오기 요청의 유효성을 검사하고, 코드 푸시에 응답하고, 파이프라인 조정을 위한 댓글과 상호 작용할 수 있습니다.<br>다음 필수 웹후크 이벤트를 트리거하도록 웹후크가 설정되어 있는지 확인하십시오<ul><li>저장소: 푸시</li></ul>인증 설정:<br>1. **기본 인증 사용자 이름** 필드에 `cloudmanager`을(를) 입력합니다.<br>2. **기본 인증 암호** 필드에 Cloud Manager 사용자 인터페이스에서 생성한 Webhook 암호를 입력합니다. |
 
 >[!ENDTABS]
 
