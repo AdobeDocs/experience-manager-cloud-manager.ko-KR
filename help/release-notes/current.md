@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.8.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 73a094f47f518e2782ac96357e1adc4e923a0b63
+source-git-commit: cba5f331d2b4093822dce4470147966e2cac15b7
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 72%
+source-wordcount: '469'
+ht-degree: 67%
 
 ---
 
@@ -81,27 +81,6 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
 
 이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오.
-
-
-
-
-
-
-
-
-**BYOG(Bring Your Own Git**) 기능이 GitLab 및 Bitbucket과 같은 외부 저장소에 대한 지원을 포함하도록 확장되었습니다. 이 새로운 지원은 기존에 제공되던 개인 및 기업용 GitHub 저장소에 대한 지원에 추가됩니다. 이러한 새로운 저장소를 추가하면 이를 파이프라인에 직접 연결할 수도 있습니다. 이러한 저장소를 공개 클라우드 플랫폼이나 비공개 클라우드 또는 인프라 내에 호스팅할 수 있습니다. 또한 이 통합을 통해 Adobe 저장소와 지속적으로 코드를 동기화할 필요가 없으며 가져오기 요청을 메인 분기로 병합하기 전에 유효성 검사를 수행할 수 있는 기능이 제공됩니다.
-
-이제 외부 저장소(GitHub 호스팅된 저장소 제외)와 **배포 트리거**&#x200B;를 **Git 변경 시**&#x200B;로 설정한 파이프라인이 자동으로 시작됩니다.
-
-[Cloud Manager에서 외부 저장소 추가](/help/managing-code/external-repositories.md)를 참조하십시오.
-
-![저장소 추가 대화 상자](/help/release-notes/assets/repositories-add-release-notes.png)
-
->[!NOTE]
->
->현재 기본 제공 가져오기 요청 코드 품질 검사는 GitHub 호스팅 저장소에만 적용되지만 이 기능을 다른 Git 공급업체로 확장하기 위한 업데이트가 진행 중입니다.
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 #### 액세스 토큰 관리{#access-tokens}
 
