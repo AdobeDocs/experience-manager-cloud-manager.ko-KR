@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.8.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: a96bc45242ee6c6b06b4354756a67562150f385c
+source-git-commit: 03e2a9b8cd1ad0a9446fc59a430895302fba21a3
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 71%
+source-wordcount: '405'
+ht-degree: 69%
 
 ---
 
@@ -80,10 +80,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)를 참조하십시오.
 
-이 새로운 기능을 테스트하고 피드백을 공유하는 데 관심이 있으시면 Adobe ID와 연결된 이메일 주소로 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)에 이메일을 보내 주십시오.
-
-<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## 버그 수정 {#bug-fixes}
 
