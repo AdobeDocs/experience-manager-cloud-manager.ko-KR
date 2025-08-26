@@ -3,10 +3,10 @@ title: Cloud Manager 2025.8.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.8.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: b64b8529e4c6072c9bcb7438dc2d89098d29115d
+source-git-commit: b34fe26f8c9a2d59a7df3d03717f302fe4456352
 workflow-type: tm+mt
 source-wordcount: '474'
-ht-degree: 59%
+ht-degree: 75%
 
 ---
 
@@ -24,18 +24,18 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.8.0 릴리스에 대�
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-다음 릴리스는 2025년 9월 4일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 9월 4일 목요일에 예정되어 있습니다.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 
 ## 새로운 기능 {#what-is-new}
 
-* **Adobe Experience Hub 준비 중**
+* **Adobe Experience Hub 곧 제공 예정**
 
-  2025년 8월 19일부터 Adobe은 모든 Adobe Experience Manager 사용자에게 새 Experience Hub의 단계적 롤아웃을 시작합니다.
+  2025년 8월 19일부터 Adobe는 새로운 Experience Hub를 모든 Adobe Experience Manager 사용자에게 단계적으로 롤아웃합니다.
 
-  Experience Hub은 사용자가 목표를 더 빨리 달성할 수 있도록 개인화된 컨텍스트 기반의 경험을 제공하는 통합 시작점입니다. 롤아웃은 2025년 8월 26일까지 완료되어 모든 사용자가 사용할 수 있습니다. 새 Experience Hub은 [experience.adobe.com](https://experience.adobe.com/)에서 바로 액세스할 수 있습니다. 자세한 내용은 [Adobe Experience Hub](/help/experience-hub.md)를 참조하세요.
+  Experience Hub는 사용자가 목표를 더 빠르게 달성할 수 있도록 개인화되고 상황에 맞는 경험을 제공하는 통합 시작점입니다. 롤아웃은 2025년 8월 26일까지 완료되어 모든 사용자가 사용할 수 있게 됩니다. 새로운 Experience Hub는 [experience.adobe.com](https://experience.adobe.com/)에서 직접 액세스할 수 있습니다. 자세한 내용은 [Adobe Experience Hub](/help/experience-hub.md)를 참조하십시오.
 
 * **스테이징 전용 및 프로덕션 전용 파이프라인**
 
@@ -61,7 +61,7 @@ Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예�
 현재 제공되는 기회는 다음과 같습니다.
 
 
-### Bring Your Own Git (BYOG) {#gitlab-bitbucket-azure-vsts}
+### Git(BYOG) 가져오기 {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -88,7 +88,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 ## 버그 수정 {#bug-fixes}
 
-7월 Cloud Manager 릴리스에는 중요한 버그 수정이 없습니다.
+8월 Cloud Manager 릴리스에는 중요한 버그 수정이 없습니다.
 
 <!--
 Known Issues {#known-issues}
