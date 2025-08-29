@@ -52,7 +52,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 | 2 | Adobe Cloud Manager | Cloud Manager의 위치에 관계없이 Cloud Manager의 **내 프로그램** 콘솔을 열려면 클릭하세요. |
 | 3 | 선택한 조직 | 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID이 여러 조직과 연결되어 있는 경우 을 클릭하여 다른 조직으로 전환합니다. |
 | 4 | 피드백 아이콘 | Cloud Manager에 대한 피드백을 Adobe에 제공하려면 클릭하십시오. |
-| 5 | AI Assistant 아이콘 | AEM 관련 쿼리에 대한 답변 찾기를 간소화하기 위해 고안된 대화형 인터페이스를 제공합니다. [AI 길잡이](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) 보기 |
+| 5 | AI Assistant 아이콘 | AEM 관련 쿼리에 대한 답변 찾기를 간소화하기 위해 고안된 대화형 인터페이스를 제공합니다. [AI 길잡이](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) 보기 |
 | 6 | ![도움말 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 학습 및 지원 리소스에 대한 빠른 액세스를 제공하려면 클릭하십시오. |
 | 7 | ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | 현재 할당된 미완료 [알림](/help/using/notifications.md)을(를) 보려면 클릭하세요. |
 | 8 | ![앱 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | AEM 홈 페이지와 AEM 솔루션 간을 빠르게 이동하려면 클릭하십시오. |
