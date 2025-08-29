@@ -18,7 +18,7 @@ ht-degree: 91%
 # Cloud Manager 설명서 {#content}
 
 + [AMS용 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 개요 {#overview}
    + [주요 개념](/help/overview/key-concepts.md)
    + [사용자 여정](/help/overview/user-journey.md)
