@@ -2,10 +2,10 @@
 title: 최초 로그인
 description: 일반 구성을 설정하고 Cloud Manager를 처음 사용할 준비가 되었으면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '293'
-ht-degree: 100%
+source-git-commit: 89fa72fb3950f6040f42066fdcbca3a61bb76f5b
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 88%
 
 ---
 
@@ -20,15 +20,22 @@ ht-degree: 100%
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
-1. [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인하면 프로그램 목록이 표시됩니다.
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
+1. 왼쪽 패널에서 **Cloud Manager**&#x200B;을(를) 클릭합니다.
 
-   ![Cloud Manager 콘솔](/help/assets/cloud-manager-console.png)
+   Experience Manager의 왼쪽 패널에서 ![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
 
-1. 프로그램 카드를 클릭하여 Cloud Manager의 **개요** 페이지로 이동합니다.
+<!-- 
+1. Log into Cloud Manager at [`my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) and you see your list of programs.
 
-1. Cloud Manager에 **Overview(개요)** 페이지가 열립니다.
+   ![Cloud Manager console](/help/assets/cloud-manager-console.png)
 
-   ![Cloud Manager 개요 페이지](/help/assets/program-overview-page.png)
+1. Click your program's card to navigate to Cloud Manager's **Overview** page. 
+
+1. Cloud Manager opens to the **Overview** page.
+
+   ![Cloud Manager overview page](/help/assets/program-overview-page.png) -->
+
 
 1. 프로그램이 아직 설정되지 않은 경우 [콜 투 액션](/help/getting-started/navigation.md#cta)의 **프로그램 설정**&#x200B;을 클릭하여 프로그램 설명을 설정하고 KPI(주요 성과 지표)를 정의합니다. 프로그램이 이미 설정되어 있는 경우 CTA에서 추가 다음 단계를 제공할 수 있습니다.
 

@@ -2,10 +2,10 @@
 title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: 53fb666ab6caff7a697d7f1942ce25f2bf27a2ce
+source-git-commit: 5cde30f97eb4fb9e784179cb85fba36eccca9dbc
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 96%
+source-wordcount: '1501'
+ht-degree: 61%
 
 ---
 
@@ -21,26 +21,20 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ## 내 프로그램 콘솔 {#my-programs-console}
 
-[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인하고 적절한 조직을 선택하면 **내 프로그램** 콘솔이 표시됩니다.
+[experience.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인하고 적절한 조직을 선택하면 **내 프로그램** 콘솔에 도달합니다.
 
-![내 프로그램 콘솔](assets/my-programs-console.png)
+![내 프로그램 콘솔](/help/getting-started/assets/cloud-manager-my-programs-console.png)
 
-내 프로그램 콘솔은 선택한 조직에서 액세스할 수 있는 모든 프로그램에 대한 개요를 제공합니다. 여러 부분으로 구성되어 있습니다.
+**내 프로그램** 콘솔에서는 선택한 조직에서 액세스할 수 있는 모든 프로그램에 대한 개요를 제공합니다. 여러 부분으로 구성되어 있습니다.
 
-1. [도구 모음](#toolbars-my-programs-toolbars) - 조직 선택, 알림 및 계정 설정.
-1. 프로그램의 현재 보기를 토글할 수 있는 탭.
+|   | 영역 | 설명 |
+| --- | --- | --- |
+| 1 | [도구 모음](#toolbars-my-programs-toolbars) | 조직 선택, 경고 및 계정 설정에 사용됩니다. |
+| 2 | 왼쪽 패널 탭 | 다음을 포함하여 프로그램의 현재 보기를 전환할 수 있는 다양한 탭: <br><ul><li>**Experience Manager**&#x200B;에서 다양한 AEM 솔루션의 홈 페이지를 엽니다.</li><li>사용 가능한 모든 프로그램을 표시하는 **모든 프로그램**.</li><li>**라이선스**&#x200B;에서 라이선스 대시보드를 엽니다. 라이선스 대시보드는 *AEM as a Cloud Service 프로그램*(AEMaaCS)에만 적용되며 AEM 6.5 및 AEM 6.5 LTS와 같은 Adobe Managed Services 프로그램에는 적용되지 않습니다. 프로그램에 있는 서비스 유형(AEMaaCS 또는 AMS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오. 탭은 기본적으로 닫히며 ![Cloud Manager 헤더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)의 왼쪽에 있는 [메뉴 표시 아이콘, 햄버거](#cloud-manager-header) 드롭다운 메뉴를 사용하여 표시할 수 있습니다.</li></ol> |
+| 3 | [내 프로그램](#my-programs-section) | 선택할 수 있는 사용 가능한 모든 프로그램을 나열합니다.<br>프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/getting-started/program-setup.md)을 참조하세요. |
+| 4 | [콜 투 액션 및 통계](#cta-statistics) | 최근 활동에 대한 개요를 제공합니다. |
+| 5 | [빠른 링크](#quick-links) | 관련 리소스에 대한 빠른 액세스. |
 
-   * **홈** 보기(기본값) - 모든 프로그램의 개요가 포함된 **내 프로그램** 보기 선택.
-   * **라이선스** - 라이선스 대시보드에 액세스 라이선스 대시보드는 AMS 프로그램이 아닌 *AEM as a Cloud Service 프로그램*(AEMaaCS)에만 적용됩니다. 귀하의 프로그램에 제공되는 서비스 유형(AEMaaCS 또는 AMS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
-   * 탭은 기본적으로 닫혀 있으며 [Cloud Manager 헤더](#cloud-manager-header)의 왼쪽에 있는 햄버거 아이콘 드롭다운 메뉴를 사용하여 표시할 수 있습니다.
-
-1. [콜 투 액션 및 통계](#cta-statistics) - 최근 활동 개요
-1. [**내 프로그램** 섹션](#my-programs-section) - 사용자의 모든 프로그램에 대한 개요 포함
-1. [빠른 링크](#quick-links) - 관련 리소스에 쉽게 액세스
-
->[!TIP]
->
->프로그램에 대한 자세한 내용은 [프로그램 및 프로그램 유형](/help/getting-started/program-setup.md)을 참조하십시오.
 
 ### 도구 모음 {#my-programs-toolbars}
 
@@ -50,29 +44,44 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 첫 번째는 Cloud Manager 헤더입니다. Cloud Manager를 탐색하는 동안 헤더가 지속적으로 표시됩니다. 이는 Cloud Manager 프로그램 전체에 적용되는 설정 및 정보에 대한 액세스를 제공하는 앵커입니다.
 
-![Experience Cloud 헤더](assets/experience-cloud-header.png)
+![Experience Cloud 헤더](/help/getting-started/assets/cloud-manager-header.png)
 
-1. 헤더 왼쪽에 있는 ![메뉴 표시 아이콘, 햄버거](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 아이콘은 개별 프로그램의 특정 부분에 대한 탭에 대한 액세스를 제공하는 드롭다운 메뉴입니다. 컨텍스트에 따라 라이선스 대시보드와 **[내 프로그램](#my-programs-console)** 콘솔 사이를 전환할 수도 있습니다.
-   * 라이선스 대시보드는 AMS 프로그램이 아닌 AEM as a Cloud Service에만 적용됩니다.
-   * 귀하의 프로그램에 제공되는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하십시오.
-1. Cloud Manager 버튼을 사용하면 Cloud Manager의 어느 위치에 있든 Cloud Manager의 내 프로그램 콘솔로 돌아갑니다.
-1. Adobe에 Cloud Manager에 대한 피드백을 제공하려면 **피드백**&#x200B;을 클릭하세요.
-1. 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID가 여러 조직과 연결된 경우 클릭하여 다른 조직으로 전환합니다.
-1. 솔루션 전환기를 클릭하면 다른 Experience Cloud 솔루션으로 빠르게 이동할 수 있습니다.
-1. 도움말 아이콘은 학습 및 지원 리소스에 대한 바로 가기를 제공합니다.
-1. 알림 아이콘에는 현재 할당된 불완전 [알림](/help/using/notifications.md) 수가 배지로 지정됩니다.
-1. 사용자를 나타내는 아이콘을 선택하여 사용자 설정에 액세스합니다. 사용자 사진을 선택하지 않은 경우, 아이콘이 임의로 할당됩니다.
+|   | 영역 | 설명 |
+| --- | --- | --- |
+| 1 | ![메뉴 아이콘, 햄버거 표시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) | 개별 프로그램의 특정 부분에 대한 탭에 대한 액세스를 제공하는 드롭다운 메뉴.<br>프로그램에 있는 서비스 유형(AMS 또는 AEMaaCS)을 확인하려면 이 문서의 [프로그램 카드 섹션](#program-cards)을 참조하세요. |
+| 2 | Adobe Cloud Manager | Cloud Manager의 위치에 관계없이 Cloud Manager의 **내 프로그램** 콘솔을 열려면 클릭하세요. |
+| 3 | 선택한 조직 | 조직 선택기는 현재 로그인되어 있는 조직(이 예에서는 Foundation Internal)을 표시합니다. Adobe ID이 여러 조직과 연결되어 있는 경우 을 클릭하여 다른 조직으로 전환합니다. |
+| 4 | 피드백 아이콘 | Cloud Manager에 대한 피드백을 Adobe에 제공하려면 클릭하십시오. |
+| 5 | AI Assistant 아이콘 | AEM 관련 쿼리에 대한 답변 찾기를 간소화하기 위해 고안된 대화형 인터페이스를 제공합니다. [AI 길잡이](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) 보기 |
+| 6 | ![도움말 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 학습 및 지원 리소스에 대한 빠른 액세스를 제공하려면 클릭하십시오. |
+| 7 | ![벨 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) | 현재 할당된 미완료 [알림](/help/using/notifications.md)을(를) 보려면 클릭하세요. |
+| 8 | ![앱 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | AEM 홈 페이지와 AEM 솔루션 간을 빠르게 이동하려면 클릭하십시오. |
+| 9 | 앱 아이콘 | **계정 설정** 및 **프로그램 설정**&#x200B;에 액세스하거나 로그아웃하려면 클릭하세요. |
+
+
+<!--
+1. The ![Show menu icon, hamburger](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) icon on the left side of the header is  
+   * The License Dashboard only applies to AEM as a Cloud Service programs, not AMS programs.
+   * To determine the type of service your program has (AMS or AEMaaCS), see the [Program Cards section](#program-cards) of this document.
+1. The **Adobe Cloud Manager** button takes you back to the **My Programs** console of Cloud Manager no matter where you are in Cloud Manager.
+1. Click **Feedback** to provide feedback to Adobe about Cloud Manager.
+1. The organization selector displays the organization that you are currently signed into (in this example, Foundation Internal). Click to switch to another organization if your Adobe ID is associated with multiple.
+1. Clicking the solutions switcher lets you quickly jump to other Experience Cloud solutions.
+1. The Help icon provides quick access to learning and support resources.
+1. The notifications icon is badged with the number of currently assigned incomplete [notifications](/help/using/notifications.md)
+1. Select the icon representing your user to access your user settings. If you do not select a user picture, an icon is randomly assigned. -->
 
 #### 프로그램 도구 모음 {#program-toolbar}
 
 프로그램 도구 모음은 Cloud Manager 프로그램과 상황에 적합한 작업 간을 전환할 수 있는 링크를 제공합니다.
 
-![프로그램 도구 모음](assets/program-toolbar.png)
+![Cloud Manager 프로그램 도구 모음](/help/getting-started/assets/cloud-manager-programs-toolbar.png)
 
-1. 프로그램 선택기는 다른 프로그램을 빠르게 선택하거나 새 프로그램 만들기와 같이 상황에 맞는 작업을 수행할 수 있는 드롭다운을 엽니다.
-1. 시작하기 링크를 통해 [온보딩 설명서 여정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/overview)에 액세스하여 Cloud Manager를 시작하고 실행할 수 있습니다.
-온보딩 여정은 Adobe Managed Services(AMS)의 Cloud Manager가 아닌, Adobe Experience Manager as a Cloud Service(AEMaaCS)의 Cloud Manager를 위해 설계되었습니다. 하지만 대부분의 개념은 동일합니다.
-1. 액션 버튼으로 새 프로그램 만들기와 같이 상황에 맞는 액션을 수행할 수 있습니다.
+|   | 영역 | 설명 |
+| --- | --- | --- |
+| 1 | 내 프로그램 | 을(를) 클릭하여 드롭다운 목록을 엽니다. 이 드롭다운 목록에서 프로그램을 추가하거나, 기존 다른 프로그램을 선택하거나, Experience Manager 홈 페이지로 돌아갈 수 있습니다. |
+| 2 | 시작하기 | Cloud Manager을 시작하고 실행하려면 클릭하여 [온보딩 설명서 여정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/overview)에 액세스하세요.<br>온보딩 여정은 Adobe Experience Manager as a Cloud Service(AEMaaCS)의 Cloud Manager용으로 디자인되었으며 AMS(Adobe Managed Services)의 Cloud Manager용이 아닙니다. 하지만 대부분의 개념은 동일합니다. |
+| 3 | 동적 작업 단추 | 작업 버튼은 프로그램 추가, 도메인 추가 또는 SSL 인증서 추가와 같은 상황에 맞는 작업을 제공합니다. |
 
 ### 콜 투 액션 및 통계 {#cta-statistics}
 
@@ -88,21 +97,18 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 내 프로그램 콘솔의 주요 내용은 **내 프로그램** 섹션으로 여기에 프로그램이 개별 카드로 나열됩니다. 프로그램에 대한 자세한 내용을 보려면 카드를 클릭하여 프로그램의 **프로그램 개요** 페이지에 액세스합니다.
 
->[!NOTE]
->
->권한에 따라서는 특정 프로그램을 선택하지 못할 수도 있습니다.
+권한에 따라서는 특정 프로그램을 선택하지 못할 수도 있습니다.
 
-다음 정렬 옵션을 사용하면 필요한 프로그램을 더 쉽게 찾을 수 있습니다.
+다음 정렬 옵션을 사용하여 원하는 프로그램을 빠르게 찾을 수 있습니다.
 
 ![정렬 옵션](assets/my-programs-sorting.png)
 
-* 정렬 기준
-   * 만든 날짜(기본값)
+* 정렬 기준:
+   * 생성 일자
    * 프로그램 이름
    * 상태
-* 오름차순(기본값)/내림차순
-* 그리드 보기(기본값)
-* 목록 보기
+* ![정렬 순서 아래로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![정렬 순서 위로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) 프로그램을 각각 정렬하거나 위로 정렬합니다.
+* ![기본 눈금 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![텍스트 글머리 기호 아이콘 또는 목록](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) 프로그램을 각각 눈금 형식 또는 목록 형식으로 봅니다.
 
 #### 프로그램 카드 {#program-cards}
 
@@ -110,7 +116,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![프로그램 카드](assets/program-card.png)
 
-* 프로그램 이미지(구성된 경우)
+* 프로그램 이미지 (구성된 경우)
 * 프로그램 이름
 * 서비스 유형:
    * AMS 프로그램용 **Experience Manager**
@@ -123,7 +129,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 ![정보](assets/information-view.png)
 
-![추가 아이콘, 줄임표](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)를 사용하면 프로그램에서 수행할 수 있는 추가 작업에 액세스할 수 있습니다.
+![기타 아이콘(줄임표)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 사용하면 프로그램에서 수행할 수 있는 추가 액션에 액세스할 수 있습니다.
 
 ![프로그램의 줄임표 버튼](assets/program-ellipsis.png)
 
@@ -157,11 +163,9 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 
 #### Cloud Manager 헤더 {#cloud-manager-header-2}
 
-Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시하기 위해 자동으로 열리는 햄버거 아이콘 드롭다운 메뉴가 있습니다.
+Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시하기 위해 자동으로 열리는 ![표시 메뉴 아이콘, 햄버거](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 드롭다운 메뉴가 있습니다.
 
-![Cloud Manager 햄버거 아이콘 드롭다운 메뉴](assets/cloud-manager-hamburger.png)
-
-탭을 숨기려면 햄버거 아이콘을 클릭합니다.
+탭을 숨기려면 ![메뉴 아이콘 표시, 햄버거](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 클릭하십시오.
 
 #### 프로그램 도구 모음 {#program-toolbar-2}
 
@@ -169,7 +173,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 ![프로그램 도구 모음](assets/cloud-manager-program-toolbar.png)
 
-또한 햄버거 아이콘을 사용하여 탭을 숨기더라도 도구 모음에는 현재 있는 탭이 계속 표시됩니다.
+또한 ![메뉴 아이콘 표시, 햄버거](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)를 사용하여 탭을 숨기는 경우 도구 모음에 현재 있는 탭이 계속 표시될 수 있습니다.
 
 ### 프로그램 탭 {#program-tabs}
 
@@ -187,7 +191,7 @@ Cloud Manager 헤더에는 프로그램 개요의 탐색 가능한 탭을 표시
 
 기본적으로 프로그램을 열면 **개요** 탭이 표시됩니다. 현재 탭이 강조 표시됩니다. 세부 정보를 보려면 다른 탭을 선택합니다.
 
-탭을 숨기려면 [Cloud Manager 헤더](#cloud-manager-header-2)의 햄버거 아이콘을 사용합니다.
+탭을 숨기려면 ![Cloud Manager 헤더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)의 [메뉴 아이콘 표시](#cloud-manager-header-2)를 사용합니다.
 
 ### 콜 투 액션 {#cta}
 
