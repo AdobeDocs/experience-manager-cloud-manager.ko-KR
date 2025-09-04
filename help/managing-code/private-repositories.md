@@ -3,10 +3,10 @@ title: Cloud Manager에서 비공개 저장소 추가
 description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 97%
+source-wordcount: '826'
+ht-degree: 94%
 
 ---
 
@@ -131,9 +131,9 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
 
-* 웹 계층 및 구성 파이프라인은 비공개 저장소에서 지원되지 않습니다.
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
 * Adobe GitHub 애플리케이션이 GitHb 조직에서 제거되면 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
 * 개인 저장소 및 커밋된 빌드 트리거를 사용하는 파이프라인은 새 커밋이 선택한 분기에 푸시될 때 자동으로 시작되지 않습니다.
 * [아티팩트 재사용 기능](/help/getting-started/project-setup.md#build-artifact-reuse)은 비공개 저장소에는 적용되지 않습니다.
 * Cloud Manager의 GitHub 검사를 사용하여 가져오기 요청 유효성 검사를 일시 정지할 수 없습니다. GitHub 저장소가 Cloud Manager에서 검증되면 Cloud Manager는 해당 저장소에 대해 생성된 가져오기 요청의 유효성 검사를 시도합니다.
+* GitHub 조직에서 IP 제한을 시행하는 경우 지원 사례를 열어 허용해야 하는 IP 주소 목록을 가져옵니다.

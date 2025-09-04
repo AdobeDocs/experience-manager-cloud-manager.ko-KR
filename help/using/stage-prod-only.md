@@ -2,7 +2,7 @@
 title: 스테이지 전용 및 프로덕션 전용 파이프라인 분할
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 96%
