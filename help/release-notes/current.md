@@ -3,7 +3,7 @@ title: Cloud Manager 2025.9.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.9.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 979430b92a03abbc8c600e4cc0e10cff5041f425
+source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 72%
@@ -31,7 +31,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.9.0 릴리스에 대�
 
 ## 새로운 기능 {#what-is-new}
 
-* **이제 Azure DevOps 개인 저장소에 대한 지원이 추가됨**
+* **이제 Azure DevOps 개인 저장소에 대한 지원이 추가되었습니다**
 
   설명서 업데이트에는 Azure DevOps로 자체 Git 가져오기 및 가져오기 요청 유효성 검사에 대한 구성 단계가 포함됩니다. [Cloud Manager에 외부 저장소 추가](/help/managing-code/external-repositories.md)를 참조하십시오.
 
