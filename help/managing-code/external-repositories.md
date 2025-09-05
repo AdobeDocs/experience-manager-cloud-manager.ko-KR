@@ -2,7 +2,7 @@
 title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps 저장소와의 통합을 지원합니다.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+source-git-commit: 76a5cb04514bc1961c8f9008e9bea5d1d6fe1c19
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 27%
@@ -318,8 +318,6 @@ Azure DevOps는 상태 검사를 통해 끌어오기 요청 유효성 검사를 
 
 ![Webhooks-4를 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
-
->[!ENDTABS]
 
 >[!ENDTABS]
 
