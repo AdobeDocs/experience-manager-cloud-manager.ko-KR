@@ -3,10 +3,10 @@ title: Cloud Manager 2025.9.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.9.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 68e546c1337122f823d63529ebd68d6966bb132a
+source-git-commit: 24ec1d82f9a700b57cd74c2c83c8d9d00b8bece1
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 72%
+source-wordcount: '376'
+ht-degree: 69%
 
 ---
 
@@ -31,13 +31,13 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.9.0 릴리스에 대�
 
 ## 새로운 기능 {#what-is-new}
 
-* **이제 Azure DevOps 개인 저장소에 대한 지원이 추가되었습니다**
+* **이제 Azure DevOps(개인 저장소)에 대한 지원이 추가되었습니다**
 
   설명서 업데이트에는 Azure DevOps로 자체 Git 가져오기 및 가져오기 요청 유효성 검사에 대한 구성 단계가 포함됩니다. [Cloud Manager에 외부 저장소 추가](/help/managing-code/external-repositories.md)를 참조하십시오.
 
-* **개인 저장소에 대한 가져오기 요청 확인**
+* **구성 파이프라인(개인 저장소)으로 확장된 Git(BYOG) 지원 가져오기**
 
-  이제 Cloud Manager은 GitHub, Bitbucket, Azure DevOps 및 GitLab에서 개인 저장소를 사용하는 구성 파이프라인을 지원합니다. ![개인 저장소에 대한 가져오기 요청 검사](/help/managing-code/github-check-config.md)를 참조하십시오.
+  이제 Cloud Manager은 GitHub, Bitbucket, Azure DevOps 및 GitLab에서 개인 저장소를 사용하는 구성 파이프라인을 지원합니다. 이러한 지원은 개발 주기를 더욱 가속화합니다. ![개인 저장소에 대한 가져오기 요청 검사](/help/managing-code/github-check-config.md)를 참조하십시오.
 
 ## Beta 프로그램 {#beta-program}
 
