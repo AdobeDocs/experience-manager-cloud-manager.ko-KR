@@ -2,10 +2,10 @@
 title: AMS용 Cloud Manager 소개
 description: 여기에서 Adobe Managed Services(AMS)용 Cloud Manager에 대해 알아보고 조직이 클라우드에서 Adobe Experience Manager를 자체 관리하는 방법을 알아보십시오.
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
-source-git-commit: 4c4a2688cab8e5c81efa4b7b5e26f3c7b5dc30d6
-workflow-type: ht
-source-wordcount: '1256'
-ht-degree: 100%
+source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
+workflow-type: tm+mt
+source-wordcount: '1250'
+ht-degree: 95%
 
 ---
 
@@ -34,26 +34,23 @@ Adobe Experience Manager용 [!UICONTROL Cloud Manager]를 사용하면 개발자
 Cloud Manager를 사용하면 개발 팀이 다음과 같은 기능을 활용할 수 있습니다.
 
 * 출시 시기를 월/주 단위에서 일/시간 단위로 단축하는 코드 지속적 통합/지속적 게재(CI/CD).
-
 * 프로덕션에 투입하기 전에 프로덕션 중단을 최소화하기 위한 모범 사례 기반 코드 검사, 성능 테스트 및 보안 유효성 검사.
-
 * 기존 DevOps 프로세스를 보완하는 API 연결.
-
 * 용량 증가 필요성을 지능적으로 탐지하고 추가 Dispatcher/게시 세그먼트를 자동으로 온라인 상태로 전환하는 자동 크기 조정.
 
 ![CI/CD 흐름](/help/assets/screen_shot_2018-05-12at73843pm.png) [!UICONTROL Cloud Manager]에서 사용되는 CI/CD 프로세스 흐름.
 
 ## [!UICONTROL Cloud Manager]의 주요 기능 {#key-features-in-cloud-manager}
 
-다음은 Cloud Manager의 선택된 주요 기능에 대해 자세히 살펴봅니다.
+다음 섹션에서는 주요 Cloud Manager 기능을 중점적으로 다룹니다.
 
 ### 셀프서비스 인터페이스 {#self-service-interface}
 
-[!UICONTROL Cloud Manager]의 UI(사용자 인터페이스)를 통해 사용자가 Adobe Experience Manager 애플리케이션의 클라우드 환경과 CI/CD 파이프라인을 쉽게 액세스하고 관리할 수 있습니다.
+[!UICONTROL Cloud Manager]의 UI를 탐색하고 시작하려면 [최초 로그인](/help/getting-started/first-time-login.md)을 참조하십시오.
+
+[!UICONTROL Cloud Manager]의 UI(사용자 인터페이스)를 통해 Adobe Experience Manager 애플리케이션의 클라우드 환경과 CI/CD 파이프라인을 쉽게 액세스하고 관리할 수 있습니다.
 
 분당 최대 페이지 조회수 또는 예상 페이지 로드 응답 시간과 같은 애플리케이션별 주요 성과 지표(KPI)를 정의할 수 있습니다. 이러한 KPI는 배포 성공 여부를 측정하는 기반이 됩니다. 여러 팀원의 역할과 권한을 쉽게 정의할 수 있습니다. 셀프서비스 인터페이스를 통해 완벽한 제어가 가능합니다. 또한 모범 사례 리소스에 대한 링크와 필요 시 Adobe 전문가로부터 안내를 받을 수 있는 링크도 제공합니다.
-
-[!UICONTROL Cloud Manager]의 UI를 탐색하고 시작하려면 [최초 로그인](/help/getting-started/first-time-login.md)을 참조하십시오.
 
 ### CI/CD 파이프라인 {#ci-cd-pipeline}
 
@@ -105,14 +102,14 @@ Cloud Manager는 특정 환경 설정 및 필요에 따라 프로젝트에 도�
 파란색/녹색 배포를 활성화한 경우 배포 플로우가 표준 Cloud Service 배포 플로우와 다릅니다.
 
 | 단계 | 파란색/녹색 배포 | 표준 배포 |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 작성자에 배포 | 작성자에 배포 |
 | 2 | 테스트를 위해 일시 중지 | - |
 | 3 | 녹색 인프라 생성됨 | - |
 | 4 | 녹색 게시/Dispatcher 계층에 배포 | 게시자에 배포 |
 | 5 | 테스트를 위해 일시 중지(최대 24시간) | - |
 | 6 | 프로덕션 로드 밸런서에 녹색 인프라가 추가됨 | - |
-| 7 | 프로덕션 로드 밸런서에서 파란색 인프라가 제거됨- |
+| 7 | 프로덕션 로드 밸런서에서 파란색 인프라가 제거됨 | - |
 | 8 | 최종 승인을 위해 일시 &#x200B;&#x200B;중지 (최대 24시간) | - |
 | 9 | 파란색 인프라가 자동으로 종료됨 | - |
 | 10 | 파이프라인 완료 | - |
