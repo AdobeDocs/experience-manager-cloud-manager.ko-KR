@@ -2,10 +2,10 @@
 title: 스테이지 전용 및 프로덕션 전용 파이프라인 분할
 description: 전용 파이프라인을 사용하여 스테이징 및 프로덕션 배포를 분할하는 방법에 대해 알아보십시오.
 exl-id: b7dd0021-d346-464a-a49e-72864b01cce3
-source-git-commit: 34c0b39d50dd4998cb75cc032d71d24798dee729
+source-git-commit: 92237ea156e3921b5dc55cea3abdecee9d26b14b
 workflow-type: tm+mt
 source-wordcount: '917'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 96%
 
 ![스테이징 전용 파이프라인 실행](/help/assets/configure-pipelines/stage-only-pipeline-run.png)
 
-**빌드 프로모션**&#x200B;을 클릭하면 기본적으로 또는 [긴급 모드](#emergency-mode)에서 관련 스테이징 전용 파이프라인의 실행을 확인하라는 메시지가 표시됩니다.
+**빌드 승격**&#x200B;을 클릭하면 관련 프로덕션 전용 파이프라인이 정상적으로 실행되는지 또는 [긴급 모드](#emergency-mode)에서 실행되는지 확인하는 메시지가 표시됩니다.
 
 프로덕션 전용 파이프라인이 없으면 파이프라인을 생성하라는 메시지가 표시됩니다.
 
