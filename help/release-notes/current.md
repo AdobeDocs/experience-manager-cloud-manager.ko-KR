@@ -3,10 +3,10 @@ title: Cloud Manager 2025.10.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.10.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 03fc811a1a617263efd0f1d5667bba6975826a0e
+source-git-commit: e203ab018908ec0a47e8d472079843d5db05dce0
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 57%
+source-wordcount: '474'
+ht-degree: 55%
 
 ---
 
@@ -30,10 +30,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.10.0 릴리스에 대�
 
 ## 새로운 기능 {#what-is-new}
 
-
-
-
-
+10월 Cloud Manager 릴리스에는 중요한 새로운 기능이 없습니다.
 
 
 ## Beta 프로그램 {#beta-program}
@@ -44,7 +41,7 @@ Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예�
 
 ### Experience Hub 확장성 및 사용자 지정 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)은(는) 조직의 요구 사항에 맞게 사용자 지정된 AEM에 대한 진입점 역할을 합니다. 최소한의 노력으로 Adobe에서 활성화할 수 있도록 기존 AEM UI 확장에 대해 Experience Hub에 알려 주십시오.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)은(는) 조직의 요구 사항에 맞게 사용자 지정된 AEM에 대한 진입점 역할을 합니다. 최소한의 노력으로 Adobe에서 활성화할 수 있도록 기존 AEM UI 확장에 대해 Experience Hub에 알려 주십시오.
 
 ![Experience Hub 확장성 및 사용자 지정 워크플로의 다이어그램](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
