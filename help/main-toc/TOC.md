@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 1ae6792f8bc628c3530a63004c3d38f215c72778
+source-git-commit: edbf6ed4b8991df69adda569da8b509cf6d861d6
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 89%
+source-wordcount: '386'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 # Cloud Manager 설명서 {#content}
 
 + [AMS용 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 개요 {#overview}
    + [주요 개념](/help/overview/key-concepts.md)
    + [사용자 여정](/help/overview/user-journey.md)
@@ -67,7 +67,7 @@ ht-degree: 89%
    + [외부 저장소 추가(비공개 베타)](/help/managing-code/external-repositories.md)
    + [액세스 토큰 관리(비공개 베타)](/help/managing-code/manage-access-tokens.md)
    + [git 하위 모듈 지원](/help/managing-code/git-submodules.md)
-   + [개인 저장소에 대한 가져오기 요청 확인](/help/managing-code/github-check-config.md)
+   + [비공개 저장소에 대한 가져오기 요청 확인](/help/managing-code/github-check-config.md)
    + [GitHub 검사 주석](/help/managing-code/github-annotations.md)
    + [Maven 프로젝트 버전 처리](/help/managing-code/maven-project-version.md)
    + [Git과 통합](/help/managing-code/git-integration.md)
@@ -78,6 +78,7 @@ ht-degree: 89%
 + 릴리스 정보 {#release-notes}
    + [최신](/help/release-notes/current.md)
    + 2025 {#rn-2025}
+      + [2025.9.0](/help/release-notes/2025/2025-9-0.md)
       + [2025.8.0](/help/release-notes/2025/2025-8-0.md)
       + [2025.7.0](/help/release-notes/2025/2025-7-0.md)
       + [2025.6.0](/help/release-notes/2025/2025-6-0.md)
