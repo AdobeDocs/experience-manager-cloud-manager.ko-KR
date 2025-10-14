@@ -74,7 +74,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 >**마이그레이션 지침:**
 >
 >1. 소스 제어에 커밋된 `org.apache.maven.plugins:maven-toolchains-plugin` 항목과 `toolchains.xml`을(를) 삭제하여 도구 체인을 제거합니다.
->1. `.cloudmanager/java-version`대체 Maven 실행 JDK 버전[에 설명된 대로 ](#alternate-maven)(21, 17 또는 11)이 포함된 JDK를 선택하십시오.
+>1. `.cloudmanager/java-version`대체 Maven 실행 JDK 버전[에 설명된 대로 &#x200B;](#alternate-maven)(21, 17 또는 11)이 포함된 JDK를 선택하십시오.
 >1. Adobe에서는 Cloud Manager 빌드 캐시를 지우거나 새 파이프라인 실행을 트리거하는 것이 좋습니다.
 >
 
