@@ -3,10 +3,10 @@ title: Cloud Manager 2025.10.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.10.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: e203ab018908ec0a47e8d472079843d5db05dce0
+source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 55%
+source-wordcount: '581'
+ht-degree: 74%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2025.10.0 릴리스에 대�
 
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-다음 릴리스는 2025년 11월 6일 금요일에 예정되어 있습니다.
+다음 릴리스는 2025년 11월 6일 목요일에 예정되어 있습니다.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
@@ -39,21 +39,30 @@ Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예�
 
 현재 제공되는 기회는 다음과 같습니다.
 
-### Experience Hub 확장성 및 사용자 지정 {#exp-hub-extensibility}
+### Experience Hub 확장성 및 사용자 정의 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)은(는) 조직의 요구 사항에 맞게 사용자 지정된 AEM에 대한 진입점 역할을 합니다. 최소한의 노력으로 Adobe에서 활성화할 수 있도록 기존 AEM UI 확장에 대해 Experience Hub에 알려 주십시오.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
 
-![Experience Hub 확장성 및 사용자 지정 워크플로의 다이어그램](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+![Experience Hub 확장성 및 사용자 정의 워크플로의 다이어그램](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
-Experience Hub에 사용자 지정 경험을 임베드하여 조직의 대시보드를 확장하고 개인화할 수 있습니다. Adobe의 기본 제공 위젯 외에 [UI 확장성](https://developer.adobe.com/uix/docs/) 프레임워크를 사용하여 나만의 위젯을 추가하십시오. JavaScript 기반 UI 앱을 빌드하고 이를 사용자에게 제공하여 비즈니스별 요구 사항 및 워크플로를 충족합니다.
+조직의 대시보드를 확장하고 개인화할 수 있도록 Experience Hub에 사용자 정의 경험을 임베드합니다. Adobe의 기본 제공 위젯 외에 [UI 확장성](https://developer.adobe.com/uix/docs/) 프레임워크를 사용하여 나만의 위젯을 추가합니다. JavaScript 기반 UI 앱을 빌드하고 이를 사용자에게 제공하여 비즈니스별 요구 사항 및 워크플로를 충족합니다.
 
-베타에 관심이 있으세요? Adobe OrgID와 만들려는 사용자 지정에 대한 간단한 설명을 사용하여 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com)에 전자 메일을 보내십시오.
+Beta에 관심이 있으신가요? Adobe OrgID 및 만들고자 하는 사용자 정의에 대한 간단한 설명을 첨부한 이메일을 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com)으로 보내 주시기 바랍니다.
 
 ### 모듈 캐싱을 통한 빌드 속도 향상 {#quick-build-cm-pipelines}
 
-새 빌드 모델은 모듈 수준 캐싱을 사용하여 전체 리포지토리가 아닌 변경된 모듈만 컴파일하여 빌드 시간을 단축합니다. 코드 품질, 전체 스택 및 스테이지 전용 파이프라인에 적용됩니다.
+새 빌드 모델은 모듈 수준 캐싱을 사용하여 전체 저장소가 아닌 변경된 모듈만 컴파일함으로써 빌드 시간을 단축합니다. 코드 품질, 전체 스택 및 스테이지 전용 파이프라인에 적용됩니다.
 
-베타에 관심이 있으세요? Adobe OrgID 및 프로그램 ID를 사용하여 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)에 전자 메일을 보냅니다.
+![두 가지 빌드 전략 옵션(전체 빌드 및 스마트 빌드)을 표시하는 비프로덕션 파이프라인 편집 대화 상자](/help/release-notes/assets/non-production-pipeline-edit.png) *두 가지 빌드 전략 옵션(전체 빌드 및 스마트 빌드)을 표시하는 비프로덕션 파이프라인 편집 대화 상자*
+
+**파이프라인 추가/편집** 대화 상자의 **Source 코드** 탭에서 새 **빌드 전략** 섹션을 통해 다음 빌드 옵션 중 하나를 선택할 수 있습니다.
+
+* **전체 빌드** — 실행할 때마다 저장소의 모든 모듈을 빌드합니다.
+* **스마트 빌드** — 마지막 커밋 이후에 변경된 모듈만 빌드하므로 전체 빌드 시간이 단축됩니다.
+
+**스마트 빌드**&#x200B;를 사용하는 파이프라인을 제어합니다. Beta를 실행하는 동안 이 옵션은 **코드 품질** 및 **개발 배포** 파이프라인에만 나타납니다.
+
+관심이 있으신가요? Adobe OrgID 및 프로그램 ID를 첨부한 이메일을 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)으로 보내 주시기 바랍니다.
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline variables](/help/getting-started/build-environment.md#pipeline-variables). -->
 
@@ -85,7 +94,7 @@ Cloud Manager에서 **액세스 토큰 관리**&#x200B;를 사용하여 GitHub E
 
 ## 버그 수정 {#bug-fixes}
 
-10월 Cloud Manager 릴리스에는 중요한 버그 수정이 없습니다.
+10월 Cloud Manager 릴리스에는 중요한 버그 수정 사항이 없습니다.
 
 <!--
 Known Issues {#known-issues}
