@@ -3,7 +3,7 @@ title: Cloud Manager 2025.10.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2025.10.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 8477b55292be4591b679200ff11b976a2da3a7be
+source-git-commit: f62191a1b9dd67ea1e999e2db0bb05de66bf73f2
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 74%
@@ -41,7 +41,7 @@ Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예�
 
 ### Experience Hub 확장성 및 사용자 정의 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
 
 ![Experience Hub 확장성 및 사용자 정의 워크플로의 다이어그램](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
@@ -53,7 +53,8 @@ Beta에 관심이 있으신가요? Adobe OrgID 및 만들고자 하는 사용자
 
 새 빌드 모델은 모듈 수준 캐싱을 사용하여 전체 저장소가 아닌 변경된 모듈만 컴파일함으로써 빌드 시간을 단축합니다. 코드 품질, 전체 스택 및 스테이지 전용 파이프라인에 적용됩니다.
 
-![두 가지 빌드 전략 옵션(전체 빌드 및 스마트 빌드)을 표시하는 비프로덕션 파이프라인 편집 대화 상자](/help/release-notes/assets/non-production-pipeline-edit.png) *두 가지 빌드 전략 옵션(전체 빌드 및 스마트 빌드)을 표시하는 비프로덕션 파이프라인 편집 대화 상자*
+![두 가지 빌드 전략 옵션(전체 빌드 및 스마트 빌드)을 표시하는 비프로덕션 파이프라인 편집 대화 상자](/help/release-notes/assets/non-production-pipeline-edit.png)
+*두 가지 빌드 전략 옵션(전체 빌드 및 스마트 빌드)을 표시하는 비프로덕션 파이프라인 편집 대화 상자*
 
 **파이프라인 추가/편집** 대화 상자의 **Source 코드** 탭에서 새 **빌드 전략** 섹션을 통해 다음 빌드 옵션 중 하나를 선택할 수 있습니다.
 
