@@ -2,9 +2,9 @@
 title: Cloud Manager UI 탐색
 description: Cloud Manager UI가 구성되는 방식과 프로그램 및 환경을 관리하기 위해 탐색하는 방법을 알아봅니다.
 exl-id: 9c1545ce-1c6d-417f-a6f4-fe53caef3433
-source-git-commit: cc41d4716aa3c3683010b6dd392b5355b129d1ef
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1532'
 ht-degree: 52%
 
 ---
@@ -52,10 +52,10 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 | ![Adobe 빨강 및 흰색 아이콘](/help/getting-started/assets/AdobeLogoWhiteOnRed.svg) Cloud Manager | Cloud Manager의 위치에 관계없이 Cloud Manager의 **내 프로그램** 콘솔을 열려면 클릭하세요. |
 | *`Name of selected organization`* | 조직 선택기는 현재 로그인한 조직을 표시합니다(이 예에서는 *Foundation Internal*). Adobe ID이 여러 조직과 연결되어 있는 경우 을 클릭하여 다른 조직으로 전환합니다. |
 | ![피드백 아이콘](/help/getting-started/assets/AppComment.svg) 피드백 | Cloud Manager에 대한 피드백을 Adobe에 제공하려면 클릭하십시오. |
-| ![AI 길잡이 아이콘](/help/getting-started/assets/AIChat.svg) | AI Assistant는 AEM 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. [AI 길잡이](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/ai-assistant/ai-assistant-in-aem) 보기 |
+| ![AI 길잡이 아이콘](/help/getting-started/assets/AIChat.svg) | AI Assistant는 AEM 관련 쿼리에 대한 답변 찾기를 간소화하도록 설계된 대화형 인터페이스를 제공합니다. [AI 길잡이](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/ai-in-aem/ai-assistant/ai-assistant-in-aem#) 보기 |
 | ![도움말 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_HelpOutline_18_N.svg) | 학습 및 지원 리소스에 대한 빠른 액세스를 제공하려면 클릭하십시오. |
 | ![흰색 벨 아이콘](/help/getting-started/assets/Bell.svg) | 현재 할당된 미완료 [알림](/help/using/notifications.md)을(를) 보려면 클릭하세요. |
-| ![앱 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | AEM 홈 페이지와 AEM 솔루션 간을 빠르게 이동하려면 클릭하십시오. |
+| ![앱 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) | AEM 홈 페이지와 AEM 솔루션 간에 빠르게 이동하려면 클릭하십시오. |
 | *`Dynamic Account icon`* | **계정 설정** 및 **프로그램 설정**&#x200B;에 액세스하거나 로그아웃하려면 사용자 사진을 클릭하세요.<br>사용자 사진을 추가하지 않도록 선택한 경우 위의 도구 모음 이미지에 표시된 대로 아이콘이 임의로 할당됩니다. |
 
 <!--
@@ -80,7 +80,7 @@ Cloud Manager UI는 주로 두 가지 그래픽 인터페이스로 구성됩니�
 | --- | --- | --- |
 | 1 | 내 프로그램 | 을(를) 클릭하여 드롭다운 목록을 엽니다. 이 드롭다운 목록에서 프로그램을 추가하거나, 기존 다른 프로그램을 선택하거나, Experience Manager 홈 페이지로 돌아갈 수 있습니다. |
 | 2 | ![정보 아이콘](/help/getting-started/assets/Info.svg) 시작 | Cloud Manager을 시작하고 실행하려면 클릭하여 [온보딩 설명서 여정](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/onboarding/journey/overview)에 액세스하세요.<br>온보딩 여정은 Adobe Experience Manager as a Cloud Service(AEMaaCS)의 Cloud Manager용으로 디자인되었으며 AMS(Adobe Managed Services)의 Cloud Manager용이 아닙니다. 하지만 대부분의 개념은 동일합니다. |
-| 3 | *`Dynamic action button`* | 작업 단추는 **프로그램 추가**(위 예제 참조) 또는 도메인 추가와 같이 클릭할 수 있는 상황에 맞는 작업을 제공합니다. |
+| 3 | *`Dynamic action button`* | 작업 단추는 **프로그램 추가**(위 예제에 표시됨) 또는 도메인 추가와 같이 클릭할 수 있는 상황에 맞는 작업을 제공합니다. |
 
 ### 콜 투 액션 및 통계 {#cta-statistics}
 

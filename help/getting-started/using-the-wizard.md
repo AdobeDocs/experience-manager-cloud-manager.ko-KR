@@ -2,10 +2,10 @@
 title: 새 프로젝트 마법사 사용
 description: 마법사를 사용하여 AEM 애플리케이션 프로젝트를 만드는 방법에 대해 배우려면 이 페이지를 따르십시오.
 exl-id: 9d7c6f4c-9379-471c-8dad-772a7099da54
-source-git-commit: f3617eb50147f5af33282cb0f25ada7dc423d434
+source-git-commit: b98e1711f1f98f52977dd6cb4cd2bc834d81a360
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 92%
+source-wordcount: '322'
+ht-degree: 82%
 
 ---
 
@@ -39,6 +39,6 @@ ht-degree: 92%
 
 ## 기존 또는 마이그레이션 고객 {#existing-migrating}
 
-현재 Adobe Managed Services(AMS) 고객 또는 마이그레이션 대상인 On-Premise AEM 고객인 경우 이미 Git에 프로젝트 코드 또는 다른 버전 제어 시스템이 있을 수 있습니다.
+현재 Adobe Managed Services(AMS) 고객 또는 마이그레이션하는 온-프레미스 AEM 고객인 경우 프로젝트 코드가 Git 또는 다른 버전 제어 시스템에 이미 있을 수 있습니다.
 
 이러한 경우 프로젝트를 Cloud Manager Git 저장소로 가져올 수 있습니다.
