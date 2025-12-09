@@ -2,10 +2,10 @@
 title: 주요 개념
 description: 모든 강력한 도구와 마찬가지로 Cloud Manager는 많은 개념과 용어를 포함합니다. 이 문서에서는 Cloud Manager 사용을 시작할 때 가장 중요한 몇 가지를 요약합니다.
 exl-id: 86dfc976-f3da-479a-9faa-08f40ca909e0
-source-git-commit: f855fa91656e4b3806a617d61ea313a51fae13b4
-workflow-type: ht
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 애플리케이션은 고객이 특정 사용 사례와 필요에 따라 기본 [솔루션](#solution)(예: AEM Sites 또는 AEM Assets)을 조정하기 위해 만든 일련의 사용자 정의 및 구성입니다. 애플리케이션은 여러 [아티팩트](#artifact)로 구성될 수 있는 논리적 단위입니다.
 
-예제 애플리케이션은 가상의 [WKND 라이프스타일 애플리케이션](https://experienceleague.adobe.com/ko/docs/ experience-manager-learn/getting-started-wknd-tutorial-develop/overview)입니다.
+예제 애플리케이션은 가상의 [WKND 라이프스타일 애플리케이션](https://experienceleague.adobe.com/ko/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview)입니다.
 
 ## 아티팩트 {#artifact}
 
@@ -42,7 +42,7 @@ Git 저장소는 고객별 소스 코드가 저장되고 [Git을 사용](https:/
 
 ## 조직 {#organization}
 
-조직은 기업 고객을 대표하는 Adobe 구성입니다. Adobe의 Identity Management System(IMS)에서 프로비저닝된 방식에 따라 한 회사는 여러 조직을 가질 수 있습니다.
+조직은 기업 고객을 대표하는 Adobe 구성입니다. Adobe의 IMS(Identity Management System)에서 프로비저닝되는 방식에 따라 한 회사에 여러 조직이 있을 수 있습니다.
 
 ## 파이프라인 {#pipeline}
 

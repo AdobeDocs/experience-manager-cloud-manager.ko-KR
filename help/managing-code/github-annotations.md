@@ -2,10 +2,10 @@
 title: GitHub 검사 주석
 description: GitHub가 비공개 저장소에 대한 주석 PR을 검사하여 유용한 피드백을 제공하는 방법을 알아봅니다.
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
-source-git-commit: 6f5d51ef59aef831574bd55cee6b12a29e3d70d2
-workflow-type: ht
-source-wordcount: '251'
-ht-degree: 100%
+source-git-commit: 75baacd1fd6f36ca1d6ea5c1993516569ab6ef47
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 92%
 
 ---
 
@@ -16,7 +16,7 @@ GitHub가 비공개 저장소에 대한 주석 PR을 검사하여 유용한 피�
 
 ## 개요 {#overview}
 
-Cloud Manager 프로그램에 [비공개 저장소](private-repositories.md)를 사용하는 경우 모든 가져오기 요청에 대해 GitHub의 검사가 자동으로 실행됩니다. 이 검사에는 코드 관련 문제를 가능한 한 빨리 이해하는 데 도움이 되는 유용한 정보가 주석으로 추가되어 있습니다.
+Cloud Manager 프로그램에 [개인 저장소](private-repositories.md)를 사용하는 경우, 모든 가져오기 요청에 대해 GitHub에서 자동으로 체크인이 실행됩니다. 이 검사에는 코드 관련 문제를 가능한 한 빨리 이해하는 데 도움이 되는 유용한 정보가 주석으로 추가되어 있습니다.
 
 ![GitHub 검사 주석의 예](assets/github-check-annotations.png)
 
