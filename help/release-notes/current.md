@@ -42,7 +42,7 @@ Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예�
 
 ### Experience Hub 확장성 및 사용자 정의 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
+[Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
 
 ![Experience Hub 확장성 및 사용자 정의 워크플로의 다이어그램](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
