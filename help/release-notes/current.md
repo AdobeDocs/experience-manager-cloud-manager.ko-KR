@@ -3,7 +3,7 @@ title: Cloud Manager 2026.1.0 릴리스 정보
 description: Adobe Managed Services용 Cloud Manager 2026.1.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 19b8efeab20b07bdb71595fbff979ea11d8801c0
+source-git-commit: 6279792f05ec04c82634d255dad7264f6d0cef64
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 63%
@@ -37,7 +37,7 @@ Adobe Managed Services용 [!UICONTROL Cloud Manager] 2026.1.0 릴리스에 대�
   ![선택한 파이프라인에 대한 드롭다운 메뉴의 변수 보기/편집 옵션](/help/release-notes/assets/view-edit-variables-option.png)
   *선택한 파이프라인에 대한 드롭다운 메뉴의 변수 보기/편집 옵션*
 
-  ![변수 구성 대화 상자](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*변수 구성 대화 상자
+  ![변수 구성 대화 상자&#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*변수 구성 대화 상자*
 
 * **안정성, 성능 및 안정성 향상**
 
@@ -52,7 +52,7 @@ Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예�
 
 ### Experience Hub 확장성 및 사용자 정의 {#exp-hub-extensibility}
 
-[Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
+[Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)는 조직의 요구 사항에 맞게 사용자 정의된 AEM에 대한 진입점 역할을 합니다. Experience Hub에서 손쉽게 활성화할 수 있도록 기존 AEM UI 확장 기능에 대해 Adobe에 알려 주십시오.
 
 ![Experience Hub 확장성 및 사용자 정의 워크플로의 다이어그램](/help/release-notes/assets/experience-hub-extensibility-customization.png)
 
