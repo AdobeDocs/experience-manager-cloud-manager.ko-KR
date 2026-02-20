@@ -2,7 +2,7 @@
 title: Cloud Manager에서 외부 저장소 추가
 description: Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. Cloud Manager은 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps 저장소와의 통합을 지원합니다.
 exl-id: 4500cacc-5e27-4bbb-b8f6-5144dac7e6da
-source-git-commit: 76a5cb04514bc1961c8f9008e9bea5d1d6fe1c19
+source-git-commit: 651d9fc9964d599cb51556f7b6ba255fe8092d7f
 workflow-type: tm+mt
 source-wordcount: '2453'
 ht-degree: 27%
@@ -20,10 +20,7 @@ Cloud Manager에 외부 저장소를 추가하는 방법을 알아보십시오. 
 * Edge Delivery Services 사용자의 경우 온보딩된 저장소를 사용하여 사이트 코드를 동기화하고 배포할 수 있습니다.
 * AEM as a Cloud Service와 Adobe Managed Services(AMS) 사용자의 경우 저장소를 전체 스택 파이프라인과 프론트엔드 파이프라인 모두에 연결할 수 있습니다.
 
-<!--
->[!NOTE]
->
->The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/release-notes/current.md). -->
+
 
 ## 외부 저장소 구성
 
@@ -127,7 +124,7 @@ Cloud Manager에서 외부 저장소를 구성하는 작업은 세 단계로 구
 | 액세스 토큰 옵션 | 설명 |
 | --- | --- |
 | **기존 액세스 토큰 사용** | 조직에 대한 저장소 액세스 토큰을 이미 입력했고 여러 저장소에 대한 액세스 권한이 있는 경우 기존 토큰을 선택할 수 있습니다. **토큰 이름** 드롭다운 목록을 사용하여 저장소에 적용할 토큰을 선택합니다. 그렇지 않은 경우 새로운 액세스 토큰을 추가합니다. |
-| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Azure DevOps 설명서](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Azure DevOps Personal Access Token(PAT)에 필요한 권한.<br>이러한 권한을 통해 Cloud Manager은 저장소 콘텐츠에 액세스하고 끌어오기 요청을 관리하며 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Azure DevOps에서 앱 암호를 만들 때 다음 필수 앱 암호 권한이 포함되어 있는지 확인하십시오.<ul><li>코드(읽기)</li><li>코드(상태)</li><li>끌어오기 요청 Threads(읽기 및 쓰기)</li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
+| **새로운 액세스 토큰 추가** | <ul><li>**토큰 이름** 텍스트 필드에 만들고 있는 액세스 토큰의 이름을 입력하십시오.<li>[Azure DevOps 설명서](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)를 사용하여 저장소 액세스 토큰을 만듭니다.<li>Azure PAT(DevOps Personal Access Token)에 필요한 권한.<br>이러한 권한을 통해 Cloud Manager은 저장소 콘텐츠에 액세스하고 끌어오기 요청을 관리하며 웹후크 이벤트를 구성하거나 이에 대응할 수 있습니다.<br>Azure DevOps에서 앱 암호를 만들 때 다음 필수 앱 암호 권한이 포함되어 있는지 확인하십시오.<ul><li>코드(읽기)</li><li>코드(상태)</li><li>끌어오기 요청 Threads(읽기 및 쓰기)</li></ul></li></li></ul></ul></ul><ul><li>**액세스 토큰** 필드에 방금 만든 토큰을 붙여 넣습니다. |
 
 유효성 검사 후에는 외부 저장소를 사용하여 파이프라인에 연결할 준비가 됩니다.
 
@@ -308,15 +305,15 @@ Azure DevOps는 상태 검사를 통해 끌어오기 요청 유효성 검사를 
 
 코드 품질 유효성 검사가 완료되면 상태 검사가 업데이트되어 결과를 반영합니다.
 
-![Webhooks-2를 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
+![Webhooks-2를 사용한 끌어오기 요청에 대한 Azure DevOps 유효성 검사](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)
 
 유효성 검사가 실패하면 상태 검사 세부 사항에 자세한 오류 정보가 제공됩니다. 상태 검사를 클릭하여 Cloud Manager에서 전체 유효성 검사 결과를 볼 수 있습니다.
 
 ![Webhooks-3을 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)
 
-끌어오기 요청 주석 및 피드백의 경우 Cloud Manager은 유효성 검사 세부 사항 및 필요한 작업을 포함하여 Azure DevOps의 끌어오기 요청에 주석을 직접 추가합니다.
+끌어오기 요청 주석 및 피드백의 경우 Cloud Manager은 유효성 검사 세부 사항 및 필요한 작업과 함께 Azure DevOps의 끌어오기 요청에 주석을 직접 추가합니다.
 
-![Webhooks-4를 사용한 끌어오기 요청의 Azure DevOps 유효성 검사](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
+![Webhooks-4를 사용한 끌어오기 요청에 대한 Azure DevOps 유효성 검사](/help/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)
 
 
 >[!ENDTABS]

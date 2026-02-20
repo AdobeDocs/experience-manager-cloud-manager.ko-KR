@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
+source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 90%
+source-wordcount: '388'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 # Cloud Manager 설명서 {#content}
 
 + [AMS용 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 개요 {#overview}
    + [주요 개념](/help/overview/key-concepts.md)
    + [사용자 여정](/help/overview/user-journey.md)
@@ -65,7 +65,7 @@ ht-degree: 90%
    + [Adobe 저장소 추가](/help/managing-code/adobe-repositories.md)
    + [비공개 저장소 추가](/help/managing-code/private-repositories.md)
    + [외부 저장소 추가](/help/managing-code/external-repositories.md)
-   + [액세스 토큰 관리(비공개 베타)](/help/managing-code/manage-access-tokens.md)
+   + [액세스 토큰 관리](/help/managing-code/manage-access-tokens.md)
    + [git 하위 모듈 지원](/help/managing-code/git-submodules.md)
    + [비공개 저장소에 대한 가져오기 요청 확인](/help/managing-code/github-check-config.md)
    + [GitHub 검사 주석](/help/managing-code/github-annotations.md)
