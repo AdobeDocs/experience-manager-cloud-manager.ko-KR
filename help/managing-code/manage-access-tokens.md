@@ -2,9 +2,9 @@
 title: Cloud Manager에서 액세스 토큰 관리
 description: Adobe Managed Services에서 Cloud Manager에서 나만의 Git을 가져오기에 사용되는 액세스 토큰을 보고, 편집하고, 삭제하는 방법에 대해 알아봅니다.
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
-source-git-commit: d6f058c3f6dc010f08a5cb75a0fb152b56111e79
+source-git-commit: 28841719e820e47577b411a4034ebc7a8e1bb556
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '359'
 ht-degree: 3%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 3%
 
 Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호스팅되는 저장소를 관리합니다. 이전에는 토큰이 만료되면 연결된 저장소를 다시 온보딩하여 계속 작동해야 했습니다.
 
-이제 **액세스 토큰 관리**&#x200B;를 통해 토큰을 보다 효율적으로 관리할 수 있습니다. GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps를 포함하여 지원되는 외부 Git 공급자에 연결된 토큰을 보고, 이름을 바꾸거나, 제거할 수 있습니다.
+이제 **액세스 토큰 관리**&#x200B;를 통해 토큰을 보다 효율적으로 관리할 수 있습니다. GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps를 포함하여 지원되는 외부 Git 공급자에 연결된 토큰을 보거나 이름을 변경하거나 제거할 수 있습니다.
 
 [Cloud Manager에 외부 저장소 추가](/help/managing-code/external-repositories.md)도 참조하세요.
 
+<!--
 >[!NOTE]
 >
->이 문서에 설명된 기능은 개인 베타 프로그램을 통해서만 사용할 수 있습니다. 자세한 내용을 알고 개인 Beta에 등록하려면 [액세스 토큰 관리](/help/release-notes/current.md#access-tokens)를 참조하세요.
+>The features described in this article are only available through the private beta program. For more details and to sign up for  the private beta, see [Manage Access Tokens](/help/release-notes/current.md#access-tokens).
+-->
 
 ## 액세스 토큰 보기 {#view-access-tokens}
 
