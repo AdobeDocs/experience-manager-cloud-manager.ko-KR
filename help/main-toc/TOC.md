@@ -7,10 +7,10 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 8ceaefebdddefb508a4c296c00f053e6b4dfb248
+source-git-commit: 77f5000f0a237dc82e183eb074eddb23e3a2eb44
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 91%
+source-wordcount: '334'
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 91%
 # Cloud Manager 설명서 {#content}
 
 + [AMS용 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 개요 {#overview}
    + [주요 개념](/help/overview/key-concepts.md)
    + [사용자 여정](/help/overview/user-journey.md)
@@ -54,8 +54,8 @@ ht-degree: 91%
    + [환경 관리](/help/using/managing-environments.md)
    + [환경 모니터링](/help/using/monitoring-environments.md)
    + [개발 환경에 대한 서비스 팩 업데이트(비공개 베타)](/help/using/service-packs-environments.md)
-   + [Cloud Manager API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
-   + [Cloud Manager CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
+   + [CLOUD MANAGER API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+   + [CLOUD MANAGER CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md)
    + [알림](/help/using/notifications.md)
    + [사용자 정의 코드 품질 규칙](/help/using/custom-code-quality-rules.md)
    + [환경 일관성을 유지하기 위한 콘텐츠 복사](/help/using/content-copy.md)
@@ -77,6 +77,9 @@ ht-degree: 91%
    + [평가](/help/product-update-wizard/evaluation.md)
 + 릴리스 정보 {#release-notes}
    + [최신](/help/release-notes/current.md)
+   + 2026 {#rn-2026}
+      + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
+      + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
    + 2025 {#rn-2025}
       + [2025.12.0](/help/release-notes/2025/2025-12-0.md)
       + [2025.11.0](/help/release-notes/2025/2025-11-0.md)
