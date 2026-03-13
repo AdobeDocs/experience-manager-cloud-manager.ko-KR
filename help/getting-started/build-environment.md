@@ -2,10 +2,10 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-source-git-commit: e9f3ac70735a95a15b1f63cf40496672162de777
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '1161'
-ht-degree: 83%
+source-wordcount: '1243'
+ht-degree: 81%
 
 ---
 
@@ -57,7 +57,7 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 ## HTTPS Maven 저장소 {#https-maven}
 
-Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드 환경에 대한 롤링 업데이트(2023.12.0 릴리스로 완료)를 시작했으며, 여기에는 Maven 3.8.8 업데이트가 포함되어 있습니다. Maven 3.8.1에 도입된 주요 변경 사항은 잠재적인 취약점을 완화하기 위한 보안 강화 기능입니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)이(가) Maven 3.8.8에 대한 업데이트를 포함하는 빌드 환경에 대한 롤링 업데이트를 시작했습니다(2023.12.0 릴리스로 완료). Maven 3.8.1에 도입된 중요한 변화는 잠재적인 취약성을 완화하기 위한 보안 개선이었습니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
 
 이러한 보안 강화로 인해 일부 사용자는 빌드 단계에서 문제에 직면할 수 있으며, 특히 안전하지 않은 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 이와 같은 문제가 보다 빈번하게 발생할 수 있습니다.
 
@@ -74,11 +74,12 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)에서는 빌드
 >**마이그레이션 지침:**
 >
 >1. 소스 제어에 커밋된 `org.apache.maven.plugins:maven-toolchains-plugin` 항목과 `toolchains.xml`을(를) 삭제하여 도구 체인을 제거합니다.
->1. `.cloudmanager/java-version`대체 Maven 실행 JDK 버전[에 설명된 대로 &#x200B;](#alternate-maven)(21, 17 또는 11)이 포함된 JDK를 선택하십시오.
+>1. [대체 Maven 실행 JDK 버전](#alternate-maven)에 설명된 대로 `.cloudmanager/java-version`(21, 17 또는 11)이 포함된 JDK를 선택하십시오.
 >1. Adobe에서는 Cloud Manager 빌드 캐시를 지우거나 새 파이프라인 실행을 트리거하는 것이 좋습니다.
 >
 
-<!--DEPRECATED 
+<!--
+DEPRECATED 
 ### Maven Toolchains {#maven-toolchains}
 
 The [Maven Toolchains plug-in](https://maven.apache.org/plugins/maven-toolchains-plugin/) lets projects select a specific JDK (or toolchain) to use in the context of toolchains-aware Maven plug-ins. This process is done in the project's `pom.xml` file by specifying a vendor and version value. A sample section in the `pom.xml` file is the following:
@@ -124,7 +125,8 @@ The currently available vendor/version combinations are:
 
 >[!NOTE]
 >
->Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details. -->
+>Starting April 2022, Oracle JDK is going to be the default JDK for the development and operation of AEM applications. Cloud Manager's build process automatically switches to using Oracle JDK, even if an alternative option is explicitly selected in the Maven toolchain. See the [April release notes](/help/release-notes/2022/2022-4-0.md) for more details.
+-->
 
 ### 대체 Maven 실행 JDK 버전 {#alternate-maven}
 
@@ -158,7 +160,7 @@ The currently available vendor/version combinations are:
 
 #### 작성, 미리보기 및 게시 환경 {#author-preview-publish}
 
-일반 환경 변수와 시크릿은 작성, 미리보기 및 게시 환경에서 사용할 수 있습니다.
+일반 환경 변수와 비밀은 작성, 미리보기 및 게시 환경에서 사용할 수 있습니다.
 
 #### Dispatcher {#dispatcher}
 

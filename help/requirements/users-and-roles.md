@@ -2,10 +2,10 @@
 title: 사용자 및 역할 추가
 description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
-source-git-commit: 9ad9af206fafea45f8bbf61b02950de0776b5a9f
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 95%
+source-wordcount: '796'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->Admin Console의 개발자는 [!UICONTROL Cloud Manager]의 개발자 역할과 관련이 없습니다.
+>Admin Console의 개발자 페르소나는 [!UICONTROL Cloud Manager]의 개발자 역할과 관련이 없습니다.
 
 ## Admin Console을 사용하여 제품 프로필 만들기 {#using-admin-console-to-create-a-profile}
 
@@ -57,10 +57,12 @@ Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에
 
 Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그룹을 만들거나 추가합니다.
 
-<!-- CQDOC-22790
+<!-- 
+CQDOC-22790
 >[!IMPORTANT]
 >
->Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. 
+-->
 
 **Admin Console을 사용하여 제품 프로필을 만들려면:**
 
@@ -84,10 +86,13 @@ Admin Console을 사용하여 이러한 제품 프로필에 사용자 또는 그
    * **표시 이름** - **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에서 정의한 기술 값이어야 합니다(다음 테이블 참조).
    * **권한 그룹** - 프로필에 대한 권한 그룹을 선택할 수 있습니다(항상 사용 가능한 것은 아님).
 
-<!-- CQDOC-22790
-      >[!IMPORTANT]
-      >
-      >Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile. -->
+<!-- 
+CQDOC-22790
+
+>[!IMPORTANT]
+>
+>Due to a current limitation in the Admin Console and Cloud Manager, profiles cannot be saved with **No permissions** selected. Attempting to do so results in a backend error. This behavior affects the creation of Deployment Manager profiles. As a workaround, select at least one permission when creating a new profile.
+-->
 
 ![새 프로필 만들기](/help/assets/screen_shot_2018-05-04at171819.png)
 

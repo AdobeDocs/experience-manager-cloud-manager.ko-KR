@@ -2,9 +2,9 @@
 title: Maven 프로젝트 버전 처리
 description: Maven이 Cloud Manager에서 프로젝트 버전을 어떻게 처리하는지 알아보십시오.
 exl-id: a1d676e0-27cc-4b0d-8799-527c0520946a
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '249'
+source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+workflow-type: tm+mt
+source-wordcount: '251'
 ht-degree: 100%
 
 ---
