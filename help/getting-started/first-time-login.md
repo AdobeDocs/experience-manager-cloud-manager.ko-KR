@@ -20,7 +20,7 @@ ht-degree: 89%
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
-1. [experiece.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
+1. [experiece.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 
    Experience Manager의 왼쪽 패널에서 ![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
