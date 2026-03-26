@@ -1,10 +1,16 @@
 ---
-source-git-commit: e8ef2dd8222d72be43e08e647c390b6ecacb385b
+source-git-commit: cebd01cdf3a73986342602c6128dd2121eae2bbe
 workflow-type: tm+mt
-source-wordcount: '6'
-ht-degree: 0%
+source-wordcount: '75'
+ht-degree: 5%
 
 ---
-# 보관됨
+# Adobe Experience Manager Cloud Manager 설명서
 
-이 리포지토리가 <https://github.com/Adobe-Enterprise-Docs/experience-manager-cloud-manager.ko-KR>(으)로 마이그레이션되었습니다.
+이 저장소는 Adobe Experience Manager Cloud Manager 설명서용입니다.
+
+설명서에 대한 귀하의 기여를 환영합니다. 다음 리소스를 참조하십시오.
+
+* [contributing.md](contributing.md) 문서에 기여하는 방법에 대한 개요입니다.
+* [guidelines.md](guidelines.md) 기여에서 기대하는 내용과 설명서 기여 작성 방법에 대한 개요입니다.
+* [code-of-conduct.md](code-of-conduct.md) 이 설명서 프로젝트에 기여할 때 Adobe에서 기대하는 동작 표준에 대한 개요입니다.
