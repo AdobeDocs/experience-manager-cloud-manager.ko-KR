@@ -2,10 +2,10 @@
 title: 비프로덕션 파이프라인 추가
 description: Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ee409c97269a70aa9cf4ee4a39c425e62bc156e0
+source-git-commit: ddbffd1310e0af646c071c81d560fb50abeb01c1
 workflow-type: tm+mt
-source-wordcount: '1992'
-ht-degree: 27%
+source-wordcount: '1994'
+ht-degree: 23%
 
 ---
 
@@ -37,7 +37,7 @@ Cloud Manager UI에서 프로그램 및 하나 이상의 환경을 설정한 후
 
 1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직과 프로그램을 선택합니다.
 
-1. Cloud Manager 홈 화면에서 파이프라인 카드에 액세스합니다. **추가**&#x200B;를 클릭한 후 **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
+1. Cloud Manager 홈 화면에서 파이프라인 카드를 열고 **추가**&#x200B;를 클릭한 다음 **비프로덕션 파이프라인 추가**&#x200B;를 선택합니다.
 
    ![비프로덕션 파이프라인 추가](/help/assets/configure-pipelines/nonprod-pipeline-add1.png)
 
@@ -71,7 +71,7 @@ Cloud Manager UI에서 프로그램 및 하나 이상의 환경을 설정한 후
 |   | **중요한 지표 오류 동작** | <ul><li>**매번 묻기** - 기본 설정이며 중요한 지표가 실패하면 진행 방법을 결정하라는 메시지를 표시합니다.<li>**즉시 실패** - 중요한 지표가 실패할 때마다 파이프라인이 취소됩니다. 이는 본질적으로 각 실패를 수동으로 거부하는 사용자를 에뮬레이션하는 것입니다.<li>**즉시 계속** - 중요한 지표가 실패할 때마다 파이프라인이 자동으로 진행됩니다. 이는 본질적으로 각 실패를 수동으로 승인하는 사용자를 에뮬레이션하는 것입니다.</li></ul> |
 |  | **단계 배포 후 승인** 확인란 | 비프로덕션 파이프라인을 편집할 때만 표시됩니다.<br>파이프라인을 계속하려면 스테이징 환경으로 배포한 후 승인을 요구하려면 이 옵션을 선택하십시오. 이 옵션을 선택하지 않으면 구성된 동작에 따라 파이프라인이 계속 진행됩니다. |
 |  | **부하 분산 장치 변경 건너뛰기** 확인란 | 배포 중에 파이프라인이 로드 밸런서를 변경하지 않도록 하려면 이 옵션을 선택합니다. |
-|  | **Dispatcher 구성** | **배포 관리자** 역할은 파이프라인이 실행될 때 AEM Dispatcher 캐시에서 무효화되거나 플러시된 콘텐츠 경로 집합을 구성할 수 있습니다. 이러한 캐시 액션은 콘텐츠 패키지가 배포된 직후에 배포 파이프라인 단계의 일부로 수행됩니다. 이러한 설정은 표준 AEM Dispatcher 비헤이비어를 사용합니다. `Dispatcher`을(를) 구성하려면 다음 작업을 수행하십시오.<ul><li>**PATH**&#x200B;에서 파이프라인을 초기화하거나 무효화할 콘텐츠 경로를 제공하십시오.<li>**유형** 아래에서 해당 경로에 대해 수행할 액션을 선택합니다.<ul><li>**플러시** - 지정된 경로에서 캐시 삭제를 수행합니다.</li><li>**무효화** - 저작 인스턴스에서 게시 인스턴스로 콘텐츠가 활성화된 경우와 유사하게 캐시 무효화를 수행합니다.</li><li>**경로 추가**&#x200B;를 클릭하여 지정된 경로를 추가합니다. 환경당 최대 100개의 경로를 추가할 수 있습니다.</li></ul> |
+|  | **Dispatcher 구성** | **배포 관리자** 역할은 파이프라인이 실행될 때 AEM Dispatcher 캐시에서 무효화되거나 플러시된 콘텐츠 경로 집합을 구성할 수 있습니다. Cloud Manager은 콘텐츠 패키지가 배포된 직후에 이러한 캐시 작업을 배포 파이프라인 단계의 일부로 실행합니다. 이러한 설정은 표준 AEM Dispatcher 비헤이비어를 사용합니다. `Dispatcher`을(를) 구성하려면 다음 작업을 수행하십시오.<ul><li>**PATH**&#x200B;에서 파이프라인을 초기화하거나 무효화할 콘텐츠 경로를 제공하십시오.<li>**유형** 아래에서 해당 경로에 대해 수행할 액션을 선택합니다.<ul><li>**플러시** - 지정된 경로에서 캐시 삭제를 수행합니다.</li><li>**무효화** - 저작 인스턴스에서 게시 인스턴스로 콘텐츠가 활성화된 경우와 유사하게 캐시 무효화를 수행합니다.</li><li>**경로 추가**&#x200B;를 클릭하여 지정된 경로를 추가합니다. 환경당 최대 100개의 경로를 추가할 수 있습니다.</li></ul> |
 | **파이프라인** | **경험 감사** 확인란 | 파이프라인에 경험 감사 단계를 포함하려면 이 옵션을 선택합니다. 활성화되면 Source 코드 탭 뒤에 파이프라인에 경험 감사 단계가 포함됩니다. |
 
 >[!ENDTABS]
@@ -187,10 +187,10 @@ Smart Build를 사용할 때는 다음 사항에 유의하십시오.
 <!-- 
 1. If you chose to add a **Deployment Pipeline**, select the target deployment environment from the **Eligible Deployment Environments** dropdown.
 
-1. Provide the repository where the pipeline should retrieve the code.
+1. Enter the repository where the pipeline should retrieve the code.
 
-   * **Repository** - Defines from which Git repo that the pipeline should retrieve the code.
-   * **Git Branch** - Defines from which branch in Git that the selected pipeline should retrieve the code.
+   * **Repository** - Select the Git repository that the pipeline retrieves code from.
+   * **Git Branch** - Select the branch in the Git repository that the selected pipeline retrieves code from.
 
 1. Define your deployment options.
 
@@ -202,10 +202,10 @@ Smart Build를 사용할 때는 다음 사항에 유의하십시오.
    1. For deployment pipelines, under **Important Metric Failures Behavior**, define the behavior of the pipeline when an important failure is encountered in any of the quality gates.
 
        * **Ask every time** - The default setting and requires manual intervention on any important failure.
-       * **Fail Immediately** - The pipeline is canceled whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
+       * **Fail Immediately** - Cloud Manager cancels the pipeline whenever an important failure occurs. It is essentially emulating a user manually rejecting each failure.
        * **Continue Immediately** - The pipeline proceeds automatically whenever an important failure occurs. It is essentially emulating a user manually approving each failure.
 
-   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that are either invalidated or flushed from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
+   1. **Dispatcher Configuration** - The **Deployment Manager** role can configure a set of content paths that Cloud Manager invalidates or flushes from the AEM Dispatcher cache when a pipeline is run. These cache actions are performed as part of the deployment pipeline step, just after any content packages are deployed. These settings use standard AEM Dispatcher behavior. To configure:
 
       1. Under **PATH** provide a content path.
       1. Under **TYPE**, select the action to be taken on that path.
@@ -226,4 +226,4 @@ Smart Build를 사용할 때는 다음 사항에 유의하십시오.
 
 이 비디오에서는 이 문서에 자세히 설명된 파이프라인 생성 프로세스에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/327620?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
