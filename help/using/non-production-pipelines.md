@@ -2,10 +2,10 @@
 title: 비프로덕션 파이프라인 추가
 description: Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
-source-git-commit: ddbffd1310e0af646c071c81d560fb50abeb01c1
+source-git-commit: 261c4334a514ee2101444e83a559d300bba3d507
 workflow-type: tm+mt
 source-wordcount: '1994'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
