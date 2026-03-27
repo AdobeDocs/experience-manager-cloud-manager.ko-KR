@@ -4,8 +4,8 @@ description: 여기에서 Adobe Managed Services(AMS)용 Cloud Manager에 대해
 exl-id: 58344d8a-b869-4177-a9cf-6a8b7dfe9588
 source-git-commit: 8f29a06f63b8dc10cb3d28e2f38da1ead84f32f5
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 95%
+source-wordcount: '1299'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 ## 소개 {#introduction}
 
-Adobe Experience Manager용 [!UICONTROL Cloud Manager]를 사용하면 개발자는 Adobe Experience Manager 모범 사례를 기반으로 구축된 간소화된 워크플로를 통해 효과적인 고객 경험을 만들 수 있습니다. Adobe Experience Manager에 최적화된 CI/CD 파이프라인을 사용하면 코드를 체크인하기만 하면 개발 워크플로를 쉽게 병합할 수 있으며, 이를 통해 제작 준비가 완료된 상태로 전환할 수 있습니다. 빌드 단계에서는 고객에게 안정적인 애플리케이션을 제공하기 위해 사용자 정의 코드 업데이트가 모범 사례와 비교하여 철저히 테스트됩니다. Cloud Manager는 개방형 API 접근 방식을 사용하여 기존 프로세스 및 도구를 중단하지 않고 시스템과 통합할 수 있도록 지원합니다.
+Adobe Experience Manager용 [!UICONTROL Cloud Manager]를 사용하면 개발자는 Adobe Experience Manager 모범 사례를 기반으로 구축된 간소화된 워크플로를 통해 효과적인 고객 경험을 만들 수 있습니다. Adobe Experience Manager에 최적화된 CI/CD 파이프라인을 사용하면 코드를 체크인하기만 하면 개발 워크플로를 쉽게 병합할 수 있으며, 이를 통해 프로덕션 준비가 완료된 상태로 전환할 수 있습니다. 빌드 단계에서는 고객에게 안정적인 애플리케이션을 제공하기 위해 사용자 정의 코드 업데이트가 모범 사례와 비교하여 철저히 테스트됩니다. Cloud Manager는 개방형 API 접근 방식을 사용하여 기존 프로세스 및 도구를 중단하지 않고 시스템과 통합할 수 있도록 지원합니다.
 
 >[!NOTE]
 >
