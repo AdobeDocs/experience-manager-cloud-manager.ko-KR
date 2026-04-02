@@ -3,7 +3,7 @@ title: Cloud Manager 2026.4.0 릴리스 노트
 description: Adobe Managed Services의 Cloud Manager 2026.4.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
-source-git-commit: 4f2fdc8d04b0ab48d3d18cc7d2cacfe0075b48f9
+source-git-commit: 0ad5d533e6f8749a9c141d5a095f0a2fed37efcf
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 14%
