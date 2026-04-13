@@ -3,7 +3,7 @@ title: 개발 환경의 서비스 팩 업데이트 - 비공개 베타
 description: Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비스 팩 업데이트를 시작하는 방법을 알아봅니다.
 hide: true
 exl-id: 996a8eee-843f-45a6-8f7a-31ea405c2b32
-source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
+source-git-commit: 17edfbaea9bb2bd9b817a0ee5726b0883cdd31f2
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 94%
@@ -89,7 +89,7 @@ Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비
 
    ![서비스 팩 승인](/help/using/assets/service-pack-approve.png)
 
-   * 업데이트를 취소하려면 **거부**&#x200B;를 클릭합니다.
+   * 업데이트를 취소하려면 **거부**를 클릭합니다.
 서비스 팩 설치가 취소되며 변경 사항이 적용되지 않습니다.
 
    ![서비스 팩 거부](/help/using/assets/service-pack-reject.png)
