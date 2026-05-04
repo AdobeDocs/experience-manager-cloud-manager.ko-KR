@@ -2,13 +2,16 @@
 title: 최초 로그인
 description: 일반 구성을 설정하고 Cloud Manager를 처음 사용할 준비가 되었으면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
-source-git-commit: ee49b0732fdb870c4f768764aa75b240fd101b59
+TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: 305
 ht-degree: 89%
 
 ---
-
 
 # 최초 로그인 {#first-time-login}
 
@@ -20,7 +23,7 @@ ht-degree: 89%
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
-1. [experiece.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
+1. [experiece.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 
    Experience Manager의 왼쪽 패널에서 ![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)

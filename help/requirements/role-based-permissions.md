@@ -2,13 +2,16 @@
 title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: 592
 ht-degree: 99%
 
 ---
-
 
 # 역할 기반 권한 {#role-based-permissions}
 

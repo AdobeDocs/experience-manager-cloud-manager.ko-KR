@@ -2,13 +2,17 @@
 title: 환경 모니터링
 description: Cloud Manager에서 환경을 모니터링하는 방법에 대해 알아봅니다.
 exl-id: 32886133-d6c0-4aed-8bb0-81b84f63e825
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/1WlZ7i3267CTPVQrvLi9FlzJuTjzSzpghePEMlSygjY
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: 873
 ht-degree: 75%
 
 ---
-
 
 # 환경 모니터링 {#monitoring-environments}
 
@@ -125,4 +129,4 @@ Adobe Managed Services는 임계값을 설정하는데, [!UICONTROL Cloud Manage
 
 이 비디오는 프로그램 환경을 보기 위해 Cloud Manager Reports에서 생성한 차트를 사용하는 방법에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34275?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26315/)

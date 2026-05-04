@@ -2,13 +2,15 @@
 title: Cloud Manager에서 저장소 관리
 description: Cloud Manager에서 Git 저장소를 조회, 추가 및 삭제하는 방법을 알아봅니다.
 exl-id: 384b197d-f7a7-4022-9b16-9d83ab788966
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/rAFg0r8OX5drJ9fN5DyjoO3Hl6U-J4kkwTDVWtCOJ-8
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 97%
+source-wordcount: 764
+ht-degree: 95%
 
 ---
-
 
 # Cloud Manager에서 저장소 관리 {#cloud-manager-repos}
 
@@ -30,7 +32,7 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 
 선택한 저장소에서 작업을 수행하려면 저장소를 클릭하고 ![기타 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 사용하여 드롭다운 메뉴를 엽니다. Adobe 관리 저장소의 경우 **[분기 확인 및 프로젝트 만들기](#check-branches)** 기능을 수행할 수 있습니다.
 
-![저장소 액션](assets/repository-actions.png)
+![저장소 작업](assets/repository-actions.png)
 *저장소 페이지의 드롭다운 메뉴*
 
 드롭다운 메뉴에 제공되는 다른 액션에는 **[저장소 URL 복사](#copy-url)**, **[보기 및 업데이트](#view-update)** 및 **[저장소 삭제](#delete)**&#x200B;가 있습니다.
@@ -54,7 +56,7 @@ Cloud Manager에서 만들어진 저장소는 파이프라인을 추가하거나
 오른쪽 상단 근처의 **저장소** 페이지에서 **저장소 추가**&#x200B;를 클릭합니다.
 
 ![저장소 추가 대화 상자.](assets/repository-add.png)
-*저장소 추가 대화 상자.*
+*저장소 추가 대화 상자*
 
 Cloud Manager는 Adobe 관리 저장소(**Adobe 저장소**)와 사용자 관리 저장소(**비공개 저장소**) 등 두 가지 유형의 저장소를 지원합니다. 설정할 필수 필드는 추가하기 위해 선택한 저장소 유형에 따라 다릅니다. 자세한 내용은 다음을 참조하십시오.
 

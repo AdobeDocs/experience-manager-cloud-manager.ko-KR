@@ -2,13 +2,15 @@
 title: 프로젝트 설정
 description: Cloud Manager를 사용하여 프로젝트를 관리하고 배포할 수 있도록 프로젝트를 설정하는 방법에 대해 알아보십시오.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '1395'
+TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 1430
 ht-degree: 100%
 
 ---
-
 
 # 프로젝트 설정 {#setting-up-your-project}
 
@@ -340,4 +342,4 @@ build/aem-guides-wknd.dispatcher.cloud-2021.1216.1101633.0000884042.zip (dispatc
 
 ## 모범 사례를 기반으로 코드 개발 {#develop-your-code-based-on-best-practices}
 
-Adobe 엔지니어링 및 컨설팅 팀은 [AEM 개발자를 위한 포괄적인 모범 사례 세트](https://experienceleague.adobe.com/ko/docs/ experience-manager-65/content/implementing/developing/bestpractices/best-practices)를 개발했습니다.
+Adobe 엔지니어링 및 컨설팅 팀은 [AEM 개발자를 위한 포괄적인 모범 사례 세트](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/developing/bestpractices/best-practices)를 개발했습니다.

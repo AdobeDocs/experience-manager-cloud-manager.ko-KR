@@ -3,13 +3,16 @@ title: 평가 단계
 seo-title: Evaluation Phase
 description: 제품 업데이트 마법사의 평가 단계에서 패턴 감지기의 업그레이드 복잡성을 평가하는 방법에 대해 알아봅니다.
 exl-id: 1ffcbc21-dc36-435d-b83b-0209f81a15e7
-source-git-commit: fb3c2b3450cfbbd402e9e0635b7ae1bd71ce0501
+TQID: https://experienceleague.adobe.com/dj-Wnq9FagNI3mzzVHcUH-sOufzb02D0juHqhtgpon0
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 57%
+source-wordcount: 270
+ht-degree: 59%
 
 ---
-
 
 # 평가 단계 {#evaluation}
 
