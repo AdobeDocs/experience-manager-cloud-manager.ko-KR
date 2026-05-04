@@ -2,13 +2,20 @@
 title: 제품 업데이트 마법사
 description: 제품 업데이트 마법사가 Cloud Manager 내에서 전반적인 AEM 업데이트 프로세스를 간소화하는 방법을 알아보십시오.
 exl-id: 8134e956-bfcf-41b8-a408-fa4375058c6a
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '208'
+TQID: https://experienceleague.adobe.com/1xLX5-Q3m0NRcAs0OrGyNbR0d2vP4VDl9iF2IzYpt7Y
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 215
 ht-degree: 100%
 
 ---
-
 
 # 제품 업데이트 마법사 {#product-update-wizard}
 

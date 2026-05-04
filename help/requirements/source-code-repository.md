@@ -2,13 +2,18 @@
 title: 소스 코드 저장소
 description: Cloud Manager에서 보유하고 있는 각 프로그램에 대해 프로비저닝된 Git 저장소에 대해 알아보십시오.
 exl-id: af551e33-3623-4fcd-8d25-4362d8871411
-source-git-commit: 984269e5fe70913644d26e759fa21ccea0536bf4
-workflow-type: ht
-source-wordcount: '245'
+TQID: https://experienceleague.adobe.com/hdEpqKW0NluPs-w37SeLzpd-EHJNqb2nfSAMQ35man8
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+workflow-type: tm+mt
+source-wordcount: 254
 ht-degree: 100%
 
 ---
-
 
 # 소스 코드 저장소 {#source-code-repository}
 
