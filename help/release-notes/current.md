@@ -1,82 +1,58 @@
 ---
-title: Cloud Manager 2026.4.0 릴리스 노트
-description: Adobe Managed Services의 Cloud Manager 2026.4.0 릴리스에 대해 알아봅니다.
+title: Cloud Manager 2026.5.0 릴리스 노트
+description: Adobe Managed Services의 Cloud Manager 2026.5.0 릴리스에 대해 알아봅니다.
 feature: Release Information
 exl-id: cc1dc94b-129d-4de7-8e57-8fc5dcba7d9f
 TQID: https://experienceleague.adobe.com/4zfTpSYuFwrJZ-oeL1SObT14v2Rd--Z1hKn5JllHAro
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 0c2a9a946df6d5e1b0e4d5edb2715d8db98e9974
 workflow-type: tm+mt
-source-wordcount: 467
-ht-degree: 14%
+source-wordcount: 512
+ht-degree: 15%
 
 ---
 
 
-# Adobe Managed Services의 Cloud Manager 2026.4.0 릴리스 노트 {#release-notes}
+# Adobe Managed Services의 Cloud Manager 2026.5.0 릴리스 노트 {#release-notes}
 
 <!-- add "hold: true" to metadata above to be able to commit/merge to Main WITHOUT Publishig -->
 
 <!-- RELEASE WIKI  https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.04.0+Release -->
 
-Adobe Managed Services의 [!UICONTROL Cloud Manager] 2026.4.0 릴리스에 대해 알아봅니다.
+Adobe Managed Services의 [!UICONTROL Cloud Manager] 2026.5.0 릴리스에 대해 알아봅니다.
 
 또한 [최신 Adobe Experience Manager as a Cloud Service 릴리스 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/release-notes/home)도 살펴보십시오.
 
 ## 릴리스 일자 {#release-date}
 
-[!UICONTROL Cloud Manager] 2026.4.0의 릴리스 날짜는 2026년 4월 2일 목요일입니다.
+[!UICONTROL Cloud Manager] 2026.5.0의 릴리스 날짜는 2026년 5월 7일 목요일입니다.
 <!-- There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
-다음 예정 릴리스는 2026년 5월 7일 목요일입니다.
+다음 예정 릴리스는 2026년 6월 4일 목요일입니다.
 
 <!-- SAVE FOR FUTURE POSSIBLE USE There are no significant new features or bug fixes in the May Cloud Manager release. -->
 
 ## 새로운 기능 {#what-is-new}
 
-* **AEM Experience Hub에서 사용자 인터페이스 확장성 지원.**
-
-  이제 [AEM Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)의 사용자 인터페이스 확장 지원이 활성화되어 개발자가 Adobe App Builder을 사용하여 빌드된 사용자 지정 기능 및 위젯으로 인터페이스를 확장할 수 있습니다.
-
-  자세한 내용은 [AEM Experience Hub](https://developer.adobe.com/uix/docs/services/aem-experience-hub/)를 참조하세요.
-
-* **이제 구성 파이프라인이 관리 암호를 지원합니다.**
-
-  이제 사용자는 Cloud Manager 구성 파이프라인에서 직접 비밀을 추가하고 관리할 수 있습니다. 이러한 비밀은 파이프라인 구성 사양의 값을 안전하게 재정의하고 유연한 환경별 배포를 지원합니다.
-
-  ![선택한 파이프라인에 대한 드롭다운 메뉴의 변수 보기/편집 옵션](/help/release-notes/assets/view-edit-variables-option.png)
-  *선택한 파이프라인에 대한 드롭다운 메뉴의 변수 보기/편집 옵션*
-
-  ![변수 구성 대화 상자&#x200B;](/help/release-notes/assets/view-edit-variables-variablesconfig-dialogbox.png)*변수 구성 대화 상자*
-
-* **안정성, 성능 및 안정성이 향상되었습니다.**
-
-  이 릴리스에는 Cloud Manager의 안정성, 성능 및 안정성을 개선한 최적화 및 유지 관리 업데이트가 포함됩니다.
-
+AMS 릴리스의 2026년 5월 Cloud Manager에는 중요한 새로운 기능이 없습니다.
 
 ## Beta 프로그램 {#beta-program}
 
-Cloud Manager의 Beta 프로그램에 참여하여 일반 릴리스 전에 예정된 기능에 독점적으로 액세스할 수 있습니다.
+Cloud Manager의 Beta 프로그램에 참여하면 정식 출시 전에 새로운 기능에 대한 전용 액세스 권한을 얻을 수 있습니다.
 
-현재 제공되는 기회는 다음과 같습니다.
+>[!IMPORTANT]
+>
+>Beta 릴리스에는 결함이 포함될 수 있으며 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공됩니다. Adobe은 베타 릴리스를 유지, 수정, 업데이트, 변경, 수정 또는 기타 지원(Adobe 지원 서비스 또는 기타 방식으로)할 의무가 없습니다. Adobe은 고객에게 베타 릴리스의 올바른 기능이나 성능 또는 관련 설명서나 자료에 의존하지 말고 주의할 것을 권장합니다. Beta의 기능 및 API는 예고 없이 변경될 수 있습니다. 따라서 Beta 릴리스를 사용하는 것은 전적으로 고객 자신의 책임입니다.
 
-<!--
-### Experience Hub Extensibility and Customization {#exp-hub-extensibility}
+현재 다음 베타 프로그램 기회를 사용할 수 있습니다.
 
-[Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub) serves as your entry point to AEM, customized for your organization's needs. Tell Adobe about your existing AEM UI extensions so they can help you enable them in Experience Hub with minimal effort.
+### AEM Managed Services용 웹 계층 파이프라인 {#web-tier-pipelines}
 
-![Diagram of Experience Hub extensibility and customization workflow](/help/release-notes/assets/experience-hub-extensibility-customization.png)
+이제 Cloud Manager은 AMS 프로그램에 전용 웹 계층 파이프라인을 지원하므로 팀이 전체 스택 배포와 독립적으로 Dispatcher 및 웹 계층 구성을 배포할 수 있습니다. 이렇게 하면 불필요한 전체 파이프라인 실행을 줄이면서 웹 계층 변경 사항을 더 빠르게 반복할 수 있습니다. 웹 계층 파이프라인이 구성되면 전체 스택 파이프라인은 배포 충돌을 방지하기 위해 해당 환경에 대한 웹 계층 배포를 자동으로 건너뜁니다. 웹 계층 파이프라인을 제거하면 기본 배포 동작이 자동으로 복원됩니다.
 
-Embed custom experiences in Experience Hub to extend and personalize your organization's dashboard. In addition to Adobe's built-in widgets, add your own using the [UI Extensibility](https://developer.adobe.com/uix/docs/) framework. Build JavaScript-based UI apps and surface them to your users to meet business-specific requirements and workflows. 
-
-Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com) with your Adobe OrgID and a short description of the customization you intend to create.
--->
+Beta에 참여하려면 Adobe 고객 성공 엔지니어에게 자세한 내용을 문의하십시오.
 
 ### 모듈 캐싱을 통한 빌드 속도 향상 {#quick-build-cm-pipelines}
 
@@ -100,7 +76,7 @@ Beta에 가입하려면 Adobe 조직 ID와 프로그램 ID로 [beta_quickbuild_c
 
 ## 버그 수정 {#bug-fixes}
 
-AMS 릴리스의 2026년 4월 Cloud Manager에는 중요한 버그 수정이 없습니다.
+AMS 릴리스의 2026년 5월 Cloud Manager에는 중요한 버그 수정이 없습니다.
 
 <!--
 Known Issues {#known-issues}

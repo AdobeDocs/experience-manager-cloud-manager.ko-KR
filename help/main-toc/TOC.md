@@ -7,9 +7,9 @@ user-guide-description: Cloud Manager를 사용하여 클라우드에서 AMS용 
 feature-set: Experience Manager Cloud Manager, Experience Manager
 feature: Cloud Manager
 role: Admin
-source-git-commit: 9ef2f45331c0aaf5c619af1151da38278cfc3c5d
+source-git-commit: debf91774e9966a23f455f7a67c96052b58b5c43
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '336'
 ht-degree: 87%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 87%
 # Cloud Manager 설명서 {#content}
 
 + [AMS용 Cloud Manager](/help/introduction.md)
-+ [Experience Hub](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)
++ [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)
 + 개요 {#overview}
    + [주요 개념](/help/overview/key-concepts.md)
    + [사용자 여정](/help/overview/user-journey.md)
@@ -78,6 +78,7 @@ ht-degree: 87%
 + 릴리스 정보 {#release-notes}
    + [최신](/help/release-notes/current.md)
    + 2026 {#rn-2026}
+      + [2026.4.0](/help/release-notes/2026/2026-4-0.md)
       + [2026.3.0](/help/release-notes/2026/2026-3-0.md)
       + [2026.2.0](/help/release-notes/2026/2026-2-0.md)
       + [2026.1.0](/help/release-notes/2026/2026-1-0.md)
