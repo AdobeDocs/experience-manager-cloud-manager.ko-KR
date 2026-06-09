@@ -3,14 +3,11 @@ title: 비프로덕션 파이프라인 추가
 description: Cloud Manager를 사용하여 코드를 배포할 비프로덕션 파이프라인을 만들고 구성하는 방법에 대해 알아보십시오.
 exl-id: ccf4b4a2-6e29-4ede-821c-36318b568e5c
 TQID: https://experienceleague.adobe.com/Dj7SjKdao6RU-cIS7D1AQxg5qpKrJMTcYQJBfiqc-Gg
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: badb64b816e83ca08a39b2b39eda13335f6a3c1d
 workflow-type: tm+mt
-source-wordcount: 1999
+source-wordcount: 2096
 ht-degree: 22%
 
 ---
@@ -91,6 +88,10 @@ Cloud Manager UI에서 프로그램 및 하나 이상의 환경을 설정한 후
 
 애플리케이션 코드 및 기본적으로 웹 계층 구성을 포함한 전체 AEM 애플리케이션을 배포합니다.
 
+>[!NOTE]
+>
+>선택한 환경에 대한 전체 스택 코드 파이프라인이 이미 있는 경우, 이 선택이 비활성화됩니다.
+
 | 섹션 | 옵션 | 설명 |
 | --- | --- | --- |
 | **Source 코드** | **저장소** | 드롭다운 목록에서 파이프라인이 소스로 사용하는 Git 저장소를 선택합니다. Cloud Manager은 여기에서 선택한 저장소에서 코드를 빌드합니다. |
@@ -105,11 +106,19 @@ Cloud Manager UI에서 프로그램 및 하나 이상의 환경을 설정한 후
 
 전체 스택 파이프라인이 이미 있는 경우 Cloud Manager은 웹 계층 구성 파이프라인을 생성하면 기존 전체 스택 파이프라인이 웹 계층 구성을 무시한다는 알림을 표시합니다. 웹 계층 구성 파이프라인을 만든 후 Cloud Manager은 전체 스택 파이프라인 대신 해당 파이프라인을 통해 웹 계층 구성 배포를 관리합니다.
 
+>[!NOTE]
+>
+>선택한 환경에 대한 웹 계층 구성 파이프라인이 이미 있는 경우 이 선택이 비활성화됩니다. 언제든지 환경당 하나의 웹 계층 구성 파이프라인만 있을 수 있습니다.
+
 | 섹션 | 옵션 | 설명 |
 | --- | --- | --- |
 | **Source 코드** | **저장소** | 드롭다운 목록에서 웹 계층 구성이 포함된 Git 저장소를 선택합니다. |
 |   | **Git 분기** | 선택한 저장소에서 Cloud Manager이 배포에 사용하는 분기를 선택합니다. 필요한 경우 **새로 고침**&#x200B;을 클릭하여 선택한 저장소에 대해 사용 가능한 분기 목록을 업데이트합니다. 최근에 만든 분기가 목록에 표시되지 않는 경우 이 옵션을 사용합니다. |
 |   | **코드 위치** | 배포할 웹 계층 구성이 포함된 선택한 저장소의 경로를 입력합니다. 기본 위치는 저장소 루트(`/`)입니다. |
+
+>[!NOTE]
+>
+>코드 위치가 Dispatcher 코드 위치를 가리키지 않는 경우 추가 애플리케이션 코드를 아티팩트 패키지로 가져와 Dispatcher에 배포할 수 있으므로 재시작 시 Apache가 실패하고 파이프라인이 실패합니다. 저장소의 Dispatcher 파일에 대한 올바른 경로를 설정해야 합니다.
 
 >[!ENDTABS]
 
@@ -232,4 +241,4 @@ Smart Build를 사용할 때는 다음 사항에 유의하십시오.
 
 이 비디오에서는 이 문서에 자세히 설명된 파이프라인 생성 프로세스에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/327620?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26316/)
