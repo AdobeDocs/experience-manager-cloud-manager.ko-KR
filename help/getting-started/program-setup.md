@@ -3,27 +3,21 @@ title: 프로그램 설정
 description: 온보딩 후 비즈니스 소유자는 프로그램의 일부 초기 설정을 수행해야 합니다.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: fa6be369b979682cebf68852603725d8754605ab
 workflow-type: tm+mt
-source-wordcount: 570
-ht-degree: 93%
+source-wordcount: 549
+ht-degree: 65%
 
 ---
 
 # 프로그램 설정 {#program-setup}
 
-온보딩 후 비즈니스 소유자는 설명을 추가하고 주요 성과 지표(KPI)를 정의하여 프로그램을 설정합니다. 이러한 KPI는 성과 테스트에 사용됩니다.
+온보딩 후 비즈니스 리드는 설명을 추가하고 주요 성과 지표(KPI)를 정의하여 프로그램을 설정합니다. 이러한 KPI는 성과 테스트에 사용됩니다.
 
 ## [!UICONTROL Cloud Manager]로 프로그램 설정 {#program-setup-cloud-manager}
-
-다음 단계에 따라 프로그램을 설정하고 KPI를 정의합니다.
 
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -49,17 +43,19 @@ ht-degree: 93%
 
 1. 프로그램에 대해 자동 크기 조정이 활성화된 경우 **프로비저닝** 탭에서 환경에 대한 주문형 크기 조정 옵션을 정의할 수 있습니다.
 
-   자동 크기 조정은 프로덕션 환경에만 적용되며 일부 고객 프로그램에는 적용되지 않을 수 있습니다.
+   자동 크기 조정은 프로덕션 환경에만 적용되며 일부 고객 프로그램에서는 사용할 수 없습니다.
 
    ![프로비저닝 옵션](/help/assets/Setup_Program-Provisioning.png)
 
 1. **저장**&#x200B;을 클릭합니다.
 
-프로그램이 생성됩니다. 프로그램을 사용할 준비가 되기 전에 리소스를 프로비저닝하는 데 몇 분이 걸릴 수 있습니다.
+프로그램이 생성됩니다. 프로그램을 사용할 준비가 되기 전에 리소스를 프로비저닝하는 데 몇 분이 소요됩니다.
 
 ## 프로그램 편집 {#editing-program}
 
-프로그램을 설정한 후 편집할 수 있습니다. 프로그램을 편집하려면 다음 단계를 따르십시오.
+프로그램을 설정한 후 편집할 수 있습니다.
+
+**프로그램을 편집하려면:**
 
 1. [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
 
@@ -89,14 +85,14 @@ ht-degree: 93%
 
 ## KPI {#kpis}
 
-사이트 KPI는 스테이징 환경에서 실행되는 테스트에서 측정됩니다. 일반적으로 이러한 KPI는 스테이징 환경의 기능에 맞게 축소됩니다.
+사이트 KPI는 스테이징 환경에서 실행되는 테스트에서 측정됩니다. 일반적으로 이러한 KPI는 스테이징 환경의 기능과 일치하도록 조정됩니다.
 
-예를 들어 프로덕션 환경에서 분당 평균 1000 페이지 조회수를 예상하고 프로덕션에 4개의 Dispatcher/퍼블리싱 서버가 있는 사용자는 이 시나리오를 분당 250 페이지 조회수로 확장해야 합니다. 이 시나리오에서는 스테이징 환경이 단일 Dispatcher/게시 서버 쌍으로만 구성된다고 가정합니다.
+예를 들어 프로덕션 환경에서 분당 평균 1000페이지 뷰를 예상하고 프로덕션에 4개의 Dispatcher/퍼블리싱 서버가 있는 사용자는 이 시나리오를 분당 250페이지 뷰로 줄입니다. 이 시나리오에서는 스테이징 환경이 단일 Dispatcher/게시 서버 쌍으로만 구성된다고 가정합니다.
 
 자산 성능 테스트에는 30분 동안 자산을 반복적으로 업로드하는 작업이 포함됩니다. 각 자산에 대한 처리 시간과 다양한 시스템 수준 지표가 테스트 전반에 걸쳐 측정됩니다.
 
-프로덕션 환경 앞에 Akamai 또는 CloudFront와 같은 콘텐츠 전송 네트워크(CDN)가 있을 수 있습니다. [!UICONTROL Cloud Manager]는 스테이징 환경에 대해 직접 테스트하므로 KPI는 콘텐츠 전송 네트워크를 통과할 것으로 예상되는 트래픽만 반영해야 합니다. 즉, 캐시 누락만 반영합니다. 일반적으로 이 경험은 총 프로덕션 트래픽의 비교적 작은 부분 집합입니다.
+Akamai 또는 CloudFront와 같은 CDN(콘텐츠 전송 네트워크)이 프로덕션 환경에 대해 구성되어 있습니다. [!UICONTROL Cloud Manager]은(는) 스테이징 환경에 대해 직접 테스트하므로 KPI는 CDN을 통과할 것으로 예상되는 트래픽만 반영합니다. 즉, 캐시 누락만 반영합니다. 일반적으로 이 트래픽은 총 프로덕션 트래픽의 비교적 작은 하위 집합입니다.
 
 ## 비디오 개요 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34267?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
