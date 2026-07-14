@@ -15,16 +15,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
 workflow-type: tm+mt
-source-wordcount: 1243
-ht-degree: 81%
+source-wordcount: 1205
+ht-degree: 50%
 
 ---
 
 # 빌드 환경 {#build-environment}
 
-Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
+Cloud Manager이 코드를 빌드하고 테스트하는 데 사용하는 특수한 빌드 환경에 대해 알아봅니다.
 
 ## 환경 세부 정보 {#details}
 
@@ -37,14 +37,14 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
    * `/usr/lib/jvm/jdk1.8.0_401`
    * `/usr/lib/jvm/jdk-11.0.22`
 * 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
-* 필요한 몇 가지 추가 시스템 패키지가 설치되어 있습니다.
+* 필요한 추가 시스템 패키지가 설치됩니다.
    * `bzip2`
    * `unzip`
    * `libpng`
    * `imagemagick`
    * `graphicsmagick`
-* [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지를 설치할 수 있습니다.
-* 모든 빌드는 완전히 새로운 환경에서 수행됩니다. 빌드 컨테이너는 실행 간에 상태를 유지하지 않습니다.
+* [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지가 설치됩니다.
+* 모든 빌드는 새 환경에서 수행됩니다. 빌드 컨테이너는 실행 사이에 데이터를 유지하지 않습니다.
 * Maven은 다음 세 가지 명령을 사용하여 실행됩니다.
    * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
    * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
@@ -57,23 +57,23 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 >[!NOTE]
 >
->Cloud Manager에서는 `jacoco-maven-plugin`의 특정 버전을 정의하지는 않지만 사용되는 버전은 `0.7.5.201505241946` 이상이어야 합니다.
+>Cloud Manager에서 `jacoco-maven-plugin`의 특정 버전을 정의하지 않지만 사용되는 버전은 `0.7.5.201505241946` 이상이어야 합니다.
 
 >[!TIP]
 >
->Cloud Manager API를 사용하는 방법에 대한 자세한 내용은 다음 추가 리소스를 참조하십시오.
+>Cloud Manager API를 사용하는 방법에 대해 알아보려면 다음 추가 리소스를 참조하십시오.
 >
 >* [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager)
->* [API 통합 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration/)
->* [API 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions/)
+>* [API 통합 만들기](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/create-api-integration)
+>* [API 권한](https://developer.adobe.com/experience-cloud/cloud-manager/guides/getting-started/permissions)
 
 ## HTTPS Maven 저장소 {#https-maven}
 
-Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)이(가) Maven 3.8.8에 대한 업데이트를 포함하는 빌드 환경에 대한 롤링 업데이트를 시작했습니다(2023.12.0 릴리스로 완료). Maven 3.8.1에 도입된 중요한 변화는 잠재적인 취약성을 완화하기 위한 보안 개선이었습니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
+Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)이(가) Maven 3.8.8에 대한 업데이트를 포함하는 빌드 환경에 대한 롤링 업데이트를 시작했습니다(2023.12.0 릴리스로 완료). Maven 3.8.1에 도입된 변경 사항은 잠재적인 취약점을 해결하기 위한 보안 개선 사항입니다. 구체적으로 Maven은 이제 [Maven 릴리스 정보](https://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291)에 설명된 바와 같이 안전하지 않은 모든 `http://*` 미러를 기본적으로 비활성화합니다.
 
-이러한 보안 강화로 인해 일부 사용자는 빌드 단계에서 문제에 직면할 수 있으며, 특히 안전하지 않은 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 이와 같은 문제가 보다 빈번하게 발생할 수 있습니다.
+일부 사용자는 빌드 단계에서 비보안 HTTP 연결을 사용하는 Maven 저장소에서 아티팩트를 다운로드할 때 문제가 발생합니다.
 
-업데이트된 버전을 원활하게 사용하기 위해 Adobe는 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다. 이러한 조정은 업계에서 점점 더 보안 통신 프로토콜로 전환하는 추세에 맞춰 안전하고 안정적인 빌드 프로세스를 유지하는 데 도움이 될 것으로 기대합니다.
+업데이트된 버전을 원활하게 사용하기 위해 Adobe는 사용자가 HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것을 권장합니다. 이러한 조정은 보안 통신 프로토콜로의 업계 전환을 지원하고 안전하고 신뢰할 수 있는 빌드 프로세스를 유지합니다.
 
 ## 특정 Java 버전 사용 {#using-java-version}
 
@@ -142,17 +142,17 @@ The currently available vendor/version combinations are:
 
 ### 대체 Maven 실행 JDK 버전 {#alternate-maven}
 
-전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수 있습니다. 이 방법은 모든 플러그인에 사용되는 JDK를 변경합니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 작동합니다.
+전체 Maven 실행에 대한 JDK로 Oracle 8 또는 Oracle 11을 선택할 수 있습니다. 이 방법은 모든 플러그인에 사용되는 JDK를 변경합니다. 따라서 [Apache Maven Enforcer 플러그인](https://maven.apache.org/enforcer/maven-enforcer-plugin/)을 사용한 Java 버전 확인 및 시행이 지원됩니다.
 
-이렇게 하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`이라는 파일을 생성합니다. 이 파일은 콘텐츠 `11` 또는 `8`을 가질 수 있습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 시스템에서 Oracle 11을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정합니다. `8`을(를) 지정하면 시스템에서 Oracle 8을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정합니다.
+이 프로세스를 수행하려면 파이프라인에서 사용하는 Git 저장소 분기에 `.cloudmanager/java-version`(이)라는 파일을 만드십시오. 이 파일은 콘텐츠 `11` 또는 `8`을 가질 수 있습니다. 다른 모든 값은 무시됩니다. `11`을(를) 지정하면 시스템에서 Oracle 11을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk-11.0.22`(으)로 설정합니다. `8`을(를) 지정하면 시스템에서 Oracle 8을 사용하고 `JAVA_HOME` 환경 변수를 `/usr/lib/jvm/jdk1.8.0_401`(으)로 설정합니다.
 
 ## 환경 변수 {#environment-variables}
 
 ### 표준 환경 변수 {#standard-environ-variables}
 
-경우에 따라 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 할 수도 있습니다.
+경우에 따라 프로그램 또는 파이프라인에 대한 정보를 기반으로 빌드 프로세스를 변경해야 합니다.
 
-예를 들어 JavaScript 최소화를 위해 gulp와 같은 도구를 사용하는 경우, 개발과 스테이징 및 프로덕션 환경에 대해 다른 최소화 수준을 선호할 수 있습니다.
+예를 들어 JavaScript 축소를 위한 gulp와 같은 도구를 사용하는 경우 스테이징 및 프로덕션 환경과 비교하여 다른 축소 수준을 사용하십시오.
 
 이를 지원하기 위해 Cloud Manager는 모든 실행 시 빌드 컨테이너에 표준 환경 변수를 추가합니다.
 
@@ -190,9 +190,9 @@ The currently available vendor/version combinations are:
 
 ### 파이프라인 변수 {#pipeline-variables}
 
-경우에 따라 빌드 프로세스가 Git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라져야 하는 특정 구성 변수에 따라 달라질 수 있습니다.
+빌드 프로세스가 특정 구성 변수에 따라 달라지는 경우도 있습니다. 이러한 변수는 Git 저장소에 배치하기에 부적절하거나 동일한 분기를 사용하는 파이프라인 실행 간에 달라야 합니다.
 
-Cloud Manager를 사용하면 파이프라인 단위로 Cloud Manager API 또는 Cloud Manager CLI를 통해 이러한 변수를 구성할 수 있습니다. 변수는 일반 텍스트로 저장되거나 사용하지 않을 때 암호화될 수 있습니다. 두 경우 모두 `pom.xml` 파일 또는 다른 빌드 스크립트 내에서 참조할 수 있는 환경 변수로 빌드 환경 내에서 변수를 사용할 수 있습니다.
+Cloud Manager를 사용하면 파이프라인 단위로 Cloud Manager API 또는 Cloud Manager CLI를 통해 이러한 변수를 구성할 수 있습니다. 변수는 일반 텍스트로 저장되거나 사용하지 않을 때 암호화됩니다. 두 경우 모두 `pom.xml` 파일 또는 다른 빌드 스크립트 내에서 참조할 수 있는 환경 변수로 빌드 환경 내에서 변수를 사용할 수 있습니다.
 
 CLI를 사용하여 변수를 설정하려면 다음과 유사한 명령을 실행합니다.
 
@@ -209,7 +209,7 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 변수는 특정 제한 사항을 준수해야 합니다.
 
 * 변수 이름에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.
-   * 규칙상 이름은 모두 대문자로 해야 합니다.
+   * 규칙상 이름은 모두 대문자로 되어 있습니다.
 * 파이프라인당 200개의 변수 제한이 있습니다.
 * 각 이름은 100자 이하여야 합니다.
 * 각 문자열 값은 2048자 이하여야 합니다.
@@ -233,7 +233,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-완벽한 작동을 위해서는 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출할 수 있으며, 결과적으로 적절한 언어 인터프리터가 설치되어야 합니다. 이 시나리오는 APT를 호출하기 위해 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)를 호출하여 수행할 수 있습니다. 이 실행은 일반적으로 Cloud Manager 전용 Maven 프로필로 래핑해야 합니다. 예를 들어 Python을 설치하려면 다음 작업을 수행해야 합니다.
+제대로 작동하려면 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출하며 적절한 언어 인터프리터가 설치되어 있어야 합니다. 이 시나리오는 APT를 호출하기 위해 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)을(를) 호출하여 처리할 수 있습니다. 이 실행은 Cloud Manager 전용 Maven 프로필로 래핑됩니다. 예를 들어 Python을 설치하려면 다음 작업을 수행해야 합니다.
 
 ```xml
         <profile>
@@ -286,7 +286,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
         </profile>
 ```
 
-이 기술은 언어별 패키지를 설치하는 데에도 사용할 수 있습니다. 즉, RubyGems에는 `gem` 또는 Python Package에는 `pip`를 사용하는 것입니다.
+이 방법을 사용하여 언어별 패키지를 설치할 수도 있습니다. 즉, RubyGems의 경우 `gem`, Python 패키지의 경우 `pip`을(를) 사용합니다.
 
 >[!NOTE]
 >
