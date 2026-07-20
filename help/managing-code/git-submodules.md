@@ -3,17 +3,13 @@ title: Git 하위 모듈 지원
 description: Git 하위 모듈을 사용하여 빌드 시 Git 저장소에 있는 여러 분기의 콘텐츠를 병합할 수 있는 방법을 알아봅니다.
 exl-id: f946d7e7-114a-4e33-bb82-2625d37bba2f
 TQID: https://experienceleague.adobe.com/W9-oYHPdxHPJgwKxguEEkRgf3JDo8iHQRnnsSPYbHCI
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: c2a6d2f87cf9f9c98f2af818f73b1fb2793c2e46
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 82%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 Git 하위 모듈을 사용하여 빌드 시 Git 저장소에 있는 여러 분기의 콘텐츠를 병합할 수 있습니다.
 
-Cloud Manager의 빌드 프로세스가 실행되면 먼저 파이프라인의 저장소를 복제하고 구성된 분기를 체크아웃합니다. 분기의 루트 디렉터리에 `.gitmodules` 파일이 있으면 명령을 실행합니다.
+Cloud Manager의 빌드 프로세스가 실행되면 먼저 파이프라인의 저장소를 복제하고 구성된 분기를 체크아웃합니다. 분기의 루트 디렉터리에 `.gitmodules` 파일이 있으면 명령이 실행됩니다.
 
 ```
 $ git submodule update --init
@@ -77,7 +73,7 @@ Git 하위 모듈에 대한 자세한 내용은 [Git 참조 설명서](https://g
 Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 
 * Git URL은 위에서 설명한 구문과 정확히 일치해야 합니다.
-* 보안상의 이유로 이러한 URL에 자격 증명을 임베드하지 마십시오.
+* 보안상의 이유로 이러한 URL에 자격 증명을 포함하지 마십시오.
 * 분기의 루트에 있는 하위 모듈만 지원됩니다.
 * Git 하위 모듈 참조는 특정 Git 커밋에 저장됩니다. 결과적으로 하위 모듈 저장소가 변경되면 참조된 커밋을 업데이트해야 합니다. 예를 들어 `git submodule update --remote`를 사용합니다.
 * 달리 필요하지 않은 경우 각 하위 모듈에 대해 `git config -f .gitmodules submodule.<submodule path>.shallow true`를 실행하여 “낮은” 하위 모듈을 사용하는 것이 좋습니다.
@@ -87,7 +83,7 @@ Git 하위 모듈을 사용할 때는 다음 사항에 유의하십시오.
 
 [비공개 저장소](private-repositories.md)를 사용할 때 Git 하위 모듈에 대한 지원은 Adobe 저장소를 사용할 때와 대부분 동일합니다.
 
-그러나 `pom.xml` 파일을 설정하고 `git submodule` 명령을 실행한 후에는 `.gitmodules` 파일을 Cloud Manager용 집계기 저장소의 루트 디렉터리에 추가하여 하위 모듈 설정을 감지해야 합니다.
+그러나 Cloud Manager에서 하위 모듈 설정을 검색하려면 `pom.xml` 파일을 설정하고 `git submodule` 명령을 실행한 후 `.gitmodules` 파일을 집계 저장소의 루트 디렉터리에 추가해야 합니다.
 
 ![.gitmodules 파일](assets/gitmodules.png)
 
