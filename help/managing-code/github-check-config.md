@@ -3,15 +3,12 @@ title: 비공개 저장소에 대한 가져오기 요청 확인
 description: 비공개 저장소에 대한 각각의 가져오기 요청 유효성 검사를 위해 자동으로 생성되는 파이프라인 제어 방법에 대해 알아봅니다.
 exl-id: 29c9e487-e196-411a-8cda-6751b0a56066
 TQID: https://experienceleague.adobe.com/duceoXUt2SqWI0ZXzyuqZtszLfJkWr53G5O5ze4nxTY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
 source-wordcount: 237
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -23,7 +20,7 @@ ht-degree: 95%
 
 ## 개인 저장소 확인 구성 {#configuration}
 
-[비공개 저장소](private-repositories.md#using)를 사용할 경우 [전체 스택 코드 품질 파이프라인](/help/overview/ci-cd-pipelines.md)이 자동으로 생성됩니다. 이 파이프라인은 가져오기 요청이 업데이트될 때마다 시작됩니다.
+[비공개 저장소](private-repositories.md#using)를 사용할 경우 [전체 스택 코드 품질 파이프라인](/help/overview/ci-cd-pipelines.md)이 자동으로 생성됩니다. 이 파이프라인은 각 가져오기 요청 업데이트에서 시작됩니다.
 
 `.cloudmanager/pr_pipelines.yml`비공개 저장소의 기본 분기에 파일을 만들어 이러한 검사를 제어할 수 있습니다.
 

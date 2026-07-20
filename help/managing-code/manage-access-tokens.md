@@ -3,15 +3,12 @@ title: Cloud Manager에서 액세스 토큰 관리
 description: Adobe Managed Services에서 Cloud Manager에서 나만의 Git을 가져오기에 사용되는 액세스 토큰을 보고, 편집하고, 삭제하는 방법에 대해 알아봅니다.
 exl-id: 873aad0b-d7c6-4bc3-a70d-bbfdc1e02193
 TQID: https://experienceleague.adobe.com/o-kW-Wuj-afgXomU0kErSwYsNZziQFkpvtxvU0PQj3M
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: b52942282fe5f825181123b3839ef155753c5e23
 workflow-type: tm+mt
-source-wordcount: 387
-ht-degree: 6%
+source-wordcount: 382
+ht-degree: 3%
 
 ---
 
@@ -19,13 +16,13 @@ ht-degree: 6%
 
 Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호스팅되는 저장소를 관리합니다. 이전에는 토큰이 만료되면 연결된 저장소를 다시 온보딩하여 계속 작동해야 했습니다.
 
-이제 **액세스 토큰 관리**&#x200B;를 통해 토큰을 보다 효율적으로 관리할 수 있습니다. GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps를 포함하여 지원되는 외부 Git 공급자에 연결된 토큰을 보거나 이름을 변경하거나 제거할 수 있습니다.
+이제 **액세스 토큰 관리**&#x200B;를 통해 토큰을 보다 효율적으로 관리할 수 있습니다. 지원되는 Git 공급자인 GitHub Enterprise, GitLab, Bitbucket 및 Azure DevOps에 대한 토큰을 관리할 수 있습니다.
 
 [Cloud Manager에 외부 저장소 추가](/help/managing-code/external-repositories.md)도 참조하세요.
 
 ## 액세스 토큰 보기 {#view-access-tokens}
 
-1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인한 다음 적절한 조직을 선택합니다.
+1. [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)에서 Cloud Manager에 로그인하고 적절한 조직을 선택합니다.
 1. **[내 프로그램](/help/getting-started/navigation.md#my-programs-console)** 콘솔에서 관리하려는 Git 액세스 토큰을 가져올 프로그램을 선택합니다.
 1. 사이드 메뉴의 **프로그램**&#x200B;에서 ![폴더 개요 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FolderOutline_18_N.svg) **저장소**&#x200B;를 클릭합니다.
 1. 페이지의 오른쪽 상단 모서리에서 **액세스 토큰 관리**&#x200B;를 클릭합니다.
@@ -37,7 +34,7 @@ Cloud Manager은 액세스 토큰을 사용하여 외부 Git 플랫폼에서 호
 1. **액세스 토큰 관리** 대화 상자에서 다음을 수행합니다.
    * 모든 액세스 토큰이 나열됩니다.
    * 모든 토큰을 **편집**&#x200B;할 수 있습니다.
-   * *현재 사용 중이 아닌 토큰만&#x200B;**삭제**&#x200B;할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
+   * *현재 사용 중이 아닌 토큰만&#x200B;**삭제**할 수 있습니다*. 토큰을 사용 중이면 ![개요 삭제 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) 단추가 비활성화됩니다.
 
 ## 액세스 토큰 편집 {#edit-access-tokens}
 
