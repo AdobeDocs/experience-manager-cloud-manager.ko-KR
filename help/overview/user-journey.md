@@ -3,9 +3,13 @@ title: 사용자 온보딩
 description: 다양한 온보딩 시나리오와 Cloud Manager를 시작하는 방법에 대해 알아보십시오.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 2cd89edca1c1dfac7f1b7b68eccdf1416efb4724
 workflow-type: tm+mt
 source-wordcount: 567
