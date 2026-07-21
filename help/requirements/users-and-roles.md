@@ -53,7 +53,7 @@ ht-degree: 80%
 
 [!UICONTROL Cloud Manager] 역할은 Admin Console에서 관리합니다. [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하면 특정 역할 멤버십이 제공됩니다.
 
-Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)을 참조하십시오.
+Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/kr/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)을 참조하십시오.
 
 관리자는 [!UICONTROL AEM Managed Services] 제품 컨텍스트에서 새 제품 프로필을 생성하여 [!UICONTROL Cloud Manager] 사용자에 대한 역할 기반 권한을 할당해야 하며, 이는 각각 4개의 [!UICONTROL Cloud Manager] 역할에 해당합니다.
 
