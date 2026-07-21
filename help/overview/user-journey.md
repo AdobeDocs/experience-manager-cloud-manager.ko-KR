@@ -1,31 +1,27 @@
 ---
-title: 사용자 여정
+title: 사용자 온보딩
 description: 다양한 온보딩 시나리오와 Cloud Manager를 시작하는 방법에 대해 알아보십시오.
 exl-id: deb3429c-dfcf-4e52-9aba-d9368aa240e6
 TQID: https://experienceleague.adobe.com/EnNaMZzu5bLUD3Jjsp6ovqFvoFM30ju4FOQJfmySLEk
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 2cd89edca1c1dfac7f1b7b68eccdf1416efb4724
 workflow-type: tm+mt
-source-wordcount: 560
-ht-degree: 100%
+source-wordcount: 567
+ht-degree: 62%
 
 ---
 
-# 사용자 여정 {#user-journey}
+# 사용자 온보딩 {#user-journey}
 
-AEM(Adobe Experience Manager) 사용자라면 다음 시나리오 중 하나에 해당할 수 있습니다.
+AEM(Adobe Experience Manager) 사용자는 다음 시나리오 중 하나에 해당합니다.
 
 * AEM 처음 사용자입니다.
 * 현재 AEM 6.x를 사용 중입니다.
 * [!UICONTROL Cloud Manager]를 사용하려면 AEM 6.5로 업그레이드해야 합니다.
 
-이 문서에서는 세 개의 시나리오를 설명하고 [!UICONTROL Cloud Manager]를 시작하기 위한 여정에 대해 설명합니다.
+이 문서에서는 이 세 가지 시나리오에 대해 설명하고 [!UICONTROL Cloud Manager] 시작 프로세스에 대해 설명합니다.
 
 >[!NOTE]
 >
@@ -43,7 +39,7 @@ AEM(Adobe Experience Manager) 사용자라면 다음 시나리오 중 하나에 
 
 * [!UICONTROL Cloud Manager]에 액세스할 URL.
 * [!UICONTROL Experience Cloud] 로그인 지침.
-* 필요한 경우 [!UICONTROL Cloud Manager]에 액세스할 수 있도록 사용자와 해당 권한을 관리하기 위해 Admin Console을 사용하는 방법.
+* 필요한 경우 Admin Console에 액세스할 수 있도록 사용자와 해당 권한을 관리하기 위해 Cloud Manager을 사용하는 방법.
 
 ### 현재 Adobe Managed Services 고객 {#existing-customer}
 
@@ -51,15 +47,15 @@ AEM(Adobe Experience Manager) 사용자라면 다음 시나리오 중 하나에 
 
 업그레이드 중 Cloud Manager에 온보딩되고 [!UICONTROL Cloud Manager]에 액세스할 수 있는 URL이 제공됩니다. 또한 [!UICONTROL Cloud Manager]에 액세스해야 하는 사용자는 Admin Console을 사용하여 사용자와 해당 권한을 관리해야 합니다.
 
-AEM 환경에 새 코드 변경 사항을 배포하기 위해 [!UICONTROL Cloud Manager]를 사용하기 시작하므로 기존 AEM 프로젝트도 권장 모범 사례를 준수해야 합니다.
+[!UICONTROL Cloud Manager]을(를) 사용하여 AEM 환경에 새 코드 변경 내용을 배포하기 시작했으므로 기존 AEM 프로젝트도 권장 사례를 준수해야 합니다.
 
 AEM 6.5로 업그레이드할 경우의 이점에 대한 자세한 내용은 [AEM 6.5로 업그레이드](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/implementing/deploying/upgrading/upgrade)를 참조하십시오.
 
 ## [!UICONTROL Cloud Manager] 액세스 {#accessing-cloud-manager}
 
-Adobe Identity Management 자격 증명을 사용하여 [!UICONTROL Experience Cloud] 랜딩 페이지에 로그인합니다. 여기서 접속할 수 있는 솔루션 전환기에서 AEM을 선택하여 [!UICONTROL Cloud Manager] 및 AEM 환경에 액세스합니다.
+Adobe Identity Management 자격 증명을 사용하여 [!UICONTROL Experience Cloud] 랜딩 페이지에 로그인합니다. 솔루션 전환기에서 AEM을 선택하여 [!UICONTROL Cloud Manager] 및 AEM 환경에 액세스합니다.
 
-[!UICONTROL Cloud Manager]에 처음 로그인하면 [!UICONTROL Cloud Manager] UI에서 직접 AEM 환경에 액세스할 수 있습니다. 이 시점에 [!UICONTROL Cloud Manager]의 모든 가능성을 알아보고 스테이징 및 프로덕션 환경에 배포할 첫 번째 코드 분기가 준비됩니다.
+[!UICONTROL Cloud Manager]에 처음 로그인하면 [!UICONTROL Cloud Manager] UI에서 직접 AEM 환경에 액세스할 수 있습니다. 이제 [!UICONTROL Cloud Manager]의 모든 기능을 사용하고 스테이징 및 프로덕션 환경에 배포할 첫 번째 코드 분기를 준비할 준비가 되었습니다.
 
 [!UICONTROL Cloud Manager]를 시작하려면 [최초 로그인](/help/getting-started/first-time-login.md)을 참조하십시오.
 
@@ -72,11 +68,11 @@ AEM에 대한 자세한 내용은 [배포 및 유지 관리](https://experiencel
 1. 코드 저장소 환경 설정.
 1. 내 팀과 역할 설정. 역할 멤버십은 Admin Console을 사용하여 [!UICONTROL Cloud Manager] 프로필에 사용자를 추가하여 할당됩니다.
 1. Git 저장소에서 소스 코드 분기 설정.
-1. 부하 및 성능 KPI(주요 성과 지표)를 기준으로 목표를 정의합니다.
+1. 부하 및 성과 KPI(주요 성과 지표)를 정의합니다.
 1. 모든 품질 검사를 성공적으로 통과한 후 코드를 스테이징 및 프로덕션 환경에 성공적으로 배포하기 위한 테스트 시나리오 정의.
 
-## 전체 여정 {#end-to-end-journey}
+## 프로세스 개요 {#end-to-end-journey}
 
-이 다이어그램은 [!UICONTROL Cloud Manager] CI/CD 파이프라인을 사용하여 코드 변경을 스테이징 및 프로덕션 환경에 배포하는 경우의 고객 여정을 개략적으로 보여 줍니다.
+다음 다이어그램은 [!UICONTROL Cloud Manager] CI/CD 파이프라인을 사용하여 코드 변경을 스테이징 및 프로덕션 환경에 배포하는 경우의 프로세스를 요약합니다.
 
-![전체 여정](/help/assets/screen_shot_2018-05-15at124004pm.png)
+![Cloud Manager에 온보딩하기 위한 고객 여정으로, 환경 프로비저닝 또는 업그레이드, 사용자 및 역할 관리, 프로젝트 구현 및 CI/CD 파이프라인을 통해 신규 및 기존 고객의 경로를 보여줍니다.](/help/assets/screen_shot_2018-05-15at124004pm.png)
