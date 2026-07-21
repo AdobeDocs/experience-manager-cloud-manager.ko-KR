@@ -3,25 +3,21 @@ title: 사용자 및 역할 추가
 description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
-source-wordcount: 796
-ht-degree: 96%
+source-wordcount: 797
+ht-degree: 80%
 
 ---
 
 # 사용자 및 역할 추가 {#add-users-and-roles}
 
-[!UICONTROL Cloud Manager]의 많은 기능을 사용하려면 특정 권한이 필요합니다. 예를 들어 특정 사용자만 프로그램에 대한 KPI(주요 성과 지표)를 설정할 수 있습니다. 이러한 권한은 논리적으로 역할로 그룹화됩니다.
+[!UICONTROL Cloud Manager]의 많은 기능을 사용하려면 특정 권한이 필요합니다. 예를 들어 승인된 사용자만 프로그램에 대한 KPI(주요 성과 지표)를 설정할 수 있습니다. 이러한 권한은 논리적으로 역할로 그룹화됩니다.
 
-[!UICONTROL Cloud Manager]는 현재 특정 기능의 가용성을 제어하는 네 가지 사용자 역할을 정의합니다.
+[!UICONTROL Cloud Manager]은(는) 특정 기능의 가용성을 제어하는 네 가지 사용자 역할을 정의합니다.
 
 * 비즈니스 소유자
 * 프로그램 관리자
@@ -51,9 +47,9 @@ ht-degree: 96%
 
 ## Admin Console을 사용하여 제품 프로필 만들기 {#using-admin-console-to-create-a-profile}
 
-[!UICONTROL Cloud Manager] 역할은 Admin Console에서 관리합니다. [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
+[!UICONTROL Cloud Manager] 역할은 Admin Console에서 관리합니다. [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하면 특정 역할 멤버십이 제공됩니다.
 
-Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 참조하십시오.
+Adobe Admin Console을 통해 조직 전체에 대한 Adobe 권한을 한 곳에서 관리할 수 있습니다. Adobe Admin Console에 대한 자세한 내용은 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)을 참조하십시오.
 
 관리자는 [!UICONTROL AEM Managed Services] 제품 컨텍스트에서 새 제품 프로필을 생성하여 [!UICONTROL Cloud Manager] 사용자에 대한 역할 기반 권한을 할당해야 하며, 이는 각각 4개의 [!UICONTROL Cloud Manager] 역할에 해당합니다.
 
@@ -87,11 +83,11 @@ CQDOC-22790
 
    ![새 프로필](/help/assets/admin-console-product-profiles.png)
 
-1. [!UICONTROL Cloud Manager]에 대한 새 역할을 설정하는 데 필요한 정보를 제공합니다.
+1. [!UICONTROL Cloud Manager]에 대한 새 역할을 설정하려면 정보를 제공하십시오.
 
    * **프로필 이름** - **프로필 이름**&#x200B;은 어떤 것이든 사용할 수 있지만 혼동을 피하기 위해 **권장 프로필 이름** 열의 값을 사용하는 것이 좋습니다.
    * **표시 이름** - **표시 이름**&#x200B;은 [!UICONTROL Cloud Manager]에서 정의한 기술 값이어야 합니다(다음 테이블 참조).
-   * **권한 그룹** - 프로필에 대한 권한 그룹을 선택할 수 있습니다(항상 사용 가능한 것은 아님).
+   * **권한 그룹** - 프로필에 대한 권한 그룹을 선택합니다(항상 사용 가능한 것은 아님).
 
 <!-- 
 CQDOC-22790
@@ -131,12 +127,12 @@ CQDOC-22790
 
 1. **제품 및 사용자 그룹 편집** 대화 상자에서 ![추가 아이콘(더하기 기호)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)을 클릭하고 사용자에게 할당할 프로필을 선택합니다.
 
-   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘(더하기 기호)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 버튼에 편집 버튼(연필)이 나타나며 같은 방식으로 사용할 수 있습니다.
+   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘과 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 단추는 편집 단추(연필)이지만 같은 방식으로 작동합니다.
 
    ![제품 및 사용자 그룹 편집](/help/assets/admin-console-edit-products-and-user-groups.png)
 
 1. **저장**&#x200B;을 클릭하여 사용자에 프로필을 저장합니다.
 
-프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고 **할당된 제품 프로필**&#x200B;을 선택한 후 **제품 프로필 할당**&#x200B;을 클릭하여 프로필을 할당합니다.
+프로필을 사용자 그룹에 할당하려면 동일한 단계를 반복하되 **사용자 탭**&#x200B;의 왼쪽 탐색 패널에서 **사용자 그룹**&#x200B;을 선택합니다. 사용자 그룹을 클릭하고 **할당된 제품 프로필**&#x200B;을 선택한 다음 **제품 프로필 할당**&#x200B;을 클릭하여 프로필을 할당합니다.
 
 ![그룹에 프로필 할당](/help/assets/admin-console-edit-user-groups.png)
