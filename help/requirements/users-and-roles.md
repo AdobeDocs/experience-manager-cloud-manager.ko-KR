@@ -3,9 +3,13 @@ title: 사용자 및 역할 추가
 description: Admin Console을 사용하여 사용자 및 역할을 추가하고 프로필을 만드는 방법에 대해 알아봅니다.
 exl-id: 40086cf0-a1c4-4dde-9dbf-84ea5fa53b84
 TQID: https://experienceleague.adobe.com/95vfyk6-SMg7GFaCVWkiaaGObo603DJqvExEgPFrwqw
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 130406286e65ad0e0651451766ca740f3458a9c1
 workflow-type: tm+mt
 source-wordcount: 797
@@ -127,7 +131,7 @@ CQDOC-22790
 
 1. **제품 및 사용자 그룹 편집** 대화 상자에서 ![추가 아이콘(더하기 기호)](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)을 클릭하고 사용자에게 할당할 프로필을 선택합니다.
 
-   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘과 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 단추는 편집 단추(연필)이지만 같은 방식으로 작동합니다.
+   * 사용자가 이미 역할에 할당된 경우 ![추가 아이콘과 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) 단추는 편집 단추(연필)이지만 같은 방식으로 작동합니다.
 
    ![제품 및 사용자 그룹 편집](/help/assets/admin-console-edit-products-and-user-groups.png)
 
