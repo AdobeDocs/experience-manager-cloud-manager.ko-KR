@@ -29,7 +29,7 @@ ht-degree: 85%
 
 ## 사용자 역할 {#user-roles}
 
-[!UICONTROL Cloud Manager]의 역할 관리는 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)을 사용하여 수행됩니다. [!UICONTROL Cloud Manager]의 모든 사용자는 고객의 IMS 조직 멤버여야 하며 Adobe Managed Services 제품 컨텍스트를 가지고 있어야 합니다. Admin Console의 [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
+[!UICONTROL Cloud Manager]의 역할 관리는 [Admin Console](https://helpx.adobe.com/kr/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)을 사용하여 수행됩니다. [!UICONTROL Cloud Manager]의 모든 사용자는 고객의 IMS 조직 멤버여야 하며 Adobe Managed Services 제품 컨텍스트를 가지고 있어야 합니다. Admin Console의 [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
 
 역할을 설정하는 방법에 대한 자세한 내용은 [사용자 및 역할 설정](/help/requirements/users-and-roles.md)을 참조하십시오.
 
