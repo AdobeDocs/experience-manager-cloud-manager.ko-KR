@@ -3,23 +3,19 @@ title: 역할 기반 권한
 description: 클라우드 리소스에 대한 액세스를 관리하기 위해 Cloud Manager가 미리 구성한 역할 기반 사용 권한에 대해 알아보십시오.
 exl-id: b66533fb-db93-40e8-919d-581261fdbf24
 TQID: https://experienceleague.adobe.com/JXI9QGaexNJga8o80oLNo7allavc1x021DWmef-AkTc
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 50eb58593d7f78492fd384c99c3727c5f731c989
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: e94834c5e13825a468ef5344e77024c4fe4a29e6
 workflow-type: tm+mt
-source-wordcount: 592
-ht-degree: 99%
+source-wordcount: 596
+ht-degree: 85%
 
 ---
 
 # 역할 기반 권한 {#role-based-permissions}
 
-[!UICONTROL Cloud Manager]에는 적절한 권한으로 미리 구성된 역할이 있습니다. 예를 들어 개발자는 코드를 개발하고 Git 저장소에 코드를 푸시할 수 있는 권한을 가지고 있습니다. 비즈니스 소유자는 KPI(주요 성과 지표)를 정의하고 배포를 승인할 수 있는 다양한 권한을 가지고 있습니다.
+[!UICONTROL Cloud Manager]에는 적절한 사용 권한을 가진 미리 구성된 역할이 포함되어 있습니다. 예를 들어 소프트웨어 개발자는 코드를 작성하고 이 코드를 Git 저장소에 푸시할 수 있는 권한을 갖습니다. 비즈니스 리드는 다양한 권한을 가지고 있으므로 주요 성과 지표(KPI)를 정의하고 배포를 승인할 수 있습니다.
 
 >[!NOTE]
 >
@@ -29,7 +25,7 @@ ht-degree: 99%
 
 ## 사용자 역할 {#user-roles}
 
-[!UICONTROL Cloud Manager]의 역할 관리는 [Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-console.html)을 사용하여 수행됩니다. [!UICONTROL Cloud Manager]의 모든 사용자는 고객의 IMS 조직 멤버여야 하며 Adobe Managed Services 제품 컨텍스트를 가지고 있어야 합니다. Admin Console에서 [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
+[!UICONTROL Cloud Manager]의 역할 관리는 [Admin Console](https://helpx.adobe.com/business/enterprise/plan-your-deployment/basic-concepts/admin-console.html)을 사용하여 수행됩니다. [!UICONTROL Cloud Manager]의 모든 사용자는 고객의 IMS 조직 멤버여야 하며 Adobe Managed Services 제품 컨텍스트를 가지고 있어야 합니다. Admin Console의 [!UICONTROL Cloud Manager] 제품 프로필에 사용자를 추가하여 특정 역할 멤버십을 제공합니다.
 
 역할을 설정하는 방법에 대한 자세한 내용은 [사용자 및 역할 설정](/help/requirements/users-and-roles.md)을 참조하십시오.
 
@@ -46,7 +42,7 @@ ht-degree: 99%
 
 ## 사용자 권한 {#user-permissions}
 
-각 역할에는 사전 구성된 특정 권한이 있습니다. 다음 테이블에는 사용 가능한 권한과 해당 권한을 실행할 수 있는 역할이 나열되어 있습니다.
+각 역할에는 사전 구성된 특정 권한이 있습니다. 다음 표에는 사용 가능한 권한과 이러한 권한을 실행할 수 있는 역할이 나열되어 있습니다.
 
 | 권한 | 설명 | 비즈니스 소유자 | 배포 관리자 | 프로그램 관리자 | 개발자 | CSE |
 | --- | --- | --- | --- | --- | --- | --- |
