@@ -118,7 +118,7 @@ Cloud Manager에는 Cloud Manager의 다양한 기능에 대한 액세스를 제
 
 1. **사용자 추가**&#x200B;를 클릭하고 사용자 정의 권한이 있는 새 제품 프로필에 사용자를 할당합니다.
 
-Admin Console을 사용하는 방법에 대한 자세한 내용은 [기업 사용자의 제품 프로필 관리](https://helpx.adobe.com/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) 문서의 **제품 프로필에 사용자 및 사용자 그룹 추가**&#x200B;를 참조하십시오.
+Admin Console을 사용하는 방법에 대한 자세한 내용은 [기업 사용자의 제품 프로필 관리](https://helpx.adobe.com/kr/business/enterprise/manage-products-and-entitlements/manage-products-and-product-profiles/manage-product-profiles.html) 문서의 **제품 프로필에 사용자 및 사용자 그룹 추가**&#x200B;를 참조하십시오.
 
 ## 구성 가능한 권한 {#configurable-permissions}
 
