@@ -3,10 +3,15 @@ title: 환경 일관성을 유지하기 위한 콘텐츠 복사
 description: Cloud Manager의 콘텐츠 복사를 사용하면 사용자가 테스트를 위해 Adobe Managed Services에서 호스팅하는 Adobe Experience Manager 6.x 프로덕션 환경으로 주문형 변경 가능한 콘텐츠를 복사할 수 있습니다.
 exl-id: 97915e58-a1d3-453f-b5ce-cad55ed73262
 TQID: https://experienceleague.adobe.com/ffcf9UNSOp7oIpDZdtLcoFWp-Ww-A1XV3kCDmKqJLSw
-product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 845c182685d59844a2349c90d176d3e7c8a594cf
 workflow-type: tm+mt
 source-wordcount: 1435
