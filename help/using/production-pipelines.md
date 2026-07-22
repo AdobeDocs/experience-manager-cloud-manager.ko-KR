@@ -294,4 +294,4 @@ Smart Build를 사용할 때는 다음 사항에 유의하십시오.
 
 이 비디오에서는 이 문서에 자세히 설명된 파이프라인 생성 프로세스에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26314/)
+>[!VIDEO](https://video.tv.adobe.com/v/327606?captions=kor)
