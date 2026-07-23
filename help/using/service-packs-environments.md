@@ -15,10 +15,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8964aad406d3e7fc5b911b98f928ad0427511230
+source-git-commit: b4846046c6c410642d3e23f2cc2c002a6d53b3b7
 workflow-type: tm+mt
-source-wordcount: 468
-ht-degree: 94%
+source-wordcount: 455
+ht-degree: 91%
 
 ---
 
@@ -95,13 +95,13 @@ Cloud Manager 사용자 인터페이스를 통해 개발 환경에 대한 서비
 
    ![서비스 팩 업데이트 거부 또는 승인](/help/using/assets/service-pack-reject-approve.png)
 
-1. 다음 중 하나를 수행합니다.
+1. 다음 중 하나를 수행하십시오.
 
    * 업데이트를 완료하려면 **승인**&#x200B;을 클릭합니다.
 
    ![서비스 팩 승인](/help/using/assets/service-pack-approve.png)
 
-   * 업데이트를 취소하려면 **거부**&#x200B;를 클릭합니다.
-서비스 팩 설치가 취소되며 변경 사항이 적용되지 않습니다.
+   * 업데이트를 취소하려면 **거부**&#x200B;를 클릭하십시오.
+     서비스 팩 설치가 취소되고 변경 사항이 적용되지 않습니다.
 
    ![서비스 팩 거부](/help/using/assets/service-pack-reject.png)
