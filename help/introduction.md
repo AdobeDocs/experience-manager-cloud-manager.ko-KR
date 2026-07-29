@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: ee4f497a8bb5fb2d37fd8283721ebc9891f9053a
 workflow-type: tm+mt
 source-wordcount: 1266
-ht-degree: 69%
+ht-degree: 71%
 
 ---
 
@@ -32,7 +32,7 @@ AMS용 Cloud Manager(Adobe Managed Services)에 대해 알아보고 조직이 �
 >[!CONTEXTUALHELP]
 >id="aemcloud_cloudmanager_introduction"
 >title="AMS용 Cloud Manager 소개"
->abstract="이를 통해 조직은 CI/CD 프레임워크를 사용하여 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있습니다. 이 프레임워크를 사용하면 팀이 성능 또는 보안을 손상하지 않고 사용자 지정 또는 업데이트를 신속하게 수행할 수 있습니다."
+>abstract="이를 통해 조직은 CI/CD 프레임워크를 사용하여 클라우드에서 Adobe Experience Manager을 자체 관리할 수 있습니다. 이 프레임워크를 사용하면 팀은 성능 또는 보안을 훼손하지 않고 사용자 정의 또는 업데이트를 신속하게 수행할 수 있습니다."
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/cloud-manager/programs#cloud-manager" text="프로그램 만들기"
 >additional-url="https://experienceleague.adobe.com/ko/docs/experience-manager-learn/cloud-service/cloud-manager/environments#cloud-manager" text="환경 만들기"
 
