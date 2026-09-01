@@ -3,12 +3,9 @@ title: 프로젝트 설정
 description: Cloud Manager를 사용하여 프로젝트를 관리하고 배포할 수 있도록 프로젝트를 설정하는 방법에 대해 알아보십시오.
 exl-id: ed994daf-0195-485a-a8b1-87796bc013fa
 TQID: https://experienceleague.adobe.com/OhaZ2-x6p1b6aF0xHwr2G-RNTYPd15pqHVxKVwv-GDM
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
 source-wordcount: 1411
 ht-degree: 65%
@@ -25,14 +22,14 @@ Cloud Manager를 사용하여 프로젝트를 관리하고 배포할 수 있도�
 
 * 프로젝트는 Apache Maven을 사용하여 빌드해야 합니다.
 * Git 저장소의 루트에 `pom.xml` 파일이 있어야 합니다.
-   * 이 `pom.xml` 파일은 필요에 따라 여러 하위 모듈을 참조할 수 있습니다(다른 하위 모듈 포함).
-   * `pom.xml` 파일에 추가 Maven 아티팩트 저장소에 대한 참조를 추가할 수 있습니다.
-   * 구성된 경우 [암호로 보호된 아티팩트 저장소](#password-protected-maven-repositories)에 대한 액세스가 지원됩니다. 그러나 네트워크로 보호된 아티팩트 저장소에 대한 액세스는 지원되지 않습니다.
+  * 이 `pom.xml` 파일은 필요에 따라 여러 하위 모듈을 참조할 수 있습니다(다른 하위 모듈 포함).
+  * `pom.xml` 파일에 추가 Maven 아티팩트 저장소에 대한 참조를 추가할 수 있습니다.
+  * 구성된 경우 [암호로 보호된 아티팩트 저장소](#password-protected-maven-repositories)에 대한 액세스가 지원됩니다. 그러나 네트워크로 보호된 아티팩트 저장소에 대한 액세스는 지원되지 않습니다.
 * Cloud Manager은 `target` 디렉터리에 포함된 콘텐츠 패키지 .zip 파일을 스캔하여 배포 가능한 콘텐츠 패키지를 검색합니다.
-   * 여러 하위 모듈에서 콘텐츠 패키지를 생성합니다.
+  * 여러 하위 모듈에서 콘텐츠 패키지를 생성합니다.
 * Cloud Manager은 `conf` 및 `conf.d`(이)라는 `target`의 하위 디렉터리에 포함된 `zip`개의 파일을 스캔하여 배포 가능한 Dispatcher 아티팩트를 검색합니다.
 * 콘텐츠 패키지가 두 개 이상인 경우 패키지 배포 순서가 보장되지 않습니다.
-   * 특정 순서가 필요한 경우 콘텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
+  * 특정 순서가 필요한 경우 콘텐츠 패키지 종속성을 사용하여 순서를 정의할 수 있습니다.
 * 배포에서 패키지를 [건너뜀](#skipping-content-packages)할 수 있습니다.
 
 ## Cloud Manager에서 Maven 프로필 활성화 {#activating-maven-profiles-in-cloud-manager}
@@ -115,7 +112,7 @@ Cloud Manager 빌드 환경 내에서 Maven 프로필을 활성화하려면 `CM_
 
 ## 암호로 보호된 Maven 저장소 지원 {#password-protected-maven-repositories}
 
-암호로 보호된 Maven 저장소의 아티팩트는 이러한 방식으로 배포된 코드에 대해 Cloud Manager의 품질 표준에서 적용하는 품질 검사가 완전히 적용되지 않으므로 주의하여 사용해야 합니다. 또한 Adobe에서는 이진과 함께 Java 소스 및 전체 프로젝트 소스 코드를 배포하는 것이 좋습니다.
+암호로 보호된 Maven 저장소의 아티팩트는 이러한 방식으로 배포된 코드에 대해 Cloud Manager의 품질 표준에서 적용하는 품질 검사가 완전히 적용되지 않기 때문에 신중하게 사용해야 합니다. 또한 Adobe에서는 이진과 함께 Java 소스 및 전체 프로젝트 소스 코드를 배포하는 것이 좋습니다.
 
 >[!TIP]
 >

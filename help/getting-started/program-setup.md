@@ -3,17 +3,13 @@ title: 프로그램 설정
 description: 온보딩 후 비즈니스 소유자는 프로그램의 일부 초기 설정을 수행해야 합니다.
 exl-id: 795c7112-d564-4fbf-96a1-152a6c286bf2
 TQID: https://experienceleague.adobe.com/AqaA4GSOptV11h2y4V1Mt15KmEhEYBaiM-RvBFjtfWY
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 4381c51e54aaf1286b69c149dbf57c77bcd9a8bd
 workflow-type: tm+mt
-source-wordcount: 549
-ht-degree: 65%
+source-wordcount: 548
+ht-degree: 60%
 
 ---
 
@@ -81,7 +77,7 @@ ht-degree: 65%
 
 ## 프로그램 간 전환 {#swithing-programs}
 
-프로그램에서 작업할 때 Cloud Manager 개요 페이지로 돌아가지 않고 다른 프로그램으로 빠르게 전환할 수 있습니다.
+프로그램에서 작업할 때 Cloud Manager 개요 페이지로 돌아가지 않고 다른 프로그램으로 전환할 수 있습니다.
 
 작업 표시줄을 사용하여 다른 프로그램으로 전환하거나 현재 프로그램을 편집하거나 새 프로그램을 추가합니다.
 
@@ -91,12 +87,12 @@ ht-degree: 65%
 
 사이트 KPI는 스테이징 환경에서 실행되는 테스트에서 측정됩니다. 일반적으로 이러한 KPI는 스테이징 환경의 기능과 일치하도록 조정됩니다.
 
-예를 들어 프로덕션 환경에서 분당 평균 1000페이지 뷰를 예상하고 프로덕션에 4개의 Dispatcher/퍼블리싱 서버가 있는 사용자는 이 시나리오를 분당 250페이지 뷰로 줄입니다. 이 시나리오에서는 스테이징 환경이 단일 Dispatcher/게시 서버 쌍으로만 구성된다고 가정합니다.
+예를 들어 프로덕션 환경에서 분당 평균 1000페이지 뷰를 예상하고 프로덕션에 4개의 Dispatcher/퍼블리싱 서버가 있는 팀은 이 시나리오를 분당 250페이지 뷰로 확장합니다. 이 시나리오에서는 스테이징 환경이 단일 Dispatcher/게시 서버 쌍으로만 구성된다고 가정합니다.
 
 자산 성능 테스트에는 30분 동안 자산을 반복적으로 업로드하는 작업이 포함됩니다. 각 자산에 대한 처리 시간과 다양한 시스템 수준 지표가 테스트 전반에 걸쳐 측정됩니다.
 
-Akamai 또는 CloudFront와 같은 CDN(콘텐츠 전송 네트워크)이 프로덕션 환경에 대해 구성되어 있습니다. [!UICONTROL Cloud Manager]은(는) 스테이징 환경에 대해 직접 테스트하므로 KPI는 CDN을 통과할 것으로 예상되는 트래픽만 반영합니다. 즉, 캐시 누락만 반영합니다. 일반적으로 이 트래픽은 총 프로덕션 트래픽의 비교적 작은 하위 집합입니다.
+Akamai 또는 CloudFront와 같은 CDN(콘텐츠 전송 네트워크)이 프로덕션 환경에 대해 구성되어 있습니다. [!UICONTROL Cloud Manager]은(는) 스테이징 환경에 대해 직접 테스트하므로 KPI는 CDN을 통과할 것으로 예상되는 트래픽만 반영합니다. 캐시 누락을 나타냅니다. 일반적으로 이 트래픽은 총 프로덕션 트래픽의 비교적 작은 하위 집합입니다.
 
 ## 비디오 개요 {#video}
 
->[!VIDEO](https://video.tv.adobe.com/v/34267?captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/26313/)
