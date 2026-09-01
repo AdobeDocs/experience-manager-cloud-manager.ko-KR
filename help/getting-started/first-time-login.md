@@ -3,14 +3,10 @@ title: 최초 로그인
 description: 일반 구성을 설정하고 Cloud Manager를 처음 사용할 준비가 되었으면 이 페이지를 따르십시오.
 exl-id: eb043437-8566-4a8d-8c5c-c8cf1d33daeb
 TQID: https://experienceleague.adobe.com/2fA-qKPKPhxCCRzxWC5pujXWQCa9vcP8tJtnSXSdipU
-product_v2:
-  - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: cd2426f1-5719-4006-b8c2-738e5969754b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+product_v2: id: c68cd75e-5bca-4bc3-a60e-9e183f816441id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: cd2426f1-5719-4006-b8c2-738e5969754b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -27,7 +23,7 @@ ht-degree: 30%
 
 ## 처음 로그인 {#logging-in-for-the-first-time}
 
-1. [experience.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
+1. [experience.adobe.com](https://experience.adobe.com/experiencemanager)에서 Cloud Manager에 로그인합니다. 자세한 내용은 [Adobe Experience Hub 정보](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/experience-hub/experience-hub)를 참조하세요.
 1. 왼쪽 사이드 패널에서 **Cloud Manager**&#x200B;를 클릭합니다.
 
    Experience Manager의 왼쪽 패널에서 ![Cloud Manager](/help/getting-started/assets/cloud-manager-experiencemanager.png)
@@ -59,4 +55,4 @@ Cloud Manager에서는 프로그램 활동에 대한 통합된 보기를 제공�
 
 >[!NOTE]
 >
->기본적으로 AEM 환경에 대한 액세스 권한이 있는 사용자는 Cloud Manager 사용자 역할도 갖게 됩니다. 이 역할은 사용자에게 프로그램 세부 사항 보기에 대한 액세스 권한을 부여하지 않습니다. Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 사용하여 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.
+>기본적으로 AEM 환경에 대한 액세스 권한이 있는 사용자는 Cloud Manager 사용자 역할도 갖게 됩니다. 이 역할은 사용자에게 프로그램 세부 정보 보기에 대한 액세스 권한을 제공하지 않습니다. Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 사용하여 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.
