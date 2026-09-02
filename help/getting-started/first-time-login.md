@@ -10,7 +10,7 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 1692390e24f8fa7d719bd8293a99586ec4ec36d4
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
 source-wordcount: 294
 ht-degree: 30%
@@ -59,4 +59,4 @@ Cloud Manager에서는 프로그램 활동에 대한 통합된 보기를 제공�
 
 >[!NOTE]
 >
->기본적으로 AEM 환경에 대한 액세스 권한이 있는 사용자는 Cloud Manager 사용자 역할도 갖게 됩니다. 이 역할은 사용자에게 프로그램 세부 사항 보기에 대한 액세스 권한을 부여하지 않습니다. Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 사용하여 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.
+>기본적으로 AEM 환경에 대한 액세스 권한이 있는 사용자는 Cloud Manager 사용자 역할도 갖게 됩니다. 이 역할은 사용자에게 프로그램 세부 정보 보기에 대한 액세스 권한을 제공하지 않습니다. Cloud Manager 사용자 역할만 있는 사용자는 프로그램 메뉴 옵션을 사용하여 AEM 환경 작성자 URL로 이동할 수 있습니다(환경이 있는 경우). 이러한 사용자는 프로그램 수준 액세스 권한을 얻으려면 관리자에게 문의해야 합니다.

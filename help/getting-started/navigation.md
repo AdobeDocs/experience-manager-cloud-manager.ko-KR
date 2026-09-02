@@ -10,9 +10,9 @@ feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+source-git-commit: dac18093bc590afbd33e358582b3f1c703ce23e1
 workflow-type: tm+mt
-source-wordcount: 1641
+source-wordcount: 1640
 ht-degree: 36%
 
 ---
@@ -104,16 +104,16 @@ call-to-action 및 통계 섹션은 조직에 대한 집계 데이터를 제공�
 
 내 프로그램 콘솔의 주요 내용은 **내 프로그램** 섹션으로 여기에 프로그램이 개별 카드로 나열됩니다. 프로그램에 대한 자세한 내용을 보려면 카드를 클릭하여 프로그램의 **프로그램 개요** 페이지에 액세스합니다.
 
-권한에 따라 특정 프로그램을 선택하지 못할 수도 있습니다.
+권한에 따라 특정 프로그램을 선택할 수 없습니다.
 
 다음 정렬 옵션을 사용하여 원하는 프로그램을 빠르게 찾을 수 있습니다.
 
 ![정렬 옵션](/help/getting-started/assets/cloud-manager-my-programs-sorting.png)
 
 * 정렬 기준:
-   * 생성 일자
-   * 프로그램 이름
-   * 상태
+  * 생성 일자
+  * 프로그램 이름
+  * 상태
 * ![정렬 순서 아래로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) / ![정렬 순서 위로 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderUp_18_N.svg) 프로그램을 각각 위나 아래로 정렬합니다.
 * ![기본 눈금 보기 아이콘](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ClassicGridView_18_N.svg) / ![텍스트 글머리 기호 아이콘 또는 목록](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TextBulleted_18_N.svg) 프로그램을 각각 눈금 형식 또는 목록 형식으로 봅니다.
 
@@ -126,8 +126,8 @@ call-to-action 및 통계 섹션은 조직에 대한 집계 데이터를 제공�
 * 프로그램 이미지 (구성된 경우)
 * 프로그램 이름(위의 예에서는 *WKND Magazine*)
 * 서비스 유형:
-   * AMS 프로그램용 **Experience Manager**
-   * [AEM as a Cloud Service 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/home)용 **Experience Manager Cloud**
+  * AMS 프로그램용 **Experience Manager**
+  * [AEM as a Cloud Service 프로그램](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/implementing/home)용 **Experience Manager Cloud**
 * 상태(위의 예에서는 *준비*)
 * 구성된 솔루션
 * 생성일
