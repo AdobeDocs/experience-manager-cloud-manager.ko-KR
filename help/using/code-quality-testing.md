@@ -180,7 +180,7 @@ Cloud Manager은 **비즈니스 소유자** 역할에 의해 설정된 KPI(응�
 30분간의 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 시드 URL 세트를 사용하여 스테이징 환경을 크롤합니다. 이러한 URL에서 시작하여 각 페이지의 HTML을 검사하고 링크를 폭 우선 방식으로 순회합니다.
 
 * 이 크롤링 프로세스는 기본적으로 최대 5000페이지로 제한됩니다.
-* 테스트할 최대 페이지 수는 [파이프라인 변수 ](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`를 설정하여 덮어쓸 수 있습니다.
+* 테스트할 최대 페이지 수는 [파이프라인 변수 &#x200B;](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`를 설정하여 덮어쓸 수 있습니다.
   * 허용되는 값은 `2000` - `7000`입니다.
 * 크롤러의 요청에는 10초의 고정 시간 초과가 있습니다.
 
