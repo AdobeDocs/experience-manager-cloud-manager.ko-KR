@@ -5,25 +5,33 @@ exl-id: 6a574858-a30e-4768-bafc-8fe79f928294
 TQID: https://experienceleague.adobe.com/gAO8BdTx9-Sq8evIuI3hIaHIUixk-IulQagCI-Jssrc
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
   - id: ff09c71c-26a9-449a-85f8-2aeb8ce96100
+    internal-label: Implementation
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 7cd0317c081cdfdefb61b1c953fca179cd25eb1a
 workflow-type: tm+mt
-source-wordcount: 2880
+source-wordcount: '2880'
 ht-degree: 82%
-
 ---
-
 # 코드 품질 테스트 {#code-quality-testing}
 
 파이프라인의 코드 품질 테스트가 어떻게 작동하고 배포 품질을 어떻게 개선할 수 있는지 알아봅니다.
@@ -42,10 +50,10 @@ ht-degree: 82%
 * 성능 테스트
 * 보안 테스트
 
-각 게이트에는 게이트에 의해 식별되는 문제에 대한 3계층 구조가 있습니다.
+각 게이트에는 게이트에서 식별한 문제에 대한 3계층 구조가 있습니다.
 
 * **심각** - 파이프라인의 즉각적인 실패를 초래하는 문제입니다.
-* **중요** - 파이프라인을 일시 중지 상태로의 전환을 초래하는 문제입니다. 배포 리더, 프로젝트 리더 또는 비즈니스 소유자는 문제를 재정의할 수 있습니다. 이 경우 파이프라인은 의도한 대로 진행됩니다. 또는 파이프라인이 오류로 중단되는 경우 문제를 수락할 수 있습니다. 중요한 오류의 재지정에는 [시간 초과](/help/using/code-deployment.md#timeouts)가 적용됩니다.
+* **중요** - 파이프라인을 일시 중지 상태로의 전환을 초래하는 문제입니다. 배포 리더, 프로젝트 리더 또는 비즈니스 소유자는 문제를 재정의할 수 있습니다. 이 경우 파이프라인은 의도한 대로 진행됩니다. 또는 문제를 수락하여 파이프라인이 실패와 함께 중지되도록 할 수 있습니다. 중요한 오류의 재지정에는 [시간 초과](/help/using/code-deployment.md#timeouts)가 적용됩니다.
 * **정보** - 순전히 정보 제공 목적으로 제공되며 파이프라인 실행에 영향을 미치지 않는 문제입니다.
 
 >[!NOTE]
@@ -78,7 +86,7 @@ ht-degree: 82%
 | 범위 | 다음 공식을 사용하여 단위 테스트 라인 범위와 조건 범위의 혼합으로 정의됩니다. <br/>`Coverage = (CT + CF + LC) / (2 * B + EL)`  <ul><li>`CT` = 단위 테스트를 실행하는 동안 한 번 이상 `true`로 평가된 조건</li><li>`CF` = 단위 테스트를 실행하는 동안 한 번 이상 `false`로 평가된 조건</li><li>`LC` = 적용 라인 = lines_to_cover - uncovered_lines</li><li>`B` = 총 조건 수</li><li>`EL` = 총 실행 가능한 라인 수 (lines_to_cover)</li></ul> | 중요 | &lt; 50% |
 | 건너뛴 단위 테스트 | 건너뛴 단위 테스트 수 | 정보 | > 1 |
 | 미해결 문제 | 전반적인 문제 유형 - 취약점, 버그 및 코드 스멜 | 정보 | > 0 |
-| 중복 라인 | 중복된 블록과 관련된 라인의 수로 정의됩니다. 다음 조건에서는 코드 블록이 중복된 것으로 간주됩니다.<br>비 Java 프로젝트:<ul><li>연속 토큰과 중복 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 최소한 다음과 같이 분산되어야 합니다. </li><li>COBOL의 경우 30개 코드 라인 </li><li>ABAP의 경우 20개 코드 라인 </li><li>기타 언어의 경우 10개 코드 라인</li></ul>Java 프로젝트:<ul></li><li> 토큰과 라인 수에 관계없이 연속적이고 중복된 문이 10개 이상 있어야 합니다.</li></ul>중복 요소를 감지할 때 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
+| 중복 라인 | 중복된 블록과 관련된 라인의 수로 정의됩니다. 다음 조건에서는 코드 블록이 중복된 것으로 간주됩니다.<br>비 Java 프로젝트:<ul><li>연속적이고 중복된 토큰이 100개 이상 있어야 합니다.</li><li>이러한 토큰은 최소한 다음과 같이 분산되어야 합니다. </li><li>COBOL의 경우 코드 30줄 </li><li>ABAP의 경우 코드 20줄 </li><li>기타 언어의 경우 코드 10줄</li></ul>Java 프로젝트:<ul></li><li> 토큰과 라인 수에 관계없이 연속적이고 중복된 문이 10개 이상 있어야 합니다.</li></ul>중복 요소를 감지할 때 들여쓰기 및 문자열 리터럴의 차이는 무시됩니다. | 정보 | > 1% |
 | Cloud Service 호환성 | 식별된 Cloud Service 호환성 문제 수 | 정보 | > 0 |
 
 >[!NOTE]
@@ -89,7 +97,7 @@ ht-degree: 82%
 >
 >[!UICONTROL Cloud Manager]에서 실행되는 사용자 정의 코드 품질 규칙에 대한 자세한 내용은 [사용자 정의 코드 품질 규칙](custom-code-quality-rules.md)을 참조하십시오.
 
-### 긍정 오류 처리 {#dealing-with-false-positives}
+### 거짓 양성 처리 {#dealing-with-false-positives}
 
 품질 검사 프로세스가 완벽하지 않으며 문제가 없는 문제를 잘못 식별합니다. 이 시나리오는 긍정 오류(false positive)라고 합니다.
 
@@ -102,7 +110,7 @@ ht-degree: 82%
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```
 
-그러면 SonarQube에 차단 취약점이 발생합니다. 그러나 코드를 검토한 후 이 문제는 취약점이 아니며 적절한 규칙 ID로 코드에 주석을 달 수 있다는 것을 알게 됩니다.
+그러면 SonarQube가 차단 취약점을 발생시킵니다. 그러나 코드를 검토한 후 이 문제는 취약점이 아니며 적절한 규칙 ID로 코드에 주석을 달 수 있다는 것을 알게 됩니다.
 
 ```java
 @SuppressWarnings("squid:S2068")
@@ -121,7 +129,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 >[!NOTE]
 >
->`@SuppressWarnings` 주석을 가능한 구체적으로 만드는 것이 모범 사례입니다. 즉, 문제를 일으키는 특정 문이나 블록에만 주석을 추가합니다. 하지만 클래스 수준에서 주석을 추가하는 것은 가능합니다. 이렇게 하면 보다 광범위하게 경고를 금지할 수 있습니다.
+>`@SuppressWarnings` 주석을 가능한 구체적으로 만드는 것이 모범 사례입니다. 즉, 문제를 일으키는 특정 문이나 블록에만 주석을 추가합니다. 하지만 클래스 수준에서 주석을 추가하는 것은 가능합니다. 이렇게 하면 경고를 보다 광범위하게 억제할 수 있습니다.
 
 ## 보안 테스트 {#security-testing}
 
@@ -129,7 +137,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 
 웹 콘솔 또는 작업 대시보드를 통해 언제든지 동일한 상태 검사를 실행할 수 있습니다.
 
-지정된 상태 검사에 대해 오류를 보고하는 인스턴스가 하나라도 있으면 전체 환경이 해당 상태 검사에 실패합니다. 코드 품질 및 성능 테스트와 마찬가지로 이러한 상태 검사는 범주로 구성되며 3계층 게이트 시스템을 사용하여 보고됩니다. 유일한 차이점은 보안 테스트에 대한 임계값이 없다는 것입니다. 모든 상태 검사는 통과 또는 실패입니다.
+지정된 상태 검사에 대해 오류를 보고하는 인스턴스가 하나라도 있으면 전체 환경이 해당 상태 검사에 실패합니다. 코드 품질 및 성능 테스트와 마찬가지로 이러한 상태 검사는 범주로 구성되며 3계층 게이트 시스템을 사용하여 보고됩니다. 유일한 차이점은 보안 테스트에 대한 임계값이 없다는 것입니다. 모든 상태 검사는 통과 또는 실패로 판정됩니다.
 
 다음 테이블에는 상태 검사 목록이 나와 있습니다.
 
@@ -144,7 +152,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 | `Sling` JavaScript 처리기가 적절하게 구성되었습니다. | `Sling` JavaScript 처리기 | 심각 |
 | `Sling` JSP Script 핸들러가 적절히 구성되었습니다. | `Sling` JSP 스크립트 핸들러 | 심각 |
 | SSL이 올바르게 구성되었습니다. | SSL 구성 | 심각 |
-| 명확하게 안전하지 않은 사용자 프로필 정책을 찾을 수 없습니다. | 사용자 프로필 기본 액세스 | 심각 |
+| 명백히 안전하지 않은 사용자 프로필 정책이 발견되지 않았습니다. | 사용자 프로필 기본 액세스 | 심각 |
 | `Sling` 레퍼러 필터가 CSRF 공격을 방지하도록 구성되었습니다. | [Sling Referrer Filter](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/security/security-checklist#security) | 중요 |
 | Adobe Granite HTML 라이브러리 관리자가 적절히 구성되었습니다. | CQ HTML 라이브러리 관리자 구성 | 중요 |
 | CRXDE 지원 번들이 비활성화되었습니다. | CRXDE 지원 | 중요 |
@@ -169,10 +177,10 @@ Cloud Manager은 **비즈니스 소유자** 역할에 의해 설정된 KPI(응�
 
 #### 크롤러 {#crawler}
 
-30분간의 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 시드 URL 세트를 사용하여 스테이징 환경을 크롤합니다. 이러한 URL에서 시작하여 각 페이지의 HTML을 검사하고 링크를 폭 우선 방식으로 이동됩니다.
+30분간의 테스트 기간이 시작되기 전에 Cloud Manager는 고객 성공 엔지니어가 구성한 하나 이상의 시드 URL 세트를 사용하여 스테이징 환경을 크롤합니다. 이러한 URL에서 시작하여 각 페이지의 HTML을 검사하고 링크를 폭 우선 방식으로 순회합니다.
 
 * 이 크롤링 프로세스는 기본적으로 최대 5000페이지로 제한됩니다.
-* 테스트할 최대 페이지 수는 [파이프라인 변수 &#x200B;](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`를 설정하여 덮어쓸 수 있습니다.
+* 테스트할 최대 페이지 수는 [파이프라인 변수 ](/help/getting-started/build-environment.md#pipeline-variables) `CM_PERF_TEST_CRAWLER_MAX_PAGES`를 설정하여 덮어쓸 수 있습니다.
   * 허용되는 값은 `2000` - `7000`입니다.
 * 크롤러의 요청에는 10초의 고정 시간 초과가 있습니다.
 
@@ -197,12 +205,12 @@ Cloud Manager은 **비즈니스 소유자** 역할에 의해 설정된 KPI(응�
 * 새 페이지 세트에는 3000페이지가 포함되어 있습니다.
 * KPI *분당 페이지 조회수*&#x200B;는 200으로 설정되어 있습니다.
 
-30분 이상의 테스트 기간:
+30분 테스트 기간 동안:
 
 * 방문 빈도가 높은 라이브 페이지 세트의 각 25 페이지는 120번 히트됩니다. `((200 * 0.5) / 25) * 30 = 120`
 * 새 페이지 세트의 각 3000 페이지는 한 번 히트됩니다. `((200 * 0.5) / 3000) * 30 = 1`
 
-#### 테스트 및 보고서 {#testing-reporting}
+#### 테스트 및 보고 {#testing-reporting}
 
 Cloud Manager는 30분 테스트 기간 동안 스테이징 게시 서버에서 기본적으로 페이지를 인증되지 않은 사용자로 요청하여 AEM Sites 프로그램에 대한 성능 테스트를 실행합니다. 사용자가 생성한 가상 지표(응답 시간, 오류율, 분당 조회수 등)를 측정하여 각 페이지 및 모든 인스턴스에 대한 다양한 시스템 수준 지표(CPU, 메모리, 네트워킹 데이터)를 제공합니다.
 
@@ -250,7 +258,7 @@ Cloud Manager는 자산을 30분 동안 반복적으로 업로드하여 AEM Asse
 
 Assets 성능 테스트를 위해 고객 성공 엔지니어는 작성자가 스테이징 환경에 온보딩하는 동안 `cloudmanager` 사용자 및 암호를 생성합니다. 성능 테스트 단계를 수행하려면 `cloudmanager`라는 사용자와 CSE에서 설정한 관련 암호가 필요합니다.
 
-이 메서드는 권한이 변경되지 않은 상태로 작성자 인스턴스에 유지됩니다. 인스턴스를 변경 또는 제거하면 Assets 성능 테스트가 실패할 수 있습니다.
+이 메서드는 권한이 변경되지 않은 상태로 작성자 인스턴스에 유지됩니다. 이를 변경하거나 제거하면 Assets 성능 테스트가 실패할 수 있습니다.
 
 #### 테스트를 위한 이미지 및 Assets {#assets-for-testing}
 
@@ -258,15 +266,15 @@ Assets 성능 테스트를 위해 고객 성공 엔지니어는 작성자가 스
 
 이미지가 업로드되지 않으면 Cloud Manager는 테스트를 위해 기본 이미지와 PDF 문서를 사용합니다.
 
-#### 테스트를 위한 자산 분포 {#distribution-of-assets}
+#### 테스트를 위한 에셋 분포 {#distribution-of-assets}
 
 분당 업로드되는 각 유형의 자산 수에 대한 분포는 **파이프라인 설정** 또는 **편집** 화면에서 설정됩니다.
 
 예를 들어 분당 70/30 분할과 10개의 에셋이 있는 경우 7개의 이미지와 3개의 문서가 업로드됩니다.
 
-#### 테스트 및 보고서 {#testing-and-reporting}
+#### 테스트 및 보고 {#testing-and-reporting}
 
-Cloud Manager은 CSE가 설정한 사용자 이름과 암호를 사용하여 작성자 인스턴스에 폴더를 만듭니다. 그런 다음 자산이 오픈 소스 라이브러리를 사용하여 폴더로 업로드됩니다. Assets 테스트 단계에서 실행되는 테스트는 [오픈 소스 라이브러리](https://github.com/adobe/toughday2)를 사용하여 작성됩니다. 각 자산의 처리 시간과 다양한 시스템 수준 지표도 30분 테스트 기간 동안 측정됩니다. 이 기능은 이미지와 PDF 문서를 모두 업로드할 수 있습니다.
+Cloud Manager은 CSE가 설정한 사용자 이름과 암호를 사용하여 작성자 인스턴스에 폴더를 만듭니다. 그런 다음 에셋이 오픈 소스 라이브러리를 사용하여 폴더로 업로드됩니다. Assets 테스트 단계에서 실행되는 테스트는 [오픈 소스 라이브러리](https://github.com/adobe/toughday2)를 사용하여 작성됩니다. 각 에셋의 처리 시간과 다양한 시스템 수준 지표도 30분 테스트 기간 동안 측정됩니다. 이 기능은 이미지와 PDF 문서를 모두 업로드할 수 있습니다.
 
 >[!TIP]
 >
@@ -300,7 +308,7 @@ Cloud Manager은 CSE가 설정한 사용자 이름과 암호를 사용하여 작
 * **95번째 백분위수 응답 시간** - 테스트 기간 동안 분당 95번째 백분위수 응답 시간 그래프
   * 95번째 백분위수 응답 시간이 정의된 KPI를 초과한 페이지를 나열하는 CSV 파일
 
-## 콘텐츠 패키지 검색 최적화 {#content-package-scanning-optimization}
+## 콘텐츠 패키지 검사 최적화 {#content-package-scanning-optimization}
 
 품질 분석 프로세스의 일환으로 Cloud Manager는 Maven 빌드에서 생성된 콘텐츠 패키지에 대한 분석을 수행합니다. Cloud Manager는 이 프로세스를 가속화하기 위한 최적화를 제공하며, 이는 특정 패키징 제한이 관찰될 때 효과적입니다.
 
@@ -314,7 +322,7 @@ Cloud Manager은 CSE가 설정한 사용자 이름과 암호를 사용하여 작
 
 수십 개의 임베드된 패키지를 생성하는 프로젝트의 경우, 이 최적화는 파이프라인 실행당 10분 이상 절약되는 것으로 나타났습니다.
 
-“모든” 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip`에 포함된 두 개의 임베드된 패키지와 OSGi 번들이 포함된 경우 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
+&quot;all&quot; 콘텐츠 패키지에 건너뛴 콘텐츠 패키지와 OSGi 번들의 조합이 포함된 경우 특별한 경우가 발생할 수 있습니다. 예를 들어 `myco-all-1.0.0-SNAPSHOT.zip`에 포함된 두 개의 임베드된 패키지와 OSGi 번들이 포함된 경우 OSGi 번들로만 구성된 새로운 최소 콘텐츠 패키지가 구성됩니다. 이 패키지의 이름은 항상 `cloudmanager-synthetic-jar-package`이고 포함된 번들은 `/apps/cloudmanager-synthetic-installer/install`에 배치됩니다.
 
 >[!NOTE]
 >
