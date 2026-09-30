@@ -2,26 +2,42 @@
 title: 빌드 환경
 description: Cloud Manager 사용자가 코드를 빌드하고 테스트하기 위해 사용하는 특수한 빌드 환경에 대해 알아보십시오.
 exl-id: b3543320-66d4-4358-8aba-e9bdde00d976
-TQID: https://experienceleague.adobe.com/AdGVWjyF0DXEX7jH5S39JQ506oVnNYGtYqAWNHcQeP8
+autotag-review: '2026-09-28T18:27:41.054Z'
+TQID: 'https://experienceleague.adobe.com/DNcpDvFCu798nnK81kUEN8JmIv8DP72cas0YaVKPw40'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: cd2426f1-5719-4006-b8c2-738e5969754b
+    internal-label: Environments
+  - id: 143cda9c-8952-5316-be5f-2cd421ad8ecc
+    internal-label: Dispatcher
+  - id: 2741637d-a621-529a-b21b-bfe9be07a9c8
+    internal-label: Dispatcher
+  - id: 2e0e1a8a-56e7-5bd5-b805-f35a7c0c2ca7
+    internal-label: Projects
+  - id: 5be0fc8f-1cff-5c3e-bb92-2903a56a3de6
+    internal-label: Migration
+  - id: d54b7e32-ec14-504f-8821-22c27fbf278b
+    internal-label: Production
 subfeature_v2:
   - id: d9eb3b3e-9447-4ed4-bf4a-96c7b245cb27
+    internal-label: Cloud Manager APIs
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: fa6be369b979682cebf68852603725d8754605ab
+    internal-label: Security
+source-git-commit: 9b75e449f463ef5512ed4e42c4f749852d8c945a
 workflow-type: tm+mt
-source-wordcount: 1205
+source-wordcount: '1205'
 ht-degree: 50%
-
 ---
-
 # 빌드 환경 {#build-environment}
 
 Cloud Manager이 코드를 빌드하고 테스트하는 데 사용하는 특수한 빌드 환경에 대해 알아봅니다.
@@ -32,23 +48,23 @@ Cloud Manager의 빌드 환경에는 다음과 같은 속성이 있습니다.
 
 * 빌드 환경은 Linux 기반이며 Ubuntu 22.04에서 파생되었습니다.
 * Apache Maven 3.9.4가 설치되어 있습니다.
-   * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것](#https-maven)을 권장합니다.
+  * Adobe는 사용자가 [HTTP 대신 HTTPS를 사용하도록 Maven 저장소를 업데이트할 것](#https-maven)을 권장합니다.
 * 설치된 Java 버전은 Oracle JDK 8u401 및 Oracle JDK 11.0.22입니다.
-   * `/usr/lib/jvm/jdk1.8.0_401`
-   * `/usr/lib/jvm/jdk-11.0.22`
+  * `/usr/lib/jvm/jdk1.8.0_401`
+  * `/usr/lib/jvm/jdk-11.0.22`
 * 기본적으로 `JAVA_HOME` 환경 변수는 Oracle JDK 8u401을 포함하는 `/usr/lib/jvm/jdk1.8.0_401`로 설정됩니다. 자세한 내용은 [대체 Maven 실행 JDK 버전](#alternate-maven) 섹션을 참조하십시오.
 * 필요한 추가 시스템 패키지가 설치됩니다.
-   * `bzip2`
-   * `unzip`
-   * `libpng`
-   * `imagemagick`
-   * `graphicsmagick`
+  * `bzip2`
+  * `unzip`
+  * `libpng`
+  * `imagemagick`
+  * `graphicsmagick`
 * [추가 시스템 패키지 설치](#installing-additional-system-packages) 섹션에 설명된 대로 빌드 시 다른 패키지가 설치됩니다.
 * 모든 빌드는 새 환경에서 수행됩니다. 빌드 컨테이너는 실행 간에 데이터를 유지하지 않습니다.
 * Maven은 다음 세 가지 명령을 사용하여 실행됩니다.
-   * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
-   * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
-   * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-dependency-plugin:3.1.2:resolve-plugins`
+  * `mvn --batch-mode org.apache.maven.plugins:maven-clean-plugin:3.1.0:clean -Dmaven.clean.failOnError=false`
+  * `mvn --batch-mode org.jacoco:jacoco-maven-plugin:prepare-agent package`
 * Maven은 `adobe-public`이라는 프로필을 사용하여 자동으로 공개 Adobe 아티팩트 저장소를 포함하는 `settings.xml` 파일로 시스템 수준에서 구성됩니다. 자세한 내용은 [Adobe 공개 Maven 저장소](https://repo1.maven.org/)를 참조하십시오.
 * Node.js 18은 [프론트엔드 파이프라인](/help/overview/ci-cd-pipelines.md)에 사용할 수 있습니다.
 
@@ -77,7 +93,7 @@ Cloud Manager [2023.10.0](/help/release-notes/2023/2023-10-0.md)이(가) Maven 3
 
 ## 특정 Java 버전 사용 {#using-java-version}
 
-기본적으로 프로젝트는 Oracle 8 JDK를 사용하여 Cloud Manager 빌드 프로세스를 통해 구축됩니다. 대체 JDK를 사용하려는 고객은 전체 Maven 실행 프로세스에 대한 대체 JDK 버전을 선택할 수 있습니다.
+기본적으로 Cloud Manager 빌드 프로세스로 빌드된 프로젝트는 Oracle 8 JDK를 사용합니다. 대체 JDK를 사용하려는 고객은 전체 Maven 실행 프로세스에 대한 대체 JDK 버전을 선택할 수 있습니다.
 
 >[!IMPORTANT]
 >
@@ -164,7 +180,7 @@ The currently available vendor/version combinations are:
 | `CM_PIPELINE_NAME` | 파이프라인 이름 |
 | `CM_PROGRAM_ID` | 숫자 프로그램 식별자 |
 | `CM_PROGRAM_NAME` | 프로그램 이름 |
-| `ARTIFACTS_VERSION` | 스테이징 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 통합 버전 |
+| `ARTIFACTS_VERSION` | 스테이징 또는 프로덕션 파이프라인의 경우 Cloud Manager에서 생성된 합성 버전 |
 
 ### 표준 환경 변수 가용성 {#availability}
 
@@ -209,10 +225,10 @@ $ aio cloudmanager:list-pipeline-variables PIPELINEID
 변수는 특정 제한 사항을 준수해야 합니다.
 
 * 변수 이름에는 영숫자와 밑줄(`_`)만 포함될 수 있습니다.
-   * 규칙상 이름은 모두 대문자로 되어 있습니다.
+  * 규칙상 이름은 모두 대문자로 되어 있습니다.
 * 파이프라인당 200개의 변수 제한이 있습니다.
 * 각 이름은 100자 이하여야 합니다.
-* 각 문자열 값은 2048자 이하여야 합니다.
+* 각 문자열 값은 2048자 미만이어야 합니다.
 * 각 `secretString` 값은 500자 이하여야 합니다.
 
 Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유사한 구문을 사용하여 이러한 변수를 Maven 속성에 매핑하는 것이 유용합니다.
@@ -233,7 +249,7 @@ Maven `pom.xml` 파일 내에서 사용할 경우, 일반적으로 다음과 유
 
 ## 추가 시스템 패키지 설치 {#installing-additional-system-packages}
 
-제대로 작동하려면 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출하며 적절한 언어 인터프리터가 설치되어 있어야 합니다. 이 시나리오는 APT를 호출하기 위해 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)을(를) 호출하여 처리할 수 있습니다. 이 실행은 Cloud Manager 전용 Maven 프로필로 래핑됩니다. 예를 들어 Python을 설치하려면 다음 작업을 수행해야 합니다.
+제대로 작동하려면 일부 빌드에 추가 시스템 패키지를 설치해야 합니다. 예를 들어 빌드는 Python 또는 Ruby 스크립트를 호출하며 적절한 언어 인터프리터가 설치되어 있어야 합니다. 이 시나리오는 APT를 호출하기 위해 [`exec-maven-plugin`](https://www.mojohaus.org/exec-maven-plugin/)을(를) 호출하여 처리할 수 있습니다. 이 실행은 Cloud Manager 전용 Maven 프로필로 래핑됩니다. 예를 들어 Python을 설치하려면 다음과 같이 하면 됩니다.
 
 ```xml
         <profile>
