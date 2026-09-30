@@ -1,26 +1,34 @@
 ---
 title: Cloud Manager에서 비공개 저장소 추가
-description: 개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
+description: 자신의 비공개 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 feature: Release Information
 exl-id: e0d103c9-c147-4040-bf53-835e93d78a0b
-TQID: https://experienceleague.adobe.com/YQUazTRNh7C31piqZwe-1zAkRWIqt9fVY6jTD5T3ZpI
+TQID: 'https://experienceleague.adobe.com/YQUazTRNh7C31piqZwe-1zAkRWIqt9fVY6jTD5T3ZpI'
 product_v2:
   - id: c68cd75e-5bca-4bc3-a60e-9e183f816441
+    internal-label: Experience Manager Cloud Manager
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 32dc7aaf4c228d9aee1adedab3f52375f1807bb5
+    internal-label: Security
+source-git-commit: 26e8d7835883cd6a64913b3b4e3619041af63bf5
 workflow-type: tm+mt
-source-wordcount: 837
+source-wordcount: '837'
 ht-degree: 79%
-
 ---
-
 # Cloud Manager에서 비공개 저장소 추가 {#private-repositories}
 
-개인 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
+자신의 비공개 GitHub 저장소에서 작동하도록 Cloud Manager를 설정하는 방법에 대해 알아봅니다.
 
 ## 개요 {#overview}
 
@@ -102,7 +110,7 @@ ht-degree: 79%
 
 ## Cloud Manager로 비공개 저장소 사용 {#using}
 
-Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완료되고 Cloud Manager에서 저장소를 사용할 수 있습니다.
+GitHub 저장소가 Cloud Manager에서 검증되면 통합이 완료되고 Cloud Manager에서 저장소를 사용할 수 있습니다.
 
 **Cloud Manager로 비공개 저장소를 사용하려면:**
 
@@ -136,7 +144,7 @@ Cloud Manager에서 GitHub 저장소의 유효성을 검사하면 통합이 완�
 
 ## 제한 사항 {#limitations}
 
-Cloud Manager으로 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
+Cloud Manager에서 비공개 저장소를 사용하는 경우 특정 제한 사항이 있습니다.
 
 * 프로덕션 전체 스택 파이프라인에서 비공개 저장소를 사용할 때 Git 태그가 생성 및 푸시되지 않습니다.
 * Adobe GitHub 앱이 GitHub 조직에서 제거되면 이 작업을 통해 모든 저장소에 대한 가져오기 요청 유효성 검사 기능이 제거됩니다.
